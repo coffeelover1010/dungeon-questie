@@ -1,0 +1,25 @@
+## Interface: 16001
+## Title: Dungeon Questie
+## Notes: Dungeon quest checklist, rewards, prerequisites and pickup pins. /dungeons
+## Author: Videocat
+## Version: 0.1.1
+## SavedVariablesPerCharacter: DungeonGuideForeverDB
+## OptionalDeps: TomTom
+
+Libs\LibStub.lua
+Libs\CallbackHandler-1.0.lua
+Libs\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0.lua
+Data.lua
+WalkthroughData.lua
+Tracking.lua
+Walkthrough.lua
+QuestLog.lua
+Map.lua
+GroupFinder.lua
+QuestGroups.lua
+Recruit.lua
+Artwork.lua
+Window.lua
+Minimap.lua
+

@@ -1,0 +1,3677 @@
+[
+  {
+    "id": 5723,
+    "name": "Testing an Enemy's Strength",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/testing-an-enemy-s-strength-5723/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 15,
+    "minLevel": 9,
+    "objectives": [
+      "Ragefire Trogg ×8",
+      "Ragefire Shaman ×8"
+    ],
+    "rewards": [],
+    "people": [
+      "Picked up from: Rahauro",
+      "Turned in to: Rahauro"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Rahauro",
+        "location": "Thunder Bluff, Elder Rise (70.8, 31.6)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Rahauro",
+        "location": "Thunder Bluff, Elder Rise (70.8, 31.6)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 5728,
+    "name": "Hidden Enemies",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/hidden-enemies-5728/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [
+      "Bazzalan",
+      "Jergosh the Invoker"
+    ],
+    "rewards": [],
+    "people": [
+      "Picked up from: Thrall",
+      "Turned in to: Thrall"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Thrall",
+        "location": "Orgrimmar, Grommash Hold (31.7, 38.0)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Thrall",
+        "location": "Orgrimmar, Grommash Hold (31.7, 38.0)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Hidden Enemies",
+        "id": 5727
+      },
+      {
+        "role": "Leads to",
+        "name": "Hidden Enemies",
+        "id": 5729
+      }
+    ]
+  },
+  {
+    "id": 5724,
+    "name": "Returning the Lost Satchel",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/returning-the-lost-satchel-5724/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [
+      "Grimtotem Satchel"
+    ],
+    "rewards": [
+      {
+        "id": 14381,
+        "name": "Grimtotem Satchel"
+      },
+      {
+        "id": 15452,
+        "name": "Featherbead Bracers"
+      },
+      {
+        "id": 15453,
+        "name": "Savannah Bracers"
+      },
+      {
+        "id": 270003,
+        "name": "Garrison Cuffs"
+      }
+    ],
+    "people": [
+      "Turned in to: Rahauro"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Rahauro",
+        "location": "Thunder Bluff, Elder Rise (70.8, 31.6)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Searching for the Lost Satchel",
+        "id": 5722
+      }
+    ]
+  },
+  {
+    "id": 5722,
+    "name": "Searching for the Lost Satchel",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Picked up from: Rahauro"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Rahauro",
+        "location": "Thunder Bluff, Elder Rise (70.8, 31.6)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Returning the Lost Satchel",
+        "id": 5724
+      }
+    ]
+  },
+  {
+    "id": 5761,
+    "name": "Slaying the Beast",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/slaying-the-beast-5761/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [
+      "Taragaman the Hungerer's Heart"
+    ],
+    "rewards": [],
+    "people": [
+      "Picked up from: Neeru Fireblade",
+      "Turned in to: Neeru Fireblade"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Neeru Fireblade",
+        "location": "Orgrimmar, Cleft of Shadow (49.5, 50.4)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Neeru Fireblade",
+        "location": "Orgrimmar, Cleft of Shadow (49.5, 50.4)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 5725,
+    "name": "The Power to Destroy...",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-power-to-destroy-5725/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [
+      "Spells of Shadow",
+      "Incantations from the Nether"
+    ],
+    "rewards": [
+      {
+        "id": 15449,
+        "name": "Ghastly Trousers"
+      },
+      {
+        "id": 15450,
+        "name": "Dredgemire Leggings"
+      },
+      {
+        "id": 15451,
+        "name": "Gargoyle Leggings"
+      }
+    ],
+    "people": [
+      "Picked up from: Varimathras",
+      "Turned in to: Varimathras"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Varimathras",
+        "location": "Undercity, Royal Quarter (56.4, 92.6)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Varimathras",
+        "location": "Undercity, Royal Quarter (56.4, 92.6)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 96395,
+    "name": "An Ancient Grudge",
+    "dungeons": [
+      "The Hall of Thanes"
+    ],
+    "source": "https://wowforevertalents.com/quests/an-ancient-grudge-96395/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 15,
+    "minLevel": 10,
+    "objectives": [
+      "Faldrim Anvilmar"
+    ],
+    "rewards": [
+      {
+        "id": 279899,
+        "name": "Catacomb Cloak"
+      },
+      {
+        "id": 279900,
+        "name": "Deepgrave Trousers"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": []
+  },
+  {
+    "id": 96403,
+    "name": "Important Heirlooms",
+    "dungeons": [
+      "The Hall of Thanes"
+    ],
+    "source": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 15,
+    "minLevel": 10,
+    "objectives": [
+      "Dwarven Heirloom ×8"
+    ],
+    "rewards": [
+      {
+        "id": 279898,
+        "name": "Dwarven Tome"
+      },
+      {
+        "id": 280096,
+        "name": "Tomb Robber's Gloves"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": []
+  },
+  {
+    "id": 96394,
+    "name": "The Restless Dead",
+    "dungeons": [
+      "The Hall of Thanes"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 15,
+    "minLevel": 10,
+    "faction": "Alliance",
+    "objectives": [
+      "Enraged Apparition ×15",
+      "Tormented Soul ×10"
+    ],
+    "rewards": [
+      {
+        "id": 279897,
+        "name": "Dusty Belt"
+      },
+      {
+        "id": 280095,
+        "name": "Cryptwalker Bracers"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": []
+  },
+  {
+    "id": 96393,
+    "name": "Old Ironforge Incursion",
+    "dungeons": [
+      "The Hall of Thanes"
+    ],
+    "source": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [
+      "Durgen Dirgehammer's Head"
+    ],
+    "rewards": [
+      {
+        "id": 279894,
+        "name": "Calibrated Blunderbuss"
+      },
+      {
+        "id": 279895,
+        "name": "Ironforge Greathammer"
+      },
+      {
+        "id": 279896,
+        "name": "Deepblaze"
+      }
+    ],
+    "people": [
+      "Turned in to: King Magni Bronzebeard"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "King Magni Bronzebeard",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Underground Map"
+      }
+    ]
+  },
+  {
+    "id": 95250,
+    "name": "Abominable Creatures",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/abominable-creatures-95250/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 21,
+    "minLevel": 16,
+    "faction": "Alliance",
+    "objectives": [
+      "Head of the Baron"
+    ],
+    "rewards": [
+      {
+        "id": 279864,
+        "name": "Monstrous Cleaver"
+      },
+      {
+        "id": 279865,
+        "name": "Grave Shroud"
+      },
+      {
+        "id": 279867,
+        "name": "Slain Baron's Signet"
+      }
+    ],
+    "people": [
+      "Turned in to: Captain Truman"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Captain Truman",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 97288,
+    "name": "Unending Torment",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/unending-torment-97288/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 21,
+    "minLevel": 16,
+    "faction": "Horde",
+    "objectives": [
+      "Abominable Head"
+    ],
+    "rewards": [
+      {
+        "id": 280438,
+        "name": "Abominable Head"
+      }
+    ],
+    "people": [
+      "Turned in to: Master Apothecary Faranell"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Master Apothecary Faranell",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Unending Torment"
+      }
+    ]
+  },
+  {
+    "id": 92401,
+    "name": "A Frightened Request",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/a-frightened-request-92401/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 15,
+    "faction": "Horde",
+    "objectives": [
+      "Investigate the disappearance of Edward Heartweaver in the Ruins of Lordaeron."
+    ],
+    "rewards": [
+      {
+        "id": 251485,
+        "name": "Edward's Knife"
+      },
+      {
+        "id": 251486,
+        "name": "Tabitha's Cuffs"
+      }
+    ],
+    "people": [
+      "Picked up from: Tabitha Heartweaver"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Tabitha Heartweaver",
+        "location": "Silverpine Forest, The Sepulcher (44.5, 43.0)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 92421,
+    "name": "Light's Justice",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/light-s-justice-92421/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 15,
+    "faction": "Horde",
+    "objectives": [
+      "Intact Limbs ×25"
+    ],
+    "rewards": [
+      {
+        "id": 279874,
+        "name": "The Stitcher"
+      },
+      {
+        "id": 279875,
+        "name": "Spare Part Bindings"
+      }
+    ],
+    "people": [
+      "Picked up from: Morbin Lightbane"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Morbin Lightbane",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 92415,
+    "name": "Remember That I Love You",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/remember-that-i-love-you-92415/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 15,
+    "faction": "Alliance",
+    "objectives": [
+      "Blood-Stained Letter"
+    ],
+    "rewards": [
+      {
+        "id": 251522,
+        "name": "Blood-Stained Letter"
+      }
+    ],
+    "people": [
+      "Turned in to: Orphan Matron Nightingale"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Orphan Matron Nightingale",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Remember That I Love You"
+      }
+    ]
+  },
+  {
+    "id": 92422,
+    "name": "The Wrath of Rath'mael",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-wrath-of-rath-mael-92422/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 15,
+    "objectives": [
+      "Rath'mael"
+    ],
+    "rewards": [
+      {
+        "id": 251533,
+        "name": "Forsaken Greataxe"
+      },
+      {
+        "id": 251534,
+        "name": "Gnarled Necromancer's Staff"
+      }
+    ],
+    "people": [
+      "Picked up from: Deathguard Kristof"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Deathguard Kristof",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 95195,
+    "name": "Bloodied Insignia",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/bloodied-insignia-95195/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 16,
+    "faction": "Alliance",
+    "objectives": [
+      "Bloodied Insignia ×10"
+    ],
+    "rewards": [
+      {
+        "id": 268540,
+        "name": "Bloodied Insignia"
+      },
+      {
+        "id": 279868,
+        "name": "Duty Bound Leggings"
+      },
+      {
+        "id": 279869,
+        "name": "Remembrance Armor"
+      }
+    ],
+    "people": [
+      "Turned in to: General Marcus Jonathan"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "General Marcus Jonathan",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 95189,
+    "name": "Crest of Lordaeron",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95189/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 16,
+    "faction": "Alliance",
+    "objectives": [
+      "Crest of Lordaeron"
+    ],
+    "rewards": [
+      {
+        "id": 268579,
+        "name": "Crest of Lordaeron"
+      },
+      {
+        "id": 280567,
+        "name": "Small Sack of Gems"
+      }
+    ],
+    "people": [
+      "Turned in to: Lady Dena Kennedy"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Lady Dena Kennedy",
+        "location": "Stormwind City, Royal Gallery (69.2, 31.1)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 95204,
+    "name": "Crest of Lordaeron",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95204/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 16,
+    "objectives": [
+      "Crest of Lordaeron"
+    ],
+    "rewards": [
+      {
+        "id": 275521,
+        "name": "Crest of Lordaeron"
+      },
+      {
+        "id": 280567,
+        "name": "Small Sack of Gems"
+      }
+    ],
+    "people": [
+      "Turned in to: Oran Snakewrithe"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Oran Snakewrithe",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 95216,
+    "name": "The New Plague",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-new-plague-95216/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 16,
+    "faction": "Horde",
+    "objectives": [
+      "Highly Toxic Strain"
+    ],
+    "rewards": [
+      {
+        "id": 279876,
+        "name": "Plaguefang"
+      },
+      {
+        "id": 279877,
+        "name": "Blight Gloves"
+      }
+    ],
+    "people": [
+      "Picked up from: Theodore Griffs"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Theodore Griffs",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 214,
+    "name": "Red Silk Bandanas",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/red-silk-bandanas-214/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 17,
+    "minLevel": 14,
+    "objectives": [
+      "Red Silk Bandana ×10"
+    ],
+    "rewards": [
+      {
+        "id": 2074,
+        "name": "Solid Shortblade"
+      },
+      {
+        "id": 2089,
+        "name": "Scrimshaw Dagger"
+      },
+      {
+        "id": 6094,
+        "name": "Piercing Axe"
+      },
+      {
+        "id": 270005,
+        "name": "Monastic Hammer"
+      }
+    ],
+    "people": [
+      "Picked up from: Scout Riell",
+      "Turned in to: Scout Riell"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Scout Riell",
+        "location": null
+      },
+      {
+        "role": "Turned in to",
+        "name": "Scout Riell",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 92753,
+    "name": "Destruction in Deadmines",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/destruction-in-deadmines-92753/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 18,
+    "minLevel": 9,
+    "faction": "Alliance",
+    "objectives": [
+      "Explosives placed",
+      "Extra-Destructive Explosives"
+    ],
+    "rewards": [
+      {
+        "id": 254553,
+        "name": "Extra-Destructive Explosives"
+      }
+    ],
+    "people": [
+      "Turned in to: Alba Fairmoon"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Alba Fairmoon",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 168,
+    "name": "Collecting Memories",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/collecting-memories-168/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 18,
+    "minLevel": 14,
+    "objectives": [
+      "Miners' Union Card ×4"
+    ],
+    "rewards": [
+      {
+        "id": 2037,
+        "name": "Tunneler's Boots"
+      },
+      {
+        "id": 2036,
+        "name": "Dusty Mining Gloves"
+      },
+      {
+        "id": 270007,
+        "name": "Worn Miner's Waistcord"
+      }
+    ],
+    "people": [
+      "Turned in to: Wilder Thistlenettle"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Wilder Thistlenettle",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 167,
+    "name": "Oh Brother...",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/oh-brother-167/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 20,
+    "minLevel": 15,
+    "objectives": [
+      "Thistlenettle's Badge"
+    ],
+    "rewards": [
+      {
+        "id": 1893,
+        "name": "Miner's Revenge"
+      },
+      {
+        "id": 270012,
+        "name": "Miner's Workgloves"
+      },
+      {
+        "id": 270013,
+        "name": "Miner's Workboots"
+      }
+    ],
+    "people": [
+      "Turned in to: Wilder Thistlenettle"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Wilder Thistlenettle",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2040,
+    "name": "Underground Assault",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/underground-assault-2040/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 20,
+    "minLevel": 15,
+    "objectives": [
+      "Gnoam Sprecklesprocket"
+    ],
+    "rewards": [
+      {
+        "id": 7606,
+        "name": "Polar Gauntlets"
+      },
+      {
+        "id": 7607,
+        "name": "Sable Wand"
+      },
+      {
+        "id": 270015,
+        "name": "Bravo's Armbands"
+      },
+      {
+        "id": 270016,
+        "name": "Dreamer's Leggings"
+      }
+    ],
+    "people": [
+      "Turned in to: Shoni the Shilent"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Shoni the Shilent",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Speak with Shoni",
+        "id": 2041
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "name": "The Defias Brotherhood",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-defias-brotherhood-166/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 14,
+    "objectives": [
+      "Head of VanCleef"
+    ],
+    "rewards": [
+      {
+        "id": 6087,
+        "name": "Chausses of Westfall"
+      },
+      {
+        "id": 2041,
+        "name": "Tunic of Westfall"
+      },
+      {
+        "id": 2042,
+        "name": "Staff of Westfall"
+      }
+    ],
+    "people": [
+      "Picked up from: Gryan Stoutmantle",
+      "Turned in to: Gryan Stoutmantle"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Gryan Stoutmantle",
+        "location": "Sentinel Tower (56.4, 47.5)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Gryan Stoutmantle",
+        "location": "Sentinel Tower (56.4, 47.5)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the WFT Beta Log addon, 20 September 2026 · the beta client's creature cache, 20 September 2026 (creaturecache.wdb, build 69913)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "The Defias Brotherhood",
+        "id": 155
+      }
+    ]
+  },
+  {
+    "id": 373,
+    "name": "The Unsent Letter",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-unsent-letter-373/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 16,
+    "faction": "Alliance",
+    "objectives": [
+      "An Unsent Letter"
+    ],
+    "rewards": [
+      {
+        "id": 2874,
+        "name": "An Unsent Letter"
+      }
+    ],
+    "people": [
+      "Turned in to: Baros Alexston"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Baros Alexston",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Bazil Thredd",
+        "id": 389
+      }
+    ]
+  },
+  {
+    "id": 1489,
+    "name": "Hamuul Runetotem",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/hamuul-runetotem-1489/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 16,
+    "minLevel": 10,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Hamuul Runetotem"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Hamuul Runetotem",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Nara Wildmane",
+        "id": 1490
+      }
+    ]
+  },
+  {
+    "id": 1490,
+    "name": "Nara Wildmane",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/nara-wildmane-1490/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 16,
+    "minLevel": 10,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Nara Wildmane"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Nara Wildmane",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Hamuul Runetotem",
+        "id": 1489
+      },
+      {
+        "role": "Leads to",
+        "name": "Leaders of the Fang",
+        "id": 914
+      }
+    ]
+  },
+  {
+    "id": 1486,
+    "name": "Deviate Hides",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/deviate-hides-1486/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 17,
+    "minLevel": 13,
+    "objectives": [
+      "Deviate Hide ×20"
+    ],
+    "rewards": [
+      {
+        "id": 918,
+        "name": "Deviate Hide Pack"
+      },
+      {
+        "id": 6480,
+        "name": "Slick Deviate Leggings"
+      }
+    ],
+    "people": [
+      "Picked up from: Nalpak"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Nalpak",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1491,
+    "name": "Smart Drinks",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/smart-drinks-1491/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 18,
+    "minLevel": 13,
+    "objectives": [
+      "Wailing Essence ×6"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Mebok Mizzyrix"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Mebok Mizzyrix",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 962,
+    "name": "Serpentbloom",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/serpentbloom-962/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 18,
+    "minLevel": 14,
+    "objectives": [
+      "Serpentbloom ×10"
+    ],
+    "rewards": [
+      {
+        "id": 10919,
+        "name": "Apothecary Gloves"
+      },
+      {
+        "id": 270008,
+        "name": "Heat Resistant Mitts"
+      },
+      {
+        "id": 270009,
+        "name": "Safety Boots"
+      }
+    ],
+    "people": [
+      "Picked up from: Apothecary Zamah"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Apothecary Zamah",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 959,
+    "name": "Trouble at the Docks",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/trouble-at-the-docks-959/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 18,
+    "minLevel": 14,
+    "objectives": [
+      "99-Year-Old Port"
+    ],
+    "rewards": [],
+    "people": [
+      "Picked up from: Crane Operator Bigglefuzz"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Crane Operator Bigglefuzz",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1487,
+    "name": "Deviate Eradication",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/deviate-eradication-1487/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 21,
+    "minLevel": 15,
+    "objectives": [
+      "Deviate Ravager ×7",
+      "Deviate Viper ×7",
+      "Deviate Shambler ×7",
+      "Deviate Dreadfang ×7"
+    ],
+    "rewards": [
+      {
+        "id": 6476,
+        "name": "Pattern: Deviate Scale Belt"
+      },
+      {
+        "id": 8071,
+        "name": "Sizzle Stick"
+      },
+      {
+        "id": 6481,
+        "name": "Dagmire Gauntlets"
+      }
+    ],
+    "people": [
+      "Picked up from: Ebru"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Ebru",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 914,
+    "name": "Leaders of the Fang",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/leaders-of-the-fang-914/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 10,
+    "objectives": [
+      "Gem of Cobrahn",
+      "Gem of Anacondra",
+      "Gem of Pythas",
+      "Gem of Serpentis"
+    ],
+    "rewards": [
+      {
+        "id": 6505,
+        "name": "Crescent Staff"
+      },
+      {
+        "id": 6504,
+        "name": "Wingblade"
+      },
+      {
+        "id": 270018,
+        "name": "Hammerbone"
+      }
+    ],
+    "people": [
+      "Turned in to: Nara Wildmane"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Nara Wildmane",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Nara Wildmane",
+        "id": 1490
+      }
+    ]
+  },
+  {
+    "id": 3366,
+    "name": "The Glowing Shard",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-glowing-shard-3366/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 25,
+    "minLevel": 15,
+    "objectives": [
+      "Glowing Shard"
+    ],
+    "rewards": [
+      {
+        "id": 10441,
+        "name": "Glowing Shard"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": []
+  },
+  {
+    "id": 6981,
+    "name": "The Glowing Shard",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-glowing-shard-6981/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 26,
+    "minLevel": 15,
+    "objectives": [
+      "Glowing Shard"
+    ],
+    "rewards": [
+      {
+        "id": 10441,
+        "name": "Glowing Shard"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": []
+  },
+  {
+    "id": 1098,
+    "name": "Deathstalkers in Shadowfang",
+    "dungeons": [
+      "Shadowfang Keep"
+    ],
+    "source": "https://wowforevertalents.com/quests/deathstalkers-in-shadowfang-1098/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 25,
+    "minLevel": 18,
+    "objectives": [],
+    "rewards": [
+      {
+        "id": 3324,
+        "name": "Ghostly Mantle"
+      },
+      {
+        "id": 270023,
+        "name": "Tanned Shoulderpads"
+      },
+      {
+        "id": 270024,
+        "name": "Bronzed Shoulderguards"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": []
+  },
+  {
+    "id": 1740,
+    "name": "The Orb of Soran'ruk",
+    "dungeons": [
+      "Shadowfang Keep"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-orb-of-soran-ruk-1740/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 25,
+    "minLevel": 20,
+    "objectives": [
+      "Soran'ruk Fragment ×3",
+      "Large Soran'ruk Fragment"
+    ],
+    "rewards": [
+      {
+        "id": 6898,
+        "name": "Orb of Soran'ruk"
+      },
+      {
+        "id": 15109,
+        "name": "Staff of Soran'ruk"
+      }
+    ],
+    "people": [
+      "Turned in to: Doan Karhan"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Doan Karhan",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1013,
+    "name": "The Book of Ur",
+    "dungeons": [
+      "Shadowfang Keep"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-book-of-ur-1013/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 26,
+    "minLevel": 16,
+    "objectives": [
+      "The Book of Ur"
+    ],
+    "rewards": [
+      {
+        "id": 6335,
+        "name": "Grizzled Boots"
+      },
+      {
+        "id": 4534,
+        "name": "Steel-clasped Bracers"
+      },
+      {
+        "id": 270030,
+        "name": "Tattered Mittens"
+      }
+    ],
+    "people": [
+      "Turned in to: Keeper Bel'dugur"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Keeper Bel'dugur",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1014,
+    "name": "Arugal Must Die",
+    "dungeons": [
+      "Shadowfang Keep"
+    ],
+    "source": "https://wowforevertalents.com/quests/arugal-must-die-1014/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 27,
+    "minLevel": 18,
+    "objectives": [
+      "Head of Arugal"
+    ],
+    "rewards": [
+      {
+        "id": 6414,
+        "name": "Seal of Sylvanas"
+      }
+    ],
+    "people": [
+      "Turned in to: Dalar Dawnweaver"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Dalar Dawnweaver",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 6564,
+    "name": "Allegiance to the Old Gods",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/allegiance-to-the-old-gods-6564/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 17,
+    "objectives": [
+      "Damp Note"
+    ],
+    "rewards": [
+      {
+        "id": 16790,
+        "name": "Damp Note"
+      }
+    ],
+    "people": [
+      "Turned in to: Je'neu Sancrea"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Je'neu Sancrea",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Allegiance to the Old Gods",
+        "id": 6565
+      }
+    ]
+  },
+  {
+    "id": 6563,
+    "name": "The Essence of Aku'Mai",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-essence-of-aku-mai-6563/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 17,
+    "objectives": [
+      "Sapphire of Aku'Mai ×20"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Je'neu Sancrea"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Je'neu Sancrea",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Trouble in the Deeps",
+        "id": 6562
+      }
+    ]
+  },
+  {
+    "id": 6562,
+    "name": "Trouble in the Deeps",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/trouble-in-the-deeps-6562/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 22,
+    "minLevel": 17,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Je'neu Sancrea"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Je'neu Sancrea",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "The Essence of Aku'Mai",
+        "id": 6563
+      }
+    ]
+  },
+  {
+    "id": 971,
+    "name": "Knowledge in the Deeps",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/knowledge-in-the-deeps-971/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 23,
+    "minLevel": 10,
+    "objectives": [
+      "Lorgalis Manuscript"
+    ],
+    "rewards": [
+      {
+        "id": 6743,
+        "name": "Sustaining Ring"
+      }
+    ],
+    "people": [
+      "Turned in to: Gerrig Bonegrip"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Gerrig Bonegrip",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1198,
+    "name": "In Search of Thaelrid",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/in-search-of-thaelrid-1198/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 24,
+    "minLevel": 18,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Argent Guard Thaelrid"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Argent Guard Thaelrid",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Blackfathom Villainy",
+        "id": 1200
+      }
+    ]
+  },
+  {
+    "id": 1275,
+    "name": "Researching the Corruption",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/researching-the-corruption-1275/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 24,
+    "minLevel": 18,
+    "objectives": [
+      "Corrupted Brain Stem ×8"
+    ],
+    "rewards": [
+      {
+        "id": 7003,
+        "name": "Beetle Clasps"
+      },
+      {
+        "id": 7004,
+        "name": "Prelacy Cape"
+      },
+      {
+        "id": 270021,
+        "name": "Staghide Armguards"
+      }
+    ],
+    "people": [
+      "Picked up from: Gershala Nightwhisper"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Gershala Nightwhisper",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "The Corruption Abroad",
+        "id": 3765
+      }
+    ]
+  },
+  {
+    "id": 1199,
+    "name": "Twilight Falls",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/twilight-falls-1199/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 25,
+    "minLevel": 20,
+    "faction": "Alliance",
+    "objectives": [
+      "Twilight Pendant ×10"
+    ],
+    "rewards": [
+      {
+        "id": 6998,
+        "name": "Nimbus Boots"
+      },
+      {
+        "id": 7000,
+        "name": "Heartwood Girdle"
+      },
+      {
+        "id": 270025,
+        "name": "Silvered Gauntlets"
+      }
+    ],
+    "people": [
+      "Turned in to: Argent Guard Manados"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Argent Guard Manados",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 6565,
+    "name": "Allegiance to the Old Gods",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/allegiance-to-the-old-gods-6565/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 26,
+    "minLevel": 17,
+    "objectives": [
+      "Lorgus Jett"
+    ],
+    "rewards": [
+      {
+        "id": 17694,
+        "name": "Band of the Fist"
+      },
+      {
+        "id": 17695,
+        "name": "Chestnut Mantle"
+      }
+    ],
+    "people": [
+      "Turned in to: Je'neu Sancrea"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Je'neu Sancrea",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Allegiance to the Old Gods",
+        "id": 6564
+      }
+    ]
+  },
+  {
+    "id": 1200,
+    "name": "Blackfathom Villainy",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/blackfathom-villainy-1200/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 27,
+    "minLevel": 18,
+    "faction": "Alliance",
+    "objectives": [
+      "Head of Kelris"
+    ],
+    "rewards": [
+      {
+        "id": 7001,
+        "name": "Gravestone Scepter"
+      },
+      {
+        "id": 7002,
+        "name": "Arctic Buckler"
+      },
+      {
+        "id": 270031,
+        "name": "Dark Ritual Leggings"
+      },
+      {
+        "id": 270032,
+        "name": "Cultist's Armguards"
+      }
+    ],
+    "people": [
+      "Turned in to: Dawnwatcher Selgorm"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Dawnwatcher Selgorm",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "In Search of Thaelrid",
+        "id": 1198
+      }
+    ]
+  },
+  {
+    "id": 6561,
+    "name": "Blackfathom Villainy",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/blackfathom-villainy-6561/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 27,
+    "minLevel": 18,
+    "faction": "Horde",
+    "objectives": [
+      "Head of Kelris"
+    ],
+    "rewards": [
+      {
+        "id": 7001,
+        "name": "Gravestone Scepter"
+      },
+      {
+        "id": 7002,
+        "name": "Arctic Buckler"
+      },
+      {
+        "id": 270031,
+        "name": "Dark Ritual Leggings"
+      },
+      {
+        "id": 270032,
+        "name": "Cultist's Armguards"
+      }
+    ],
+    "people": [
+      "Turned in to: Bashana Runetotem"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Bashana Runetotem",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 386,
+    "name": "What Comes Around...",
+    "dungeons": [
+      "Stormwind Stockade"
+    ],
+    "source": "https://wowforevertalents.com/quests/what-comes-around-386/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 25,
+    "minLevel": 22,
+    "objectives": [
+      "Head of Targorr"
+    ],
+    "rewards": [
+      {
+        "id": 3400,
+        "name": "Lucine Longsword"
+      },
+      {
+        "id": 1317,
+        "name": "Hardened Root Staff"
+      },
+      {
+        "id": 270027,
+        "name": "Ursine Hammer"
+      }
+    ],
+    "people": [
+      "Turned in to: Guard Berton"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Guard Berton",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 377,
+    "name": "Crime and Punishment",
+    "dungeons": [
+      "Stormwind Stockade"
+    ],
+    "source": "https://wowforevertalents.com/quests/crime-and-punishment-377/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 26,
+    "minLevel": 22,
+    "objectives": [
+      "Hand of Dextren Ward"
+    ],
+    "rewards": [
+      {
+        "id": 2033,
+        "name": "Ambassador's Boots"
+      },
+      {
+        "id": 2906,
+        "name": "Darkshire Mail Leggings"
+      },
+      {
+        "id": 270029,
+        "name": "Town Clerk's Mittens"
+      }
+    ],
+    "people": [
+      "Picked up from: Councilman Millstipe",
+      "Turned in to: Councilman Millstipe"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Councilman Millstipe",
+        "location": null
+      },
+      {
+        "role": "Turned in to",
+        "name": "Councilman Millstipe",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 387,
+    "name": "Quell the Uprising",
+    "dungeons": [
+      "Stormwind Stockade"
+    ],
+    "source": "https://wowforevertalents.com/quests/quell-the-uprising-387/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 26,
+    "minLevel": 22,
+    "objectives": [
+      "Defias Prisoner ×10",
+      "Defias Convict ×8",
+      "Defias Insurgent ×8"
+    ],
+    "rewards": [],
+    "people": [
+      "Picked up from: Warden Thelwater"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Warden Thelwater",
+        "location": "Stormwind City, Stormwind City (51.5, 69.2)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the WFT Beta Log addon, 2 October 2026"
+    ],
+    "chain": []
+  },
+  {
+    "id": 388,
+    "name": "The Color of Blood",
+    "dungeons": [
+      "Stormwind Stockade"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-color-of-blood-388/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 26,
+    "minLevel": 22,
+    "objectives": [
+      "Red Wool Bandana ×10"
+    ],
+    "rewards": [],
+    "people": [
+      "Picked up from: Nikova Raskol"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Nikova Raskol",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 378,
+    "name": "The Fury Runs Deep",
+    "dungeons": [
+      "Stormwind Stockade"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-fury-runs-deep-378/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 27,
+    "minLevel": 22,
+    "objectives": [
+      "Head of Deepfury"
+    ],
+    "rewards": [
+      {
+        "id": 3562,
+        "name": "Belt of Vindication"
+      },
+      {
+        "id": 1264,
+        "name": "Headbasher"
+      },
+      {
+        "id": 270036,
+        "name": "Magistrate's Pantaloons"
+      }
+    ],
+    "people": [
+      "Picked up from: Motley Garmason"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Motley Garmason",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 391,
+    "name": "The Stockade Riots",
+    "dungeons": [
+      "Stormwind Stockade"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-stockade-riots-391/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 29,
+    "minLevel": 16,
+    "objectives": [
+      "Head of Bazil Thredd"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Warden Thelwater"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Warden Thelwater",
+        "location": "Stormwind City, Stormwind City (51.5, 69.2)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the WFT Beta Log addon, 2 October 2026"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Bazil Thredd",
+        "id": 389
+      },
+      {
+        "role": "Leads to",
+        "name": "The Curious Visitor",
+        "id": 392
+      }
+    ]
+  },
+  {
+    "id": 1221,
+    "name": "Blueleaf Tubers",
+    "dungeons": [
+      "Razorfen Kraul"
+    ],
+    "source": "https://wowforevertalents.com/quests/blueleaf-tubers-1221/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 26,
+    "minLevel": 20,
+    "objectives": [
+      "Blueleaf Tuber ×6",
+      "Crate With Holes",
+      "Snufflenose Owner's Manual",
+      "Snufflenose Command Stick"
+    ],
+    "rewards": [
+      {
+        "id": 6755,
+        "name": "A Small Container of Gems"
+      }
+    ],
+    "people": [
+      "Turned in to: Mebok Mizzyrix"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Mebok Mizzyrix",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1144,
+    "name": "Willix the Importer",
+    "dungeons": [
+      "Razorfen Kraul"
+    ],
+    "source": "https://wowforevertalents.com/quests/willix-the-importer-1144/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 30,
+    "minLevel": 22,
+    "objectives": [],
+    "rewards": [
+      {
+        "id": 6748,
+        "name": "Monkey Ring"
+      },
+      {
+        "id": 6750,
+        "name": "Snake Hoop"
+      },
+      {
+        "id": 6749,
+        "name": "Tiger Band"
+      },
+      {
+        "id": 274078,
+        "name": "Boar Signet"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": []
+  },
+  {
+    "id": 1142,
+    "name": "Mortality Wanes",
+    "dungeons": [
+      "Razorfen Kraul"
+    ],
+    "source": "https://wowforevertalents.com/quests/mortality-wanes-1142/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 30,
+    "minLevel": 25,
+    "objectives": [
+      "Treshala's Pendant"
+    ],
+    "rewards": [
+      {
+        "id": 6751,
+        "name": "Mourning Shawl"
+      },
+      {
+        "id": 6752,
+        "name": "Lancer Boots"
+      },
+      {
+        "id": 270047,
+        "name": "item 270047"
+      }
+    ],
+    "people": [
+      "Turned in to: Treshala Fallowbrook"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Treshala Fallowbrook",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1102,
+    "name": "A Vengeful Fate",
+    "dungeons": [
+      "Razorfen Kraul"
+    ],
+    "source": "https://wowforevertalents.com/quests/a-vengeful-fate-1102/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 34,
+    "minLevel": 29,
+    "objectives": [
+      "Razorflank's Heart"
+    ],
+    "rewards": [
+      {
+        "id": 4197,
+        "name": "Berylline Pads"
+      },
+      {
+        "id": 6742,
+        "name": "Stonefist Girdle"
+      },
+      {
+        "id": 6725,
+        "name": "Marbled Buckler"
+      },
+      {
+        "id": 274084,
+        "name": "Quilboar Blaster"
+      }
+    ],
+    "people": [
+      "Turned in to: Auld Stonespire"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Auld Stonespire",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2922,
+    "name": "Save Techbot's Brain!",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/save-techbot-s-brain-2922/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 26,
+    "minLevel": 20,
+    "objectives": [
+      "Techbot's Memory Core"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Tinkmaster Overspark"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Tinkmaster Overspark",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Tinkmaster Overspark",
+        "id": 2923
+      }
+    ]
+  },
+  {
+    "id": 2923,
+    "name": "Tinkmaster Overspark",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/tinkmaster-overspark-2923/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 26,
+    "minLevel": 20,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Tinkmaster Overspark"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Tinkmaster Overspark",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Save Techbot's Brain!",
+        "id": 2922
+      }
+    ]
+  },
+  {
+    "id": 2926,
+    "name": "Gnogaine",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/gnogaine-2926/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 27,
+    "minLevel": 20,
+    "objectives": [
+      "Full Leaden Collection Phial"
+    ],
+    "rewards": [
+      {
+        "id": 9283,
+        "name": "Empty Leaden Collection Phial"
+      }
+    ],
+    "people": [
+      "Turned in to: Ozzie Togglevolt"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Ozzie Togglevolt",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2927,
+    "name": "The Day After",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-day-after-2927/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 27,
+    "minLevel": 20,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Ozzie Togglevolt"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Ozzie Togglevolt",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2931,
+    "name": "Castpipe's Task",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/castpipe-s-task-2931/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 28,
+    "minLevel": 25,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Master Mechanic Castpipe"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Master Mechanic Castpipe",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Data Rescue",
+        "id": 2930
+      }
+    ]
+  },
+  {
+    "id": 2904,
+    "name": "A Fine Mess",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/a-fine-mess-2904/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 30,
+    "minLevel": 20,
+    "objectives": [],
+    "rewards": [
+      {
+        "id": 9535,
+        "name": "Fire-welded Bracers"
+      },
+      {
+        "id": 9536,
+        "name": "Fairywing Mantle"
+      },
+      {
+        "id": 270042,
+        "name": "Technician's Bracers"
+      }
+    ],
+    "people": [
+      "Turned in to: Scooty"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Scooty",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2928,
+    "name": "Gyrodrillmatic Excavationators",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/gyrodrillmatic-excavationators-2928/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 30,
+    "minLevel": 20,
+    "objectives": [
+      "Robo-mechanical Guts ×24"
+    ],
+    "rewards": [
+      {
+        "id": 9608,
+        "name": "Shoni's Disarming Tool"
+      },
+      {
+        "id": 9609,
+        "name": "Shilly Mitts"
+      },
+      {
+        "id": 270045,
+        "name": "Operator's Gloves"
+      }
+    ],
+    "people": [
+      "Turned in to: Shoni the Shilent"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Shoni the Shilent",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2924,
+    "name": "Essential Artificials",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/essential-artificials-2924/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 30,
+    "minLevel": 24,
+    "objectives": [
+      "Essential Artificial ×12"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Klockmort Spannerspan"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Klockmort Spannerspan",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Klockmort's Essentials",
+        "id": 2925
+      }
+    ]
+  },
+  {
+    "id": 2925,
+    "name": "Klockmort's Essentials",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/klockmort-s-essentials-2925/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 30,
+    "minLevel": 24,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Klockmort Spannerspan"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Klockmort Spannerspan",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Essential Artificials",
+        "id": 2924
+      }
+    ]
+  },
+  {
+    "id": 2930,
+    "name": "Data Rescue",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/data-rescue-2930/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 30,
+    "minLevel": 25,
+    "objectives": [
+      "Prismatic Punch Card"
+    ],
+    "rewards": [
+      {
+        "id": 9605,
+        "name": "Repairman's Cape"
+      },
+      {
+        "id": 9604,
+        "name": "Mechanic's Pipehammer"
+      }
+    ],
+    "people": [
+      "Turned in to: Master Mechanic Castpipe"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Master Mechanic Castpipe",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Castpipe's Task",
+        "id": 2931
+      }
+    ]
+  },
+  {
+    "id": 2951,
+    "name": "The Sparklematic 5200!",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-sparklematic-5200-2951/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 30,
+    "minLevel": 25,
+    "objectives": [
+      "Grime-Encrusted Object"
+    ],
+    "rewards": [],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": []
+  },
+  {
+    "id": 2842,
+    "name": "Chief Engineer Scooty",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/chief-engineer-scooty-2842/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 35,
+    "minLevel": 20,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Scooty"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Scooty",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Gnomer-gooooone!",
+        "id": 2843
+      }
+    ]
+  },
+  {
+    "id": 2843,
+    "name": "Gnomer-gooooone!",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/gnomer-gooooone-2843/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 35,
+    "minLevel": 20,
+    "objectives": [],
+    "rewards": [
+      {
+        "id": 9173,
+        "name": "Goblin Transponder"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Chief Engineer Scooty",
+        "id": 2842
+      }
+    ]
+  },
+  {
+    "id": 2841,
+    "name": "Rig Wars",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/rig-wars-2841/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 35,
+    "minLevel": 25,
+    "objectives": [
+      "Rig Blueprints",
+      "Thermaplugg's Safe Combination"
+    ],
+    "rewards": [
+      {
+        "id": 9623,
+        "name": "Civinad Robes"
+      },
+      {
+        "id": 9624,
+        "name": "Triprunner Dungarees"
+      },
+      {
+        "id": 9625,
+        "name": "Dual Reinforced Leggings"
+      }
+    ],
+    "people": [
+      "Turned in to: Nogg"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Nogg",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2929,
+    "name": "The Grand Betrayal",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-grand-betrayal-2929/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 35,
+    "minLevel": 25,
+    "objectives": [
+      "Mekgineer Thermaplugg"
+    ],
+    "rewards": [
+      {
+        "id": 9623,
+        "name": "Civinad Robes"
+      },
+      {
+        "id": 9624,
+        "name": "Triprunner Dungarees"
+      },
+      {
+        "id": 9625,
+        "name": "Dual Reinforced Leggings"
+      }
+    ],
+    "people": [
+      "Turned in to: High Tinker Mekkatorque"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "High Tinker Mekkatorque",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 98815,
+    "name": "Highland Hides",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/highland-hides-98815/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 28,
+    "minLevel": 24,
+    "objectives": [
+      "Thicket Raptor Hide ×4"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: James Halloran"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "James Halloran",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Young Crocolisk Skins",
+        "id": 484
+      }
+    ]
+  },
+  {
+    "id": 95697,
+    "name": "Changing Tastes",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/changing-tastes-95697/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "faction": "Horde",
+    "objectives": [
+      "Thicket Raptor Meat ×4"
+    ],
+    "rewards": [
+      {
+        "id": 280766,
+        "name": "Satchel of Potions"
+      },
+      {
+        "id": 280805,
+        "name": "Serrated Raptor Claw"
+      },
+      {
+        "id": 250185,
+        "name": "Recipe: Twice-Spiced Raptor Slice"
+      },
+      {
+        "id": 250077,
+        "name": "Twice-Spiced Raptor Slice ×5"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": []
+  },
+  {
+    "id": 95663,
+    "name": "Dragonmaw Rumors",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "objectives": [],
+    "rewards": [],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Open the Maw",
+        "id": 95682
+      }
+    ]
+  },
+  {
+    "id": 98823,
+    "name": "Earthen Echo",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/earthen-echo-98823/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "faction": "Horde",
+    "objectives": [
+      "Titan Relic"
+    ],
+    "rewards": [
+      {
+        "id": 271766,
+        "name": "Heavehammer"
+      },
+      {
+        "id": 271767,
+        "name": "Healer's Staff"
+      },
+      {
+        "id": 271719,
+        "name": "Furs of the Earthen Ring"
+      }
+    ],
+    "people": [
+      "Turned in to: Muln Earthfury"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Muln Earthfury",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Elder Knowledge",
+        "id": 95664
+      }
+    ]
+  },
+  {
+    "id": 95664,
+    "name": "Elder Knowledge",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/elder-knowledge-95664/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "faction": "Horde",
+    "objectives": [
+      "Titan Relic"
+    ],
+    "rewards": [],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Earthen Echo",
+        "id": 98823
+      }
+    ]
+  },
+  {
+    "id": 95795,
+    "name": "Fallen in the Fen",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "objectives": [],
+    "rewards": [
+      {
+        "id": 271769,
+        "name": "Daewyn's Girdle"
+      },
+      {
+        "id": 271768,
+        "name": "Songblade Stabilizer"
+      }
+    ],
+    "people": [
+      "Turned in to: Dorin Songblade"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Dorin Songblade",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 95809,
+    "name": "Heartwoven",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/heartwoven-95809/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "faction": "Alliance",
+    "objectives": [
+      "Reed-woven Heart"
+    ],
+    "rewards": [
+      {
+        "id": 270901,
+        "name": "Reed-woven Heart"
+      },
+      {
+        "id": 1710,
+        "name": "Greater Healing Potion ×4"
+      },
+      {
+        "id": 3827,
+        "name": "Mana Potion ×4"
+      },
+      {
+        "id": 2459,
+        "name": "Swiftness Potion"
+      },
+      {
+        "id": 280766,
+        "name": "Satchel of Potions"
+      }
+    ],
+    "people": [
+      "Turned in to: Caitlin Grassman"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Caitlin Grassman",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Lost in the Thicket Things",
+        "id": 95647
+      }
+    ]
+  },
+  {
+    "id": 95646,
+    "name": "Horrors in the Highland",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/horrors-in-the-highland-95646/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "faction": "Alliance",
+    "objectives": [
+      "Horrible Rootcore"
+    ],
+    "rewards": [
+      {
+        "id": 271667,
+        "name": "Ironwood Destroyer"
+      },
+      {
+        "id": 271670,
+        "name": "Curl of Life"
+      },
+      {
+        "id": 271664,
+        "name": "Hornbeam Heft"
+      }
+    ],
+    "people": [
+      "Turned in to: Rethiel the Greenwarden"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Rethiel the Greenwarden",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 95647,
+    "name": "Lost in the Thicket Things",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/lost-in-the-thicket-things-95647/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "faction": "Alliance",
+    "objectives": [
+      "Learn what happened to Ardin Grassman"
+    ],
+    "rewards": [],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Heartwoven",
+        "id": 95809
+      }
+    ]
+  },
+  {
+    "id": 95810,
+    "name": "Lost Relic Carry",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/lost-relic-carry-95810/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "faction": "Alliance",
+    "objectives": [
+      "Titan Relic"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Prospector Whelgar"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Prospector Whelgar",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Prehistoric Prism",
+        "id": 98824
+      }
+    ]
+  },
+  {
+    "id": 95682,
+    "name": "Open the Maw",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/open-the-maw-95682/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "objectives": [
+      "Dragonmaw Saboteur ×2",
+      "Dragonmaw Warder ×4",
+      "Dragonmaw Dispatch"
+    ],
+    "rewards": [
+      {
+        "id": 271740,
+        "name": "Knife-Polishing Rag"
+      },
+      {
+        "id": 271732,
+        "name": "Dirt-Heavy Bracers"
+      },
+      {
+        "id": 271745,
+        "name": "Bloody Map"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Dragonmaw Rumors",
+        "id": 95663
+      }
+    ]
+  },
+  {
+    "id": 98824,
+    "name": "Prehistoric Prism",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/prehistoric-prism-98824/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "faction": "Alliance",
+    "objectives": [
+      "Titan Relic"
+    ],
+    "rewards": [
+      {
+        "id": 271716,
+        "name": "Explorer's League Dustcover"
+      },
+      {
+        "id": 271767,
+        "name": "Healer's Staff"
+      },
+      {
+        "id": 271766,
+        "name": "Heavehammer"
+      }
+    ],
+    "people": [
+      "Turned in to: High Explorer Magellas"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "High Explorer Magellas",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Lost Relic Carry",
+        "id": 95810
+      }
+    ]
+  },
+  {
+    "id": 95737,
+    "name": "Seeking Caitlin",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/seeking-caitlin-95737/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Caitlin Grassman"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Caitlin Grassman",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 95772,
+    "name": "Songblade Search",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "source": "https://wowforevertalents.com/quests/songblade-search-95772/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 31,
+    "minLevel": 24,
+    "objectives": [],
+    "rewards": [],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": []
+  },
+  {
+    "id": 1051,
+    "name": "Vorrel's Revenge",
+    "dungeons": [
+      "Scarlet Monastery"
+    ],
+    "source": "https://wowforevertalents.com/quests/vorrel-s-revenge-1051/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 33,
+    "minLevel": 25,
+    "objectives": [
+      "Vorrel's Wedding Ring"
+    ],
+    "rewards": [
+      {
+        "id": 7750,
+        "name": "Mantle of Woe"
+      },
+      {
+        "id": 4643,
+        "name": "Grimsteel Cape"
+      },
+      {
+        "id": 7751,
+        "name": "Vorrel's Boots"
+      }
+    ],
+    "people": [
+      "Turned in to: Monika Sengutz"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Monika Sengutz",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1160,
+    "name": "Test of Lore",
+    "dungeons": [
+      "Scarlet Monastery"
+    ],
+    "source": "https://wowforevertalents.com/quests/test-of-lore-1160/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 36,
+    "minLevel": 26,
+    "objectives": [
+      "Beginnings of the Undead Threat"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Parqual Fintallas"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Parqual Fintallas",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Test of Lore",
+        "id": 1159
+      },
+      {
+        "role": "Leads to",
+        "name": "Quest #6628"
+      }
+    ]
+  },
+  {
+    "id": 1049,
+    "name": "Compendium of the Fallen",
+    "dungeons": [
+      "Scarlet Monastery"
+    ],
+    "source": "https://wowforevertalents.com/quests/compendium-of-the-fallen-1049/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 38,
+    "minLevel": 28,
+    "faction": "Horde",
+    "objectives": [
+      "Compendium of the Fallen"
+    ],
+    "rewards": [
+      {
+        "id": 7747,
+        "name": "Vile Protector"
+      },
+      {
+        "id": 17508,
+        "name": "Forcestone Buckler"
+      },
+      {
+        "id": 7749,
+        "name": "Omega Orb"
+      }
+    ],
+    "people": [
+      "Turned in to: Sage Truthseeker"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Sage Truthseeker",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1050,
+    "name": "Mythology of the Titans",
+    "dungeons": [
+      "Scarlet Monastery"
+    ],
+    "source": "https://wowforevertalents.com/quests/mythology-of-the-titans-1050/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-02",
+    "level": 38,
+    "minLevel": 28,
+    "objectives": [
+      "Mythology of the Titans"
+    ],
+    "rewards": [
+      {
+        "id": 7746,
+        "name": "Explorers' League Commendation"
+      }
+    ],
+    "people": [
+      "Turned in to: Librarian Mae Paledust"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Librarian Mae Paledust",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+    ],
+    "chain": []
+  }
+]

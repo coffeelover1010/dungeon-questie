@@ -1,0 +1,98 @@
+{
+  "5723": {
+    "pin": {
+      "map": 1456,
+      "x": 70.8,
+      "y": 31.6,
+      "zone": "Thunder Bluff",
+      "title": "Rahauro"
+    },
+    "pickup": "Rahauro - Thunder Bluff, Elder Rise (70.8, 31.6)",
+    "locationSource": "https://wowforevertalents.com/quests/testing-an-enemy-s-strength-5723/",
+    "locationEvidence": "Website-reported beta pickup coordinates"
+  },
+  "5728": {
+    "pin": {
+      "map": 1454,
+      "x": 31.7,
+      "y": 38.0,
+      "zone": "Orgrimmar",
+      "title": "Thrall"
+    },
+    "pickup": "Thrall - Orgrimmar, Grommash Hold (31.7, 38.0)",
+    "locationSource": "https://wowforevertalents.com/quests/hidden-enemies-5728/",
+    "locationEvidence": "Website-reported beta pickup coordinates"
+  },
+  "5722": {
+    "pin": {
+      "map": 1456,
+      "x": 70.8,
+      "y": 31.6,
+      "zone": "Thunder Bluff",
+      "title": "Rahauro"
+    },
+    "pickup": "Rahauro - Thunder Bluff, Elder Rise (70.8, 31.6)",
+    "locationSource": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
+    "locationEvidence": "Website-reported beta pickup coordinates"
+  },
+  "5761": {
+    "pin": {
+      "map": 1454,
+      "x": 49.5,
+      "y": 50.4,
+      "zone": "Orgrimmar",
+      "title": "Neeru Fireblade"
+    },
+    "pickup": "Neeru Fireblade - Orgrimmar, Cleft of Shadow (49.5, 50.4)",
+    "locationSource": "https://wowforevertalents.com/quests/slaying-the-beast-5761/",
+    "locationEvidence": "Website-reported beta pickup coordinates"
+  },
+  "5725": {
+    "pin": {
+      "map": 1458,
+      "x": 56.4,
+      "y": 92.6,
+      "zone": "Undercity",
+      "title": "Varimathras"
+    },
+    "pickup": "Varimathras - Undercity, Royal Quarter (56.4, 92.6)",
+    "locationSource": "https://wowforevertalents.com/quests/the-power-to-destroy-5725/",
+    "locationEvidence": "Website-reported beta pickup coordinates"
+  },
+  "92401": {
+    "pin": {
+      "map": 1421,
+      "x": 44.5,
+      "y": 43.0,
+      "zone": "Silverpine Forest",
+      "title": "Tabitha Heartweaver"
+    },
+    "pickup": "Tabitha Heartweaver - Silverpine Forest, The Sepulcher (44.5, 43.0)",
+    "locationSource": "https://wowforevertalents.com/quests/a-frightened-request-92401/",
+    "locationEvidence": "Website-reported beta pickup coordinates"
+  },
+  "166": {
+    "pin": {
+      "map": 1436,
+      "x": 56.4,
+      "y": 47.5,
+      "zone": "Westfall",
+      "title": "Gryan Stoutmantle"
+    },
+    "pickup": "Gryan Stoutmantle - Sentinel Tower (56.4, 47.5)",
+    "locationSource": "https://wowforevertalents.com/quests/the-defias-brotherhood-166/",
+    "locationEvidence": "Website-reported beta pickup coordinates"
+  },
+  "387": {
+    "pin": {
+      "map": 1453,
+      "x": 51.5,
+      "y": 69.2,
+      "zone": "Stormwind City",
+      "title": "Warden Thelwater"
+    },
+    "pickup": "Warden Thelwater - Stormwind City, Stormwind City (51.5, 69.2)",
+    "locationSource": "https://wowforevertalents.com/quests/quell-the-uprising-387/",
+    "locationEvidence": "Website-reported beta pickup coordinates"
+  }
+}

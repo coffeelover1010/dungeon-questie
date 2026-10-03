@@ -1,0 +1,197 @@
+{
+  "reason": "Cache records exist, but City of Dalaran is reported unavailable in the October 1 build. Recheck availability before adding to the preparation list.",
+  "source": "https://www.icy-veins.com/wow-forever/news/this-is-the-only-new-dungeon-you-can-run-in-this-weeks-wow-forever-build/",
+  "checked": "2026-10-02",
+  "quests": [
+    {
+      "id": 92456,
+      "name": "A Green Sample",
+      "dungeons": [
+        "City of Dalaran"
+      ],
+      "source": "https://wowforevertalents.com/quests/a-green-sample-92456/",
+      "evidence": "Beta cache report",
+      "checked": "2026-10-02",
+      "level": 33,
+      "minLevel": 24,
+      "faction": "Alliance",
+      "objectives": [
+        "Fel Infused Blossom"
+      ],
+      "rewards": [
+        {
+          "id": 279835,
+          "name": "Vine Pruner's Cloak"
+        },
+        {
+          "id": 279836,
+          "name": "Thorn Protecting Girdle"
+        }
+      ],
+      "people": [
+        "Picked up from: Shylamiir"
+      ],
+      "personEvidence": [
+        {
+          "role": "Picked up from",
+          "name": "Shylamiir",
+          "location": null
+        }
+      ],
+      "sourceDetails": [
+        "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      ],
+      "chain": []
+    },
+    {
+      "id": 96987,
+      "name": "Opportunistic Education",
+      "dungeons": [
+        "City of Dalaran"
+      ],
+      "source": "https://wowforevertalents.com/quests/opportunistic-education-96987/",
+      "evidence": "Beta cache report",
+      "checked": "2026-10-02",
+      "level": 33,
+      "minLevel": 24,
+      "faction": "Horde",
+      "objectives": [
+        "The Founding of Dalaran"
+      ],
+      "rewards": [
+        {
+          "id": 279845,
+          "name": "item 279845"
+        },
+        {
+          "id": 279846,
+          "name": "item 279846"
+        }
+      ],
+      "people": [],
+      "personEvidence": [],
+      "sourceDetails": [],
+      "chain": []
+    },
+    {
+      "id": 92489,
+      "name": "Power Overwhelming",
+      "dungeons": [
+        "City of Dalaran"
+      ],
+      "source": "https://wowforevertalents.com/quests/power-overwhelming-92489/",
+      "evidence": "Beta cache report",
+      "checked": "2026-10-02",
+      "level": 33,
+      "minLevel": 24,
+      "faction": "Alliance",
+      "objectives": [
+        "Arcanic Enigma"
+      ],
+      "rewards": [
+        {
+          "id": 251962,
+          "name": "Violet Sash"
+        },
+        {
+          "id": 279849,
+          "name": "Runebound Gloves"
+        }
+      ],
+      "people": [
+        "Picked up from: High Sorcerer Andromath"
+      ],
+      "personEvidence": [
+        {
+          "role": "Picked up from",
+          "name": "High Sorcerer Andromath",
+          "location": null
+        }
+      ],
+      "sourceDetails": [
+        "Source: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170)"
+      ],
+      "chain": []
+    },
+    {
+      "id": 96988,
+      "name": "Source of Power",
+      "dungeons": [
+        "City of Dalaran"
+      ],
+      "source": "https://wowforevertalents.com/quests/source-of-power-96988/",
+      "evidence": "Beta cache report",
+      "checked": "2026-10-02",
+      "level": 33,
+      "minLevel": 24,
+      "faction": "Horde",
+      "objectives": [
+        "Cracked Sentry Core ×6"
+      ],
+      "rewards": [
+        {
+          "id": 279847,
+          "name": "Unstable Power Core"
+        },
+        {
+          "id": 279848,
+          "name": "Construct Cloak"
+        }
+      ],
+      "people": [
+        "Picked up from: Doctor Martin Felben"
+      ],
+      "personEvidence": [
+        {
+          "role": "Picked up from",
+          "name": "Doctor Martin Felben",
+          "location": null
+        }
+      ],
+      "sourceDetails": [
+        "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      ],
+      "chain": []
+    },
+    {
+      "id": 96986,
+      "name": "The Grave Knight",
+      "dungeons": [
+        "City of Dalaran"
+      ],
+      "source": "https://wowforevertalents.com/quests/the-grave-knight-96986/",
+      "evidence": "Beta cache report",
+      "checked": "2026-10-02",
+      "level": 33,
+      "minLevel": 24,
+      "faction": "Horde",
+      "objectives": [
+        "Atrexis the Grave Knight"
+      ],
+      "rewards": [
+        {
+          "id": 251963,
+          "name": "Gravewalker Boots"
+        },
+        {
+          "id": 251965,
+          "name": "Undead Knight's Bracers"
+        }
+      ],
+      "people": [
+        "Picked up from: Melisara"
+      ],
+      "personEvidence": [
+        {
+          "role": "Picked up from",
+          "name": "Melisara",
+          "location": null
+        }
+      ],
+      "sourceDetails": [
+        "Source: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170)"
+      ],
+      "chain": []
+    }
+  ]
+}

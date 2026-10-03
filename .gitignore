@@ -1,0 +1,6 @@
+/research/
+__pycache__/
+*.pyc
+/dist/
+/PUBLICATION-REVIEW.md
+/DEVELOPMENT.md

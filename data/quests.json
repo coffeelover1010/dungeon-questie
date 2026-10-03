@@ -1,0 +1,1970 @@
+[
+  {
+    "id": 5723,
+    "name": "Testing an Enemy's Strength",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/testing-an-enemy-s-strength-5723/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 15,
+    "minLevel": 9,
+    "objectives": [
+      "Ragefire Trogg ×8",
+      "Ragefire Shaman ×8"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Rahauro"
+    ],
+    "chain": []
+  },
+  {
+    "id": 5728,
+    "name": "Hidden Enemies",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/hidden-enemies-5728/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [
+      "Bazzalan",
+      "Jergosh the Invoker"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Thrall"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Hidden Enemies",
+        "id": 5727
+      },
+      {
+        "role": "Leads to",
+        "name": "Hidden Enemies",
+        "id": 5729
+      }
+    ]
+  },
+  {
+    "id": 5724,
+    "name": "Returning the Lost Satchel",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/returning-the-lost-satchel-5724/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [
+      "Grimtotem Satchel"
+    ],
+    "rewards": [
+      {
+        "id": 14381,
+        "name": "Grimtotem Satchel"
+      },
+      {
+        "id": 15452,
+        "name": "Featherbead Bracers"
+      },
+      {
+        "id": 15453,
+        "name": "Savannah Bracers"
+      },
+      {
+        "id": 270003,
+        "name": "Garrison Cuffs"
+      }
+    ],
+    "people": [
+      "Turned in to: Rahauro"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Searching for the Lost Satchel",
+        "id": 5722
+      }
+    ]
+  },
+  {
+    "id": 5722,
+    "name": "Searching for the Lost Satchel",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [],
+    "rewards": [],
+    "people": [],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Returning the Lost Satchel",
+        "id": 5724
+      }
+    ]
+  },
+  {
+    "id": 5761,
+    "name": "Slaying the Beast",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/slaying-the-beast-5761/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [
+      "Taragaman the Hungerer's Heart"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Neeru Fireblade"
+    ],
+    "chain": []
+  },
+  {
+    "id": 5725,
+    "name": "The Power to Destroy...",
+    "dungeons": [
+      "Ragefire Chasm"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-power-to-destroy-5725/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [
+      "Spells of Shadow",
+      "Incantations from the Nether"
+    ],
+    "rewards": [
+      {
+        "id": 15449,
+        "name": "Ghastly Trousers"
+      },
+      {
+        "id": 15450,
+        "name": "Dredgemire Leggings"
+      },
+      {
+        "id": 15451,
+        "name": "Gargoyle Leggings"
+      }
+    ],
+    "people": [
+      "Turned in to: Varimathras"
+    ],
+    "chain": []
+  },
+  {
+    "id": 96395,
+    "name": "An Ancient Grudge",
+    "dungeons": [
+      "The Hall of Thanes"
+    ],
+    "source": "https://wowforevertalents.com/quests/an-ancient-grudge-96395/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 15,
+    "minLevel": 10,
+    "objectives": [
+      "Faldrim Anvilmar"
+    ],
+    "rewards": [
+      {
+        "id": 279899,
+        "name": "Catacomb Cloak"
+      },
+      {
+        "id": 279900,
+        "name": "Deepgrave Trousers"
+      }
+    ],
+    "people": [],
+    "chain": []
+  },
+  {
+    "id": 96403,
+    "name": "Important Heirlooms",
+    "dungeons": [
+      "The Hall of Thanes"
+    ],
+    "source": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 15,
+    "minLevel": 10,
+    "objectives": [
+      "Dwarven Heirloom ×8"
+    ],
+    "rewards": [
+      {
+        "id": 279898,
+        "name": "Dwarven Tome"
+      },
+      {
+        "id": 280096,
+        "name": "Tomb Robber's Gloves"
+      }
+    ],
+    "people": [],
+    "chain": []
+  },
+  {
+    "id": 96394,
+    "name": "The Restless Dead",
+    "dungeons": [
+      "The Hall of Thanes"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 15,
+    "minLevel": 10,
+    "faction": "Alliance",
+    "objectives": [
+      "Enraged Apparition ×15",
+      "Tormented Soul ×10"
+    ],
+    "rewards": [
+      {
+        "id": 279897,
+        "name": "Dusty Belt"
+      },
+      {
+        "id": 280095,
+        "name": "Cryptwalker Bracers"
+      }
+    ],
+    "people": [],
+    "chain": []
+  },
+  {
+    "id": 96393,
+    "name": "Old Ironforge Incursion",
+    "dungeons": [
+      "The Hall of Thanes"
+    ],
+    "source": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 16,
+    "minLevel": 9,
+    "objectives": [
+      "Durgen Dirgehammer's Head"
+    ],
+    "rewards": [
+      {
+        "id": 279894,
+        "name": "Calibrated Blunderbuss"
+      },
+      {
+        "id": 279895,
+        "name": "Ironforge Greathammer"
+      },
+      {
+        "id": 279896,
+        "name": "Deepblaze"
+      }
+    ],
+    "people": [
+      "Turned in to: King Magni Bronzebeard"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Underground Map"
+      }
+    ]
+  },
+  {
+    "id": 95250,
+    "name": "Abominable Creatures",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/abominable-creatures-95250/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 21,
+    "minLevel": 16,
+    "faction": "Alliance",
+    "objectives": [
+      "Head of the Baron"
+    ],
+    "rewards": [
+      {
+        "id": 279864,
+        "name": "Monstrous Cleaver"
+      },
+      {
+        "id": 279865,
+        "name": "Grave Shroud"
+      },
+      {
+        "id": 279867,
+        "name": "Slain Baron's Signet"
+      }
+    ],
+    "people": [
+      "Turned in to: Captain Truman"
+    ],
+    "chain": []
+  },
+  {
+    "id": 97288,
+    "name": "Unending Torment",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/unending-torment-97288/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 21,
+    "minLevel": 16,
+    "faction": "Horde",
+    "objectives": [
+      "Abominable Head"
+    ],
+    "rewards": [
+      {
+        "id": 280438,
+        "name": "Abominable Head"
+      }
+    ],
+    "people": [],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Unending Torment"
+      }
+    ]
+  },
+  {
+    "id": 92401,
+    "name": "A Frightened Request",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/a-frightened-request-92401/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 15,
+    "faction": "Horde",
+    "objectives": [
+      "Investigate the disappearance of Edward Heartweaver in the Ruins of Lordaeron."
+    ],
+    "rewards": [
+      {
+        "id": 251485,
+        "name": "Edwards' Knife"
+      },
+      {
+        "id": 251486,
+        "name": "Tabitha's Cuffs"
+      }
+    ],
+    "people": [],
+    "chain": []
+  },
+  {
+    "id": 92421,
+    "name": "Light's Justice",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/light-s-justice-92421/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 15,
+    "faction": "Horde",
+    "objectives": [
+      "Intact Limbs ×25"
+    ],
+    "rewards": [
+      {
+        "id": 279874,
+        "name": "The Stitcher"
+      },
+      {
+        "id": 279875,
+        "name": "Spare Part Bindings"
+      }
+    ],
+    "people": [
+      "Picked up from: Morbin Lightbane"
+    ],
+    "chain": []
+  },
+  {
+    "id": 92415,
+    "name": "Remember That I Love You",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/remember-that-i-love-you-92415/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 15,
+    "faction": "Alliance",
+    "objectives": [
+      "Blood-Stained Letter"
+    ],
+    "rewards": [
+      {
+        "id": 251522,
+        "name": "Blood-Stained Letter"
+      }
+    ],
+    "people": [
+      "Turned in to: Orphan Matron Nightingale"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Remember That I Love You"
+      }
+    ]
+  },
+  {
+    "id": 92422,
+    "name": "The Wrath of Rath'mael",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-wrath-of-rath-mael-92422/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 15,
+    "objectives": [
+      "Rath'mael"
+    ],
+    "rewards": [
+      {
+        "id": 251533,
+        "name": "Forsaken Greataxe"
+      },
+      {
+        "id": 251534,
+        "name": "Gnarled Necromancer's Staff"
+      }
+    ],
+    "people": [
+      "Picked up from: Deathguard Kristof"
+    ],
+    "chain": []
+  },
+  {
+    "id": 95195,
+    "name": "Bloodied Insignia",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/bloodied-insignia-95195/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 16,
+    "faction": "Alliance",
+    "objectives": [
+      "Bloodied Insignia ×10"
+    ],
+    "rewards": [
+      {
+        "id": 268540,
+        "name": "Bloodied Insignia"
+      },
+      {
+        "id": 279868,
+        "name": "Duty Bound Leggings"
+      },
+      {
+        "id": 279869,
+        "name": "Remembrance Armor"
+      }
+    ],
+    "people": [
+      "Turned in to: General Marcus Jonathan"
+    ],
+    "chain": []
+  },
+  {
+    "id": 95189,
+    "name": "Crest of Lordaeron",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95189/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 16,
+    "faction": "Alliance",
+    "objectives": [
+      "Crest of Lordaeron"
+    ],
+    "rewards": [
+      {
+        "id": 268579,
+        "name": "Crest of Lordaeron"
+      },
+      {
+        "id": 280567,
+        "name": "Small Sack of Gems"
+      }
+    ],
+    "people": [
+      "Turned in to: Lady Dena Kennedy"
+    ],
+    "chain": []
+  },
+  {
+    "id": 95204,
+    "name": "Crest of Lordaeron",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95204/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 16,
+    "objectives": [
+      "Crest of Lordaeron"
+    ],
+    "rewards": [
+      {
+        "id": 275521,
+        "name": "Crest of Lordaeron"
+      },
+      {
+        "id": 280567,
+        "name": "Small Sack of Gems"
+      }
+    ],
+    "people": [
+      "Turned in to: Oran Snakewrithe"
+    ],
+    "chain": []
+  },
+  {
+    "id": 95216,
+    "name": "The New Plague",
+    "dungeons": [
+      "Ruins of Lordaeron"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-new-plague-95216/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 16,
+    "faction": "Horde",
+    "objectives": [
+      "Highly Toxic Strain"
+    ],
+    "rewards": [
+      {
+        "id": 279876,
+        "name": "Plaguefang"
+      },
+      {
+        "id": 279877,
+        "name": "Blight Gloves"
+      }
+    ],
+    "people": [
+      "Picked up from: Theodore Griffs"
+    ],
+    "chain": []
+  },
+  {
+    "id": 214,
+    "name": "Red Silk Bandanas",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/red-silk-bandanas-214/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 17,
+    "minLevel": 14,
+    "objectives": [
+      "Red Silk Bandana ×10"
+    ],
+    "rewards": [
+      {
+        "id": 2074,
+        "name": "Solid Shortblade"
+      },
+      {
+        "id": 2089,
+        "name": "Scrimshaw Dagger"
+      },
+      {
+        "id": 6094,
+        "name": "Piercing Axe"
+      },
+      {
+        "id": 270005,
+        "name": "Monastic Hammer"
+      }
+    ],
+    "people": [
+      "Picked up from: Scout Riell",
+      "Turned in to: Scout Riell"
+    ],
+    "chain": []
+  },
+  {
+    "id": 92753,
+    "name": "Destruction in Deadmines",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/destruction-in-deadmines-92753/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 18,
+    "minLevel": 9,
+    "faction": "Alliance",
+    "objectives": [
+      "Explosives placed",
+      "Extra-Destructive Explosives"
+    ],
+    "rewards": [
+      {
+        "id": 254553,
+        "name": "Extra-Destructive Explosives"
+      }
+    ],
+    "people": [
+      "Turned in to: Alba Fairmoon"
+    ],
+    "chain": []
+  },
+  {
+    "id": 168,
+    "name": "Collecting Memories",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/collecting-memories-168/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 18,
+    "minLevel": 14,
+    "objectives": [
+      "Miners' Union Card ×4"
+    ],
+    "rewards": [
+      {
+        "id": 2037,
+        "name": "Tunneler's Boots"
+      },
+      {
+        "id": 2036,
+        "name": "Dusty Mining Gloves"
+      },
+      {
+        "id": 270007,
+        "name": "Worn Miner's Waistcord"
+      }
+    ],
+    "people": [
+      "Turned in to: Wilder Thistlenettle"
+    ],
+    "chain": []
+  },
+  {
+    "id": 167,
+    "name": "Oh Brother...",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/oh-brother-167/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 20,
+    "minLevel": 15,
+    "objectives": [
+      "Thistlenettle's Badge"
+    ],
+    "rewards": [
+      {
+        "id": 1893,
+        "name": "Miner's Revenge"
+      },
+      {
+        "id": 270012,
+        "name": "Miner's Workgloves"
+      },
+      {
+        "id": 270013,
+        "name": "Miner's Workboots"
+      }
+    ],
+    "people": [
+      "Turned in to: Wilder Thistlenettle"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2040,
+    "name": "Underground Assault",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/underground-assault-2040/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 20,
+    "minLevel": 15,
+    "objectives": [
+      "Gnoam Sprecklesprocket"
+    ],
+    "rewards": [
+      {
+        "id": 7606,
+        "name": "Polar Gauntlets"
+      },
+      {
+        "id": 7607,
+        "name": "Sable Wand"
+      },
+      {
+        "id": 270015,
+        "name": "Bravo's Armbands"
+      },
+      {
+        "id": 270016,
+        "name": "Dreamer's Leggings"
+      }
+    ],
+    "people": [
+      "Turned in to: Shoni the Shilent"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Speak with Shoni",
+        "id": 2041
+      }
+    ]
+  },
+  {
+    "id": 166,
+    "name": "The Defias Brotherhood",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-defias-brotherhood-166/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 14,
+    "objectives": [
+      "Head of VanCleef"
+    ],
+    "rewards": [
+      {
+        "id": 6087,
+        "name": "Chausses of Westfall"
+      },
+      {
+        "id": 2041,
+        "name": "Tunic of Westfall"
+      },
+      {
+        "id": 2042,
+        "name": "Staff of Westfall"
+      }
+    ],
+    "people": [
+      "Picked up from: Gryan Stoutmantle",
+      "Turned in to: Gryan Stoutmantle"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "The Defias Brotherhood",
+        "id": 155
+      }
+    ]
+  },
+  {
+    "id": 373,
+    "name": "The Unsent Letter",
+    "dungeons": [
+      "Deadmines"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-unsent-letter-373/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 16,
+    "faction": "Alliance",
+    "objectives": [
+      "An Unsent Letter"
+    ],
+    "rewards": [
+      {
+        "id": 2874,
+        "name": "An Unsent Letter"
+      }
+    ],
+    "people": [
+      "Turned in to: Baros Alexston"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Bazil Thredd",
+        "id": 389
+      }
+    ]
+  },
+  {
+    "id": 1489,
+    "name": "Hamuul Runetotem",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/hamuul-runetotem-1489/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 16,
+    "minLevel": 10,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Hamuul Runetotem"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Nara Wildmane",
+        "id": 1490
+      }
+    ]
+  },
+  {
+    "id": 1490,
+    "name": "Nara Wildmane",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/nara-wildmane-1490/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 16,
+    "minLevel": 10,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Nara Wildmane"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Hamuul Runetotem",
+        "id": 1489
+      },
+      {
+        "role": "Leads to",
+        "name": "Leaders of the Fang",
+        "id": 914
+      }
+    ]
+  },
+  {
+    "id": 1486,
+    "name": "Deviate Hides",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/deviate-hides-1486/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 17,
+    "minLevel": 13,
+    "objectives": [
+      "Deviate Hide ×20"
+    ],
+    "rewards": [
+      {
+        "id": 918,
+        "name": "Deviate Hide Pack"
+      },
+      {
+        "id": 6480,
+        "name": "Slick Deviate Leggings"
+      }
+    ],
+    "people": [
+      "Picked up from: Nalpak"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1491,
+    "name": "Smart Drinks",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/smart-drinks-1491/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 18,
+    "minLevel": 13,
+    "objectives": [
+      "Wailing Essence ×6"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Mebok Mizzyrix"
+    ],
+    "chain": []
+  },
+  {
+    "id": 962,
+    "name": "Serpentbloom",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/serpentbloom-962/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 18,
+    "minLevel": 14,
+    "objectives": [
+      "Serpentbloom ×10"
+    ],
+    "rewards": [
+      {
+        "id": 10919,
+        "name": "Apothecary Gloves"
+      },
+      {
+        "id": 270008,
+        "name": "Heat Resistant Mitts"
+      },
+      {
+        "id": 270009,
+        "name": "Safety Boots"
+      }
+    ],
+    "people": [
+      "Picked up from: Apothecary Zamah"
+    ],
+    "chain": []
+  },
+  {
+    "id": 959,
+    "name": "Trouble at the Docks",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/trouble-at-the-docks-959/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 18,
+    "minLevel": 14,
+    "objectives": [
+      "99-Year-Old Port"
+    ],
+    "rewards": [],
+    "people": [
+      "Picked up from: Crane Operator Bigglefuzz"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1487,
+    "name": "Deviate Eradication",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/deviate-eradication-1487/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 21,
+    "minLevel": 15,
+    "objectives": [
+      "Deviate Ravager ×7",
+      "Deviate Viper ×7",
+      "Deviate Shambler ×7",
+      "Deviate Dreadfang ×7"
+    ],
+    "rewards": [
+      {
+        "id": 6476,
+        "name": "Pattern: Deviate Scale Belt"
+      },
+      {
+        "id": 8071,
+        "name": "Sizzle Stick"
+      },
+      {
+        "id": 6481,
+        "name": "Dagmire Gauntlets"
+      }
+    ],
+    "people": [
+      "Picked up from: Ebru"
+    ],
+    "chain": []
+  },
+  {
+    "id": 914,
+    "name": "Leaders of the Fang",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/leaders-of-the-fang-914/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 10,
+    "objectives": [
+      "Gem of Cobrahn",
+      "Gem of Anacondra",
+      "Gem of Pythas",
+      "Gem of Serpentis"
+    ],
+    "rewards": [
+      {
+        "id": 6505,
+        "name": "Crescent Staff"
+      },
+      {
+        "id": 6504,
+        "name": "Wingblade"
+      },
+      {
+        "id": 270018,
+        "name": "Hammerbone"
+      }
+    ],
+    "people": [
+      "Turned in to: Nara Wildmane"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Nara Wildmane",
+        "id": 1490
+      }
+    ]
+  },
+  {
+    "id": 3366,
+    "name": "The Glowing Shard",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-glowing-shard-3366/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 25,
+    "minLevel": 15,
+    "objectives": [
+      "Glowing Shard"
+    ],
+    "rewards": [
+      {
+        "id": 10441,
+        "name": "Glowing Shard"
+      }
+    ],
+    "people": [],
+    "chain": []
+  },
+  {
+    "id": 6981,
+    "name": "The Glowing Shard",
+    "dungeons": [
+      "Wailing Caverns"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-glowing-shard-6981/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 26,
+    "minLevel": 15,
+    "objectives": [
+      "Glowing Shard"
+    ],
+    "rewards": [
+      {
+        "id": 10441,
+        "name": "Glowing Shard"
+      }
+    ],
+    "people": [],
+    "chain": []
+  },
+  {
+    "id": 1098,
+    "name": "Deathstalkers in Shadowfang",
+    "dungeons": [
+      "Shadowfang Keep"
+    ],
+    "source": "https://wowforevertalents.com/quests/deathstalkers-in-shadowfang-1098/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 25,
+    "minLevel": 18,
+    "objectives": [],
+    "rewards": [
+      {
+        "id": 3324,
+        "name": "Ghostly Mantle"
+      },
+      {
+        "id": 270023,
+        "name": "Tanned Shoulderpads"
+      },
+      {
+        "id": 270024,
+        "name": "Bronzed Shoulderguards"
+      }
+    ],
+    "people": [],
+    "chain": []
+  },
+  {
+    "id": 1740,
+    "name": "The Orb of Soran'ruk",
+    "dungeons": [
+      "Shadowfang Keep"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-orb-of-soran-ruk-1740/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 25,
+    "minLevel": 20,
+    "objectives": [
+      "Soran'ruk Fragment ×3",
+      "Large Soran'ruk Fragment"
+    ],
+    "rewards": [
+      {
+        "id": 6898,
+        "name": "Orb of Soran'ruk"
+      },
+      {
+        "id": 15109,
+        "name": "Staff of Soran'ruk"
+      }
+    ],
+    "people": [
+      "Turned in to: Doan Karhan"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1013,
+    "name": "The Book of Ur",
+    "dungeons": [
+      "Shadowfang Keep"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-book-of-ur-1013/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 26,
+    "minLevel": 16,
+    "objectives": [
+      "The Book of Ur"
+    ],
+    "rewards": [
+      {
+        "id": 6335,
+        "name": "Grizzled Boots"
+      },
+      {
+        "id": 4534,
+        "name": "Steel-clasped Bracers"
+      },
+      {
+        "id": 270030,
+        "name": "Tattered Mittens"
+      }
+    ],
+    "people": [
+      "Turned in to: Keeper Bel'dugur"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1014,
+    "name": "Arugal Must Die",
+    "dungeons": [
+      "Shadowfang Keep"
+    ],
+    "source": "https://wowforevertalents.com/quests/arugal-must-die-1014/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 27,
+    "minLevel": 18,
+    "objectives": [
+      "Head of Arugal"
+    ],
+    "rewards": [
+      {
+        "id": 6414,
+        "name": "Seal of Sylvanas"
+      }
+    ],
+    "people": [
+      "Turned in to: Dalar Dawnweaver"
+    ],
+    "chain": []
+  },
+  {
+    "id": 6564,
+    "name": "Allegiance to the Old Gods",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/allegiance-to-the-old-gods-6564/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 17,
+    "objectives": [
+      "Damp Note"
+    ],
+    "rewards": [
+      {
+        "id": 16790,
+        "name": "Damp Note"
+      }
+    ],
+    "people": [
+      "Turned in to: Je'neu Sancrea"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Allegiance to the Old Gods",
+        "id": 6565
+      }
+    ]
+  },
+  {
+    "id": 6563,
+    "name": "The Essence of Aku'Mai",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-essence-of-aku-mai-6563/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 17,
+    "objectives": [
+      "Sapphire of Aku'Mai ×20"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Je'neu Sancrea"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Trouble in the Deeps",
+        "id": 6562
+      }
+    ]
+  },
+  {
+    "id": 6562,
+    "name": "Trouble in the Deeps",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/trouble-in-the-deeps-6562/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 22,
+    "minLevel": 17,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Je'neu Sancrea"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "The Essence of Aku'Mai",
+        "id": 6563
+      }
+    ]
+  },
+  {
+    "id": 971,
+    "name": "Knowledge in the Deeps",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/knowledge-in-the-deeps-971/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 23,
+    "minLevel": 10,
+    "objectives": [
+      "Lorgalis Manuscript"
+    ],
+    "rewards": [
+      {
+        "id": 6743,
+        "name": "Sustaining Ring"
+      }
+    ],
+    "people": [
+      "Turned in to: Gerrig Bonegrip"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1198,
+    "name": "In Search of Thaelrid",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/in-search-of-thaelrid-1198/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 24,
+    "minLevel": 18,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Argent Guard Thaelrid"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Blackfathom Villainy",
+        "id": 1200
+      }
+    ]
+  },
+  {
+    "id": 1275,
+    "name": "Researching the Corruption",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/researching-the-corruption-1275/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 24,
+    "minLevel": 18,
+    "objectives": [
+      "Corrupted Brain Stem ×8"
+    ],
+    "rewards": [
+      {
+        "id": 7003,
+        "name": "Beetle Clasps"
+      },
+      {
+        "id": 7004,
+        "name": "Prelacy Cape"
+      },
+      {
+        "id": 270021,
+        "name": "Staghide Armguards"
+      }
+    ],
+    "people": [
+      "Picked up from: Gershala Nightwhisper"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "The Corruption Abroad",
+        "id": 3765
+      }
+    ]
+  },
+  {
+    "id": 1199,
+    "name": "Twilight Falls",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/twilight-falls-1199/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 25,
+    "minLevel": 20,
+    "faction": "Alliance",
+    "objectives": [
+      "Twilight Pendant ×10"
+    ],
+    "rewards": [
+      {
+        "id": 6998,
+        "name": "Nimbus Boots"
+      },
+      {
+        "id": 7000,
+        "name": "Heartwood Girdle"
+      },
+      {
+        "id": 270025,
+        "name": "Silvered Gauntlets"
+      }
+    ],
+    "people": [
+      "Turned in to: Argent Guard Manados"
+    ],
+    "chain": []
+  },
+  {
+    "id": 6565,
+    "name": "Allegiance to the Old Gods",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/allegiance-to-the-old-gods-6565/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 26,
+    "minLevel": 17,
+    "objectives": [
+      "Lorgus Jett"
+    ],
+    "rewards": [
+      {
+        "id": 17694,
+        "name": "Band of the Fist"
+      },
+      {
+        "id": 17695,
+        "name": "Chestnut Mantle"
+      }
+    ],
+    "people": [
+      "Turned in to: Je'neu Sancrea"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Allegiance to the Old Gods",
+        "id": 6564
+      }
+    ]
+  },
+  {
+    "id": 1200,
+    "name": "Blackfathom Villainy",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/blackfathom-villainy-1200/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 27,
+    "minLevel": 18,
+    "faction": "Alliance",
+    "objectives": [
+      "Head of Kelris"
+    ],
+    "rewards": [
+      {
+        "id": 7001,
+        "name": "Gravestone Scepter"
+      },
+      {
+        "id": 7002,
+        "name": "Arctic Buckler"
+      },
+      {
+        "id": 270031,
+        "name": "Dark Ritual Leggings"
+      },
+      {
+        "id": 270032,
+        "name": "Cultist's Armguards"
+      }
+    ],
+    "people": [
+      "Turned in to: Dawnwatcher Selgorm"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "In Search of Thaelrid",
+        "id": 1198
+      }
+    ]
+  },
+  {
+    "id": 6561,
+    "name": "Blackfathom Villainy",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/blackfathom-villainy-6561/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 27,
+    "minLevel": 18,
+    "faction": "Horde",
+    "objectives": [
+      "Head of Kelris"
+    ],
+    "rewards": [
+      {
+        "id": 7001,
+        "name": "Gravestone Scepter"
+      },
+      {
+        "id": 7002,
+        "name": "Arctic Buckler"
+      },
+      {
+        "id": 270031,
+        "name": "Dark Ritual Leggings"
+      },
+      {
+        "id": 270032,
+        "name": "Cultist's Armguards"
+      }
+    ],
+    "people": [
+      "Turned in to: Bashana Runetotem"
+    ],
+    "chain": []
+  },
+  {
+    "id": 386,
+    "name": "What Comes Around...",
+    "dungeons": [
+      "Stormwind Stockade"
+    ],
+    "source": "https://wowforevertalents.com/quests/what-comes-around-386/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 25,
+    "minLevel": 22,
+    "objectives": [
+      "Head of Targorr"
+    ],
+    "rewards": [
+      {
+        "id": 3400,
+        "name": "Lucine Longsword"
+      },
+      {
+        "id": 1317,
+        "name": "Hardened Root Staff"
+      },
+      {
+        "id": 270027,
+        "name": "item 270027"
+      }
+    ],
+    "people": [
+      "Turned in to: Guard Berton"
+    ],
+    "chain": []
+  },
+  {
+    "id": 377,
+    "name": "Crime and Punishment",
+    "dungeons": [
+      "Stormwind Stockade"
+    ],
+    "source": "https://wowforevertalents.com/quests/crime-and-punishment-377/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 26,
+    "minLevel": 22,
+    "objectives": [
+      "Hand of Dextren Ward"
+    ],
+    "rewards": [
+      {
+        "id": 2033,
+        "name": "Ambassador's Boots"
+      },
+      {
+        "id": 2906,
+        "name": "Darkshire Mail Leggings"
+      },
+      {
+        "id": 270029,
+        "name": "item 270029"
+      }
+    ],
+    "people": [
+      "Picked up from: Councilman Millstipe",
+      "Turned in to: Councilman Millstipe"
+    ],
+    "chain": []
+  },
+  {
+    "id": 387,
+    "name": "Quell the Uprising",
+    "dungeons": [
+      "Stormwind Stockade"
+    ],
+    "source": "https://wowforevertalents.com/quests/quell-the-uprising-387/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 26,
+    "minLevel": 22,
+    "objectives": [
+      "Defias Prisoner ×10",
+      "Defias Convict ×8",
+      "Defias Insurgent ×8"
+    ],
+    "rewards": [],
+    "people": [
+      "Picked up from: Warden Thelwater"
+    ],
+    "chain": []
+  },
+  {
+    "id": 388,
+    "name": "The Color of Blood",
+    "dungeons": [
+      "Stormwind Stockade"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-color-of-blood-388/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 26,
+    "minLevel": 22,
+    "objectives": [
+      "Red Wool Bandana ×10"
+    ],
+    "rewards": [],
+    "people": [
+      "Picked up from: Nikova Raskol"
+    ],
+    "chain": []
+  },
+  {
+    "id": 391,
+    "name": "The Stockade Riots",
+    "dungeons": [
+      "Stormwind Stockade"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-stockade-riots-391/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 29,
+    "minLevel": 16,
+    "objectives": [
+      "Head of Bazil Thredd"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Warden Thelwater"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Bazil Thredd",
+        "id": 389
+      },
+      {
+        "role": "Leads to",
+        "name": "The Curious Visitor",
+        "id": 392
+      }
+    ]
+  },
+  {
+    "id": 1221,
+    "name": "Blueleaf Tubers",
+    "dungeons": [
+      "Razorfen Kraul"
+    ],
+    "source": "https://wowforevertalents.com/quests/blueleaf-tubers-1221/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 26,
+    "minLevel": 20,
+    "objectives": [
+      "Blueleaf Tuber ×6",
+      "Crate With Holes",
+      "Snufflenose Owner's Manual",
+      "Snufflenose Command Stick"
+    ],
+    "rewards": [
+      {
+        "id": 6755,
+        "name": "A Small Container of Gems"
+      }
+    ],
+    "people": [
+      "Turned in to: Mebok Mizzyrix"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1144,
+    "name": "Willix the Importer",
+    "dungeons": [
+      "Razorfen Kraul"
+    ],
+    "source": "https://wowforevertalents.com/quests/willix-the-importer-1144/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 30,
+    "minLevel": 22,
+    "objectives": [],
+    "rewards": [
+      {
+        "id": 6748,
+        "name": "Monkey Ring"
+      },
+      {
+        "id": 6750,
+        "name": "Snake Hoop"
+      },
+      {
+        "id": 6749,
+        "name": "Tiger Band"
+      },
+      {
+        "id": 274078,
+        "name": "item 274078"
+      }
+    ],
+    "people": [],
+    "chain": []
+  },
+  {
+    "id": 2922,
+    "name": "Save Techbot's Brain!",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/save-techbot-s-brain-2922/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 26,
+    "minLevel": 20,
+    "objectives": [
+      "Techbot's Memory Core"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Tinkmaster Overspark"
+    ],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Tinkmaster Overspark",
+        "id": 2923
+      }
+    ]
+  },
+  {
+    "id": 2923,
+    "name": "Tinkmaster Overspark",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/tinkmaster-overspark-2923/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 26,
+    "minLevel": 20,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Tinkmaster Overspark"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Save Techbot's Brain!",
+        "id": 2922
+      }
+    ]
+  },
+  {
+    "id": 2926,
+    "name": "Gnogaine",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/gnogaine-2926/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 27,
+    "minLevel": 20,
+    "objectives": [
+      "Full Leaden Collection Phial"
+    ],
+    "rewards": [
+      {
+        "id": 9283,
+        "name": "Empty Leaden Collection Phial"
+      }
+    ],
+    "people": [
+      "Turned in to: Ozzie Togglevolt"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2927,
+    "name": "The Day After",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-day-after-2927/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 27,
+    "minLevel": 20,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Ozzie Togglevolt"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2904,
+    "name": "A Fine Mess",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/a-fine-mess-2904/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 30,
+    "minLevel": 20,
+    "objectives": [],
+    "rewards": [
+      {
+        "id": 9535,
+        "name": "Fire-welded Bracers"
+      },
+      {
+        "id": 9536,
+        "name": "Fairywing Mantle"
+      },
+      {
+        "id": 270042,
+        "name": "item 270042"
+      }
+    ],
+    "people": [
+      "Turned in to: Scooty"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2928,
+    "name": "Gyrodrillmatic Excavationators",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/gyrodrillmatic-excavationators-2928/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 30,
+    "minLevel": 20,
+    "objectives": [
+      "Robo-mechanical Guts ×24"
+    ],
+    "rewards": [
+      {
+        "id": 9608,
+        "name": "Shoni's Disarming Tool"
+      },
+      {
+        "id": 9609,
+        "name": "Shilly Mitts"
+      },
+      {
+        "id": 270045,
+        "name": "Operator's Gloves"
+      }
+    ],
+    "people": [
+      "Turned in to: Shoni the Shilent"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2842,
+    "name": "Chief Engineer Scooty",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/chief-engineer-scooty-2842/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 35,
+    "minLevel": 20,
+    "objectives": [],
+    "rewards": [],
+    "people": [
+      "Turned in to: Scooty"
+    ],
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Gnomer-gooooone!",
+        "id": 2843
+      }
+    ]
+  },
+  {
+    "id": 2843,
+    "name": "Gnomer-gooooone!",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/gnomer-gooooone-2843/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-01",
+    "level": 35,
+    "minLevel": 20,
+    "objectives": [],
+    "rewards": [
+      {
+        "id": 9173,
+        "name": "Goblin Transponder"
+      }
+    ],
+    "people": [],
+    "chain": [
+      {
+        "role": "Comes after",
+        "name": "Chief Engineer Scooty",
+        "id": 2842
+      }
+    ]
+  }
+]

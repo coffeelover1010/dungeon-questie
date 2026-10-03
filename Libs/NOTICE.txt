@@ -1,0 +1,11 @@
+Bundled minimap libraries (unmodified upstream source)
+
+LibStub: WoWUIDev/Ace3, LibStub/LibStub.lua. Public domain; notice in source.
+CallbackHandler-1.0: WoWUIDev/Ace3. See Ace3-LICENSE.txt.
+LibDataBroker-1.1: tekkub/libdatabroker-1-1 (GitHub).
+LibDBIcon-1.0: Funkeh, WowAce SVN trunk revision 162, library minor 56.
+Source: https://repos.wowace.com/wow/libdbicon-1-0/trunk/LibDBIcon-1.0/LibDBIcon-1.0.lua
+License: Ace3 Style BSD (see Ace3-LICENSE.txt), as listed on https://www.curseforge.com/wow/addons/libdbicon-1-0
+Retrieved 2026-09-21. These libraries retain their upstream licensing.
+
+LibDataBroker embedding permission/instructions: https://www.wowace.com/projects/libdatabroker-1-1

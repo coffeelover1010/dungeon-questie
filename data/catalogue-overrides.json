@@ -1,0 +1,258 @@
+{
+  "96395": {
+    "pickupInside": true
+  },
+  "97288": {
+    "pickupInside": true
+  },
+  "92415": {
+    "pickupInside": true
+  },
+  "95189": {
+    "pickupInside": true
+  },
+  "95204": {
+    "pickupInside": true
+  },
+  "92753": {
+    "checked": "2026-10-02",
+    "rewards": [],
+    "source": "https://www.wowhead.com/forever/quest=92753",
+    "evidence": "Forever database",
+    "prereqs": [
+      92752
+    ],
+    "routeNote": "Use Extra-Destructive Explosives beside the forge inside Deadmines. Players report the placement spot near the centre of the Gilnid foundry room. After the run, leave through the rear exit instead of hearthing. Meet Alba in the hills behind Moonbrook, turn this in, and accept the second Destruction in Deadmines quest (92819) to use the detonator.",
+    "preparationNote": "Toxic Soil: follow the current step through Westfall and Stormwind before your Deadmines run.",
+    "objectives": [
+      "Place the explosives at the forge, then meet Alba at the rear exit."
+    ],
+    "people": [
+      "Turned in to: Alba Fairmoon at the Deadmines rear exit"
+    ]
+  },
+  "373": {
+    "pickupInside": true
+  },
+  "3366": {
+    "pickupInside": true
+  },
+  "1275": {
+    "chain": [
+      {
+        "role": "Related quest (requirement unverified)",
+        "name": "The Corruption Abroad",
+        "id": 3765
+      }
+    ],
+    "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location. Player reported accepting this quest on 2026-10-02 despite the guide warning. The Corruption Abroad is not treated as a confirmed requirement.",
+    "prereqs": []
+  },
+  "1200": {
+    "pickupInside": true
+  },
+  "6561": {
+    "pickupInside": true
+  },
+  "1144": {
+    "pickupInside": true
+  },
+  "2904": {
+    "pickupInside": true
+  },
+  "98423": {
+    "pickupInside": true
+  },
+  "2945": {
+    "pickupInside": true
+  },
+  "1142": {
+    "pickupInside": true
+  },
+  "1051": {
+    "pickupInside": true
+  },
+  "3523": {
+    "pickupInside": true
+  },
+  "3525": {
+    "pickupInside": true
+  },
+  "2240": {
+    "pickupInside": true
+  },
+  "2278": {
+    "pickupInside": true
+  },
+  "7066": {
+    "pickupInside": true
+  },
+  "7046": {
+    "pickupInside": true
+  },
+  "3373": {
+    "pickupInside": true
+  },
+  "4322": {
+    "pickupInside": true
+  },
+  "4201": {
+    "pickupInside": true
+  },
+  "7463": {
+    "pickupInside": true
+  },
+  "7461": {
+    "pickupInside": true
+  },
+  "7507": {
+    "pickupInside": true
+  },
+  "5525": {
+    "pickupInside": true
+  },
+  "5518": {
+    "pickupInside": true
+  },
+  "5528": {
+    "pickupInside": true
+  },
+  "7703": {
+    "pickupInside": true
+  },
+  "4867": {
+    "pickupInside": true
+  },
+  "5122": {
+    "pickupInside": true
+  },
+  "5125": {
+    "pickupInside": true
+  },
+  "2931": {
+    "restrictionUnknown": true,
+    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+  },
+  "2925": {
+    "restrictionUnknown": true,
+    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+  },
+  "98815": {
+    "restrictionUnknown": true,
+    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "pickup": "Guide lists James Halloran in Menethil Harbor, Wetlands.",
+    "prereqs": [
+      469
+    ],
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "preparationNote": "The guide lists Daily Delivery first. Confirm whether James offers Highland Hides before doing earlier steps."
+  },
+  "95663": {
+    "restrictionUnknown": true,
+    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+  },
+  "95795": {
+    "restrictionUnknown": true,
+    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "pickup": "Daewyn Songblade's body inside Excavation Site; return to Dorin in Lakeshire. Exact location unverified.",
+    "pickupInside": true,
+    "locationSource": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/"
+  },
+  "95682": {
+    "restrictionUnknown": true,
+    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "pickup": "After Dragonmaw Rumors, meet the Deathstalker Agent above the Dragonmaw camp in Wetlands. Exact position unverified.",
+    "locationSource": "https://wowforevertalents.com/quests/open-the-maw-95682/"
+  },
+  "95737": {
+    "restrictionUnknown": true,
+    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "pickup": "Guide lists Llana in Astranaar, Ashenvale; ask about Caitlin.",
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location"
+  },
+  "95772": {
+    "restrictionUnknown": true,
+    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "pickup": "Guide lists Dorin Songblade in Lakeshire, Redridge Mountains.",
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location"
+  },
+  "5722": {
+    "pickup": "Rahauro, Elder Rise, Thunder Bluff.",
+    "pickupInside": false,
+    "pin": {
+      "map": 1456,
+      "x": 70.8,
+      "y": 31.6,
+      "zone": "Thunder Bluff",
+      "title": "Rahauro"
+    },
+    "locationSource": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
+    "fieldSources": {
+      "pickup": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
+      "pin": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/"
+    }
+  },
+  "92401": {
+    "locationSource": "https://wowforevertalents.com/quests/a-frightened-request-92401/"
+  },
+  "95646": {
+    "pickup": "Guide lists Rethiel the Greenwarden in the Wetlands.",
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location"
+  },
+  "95647": {
+    "pickup": "Caitlin Grassman, Menethil Harbor, after Seeking Caitlin (guide-reported).",
+    "prereqs": [
+      95737
+    ],
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location"
+  },
+  "95809": {
+    "pickup": "Reed-woven Heart from Ardin Grassman inside Excavation Site, after Lost in the Thicket Things.",
+    "pickupInside": true,
+    "locationSource": "https://wowforevertalents.com/quests/heartwoven-95809/"
+  },
+  "95810": {
+    "pickup": "Titan Relic found inside Excavation Site; bring it to Prospector Whelgar.",
+    "pickupInside": true,
+    "locationSource": "https://wowforevertalents.com/quests/lost-relic-carry-95810/"
+  },
+  "98824": {
+    "pickup": "Follow Lost Relic Carry with Prospector Whelgar; take the relic to High Explorer Magellas in Ironforge.",
+    "locationSource": "https://wowforevertalents.com/quests/prehistoric-prism-98824/"
+  },
+  "95664": {
+    "pickup": "Titan Relic quest associated with Excavation Site. Exact start is unverified; take the relic to the Elder Rise, Thunder Bluff.",
+    "locationSource": "https://wowforevertalents.com/quests/elder-knowledge-95664/"
+  },
+  "98823": {
+    "pickup": "Follow Elder Knowledge at the Elder Rise; take the relic to Muln Earthfury in northwest Mulgore.",
+    "locationSource": "https://wowforevertalents.com/quests/earthen-echo-98823/"
+  },
+  "92819": {
+    "checklistPrevious": 92753,
+    "checked": "2026-10-02",
+    "notes": "Forever quest record; rear-exit route corroborated by player reports. No precise pickup pin verified.",
+    "objectives": [
+      "Use the detonator."
+    ],
+    "routeNote": "Final Toxic Soil step after planting the explosives: follow the quest log to use the detonator outside, then speak to Alba to finish.",
+    "people": [
+      "Turned in to: Alba Fairmoon at the Deadmines rear exit"
+    ],
+    "rewards": []
+  },
+  "2951": {
+    "pickup": "Sparklematic machine in the Clean Zone inside Gnomeregan.",
+    "pickupInside": true,
+    "repeatable": false,
+    "objectives": [
+      "Bring 1 Grime-Encrusted Object and 3 silver to the Sparklematic 5200."
+    ],
+    "preparationNote": "Bring 1 Grime-Encrusted Object and 3 silver. Use the machine in the Clean Zone.",
+    "routeNote": "Use the Sparklematic in the Clean Zone with 1 Grime-Encrusted Object and 3 silver, then speak to the machine again for the follow-up.",
+    "source": "https://www.wowhead.com/forever/quest=2951/the-sparklematic-5200",
+    "evidence": "Forever database",
+    "checked": "2026-10-02",
+    "notes": "Wowhead Forever lists the object and 3 silver requirement. Player reports unchanged behavior. The initial quest 2951 is separate from reward step 2952 and repeatable More Sparklematic Action 2953; Classic chain reference retained."
+  }
+}

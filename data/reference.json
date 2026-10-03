@@ -1,0 +1,1252 @@
+[
+  {
+    "link": 173,
+    "name": "Bring the End",
+    "minLevel": 37,
+    "dungeon": "Razorfen Downs",
+    "faction": null,
+    "pickup": "Undercity, Magic Quarter - Andrew Brownell /way 74 33",
+    "id": 3341
+  },
+  {
+    "link": 147,
+    "name": "An Unholy Alliance",
+    "minLevel": 28,
+    "dungeon": "Razorfen Downs",
+    "faction": null,
+    "pickup": "Undercity, Royal Quarter - Varimathras /way 36 26",
+    "id": 6521,
+    "note": "CompleteAn Unholy Alliance from RFK"
+  },
+  {
+    "link": 175,
+    "name": "Bring the Light",
+    "minLevel": 39,
+    "dungeon": "Razorfen Downs",
+    "faction": null,
+    "pickup": "Stormwind, Cathedral - Archbishop Benedictus /way 39 27",
+    "id": 3636
+  },
+  {
+    "link": 177,
+    "name": "A Host of Evil",
+    "minLevel": 28,
+    "dungeon": "Razorfen Downs",
+    "faction": "Both",
+    "pickup": "The Barrens, Outside instance portal to RFD - Myriam Moonsinger /way 49 95",
+    "id": 6626
+  },
+  {
+    "link": 179,
+    "name": "Scourge of the Downs",
+    "minLevel": 32,
+    "dungeon": "Razorfen Downs",
+    "faction": "Both",
+    "pickup": "Razorfen Downs, Murder Pens - Belnistrasz",
+    "id": 3523,
+    "note": "Entire party should complete before picking up next quest"
+  },
+  {
+    "link": 181,
+    "name": "Extinguishing the Idol",
+    "minLevel": 32,
+    "dungeon": "Razorfen Downs",
+    "faction": "Both",
+    "pickup": "Razorfen Downs, Murder Pens - Belnistrasz",
+    "id": 3525,
+    "note": "Make sure entire party has finishedScourge of the Downs first or they won't get credit!"
+  },
+  {
+    "link": 182,
+    "name": "Reclaimed Treasures",
+    "minLevel": 33,
+    "dungeon": "Uldaman",
+    "faction": null,
+    "pickup": "Undercity, Center - Patrick Garrett /way 62 48",
+    "id": 2342
+  },
+  {
+    "link": 184,
+    "name": "Uldaman Reagent Run",
+    "minLevel": 36,
+    "dungeon": "Uldaman",
+    "faction": null,
+    "pickup": "Badlands, Kargath - Jarkal Mossmeld /way 3 46",
+    "id": 2202,
+    "note": "CompleteBadlands Reagent Run first"
+  },
+  {
+    "link": 187,
+    "name": "Necklace Recovery",
+    "minLevel": 37,
+    "dungeon": "Uldaman",
+    "faction": null,
+    "pickup": "Badlands, Outside Uldaman instance - Shattered Necklace drop from Shadowforge or Shadowvault mobs",
+    "id": 2283
+  },
+  {
+    "link": 189,
+    "name": "Reclaimed Treasures",
+    "minLevel": 33,
+    "dungeon": "Uldaman",
+    "faction": null,
+    "pickup": "Ironforge, Hall of Explorers - Krom Stoutarm /way 74 9",
+    "id": 1360
+  },
+  {
+    "link": 191,
+    "name": "The Lost Dwarves",
+    "minLevel": 35,
+    "dungeon": "Uldaman",
+    "faction": null,
+    "pickup": "Ironforge, Hall of Explorers - Prospector Stormpike /way 75 12",
+    "id": 2398
+  },
+  {
+    "link": 193,
+    "name": "The Hidden Chamber",
+    "minLevel": 35,
+    "dungeon": "Uldaman",
+    "faction": null,
+    "pickup": "Uldaman, Lost Dwarves area - Baelog's Journal",
+    "id": 2240,
+    "note": "CompleteThe Lost Dwarves first"
+  },
+  {
+    "link": 195,
+    "name": "Uldaman Reagent Run",
+    "minLevel": 38,
+    "dungeon": "Uldaman",
+    "faction": null,
+    "pickup": "Loch Modan, Thelsamar - Ghak Healtouch /way 37 49",
+    "id": 17,
+    "note": "CompleteBadlands Reagent Run first"
+  },
+  {
+    "link": 198,
+    "name": "Agmond's Fate",
+    "minLevel": 33,
+    "dungeon": "Uldaman",
+    "faction": null,
+    "pickup": "Loch Modan, Ironband's Excavation Site - Prospector Ironband /way 65 65",
+    "id": 704,
+    "note": "Complete 3 quests, starting withIronband Wants You! first"
+  },
+  {
+    "link": 201,
+    "name": "The Lost Tablets of Will",
+    "minLevel": 30,
+    "dungeon": "Uldaman",
+    "faction": null,
+    "pickup": "Ironforge, Hall of Explorers - Advisor Belgrum /way 77 9",
+    "id": 1139,
+    "note": "Complete 8 quests, starting withA Sign of Hope first"
+  },
+  {
+    "link": 204,
+    "name": "The Shattered Necklace",
+    "minLevel": 37,
+    "dungeon": "Uldaman",
+    "faction": null,
+    "pickup": "Badlands, Outside Uldaman instance - Shattered Necklace drop from Shadowforge or Shadowvault mobs",
+    "id": 2198
+  },
+  {
+    "link": 205,
+    "name": "Power Stones",
+    "minLevel": 30,
+    "dungeon": "Uldaman",
+    "faction": "Both",
+    "pickup": "Badlands, Central - Rigglefuzz /way 42 52",
+    "id": 2418
+  },
+  {
+    "link": 207,
+    "name": "Solution to Doom",
+    "minLevel": 30,
+    "dungeon": "Uldaman",
+    "faction": "Both",
+    "pickup": "Badlands, Southern - Theldurin the Lost /way 51 76",
+    "id": 709
+  },
+  {
+    "link": 209,
+    "name": "The Platinum Discs",
+    "minLevel": 40,
+    "dungeon": "Uldaman",
+    "faction": "Both",
+    "pickup": "Uldaman, room after Archaedas -",
+    "id": 2278
+  },
+  {
+    "link": 211,
+    "name": "Power in Uldaman",
+    "minLevel": 35,
+    "dungeon": "Uldaman",
+    "faction": "Both",
+    "pickup": "Mage Only - Dustwallow Marsh, N. of Stonemaul Ruins - Tabetha /way 46 57",
+    "id": 1956,
+    "note": "Complete 3 quests, starting withReturn to the Marsh first"
+  },
+  {
+    "link": 216,
+    "name": "The Spider God",
+    "minLevel": 40,
+    "dungeon": "Zul'Farrak",
+    "faction": null,
+    "pickup": "Durotar, Sen'jin Village - Master Gadrin /way 56 74",
+    "id": 2936,
+    "note": "Complete 3 quests first, starting withVenom Bottles"
+  },
+  {
+    "link": 219,
+    "name": "Nekrum's Medallion",
+    "minLevel": 40,
+    "dungeon": "Zul'Farrak",
+    "faction": null,
+    "pickup": "Blasted Lands, Nethergarde Keep - Thadius Grimshade /way 66 19",
+    "id": 2991,
+    "note": "Complete 3 quests first, starting withWitherbark Cages"
+  },
+  {
+    "link": 222,
+    "name": "Divino-matic Rod",
+    "minLevel": 40,
+    "dungeon": "Zul'Farrak",
+    "faction": "Both",
+    "pickup": "Tanaris, Gadgetzan - Chief Engineer Bilgewhizzle /way 52 28",
+    "id": 2768
+  },
+  {
+    "link": 224,
+    "name": "Scarab Shells",
+    "minLevel": 40,
+    "dungeon": "Zul'Farrak",
+    "faction": "Both",
+    "pickup": "Tanaris, Gadgetzan - Tran'rek /way 51 26",
+    "id": 2865
+  },
+  {
+    "link": 226,
+    "name": "Troll Temper",
+    "minLevel": 40,
+    "dungeon": "Zul'Farrak",
+    "faction": "Both",
+    "pickup": "Tanaris, Gadgetzan - Trenton Lighthammer /way 51 28",
+    "id": 3042
+  },
+  {
+    "link": 228,
+    "name": "Tiara of the Deep",
+    "minLevel": 40,
+    "dungeon": "Zul'Farrak",
+    "faction": "Both",
+    "pickup": "Dustwallow Marsh, N. of Stonemaul Ruins - Tabetha /way 46 57",
+    "id": 2846
+  },
+  {
+    "link": 229,
+    "name": "Gahz'rilla",
+    "minLevel": 40,
+    "dungeon": "Zul'Farrak",
+    "faction": "Both",
+    "pickup": "Thousand Needles, Shimmering Flats - Wizzle Brassbolts /way 78 77",
+    "id": 2770,
+    "note": "One group member must have Mallet of Zul'Farrak to summon Gahz'rilla - drop from Qiaga the Keeper in The Hinterlands"
+  },
+  {
+    "link": 232,
+    "name": "The Prophecy of Mosh'aru",
+    "minLevel": 40,
+    "dungeon": "Zul'Farrak",
+    "faction": "Both",
+    "pickup": "Tanaris, Steamwheedle Port - Yeh'kinya /way 67 22",
+    "id": 3527,
+    "note": "CompleteScreecher Spirits first"
+  },
+  {
+    "link": 236,
+    "name": "Shadowshard Fragments",
+    "minLevel": 39,
+    "dungeon": "Maraudon",
+    "faction": null,
+    "pickup": "Orgrimmar, Valley of Spirits - Uthel'nay /way 39 86",
+    "id": 7068
+  },
+  {
+    "link": 238,
+    "name": "Vyletongue Corruption",
+    "minLevel": 41,
+    "dungeon": "Maraudon",
+    "faction": null,
+    "pickup": "Desolace, Shadowprey Village - Vark Battlescar /way 23 70",
+    "id": 7029
+  },
+  {
+    "link": 240,
+    "name": "Corruption of Earth and Seed",
+    "minLevel": 45,
+    "dungeon": "Maraudon",
+    "faction": null,
+    "pickup": "Desolace, S. of Shadowprey Village - Selendra /way 26 77",
+    "id": 7064
+  },
+  {
+    "link": 242,
+    "name": "Shadowshard Fragments",
+    "minLevel": 39,
+    "dungeon": "Maraudon",
+    "faction": null,
+    "pickup": "Dustwallow Marsh, Theramore - Archmage Tervosh /way 66 49",
+    "id": 7070
+  },
+  {
+    "link": 244,
+    "name": "Vyletongue Corruption",
+    "minLevel": 41,
+    "dungeon": "Maraudon",
+    "faction": null,
+    "pickup": "Desolace, Nijel's Point - Talendria /way 68 8",
+    "id": 7041
+  },
+  {
+    "link": 246,
+    "name": "Corruption of Earth and Seed",
+    "minLevel": 45,
+    "dungeon": "Maraudon",
+    "faction": null,
+    "pickup": "Desolace, Nijel's Point - Keeper Marandis /way 63 10",
+    "id": 7065
+  },
+  {
+    "link": 248,
+    "name": "Twisted Evils",
+    "minLevel": 41,
+    "dungeon": "Maraudon",
+    "faction": "Both",
+    "pickup": "Desolace, SE of Thunderaxe Fortress- Willow /way 62 39",
+    "id": 7028
+  },
+  {
+    "link": 250,
+    "name": "Legends of Maraudon",
+    "minLevel": 41,
+    "dungeon": "Maraudon",
+    "faction": "Both",
+    "pickup": "Maraudon, Orange side, outside instance - Cavindra",
+    "id": 7044
+  },
+  {
+    "link": 252,
+    "name": "Seed of Life",
+    "minLevel": 39,
+    "dungeon": "Maraudon",
+    "faction": "Both",
+    "pickup": "Maraudon, Zaetar's Spirit in middle of ring after killing Princess Theradras",
+    "id": 7066
+  },
+  {
+    "link": 255,
+    "name": "The Pariah's Instructions",
+    "minLevel": 39,
+    "dungeon": "Maraudon",
+    "faction": "Both",
+    "pickup": "Desolace, South of Mannoroc Coven - Centaur Pariah patrols around /way 48.4, 87.0",
+    "id": 7067
+  },
+  {
+    "link": 257,
+    "name": "The Scepter of Celebras",
+    "minLevel": 41,
+    "dungeon": "Maraudon",
+    "faction": "Both",
+    "pickup": "Maraudon, Purple side - Celebras the Redeemed",
+    "id": 7046,
+    "note": "CompleteLegends of Maraudon first"
+  },
+  {
+    "link": 261,
+    "name": "The Temple of Atal'Hakkar",
+    "minLevel": 38,
+    "dungeon": "Temple of Atal'Hakkar - Sunken Temple",
+    "faction": null,
+    "pickup": "Swamp of Sorrows, Stonard - Fel'zerul /way 47 54",
+    "id": 1445,
+    "note": "Complete 3 quests first, starting withPool of Tears"
+  },
+  {
+    "link": 264,
+    "name": "Zapper Fuel",
+    "minLevel": 47,
+    "dungeon": "Temple of Atal'Hakkar - Sunken Temple",
+    "faction": null,
+    "pickup": "The Barrens, Ratchet - Liv Rizzlefix /way 62 38",
+    "id": 4146,
+    "note": "Complete 2 quests first, starting withLarion and Muigin"
+  },
+  {
+    "link": 267,
+    "name": "Haze of Evil",
+    "minLevel": 47,
+    "dungeon": "Temple of Atal'Hakkar - Sunken Temple",
+    "faction": null,
+    "pickup": "Feralas, Twin Colossals - Gregan Brewspewer /way 45 25",
+    "id": 4143,
+    "note": "Complete 2 quests first, starting withMuigin and Larion"
+  },
+  {
+    "link": 270,
+    "name": "Into The Temple of Atal'Hakkar",
+    "minLevel": 38,
+    "dungeon": "Temple of Atal'Hakkar - Sunken Temple",
+    "faction": null,
+    "pickup": "Stormwind, Dwarven District - Brohann Caskbelly /way 64 21",
+    "id": 1475,
+    "note": "Complete 6 quests first, starting withIn Search of The Temple"
+  },
+  {
+    "link": 273,
+    "name": "Jammal'an the Prophet",
+    "minLevel": 38,
+    "dungeon": "Temple of Atal'Hakkar - Sunken Temple",
+    "faction": "Both",
+    "pickup": "Hinterlands, Spider area SW of Altar of Zul - Atal'ai Exile /way 33 75",
+    "id": 1446
+  },
+  {
+    "link": 275,
+    "name": "The Essence of Eranikus",
+    "minLevel": 48,
+    "dungeon": "Temple of Atal'Hakkar - Sunken Temple",
+    "faction": "Both",
+    "pickup": "Sunken Temple, Essence of Eranikus drop from  | Pre  | Tanaris, S. of Gadgetzan - Marvon Rivetseeker /way 52 45",
+    "id": 3373,
+    "note": "Complete 2 quests first, starting withThe Sunken Temple /The Sunken Temple"
+  },
+  {
+    "link": 280,
+    "name": "Secret of the Circle",
+    "minLevel": 46,
+    "dungeon": "Temple of Atal'Hakkar - Sunken Temple",
+    "faction": "Both",
+    "pickup": "Tanaris, S. of Gadgetzan - Marvon Rivetseeker /way 52 45",
+    "id": 3447,
+    "note": "Complete 2 quests first, starting withThe Sunken Temple /The Sunken Temple"
+  },
+  {
+    "link": 281,
+    "name": "The God Hakkar",
+    "minLevel": 40,
+    "dungeon": "Temple of Atal'Hakkar - Sunken Temple",
+    "faction": "Both",
+    "pickup": "Tanaris, Steamwheedle Port - Yeh'kinya /way 67 22",
+    "id": 3528,
+    "note": "Complete 3 quests first, starting withScreecher Spirits"
+  },
+  {
+    "link": 283,
+    "name": "KILL ON SIGHT: Dark Iron Dwarves",
+    "minLevel": 48,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Horde",
+    "pickup": "Badlands, Kargath - WANTED poster /way 4 47",
+    "id": 4081
+  },
+  {
+    "link": 285,
+    "name": "Lost Thunderbrew Recipe",
+    "minLevel": 50,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Horde",
+    "pickup": "Badlands, Kargath - Shadowmage Vivian Lagrave /way 3 48",
+    "id": 4134,
+    "note": "BreadcrumbVivian Lagrave in Undercity for easy XP"
+  },
+  {
+    "link": 288,
+    "name": "KILL ON SIGHT: High Ranking Dark Iron Officials",
+    "minLevel": 50,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Horde",
+    "pickup": "Badlands, Kargath - WANTED poster /way 4 47",
+    "id": 4082,
+    "note": "CompleteKILL ON SIGHT: Dark Iron Dwarves first"
+  },
+  {
+    "link": 289,
+    "name": "The Rise of the Machines",
+    "minLevel": 52,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Horde",
+    "pickup": "Badlands, Eastern - Lotwil Veriatus /way 25 44",
+    "id": 4063,
+    "note": "Complete 2 quests first, starting withThe Rise of the Machines"
+  },
+  {
+    "link": 292,
+    "name": "Disharmony of Flame",
+    "minLevel": 48,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Horde",
+    "pickup": "Badlands, Kargath - Thunderheart /way 3.6 48.0",
+    "id": 3906
+  },
+  {
+    "link": 294,
+    "name": "Disharmony of Fire",
+    "minLevel": 48,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Horde",
+    "pickup": "Badlands, Kargath - Thunderheart /way 3.6 48.0",
+    "id": 3907,
+    "note": "Opens after completingDisharmony of Flame"
+  },
+  {
+    "link": 295,
+    "name": "Commander Gor'shak",
+    "minLevel": 48,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Horde",
+    "pickup": "Badlands, Kargath - Galamav the Marksman /way 6 47",
+    "id": 3981,
+    "note": "Opens after completingDisharmony of Flame"
+  },
+  {
+    "link": 297,
+    "name": "The Last Element",
+    "minLevel": 48,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Horde",
+    "pickup": "Badlands, Kargath - Shadowmage Vivian Lagrave /way 3 48",
+    "id": 7201,
+    "note": "Opens after completingDisharmony of Flame"
+  },
+  {
+    "link": 298,
+    "name": "Operation: Death to Angerforge",
+    "minLevel": 52,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Horde",
+    "pickup": "Badlands, Kargath - Warlord Goretooth /way 6 47",
+    "id": 4132,
+    "note": "Complete 3 quests first, starting withKILL ON SIGHT: Dark Iron Dwarves . This includes Grark Lorkrub , a long escort quest."
+  },
+  {
+    "link": 301,
+    "name": "The Royal Rescue",
+    "minLevel": 48,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Horde",
+    "pickup": "Orgrimmar, Valley of Wisdom - Thrall /way 32 38",
+    "id": 4003,
+    "note": "Complete 4 quests first, starting withCommander Gor'shak"
+  },
+  {
+    "link": 302,
+    "name": "Overmaster Pyron",
+    "minLevel": 48,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Alliance",
+    "pickup": "Burning Steppes, Morgan's Vigil - Jalinda Sprig /way 85 70",
+    "id": 4262
+  },
+  {
+    "link": 304,
+    "name": "Incendius!",
+    "minLevel": 48,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Alliance",
+    "pickup": "Burning Steppes, Morgan's Vigil - Jalinda Sprig /way 85 70",
+    "id": 4263,
+    "note": "CompleteOvermaster Pyron first"
+  },
+  {
+    "link": 305,
+    "name": "The Good Stuff",
+    "minLevel": 50,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Alliance",
+    "pickup": "Burning Steppes, Morgan's Vigil - Oralius /way 84 68",
+    "id": 4286
+  },
+  {
+    "link": 307,
+    "name": "Hurley Blackbreath",
+    "minLevel": 50,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Alliance",
+    "pickup": "Dun Morogh, Kharanos - Ragnar Thunderbrew /way 46 52",
+    "id": 4126
+  },
+  {
+    "link": 309,
+    "name": "Kharan Mighthammer",
+    "minLevel": 50,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Alliance",
+    "pickup": "Ironforge, Throne Room - King Magni Bronzebeard /way 39 56",
+    "id": 4341,
+    "note": "Complete 2 quests first, starting withThe Smoldering Ruins of Thaurissan"
+  },
+  {
+    "link": 312,
+    "name": "The Fate of the Kingdom",
+    "minLevel": 50,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Alliance",
+    "pickup": "Ironforge, Throne Room - King Magni Bronzebeard /way 39 56",
+    "id": 4362,
+    "note": "Complete 2 quests first, starting withKharan Mighthammer"
+  },
+  {
+    "link": 313,
+    "name": "Marshal Windsor",
+    "minLevel": 48,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Alliance",
+    "pickup": "Burning Steppes, Morgan's Vigil- Marshal Maxwell /way 84 68",
+    "id": 4241,
+    "note": "Complete 2 quests first, starting withDragonkin Menace"
+  },
+  {
+    "link": 316,
+    "name": "Jail Break!",
+    "minLevel": 50,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Alliance",
+    "pickup": "Blackrock Depths , Prison Cell - Marshal Windsor",
+    "id": 4322,
+    "note": "Complete 6 quests first, starting withDragonkin Menace and moving throughMarshal Windsor untilA Shred of Hope"
+  },
+  {
+    "link": 319,
+    "name": "Ribbly Screwspigot",
+    "minLevel": 50,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Both",
+    "pickup": "Burning Steppes, Flame Crest - Yuka Screwspigot /way 66 21",
+    "id": 4136,
+    "note": "Can pick up breadcrumbYuka Screwspigot in Steamwheedle Port for easy XP"
+  },
+  {
+    "link": 322,
+    "name": "The Heart of the Mountain",
+    "minLevel": 50,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Both",
+    "pickup": "Burning Steppes, Flame Crest - Maxwort Uberglint /way 65 23",
+    "id": 4123
+  },
+  {
+    "link": 324,
+    "name": "Attunement to the Core",
+    "minLevel": 55,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Both",
+    "pickup": "Blackrock Mountain, Lothos Riftwaker",
+    "id": 7848
+  },
+  {
+    "link": 326,
+    "name": "Dark Iron Legacy",
+    "minLevel": 48,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Both",
+    "pickup": "Blackrock Mountain, Structure in middle - Franclorn Forgewright",
+    "id": 3802,
+    "note": "NPC is only visible if you are dead"
+  },
+  {
+    "link": 329,
+    "name": "The Love Potion",
+    "minLevel": 50,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Both",
+    "pickup": "Blackrock Depths, Grim Guzzler - Mistress Nagmara",
+    "id": 4201
+  },
+  {
+    "link": 331,
+    "name": "A Taste of Flame",
+    "minLevel": 52,
+    "dungeon": "Blackrock Depths BRD",
+    "faction": "Both",
+    "pickup": "Burning Steppes, Cave in NE - Cyrus Therepentous /way 95 31",
+    "id": 4024,
+    "note": "Complete 11 quests first, starting withDivine Retribution"
+  },
+  {
+    "link": 335,
+    "name": "Lethtendris's Web",
+    "minLevel": 54,
+    "dungeon": "Dire Maul",
+    "faction": null,
+    "pickup": "Feralas, Camp Mojache - Talo Thornhoof /way 76 43",
+    "id": 7489
+  },
+  {
+    "link": 337,
+    "name": "Lethtendris's Web",
+    "minLevel": 54,
+    "dungeon": "Dire Maul",
+    "faction": null,
+    "pickup": "Feralas, Feathermoon Stronghold - Latronicus Moonspear /way 30 46",
+    "id": 7488
+  },
+  {
+    "link": 339,
+    "name": "Pusillin and the Elder Azj'Tordin",
+    "minLevel": 54,
+    "dungeon": "Dire Maul",
+    "faction": "Both",
+    "pickup": "Feralas, Lariss Pavillion - Azj'Tordin /way 76 37",
+    "id": 7441
+  },
+  {
+    "link": 341,
+    "name": "Shards of the Felvine",
+    "minLevel": 56,
+    "dungeon": "Dire Maul",
+    "faction": "Both",
+    "pickup": "Moonglade, Nighthaven - Rabine Saturna /way 51 45",
+    "id": 5526,
+    "note": "CompleteA Reliquary of Purity from same NPC and explore all of Dire Maul first to open quest"
+  },
+  {
+    "link": 344,
+    "name": "Arcane Refreshment",
+    "minLevel": 60,
+    "dungeon": "Dire Maul",
+    "faction": "Both",
+    "pickup": "Mage Only - Dire Maul, Library - Lorekeeper Lydros",
+    "id": 7463
+  },
+  {
+    "link": 346,
+    "name": "The Madness Within",
+    "minLevel": 56,
+    "dungeon": "Dire Maul",
+    "faction": "Both",
+    "pickup": "Dire Maul, West, second floor - Shen'dralar Ancient",
+    "id": 7461
+  },
+  {
+    "link": 348,
+    "name": "Foror's Compendium",
+    "minLevel": 60,
+    "dungeon": "Dire Maul",
+    "faction": "Both",
+    "pickup": "Dire Maul - Nostro's Compendium of Dragon Slaying , rare drop or looted from A Dusty Tome .",
+    "id": 7507,
+    "note": "Not BoP. Used to create BoP tanking sword ."
+  },
+  {
+    "link": 351,
+    "name": "Elven Legends",
+    "minLevel": 54,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": null,
+    "pickup": "Feralas, Camp Mojache - Sage Korolusk /way 74 43",
+    "id": 7481,
+    "note": "Complete to be eligible forLibram of Protection ,Libram of Rapidity , andLibram of Focus"
+  },
+  {
+    "link": 356,
+    "name": "Elven Legends",
+    "minLevel": 54,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": null,
+    "pickup": "Feralas, Feathermoon Stronghold - Scholar Runethorn /way 31 43",
+    "id": 7482,
+    "note": "Complete to be eligible forLibram of Protection ,Libram of Rapidity , andLibram of Focus"
+  },
+  {
+    "link": 358,
+    "name": "Free Knot!",
+    "minLevel": 56,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": "Both",
+    "pickup": "Dire Maul, North - Knot Thimblejack",
+    "id": 5525,
+    "note": "Cannot be completed during Tribute Run unless a party member already has Gordok Shackle Key"
+  },
+  {
+    "link": 361,
+    "name": "The Gordok Ogre Suit",
+    "minLevel": 56,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": "Both",
+    "pickup": "Dire Maul, North - Knot Thimblejack",
+    "id": 5518
+  },
+  {
+    "link": 362,
+    "name": "The Gordok Taste Test",
+    "minLevel": 56,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": "Both",
+    "pickup": "Dire Maul, North - Stomper Kreeg",
+    "id": 5528,
+    "note": "Can only be picked up after completing a Tribute Run"
+  },
+  {
+    "link": 364,
+    "name": "Unfinished Gordok Business",
+    "minLevel": 56,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": "Both",
+    "pickup": "Dire Maul, North - Captain Kromcrush",
+    "id": 7703,
+    "note": "Requires completing one Tribute Run first, and a second Tribute Run after killing Prince Tortheldrin and looting the Gauntlet of Gordok Might"
+  },
+  {
+    "link": 368,
+    "name": "The Pack Mistress",
+    "minLevel": 55,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": null,
+    "pickup": "Badlands, Kargath- Galamav the Marksman /way 6 47",
+    "id": 4724
+  },
+  {
+    "link": 369,
+    "name": "Operative Bijou",
+    "minLevel": 55,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": null,
+    "pickup": "Badlands, Kargath - Lexlort /way 5 47",
+    "id": 4981,
+    "note": "Leads toBijou's Belongings inside LBRS"
+  },
+  {
+    "link": 372,
+    "name": "Warlord's Command",
+    "minLevel": 55,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": null,
+    "pickup": "Badlands, Kargath - Warlord Goretooth /way 5 47",
+    "id": 4903
+  },
+  {
+    "link": 373,
+    "name": "Put Her Down",
+    "minLevel": 55,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": null,
+    "pickup": "Burning Steppes, Morgan's Vigil - Helendis Riverhorn /way 65 69",
+    "id": 4701
+  },
+  {
+    "link": 375,
+    "name": "General Drakkisath's Command",
+    "minLevel": 55,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": null,
+    "pickup": "Blackrock Spire, Lower, General Drakkisath's Command , dropped from Overlord Wyrmthalak",
+    "id": 5089
+  },
+  {
+    "link": 378,
+    "name": "Bijou's Belongings",
+    "minLevel": 55,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": null,
+    "pickup": "Blackrock Spire, Lower - Bijou",
+    "id": 5001
+  },
+  {
+    "link": 380,
+    "name": "En-Ay-Es-Tee-Why",
+    "minLevel": 55,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": "Both",
+    "pickup": "Burning Steppes, Flame Crest - Kibler /way 65 21",
+    "id": 4862
+  },
+  {
+    "link": 382,
+    "name": "Kibler's Exotic Pets",
+    "minLevel": 55,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": "Both",
+    "pickup": "Burning Steppes, Flame Crest - Kibler /way 65 21",
+    "id": 4729
+  },
+  {
+    "link": 383,
+    "name": "Mother's Milk",
+    "minLevel": 55,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": "Both",
+    "pickup": "Burning Steppes, Flame Crest - Ragged John /way 65 23",
+    "id": 4866
+  },
+  {
+    "link": 385,
+    "name": "Seal of Ascension",
+    "minLevel": 57,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": "Both",
+    "pickup": "Blackrock Spire, Lower - Unadorned Seal of Ascension , Gemstone of Smolderthorn , Gemstone of Spirestone , Gemstone of Bloodaxe",
+    "id": 4742
+  },
+  {
+    "link": 390,
+    "name": "Urok Doomhowl",
+    "minLevel": 55,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": "Both",
+    "pickup": "Blackrock Spire, Lower, Warosh , patrols near beginning of instance",
+    "id": 4867
+  },
+  {
+    "link": 392,
+    "name": "The Final Tablets",
+    "minLevel": 40,
+    "dungeon": "Lower Blackrock Spire - LBRS",
+    "faction": "Both",
+    "pickup": "Tanaris, Steamsheedle Port- Prospector Ironboot /way 66 24",
+    "id": 4788,
+    "note": "Complete 5 quests first, starting withScreecher Spirits"
+  },
+  {
+    "link": 395,
+    "name": "Barov Family Fortune",
+    "minLevel": 52,
+    "dungeon": "Scholomance",
+    "faction": null,
+    "pickup": "Tirisfal Glades, The Bulwark - Alexi Barov /way 83 71",
+    "id": 5341,
+    "note": "Alexi Barov may be dead due to Alliance kill quest; 30m spawn timer"
+  },
+  {
+    "link": 397,
+    "name": "The Darkreaver Menace",
+    "minLevel": 58,
+    "dungeon": "Scholomance",
+    "faction": null,
+    "pickup": "Shaman Only - Orgrimmar, Valley of Wisdom - Sagorne Creststrider /way 38 35",
+    "id": 7668,
+    "note": "CompleteMaterial Assistance first"
+  },
+  {
+    "link": 400,
+    "name": "Barov Family Fortune",
+    "minLevel": 52,
+    "dungeon": "Scholomance",
+    "faction": null,
+    "pickup": "Western Plaguelands, Chillwind Camp - Weldon Barov /way 43 83",
+    "id": 5343,
+    "note": "Weldon Barov may be dead due to Horde kill quest; 30m spawn timer"
+  },
+  {
+    "link": 402,
+    "name": "Plagued Hatchlings",
+    "minLevel": 55,
+    "dungeon": "Scholomance",
+    "faction": "Both",
+    "pickup": "Eastern Plaguelands, Light's Hope Chapel - Betina Bigglezink /way 81 59",
+    "id": 5529
+  },
+  {
+    "link": 407,
+    "name": "Doctor Theolen Krastinov, the Butcher",
+    "minLevel": 55,
+    "dungeon": "Scholomance",
+    "faction": "Both",
+    "pickup": "Western Plaguelands, Caer Darrow - Eva Sarkhoff /way 70 73",
+    "id": 5382
+  },
+  {
+    "link": 409,
+    "name": "Krastinov's Bag of Horrors",
+    "minLevel": 55,
+    "dungeon": "Scholomance",
+    "faction": "Both",
+    "pickup": "Western Plaguelands, Caer Darrow - Eva Sarkhoff /way 70 73",
+    "id": 5515,
+    "note": "CompleteDoctor Theolen Krastinov, the Butcher first"
+  },
+  {
+    "link": 410,
+    "name": "Kirtonos the Herald",
+    "minLevel": 55,
+    "dungeon": "Scholomance",
+    "faction": "Both",
+    "pickup": "Western Plaguelands, Caer Darrow - Eva Sarkhoff /way 70 73",
+    "id": 5384,
+    "note": "CompleteKrastinov's Bag of Horrors first; save reward item"
+  },
+  {
+    "link": 411,
+    "name": "Dawn's Gambit",
+    "minLevel": 57,
+    "dungeon": "Scholomance",
+    "faction": "Both",
+    "pickup": "Eastern Plaguelands, Light's Hope Chapel - Betina Bigglezink /way 81 59",
+    "id": 4771,
+    "note": "Complete 9 quests, starting withBroodling Essence first"
+  },
+  {
+    "link": 413,
+    "name": "The Lich, Ras Frostwhisper",
+    "minLevel": 57,
+    "dungeon": "Scholomance",
+    "faction": "Both",
+    "pickup": "Western Plaguelands, Caer Darrow - Magistrate Marduke /way 70 74",
+    "id": 5466,
+    "note": "Complete 8 quests, starting withDoctor Theolen Krastinov, the Butcher first"
+  },
+  {
+    "link": 416,
+    "name": "The Great Fras Siabi",
+    "minLevel": 55,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Eastern Plaguelands, Light's Hope Chapel - Smokey LaRue /way 80 58",
+    "id": 5214
+  },
+  {
+    "link": 418,
+    "name": "The Archivist",
+    "minLevel": 55,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Eastern Plaguelands, Light's Hope Chapel - Duke Nicholas Zverenhoff /way 81 59",
+    "id": 5251
+  },
+  {
+    "link": 420,
+    "name": "The Restless Souls",
+    "minLevel": 55,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Eastern Plaguelands, Terrordale - Egan /way 14 33",
+    "id": 5282
+  },
+  {
+    "link": 422,
+    "name": "The Medallion of Faith",
+    "minLevel": 55,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Stratholme, Undead Side - Aurius inside chapel at beginning",
+    "id": 5122,
+    "note": "Complete quest to pick upThe Restless Souls on Undead side"
+  },
+  {
+    "link": 425,
+    "name": "The Truth Comes Crashing Down",
+    "minLevel": 55,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "",
+    "id": 5262,
+    "note": "Drop  | Stratholme, Live - Head of Balnazzar from Balnazzar"
+  },
+  {
+    "link": 428,
+    "name": "Of Love and Family",
+    "minLevel": 52,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Western Plaguelands, Caer Darrow - Artist Renfray /way 65 75",
+    "id": 5848,
+    "note": "Complete 7 quests, starting withBlood Tinged Skies ,Carrion Grubbage , andDemon Dogs"
+  },
+  {
+    "link": 433,
+    "name": "Ramstein",
+    "minLevel": 56,
+    "dungeon": "Stratholme",
+    "faction": null,
+    "pickup": "Eastern Plaguelands, Marris Stead - Nathanos Blightcaller /way 26 74",
+    "id": 6163,
+    "note": "Complete 4 quests, starting withThe Ranger Lord's Behest andTo Kill With Purpose"
+  },
+  {
+    "link": 437,
+    "name": "Houses of the Holy",
+    "minLevel": 55,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Eastern Plaguelands, Light's Hope Chapel - Leonid Barthalomew the Revered /way 81 57",
+    "id": 5243
+  },
+  {
+    "link": 439,
+    "name": "The Flesh Does Not Lie",
+    "minLevel": 55,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Eastern Plaguelands, Light's Hope Chapel - Betina Bigglezink /way 81 59",
+    "id": 5212
+  },
+  {
+    "link": 440,
+    "name": "The Active Agent",
+    "minLevel": 55,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Eastern Plaguelands, Light's Hope Chapel - Betina Bigglezink /way 81 59",
+    "id": 5213,
+    "note": "CompleteThe Flesh Does Not Lie first"
+  },
+  {
+    "link": 441,
+    "name": "Aurius' Reckoning",
+    "minLevel": 55,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Stratholme, Undead Side - Aurius in chapel at beginning",
+    "id": 5125,
+    "note": "CompleteThe Medallion of Faith first"
+  },
+  {
+    "link": 442,
+    "name": "Above and Beyond",
+    "minLevel": 55,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Eastern Plaguelands, Light's Hope Chapel - Duke Nicholas Zverenhoff /way 81 59",
+    "id": 5263,
+    "note": "Complete 2 quests staring withThe Archivist"
+  },
+  {
+    "link": 443,
+    "name": "Menethil's Gift",
+    "minLevel": 57,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Eastern Plaguelands, Light's Hope Chapel - Leonid Barthalomew the Revered /way 81 57",
+    "id": 5463,
+    "note": "Complete 5 quests, starting withDoctor Theolen Krastinov, the Butcher first"
+  },
+  {
+    "link": 444,
+    "name": "Dead Man's Plea",
+    "minLevel": 58,
+    "dungeon": "Stratholme",
+    "faction": "Both",
+    "pickup": "Eastern Plaguelands, Stratholme Main Entrance - Anthion Harmon /way 30 16",
+    "id": 8945,
+    "note": "Complete 9 quests, starting withA Supernatural Device /A Supernatural Device . Requires Extra-Dimensional Ghost Revealer to see quest NPC"
+  },
+  {
+    "link": 449,
+    "name": "The Darkstone Tablet",
+    "minLevel": 57,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": null,
+    "pickup": "Badlands, Kargath - Shadowmage Vivian Lagrave /way 3 48",
+    "id": 4768,
+    "note": "Pick up non-required breadcrumbVivian Lagrave and the Darkstone Tablet in Undercity for easy XP"
+  },
+  {
+    "link": 451,
+    "name": "For The Horde!",
+    "minLevel": 55,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": null,
+    "pickup": "Orgrimmar, Valley of Wisdom - Thrall /way 31 37",
+    "id": 4974,
+    "note": "Complete 2 quests, starting withWarlord's Command first"
+  },
+  {
+    "link": 452,
+    "name": "Blood of the Black Dragon Champion",
+    "minLevel": 55,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": null,
+    "pickup": "Desolace, Rexxar , patrols (see database for path)",
+    "id": 6602,
+    "note": "Complete 13 quests, starting withWarlord's Command first"
+  },
+  {
+    "link": 454,
+    "name": "Doomrigger's Clasp",
+    "minLevel": 57,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": null,
+    "pickup": "Burning Steppes, Morgan's Vigil - Mayara Brightwing /way 84 69",
+    "id": 4764,
+    "note": "Pick up non-required breadcrumbMayara Brightwing in Stormwind Keep for easy XP"
+  },
+  {
+    "link": 457,
+    "name": "General Drakkisath's Demise",
+    "minLevel": 55,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": null,
+    "pickup": "Burning Steppes, Morgan's Vigil - Marshal Maxwell /way 84 68",
+    "id": 5102,
+    "note": "CompleteGeneral Drakkisath's Command first"
+  },
+  {
+    "link": 458,
+    "name": "Drakefire Amulet",
+    "minLevel": 50,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": null,
+    "pickup": "Winterspring, Mazthoril- Haleh /way 56 49",
+    "id": 6502,
+    "note": "Step on blue rune at end of cave to spawn NPC"
+  },
+  {
+    "link": 460,
+    "name": "Blackhand's Command",
+    "minLevel": 55,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": "Both",
+    "pickup": "Blackrock Mountain, Side hallway on way to BWL - Blackhand's Command dropped by Scarshield Quartermaster",
+    "id": 7761
+  },
+  {
+    "link": 463,
+    "name": "The Matron Protectorate",
+    "minLevel": 57,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": "Both",
+    "pickup": "Blackrock Spire, Upper, Awbee , on small ledge in room after killing Blackhand",
+    "id": 5160
+  },
+  {
+    "link": 465,
+    "name": "Finkle Einhorn, At Your Service!",
+    "minLevel": 57,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": "Both",
+    "pickup": "Blackrock Spire, Upper- Pip Quickwit , only spawns after Skinner (300) skins The Beast with Pip Quickwit",
+    "id": 5047
+  },
+  {
+    "link": 468,
+    "name": "Egg Collection",
+    "minLevel": 57,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": "Both",
+    "pickup": "Burning Steppes, Flame Crest - Tinkee Steamboil /way 65 23",
+    "id": 4735,
+    "note": "Complete 6 quests, starting withEgg Freezing andBroodling Essence from same NPC"
+  },
+  {
+    "link": 471,
+    "name": "Eye of the Emberseer",
+    "minLevel": 55,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": "Both",
+    "pickup": "Azshara - Duke Hydraxis /way 79 73",
+    "id": 6821,
+    "note": "Complete 2 quests,Stormers and Rumblers and Poisoned Water from same NPC"
+  },
+  {
+    "link": 475,
+    "name": "The Demon Forge",
+    "minLevel": 55,
+    "dungeon": "Upper Blackrock Spire - UBRS Dungeon Quests (56 58 59)",
+    "faction": "Both",
+    "pickup": "",
+    "id": 5127,
+    "note": "| Blacksmiths Only - Winterspring, Southeast - Lorax /way 63 73"
+  }
+]

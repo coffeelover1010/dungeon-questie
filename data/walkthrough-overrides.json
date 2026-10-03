@@ -1,0 +1,244 @@
+{
+  "92742": {
+    "name": "Testing the Wells",
+    "all": [],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92742",
+    "faction": "Alliance",
+    "minLevel": 9,
+    "pickup": "Alba Fairmoon, Sentinel Hill, Westfall.",
+    "turnin": "Alba Fairmoon, Sentinel Hill, Westfall.",
+    "objectives": [
+      "Use the sample kit at the wells at Jansen Stead and Molsen Farm."
+    ],
+    "routeNote": "Player-reported Westfall wells: Jansen Stead 56.7, 18.7; Molsen Farm 46.2, 38.3. Use the provided sample kit beside each well, then return to Alba.",
+    "checked": "2026-10-02"
+  },
+  "92744": {
+    "name": "Murloc Gills",
+    "all": [
+      92742
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92744",
+    "faction": "Alliance",
+    "pickup": "Alba Fairmoon, Sentinel Hill, Westfall.",
+    "turnin": "Alba Fairmoon, Sentinel Hill, Westfall.",
+    "objectives": [
+      "Collect 7 Longshore Murloc Gills from Westfall's coastal murlocs."
+    ],
+    "checked": "2026-10-02",
+    "minLevel": 9
+  },
+  "92745": {
+    "name": "The State of the Mines",
+    "all": [
+      92744
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92745",
+    "faction": "Alliance",
+    "pickup": "Alba Fairmoon, Sentinel Hill, Westfall.",
+    "turnin": "Alba Fairmoon, Sentinel Hill, Westfall.",
+    "objectives": [
+      "Defeat 4 Kobold Diggers at Jangolode Mine and 6 Riverpaw Miners at Gold Coast Quarry."
+    ],
+    "routeNote": "Optional player route: combine with The People's Militia. Clear Jangolode first, hand in the current militia quest and collect its next part, then visit Gold Coast Quarry. Prioritize Riverpaw Miners; the next Toxic Soil step takes you to Moonbrook for remaining militia kills. Militia quests are not Toxic Soil prerequisites.",
+    "checked": "2026-10-02",
+    "minLevel": 9
+  },
+  "92747": {
+    "name": "Moonbrook Espionage",
+    "all": [
+      92745
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92747",
+    "faction": "Alliance",
+    "pickup": "Alba Fairmoon, Sentinel Hill, Westfall.",
+    "turnin": "Alba Fairmoon, Sentinel Hill, Westfall.",
+    "objectives": [
+      "Collect 8 Suspicious Industrial Supplies around Moonbrook and its mine approach."
+    ],
+    "routeNote": "Player report: enter the building leading to the Deadmines tunnels in Moonbrook. Find supply crates in the caves before the instance portal; collect 8, then return to Alba.",
+    "checked": "2026-10-02",
+    "minLevel": 9
+  },
+  "92748": {
+    "name": "Explosive Consultation",
+    "all": [
+      92747
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92748",
+    "faction": "Alliance",
+    "pickup": "Alba Fairmoon, Sentinel Hill, Westfall.",
+    "turnin": "Sprite Jumpsprocket, Dwarven District, Stormwind.",
+    "objectives": [
+      "Find the engineer Sprite Jumpsprocket in Stormwind's Dwarven District."
+    ],
+    "checked": "2026-10-02",
+    "minLevel": 9
+  },
+  "92749": {
+    "name": "A Dynamite Plan",
+    "all": [
+      92748
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92749",
+    "faction": "Alliance",
+    "pickup": "Sprite Jumpsprocket, Dwarven District, Stormwind.",
+    "turnin": "Sprite Jumpsprocket, Dwarven District, Stormwind.",
+    "objectives": [
+      "If offered and required, obtain 10 Coarse Dynamite for Sprite. Check whether Detonation at a Distance is already offered before buying materials."
+    ],
+    "routeNote": "The published storyline includes this step, but beta players report it can be skipped. Accept a later offered step to advance the walkthrough; do not buy materials solely on this guide's say-so.",
+    "checked": "2026-10-02",
+    "minLevel": 9
+  },
+  "92750": {
+    "name": "Detonation at a Distance",
+    "all": [
+      92749
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92750",
+    "faction": "Alliance",
+    "pickup": "Sprite Jumpsprocket, Dwarven District, Stormwind.",
+    "turnin": "Stormwind Intelligence, Old Town, Stormwind; ask Jasper Fel.",
+    "objectives": [
+      "Visit Stormwind Intelligence in Old Town to arrange a remote detonator."
+    ],
+    "checked": "2026-10-02",
+    "minLevel": 9
+  },
+  "92751": {
+    "name": "Detonation at a Distance",
+    "all": [
+      92750
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92751",
+    "faction": "Alliance",
+    "pickup": "Stormwind Intelligence, Old Town, Stormwind; ask Jasper Fel.",
+    "turnin": "Sprite Jumpsprocket, Dwarven District, Stormwind.",
+    "objectives": [
+      "Deliver the Remote Detonator Kit to Sprite Jumpsprocket."
+    ],
+    "checked": "2026-10-02",
+    "minLevel": 9
+  },
+  "92752": {
+    "name": "Explosive Consultation",
+    "all": [
+      92751
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92752",
+    "faction": "Alliance",
+    "pickup": "Sprite Jumpsprocket, Dwarven District, Stormwind.",
+    "turnin": "Alba Fairmoon, Westfall.",
+    "objectives": [
+      "Take the explosives back to Alba Fairmoon in Westfall."
+    ],
+    "checked": "2026-10-02",
+    "minLevel": 9
+  },
+  "92753": {
+    "all": [
+      92752
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92753",
+    "pickupInside": false,
+    "pickup": "Alba Fairmoon, Westfall, after Explosive Consultation.",
+    "turnin": "Alba Fairmoon outside the Deadmines rear exit, in the hills behind Moonbrook.",
+    "routeNote": "Use Extra-Destructive Explosives beside the forge inside Deadmines. Players report the placement spot near the centre of the Gilnid foundry room. After the run, leave through the rear exit instead of hearthing. Meet Alba in the hills behind Moonbrook, turn this in, and accept the second Destruction in Deadmines quest (92819) to use the detonator.",
+    "objectives": [
+      "Place the explosives at the forge, then meet Alba at the rear exit."
+    ],
+    "checked": "2026-10-02",
+    "minLevel": 9
+  },
+  "96391": {
+    "all": [],
+    "any": [],
+    "unverifiedChain": false
+  },
+  "96393": {
+    "all": [
+      96391
+    ],
+    "any": [],
+    "unverifiedChain": false
+  },
+  "5722": {
+    "pickup": "Rahauro, Elder Rise, Thunder Bluff.",
+    "pin": {
+      "map": 1456,
+      "x": 70.8,
+      "y": 31.6,
+      "zone": "Thunder Bluff",
+      "title": "Rahauro"
+    },
+    "pickupInside": false,
+    "fieldSources": {
+      "pickup": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
+      "pin": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/"
+    }
+  },
+  "92819": {
+    "name": "Destruction in Deadmines",
+    "all": [
+      92753
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92819/destruction-in-deadmines",
+    "faction": "Alliance",
+    "minLevel": 9,
+    "pickup": "Alba Fairmoon at the Deadmines rear exit, in the hills behind Moonbrook.",
+    "turnin": "Alba Fairmoon at the Deadmines rear exit.",
+    "objectives": [
+      "Use the detonator."
+    ],
+    "routeNote": "Final Toxic Soil step after planting the explosives: follow the quest log to use the detonator outside, then speak to Alba to finish.",
+    "checked": "2026-10-02"
+  },
+  "2951": {
+    "pickup": "Sparklematic machine in the Clean Zone inside Gnomeregan.",
+    "pickupInside": true,
+    "repeatable": false,
+    "objectives": [
+      "Bring 1 Grime-Encrusted Object and 3 silver to the Sparklematic 5200."
+    ],
+    "preparationNote": "Bring 1 Grime-Encrusted Object and 3 silver. Use the machine in the Clean Zone.",
+    "routeNote": "Use the Sparklematic in the Clean Zone with 1 Grime-Encrusted Object and 3 silver, then speak to the machine again for the follow-up.",
+    "source": "https://www.wowhead.com/forever/quest=2951/the-sparklematic-5200",
+    "evidence": "Forever database",
+    "checked": "2026-10-02",
+    "notes": "Wowhead Forever lists the object and 3 silver requirement. Player reports unchanged behavior. The initial quest 2951 is separate from reward step 2952 and repeatable More Sparklematic Action 2953; Classic chain reference retained."
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "pagesChecked": 94,
+  "records": [
+    {
+      "id": 5723,
+      "name": "Rahauro",
+      "location": "Thunder Bluff, Elder Rise (70.8, 31.6)",
+      "source": "https://wowforevertalents.com/quests/testing-an-enemy-s-strength-5723/",
+      "pin": {
+        "map": 1456,
+        "x": 70.8,
+        "y": 31.6,
+        "zone": "Thunder Bluff",
+        "title": "Rahauro"
+      }
+    },
+    {
+      "id": 5728,
+      "name": "Thrall",
+      "location": "Orgrimmar, Grommash Hold (31.7, 38.0)",
+      "source": "https://wowforevertalents.com/quests/hidden-enemies-5728/",
+      "pin": {
+        "map": 1454,
+        "x": 31.7,
+        "y": 38.0,
+        "zone": "Orgrimmar",
+        "title": "Thrall"
+      }
+    },
+    {
+      "id": 5722,
+      "name": "Rahauro",
+      "location": "Thunder Bluff, Elder Rise (70.8, 31.6)",
+      "source": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
+      "pin": {
+        "map": 1456,
+        "x": 70.8,
+        "y": 31.6,
+        "zone": "Thunder Bluff",
+        "title": "Rahauro"
+      }
+    },
+    {
+      "id": 5761,
+      "name": "Neeru Fireblade",
+      "location": "Orgrimmar, Cleft of Shadow (49.5, 50.4)",
+      "source": "https://wowforevertalents.com/quests/slaying-the-beast-5761/",
+      "pin": {
+        "map": 1454,
+        "x": 49.5,
+        "y": 50.4,
+        "zone": "Orgrimmar",
+        "title": "Neeru Fireblade"
+      }
+    },
+    {
+      "id": 5725,
+      "name": "Varimathras",
+      "location": "Undercity, Royal Quarter (56.4, 92.6)",
+      "source": "https://wowforevertalents.com/quests/the-power-to-destroy-5725/",
+      "pin": {
+        "map": 1458,
+        "x": 56.4,
+        "y": 92.6,
+        "zone": "Undercity",
+        "title": "Varimathras"
+      }
+    },
+    {
+      "id": 92401,
+      "name": "Tabitha Heartweaver",
+      "location": "Silverpine Forest, The Sepulcher (44.5, 43.0)",
+      "source": "https://wowforevertalents.com/quests/a-frightened-request-92401/",
+      "pin": {
+        "map": 1421,
+        "x": 44.5,
+        "y": 43.0,
+        "zone": "Silverpine Forest",
+        "title": "Tabitha Heartweaver"
+      }
+    },
+    {
+      "id": 166,
+      "name": "Gryan Stoutmantle",
+      "location": "Sentinel Tower (56.4, 47.5)",
+      "source": "https://wowforevertalents.com/quests/the-defias-brotherhood-166/",
+      "pin": {
+        "map": 1436,
+        "x": 56.4,
+        "y": 47.5,
+        "zone": "Westfall",
+        "title": "Gryan Stoutmantle"
+      }
+    },
+    {
+      "id": 387,
+      "name": "Warden Thelwater",
+      "location": "Stormwind City, Stormwind City (51.5, 69.2)",
+      "source": "https://wowforevertalents.com/quests/quell-the-uprising-387/",
+      "pin": {
+        "map": 1453,
+        "x": 51.5,
+        "y": 69.2,
+        "zone": "Stormwind City",
+        "title": "Warden Thelwater"
+      }
+    }
+  ]
+}

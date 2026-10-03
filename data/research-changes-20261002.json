@@ -1,0 +1,2524 @@
+{
+  "date": "2026-10-02",
+  "snapshot": "tmp/dungeon-research-20261002",
+  "acceptedCacheRecords": 94,
+  "addedQuestIDs": [
+    2931,
+    2925,
+    98815,
+    95697,
+    95663,
+    98823,
+    95664,
+    95795,
+    95809,
+    95646,
+    95647,
+    95810,
+    95682,
+    98824,
+    95737,
+    95772
+  ],
+  "upgradedReferenceIDs": [
+    378,
+    1142,
+    1102,
+    2924,
+    2930,
+    2951,
+    2841,
+    2929,
+    1051,
+    1160,
+    1049,
+    1050
+  ],
+  "deferredQuestIDs": [
+    92456,
+    96987,
+    92489,
+    96988,
+    96986
+  ],
+  "cacheFieldComparisons": [
+    {
+      "id": 5723,
+      "name": "Testing an Enemy's Strength",
+      "source": "https://wowforevertalents.com/quests/testing-an-enemy-s-strength-5723/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "people": {
+          "old": [
+            "Turned in to: Rahauro"
+          ],
+          "new": [
+            "Picked up from: Rahauro",
+            "Turned in to: Rahauro"
+          ]
+        }
+      }
+    },
+    {
+      "id": 5728,
+      "name": "Hidden Enemies",
+      "source": "https://wowforevertalents.com/quests/hidden-enemies-5728/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "people": {
+          "old": [
+            "Turned in to: Thrall"
+          ],
+          "new": [
+            "Picked up from: Thrall",
+            "Turned in to: Thrall"
+          ]
+        }
+      }
+    },
+    {
+      "id": 5724,
+      "name": "Returning the Lost Satchel",
+      "source": "https://wowforevertalents.com/quests/returning-the-lost-satchel-5724/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 5722,
+      "name": "Searching for the Lost Satchel",
+      "source": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "people": {
+          "old": [],
+          "new": [
+            "Picked up from: Rahauro"
+          ]
+        }
+      }
+    },
+    {
+      "id": 5761,
+      "name": "Slaying the Beast",
+      "source": "https://wowforevertalents.com/quests/slaying-the-beast-5761/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "people": {
+          "old": [
+            "Turned in to: Neeru Fireblade"
+          ],
+          "new": [
+            "Picked up from: Neeru Fireblade",
+            "Turned in to: Neeru Fireblade"
+          ]
+        }
+      }
+    },
+    {
+      "id": 5725,
+      "name": "The Power to Destroy...",
+      "source": "https://wowforevertalents.com/quests/the-power-to-destroy-5725/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "people": {
+          "old": [
+            "Turned in to: Varimathras"
+          ],
+          "new": [
+            "Picked up from: Varimathras",
+            "Turned in to: Varimathras"
+          ]
+        }
+      }
+    },
+    {
+      "id": 96395,
+      "name": "An Ancient Grudge",
+      "source": "https://wowforevertalents.com/quests/an-ancient-grudge-96395/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 96403,
+      "name": "Important Heirlooms",
+      "source": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 96394,
+      "name": "The Restless Dead",
+      "source": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 96393,
+      "name": "Old Ironforge Incursion",
+      "source": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 95250,
+      "name": "Abominable Creatures",
+      "source": "https://wowforevertalents.com/quests/abominable-creatures-95250/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 97288,
+      "name": "Unending Torment",
+      "source": "https://wowforevertalents.com/quests/unending-torment-97288/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: Master Apothecary Faranell"
+          ]
+        }
+      }
+    },
+    {
+      "id": 92401,
+      "name": "A Frightened Request",
+      "source": "https://wowforevertalents.com/quests/a-frightened-request-92401/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "rewards": {
+          "old": [
+            {
+              "id": 251485,
+              "name": "Edwards' Knife"
+            },
+            {
+              "id": 251486,
+              "name": "Tabitha's Cuffs"
+            }
+          ],
+          "new": [
+            {
+              "id": 251485,
+              "name": "Edward's Knife"
+            },
+            {
+              "id": 251486,
+              "name": "Tabitha's Cuffs"
+            }
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Picked up from: Tabitha Heartweaver"
+          ]
+        }
+      }
+    },
+    {
+      "id": 92421,
+      "name": "Light's Justice",
+      "source": "https://wowforevertalents.com/quests/light-s-justice-92421/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 92415,
+      "name": "Remember That I Love You",
+      "source": "https://wowforevertalents.com/quests/remember-that-i-love-you-92415/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 92422,
+      "name": "The Wrath of Rath'mael",
+      "source": "https://wowforevertalents.com/quests/the-wrath-of-rath-mael-92422/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 95195,
+      "name": "Bloodied Insignia",
+      "source": "https://wowforevertalents.com/quests/bloodied-insignia-95195/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 95189,
+      "name": "Crest of Lordaeron",
+      "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95189/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 95204,
+      "name": "Crest of Lordaeron",
+      "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95204/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 95216,
+      "name": "The New Plague",
+      "source": "https://wowforevertalents.com/quests/the-new-plague-95216/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 214,
+      "name": "Red Silk Bandanas",
+      "source": "https://wowforevertalents.com/quests/red-silk-bandanas-214/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 92753,
+      "name": "Destruction in Deadmines",
+      "source": "https://wowforevertalents.com/quests/destruction-in-deadmines-92753/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "rewards": {
+          "old": [],
+          "new": [
+            {
+              "id": 254553,
+              "name": "Extra-Destructive Explosives"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 168,
+      "name": "Collecting Memories",
+      "source": "https://wowforevertalents.com/quests/collecting-memories-168/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 167,
+      "name": "Oh Brother...",
+      "source": "https://wowforevertalents.com/quests/oh-brother-167/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 2040,
+      "name": "Underground Assault",
+      "source": "https://wowforevertalents.com/quests/underground-assault-2040/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 166,
+      "name": "The Defias Brotherhood",
+      "source": "https://wowforevertalents.com/quests/the-defias-brotherhood-166/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 373,
+      "name": "The Unsent Letter",
+      "source": "https://wowforevertalents.com/quests/the-unsent-letter-373/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1489,
+      "name": "Hamuul Runetotem",
+      "source": "https://wowforevertalents.com/quests/hamuul-runetotem-1489/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1490,
+      "name": "Nara Wildmane",
+      "source": "https://wowforevertalents.com/quests/nara-wildmane-1490/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1486,
+      "name": "Deviate Hides",
+      "source": "https://wowforevertalents.com/quests/deviate-hides-1486/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1491,
+      "name": "Smart Drinks",
+      "source": "https://wowforevertalents.com/quests/smart-drinks-1491/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 962,
+      "name": "Serpentbloom",
+      "source": "https://wowforevertalents.com/quests/serpentbloom-962/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 959,
+      "name": "Trouble at the Docks",
+      "source": "https://wowforevertalents.com/quests/trouble-at-the-docks-959/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1487,
+      "name": "Deviate Eradication",
+      "source": "https://wowforevertalents.com/quests/deviate-eradication-1487/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 914,
+      "name": "Leaders of the Fang",
+      "source": "https://wowforevertalents.com/quests/leaders-of-the-fang-914/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 3366,
+      "name": "The Glowing Shard",
+      "source": "https://wowforevertalents.com/quests/the-glowing-shard-3366/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 6981,
+      "name": "The Glowing Shard",
+      "source": "https://wowforevertalents.com/quests/the-glowing-shard-6981/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1098,
+      "name": "Deathstalkers in Shadowfang",
+      "source": "https://wowforevertalents.com/quests/deathstalkers-in-shadowfang-1098/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1740,
+      "name": "The Orb of Soran'ruk",
+      "source": "https://wowforevertalents.com/quests/the-orb-of-soran-ruk-1740/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "dungeons": {
+          "old": [
+            "Shadowfang Keep",
+            "Blackfathom Deeps"
+          ],
+          "new": [
+            "Shadowfang Keep"
+          ]
+        }
+      }
+    },
+    {
+      "id": 1013,
+      "name": "The Book of Ur",
+      "source": "https://wowforevertalents.com/quests/the-book-of-ur-1013/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1014,
+      "name": "Arugal Must Die",
+      "source": "https://wowforevertalents.com/quests/arugal-must-die-1014/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 6564,
+      "name": "Allegiance to the Old Gods",
+      "source": "https://wowforevertalents.com/quests/allegiance-to-the-old-gods-6564/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 6563,
+      "name": "The Essence of Aku'Mai",
+      "source": "https://wowforevertalents.com/quests/the-essence-of-aku-mai-6563/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 6562,
+      "name": "Trouble in the Deeps",
+      "source": "https://wowforevertalents.com/quests/trouble-in-the-deeps-6562/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 971,
+      "name": "Knowledge in the Deeps",
+      "source": "https://wowforevertalents.com/quests/knowledge-in-the-deeps-971/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1198,
+      "name": "In Search of Thaelrid",
+      "source": "https://wowforevertalents.com/quests/in-search-of-thaelrid-1198/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1275,
+      "name": "Researching the Corruption",
+      "source": "https://wowforevertalents.com/quests/researching-the-corruption-1275/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "chain": {
+          "old": [
+            {
+              "role": "Related quest (requirement unverified)",
+              "name": "The Corruption Abroad",
+              "id": 3765
+            }
+          ],
+          "new": [
+            {
+              "role": "Comes after",
+              "name": "The Corruption Abroad",
+              "id": 3765
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 1199,
+      "name": "Twilight Falls",
+      "source": "https://wowforevertalents.com/quests/twilight-falls-1199/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 6565,
+      "name": "Allegiance to the Old Gods",
+      "source": "https://wowforevertalents.com/quests/allegiance-to-the-old-gods-6565/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1200,
+      "name": "Blackfathom Villainy",
+      "source": "https://wowforevertalents.com/quests/blackfathom-villainy-1200/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 6561,
+      "name": "Blackfathom Villainy",
+      "source": "https://wowforevertalents.com/quests/blackfathom-villainy-6561/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 386,
+      "name": "What Comes Around...",
+      "source": "https://wowforevertalents.com/quests/what-comes-around-386/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "rewards": {
+          "old": [
+            {
+              "id": 3400,
+              "name": "Lucine Longsword"
+            },
+            {
+              "id": 1317,
+              "name": "Hardened Root Staff"
+            },
+            {
+              "id": 270027,
+              "name": "item 270027"
+            }
+          ],
+          "new": [
+            {
+              "id": 3400,
+              "name": "Lucine Longsword"
+            },
+            {
+              "id": 1317,
+              "name": "Hardened Root Staff"
+            },
+            {
+              "id": 270027,
+              "name": "Ursine Hammer"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 377,
+      "name": "Crime and Punishment",
+      "source": "https://wowforevertalents.com/quests/crime-and-punishment-377/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "rewards": {
+          "old": [
+            {
+              "id": 2033,
+              "name": "Ambassador's Boots"
+            },
+            {
+              "id": 2906,
+              "name": "Darkshire Mail Leggings"
+            },
+            {
+              "id": 270029,
+              "name": "item 270029"
+            }
+          ],
+          "new": [
+            {
+              "id": 2033,
+              "name": "Ambassador's Boots"
+            },
+            {
+              "id": 2906,
+              "name": "Darkshire Mail Leggings"
+            },
+            {
+              "id": 270029,
+              "name": "Town Clerk's Mittens"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 387,
+      "name": "Quell the Uprising",
+      "source": "https://wowforevertalents.com/quests/quell-the-uprising-387/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 388,
+      "name": "The Color of Blood",
+      "source": "https://wowforevertalents.com/quests/the-color-of-blood-388/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 378,
+      "name": "The Fury Runs Deep",
+      "source": "https://wowforevertalents.com/quests/the-fury-runs-deep-378/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=378",
+          "new": "https://wowforevertalents.com/quests/the-fury-runs-deep-378/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 27
+        },
+        "minLevel": {
+          "old": 25,
+          "new": 22
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Head of Deepfury"
+          ]
+        },
+        "rewards": {
+          "old": [],
+          "new": [
+            {
+              "id": 3562,
+              "name": "Belt of Vindication"
+            },
+            {
+              "id": 1264,
+              "name": "Headbasher"
+            },
+            {
+              "id": 270036,
+              "name": "Magistrate's Pantaloons"
+            }
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Picked up from: Motley Garmason"
+          ]
+        }
+      }
+    },
+    {
+      "id": 391,
+      "name": "The Stockade Riots",
+      "source": "https://wowforevertalents.com/quests/the-stockade-riots-391/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1221,
+      "name": "Blueleaf Tubers",
+      "source": "https://wowforevertalents.com/quests/blueleaf-tubers-1221/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 1144,
+      "name": "Willix the Importer",
+      "source": "https://wowforevertalents.com/quests/willix-the-importer-1144/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "rewards": {
+          "old": [
+            {
+              "id": 6748,
+              "name": "Monkey Ring"
+            },
+            {
+              "id": 6750,
+              "name": "Snake Hoop"
+            },
+            {
+              "id": 6749,
+              "name": "Tiger Band"
+            },
+            {
+              "id": 274078,
+              "name": "item 274078"
+            }
+          ],
+          "new": [
+            {
+              "id": 6748,
+              "name": "Monkey Ring"
+            },
+            {
+              "id": 6750,
+              "name": "Snake Hoop"
+            },
+            {
+              "id": 6749,
+              "name": "Tiger Band"
+            },
+            {
+              "id": 274078,
+              "name": "Boar Signet"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 1142,
+      "name": "Mortality Wanes",
+      "source": "https://wowforevertalents.com/quests/mortality-wanes-1142/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=1142",
+          "new": "https://wowforevertalents.com/quests/mortality-wanes-1142/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 30
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Treshala's Pendant"
+          ]
+        },
+        "rewards": {
+          "old": [],
+          "new": [
+            {
+              "id": 6751,
+              "name": "Mourning Shawl"
+            },
+            {
+              "id": 6752,
+              "name": "Lancer Boots"
+            },
+            {
+              "id": 270047,
+              "name": "item 270047"
+            }
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: Treshala Fallowbrook"
+          ]
+        }
+      }
+    },
+    {
+      "id": 1102,
+      "name": "A Vengeful Fate",
+      "source": "https://wowforevertalents.com/quests/a-vengeful-fate-1102/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=1102",
+          "new": "https://wowforevertalents.com/quests/a-vengeful-fate-1102/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 34
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Razorflank's Heart"
+          ]
+        },
+        "rewards": {
+          "old": [],
+          "new": [
+            {
+              "id": 4197,
+              "name": "Berylline Pads"
+            },
+            {
+              "id": 6742,
+              "name": "Stonefist Girdle"
+            },
+            {
+              "id": 6725,
+              "name": "Marbled Buckler"
+            },
+            {
+              "id": 274084,
+              "name": "Quilboar Blaster"
+            }
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: Auld Stonespire"
+          ]
+        }
+      }
+    },
+    {
+      "id": 2922,
+      "name": "Save Techbot's Brain!",
+      "source": "https://wowforevertalents.com/quests/save-techbot-s-brain-2922/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 2923,
+      "name": "Tinkmaster Overspark",
+      "source": "https://wowforevertalents.com/quests/tinkmaster-overspark-2923/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 2926,
+      "name": "Gnogaine",
+      "source": "https://wowforevertalents.com/quests/gnogaine-2926/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 2927,
+      "name": "The Day After",
+      "source": "https://wowforevertalents.com/quests/the-day-after-2927/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 2931,
+      "name": "Castpipe's Task",
+      "source": "https://wowforevertalents.com/quests/castpipe-s-task-2931/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 2931
+        },
+        "name": {
+          "old": null,
+          "new": "Castpipe's Task"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Gnomeregan"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/castpipe-s-task-2931/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 28
+        },
+        "minLevel": {
+          "old": null,
+          "new": 25
+        },
+        "objectives": {
+          "old": null,
+          "new": []
+        },
+        "rewards": {
+          "old": null,
+          "new": []
+        },
+        "people": {
+          "old": null,
+          "new": [
+            "Turned in to: Master Mechanic Castpipe"
+          ]
+        },
+        "chain": {
+          "old": null,
+          "new": [
+            {
+              "role": "Leads to",
+              "name": "Data Rescue",
+              "id": 2930
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2904,
+      "name": "A Fine Mess",
+      "source": "https://wowforevertalents.com/quests/a-fine-mess-2904/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "rewards": {
+          "old": [
+            {
+              "id": 9535,
+              "name": "Fire-welded Bracers"
+            },
+            {
+              "id": 9536,
+              "name": "Fairywing Mantle"
+            },
+            {
+              "id": 270042,
+              "name": "item 270042"
+            }
+          ],
+          "new": [
+            {
+              "id": 9535,
+              "name": "Fire-welded Bracers"
+            },
+            {
+              "id": 9536,
+              "name": "Fairywing Mantle"
+            },
+            {
+              "id": 270042,
+              "name": "Technician's Bracers"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2928,
+      "name": "Gyrodrillmatic Excavationators",
+      "source": "https://wowforevertalents.com/quests/gyrodrillmatic-excavationators-2928/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 2924,
+      "name": "Essential Artificials",
+      "source": "https://wowforevertalents.com/quests/essential-artificials-2924/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=2924",
+          "new": "https://wowforevertalents.com/quests/essential-artificials-2924/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 30
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Essential Artificial ×12"
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: Klockmort Spannerspan"
+          ]
+        },
+        "chain": {
+          "old": [],
+          "new": [
+            {
+              "role": "Comes after",
+              "name": "Klockmort's Essentials",
+              "id": 2925
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2925,
+      "name": "Klockmort's Essentials",
+      "source": "https://wowforevertalents.com/quests/klockmort-s-essentials-2925/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 2925
+        },
+        "name": {
+          "old": null,
+          "new": "Klockmort's Essentials"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Gnomeregan"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/klockmort-s-essentials-2925/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 30
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "objectives": {
+          "old": null,
+          "new": []
+        },
+        "rewards": {
+          "old": null,
+          "new": []
+        },
+        "people": {
+          "old": null,
+          "new": [
+            "Turned in to: Klockmort Spannerspan"
+          ]
+        },
+        "chain": {
+          "old": null,
+          "new": [
+            {
+              "role": "Leads to",
+              "name": "Essential Artificials",
+              "id": 2924
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2930,
+      "name": "Data Rescue",
+      "source": "https://wowforevertalents.com/quests/data-rescue-2930/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=2930",
+          "new": "https://wowforevertalents.com/quests/data-rescue-2930/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 30
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Prismatic Punch Card"
+          ]
+        },
+        "rewards": {
+          "old": [],
+          "new": [
+            {
+              "id": 9605,
+              "name": "Repairman's Cape"
+            },
+            {
+              "id": 9604,
+              "name": "Mechanic's Pipehammer"
+            }
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: Master Mechanic Castpipe"
+          ]
+        },
+        "chain": {
+          "old": [],
+          "new": [
+            {
+              "role": "Comes after",
+              "name": "Castpipe's Task",
+              "id": 2931
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2951,
+      "name": "The Sparklematic 5200!",
+      "source": "https://wowforevertalents.com/quests/the-sparklematic-5200-2951/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=2951",
+          "new": "https://wowforevertalents.com/quests/the-sparklematic-5200-2951/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 30
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Grime-Encrusted Object"
+          ]
+        }
+      }
+    },
+    {
+      "id": 2842,
+      "name": "Chief Engineer Scooty",
+      "source": "https://wowforevertalents.com/quests/chief-engineer-scooty-2842/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 2843,
+      "name": "Gnomer-gooooone!",
+      "source": "https://wowforevertalents.com/quests/gnomer-gooooone-2843/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {}
+    },
+    {
+      "id": 2841,
+      "name": "Rig Wars",
+      "source": "https://wowforevertalents.com/quests/rig-wars-2841/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=2841",
+          "new": "https://wowforevertalents.com/quests/rig-wars-2841/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 35
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Rig Blueprints",
+            "Thermaplugg's Safe Combination"
+          ]
+        },
+        "rewards": {
+          "old": [],
+          "new": [
+            {
+              "id": 9623,
+              "name": "Civinad Robes"
+            },
+            {
+              "id": 9624,
+              "name": "Triprunner Dungarees"
+            },
+            {
+              "id": 9625,
+              "name": "Dual Reinforced Leggings"
+            }
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: Nogg"
+          ]
+        }
+      }
+    },
+    {
+      "id": 2929,
+      "name": "The Grand Betrayal",
+      "source": "https://wowforevertalents.com/quests/the-grand-betrayal-2929/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=2929",
+          "new": "https://wowforevertalents.com/quests/the-grand-betrayal-2929/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 35
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Mekgineer Thermaplugg"
+          ]
+        },
+        "rewards": {
+          "old": [],
+          "new": [
+            {
+              "id": 9623,
+              "name": "Civinad Robes"
+            },
+            {
+              "id": 9624,
+              "name": "Triprunner Dungarees"
+            },
+            {
+              "id": 9625,
+              "name": "Dual Reinforced Leggings"
+            }
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: High Tinker Mekkatorque"
+          ]
+        }
+      }
+    },
+    {
+      "id": 98815,
+      "name": "Highland Hides",
+      "source": "https://wowforevertalents.com/quests/highland-hides-98815/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 98815
+        },
+        "name": {
+          "old": null,
+          "new": "Highland Hides"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/highland-hides-98815/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 28
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "objectives": {
+          "old": null,
+          "new": [
+            "Thicket Raptor Hide ×4"
+          ]
+        },
+        "rewards": {
+          "old": null,
+          "new": []
+        },
+        "people": {
+          "old": null,
+          "new": [
+            "Turned in to: James Halloran"
+          ]
+        },
+        "chain": {
+          "old": null,
+          "new": [
+            {
+              "role": "Leads to",
+              "name": "Young Crocolisk Skins",
+              "id": 484
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 95697,
+      "name": "Changing Tastes",
+      "source": "https://wowforevertalents.com/quests/changing-tastes-95697/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 95697
+        },
+        "name": {
+          "old": null,
+          "new": "Changing Tastes"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/changing-tastes-95697/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "faction": {
+          "old": null,
+          "new": "Horde"
+        },
+        "objectives": {
+          "old": null,
+          "new": [
+            "Thicket Raptor Meat ×4"
+          ]
+        },
+        "rewards": {
+          "old": null,
+          "new": [
+            {
+              "id": 280766,
+              "name": "Satchel of Potions"
+            },
+            {
+              "id": 280805,
+              "name": "Serrated Raptor Claw"
+            },
+            {
+              "id": 250185,
+              "name": "Recipe: Twice-Spiced Raptor Slice"
+            },
+            {
+              "id": 250077,
+              "name": "Twice-Spiced Raptor Slice ×5"
+            }
+          ]
+        },
+        "people": {
+          "old": null,
+          "new": []
+        },
+        "chain": {
+          "old": null,
+          "new": []
+        }
+      }
+    },
+    {
+      "id": 95663,
+      "name": "Dragonmaw Rumors",
+      "source": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 95663
+        },
+        "name": {
+          "old": null,
+          "new": "Dragonmaw Rumors"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "objectives": {
+          "old": null,
+          "new": []
+        },
+        "rewards": {
+          "old": null,
+          "new": []
+        },
+        "people": {
+          "old": null,
+          "new": []
+        },
+        "chain": {
+          "old": null,
+          "new": [
+            {
+              "role": "Leads to",
+              "name": "Open the Maw",
+              "id": 95682
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 98823,
+      "name": "Earthen Echo",
+      "source": "https://wowforevertalents.com/quests/earthen-echo-98823/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 98823
+        },
+        "name": {
+          "old": null,
+          "new": "Earthen Echo"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/earthen-echo-98823/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "faction": {
+          "old": null,
+          "new": "Horde"
+        },
+        "objectives": {
+          "old": null,
+          "new": [
+            "Titan Relic"
+          ]
+        },
+        "rewards": {
+          "old": null,
+          "new": [
+            {
+              "id": 271766,
+              "name": "Heavehammer"
+            },
+            {
+              "id": 271767,
+              "name": "Healer's Staff"
+            },
+            {
+              "id": 271719,
+              "name": "Furs of the Earthen Ring"
+            }
+          ]
+        },
+        "people": {
+          "old": null,
+          "new": [
+            "Turned in to: Muln Earthfury"
+          ]
+        },
+        "chain": {
+          "old": null,
+          "new": [
+            {
+              "role": "Comes after",
+              "name": "Elder Knowledge",
+              "id": 95664
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 95664,
+      "name": "Elder Knowledge",
+      "source": "https://wowforevertalents.com/quests/elder-knowledge-95664/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 95664
+        },
+        "name": {
+          "old": null,
+          "new": "Elder Knowledge"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/elder-knowledge-95664/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "faction": {
+          "old": null,
+          "new": "Horde"
+        },
+        "objectives": {
+          "old": null,
+          "new": [
+            "Titan Relic"
+          ]
+        },
+        "rewards": {
+          "old": null,
+          "new": []
+        },
+        "people": {
+          "old": null,
+          "new": []
+        },
+        "chain": {
+          "old": null,
+          "new": [
+            {
+              "role": "Leads to",
+              "name": "Earthen Echo",
+              "id": 98823
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 95795,
+      "name": "Fallen in the Fen",
+      "source": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 95795
+        },
+        "name": {
+          "old": null,
+          "new": "Fallen in the Fen"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "objectives": {
+          "old": null,
+          "new": []
+        },
+        "rewards": {
+          "old": null,
+          "new": [
+            {
+              "id": 271769,
+              "name": "Daewyn's Girdle"
+            },
+            {
+              "id": 271768,
+              "name": "Songblade Stabilizer"
+            }
+          ]
+        },
+        "people": {
+          "old": null,
+          "new": [
+            "Turned in to: Dorin Songblade"
+          ]
+        },
+        "chain": {
+          "old": null,
+          "new": []
+        }
+      }
+    },
+    {
+      "id": 95809,
+      "name": "Heartwoven",
+      "source": "https://wowforevertalents.com/quests/heartwoven-95809/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 95809
+        },
+        "name": {
+          "old": null,
+          "new": "Heartwoven"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/heartwoven-95809/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "faction": {
+          "old": null,
+          "new": "Alliance"
+        },
+        "objectives": {
+          "old": null,
+          "new": [
+            "Reed-woven Heart"
+          ]
+        },
+        "rewards": {
+          "old": null,
+          "new": [
+            {
+              "id": 270901,
+              "name": "Reed-woven Heart"
+            },
+            {
+              "id": 1710,
+              "name": "Greater Healing Potion ×4"
+            },
+            {
+              "id": 3827,
+              "name": "Mana Potion ×4"
+            },
+            {
+              "id": 2459,
+              "name": "Swiftness Potion"
+            },
+            {
+              "id": 280766,
+              "name": "Satchel of Potions"
+            }
+          ]
+        },
+        "people": {
+          "old": null,
+          "new": [
+            "Turned in to: Caitlin Grassman"
+          ]
+        },
+        "chain": {
+          "old": null,
+          "new": [
+            {
+              "role": "Comes after",
+              "name": "Lost in the Thicket Things",
+              "id": 95647
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 95646,
+      "name": "Horrors in the Highland",
+      "source": "https://wowforevertalents.com/quests/horrors-in-the-highland-95646/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 95646
+        },
+        "name": {
+          "old": null,
+          "new": "Horrors in the Highland"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/horrors-in-the-highland-95646/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "faction": {
+          "old": null,
+          "new": "Alliance"
+        },
+        "objectives": {
+          "old": null,
+          "new": [
+            "Horrible Rootcore"
+          ]
+        },
+        "rewards": {
+          "old": null,
+          "new": [
+            {
+              "id": 271667,
+              "name": "Ironwood Destroyer"
+            },
+            {
+              "id": 271670,
+              "name": "Curl of Life"
+            },
+            {
+              "id": 271664,
+              "name": "Hornbeam Heft"
+            }
+          ]
+        },
+        "people": {
+          "old": null,
+          "new": [
+            "Turned in to: Rethiel the Greenwarden"
+          ]
+        },
+        "chain": {
+          "old": null,
+          "new": []
+        }
+      }
+    },
+    {
+      "id": 95647,
+      "name": "Lost in the Thicket Things",
+      "source": "https://wowforevertalents.com/quests/lost-in-the-thicket-things-95647/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 95647
+        },
+        "name": {
+          "old": null,
+          "new": "Lost in the Thicket Things"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/lost-in-the-thicket-things-95647/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "faction": {
+          "old": null,
+          "new": "Alliance"
+        },
+        "objectives": {
+          "old": null,
+          "new": [
+            "Learn what happened to Ardin Grassman"
+          ]
+        },
+        "rewards": {
+          "old": null,
+          "new": []
+        },
+        "people": {
+          "old": null,
+          "new": []
+        },
+        "chain": {
+          "old": null,
+          "new": [
+            {
+              "role": "Leads to",
+              "name": "Heartwoven",
+              "id": 95809
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 95810,
+      "name": "Lost Relic Carry",
+      "source": "https://wowforevertalents.com/quests/lost-relic-carry-95810/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 95810
+        },
+        "name": {
+          "old": null,
+          "new": "Lost Relic Carry"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/lost-relic-carry-95810/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "faction": {
+          "old": null,
+          "new": "Alliance"
+        },
+        "objectives": {
+          "old": null,
+          "new": [
+            "Titan Relic"
+          ]
+        },
+        "rewards": {
+          "old": null,
+          "new": []
+        },
+        "people": {
+          "old": null,
+          "new": [
+            "Turned in to: Prospector Whelgar"
+          ]
+        },
+        "chain": {
+          "old": null,
+          "new": [
+            {
+              "role": "Leads to",
+              "name": "Prehistoric Prism",
+              "id": 98824
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 95682,
+      "name": "Open the Maw",
+      "source": "https://wowforevertalents.com/quests/open-the-maw-95682/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 95682
+        },
+        "name": {
+          "old": null,
+          "new": "Open the Maw"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/open-the-maw-95682/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "objectives": {
+          "old": null,
+          "new": [
+            "Dragonmaw Saboteur ×2",
+            "Dragonmaw Warder ×4",
+            "Dragonmaw Dispatch"
+          ]
+        },
+        "rewards": {
+          "old": null,
+          "new": [
+            {
+              "id": 271740,
+              "name": "Knife-Polishing Rag"
+            },
+            {
+              "id": 271732,
+              "name": "Dirt-Heavy Bracers"
+            },
+            {
+              "id": 271745,
+              "name": "Bloody Map"
+            }
+          ]
+        },
+        "people": {
+          "old": null,
+          "new": []
+        },
+        "chain": {
+          "old": null,
+          "new": [
+            {
+              "role": "Comes after",
+              "name": "Dragonmaw Rumors",
+              "id": 95663
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 98824,
+      "name": "Prehistoric Prism",
+      "source": "https://wowforevertalents.com/quests/prehistoric-prism-98824/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 98824
+        },
+        "name": {
+          "old": null,
+          "new": "Prehistoric Prism"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/prehistoric-prism-98824/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "faction": {
+          "old": null,
+          "new": "Alliance"
+        },
+        "objectives": {
+          "old": null,
+          "new": [
+            "Titan Relic"
+          ]
+        },
+        "rewards": {
+          "old": null,
+          "new": [
+            {
+              "id": 271716,
+              "name": "Explorer's League Dustcover"
+            },
+            {
+              "id": 271767,
+              "name": "Healer's Staff"
+            },
+            {
+              "id": 271766,
+              "name": "Heavehammer"
+            }
+          ]
+        },
+        "people": {
+          "old": null,
+          "new": [
+            "Turned in to: High Explorer Magellas"
+          ]
+        },
+        "chain": {
+          "old": null,
+          "new": [
+            {
+              "role": "Comes after",
+              "name": "Lost Relic Carry",
+              "id": 95810
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 95737,
+      "name": "Seeking Caitlin",
+      "source": "https://wowforevertalents.com/quests/seeking-caitlin-95737/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 95737
+        },
+        "name": {
+          "old": null,
+          "new": "Seeking Caitlin"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/seeking-caitlin-95737/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "objectives": {
+          "old": null,
+          "new": []
+        },
+        "rewards": {
+          "old": null,
+          "new": []
+        },
+        "people": {
+          "old": null,
+          "new": [
+            "Turned in to: Caitlin Grassman"
+          ]
+        },
+        "chain": {
+          "old": null,
+          "new": []
+        }
+      }
+    },
+    {
+      "id": 95772,
+      "name": "Songblade Search",
+      "source": "https://wowforevertalents.com/quests/songblade-search-95772/",
+      "checked": "2026-10-02",
+      "newRecord": true,
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 95772
+        },
+        "name": {
+          "old": null,
+          "new": "Songblade Search"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Excavation Site: Wetlands"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/songblade-search-95772/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 31
+        },
+        "minLevel": {
+          "old": null,
+          "new": 24
+        },
+        "objectives": {
+          "old": null,
+          "new": []
+        },
+        "rewards": {
+          "old": null,
+          "new": []
+        },
+        "people": {
+          "old": null,
+          "new": []
+        },
+        "chain": {
+          "old": null,
+          "new": []
+        }
+      }
+    },
+    {
+      "id": 1051,
+      "name": "Vorrel's Revenge",
+      "source": "https://wowforevertalents.com/quests/vorrel-s-revenge-1051/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=1051",
+          "new": "https://wowforevertalents.com/quests/vorrel-s-revenge-1051/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 33
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Vorrel's Wedding Ring"
+          ]
+        },
+        "rewards": {
+          "old": [],
+          "new": [
+            {
+              "id": 7750,
+              "name": "Mantle of Woe"
+            },
+            {
+              "id": 4643,
+              "name": "Grimsteel Cape"
+            },
+            {
+              "id": 7751,
+              "name": "Vorrel's Boots"
+            }
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: Monika Sengutz"
+          ]
+        }
+      }
+    },
+    {
+      "id": 1160,
+      "name": "Test of Lore",
+      "source": "https://wowforevertalents.com/quests/test-of-lore-1160/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=1160",
+          "new": "https://wowforevertalents.com/quests/test-of-lore-1160/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 36
+        },
+        "minLevel": {
+          "old": 25,
+          "new": 26
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Beginnings of the Undead Threat"
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: Parqual Fintallas"
+          ]
+        },
+        "chain": {
+          "old": [],
+          "new": [
+            {
+              "role": "Comes after",
+              "name": "Test of Lore",
+              "id": 1159
+            },
+            {
+              "role": "Leads to",
+              "name": "Quest #6628"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 1049,
+      "name": "Compendium of the Fallen",
+      "source": "https://wowforevertalents.com/quests/compendium-of-the-fallen-1049/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=1049",
+          "new": "https://wowforevertalents.com/quests/compendium-of-the-fallen-1049/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 38
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Compendium of the Fallen"
+          ]
+        },
+        "rewards": {
+          "old": [],
+          "new": [
+            {
+              "id": 7747,
+              "name": "Vile Protector"
+            },
+            {
+              "id": 17508,
+              "name": "Forcestone Buckler"
+            },
+            {
+              "id": 7749,
+              "name": "Omega Orb"
+            }
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: Sage Truthseeker"
+          ]
+        }
+      }
+    },
+    {
+      "id": 1050,
+      "name": "Mythology of the Titans",
+      "source": "https://wowforevertalents.com/quests/mythology-of-the-titans-1050/",
+      "checked": "2026-10-02",
+      "newRecord": false,
+      "fields": {
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=1050",
+          "new": "https://wowforevertalents.com/quests/mythology-of-the-titans-1050/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "level": {
+          "old": null,
+          "new": 38
+        },
+        "objectives": {
+          "old": [],
+          "new": [
+            "Mythology of the Titans"
+          ]
+        },
+        "rewards": {
+          "old": [],
+          "new": [
+            {
+              "id": 7746,
+              "name": "Explorers' League Commendation"
+            }
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: Librarian Mae Paledust"
+          ]
+        }
+      }
+    }
+  ],
+  "note": "Final curated field corrections are in catalogue-overrides.json; existing user-reported exceptions take precedence over repeated source claims."
+}
