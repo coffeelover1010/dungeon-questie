@@ -240,5 +240,200 @@
     "evidence": "Forever database",
     "checked": "2026-10-02",
     "notes": "Wowhead Forever lists the object and 3 silver requirement. Player reports unchanged behavior. The initial quest 2951 is separate from reward step 2952 and repeatable More Sparklematic Action 2953; Classic chain reference retained."
+  },
+  "1442": {
+    "turnin": "Thundris Windweaver in Darkshore.",
+    "requirementsNote": "Classic reference: check Thundris while The Test of Righteousness is in your log. This is an active-quest requirement, not a completed prerequisite; Forever eligibility needs confirmation.",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/seeking-the-kor-gem-1442/"
+  },
+  "95663": {
+    "objectives": [
+      "Meet the Deathstalker Agent in the hills above the Dragonmaw camp in Wetlands."
+    ],
+    "turnin": "Deathstalker Agent, hills above the Dragonmaw camp, Wetlands.",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/"
+  },
+  "95737": {
+    "objectives": [
+      "Speak to Caitlin Grassman in Menethil Harbor."
+    ],
+    "turnin": "Caitlin Grassman, Menethil Harbor, Wetlands.",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/seeking-caitlin-95737/"
+  },
+  "95772": {
+    "objectives": [
+      "Search the Excavation Site for Daewyn Songblade."
+    ],
+    "turnin": "Check Daewyn Songblade inside Excavation Site; exact hand-in interaction unverified.",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/songblade-search-95772/"
+  },
+  "95795": {
+    "objectives": [
+      "Tell Dorin Songblade what happened to Daewyn."
+    ],
+    "turnin": "Dorin Songblade, Lakeshire, Redridge Mountains.",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/"
+  },
+  "98815": {
+    "turnin": "James Halloran, Menethil Harbor, Wetlands.",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/highland-hides-98815/"
+  },
+  "95809": {
+    "turnin": "Caitlin Grassman, Menethil Harbor, Wetlands.",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/heartwoven-95809/"
+  },
+  "95810": {
+    "turnin": "Prospector Whelgar at the outdoor excavation in Wetlands.",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/lost-relic-carry-95810/",
+    "unverifiedChain": false,
+    "all": [],
+    "any": [],
+    "pickup": "Collect the Titan Relic inside Excavation Site: Wetlands to start this quest.",
+    "pickupInside": true,
+    "routeNote": "Take the Titan Relic to Prospector Whelgar at the outdoor excavation in Wetlands. He offers Prehistoric Prism next."
+  },
+  "98824": {
+    "turnin": "High Explorer Magellas, Hall of Explorers, Ironforge.",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/prehistoric-prism-98824/",
+    "unverifiedChain": false,
+    "all": [
+      95810
+    ],
+    "any": [],
+    "pickup": "Prospector Whelgar at the outdoor excavation in Wetlands, after turning in Lost Relic Carry."
+  },
+  "95664": {
+    "turnin": "Elder Rise, Thunder Bluff; the source does not identify the NPC.",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/elder-knowledge-95664/"
+  },
+  "98823": {
+    "turnin": "Muln Earthfury, Skywatcher Plateau, northwest Mulgore.",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/earthen-echo-98823/"
+  },
+  "95646": {
+    "turnin": "Rethiel the Greenwarden, Wetlands.",
+    "checked": "2026-10-03",
+    "source": "https://www.wowhead.com/forever/quest=95646/horrors-in-the-highland",
+    "pickup": "Rethiel the Greenwarden, Wetlands (56.2, 40.6).",
+    "pickupInside": false,
+    "unverifiedChain": false,
+    "all": [
+      275
+    ],
+    "any": [],
+    "routeNote": "Defeat the Highland Horror inside Excavation Site: Wetlands, collect its Horrible Rootcore, then return to Rethiel the Greenwarden."
+  },
+  "469": {
+    "id": 469,
+    "name": "Daily Delivery",
+    "all": [],
+    "any": [],
+    "pickup": "Einar Stonegrip, Wetlands (Classic reference; exact Forever pickup unverified).",
+    "turnin": "James Halloran, Menethil Harbor, Wetlands.",
+    "objectives": [
+      "Deliver the supplied bundle of crocolisk skins to James Halloran."
+    ],
+    "evidence": "Classic reference",
+    "unverifiedChain": true,
+    "checked": "2026-10-03",
+    "source": "https://www.wowhead.com/forever/quest=469/daily-delivery"
+  },
+  "971": {
+    "turnin": "Gerrig Bonegrip, The Forlorn Cavern, Ironforge (50.5, 6.0).",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/knowledge-in-the-deeps-971/"
+  },
+  "2926": {
+    "turnin": "Ozzie Togglevolt, Kharanos, Dun Morogh (45.9, 49.4).",
+    "checked": "2026-10-03",
+    "source": "https://wowforevertalents.com/quests/gnogaine-2926/"
+  },
+  "276": {
+    "id": 276,
+    "name": "Tramping Paws",
+    "all": [],
+    "any": [],
+    "unverifiedChain": false,
+    "pickup": "Rethiel the Greenwarden, Wetlands (56.2, 40.6).",
+    "turnin": "Rethiel the Greenwarden, Wetlands (56.2, 40.6).",
+    "pin": {
+      "map": 1437,
+      "x": 56.2,
+      "y": 40.6,
+      "zone": "Wetlands",
+      "title": "Rethiel the Greenwarden"
+    },
+    "objectives": [
+      "Defeat the Mosshide Gnolls and Mosshide Mongrels required by your quest log, south toward Dun Algaz."
+    ],
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=95646/horrors-in-the-highland",
+    "checked": "2026-10-03",
+    "chainEvidence": "Two player reports on the Forever quest page; user screenshot shows Tramping Paws offered.",
+    "routeNote": "This is outdoor preparation for Horrors in the Highland. Return to Rethiel after completing the quest.",
+    "preparationNote": "The Greenwarden from First Mate Fitzsimmons leads here. If Rethiel already offers Tramping Paws, take it directly."
+  },
+  "277": {
+    "id": 277,
+    "name": "Fire Taboo",
+    "all": [
+      276
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "pickup": "Rethiel the Greenwarden, Wetlands (56.2, 40.6).",
+    "turnin": "Rethiel the Greenwarden, Wetlands (56.2, 40.6).",
+    "pin": {
+      "map": 1437,
+      "x": 56.2,
+      "y": 40.6,
+      "zone": "Wetlands",
+      "title": "Rethiel the Greenwarden"
+    },
+    "objectives": [
+      "Collect Crude Flints from Mosshides; follow your quest log for the required count."
+    ],
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=95646/horrors-in-the-highland",
+    "checked": "2026-10-03",
+    "chainEvidence": "Two player reports on the Forever quest page; user screenshot shows Tramping Paws offered.",
+    "routeNote": "This is outdoor preparation for Horrors in the Highland. Return to Rethiel after completing the quest."
+  },
+  "275": {
+    "id": 275,
+    "name": "Blisters on the Land",
+    "all": [
+      277
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "pickup": "Rethiel the Greenwarden, Wetlands (56.2, 40.6).",
+    "turnin": "Rethiel the Greenwarden, Wetlands (56.2, 40.6).",
+    "pin": {
+      "map": 1437,
+      "x": 56.2,
+      "y": 40.6,
+      "zone": "Wetlands",
+      "title": "Rethiel the Greenwarden"
+    },
+    "objectives": [
+      "Defeat Fen Creepers in the Wetlands waterways; follow your quest log for the required count."
+    ],
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=95646/horrors-in-the-highland",
+    "checked": "2026-10-03",
+    "chainEvidence": "Two player reports on the Forever quest page; user screenshot shows Tramping Paws offered.",
+    "routeNote": "This is outdoor preparation for Horrors in the Highland. Return to Rethiel after completing the quest."
   }
 }

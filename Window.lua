@@ -191,7 +191,8 @@ end
 function A.Refresh()
  local f=A.window; if not f or not f:IsShown() then return end
  local prep=A.PreparationSummary(A.db.dungeon)
- f.progress:SetText(prep.pickup.." to collect | "..prep.packed.." collected | "..prep.inside.." inside\n"..(prep.chain+prep.check).." to check | Known quests only; coverage incomplete")
+ local remaining=prep.total-prep.done
+ f.progress:SetText((remaining==0 and prep.total>0 and "All known quests completed" or (prep.collected.." / "..remaining.." ready for dungeon")).."\n"..prep.done.." completed | "..prep.pickup.." to collect | "..(prep.chain+prep.check).." to check | "..prep.blocked.." not eligible")
  f.heading:SetText(A.db.dungeon)
  local visible={}
  for _,q in ipairs(A.quests) do if A.Matches(q) then visible[#visible+1]=q end end
@@ -229,7 +230,16 @@ function A.Refresh()
     end)
     action:SetScript("OnLeave",function() GameTooltip:Hide() end)
    end
-   r:SetScript("OnClick",function(self) selected=self.quest; f.detailScroll:SetVerticalScroll(0); A.Refresh() end); rows[i]=r
+   r:SetScript("OnClick",function(self)
+    selected=self.quest; f.detailScroll:SetVerticalScroll(0)
+    -- Selection changes only the highlight and detail pane, not quest state.
+    for index,row in ipairs(rows) do
+     local chosen=row.quest==selected
+     row.selection:SetShown(chosen)
+     row.bg:SetColorTexture(1,0.88,0.62,chosen and 0.90 or (index%2==0 and 0.70 or 0.55))
+    end
+    details()
+   end); rows[i]=r
   end
   r.quest=q; r:ClearAllPoints(); r:SetPoint("TOPLEFT",0,-listHeight)
   local s=A.state[q.id] or "unknown"
@@ -240,11 +250,24 @@ function A.Refresh()
    local step,phase=A.WalkStep(q)
    if step.id~=q.id then r.meta:SetText(step.pickup or "Open the walkthrough for this step.") end
   end
-  local statusTop=8+r.title:GetStringHeight()+7
+  local runReady,runReason=A.RunReadiness(q)
+  if stage=="done" then
+   r.status:SetText("Completed"); r.status:SetTextColor(0.16,0.36,0.14)
+   r.meta:SetText("Quest turned in.")
+  elseif runReady then
+   r.status:SetText("Ready for dungeon"); r.status:SetTextColor(0.12,0.38,0.08)
+   r.meta:SetText(runReason)
+  end
+  -- Measure the final text, including readiness descriptions, before sizing.
+  -- Round up scaled font measurements and leave room for wrapped descenders.
+  local function lineHeight(label)
+   return math.ceil(label:GetStringHeight())+4
+  end
+  local statusTop=8+lineHeight(r.title)+7
   r.status:ClearAllPoints(); r.status:SetPoint("TOPLEFT",10,-statusTop)
-  local metaTop=statusTop+r.status:GetStringHeight()+5
+  local metaTop=statusTop+lineHeight(r.status)+5
   r.meta:ClearAllPoints(); r.meta:SetPoint("TOPLEFT",10,-metaTop)
-  local rowHeight=math.max(66,metaTop+r.meta:GetStringHeight()+8)
+  local rowHeight=math.max(66,metaTop+lineHeight(r.meta)+14)
   local current=A.WalkStep and A.WalkStep(q) or q
   r.groupQuest=current
   local group=A.IsGroupQuest and A.IsGroupQuest(current) and A.Completed(current.id)~=true and not (A.log[current.id] and A.log[current.id].complete) or false
@@ -261,7 +284,9 @@ function A.Refresh()
  f.listChild:SetHeight(math.max(1,listHeight)); f.empty:SetShown(#visible==0)
  f.empty:SetText("No quests match.\nClear the search or choose your dungeon.\n\nNo recorded quests does not mean you have every quest.")
  for _,b in ipairs(dungeonButtons) do
-  local c=A.PreparationSummary(b.dungeon); b:SetText(b.dungeon.."\n"..c.collected.." / "..c.total)
+  local c=A.PreparationSummary(b.dungeon)
+  local remaining=c.total-c.done
+  b:SetText(b.dungeon.."\n"..(remaining==0 and c.total>0 and "Completed" or (c.collected.." / "..remaining.." ready")))
   b:GetFontString():SetTextColor(b.dungeon==A.db.dungeon and 1 or 0.8,b.dungeon==A.db.dungeon and 0.82 or 0.8,0.65)
  end
  f.pinsToggle.tip="Map pins: "..(A.db.pins and "On" or "Off").." - click to toggle"

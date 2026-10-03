@@ -94,5 +94,44 @@
     "pickup": "Warden Thelwater - Stormwind City, Stormwind City (51.5, 69.2)",
     "locationSource": "https://wowforevertalents.com/quests/quell-the-uprising-387/",
     "locationEvidence": "Website-reported beta pickup coordinates"
+  },
+  "971": {
+    "pin": {
+      "map": 1455,
+      "x": 50.5,
+      "y": 6.0,
+      "zone": "Ironforge",
+      "title": "Gerrig Bonegrip"
+    },
+    "pickup": "Gerrig Bonegrip - Ironforge, The Forlorn Cavern (50.5, 6.0)",
+    "locationSource": "https://wowforevertalents.com/quests/knowledge-in-the-deeps-971/",
+    "locationEvidence": "Website-reported beta-log pickup and turn-in, 2026-10-03",
+    "locationChecked": "2026-10-03"
+  },
+  "2926": {
+    "pin": {
+      "map": 1426,
+      "x": 45.9,
+      "y": 49.4,
+      "zone": "Dun Morogh",
+      "title": "Ozzie Togglevolt"
+    },
+    "pickup": "Ozzie Togglevolt - Dun Morogh, Kharanos (45.9, 49.4)",
+    "locationSource": "https://wowforevertalents.com/quests/gnogaine-2926/",
+    "locationEvidence": "Website-reported beta-log pickup and turn-in, 2026-10-03",
+    "locationChecked": "2026-10-03"
+  },
+  "95646": {
+    "pin": {
+      "map": 1437,
+      "x": 56.2,
+      "y": 40.6,
+      "zone": "Wetlands",
+      "title": "Rethiel the Greenwarden"
+    },
+    "pickup": "Rethiel the Greenwarden, Wetlands (56.2, 40.6).",
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "locationEvidence": "Forever dungeon guide pickup coordinates",
+    "locationChecked": "2026-10-03"
   }
 }

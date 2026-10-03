@@ -75,6 +75,17 @@ function A.WalkStep(q)
  return n,phase,note
 end
 function A.WalkInstructions(q)
+ if A.RunReadiness and A.NeedsPickup(q) then
+  local ready,reason=A.RunReadiness(q)
+  if ready then
+   local step,phase=A.WalkStep(q)
+   if phase=="inside" then
+    reason=reason.."\n"..(step.pickup or "")
+    if step.preparationNote then reason=reason.."\n"..step.preparationNote end
+   end
+   return reason,nil,"Ready for dungeon"
+  end
+ end
  local n,phase,note=A.WalkStep(q)
  if phase=="packed" or phase=="done" then return nil end
  local label=(phase=="pickup" or phase=="inside") and "Pick up: " or ((phase=="active" or phase=="ready") and "In quest log: " or "Check: ")

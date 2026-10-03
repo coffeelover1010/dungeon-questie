@@ -1,12 +1,10 @@
-# Dungeon Questie 0.1.1 — beta
+# Dungeon Questie 0.1.2 — beta
 
-Dungeon quest checklist for WoW Forever, with pickup directions, prerequisites,
-rewards, map pins and manual group-finding controls.
+- Added clearer Ready for dungeon and Completed statuses, with separate totals.
+- Updated Wetlands quest directions and the Greenwarden prerequisite chain.
+- Added Rethiel's map pin and refreshed quest data from current sources.
+- Fixed accepted quests being missed under collapsed quest-log headings.
+- Fixed text overflowing quest rows.
+- Reduced work when clicking quests to avoid selection lag.
 
-Classic reference data has been rebuilt from CMaNGOS Classic-DB. Questie is used
-only for separate comparison and is not bundled or required. Optional breadcrumb
-quests are not treated as required prerequisites.
-
-The catalogue contains 240 dungeon quest goals. Coverage is incomplete and
-Classic reference records may differ in Forever. Offline checks passed; the
-new data and coordinates still need live-client verification after `/reload`.
+241 quest goals, including 14 Wetlands records. Classic reference and community-reported data remain labelled. Further in-game checks are welcome during the Forever beta.

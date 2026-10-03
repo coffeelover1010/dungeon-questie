@@ -153,13 +153,13 @@ local collectionQuest={id=990020,dungeons={"Collection test"},pickup="Outside NP
 A.quests={collectionQuest,{id=990021,dungeons={"Collection test"},pickupInside=true},
  {id=990022,dungeons={"Collection test"},minLevel=99},
  {id=990023,dungeons={"Collection test"},faction="Horde"}}
-local summary=A.PreparationSummary("Collection test"); assert(summary.collected==0 and summary.total==3)
-A.log[990020]={}; summary=A.PreparationSummary("Collection test"); assert(summary.collected==1 and summary.total==3)
-A.log[990020].complete=true; summary=A.PreparationSummary("Collection test"); assert(summary.collected==1 and summary.total==3)
+local summary=A.PreparationSummary("Collection test"); assert(summary.collected==1 and summary.total==3)
+A.log[990020]={}; summary=A.PreparationSummary("Collection test"); assert(summary.collected==2 and summary.total==3)
+A.log[990020].complete=true; summary=A.PreparationSummary("Collection test"); assert(summary.collected==2 and summary.total==3)
 A.log[990020]=nil; A.db.confirmed[990020]=true
 summary=A.PreparationSummary("Collection test"); assert(summary.collected==1 and summary.total==3)
 A.db.confirmed[990021]=true; A.db.confirmed[990022]=true
-summary=A.PreparationSummary("Collection test"); assert(summary.collected==3 and summary.total==3)
+summary=A.PreparationSummary("Collection test"); assert(summary.collected==0 and summary.done==3 and summary.total==3)
 A.db.confirmed[990020]=nil; A.db.confirmed[990021]=nil; A.db.confirmed[990022]=nil
 A.quests=savedQuests
 local insideSteps=A.PickupSteps(A.byID[1200]); assert(insideSteps:find("Get inside Blackfathom Deeps.",1,true))

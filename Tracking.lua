@@ -44,9 +44,28 @@ function A.ChecklistVisible(q)
  return true
 end
 -- Preparation is separate from quest completion: having a quest is enough.
+function A.RunReadiness(q)
+ if A.Completed(q.id)==true then return false,"Already completed." end
+ if A.log[q.id] then return true,"Collected — follow your quest log." end
+ if A.Restriction(q) or (q.minLevel and UnitLevel("player")<q.minLevel) then return false end
+ if A.WalkStep then
+  local n,phase=A.WalkStep(q)
+  if phase=="inside" then return true,"Pick up inside: "..n.name end
+  local record=A.byID[n.id]
+  local tag=A.Safe(C_QuestLog and C_QuestLog.GetQuestTagInfo,n.id)
+  local dungeonObjective=n.id==95647 or (tag and tag.tagID==81)
+  if phase=="active" and record and dungeonObjective then
+   for _,d in ipairs(q.dungeons) do
+    if A.InDungeon(record,d) then return true,"Continue inside: "..n.name end
+   end
+  end
+ elseif q.pickupInside then return true,"Pick up inside the dungeon." end
+ return false
+end
 function A.Preparation(q)
  if A.Completed(q.id)==true then return "done", "ALREADY COMPLETED", 6 end
- if A.log[q.id] then return "packed", "COLLECTED - IN YOUR LOG", 4 end
+ if A.log[q.id] then return "packed", "READY FOR DUNGEON", 4 end
+ if A.RunReadiness(q) then return "inside", "READY FOR DUNGEON", 5 end
  if A.Restriction(q) or (q.minLevel and UnitLevel("player")<q.minLevel) then return "blocked", "NOT ELIGIBLE NOW", 7 end
  if A.WalkStep then
   local n,phase=A.WalkStep(q)
@@ -71,10 +90,10 @@ end
 function A.PreparationSummary(dungeon)
  local counts={pickup=0,chain=0,check=0,packed=0,inside=0,done=0,blocked=0,total=0,collected=0}
  for _,q in ipairs(A.quests) do
-  if A.ChecklistVisible(q) and A.InDungeon(q,dungeon) and not A.Restriction(q) and (not A.db.betaOnly or q.evidence~="Classic reference") then
+  if A.InDungeon(q,dungeon) and A.ChecklistVisible(q) and not A.Restriction(q) and (not A.db.betaOnly or q.evidence~="Classic reference") then
    local stage=A.Preparation(q); counts[stage]=counts[stage]+1
    counts.total=counts.total+1
-   if stage=="packed" or stage=="done" then counts.collected=counts.collected+1 end
+   if A.RunReadiness(q) then counts.collected=counts.collected+1 end
   end
  end
  return counts
@@ -98,8 +117,20 @@ function A.ReadLog()
    local t, _, _, header, _, c, _, qid=GetQuestLogTitle(i)
    if not header then id=qid; title=t; complete=c==1 end
   end
-  if id and id>0 then A.log[id]={title=title,complete=complete,index=i} end
+ if id and id>0 then A.log[id]={title=title,complete=complete,index=i} end
  end
+ -- Collapsed quest-log headers can omit accepted quests from the entry scan.
+ -- Query known IDs directly so live acceptance always wins over guide chains.
+ local api=C_QuestLog or {}
+ local function include(id,title)
+  if A.log[id] then return end
+  local index=A.Safe(api.GetLogIndexForQuestID,id)
+  if A.Safe(api.IsOnQuest,id)==true or (type(index)=="number" and index>0) then
+   A.log[id]={title=title,complete=A.Safe(api.IsComplete,id)==true,index=index}
+  end
+ end
+ for _,q in ipairs(A.quests) do include(q.id,q.name) end
+ for id,q in pairs(A.walkthroughs or {}) do include(id,q.name) end
 end
 function A.Scan()
  if not A.db then return end
@@ -126,7 +157,7 @@ end
 function A.Count(dungeon)
  local done,total,active=0,0,0
  for _,q in ipairs(A.quests) do
-  if A.CountsForProgress(q) and A.InDungeon(q,dungeon) then
+  if A.InDungeon(q,dungeon) and A.CountsForProgress(q) then
    total=total+1
    local s=A.state[q.id]
    if s=="done" then done=done+1 elseif s=="active" or s=="ready" then active=active+1 end
@@ -136,8 +167,8 @@ function A.Count(dungeon)
 end
 function A.Matches(q)
  local db=A.db
- if not A.ChecklistVisible(q) then return false end
  if not A.InDungeon(q,db.dungeon) then return false end
+ if not A.ChecklistVisible(q) then return false end
  if A.Restriction(q) then return false end
  if db.betaOnly and q.evidence=="Classic reference" then return false end
  if db.search and db.search~="" then

@@ -149,14 +149,28 @@
   },
   "95663": {
     "restrictionUnknown": true,
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "objectives": [
+      "Meet the Deathstalker Agent in the hills above the Dragonmaw camp in Wetlands."
+    ],
+    "fieldChecked": "2026-10-03",
+    "fieldSources": {
+      "objectives": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/"
+    }
   },
   "95795": {
     "restrictionUnknown": true,
     "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
     "pickup": "Daewyn Songblade's body inside Excavation Site; return to Dorin in Lakeshire. Exact location unverified.",
     "pickupInside": true,
-    "locationSource": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/"
+    "locationSource": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/",
+    "objectives": [
+      "Tell Dorin Songblade what happened to Daewyn."
+    ],
+    "fieldChecked": "2026-10-03",
+    "fieldSources": {
+      "objectives": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/"
+    }
   },
   "95682": {
     "restrictionUnknown": true,
@@ -168,13 +182,27 @@
     "restrictionUnknown": true,
     "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
     "pickup": "Guide lists Llana in Astranaar, Ashenvale; ask about Caitlin.",
-    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location"
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "objectives": [
+      "Speak to Caitlin Grassman in Menethil Harbor."
+    ],
+    "fieldChecked": "2026-10-03",
+    "fieldSources": {
+      "objectives": "https://wowforevertalents.com/quests/seeking-caitlin-95737/"
+    }
   },
   "95772": {
     "restrictionUnknown": true,
     "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
     "pickup": "Guide lists Dorin Songblade in Lakeshire, Redridge Mountains.",
-    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location"
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "objectives": [
+      "Search the Excavation Site for Daewyn Songblade."
+    ],
+    "fieldChecked": "2026-10-03",
+    "fieldSources": {
+      "objectives": "https://wowforevertalents.com/quests/songblade-search-95772/"
+    }
   },
   "5722": {
     "pickup": "Rahauro, Elder Rise, Thunder Bluff.",
@@ -196,8 +224,17 @@
     "locationSource": "https://wowforevertalents.com/quests/a-frightened-request-92401/"
   },
   "95646": {
-    "pickup": "Guide lists Rethiel the Greenwarden in the Wetlands.",
-    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location"
+    "pickup": "Rethiel the Greenwarden, Wetlands.",
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "pickupInside": false,
+    "prereqs": [
+      275
+    ],
+    "notes": "Forever player reports: finish Tramping Paws, Fire Taboo and Blisters on the Land before collecting this quest from Rethiel.",
+    "pickupBasis": "User-directed assumption: ordinary NPC quest starts at its named turn-in NPC; also listed by the dungeon quest guide.",
+    "checked": "2026-10-03",
+    "preparationNote": "Complete Rethiel's outdoor quests first: Tramping Paws, Fire Taboo, then Blisters on the Land.",
+    "chainSource": "https://www.wowhead.com/forever/quest=95646/horrors-in-the-highland"
   },
   "95647": {
     "pickup": "Caitlin Grassman, Menethil Harbor, after Seeking Caitlin (guide-reported).",
@@ -212,17 +249,25 @@
     "locationSource": "https://wowforevertalents.com/quests/heartwoven-95809/"
   },
   "95810": {
-    "pickup": "Titan Relic found inside Excavation Site; bring it to Prospector Whelgar.",
+    "pickup": "Collect the Titan Relic inside Excavation Site: Wetlands to start this quest.",
     "pickupInside": true,
-    "locationSource": "https://wowforevertalents.com/quests/lost-relic-carry-95810/"
+    "locationSource": "https://wowforevertalents.com/quests/lost-relic-carry-95810/",
+    "prereqs": [],
+    "notes": "Starts with the Titan Relic found inside the dungeon. Take it to Prospector Whelgar, then continue with Prehistoric Prism."
   },
   "98824": {
     "pickup": "Follow Lost Relic Carry with Prospector Whelgar; take the relic to High Explorer Magellas in Ironforge.",
     "locationSource": "https://wowforevertalents.com/quests/prehistoric-prism-98824/"
   },
   "95664": {
-    "pickup": "Titan Relic quest associated with Excavation Site. Exact start is unverified; take the relic to the Elder Rise, Thunder Bluff.",
-    "locationSource": "https://wowforevertalents.com/quests/elder-knowledge-95664/"
+    "pickup": "Use the Titan Relic looted inside Excavation Site (guide-reported).",
+    "locationSource": "https://wowforevertalents.com/quests/elder-knowledge-95664/",
+    "pickupInside": true,
+    "fieldChecked": "2026-10-03",
+    "fieldSources": {
+      "pickup": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+      "pickupInside": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location"
+    }
   },
   "98823": {
     "pickup": "Follow Elder Knowledge at the Elder Rise; take the relic to Muln Earthfury in northwest Mulgore.",
@@ -254,5 +299,18 @@
     "evidence": "Forever database",
     "checked": "2026-10-02",
     "notes": "Wowhead Forever lists the object and 3 silver requirement. Player reports unchanged behavior. The initial quest 2951 is separate from reward step 2952 and repeatable More Sparklematic Action 2953; Classic chain reference retained."
+  },
+  "1442": {
+    "restrictionUnknown": true,
+    "class": "PALADIN",
+    "pickup": "Thundris Windweaver, Auberdine, Darkshore (Classic reference; Forever pickup not observed).",
+    "notes": "Beta cache confirms the quest, objective and reward. Paladin restriction and Test of Righteousness association are Classic references; exact Forever eligibility remains unverified.",
+    "fieldChecked": "2026-10-03",
+    "fieldSources": {
+      "restrictionUnknown": "https://wowforevertalents.com/quests/seeking-the-kor-gem-1442/",
+      "class": "https://wowforevertalents.com/quests/seeking-the-kor-gem-1442/",
+      "pickup": "https://wowforevertalents.com/quests/seeking-the-kor-gem-1442/",
+      "notes": "https://wowforevertalents.com/quests/seeking-the-kor-gem-1442/"
+    }
   }
 }

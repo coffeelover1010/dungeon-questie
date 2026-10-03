@@ -7,7 +7,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/testing-an-enemy-s-strength-5723/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 15,
     "minLevel": 9,
     "objectives": [
@@ -32,7 +32,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -44,7 +44,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/hidden-enemies-5728/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 16,
     "minLevel": 9,
     "objectives": [
@@ -69,7 +69,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -92,7 +92,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/returning-the-lost-satchel-5724/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 16,
     "minLevel": 9,
     "objectives": [
@@ -127,7 +127,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -145,7 +145,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 16,
     "minLevel": 9,
     "objectives": [],
@@ -161,7 +161,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -179,7 +179,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/slaying-the-beast-5761/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 16,
     "minLevel": 9,
     "objectives": [
@@ -203,7 +203,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -215,7 +215,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-power-to-destroy-5725/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 16,
     "minLevel": 9,
     "objectives": [
@@ -253,7 +253,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -265,7 +265,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/an-ancient-grudge-96395/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 15,
     "minLevel": 10,
     "objectives": [
@@ -294,7 +294,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 15,
     "minLevel": 10,
     "objectives": [
@@ -323,7 +323,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 15,
     "minLevel": 10,
     "faction": "Alliance",
@@ -354,7 +354,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 16,
     "minLevel": 9,
     "objectives": [
@@ -385,7 +385,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -402,7 +402,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/abominable-creatures-95250/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 21,
     "minLevel": 16,
     "faction": "Alliance",
@@ -434,7 +434,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -446,7 +446,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/unending-torment-97288/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 21,
     "minLevel": 16,
     "faction": "Horde",
@@ -470,7 +470,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
     ],
     "chain": [
       {
@@ -487,7 +487,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/a-frightened-request-92401/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 15,
     "faction": "Horde",
@@ -515,7 +515,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -527,7 +527,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/light-s-justice-92421/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 15,
     "faction": "Horde",
@@ -555,7 +555,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -567,7 +567,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/remember-that-i-love-you-92415/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 15,
     "faction": "Alliance",
@@ -591,7 +591,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -608,7 +608,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-wrath-of-rath-mael-92422/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 15,
     "objectives": [
@@ -635,7 +635,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -647,7 +647,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/bloodied-insignia-95195/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 16,
     "faction": "Alliance",
@@ -679,7 +679,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -691,7 +691,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95189/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 16,
     "faction": "Alliance",
@@ -719,7 +719,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 2 October 2026 · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -731,7 +731,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95204/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 16,
     "objectives": [
@@ -758,7 +758,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -770,7 +770,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-new-plague-95216/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 16,
     "faction": "Horde",
@@ -798,7 +798,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -810,7 +810,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/red-silk-bandanas-214/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 17,
     "minLevel": 14,
     "objectives": [
@@ -842,16 +842,16 @@
       {
         "role": "Picked up from",
         "name": "Scout Riell",
-        "location": null
+        "location": "Sentinel Tower (56.7, 47.4)"
       },
       {
         "role": "Turned in to",
         "name": "Scout Riell",
-        "location": null
+        "location": "Sentinel Tower (56.7, 47.4)"
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170)"
     ],
     "chain": []
   },
@@ -863,7 +863,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/destruction-in-deadmines-92753/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 18,
     "minLevel": 9,
     "faction": "Alliance",
@@ -888,7 +888,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -900,7 +900,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/collecting-memories-168/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 18,
     "minLevel": 14,
     "objectives": [
@@ -931,7 +931,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -943,7 +943,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/oh-brother-167/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 20,
     "minLevel": 15,
     "objectives": [
@@ -974,7 +974,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -986,7 +986,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/underground-assault-2040/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 20,
     "minLevel": 15,
     "objectives": [
@@ -1021,7 +1021,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -1039,7 +1039,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-defias-brotherhood-166/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 14,
     "objectives": [
@@ -1094,7 +1094,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-unsent-letter-373/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 16,
     "faction": "Alliance",
@@ -1118,7 +1118,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -1136,7 +1136,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/hamuul-runetotem-1489/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 16,
     "minLevel": 10,
     "objectives": [],
@@ -1170,7 +1170,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/nara-wildmane-1490/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 16,
     "minLevel": 10,
     "objectives": [],
@@ -1186,7 +1186,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -1209,7 +1209,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/deviate-hides-1486/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 17,
     "minLevel": 13,
     "objectives": [
@@ -1236,7 +1236,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -1248,7 +1248,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/smart-drinks-1491/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 18,
     "minLevel": 13,
     "objectives": [
@@ -1278,7 +1278,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/serpentbloom-962/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 18,
     "minLevel": 14,
     "objectives": [
@@ -1321,7 +1321,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/trouble-at-the-docks-959/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 18,
     "minLevel": 14,
     "objectives": [
@@ -1339,7 +1339,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -1351,7 +1351,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/deviate-eradication-1487/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 21,
     "minLevel": 15,
     "objectives": [
@@ -1385,7 +1385,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -1397,7 +1397,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/leaders-of-the-fang-914/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 10,
     "objectives": [
@@ -1431,7 +1431,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -1449,7 +1449,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-glowing-shard-3366/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 25,
     "minLevel": 15,
     "objectives": [
@@ -1474,7 +1474,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-glowing-shard-6981/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 26,
     "minLevel": 15,
     "objectives": [
@@ -1499,7 +1499,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/deathstalkers-in-shadowfang-1098/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 25,
     "minLevel": 18,
     "objectives": [],
@@ -1530,7 +1530,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-orb-of-soran-ruk-1740/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 25,
     "minLevel": 20,
     "objectives": [
@@ -1558,7 +1558,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -1570,7 +1570,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-book-of-ur-1013/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 26,
     "minLevel": 16,
     "objectives": [
@@ -1601,7 +1601,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -1613,7 +1613,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/arugal-must-die-1014/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 27,
     "minLevel": 18,
     "objectives": [
@@ -1636,7 +1636,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -1648,7 +1648,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/allegiance-to-the-old-gods-6564/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 17,
     "objectives": [
@@ -1671,7 +1671,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -1689,7 +1689,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-essence-of-aku-mai-6563/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 17,
     "objectives": [
@@ -1707,7 +1707,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -1725,7 +1725,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/trouble-in-the-deeps-6562/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 22,
     "minLevel": 17,
     "objectives": [],
@@ -1741,7 +1741,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -1759,7 +1759,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/knowledge-in-the-deeps-971/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 23,
     "minLevel": 10,
     "objectives": [
@@ -1772,17 +1772,23 @@
       }
     ],
     "people": [
+      "Picked up from: Gerrig Bonegrip",
       "Turned in to: Gerrig Bonegrip"
     ],
     "personEvidence": [
       {
+        "role": "Picked up from",
+        "name": "Gerrig Bonegrip",
+        "location": "Ironforge, The Forlorn Cavern (50.5, 6.0)"
+      },
+      {
         "role": "Turned in to",
         "name": "Gerrig Bonegrip",
-        "location": null
+        "location": "Ironforge, The Forlorn Cavern (50.5, 6.0)"
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -1794,7 +1800,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/in-search-of-thaelrid-1198/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 24,
     "minLevel": 18,
     "objectives": [],
@@ -1810,7 +1816,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -1828,7 +1834,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/researching-the-corruption-1275/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 24,
     "minLevel": 18,
     "objectives": [
@@ -1855,11 +1861,11 @@
       {
         "role": "Picked up from",
         "name": "Gershala Nightwhisper",
-        "location": null
+        "location": "Darkshore, Auberdine (38.3, 43.0)"
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -1877,7 +1883,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/twilight-falls-1199/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 25,
     "minLevel": 20,
     "faction": "Alliance",
@@ -1909,7 +1915,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -1921,7 +1927,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/allegiance-to-the-old-gods-6565/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 26,
     "minLevel": 17,
     "objectives": [
@@ -1948,7 +1954,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -1966,7 +1972,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/blackfathom-villainy-1200/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 27,
     "minLevel": 18,
     "faction": "Alliance",
@@ -1998,11 +2004,11 @@
       {
         "role": "Turned in to",
         "name": "Dawnwatcher Selgorm",
-        "location": null
+        "location": "Darnassus, Craftsmen's Terrace (56.0, 24.3)"
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -2020,7 +2026,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/blackfathom-villainy-6561/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 27,
     "minLevel": 18,
     "faction": "Horde",
@@ -2056,7 +2062,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -2068,7 +2074,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/what-comes-around-386/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 25,
     "minLevel": 22,
     "objectives": [
@@ -2099,7 +2105,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -2111,7 +2117,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/crime-and-punishment-377/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 26,
     "minLevel": 22,
     "objectives": [
@@ -2148,7 +2154,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -2160,7 +2166,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/quell-the-uprising-387/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 26,
     "minLevel": 22,
     "objectives": [
@@ -2180,7 +2186,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the WFT Beta Log addon, 2 October 2026"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the WFT Beta Log addon, 3 October 2026"
     ],
     "chain": []
   },
@@ -2192,7 +2198,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-color-of-blood-388/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 26,
     "minLevel": 22,
     "objectives": [
@@ -2210,7 +2216,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -2222,7 +2228,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-fury-runs-deep-378/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 27,
     "minLevel": 22,
     "objectives": [
@@ -2253,7 +2259,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -2265,7 +2271,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-stockade-riots-391/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 29,
     "minLevel": 16,
     "objectives": [
@@ -2283,7 +2289,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the WFT Beta Log addon, 2 October 2026"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the WFT Beta Log addon, 3 October 2026"
     ],
     "chain": [
       {
@@ -2306,7 +2312,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/blueleaf-tubers-1221/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 26,
     "minLevel": 20,
     "objectives": [
@@ -2344,7 +2350,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/willix-the-importer-1144/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 30,
     "minLevel": 22,
     "objectives": [],
@@ -2379,7 +2385,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/mortality-wanes-1142/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 30,
     "minLevel": 25,
     "objectives": [
@@ -2396,7 +2402,7 @@
       },
       {
         "id": 270047,
-        "name": "item 270047"
+        "name": "Sentinel's Boots"
       }
     ],
     "people": [
@@ -2410,7 +2416,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170)"
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170)"
     ],
     "chain": []
   },
@@ -2422,7 +2428,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/a-vengeful-fate-1102/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 34,
     "minLevel": 29,
     "objectives": [
@@ -2457,7 +2463,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -2469,7 +2475,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/save-techbot-s-brain-2922/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 26,
     "minLevel": 20,
     "objectives": [
@@ -2487,7 +2493,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
     ],
     "chain": [
       {
@@ -2505,7 +2511,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/tinkmaster-overspark-2923/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 26,
     "minLevel": 20,
     "objectives": [],
@@ -2521,7 +2527,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
     ],
     "chain": [
       {
@@ -2539,7 +2545,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/gnogaine-2926/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 27,
     "minLevel": 20,
     "objectives": [
@@ -2552,17 +2558,23 @@
       }
     ],
     "people": [
+      "Picked up from: Ozzie Togglevolt",
       "Turned in to: Ozzie Togglevolt"
     ],
     "personEvidence": [
       {
+        "role": "Picked up from",
+        "name": "Ozzie Togglevolt",
+        "location": "Dun Morogh, Kharanos (45.9, 49.4)"
+      },
+      {
         "role": "Turned in to",
         "name": "Ozzie Togglevolt",
-        "location": null
+        "location": "Dun Morogh, Kharanos (45.9, 49.4)"
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -2574,7 +2586,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-day-after-2927/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 27,
     "minLevel": 20,
     "objectives": [],
@@ -2586,11 +2598,11 @@
       {
         "role": "Turned in to",
         "name": "Ozzie Togglevolt",
-        "location": null
+        "location": "Dun Morogh, Kharanos (45.9, 49.4)"
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+      "Sources: the WFT Beta Log addon, 3 October 2026 · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -2602,7 +2614,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/castpipe-s-task-2931/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 28,
     "minLevel": 25,
     "objectives": [],
@@ -2618,7 +2630,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -2636,7 +2648,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/a-fine-mess-2904/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 30,
     "minLevel": 20,
     "objectives": [],
@@ -2677,7 +2689,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/gyrodrillmatic-excavationators-2928/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 30,
     "minLevel": 20,
     "objectives": [
@@ -2708,7 +2720,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -2720,7 +2732,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/essential-artificials-2924/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 30,
     "minLevel": 24,
     "objectives": [
@@ -2738,7 +2750,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -2756,7 +2768,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/klockmort-s-essentials-2925/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 30,
     "minLevel": 24,
     "objectives": [],
@@ -2772,7 +2784,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -2790,7 +2802,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/data-rescue-2930/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 30,
     "minLevel": 25,
     "objectives": [
@@ -2817,7 +2829,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -2835,7 +2847,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-sparklematic-5200-2951/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 30,
     "minLevel": 25,
     "objectives": [
@@ -2855,7 +2867,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/chief-engineer-scooty-2842/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 35,
     "minLevel": 20,
     "objectives": [],
@@ -2889,7 +2901,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/gnomer-gooooone-2843/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 35,
     "minLevel": 20,
     "objectives": [],
@@ -2918,7 +2930,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/rig-wars-2841/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 35,
     "minLevel": 25,
     "objectives": [
@@ -2950,7 +2962,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -2962,7 +2974,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-grand-betrayal-2929/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 35,
     "minLevel": 25,
     "objectives": [
@@ -2993,7 +3005,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -3005,7 +3017,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/highland-hides-98815/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 28,
     "minLevel": 24,
     "objectives": [
@@ -3023,7 +3035,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -3041,7 +3053,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/changing-tastes-95697/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "faction": "Horde",
@@ -3079,7 +3091,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "objectives": [],
@@ -3103,7 +3115,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/earthen-echo-98823/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "faction": "Horde",
@@ -3135,7 +3147,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170)"
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -3153,7 +3165,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/elder-knowledge-95664/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "faction": "Horde",
@@ -3180,7 +3192,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "objectives": [],
@@ -3205,7 +3217,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -3217,7 +3229,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/heartwoven-95809/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "faction": "Alliance",
@@ -3257,7 +3269,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170)"
     ],
     "chain": [
       {
@@ -3275,7 +3287,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/horrors-in-the-highland-95646/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "faction": "Alliance",
@@ -3307,7 +3319,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -3319,7 +3331,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/lost-in-the-thicket-things-95647/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "faction": "Alliance",
@@ -3346,7 +3358,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/lost-relic-carry-95810/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "faction": "Alliance",
@@ -3365,7 +3377,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170)"
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -3383,7 +3395,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/open-the-maw-95682/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "objectives": [
@@ -3424,7 +3436,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/prehistoric-prism-98824/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "faction": "Alliance",
@@ -3456,7 +3468,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -3474,7 +3486,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/seeking-caitlin-95737/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "objectives": [],
@@ -3490,7 +3502,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170)"
     ],
     "chain": []
   },
@@ -3502,7 +3514,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/songblade-search-95772/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 31,
     "minLevel": 24,
     "objectives": [],
@@ -3520,7 +3532,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/vorrel-s-revenge-1051/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 33,
     "minLevel": 25,
     "objectives": [
@@ -3551,7 +3563,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170)"
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170)"
     ],
     "chain": []
   },
@@ -3563,7 +3575,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/test-of-lore-1160/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 36,
     "minLevel": 26,
     "objectives": [
@@ -3581,7 +3593,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": [
       {
@@ -3603,7 +3615,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/compendium-of-the-fallen-1049/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 38,
     "minLevel": 28,
     "faction": "Horde",
@@ -3635,7 +3647,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
     ],
     "chain": []
   },
@@ -3647,7 +3659,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/mythology-of-the-titans-1050/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-02",
+    "checked": "2026-10-03",
     "level": 38,
     "minLevel": 28,
     "objectives": [
@@ -3670,7 +3682,128 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 2 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 2 October 2026 (creaturecache.wdb, build 70170)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 1442,
+    "name": "Seeking the Kor Gem",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/seeking-the-kor-gem-1442/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-03",
+    "level": 22,
+    "minLevel": 20,
+    "objectives": [
+      "Corrupted Kor Gem"
+    ],
+    "rewards": [
+      {
+        "id": 7083,
+        "name": "Purified Kor Gem"
+      }
+    ],
+    "people": [
+      "Turned in to: Thundris Windweaver"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Thundris Windweaver",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 6921,
+    "name": "Amongst the Ruins",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "source": "https://wowforevertalents.com/quests/amongst-the-ruins-6921/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-03",
+    "level": 27,
+    "minLevel": 21,
+    "objectives": [
+      "Fathom Core"
+    ],
+    "rewards": [],
+    "people": [
+      "Turned in to: Je'neu Sancrea"
+    ],
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Je'neu Sancrea",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
+    ],
+    "chain": []
+  },
+  {
+    "id": 2962,
+    "name": "The Only Cure is More Green Glow",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-only-cure-is-more-green-glow-2962/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-03",
+    "level": 30,
+    "minLevel": 20,
+    "objectives": [
+      "High Potency Radioactive Fallout",
+      "Heavy Leaden Collection Phial"
+    ],
+    "rewards": [
+      {
+        "id": 9364,
+        "name": "Heavy Leaden Collection Phial"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": []
+  },
+  {
+    "id": 1113,
+    "name": "Hearts of Zeal",
+    "dungeons": [
+      "Scarlet Monastery"
+    ],
+    "source": "https://wowforevertalents.com/quests/hearts-of-zeal-1113/",
+    "evidence": "Beta cache report",
+    "checked": "2026-10-03",
+    "level": 33,
+    "minLevel": 30,
+    "objectives": [
+      "Heart of Zeal ×20"
+    ],
+    "rewards": [],
+    "people": [
+      "Picked up from: Master Apothecary Faranell"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Master Apothecary Faranell",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 3 October 2026 (creaturecache.wdb, build 70205) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
     ],
     "chain": []
   }
