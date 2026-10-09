@@ -43,9 +43,10 @@ function R:Gate()
  if IsInRaid() then return "Use a party to recruit for this dungeon." end
  if IsInGroup() and not UnitIsGroupLeader("player") then return "Your party leader chooses whom to invite." end
  if GetNumGroupMembers()>=5 then return "Your party is full." end
+ if not self.activities or #self.activities==0 then return "No matching dungeon activity is available in the browser." end
+ if LFGBrowseFrame.searching then return "Browser search pending. When it finishes, click Refresh." end
  if not validRange(self.low,self.high) then return "Enter a minimum and maximum level." end
  if not self:BrowserMatches() then return "Click Find Group again to search this dungeon." end
- if LFGBrowseFrame.searching then return "Searching for players..." end
  if LFGBrowseFrame.searchFailed then return "Search failed. Use Refresh to try again." end
 end
 function R:Candidate(id)
@@ -64,6 +65,7 @@ function R:Candidate(id)
  local _,names=self:Party()
  if names[identity(info.leaderName)] or safe(UnitInParty,info.leaderName) or safe(UnitIsUnit,info.leaderName,"player") then return end
  local roles={}; local r=member.lfgRoles
+ if self.role and (not plain(r) or type(r)~="table" or not plain(r[self.role]) or not r[self.role]) then return end
  if plain(r) and type(r)=="table" then
   if plain(r.tank) and r.tank then roles[#roles+1]="Tank" end
   if plain(r.healer) and r.healer then roles[#roles+1]="Healer" end
@@ -87,18 +89,22 @@ function R:Candidates()
  return groups
 end
 function R:Whisper(dungeon)
+ if self.role then
+  return "Hi! Our "..dungeon.." group is looking for a "..self.role..". Would you like to join as "..self.role.."? Sending you an invite."
+ end
  return "Hi! I'm putting together a group for "..dungeon..". Would you like to join? Sending you an invite."
 end
 function R:Confirm(candidate)
  local reason=self:Gate(); if reason then A.Print(reason); return end
  local fresh=self:Candidate(candidate.id)
  if not fresh or fresh.name~=candidate.name or fresh.class~=candidate.class then A.Print("That player is no longer available. Refresh the browser."); return end
- local data={id=fresh.id,name=fresh.name,class=fresh.class,dungeon=self.dungeon,message=self:Whisper(self.dungeon)}
+ local data={id=fresh.id,name=fresh.name,class=fresh.class,dungeon=self.dungeon,role=self.role,message=self:Whisper(self.dungeon)}
  StaticPopup_Show("DGF_RECRUIT_INVITE",fresh.name.." (level "..fresh.level..")",data.message,data)
 end
 function R:Send(data)
  local reason=self:Gate(); if reason then A.Print(reason); return end
  if data.dungeon~=self.dungeon then A.Print("Dungeon changed. Choose the player again."); return end
+ if data.role~=self.role then A.Print("Needed role changed. Choose the player again."); return end
  local fresh=self:Candidate(data.id)
  if not fresh or fresh.name~=data.name or fresh.class~=data.class then A.Print("That player is no longer available. Refresh the browser."); return end
  local send=C_ChatInfo and C_ChatInfo.SendChatMessage or SendChatMessage
@@ -132,8 +138,8 @@ end
 function R:Create()
  if self.frame then return end
  local f=CreateFrame("Frame",nil,LFGBrowseFrame,"BackdropTemplate"); self.frame=f
- f:SetSize(440,610); f:SetPoint("TOPLEFT",LFGParentFrame,"TOPRIGHT",8,0); f:SetClampedToScreen(true); f:SetFrameStrata("DIALOG")
- f:SetScale(math.min(1,(UIParent:GetHeight()-35)/610))
+ f:SetSize(440,640); f:SetPoint("TOPLEFT",LFGParentFrame,"TOPRIGHT",8,0); f:SetClampedToScreen(true); f:SetFrameStrata("DIALOG")
+ f:SetScale(math.min(1,(UIParent:GetHeight()-35)/640))
  f:SetBackdrop({bgFile="Interface\\DialogFrame\\UI-DialogBox-Background",edgeFile="Interface\\DialogFrame\\UI-DialogBox-Border",tile=true,tileSize=32,edgeSize=24,insets={left=6,right=6,top=6,bottom=6}})
  f:EnableMouse(true); f:SetMovable(true); f:RegisterForDrag("LeftButton")
  f:SetScript("OnDragStart",f.StartMoving); f:SetScript("OnDragStop",f.StopMovingOrSizing)
@@ -151,10 +157,17 @@ function R:Create()
  label(f,11,116,-78,10):SetText("-")
  button(f,"Refresh",90,185,-73,function() A.FindGroup(R.dungeon) end)
  f.rangeNote=label(f,10,16,-103,405)
- f.status=label(f,11,16,-123,405)
+ f.roleButtons={}
+ for i,option in ipairs({{title="All roles"},{title="Need tank",role="tank"},{title="Need healer",role="healer"}}) do
+  local role=option.role
+  f.roleButtons[i]=button(f,option.title,125,16+(i-1)*136,-121,function()
+   R.role=role; R.offsets={}; R:Refresh()
+  end)
+ end
+ f.status=label(f,11,16,-153,405)
  f.rows={}
  for i,class in ipairs(self.classes) do
-  local row={}; f.rows[class]=row; local y=-158-(i-1)*43
+  local row={}; f.rows[class]=row; local y=-188-(i-1)*43
   row.title=label(f,11,16,y,240); row.name=label(f,10,16,y-16,240); row.name:SetWordWrap(false)
   row.next=button(f,"Next",50,264,y-3,function() R.offsets[class]=(R.offsets[class] or 1)+1; R:Refresh() end)
   row.invite=button(f,"Invite...",100,320,y-3,function() if row.candidate then R:Confirm(row.candidate) end end)
@@ -165,19 +178,21 @@ function R:Create()
   end)
   row.invite:SetScript("OnLeave",function() GameTooltip:Hide() end)
  end
- label(f,10,16,-554,405):SetText("Solo LFG players only. Classes and chosen roles are shown.\nInvites are manual; contacted players stay hidden until reload.")
+ label(f,10,16,-584,405):SetText("Role filters use players' chosen LFG roles, not their class.\nInvites are manual; contacted players stay hidden until reload.")
  f:SetScript("OnShow",function() R:Refresh() end)
 end
 function R:Refresh()
  local f=self.frame; if not f or not self.dungeon then return end
  local groups=self:Candidates(); local represented=self:Party()
- f.title:SetText(self.dungeon)
- f.status:SetText(self:Gate() or "Pick a player to review the whisper and invite.")
+ f.title:SetText(self.dungeon=="Scarlet Monastery" and "Scarlet Monastery - All SM dungeons" or self.dungeon)
+ local count=0; for _,list in pairs(groups) do count=count+#list end
+ f.status:SetText(self:Gate() or (self.role and (count.." listed "..self.role.." candidate(s). Choose one to invite.") or "Pick a player to review the whisper and invite."))
+ for i,b in ipairs(f.roleButtons) do b:SetEnabled(self.role~=({"all","tank","healer"})[i] and not (i==1 and not self.role)) end
  for _,class in ipairs(self.classes) do
   local row=f.rows[class]; local list=groups[class]; local index=((self.offsets[class] or 1)-1)%math.max(1,#list)+1
   self.offsets[class]=index; row.candidate=list[index]
   local className=(LOCALIZED_CLASS_NAMES_MALE and LOCALIZED_CLASS_NAMES_MALE[class]) or class
-  row.title:SetText(className..(represented[class] and (" - "..represented[class].." in party") or " - missing"))
+  row.title:SetText(className..(represented[class] and (" - "..represented[class].." in party") or ""))
   local c=RAID_CLASS_COLORS and RAID_CLASS_COLORS[class]; if c then row.title:SetTextColor(c.r,c.g,c.b) end
   local p=row.candidate
   row.name:SetText(p and (p.name.." | "..p.level..(p.roles~="" and (" | "..p.roles) or "")) or "No matching player listed")

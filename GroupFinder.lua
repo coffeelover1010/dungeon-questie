@@ -6,6 +6,8 @@ local function key(name)
  return aliases[value] or value
 end
 
+local smWings={scarletmonasterygraveyard=true,scarletmonasterylibrary=true,scarletmonasteryarmory=true,scarletmonasteryarmoury=true,scarletmonasterycathedral=true}
+
 -- Resolve against the client's activities instead of assuming retail dungeon IDs.
 function A.GroupActivities(dungeon)
  local ids,seen,category={},{},nil
@@ -15,7 +17,7 @@ function A.GroupActivities(dungeon)
   for _,id in ipairs(api.GetAvailableActivities(categoryID) or {}) do
    local info=api.GetActivityInfoTable(id)
    local groupName=info and info.groupFinderActivityGroupID and api.GetActivityGroupInfo and api.GetActivityGroupInfo(info.groupFinderActivityGroupID)
-   if info and (key(info.fullName)==key(dungeon) or key(info.shortName)==key(dungeon) or (groupName and key(groupName)==key(dungeon))) then
+   if info and (key(info.fullName)==key(dungeon) or key(info.shortName)==key(dungeon) or (groupName and key(groupName)==key(dungeon)) or (key(dungeon)=="scarletmonastery" and smWings[key(info.fullName)])) then
     if not category then category=info.categoryID end
     if info.categoryID==category and not seen[id] then ids[#ids+1]=id; seen[id]=true end
    end
@@ -34,13 +36,19 @@ function A.FindGroup(dungeon)
  if not browser or not browser.ShowSearchForActivities or not LFGVanilla_ShowFrame then
   A.Print("The Group Browser could not be opened."); return
  end
- -- Do not replace filters while the native browser is completing an older search.
- if browser.searching then A.Print("Wait for the current Group Browser search to finish, then try again."); return end
  local activities=A.GroupActivities(dungeon)
+ -- A busy browser must not prevent the helper from opening. Preserve the
+ -- current search filters; recruitment stays gated until this dungeon matches.
+ if browser.searching then
+  LFGVanilla_ShowFrame(2)
+  if A.OpenRecruit then A.OpenRecruit(dungeon,activities) end
+  if A.window then A.window:Hide() end
+  return
+ end
  if #activities==0 then
-  if A.recruit and A.recruit.frame then A.recruit.frame:Hide() end
   LFGVanilla_ShowFrame(2)
   if browser.ResetDropdowns then browser:ResetDropdowns() end
+  if A.OpenRecruit then A.OpenRecruit(dungeon,activities) end
   A.Print("No available LFG activity matched "..dungeon..". Choose an activity in the Group Browser.")
  else
   browser:ShowSearchForActivities(activities)

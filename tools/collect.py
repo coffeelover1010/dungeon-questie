@@ -43,6 +43,8 @@ def collect(task):
     q['objectives']=[x.get_text(' ',strip=True) for x in body.select('.qp-obj li')]
     q['rewards']=[]
     for a in body.select('a.qp-item'):
+        # Quest-starting items are not completion rewards.
+        if a.find_parent(class_='qp-start'): continue
         m=re.search(r'item=(\d+)',a['href'])
         if m: q['rewards'].append(dict(id=int(m[1]),name=a.select_one('.qp-item-name').get_text(' ',strip=True).replace('★','').strip()))
     q['people']=[]

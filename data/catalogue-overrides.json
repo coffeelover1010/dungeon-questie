@@ -312,5 +312,87 @@
       "pickup": "https://wowforevertalents.com/quests/seeking-the-kor-gem-1442/",
       "notes": "https://wowforevertalents.com/quests/seeking-the-kor-gem-1442/"
     }
+  },
+  "78916": {
+    "pickup": "Loot the quest-starting Perfect Blackfathom Pearl from Aku'mai in Blackfathom Deeps; take it to Dawnwatcher Selgorm in Darnassus.",
+    "locationSource": "https://wowforevertalents.com/quests/the-heart-of-the-void-78916/",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "pickupInside": true
+  },
+  "78917": {
+    "pickup": "Loot the quest-starting Perfect Blackfathom Pearl from Aku'mai in Blackfathom Deeps; take it to Bashana Runetotem in Thunder Bluff.",
+    "locationSource": "https://wowforevertalents.com/quests/the-heart-of-the-void-78917/",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "pickupInside": true
+  },
+  "2947": {
+    "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. The return is optional; the current follow-up is not fully mapped.",
+    "locationSource": "https://wowforevertalents.com/quests/return-of-the-ring-2947/",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "pickupInside": true
+  },
+  "2949": {
+    "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. The return is optional.",
+    "locationSource": "https://wowforevertalents.com/quests/return-of-the-ring-2949/",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "pickupInside": true
+  },
+  "92456": {
+    "pickup": "Shylamiir in Stormwind City (quest-text report; exact pickup unverified).",
+    "locationSource": "https://wowforevertalents.com/quests/a-green-sample-92456/",
+    "locationEvidence": "Beta log or quest-text report; see source details"
+  },
+  "92458": {
+    "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "locationSource": "https://wowforevertalents.com/quests/heart-of-disruption-92458/",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "preparationNote": "Reported earlier step: An Alarming Request. Its quest ID and full chain are not yet verified."
+  },
+  "96984": {
+    "pickup": "Magus Wordeen Voidglare in Tarren Mill (quest-text report; exact pickup unverified).",
+    "locationSource": "https://wowforevertalents.com/quests/heart-of-disruption-96984/",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "preparationNote": "Reported earlier step: Blood in the Streets. Its quest ID and full chain are not yet verified."
+  },
+  "96987": {
+    "pickup": "Rexxie Copperclutch near the Dalaran sewer entrance (quest-text report; exact pickup unverified).",
+    "locationSource": "https://wowforevertalents.com/quests/opportunistic-education-96987/",
+    "locationEvidence": "Beta log or quest-text report; see source details"
+  },
+  "92489": {
+    "pickup": "High Sorcerer Andromath in Stormwind City (quest-text report; exact pickup unverified).",
+    "locationSource": "https://wowforevertalents.com/quests/power-overwhelming-92489/",
+    "locationEvidence": "Beta log or quest-text report; see source details"
+  },
+  "96988": {
+    "pickup": "Doctor Martin Felben in Undercity (quest-text report; exact pickup unverified).",
+    "locationSource": "https://wowforevertalents.com/quests/source-of-power-96988/",
+    "locationEvidence": "Beta log or quest-text report; see source details"
+  },
+  "92457": {
+    "pickup": "Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "restrictionUnknown": true
+  },
+  "96986": {
+    "pickup": "Melisara in Tarren Mill (quest-text report; exact pickup unverified).",
+    "locationSource": "https://wowforevertalents.com/quests/the-grave-knight-96986/",
+    "locationEvidence": "Beta log or quest-text report; see source details"
+  },
+  "96800": {
+    "pickup": "Creature 264265 at Tempered Tomes in City of Dalaran (9.5, 63.1). NPC name and map pin remain unverified.",
+    "locationSource": "https://wowforevertalents.com/quests/past-due-96800/",
+    "locationEvidence": "Beta log or quest-text report; see source details"
+  },
+  "79360": {
+    "restrictionUnknown": true,
+    "preparationNote": "Elemental class quest: class eligibility and the full earlier chain need verification. Check the source and your trainer.",
+    "pickup": "Pickup NPC not verified. Defeat Charlga Razorflank for the Tattered Note once you have the quest."
+  },
+  "96264": {
+    "restrictionUnknown": true,
+    "preparationNote": "Elemental class quest: class eligibility and the full earlier chain need verification. Check the source and your trainer.",
+    "pickup": "Pickup NPC not verified. Defeat Charlga Razorflank for the Tattered Note once you have the quest."
   }
 }

@@ -204,7 +204,7 @@ for _,q in ipairs(A.quests) do
 end
 A.window.search:SetText("no such quest 1234567890"); assert(A.window.detailTitle:GetText()=="Select a quest")
 A.window.search:SetText("")
-A.db.dungeon="City of Dalaran"; A.Refresh(); assert(A.window.detailText:GetText():find("coverage gap"))
+A.db.dungeon="The Drowned City"; A.Refresh(); assert(A.window.detailText:GetText():find("coverage gap"))
 A.SelectQuest(A.byID[168]); A.RefreshPins()
 A.Toggle(); assert(not A.window:IsShown())
 ''')

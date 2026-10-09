@@ -25,7 +25,7 @@
       "title": "Rahauro"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "5728": {
@@ -56,7 +56,7 @@
       "title": "Thrall"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "5727": {
@@ -138,7 +138,7 @@
       "title": "Rahauro"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "5722": {
@@ -165,7 +165,7 @@
     },
     "pickupInside": false,
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data.",
     "fieldSources": {
       "pickup": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
@@ -197,7 +197,7 @@
       "title": "Neeru Fireblade"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "5725": {
@@ -226,7 +226,7 @@
       "title": "Varimathras"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "96395": {
@@ -243,7 +243,7 @@
     "objectives": [
       "Faldrim Anvilmar"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "96403": {
     "id": 96403,
@@ -258,7 +258,7 @@
     "objectives": [
       "Dwarven Heirloom ×8"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "96394": {
     "id": 96394,
@@ -275,7 +275,7 @@
       "Enraged Apparition ×15",
       "Tormented Soul ×10"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "96393": {
     "id": 96393,
@@ -293,7 +293,7 @@
     "objectives": [
       "Durgen Dirgehammer's Head"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "96391": {
     "id": 96391,
@@ -322,7 +322,7 @@
     "objectives": [
       "Head of the Baron"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "97288": {
     "id": 97288,
@@ -339,7 +339,7 @@
     "objectives": [
       "Abominable Head"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "92401": {
     "id": 92401,
@@ -362,7 +362,7 @@
     "objectives": [
       "Investigate the disappearance of Edward Heartweaver in the Ruins of Lordaeron."
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "92421": {
     "id": 92421,
@@ -378,7 +378,7 @@
     "objectives": [
       "Intact Limbs ×25"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "92415": {
     "id": 92415,
@@ -395,7 +395,7 @@
     "objectives": [
       "Blood-Stained Letter"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "92422": {
     "id": 92422,
@@ -411,7 +411,7 @@
     "objectives": [
       "Rath'mael"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "95195": {
     "id": 95195,
@@ -427,7 +427,7 @@
     "objectives": [
       "Bloodied Insignia ×10"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "95189": {
     "id": 95189,
@@ -444,7 +444,7 @@
     "objectives": [
       "Crest of Lordaeron"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "95204": {
     "id": 95204,
@@ -461,7 +461,7 @@
     "objectives": [
       "Crest of Lordaeron"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "95216": {
     "id": 95216,
@@ -477,7 +477,7 @@
     "objectives": [
       "Highly Toxic Strain"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "214": {
     "id": 214,
@@ -506,7 +506,7 @@
       "title": "Sentinel Hill - Scout Riell / Gryan Stoutmantle"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "155": {
@@ -883,7 +883,7 @@
       "title": "Wilder Thistlenettle"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "167": {
@@ -911,7 +911,7 @@
       "title": "Wilder Thistlenettle"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2040": {
@@ -939,7 +939,7 @@
       "title": "Shoni the Shilent"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "166": {
@@ -969,7 +969,7 @@
       "title": "Gryan Stoutmantle"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "373": {
@@ -991,7 +991,7 @@
     "exclusive": [],
     "pickupInside": true,
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1489": {
@@ -1020,7 +1020,7 @@
       "title": "Tonga Runetotem"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "880": {
@@ -1128,7 +1128,7 @@
       "title": "Nara Wildmane"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1486": {
@@ -1155,7 +1155,7 @@
       "zone": "The Barrens",
       "title": "Nalpak / Ebru - cave above the entrance"
     },
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1491": {
@@ -1184,7 +1184,7 @@
       "zone": "The Barrens",
       "title": "Mebok Mizzyrix"
     },
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "865": {
@@ -1238,7 +1238,7 @@
       "title": "Apothecary Zamah"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "959": {
@@ -1265,7 +1265,7 @@
       "zone": "The Barrens",
       "title": "Crane Operator Bigglefuzz"
     },
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1487": {
@@ -1295,7 +1295,7 @@
       "zone": "The Barrens",
       "title": "Nalpak / Ebru - cave above the entrance"
     },
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "914": {
@@ -1328,7 +1328,7 @@
       "title": "Nara Wildmane"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "3366": {
@@ -1345,7 +1345,7 @@
     "objectives": [
       "Glowing Shard"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "6981": {
     "id": 6981,
@@ -1364,7 +1364,7 @@
       "Glowing Shard"
     ],
     "exclusive": [],
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1098": {
@@ -1390,7 +1390,7 @@
       "title": "High Executor Hadrec"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1740": {
@@ -1419,7 +1419,7 @@
       "title": "Doan Karhan"
     },
     "class": "WARLOCK",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1013": {
@@ -1447,7 +1447,7 @@
       "title": "Keeper Bel'dugur"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1014": {
@@ -1475,7 +1475,7 @@
       "title": "Dalar Dawnweaver"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "6564": {
@@ -1496,7 +1496,7 @@
     ],
     "exclusive": [],
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "6563": {
@@ -1526,7 +1526,7 @@
       "title": "Je'neu Sancrea"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "6562": {
@@ -1553,7 +1553,7 @@
       "title": "Tsunaman"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "971": {
@@ -1607,7 +1607,7 @@
       "title": "Dawnwatcher Shaedlass / Argent Guard Manados"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1275": {
@@ -1616,7 +1616,7 @@
     "minLevel": 18,
     "raceMask": 77,
     "classMask": 0,
-    "pickup": "Gershala Nightwhisper - Darkshore",
+    "pickup": "Gershala Nightwhisper - Darkshore, Auberdine (38.3, 43.0)",
     "turnin": "Gershala Nightwhisper - Darkshore",
     "all": [],
     "any": [],
@@ -1629,13 +1629,13 @@
     "exclusive": [],
     "pin": {
       "map": 1439,
-      "x": 38,
-      "y": 43,
+      "x": 38.3,
+      "y": 43.0,
       "zone": "Darkshore",
       "title": "Gershala Nightwhisper"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1199": {
@@ -1663,7 +1663,7 @@
       "title": "Dawnwatcher Shaedlass / Argent Guard Manados"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "6565": {
@@ -1693,7 +1693,7 @@
       "title": "Je'neu Sancrea"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1200": {
@@ -1717,7 +1717,7 @@
     "exclusive": [],
     "pickupInside": true,
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "6561": {
@@ -1739,7 +1739,7 @@
     "exclusive": [],
     "pickupInside": true,
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "386": {
@@ -1748,7 +1748,7 @@
     "minLevel": 22,
     "raceMask": 77,
     "classMask": 0,
-    "pickup": "Guard Berton - Redridge Mountains",
+    "pickup": "Guard Berton - Redridge Mountains, Lakeshire (21.3, 46.6)",
     "turnin": "Guard Berton",
     "all": [],
     "any": [],
@@ -1761,13 +1761,13 @@
     "exclusive": [],
     "pin": {
       "map": 1433,
-      "x": 26,
-      "y": 46,
+      "x": 21.3,
+      "y": 46.6,
       "zone": "Redridge Mountains",
       "title": "Guard Berton"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "377": {
@@ -1796,7 +1796,7 @@
       "title": "Councilman Millstipe"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "387": {
@@ -1826,7 +1826,7 @@
       "title": "Warden Thelwater"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "388": {
@@ -1835,7 +1835,7 @@
     "minLevel": 22,
     "raceMask": 77,
     "classMask": 0,
-    "pickup": "Nikova Raskol patrols Old Town, Stormwind.",
+    "pickup": "Nikova Raskol - Stormwind City, Old Town (76.3, 63.6)",
     "turnin": "Nikova Raskol - Stormwind City",
     "all": [],
     "any": [],
@@ -1848,14 +1848,13 @@
     "exclusive": [],
     "pin": {
       "map": 1453,
+      "x": 76.3,
+      "y": 63.6,
       "zone": "Stormwind City",
-      "x": 73.4,
-      "y": 50.68,
-      "reference": true,
       "title": "Nikova Raskol"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "391": {
@@ -1885,7 +1884,7 @@
       "title": "Warden Thelwater"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "389": {
@@ -1941,7 +1940,7 @@
       "zone": "The Barrens",
       "title": "Mebok Mizzyrix"
     },
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1144": {
@@ -1960,7 +1959,7 @@
     "objectives": [],
     "exclusive": [],
     "pickupInside": true,
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2922": {
@@ -1988,7 +1987,7 @@
       "title": "Tinkmaster Overspark"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2923": {
@@ -2015,7 +2014,7 @@
       "title": "Brother Sarno"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2926": {
@@ -2064,7 +2063,7 @@
     "objectives": [],
     "exclusive": [],
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2904": {
@@ -2083,7 +2082,7 @@
     "objectives": [],
     "exclusive": [],
     "pickupInside": true,
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2928": {
@@ -2111,7 +2110,7 @@
       "title": "Shoni the Shilent"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2842": {
@@ -2138,7 +2137,7 @@
     },
     "requirementsNote": "Additional or conditional requirements need checking in your quest log or at the quest giver.",
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2843": {
@@ -2166,7 +2165,7 @@
       "title": "Scooty"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "98423": {
@@ -2210,7 +2209,7 @@
       "title": "Motley Garmason"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "303": {
@@ -2248,7 +2247,7 @@
     "minLevel": 24,
     "raceMask": 77,
     "classMask": 0,
-    "pickup": "Klockmort Spannerspan, Tinkertown, Ironforge.",
+    "pickup": "Klockmort Spannerspan - Ironforge, Tinker Town (68.2, 46.0)",
     "turnin": "Klockmort Spannerspan",
     "all": [],
     "any": [],
@@ -2259,8 +2258,15 @@
       "Essential Artificial ×12"
     ],
     "exclusive": [],
+    "pin": {
+      "map": 1455,
+      "x": 68.2,
+      "y": 46.0,
+      "zone": "Ironforge",
+      "title": "Klockmort Spannerspan"
+    },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2930": {
@@ -2269,7 +2275,7 @@
     "minLevel": 25,
     "raceMask": 77,
     "classMask": 0,
-    "pickup": "Master Mechanic Castpipe - Ironforge",
+    "pickup": "Master Mechanic Castpipe - Ironforge, Tinker Town (69.9, 48.5)",
     "turnin": "Master Mechanic Castpipe",
     "all": [],
     "any": [],
@@ -2282,13 +2288,13 @@
     "exclusive": [],
     "pin": {
       "map": 1455,
-      "x": 69,
-      "y": 48,
+      "x": 69.9,
+      "y": 48.5,
       "zone": "Ironforge",
       "title": "Master Mechanic Castpipe"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2929": {
@@ -2297,7 +2303,7 @@
     "minLevel": 25,
     "raceMask": 77,
     "classMask": 0,
-    "pickup": "High Tinker Mekkatorque - Ironforge",
+    "pickup": "High Tinker Mekkatorque - Ironforge, Tinker Town (68.7, 49.1)",
     "turnin": "High Tinker Mekkatorque",
     "all": [],
     "any": [],
@@ -2310,13 +2316,13 @@
     "exclusive": [],
     "pin": {
       "map": 1455,
-      "x": 68,
-      "y": 49,
+      "x": 68.7,
+      "y": 49.1,
       "zone": "Ironforge",
       "title": "High Tinker Mekkatorque"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2962": {
@@ -2325,7 +2331,7 @@
     "minLevel": 20,
     "raceMask": 77,
     "classMask": 0,
-    "pickup": "Ozzie Togglevolt - Dun Morogh",
+    "pickup": "Ozzie Togglevolt - Dun Morogh, Kharanos (45.9, 49.4)",
     "turnin": "Ozzie Togglevolt - Dun Morogh",
     "all": [
       2926
@@ -2341,13 +2347,13 @@
     "exclusive": [],
     "pin": {
       "map": 1426,
-      "x": 45,
-      "y": 49,
+      "x": 45.9,
+      "y": 49.4,
       "zone": "Dun Morogh",
       "title": "Ozzie Togglevolt"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2841": {
@@ -2376,7 +2382,7 @@
       "title": "Nogg / Sovik"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2951": {
@@ -2413,14 +2419,16 @@
     "turnin": "The Sparklematic 5200",
     "all": [],
     "any": [],
-    "source": "https://www.wowhead.com/classic/quest=2945",
+    "source": "https://wowforevertalents.com/quests/grime-encrusted-ring-2945/",
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
-    "evidence": "Classic reference",
+    "evidence": "Beta cache report",
     "objectives": [
-      "Collect 1 Grime-Encrusted Ring"
+      "Grime-Encrusted Ring"
     ],
     "exclusive": [],
-    "pickupInside": true
+    "pickupInside": true,
+    "checked": "2026-10-09",
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1102": {
     "id": 1102,
@@ -2447,7 +2455,7 @@
       "title": "Auld Stonespire"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1109": {
@@ -2460,11 +2468,11 @@
     "turnin": "Master Apothecary Faranell",
     "all": [],
     "any": [],
-    "source": "https://www.wowhead.com/classic/quest=1109",
+    "source": "https://wowforevertalents.com/quests/going-going-guano-1109/",
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
-    "evidence": "Classic reference",
+    "evidence": "Beta cache report",
     "objectives": [
-      "Collect 1 Kraul Guano"
+      "Kraul Guano"
     ],
     "exclusive": [],
     "pin": {
@@ -2473,7 +2481,10 @@
       "y": 69,
       "zone": "Undercity",
       "title": "Master Apothecary Faranell"
-    }
+    },
+    "faction": "Horde",
+    "checked": "2026-10-09",
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "6522": {
     "id": 6522,
@@ -2505,13 +2516,16 @@
       1100
     ],
     "any": [],
-    "source": "https://www.wowhead.com/classic/quest=1101",
+    "source": "https://wowforevertalents.com/quests/the-crone-of-the-kraul-1101/",
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
-    "evidence": "Classic reference",
+    "evidence": "Beta cache report",
     "objectives": [
-      "Collect 1 Razorflank's Medallion"
+      "Razorflank's Medallion"
     ],
-    "exclusive": []
+    "exclusive": [],
+    "faction": "Alliance",
+    "checked": "2026-10-09",
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1100": {
     "id": 1100,
@@ -2550,7 +2564,7 @@
     "exclusive": [],
     "pickupInside": true,
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1048": {
@@ -2670,7 +2684,7 @@
     "exclusive": [],
     "pickupInside": true,
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1113": {
@@ -2700,7 +2714,7 @@
       "title": "Master Apothecary Faranell"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1049": {
@@ -2721,7 +2735,7 @@
     ],
     "exclusive": [],
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1160": {
@@ -2744,7 +2758,7 @@
     ],
     "exclusive": [],
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1159": {
@@ -2915,7 +2929,7 @@
     "minLevel": 28,
     "raceMask": 77,
     "classMask": 0,
-    "pickup": "Librarian Mae Paledust - Ironforge",
+    "pickup": "Librarian Mae Paledust - Ironforge, The Library (74.9, 12.2)",
     "turnin": "Librarian Mae Paledust",
     "all": [],
     "any": [],
@@ -2928,13 +2942,13 @@
     "exclusive": [],
     "pin": {
       "map": 1455,
-      "x": 75,
-      "y": 12,
+      "x": 74.9,
+      "y": 12.2,
       "zone": "Ironforge",
       "title": "Librarian Mae Paledust"
     },
     "faction": "Alliance",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1951": {
@@ -2949,11 +2963,11 @@
       1950
     ],
     "any": [],
-    "source": "https://www.wowhead.com/classic/quest=1951",
+    "source": "https://wowforevertalents.com/quests/rituals-of-power-1951/",
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
-    "evidence": "Classic reference",
+    "evidence": "Beta cache report",
     "objectives": [
-      "Collect 1 Rituals of Power"
+      "Rituals of Power"
     ],
     "exclusive": [],
     "pin": {
@@ -2962,7 +2976,10 @@
       "y": 75,
       "zone": "Thousand Needles",
       "title": "Magus Tirth"
-    }
+    },
+    "class": "MAGE",
+    "checked": "2026-10-09",
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "1950": {
     "id": 1950,
@@ -3191,7 +3208,7 @@
       "title": "Je'neu Sancrea"
     },
     "faction": "Horde",
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "6922": {
@@ -3242,13 +3259,15 @@
       6522
     ],
     "any": [],
-    "source": "https://www.wowhead.com/classic/quest=6521",
+    "source": "https://wowforevertalents.com/quests/an-unholy-alliance-6521/",
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
-    "evidence": "Classic reference",
+    "evidence": "Beta cache report",
     "objectives": [
-      "Collect 1 Ambassador Malcin's Head"
+      "Ambassador Malcin's Head"
     ],
-    "exclusive": []
+    "exclusive": [],
+    "checked": "2026-10-09",
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "3636": {
     "id": 3636,
@@ -3286,15 +3305,17 @@
     "turnin": "Myriam Moonsinger",
     "all": [],
     "any": [],
-    "source": "https://www.wowhead.com/classic/quest=6626",
+    "source": "https://wowforevertalents.com/quests/a-host-of-evil-6626/",
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
-    "evidence": "Classic reference",
+    "evidence": "Beta cache report",
     "objectives": [
-      "Defeat Razorfen Battleguard (8)",
-      "Defeat Razorfen Thornweaver (8)",
-      "Defeat Death's Head Cultist (8)"
+      "Razorfen Battleguard ×8",
+      "Razorfen Thornweaver ×8",
+      "Death's Head Cultist ×8"
     ],
-    "exclusive": []
+    "exclusive": [],
+    "checked": "2026-10-09",
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "3523": {
     "id": 3523,
@@ -3306,14 +3327,16 @@
     "turnin": "Belnistrasz",
     "all": [],
     "any": [],
-    "source": "https://www.wowhead.com/classic/quest=3523",
+    "source": "https://wowforevertalents.com/quests/scourge-of-the-downs-3523/",
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
-    "evidence": "Classic reference",
+    "evidence": "Beta cache report",
     "objectives": [
-      "Collect 1 Belnistrasz's Oathstone"
+      "Belnistrasz's Oathstone"
     ],
     "exclusive": [],
-    "pickupInside": true
+    "pickupInside": true,
+    "checked": "2026-10-09",
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "3525": {
     "id": 3525,
@@ -3555,13 +3578,15 @@
       739
     ],
     "any": [],
-    "source": "https://www.wowhead.com/classic/quest=704",
+    "source": "https://wowforevertalents.com/quests/agmond-s-fate-704/",
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
-    "evidence": "Classic reference",
+    "evidence": "Beta cache report",
     "objectives": [
-      "Collect 4 Carved Stone Urn"
+      "Carved Stone Urn ×4"
     ],
-    "exclusive": []
+    "exclusive": [],
+    "checked": "2026-10-09",
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "739": {
     "id": 739,
@@ -3834,14 +3859,16 @@
     "turnin": "Rigglefuzz",
     "all": [],
     "any": [],
-    "source": "https://www.wowhead.com/classic/quest=2418",
+    "source": "https://wowforevertalents.com/quests/power-stones-2418/",
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
-    "evidence": "Classic reference",
+    "evidence": "Beta cache report",
     "objectives": [
-      "Collect 8 Dentrium Power Stone",
-      "Collect 8 An'Alleum Power Stone"
+      "Dentrium Power Stone ×8",
+      "An'Alleum Power Stone ×8"
     ],
-    "exclusive": []
+    "exclusive": [],
+    "checked": "2026-10-09",
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "709": {
     "id": 709,
@@ -3853,13 +3880,15 @@
     "turnin": "Theldurin the Lost",
     "all": [],
     "any": [],
-    "source": "https://www.wowhead.com/classic/quest=709",
+    "source": "https://wowforevertalents.com/quests/solution-to-doom-709/",
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
-    "evidence": "Classic reference",
+    "evidence": "Beta cache report",
     "objectives": [
-      "Collect 1 Tablet of Ryun'eh"
+      "Tablet of Ryun'eh"
     ],
-    "exclusive": []
+    "exclusive": [],
+    "checked": "2026-10-09",
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2278": {
     "id": 2278,
@@ -9341,7 +9370,7 @@
       "reference": true,
       "title": "Gaxim Rustfizzle"
     },
-    "checked": "2026-10-03",
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "2925": {
@@ -9350,7 +9379,7 @@
     "minLevel": 24,
     "raceMask": 77,
     "classMask": 0,
-    "pickup": "Pickup location not verified; check the source before travelling.",
+    "pickup": "Mathiel - Darnassus, Darnassus (59.4, 45.4)",
     "turnin": "Klockmort Spannerspan",
     "all": [],
     "any": [],
@@ -9359,7 +9388,14 @@
     "evidence": "Beta cache report",
     "objectives": [],
     "exclusive": [],
-    "checked": "2026-10-03",
+    "pin": {
+      "map": 1457,
+      "x": 59.4,
+      "y": 45.4,
+      "zone": "Darnassus",
+      "title": "Mathiel"
+    },
+    "checked": "2026-10-09",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },
   "98815": {
@@ -9372,7 +9408,14 @@
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/highland-hides-98815/",
     "unverifiedChain": true,
-    "pickup": "Guide lists James Halloran in Menethil Harbor, Wetlands.",
+    "pickup": "James Halloran - Wetlands, Menethil Harbor (8.6, 55.8)",
+    "pin": {
+      "map": 1437,
+      "x": 8.6,
+      "y": 55.8,
+      "zone": "Wetlands",
+      "title": "James Halloran"
+    },
     "preparationNote": "The guide lists Daily Delivery first. Confirm whether James offers Highland Hides before doing earlier steps.",
     "minLevel": 24,
     "objectives": [
@@ -9410,7 +9453,7 @@
     "objectives": [
       "Thicket Raptor Meat ×4"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "95663": {
     "id": 95663,
@@ -9512,13 +9555,20 @@
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/lost-in-the-thicket-things-95647/",
     "unverifiedChain": true,
-    "pickup": "Caitlin Grassman, Menethil Harbor, after Seeking Caitlin (guide-reported).",
+    "pickup": "Caitlin Grassman - Wetlands, Menethil Harbor (11.9, 58.8)",
+    "pin": {
+      "map": 1437,
+      "x": 11.9,
+      "y": 58.8,
+      "zone": "Wetlands",
+      "title": "Caitlin Grassman"
+    },
     "minLevel": 24,
     "faction": "Alliance",
     "objectives": [
       "Learn what happened to Ardin Grassman"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "95737": {
     "id": 95737,
@@ -9549,8 +9599,8 @@
     "pickup": "Rethiel the Greenwarden, Wetlands (56.2, 40.6).",
     "pin": {
       "map": 1437,
-      "x": 56.2,
-      "y": 40.6,
+      "x": 56.3,
+      "y": 40.5,
       "zone": "Wetlands",
       "title": "Rethiel the Greenwarden"
     },
@@ -9678,7 +9728,7 @@
       "Dragonmaw Warder ×4",
       "Dragonmaw Dispatch"
     ],
-    "checked": "2026-10-03"
+    "checked": "2026-10-09"
   },
   "98824": {
     "id": 98824,
@@ -9707,7 +9757,14 @@
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/songblade-search-95772/",
     "unverifiedChain": true,
-    "pickup": "Guide lists Dorin Songblade in Lakeshire, Redridge Mountains.",
+    "pickup": "Dorin Songblade - Redridge Mountains, Lakeshire (25.7, 46.5)",
+    "pin": {
+      "map": 1433,
+      "x": 25.7,
+      "y": 46.5,
+      "zone": "Redridge Mountains",
+      "title": "Dorin Songblade"
+    },
     "minLevel": 24,
     "objectives": [
       "Search the Excavation Site for Daewyn Songblade."
@@ -9732,6 +9789,267 @@
     "checked": "2026-10-03",
     "turnin": "Thundris Windweaver in Darkshore.",
     "requirementsNote": "Classic reference: check Thundris while The Test of Righteousness is in your log. This is an active-quest requirement, not a completed prerequisite; Forever eligibility needs confirmation."
+  },
+  "78916": {
+    "id": 78916,
+    "name": "The Heart of the Void",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/the-heart-of-the-void-78916/",
+    "unverifiedChain": true,
+    "pickup": "Loot the quest-starting Perfect Blackfathom Pearl from Aku'mai in Blackfathom Deeps; take it to Dawnwatcher Selgorm in Darnassus.",
+    "pickupInside": true,
+    "faction": "Alliance",
+    "objectives": [
+      "Perfect Blackfathom Pearl"
+    ],
+    "checked": "2026-10-09"
+  },
+  "78917": {
+    "id": 78917,
+    "name": "The Heart of the Void",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/the-heart-of-the-void-78917/",
+    "unverifiedChain": true,
+    "pickup": "Loot the quest-starting Perfect Blackfathom Pearl from Aku'mai in Blackfathom Deeps; take it to Bashana Runetotem in Thunder Bluff.",
+    "pickupInside": true,
+    "faction": "Horde",
+    "objectives": [
+      "Perfect Blackfathom Pearl"
+    ],
+    "checked": "2026-10-09"
+  },
+  "79360": {
+    "id": 79360,
+    "name": "Elemental Aid",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/elemental-aid-79360/",
+    "unverifiedChain": true,
+    "pickup": "Pickup NPC not verified. Defeat Charlga Razorflank for the Tattered Note once you have the quest.",
+    "preparationNote": "Elemental class quest: class eligibility and the full earlier chain need verification. Check the source and your trainer.",
+    "minLevel": 30,
+    "faction": "Horde",
+    "objectives": [
+      "Tattered Note"
+    ],
+    "checked": "2026-10-09"
+  },
+  "96264": {
+    "id": 96264,
+    "name": "Elemental Aid",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/elemental-aid-96264/",
+    "unverifiedChain": true,
+    "pickup": "Pickup NPC not verified. Defeat Charlga Razorflank for the Tattered Note once you have the quest.",
+    "preparationNote": "Elemental class quest: class eligibility and the full earlier chain need verification. Check the source and your trainer.",
+    "minLevel": 30,
+    "faction": "Alliance",
+    "objectives": [
+      "Tattered Note"
+    ],
+    "checked": "2026-10-09"
+  },
+  "2947": {
+    "id": 2947,
+    "name": "Return of the Ring",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/return-of-the-ring-2947/",
+    "unverifiedChain": true,
+    "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. The return is optional; the current follow-up is not fully mapped.",
+    "pickupInside": true,
+    "minLevel": 28,
+    "faction": "Alliance",
+    "objectives": [
+      "Brilliant Gold Ring"
+    ],
+    "checked": "2026-10-09"
+  },
+  "2949": {
+    "id": 2949,
+    "name": "Return of the Ring",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/return-of-the-ring-2949/",
+    "unverifiedChain": true,
+    "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. The return is optional.",
+    "pickupInside": true,
+    "minLevel": 28,
+    "faction": "Horde",
+    "objectives": [
+      "Brilliant Gold Ring"
+    ],
+    "checked": "2026-10-09"
+  },
+  "92456": {
+    "id": 92456,
+    "name": "A Green Sample",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/a-green-sample-92456/",
+    "unverifiedChain": true,
+    "pickup": "Shylamiir in Stormwind City (quest-text report; exact pickup unverified).",
+    "minLevel": 24,
+    "faction": "Alliance",
+    "objectives": [
+      "Fel Infused Blossom"
+    ],
+    "checked": "2026-10-09"
+  },
+  "92458": {
+    "id": 92458,
+    "name": "Heart of Disruption",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/heart-of-disruption-92458/",
+    "unverifiedChain": true,
+    "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "pin": {
+      "map": 1421,
+      "x": 68.6,
+      "y": 45.2,
+      "zone": "Silverpine Forest",
+      "title": "Archmage Modera (creature 269127)"
+    },
+    "preparationNote": "Reported earlier step: An Alarming Request. Its quest ID and full chain are not yet verified.",
+    "minLevel": 24,
+    "faction": "Alliance",
+    "objectives": [
+      "Arcane Mote"
+    ],
+    "checked": "2026-10-09"
+  },
+  "96984": {
+    "id": 96984,
+    "name": "Heart of Disruption",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/heart-of-disruption-96984/",
+    "unverifiedChain": true,
+    "pickup": "Magus Wordeen Voidglare in Tarren Mill (quest-text report; exact pickup unverified).",
+    "preparationNote": "Reported earlier step: Blood in the Streets. Its quest ID and full chain are not yet verified.",
+    "minLevel": 24,
+    "faction": "Horde",
+    "objectives": [
+      "Arcane Mote"
+    ],
+    "checked": "2026-10-09"
+  },
+  "96987": {
+    "id": 96987,
+    "name": "Opportunistic Education",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/opportunistic-education-96987/",
+    "unverifiedChain": true,
+    "pickup": "Rexxie Copperclutch near the Dalaran sewer entrance (quest-text report; exact pickup unverified).",
+    "minLevel": 24,
+    "faction": "Horde",
+    "objectives": [
+      "The Founding of Dalaran"
+    ],
+    "checked": "2026-10-09"
+  },
+  "92489": {
+    "id": 92489,
+    "name": "Power Overwhelming",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/power-overwhelming-92489/",
+    "unverifiedChain": true,
+    "pickup": "High Sorcerer Andromath in Stormwind City (quest-text report; exact pickup unverified).",
+    "minLevel": 24,
+    "faction": "Alliance",
+    "objectives": [
+      "Arcanic Enigma"
+    ],
+    "checked": "2026-10-09"
+  },
+  "96988": {
+    "id": 96988,
+    "name": "Source of Power",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/source-of-power-96988/",
+    "unverifiedChain": true,
+    "pickup": "Doctor Martin Felben in Undercity (quest-text report; exact pickup unverified).",
+    "minLevel": 24,
+    "faction": "Horde",
+    "objectives": [
+      "Cracked Sentry Core ×6"
+    ],
+    "checked": "2026-10-09"
+  },
+  "92457": {
+    "id": 92457,
+    "name": "Starving Arcane",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+    "unverifiedChain": true,
+    "pickup": "Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "pin": {
+      "map": 1421,
+      "x": 68.6,
+      "y": 45.2,
+      "zone": "Silverpine Forest",
+      "title": "Archmage Modera (creature 269127)"
+    },
+    "minLevel": 24,
+    "objectives": [
+      "Seeking Remnant ×8",
+      "Saturated Remnant ×8",
+      "Mana Echo ×8"
+    ],
+    "checked": "2026-10-09"
+  },
+  "96986": {
+    "id": 96986,
+    "name": "The Grave Knight",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/the-grave-knight-96986/",
+    "unverifiedChain": true,
+    "pickup": "Melisara in Tarren Mill (quest-text report; exact pickup unverified).",
+    "minLevel": 24,
+    "faction": "Horde",
+    "objectives": [
+      "Atrexis the Grave Knight"
+    ],
+    "checked": "2026-10-09"
+  },
+  "96800": {
+    "id": 96800,
+    "name": "Past Due",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/past-due-96800/",
+    "unverifiedChain": true,
+    "pickup": "Creature 264265 at Tempered Tomes in City of Dalaran (9.5, 63.1). NPC name and map pin remain unverified.",
+    "minLevel": 30,
+    "faction": "Alliance",
+    "objectives": [
+      "The Lost Magic of the Runemasters"
+    ],
+    "checked": "2026-10-09"
   },
   "92819": {
     "id": 92819,

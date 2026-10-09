@@ -9,7 +9,7 @@
     },
     "pickup": "Rahauro - Thunder Bluff, Elder Rise (70.8, 31.6)",
     "locationSource": "https://wowforevertalents.com/quests/testing-an-enemy-s-strength-5723/",
-    "locationEvidence": "Website-reported beta pickup coordinates"
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
   "5728": {
     "pin": {
@@ -21,7 +21,7 @@
     },
     "pickup": "Thrall - Orgrimmar, Grommash Hold (31.7, 38.0)",
     "locationSource": "https://wowforevertalents.com/quests/hidden-enemies-5728/",
-    "locationEvidence": "Website-reported beta pickup coordinates"
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
   "5722": {
     "pin": {
@@ -33,7 +33,7 @@
     },
     "pickup": "Rahauro - Thunder Bluff, Elder Rise (70.8, 31.6)",
     "locationSource": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
-    "locationEvidence": "Website-reported beta pickup coordinates"
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
   "5761": {
     "pin": {
@@ -45,7 +45,7 @@
     },
     "pickup": "Neeru Fireblade - Orgrimmar, Cleft of Shadow (49.5, 50.4)",
     "locationSource": "https://wowforevertalents.com/quests/slaying-the-beast-5761/",
-    "locationEvidence": "Website-reported beta pickup coordinates"
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
   "5725": {
     "pin": {
@@ -57,7 +57,7 @@
     },
     "pickup": "Varimathras - Undercity, Royal Quarter (56.4, 92.6)",
     "locationSource": "https://wowforevertalents.com/quests/the-power-to-destroy-5725/",
-    "locationEvidence": "Website-reported beta pickup coordinates"
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
   "92401": {
     "pin": {
@@ -69,7 +69,7 @@
     },
     "pickup": "Tabitha Heartweaver - Silverpine Forest, The Sepulcher (44.5, 43.0)",
     "locationSource": "https://wowforevertalents.com/quests/a-frightened-request-92401/",
-    "locationEvidence": "Website-reported beta pickup coordinates"
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
   "166": {
     "pin": {
@@ -93,7 +93,7 @@
     },
     "pickup": "Warden Thelwater - Stormwind City, Stormwind City (51.5, 69.2)",
     "locationSource": "https://wowforevertalents.com/quests/quell-the-uprising-387/",
-    "locationEvidence": "Website-reported beta pickup coordinates"
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
   "971": {
     "pin": {
@@ -105,8 +105,7 @@
     },
     "pickup": "Gerrig Bonegrip - Ironforge, The Forlorn Cavern (50.5, 6.0)",
     "locationSource": "https://wowforevertalents.com/quests/knowledge-in-the-deeps-971/",
-    "locationEvidence": "Website-reported beta-log pickup and turn-in, 2026-10-03",
-    "locationChecked": "2026-10-03"
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
   "2926": {
     "pin": {
@@ -118,20 +117,186 @@
     },
     "pickup": "Ozzie Togglevolt - Dun Morogh, Kharanos (45.9, 49.4)",
     "locationSource": "https://wowforevertalents.com/quests/gnogaine-2926/",
-    "locationEvidence": "Website-reported beta-log pickup and turn-in, 2026-10-03",
-    "locationChecked": "2026-10-03"
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
   "95646": {
     "pin": {
       "map": 1437,
-      "x": 56.2,
-      "y": 40.6,
+      "x": 56.3,
+      "y": 40.5,
       "zone": "Wetlands",
       "title": "Rethiel the Greenwarden"
     },
-    "pickup": "Rethiel the Greenwarden, Wetlands (56.2, 40.6).",
-    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
-    "locationEvidence": "Forever dungeon guide pickup coordinates",
-    "locationChecked": "2026-10-03"
+    "pickup": "Rethiel the Greenwarden - Wetlands, The Green Belt (56.3, 40.5)",
+    "locationSource": "https://wowforevertalents.com/quests/horrors-in-the-highland-95646/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "1275": {
+    "pin": {
+      "map": 1439,
+      "x": 38.3,
+      "y": 43.0,
+      "zone": "Darkshore",
+      "title": "Gershala Nightwhisper"
+    },
+    "pickup": "Gershala Nightwhisper - Darkshore, Auberdine (38.3, 43.0)",
+    "locationSource": "https://wowforevertalents.com/quests/researching-the-corruption-1275/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "386": {
+    "pin": {
+      "map": 1433,
+      "x": 21.3,
+      "y": 46.6,
+      "zone": "Redridge Mountains",
+      "title": "Guard Berton"
+    },
+    "pickup": "Guard Berton - Redridge Mountains, Lakeshire (21.3, 46.6)",
+    "locationSource": "https://wowforevertalents.com/quests/what-comes-around-386/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "388": {
+    "pin": {
+      "map": 1453,
+      "x": 76.3,
+      "y": 63.6,
+      "zone": "Stormwind City",
+      "title": "Nikova Raskol"
+    },
+    "pickup": "Nikova Raskol - Stormwind City, Old Town (76.3, 63.6)",
+    "locationSource": "https://wowforevertalents.com/quests/the-color-of-blood-388/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "2962": {
+    "pin": {
+      "map": 1426,
+      "x": 45.9,
+      "y": 49.4,
+      "zone": "Dun Morogh",
+      "title": "Ozzie Togglevolt"
+    },
+    "pickup": "Ozzie Togglevolt - Dun Morogh, Kharanos (45.9, 49.4)",
+    "locationSource": "https://wowforevertalents.com/quests/the-only-cure-is-more-green-glow-2962/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "2924": {
+    "pin": {
+      "map": 1455,
+      "x": 68.2,
+      "y": 46.0,
+      "zone": "Ironforge",
+      "title": "Klockmort Spannerspan"
+    },
+    "pickup": "Klockmort Spannerspan - Ironforge, Tinker Town (68.2, 46.0)",
+    "locationSource": "https://wowforevertalents.com/quests/essential-artificials-2924/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "2925": {
+    "pin": {
+      "map": 1457,
+      "x": 59.4,
+      "y": 45.4,
+      "zone": "Darnassus",
+      "title": "Mathiel"
+    },
+    "pickup": "Mathiel - Darnassus, Darnassus (59.4, 45.4)",
+    "locationSource": "https://wowforevertalents.com/quests/klockmort-s-essentials-2925/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "2930": {
+    "pin": {
+      "map": 1455,
+      "x": 69.9,
+      "y": 48.5,
+      "zone": "Ironforge",
+      "title": "Master Mechanic Castpipe"
+    },
+    "pickup": "Master Mechanic Castpipe - Ironforge, Tinker Town (69.9, 48.5)",
+    "locationSource": "https://wowforevertalents.com/quests/data-rescue-2930/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "2929": {
+    "pin": {
+      "map": 1455,
+      "x": 68.7,
+      "y": 49.1,
+      "zone": "Ironforge",
+      "title": "High Tinker Mekkatorque"
+    },
+    "pickup": "High Tinker Mekkatorque - Ironforge, Tinker Town (68.7, 49.1)",
+    "locationSource": "https://wowforevertalents.com/quests/the-grand-betrayal-2929/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "98815": {
+    "pin": {
+      "map": 1437,
+      "x": 8.6,
+      "y": 55.8,
+      "zone": "Wetlands",
+      "title": "James Halloran"
+    },
+    "pickup": "James Halloran - Wetlands, Menethil Harbor (8.6, 55.8)",
+    "locationSource": "https://wowforevertalents.com/quests/highland-hides-98815/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "95647": {
+    "pin": {
+      "map": 1437,
+      "x": 11.9,
+      "y": 58.8,
+      "zone": "Wetlands",
+      "title": "Caitlin Grassman"
+    },
+    "pickup": "Caitlin Grassman - Wetlands, Menethil Harbor (11.9, 58.8)",
+    "locationSource": "https://wowforevertalents.com/quests/lost-in-the-thicket-things-95647/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "95772": {
+    "pin": {
+      "map": 1433,
+      "x": 25.7,
+      "y": 46.5,
+      "zone": "Redridge Mountains",
+      "title": "Dorin Songblade"
+    },
+    "pickup": "Dorin Songblade - Redridge Mountains, Lakeshire (25.7, 46.5)",
+    "locationSource": "https://wowforevertalents.com/quests/songblade-search-95772/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "1050": {
+    "pin": {
+      "map": 1455,
+      "x": 74.9,
+      "y": 12.2,
+      "zone": "Ironforge",
+      "title": "Librarian Mae Paledust"
+    },
+    "pickup": "Librarian Mae Paledust - Ironforge, The Library (74.9, 12.2)",
+    "locationSource": "https://wowforevertalents.com/quests/mythology-of-the-titans-1050/",
+    "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
+  },
+  "92458": {
+    "pin": {
+      "map": 1421,
+      "x": 68.6,
+      "y": 45.2,
+      "zone": "Silverpine Forest",
+      "title": "Archmage Modera (creature 269127)"
+    },
+    "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "locationSource": "https://wowforevertalents.com/quests/heart-of-disruption-92458/",
+    "locationEvidence": "Beta log pickup coordinates, 8 October 2026; NPC name from quest text"
+  },
+  "92457": {
+    "pin": {
+      "map": 1421,
+      "x": 68.6,
+      "y": 45.2,
+      "zone": "Silverpine Forest",
+      "title": "Archmage Modera (creature 269127)"
+    },
+    "pickup": "Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+    "locationEvidence": "Beta log pickup coordinates, 8 October 2026; NPC name from quest text"
   }
 }

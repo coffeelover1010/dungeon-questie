@@ -347,7 +347,7 @@ function A.CreateWindow()
   b:SetHeight(54); b:GetFontString():SetFont("Fonts\\FRIZQT__.TTF",11,""); b:GetFontString():SetWidth(122)
   b:GetFontString():ClearAllPoints(); b:GetFontString():SetPoint("RIGHT",-5,0)
   b.dungeon=d; dungeonButtons[i]=b
-  b.findGroup=button(dc,"Find Group",178,0,-(i-1)*86-55,function() A.FindGroup(d) end)
+  b.findGroup=button(dc,d=="Scarlet Monastery" and "All SM dungeons" or "Find Group",178,0,-(i-1)*86-55,function() A.FindGroup(d) end)
   b.findGroup:SetScript("OnEnter",function(self) GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine("Browse players for "..d); GameTooltip:AddLine("Select a player, then click Invite.",1,1,1); GameTooltip:Show() end)
   b.findGroup:SetScript("OnLeave",function() GameTooltip:Hide() end)
  end

@@ -122,8 +122,8 @@ if coordinates.exists():
     for quest_id,patch in json.loads(coordinates.read_text(encoding='utf-8')).items():
         by[int(quest_id)].update(patch)
 
-order=['The Hall of Thanes','Ragefire Chasm','Deadmines','Wailing Caverns','Ruins of Lordaeron','Shadowfang Keep','Blackfathom Deeps','Stormwind Stockade','Excavation Site: Wetlands','Razorfen Kraul','Gnomeregan','Scarlet Monastery','Razorfen Downs','Uldaman',"Zul'Farrak",'Maraudon','Sunken Temple','Blackrock Depths','Dire Maul','Lower Blackrock Spire','Upper Blackrock Spire','Scholomance','Stratholme']
-gaps=['City of Dalaran','The Drowned City',"Krol'dok Stronghold",'Alcaz Prison','Blackmaw Hold',"The Shaper's Terrace"]
+order=['The Hall of Thanes','Ragefire Chasm','Deadmines','Wailing Caverns','Ruins of Lordaeron','Shadowfang Keep','Blackfathom Deeps','Stormwind Stockade','Excavation Site: Wetlands','City of Dalaran','Razorfen Kraul','Gnomeregan','Scarlet Monastery','Razorfen Downs','Uldaman',"Zul'Farrak",'Maraudon','Sunken Temple','Blackrock Depths','Dire Maul','Lower Blackrock Spire','Upper Blackrock Spire','Scholomance','Stratholme']
+gaps=['The Drowned City',"Krol'dok Stronghold",'Alcaz Prison','Blackmaw Hold',"The Shaper's Terrace"]
 names=order+gaps
 populated={d for q in qs for d in q['dungeons']}
 notes_path=ROOT/'data/dungeon-notes.json'

@@ -1,0 +1,105 @@
+[
+  {
+    "record": {
+      "id": 2971,
+      "name": "<UNUSED>",
+      "dungeons": [
+        "Gnomeregan"
+      ],
+      "source": "https://wowforevertalents.com/quests/unused-2971/",
+      "evidence": "Beta cache report",
+      "checked": "2026-10-09",
+      "level": 32,
+      "minLevel": 23,
+      "objectives": [],
+      "rewards": [],
+      "people": [],
+      "personEvidence": [],
+      "sourceDetails": [],
+      "chain": []
+    },
+    "reason": "Unused record"
+  },
+  {
+    "record": {
+      "id": 95776,
+      "name": "The Only Good Brinescale...",
+      "dungeons": [
+        "The Drowned City"
+      ],
+      "source": "https://wowforevertalents.com/quests/the-only-good-brinescale-95776/",
+      "evidence": "Beta cache report",
+      "checked": "2026-10-09",
+      "level": 38,
+      "minLevel": 30,
+      "faction": "Horde",
+      "objectives": [],
+      "rewards": [
+        {
+          "id": 279888,
+          "name": "Tidesoaked Leggings"
+        },
+        {
+          "id": 279889,
+          "name": "Naga Priestess's Mantle"
+        }
+      ],
+      "people": [],
+      "personEvidence": [],
+      "sourceDetails": [],
+      "chain": []
+    },
+    "reason": "Dungeon availability not confirmed"
+  },
+  {
+    "record": {
+      "id": 96774,
+      "name": "Ancient Gurubashi Idol",
+      "dungeons": [
+        "The Drowned City"
+      ],
+      "source": "https://wowforevertalents.com/quests/ancient-gurubashi-idol-96774/",
+      "evidence": "Beta cache report",
+      "checked": "2026-10-09",
+      "level": 40,
+      "minLevel": 30,
+      "faction": "Horde",
+      "objectives": [
+        "Ancient Gurubashi Idol"
+      ],
+      "rewards": [],
+      "people": [],
+      "personEvidence": [],
+      "sourceDetails": [],
+      "chain": []
+    },
+    "reason": "Dungeon availability not confirmed"
+  },
+  {
+    "record": {
+      "id": 95775,
+      "name": "The Drowned City",
+      "dungeons": [
+        "The Drowned City"
+      ],
+      "source": "https://wowforevertalents.com/quests/the-drowned-city-95775/",
+      "evidence": "Beta cache report",
+      "checked": "2026-10-09",
+      "level": 40,
+      "minLevel": 30,
+      "faction": "Horde",
+      "objectives": [
+        "The First Tablet of I'lalai",
+        "The Second Tablet of I'lalai",
+        "The Third Tablet of I'lalai",
+        "The Fourth Tablet of I'lalai"
+      ],
+      "rewards": [],
+      "people": [],
+      "personEvidence": [],
+      "sourceDetails": [],
+      "chain": []
+    },
+    "reason": "Dungeon availability not confirmed"
+  }
+]

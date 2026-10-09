@@ -12,6 +12,7 @@ if (Test-Path -LiteralPath $destination) {
 $files = @('DungeonGuideForever.toc', 'README.md', 'AI-RESEARCH-README.md', 'RESEARCH-2026-10-02.md', 'WALKTHROUGHS.md', 'LICENSE', 'THIRD-PARTY-NOTICES.md', 'SOURCE-REBUILD.md', 'licenses\ClassicDB-LICENSE.md', 'licenses\ClassicDB-COPYRIGHT.md', 'licenses\ClassicDB-AUTHORS', 'licenses\world-coords-MIT.txt', 'Libs\NOTICE.txt', 'Libs\Ace3-LICENSE.txt')
 $files += Get-Content -LiteralPath (Join-Path $source 'DungeonGuideForever.toc') | Where-Object { $_ -and -not $_.StartsWith('#') }
 $files += 'RESEARCH-2026-10-03.md'
+$files += 'RESEARCH-2026-10-09.md'
 foreach ($file in $files) {
     $from = Join-Path $source $file
     $to = Join-Path $destination $file

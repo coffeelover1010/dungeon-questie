@@ -64,6 +64,20 @@ assert(R:Party().MAGE==1)
 local list=R:Candidates().WARRIOR
 assert(#list==2 and list[1].name=="First Last-Realm")
 assert(R.frame.rows.WARRIOR.candidate.name=="First Last-Realm")
+R.frame.roleButtons[2]:OnClick()
+assert(R.role=="tank" and #R:Candidates().WARRIOR==2)
+assert(R:Whisper(R.dungeon):find("join as tank",1,true))
+R:Confirm(list[1]); local tankPopup=popup.data
+R.frame.roleButtons[3]:OnClick()
+assert(R.role=="healer" and #R:Candidates().WARRIOR==0)
+R:Send(tankPopup); assert(#sent==0 and #invites==0)
+members[9].lfgRoles={healer=true,dps=true}
+assert(#R:Candidates().WARRIOR==1)
+members[9].lfgRoles=nil
+assert(#R:Candidates().WARRIOR==0)
+members[9].lfgRoles={tank=true,dps=true}
+R.frame.roleButtons[1]:OnClick()
+assert(R.role==nil and #R:Candidates().WARRIOR==2)
 R.frame.rows.WARRIOR.next:OnClick()
 assert(R.frame.rows.WARRIOR.candidate.name=="Next Warrior")
 R:Confirm(list[1]); assert(#sent==0 and #invites==0)

@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 version=next(x.split(':',1)[1].strip() for x in (ROOT/'DungeonGuideForever.toc').read_text().splitlines() if x.startswith('## Version:'))
 files={ROOT/'DungeonGuideForever.toc',ROOT/'LICENSE'}
 files.update(ROOT/x.strip().replace('\\','/') for x in (ROOT/'DungeonGuideForever.toc').read_text().splitlines() if x.strip() and not x.startswith('#'))
-files.update(ROOT/x for x in ('README.md','WALKTHROUGHS.md','AI-RESEARCH-README.md','SOURCE-REBUILD.md','THIRD-PARTY-NOTICES.md','RELEASE-NOTES.md','RESEARCH-2026-10-02.md','RESEARCH-2026-10-03.md','Libs/NOTICE.txt','Libs/Ace3-LICENSE.txt'))
+files.update(ROOT/x for x in ('README.md','WALKTHROUGHS.md','AI-RESEARCH-README.md','SOURCE-REBUILD.md','THIRD-PARTY-NOTICES.md','RELEASE-NOTES.md','RESEARCH-2026-10-02.md','RESEARCH-2026-10-03.md','RESEARCH-2026-10-09.md','Libs/NOTICE.txt','Libs/Ace3-LICENSE.txt'))
 for directory in ('data','tools','licenses'):
     files.update(p for p in (ROOT/directory).iterdir() if p.is_file() and p.suffix in ('.json','.csv','.txt','.py','.ps1','.md'))
 files.add(ROOT/'licenses/ClassicDB-AUTHORS')

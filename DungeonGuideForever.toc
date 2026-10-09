@@ -2,7 +2,7 @@
 ## Title: Dungeon Questie
 ## Notes: Dungeon quest checklist, rewards, prerequisites and pickup pins. /dungeons
 ## Author: Videocat
-## Version: 0.1.2
+## Version: 0.1.3
 ## SavedVariablesPerCharacter: DungeonGuideForeverDB
 ## OptionalDeps: TomTom
 
