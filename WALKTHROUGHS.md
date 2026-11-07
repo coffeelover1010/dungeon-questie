@@ -6,7 +6,7 @@ The goal is to collect outside quests before entering. Some prerequisites themse
 
 ## Sources and coverage
 
-All 240 current catalogue goals have been examined by the builder. There are 432 records including prerequisites; 84 goals have recorded prerequisite edges. Thirty goals have an unresolved Forever chain, explicitly flagged in `data/walkthrough-coverage.json`. The October 2 refresh adds Wetlands records without claiming their chains are fully verified. This does not establish that all quests in Forever are in the catalogue.
+All 256 current catalogue goals have been examined by the builder. There are 456 records including prerequisites; 86 goals have recorded prerequisite edges. Thirty-nine goals have an unresolved Forever chain, explicitly flagged in `data/walkthrough-coverage.json`. The October 9 deeper review adds the Horde Dalaran key preparation route and Alliance Shaman lead-in, while removing optional or disputed Wetlands gates. See RESEARCH-2026-10-09-DEEP.md for field-level evidence and limits. This does not establish that all quests in Forever are in the catalogue.
 
 Classic reference facts now come from the GPLv3 CMaNGOS Classic-DB snapshot recorded in data/classic-source-provenance.json. See SOURCE-REBUILD.md for extraction, comparison and coverage details and THIRD-PARTY-NOTICES.md for licences. Questie is not a build input. Classic records remain reference data, not verified Forever routes.
 
@@ -30,3 +30,9 @@ After installation, `/reload`, select Deadmines and Destruction in Deadmines. Ch
 
 The detail panel distinguishes accepting, completing, and turning in a prerequisite. Rewards remain those of the selected dungeon goal and name that quest explicitly; when a prerequisite is shown, the panel explains that the rewards are for the goal. A prerequisite with missing pickup directions never borrows the goal quest location.
 
+
+## Confidence icon
+
+An amber warning icon beside the row title and detail header replaces repeated uncertainty paragraphs. Hover for the reason: incomplete requirements, eligibility, reference data or approximate pins. Directions stay readable; unresolved steps retain their readiness gates. Source records keep their full evidence and historical notes.
+
+The follow-up October 9 review resolves Highland Hides to Young Crocolisk Skins (484), based on a firsthand Wowhead report corroborated by Icy Veins. The prerequisite's current quest page specifies six skins. See data/confidence-review-2026-10-09.json. Client rendering and offered-quest behavior have not been observed locally.

@@ -1,0 +1,217 @@
+[
+  {
+    "id": 2948,
+    "name": "Gnome Improvement",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "minLevel": 28,
+    "level": 35,
+    "faction": "Alliance",
+    "pickup": "Talvash del Kissel, Mystic Ward, Ironforge.",
+    "turnin": "Talvash del Kissel, Ironforge.",
+    "prereqs": [
+      2947
+    ],
+    "objectives": [
+      "Bring the Brilliant Gold Ring, one Silver Bar, one Moss Agate and 30 silver."
+    ],
+    "rewards": [
+      {
+        "id": 9538,
+        "name": "Talvash's Gold Ring"
+      }
+    ],
+    "people": [],
+    "chain": [
+      {
+        "role": "Comes after",
+        "id": 2947,
+        "name": "Return of the Ring"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game.",
+    "pickupInside": false
+  },
+  {
+    "id": 2950,
+    "name": "Nogg's Ring Redo",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "minLevel": 28,
+    "level": 35,
+    "faction": "Horde",
+    "pickup": "Nogg, Valley of Honor, Orgrimmar.",
+    "turnin": "Nogg, Orgrimmar.",
+    "prereqs": [
+      2949
+    ],
+    "objectives": [
+      "Bring the Brilliant Gold Ring, one Silver Bar, one Moss Agate and 30 silver."
+    ],
+    "rewards": [
+      {
+        "id": 9588,
+        "name": "Nogg's Gold Ring"
+      }
+    ],
+    "people": [],
+    "chain": [
+      {
+        "role": "Comes after",
+        "id": 2949,
+        "name": "Return of the Ring"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game.",
+    "pickupInside": false
+  },
+  {
+    "id": 1394,
+    "name": "Final Passage",
+    "dungeons": [
+      "Scarlet Monastery"
+    ],
+    "minLevel": 25,
+    "level": 36,
+    "faction": "Horde",
+    "pickup": "Parqual Fintallas, Undercity.",
+    "turnin": "Dorn Plainstalker, Thousand Needles.",
+    "prereqs": [
+      6628
+    ],
+    "objectives": [
+      "Return to Dorn Plainstalker after the Test of Lore chain."
+    ],
+    "rewards": [
+      {
+        "id": 6804,
+        "name": "Windstorm Hammer"
+      },
+      {
+        "id": 6806,
+        "name": "Dancing Flame"
+      }
+    ],
+    "people": [],
+    "chain": [
+      {
+        "role": "Comes after",
+        "id": 6628,
+        "name": "Test of Lore"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game. Outdoor final turn-in after the Scarlet Monastery Library portion of Test of Lore.",
+    "pickupInside": false
+  },
+  {
+    "id": 1806,
+    "name": "The Test of Righteousness",
+    "dungeons": [
+      "Deadmines",
+      "Shadowfang Keep",
+      "Blackfathom Deeps"
+    ],
+    "minLevel": 20,
+    "level": 22,
+    "faction": "Alliance",
+    "pickup": "Jordan Stilwell, outside Ironforge in Dun Morogh.",
+    "turnin": "Jordan Stilwell, Dun Morogh.",
+    "prereqs": [
+      1654
+    ],
+    "objectives": [
+      "Wait for Jordan Stilwell to finish forging your weapon."
+    ],
+    "rewards": [
+      {
+        "id": 6953,
+        "name": "Verigan's Fist"
+      }
+    ],
+    "people": [],
+    "chain": [
+      {
+        "role": "Comes after",
+        "id": 1654,
+        "name": "The Test of Righteousness"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game. Reward step after the separate dungeon-material collection quest (1654).",
+    "pickupInside": false,
+    "class": "PALADIN"
+  },
+  {
+    "id": 3765,
+    "name": "The Corruption Abroad",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "minLevel": 18,
+    "level": 24,
+    "faction": "Alliance",
+    "pickup": "Argos Nightwhisper, The Park, Stormwind.",
+    "turnin": "Gershala Nightwhisper, Auberdine, Darkshore.",
+    "prereqs": [],
+    "objectives": [
+      "Speak to Gershala Nightwhisper in Auberdine."
+    ],
+    "rewards": [],
+    "people": [],
+    "chain": [
+      {
+        "role": "Optional lead-in to",
+        "id": 1275,
+        "name": "Researching the Corruption"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game. Optional introductory quest; do not require it if the destination NPC already offers the next quest.",
+    "pickupInside": false
+  },
+  {
+    "id": 463,
+    "name": "The Greenwarden",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "minLevel": 20,
+    "level": 21,
+    "faction": "Alliance",
+    "pickup": "First Mate Fitzsimmons, Menethil Harbor, Wetlands.",
+    "turnin": "Rethiel the Greenwarden, Wetlands.",
+    "prereqs": [],
+    "objectives": [
+      "Find Rethiel the Greenwarden in the Wetlands."
+    ],
+    "rewards": [],
+    "people": [],
+    "chain": [
+      {
+        "role": "Optional lead-in to",
+        "id": 276,
+        "name": "Tramping Paws"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game. Optional introductory quest; do not require it if the destination NPC already offers the next quest.",
+    "pickupInside": false
+  }
+]

@@ -1,5 +1,11 @@
 {
-  "Excavation Site: Wetlands": "Opened in the October 1 beta update (Blizzard range 26-31). Fourteen quest records rechecked October 3, with travel objectives and turn-in directions. Some eligibility, pickups and prerequisite links remain unverified.",
-  "City of Dalaran": "Opened for beta testing October 8 (Blizzard development notes). Eight quest records reviewed October 9. Some pickups, eligibility and earlier chains remain unverified; quest level does not establish dungeon entry requirements.",
-  "The Drowned City": "Three cache records are held for research; current dungeon availability and pickups have not been confirmed. This is a coverage gap, not a completed checklist."
+  "Excavation Site: Wetlands": "Fourteen quest records. Faction eligibility reviewed against QuestieDB on November 7. Some pickup and prerequisite details are incomplete.",
+  "City of Dalaran": "Opened October 8. Four goals per faction; Starving Arcane is Alliance-only. Horde sewer-key preparation remains tracked. One keyholder can open the gate. Some prerequisite reports still conflict.",
+  "The Drowned City": "Three Horde quest records: The Drowned City, The Only Good Brinescale..., and Ancient Gurubashi Idol. Minimum quest level 30. Pickup and preparation details are incomplete.",
+  "The Hall of Thanes": "Six tracked goals including Underground Map preparation. Pickup reports refreshed October 16; treaty pickup level corrected to 9. Remaining chain gaps are labelled.",
+  "Ruins of Lordaeron": "Ten tracked goals. Inside pickups and item-started quests reviewed October 17. Unending Torment has several steps; the initial pickup is not the whole chain.",
+  "Krol'dok Stronghold": "No quest records in this catalogue. This dungeon is a coverage gap.",
+  "Alcaz Prison": "No quest records in this catalogue. This dungeon is a coverage gap.",
+  "Blackmaw Hold": "No quest records in this catalogue. This dungeon is a coverage gap.",
+  "The Shaper's Terrace": "No quest records in this catalogue. This dungeon is a coverage gap."
 }

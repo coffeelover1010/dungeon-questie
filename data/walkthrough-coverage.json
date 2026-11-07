@@ -1,7 +1,7 @@
 {
-  "targets": 256,
-  "nodes": 451,
-  "targetsWithPrerequisites": 85,
+  "targets": 266,
+  "nodes": 467,
+  "targetsWithPrerequisites": 90,
   "unverifiedForeverTargets": [
     96395,
     96403,
@@ -19,14 +19,12 @@
     3366,
     98423,
     7668,
-    98815,
     95697,
     95663,
     98823,
     95664,
     95795,
     95809,
-    95647,
     95682,
     95737,
     95772,
@@ -34,18 +32,20 @@
     78916,
     78917,
     79360,
-    96264,
     2947,
     2949,
     92456,
     92458,
-    96984,
     96987,
     92489,
     96988,
     92457,
     96986,
-    96800
+    96800,
+    3911,
+    95776,
+    96774,
+    95775
   ],
   "missingEdges": [],
   "source": {
@@ -57,5 +57,5 @@
     "scope": "Pinned base snapshot; subsequent SQL updates are not applied. Classic reference, not Forever verification.",
     "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852"
   },
-  "pickupPins": 177
+  "pickupPins": 184
 }

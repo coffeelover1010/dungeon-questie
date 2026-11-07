@@ -1,0 +1,1508 @@
+{
+  "checked": "2026-11-07",
+  "questieDBVersion": "1.0.11",
+  "fieldChanges": [
+    {
+      "id": 3341,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 6521,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 3636,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 2342,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 2202,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 2283,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 1360,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 2398,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 2240,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 17,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 704,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 1139,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 2198,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 2936,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 2991,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 7068,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 7029,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 7064,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 7070,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 7041,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 7065,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 1445,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 4146,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 4143,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 1475,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 7489,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 7488,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 7481,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 7482,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 4724,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 4981,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 4903,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 4701,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 5089,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 5001,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 5341,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 7668,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 5343,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 6163,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 4768,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 4974,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 6602,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 4764,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 5102,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 6502,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 2931,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true,
+        "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false,
+        "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources."
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 2925,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true,
+        "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false,
+        "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources."
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 95663,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true,
+        "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false,
+        "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources."
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 95795,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true,
+        "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false,
+        "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources."
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 95682,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true,
+        "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+      },
+      "new": {
+        "faction": "Horde",
+        "restrictionUnknown": false,
+        "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources."
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 95737,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true,
+        "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false,
+        "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources."
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 95772,
+      "old": {
+        "faction": null,
+        "restrictionUnknown": true,
+        "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+      },
+      "new": {
+        "faction": "Alliance",
+        "restrictionUnknown": false,
+        "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources."
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 96800,
+      "old": {
+        "pickup": "Creature 264265 at Tempered Tomes in City of Dalaran (9.5, 63.1). NPC name and map pin remain unverified.",
+        "people": [
+          "Picked up from: Creature #264265"
+        ],
+        "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification."
+      },
+      "new": {
+        "pickup": "Magus Olvek at Tempered Tomes in City of Dalaran (9.5, 63.1).",
+        "people": [
+          "Picked up from: Magus Olvek"
+        ],
+        "notes": "QuestieDB identifies creature 264265 as Magus Olvek. Pickup location is recorded by the WFT Beta Log. No map pin is supplied for this interior location."
+      },
+      "source": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 92456,
+      "old": {
+        "pickup": "Shylamiir in The Park, Stormwind City (Forever guide; no verified pin).",
+        "people": [
+          "Picked up from: Shylamiir"
+        ],
+        "personEvidence": [
+          {
+            "role": "Picked up from",
+            "name": "Shylamiir",
+            "location": null
+          }
+        ]
+      },
+      "new": {
+        "pickup": "Shylamiir in The Park, Stormwind City (31.3, 62.9).",
+        "people": [
+          "Picked up from: Shylamiir",
+          "Turned in to: Shylamiir"
+        ],
+        "personEvidence": [
+          {
+            "role": "Picked up from",
+            "name": "Shylamiir",
+            "location": "Stormwind City, The Park (31.3, 62.9)"
+          },
+          {
+            "role": "Turned in to",
+            "name": "Shylamiir",
+            "location": "Stormwind City, The Park (31.3, 62.9)"
+          }
+        ]
+      },
+      "source": "https://wowforevertalents.com/quests/a-green-sample-92456/",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 166,
+      "old": {
+        "pickup": "Gryan Stoutmantle - Sentinel Tower (56.4, 47.5)"
+      },
+      "new": {
+        "pickup": "Gryan Stoutmantle - Sentinel Tower (56.3, 47.6)"
+      },
+      "source": "https://wowforevertalents.com/quests/the-defias-brotherhood-166/",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": 92458,
+      "old": {
+        "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127."
+      },
+      "new": {
+        "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.7, 45.2); the beta log identifies the giver as creature 269127."
+      },
+      "source": "https://wowforevertalents.com/quests/heart-of-disruption-92458/",
+      "checked": "2026-11-07"
+    }
+  ],
+  "newQuests": [
+    95775,
+    95776,
+    96774
+  ],
+  "excluded": [
+    {
+      "id": 2971,
+      "reason": "Source title is <UNUSED>"
+    }
+  ],
+  "freshCacheRecords": 129,
+  "comparison": {
+    "checked": "2026-11-07",
+    "version": "1.0.11",
+    "commit": "80866960788084ae1592abf66a08f0d306458a95",
+    "sha256": "582a696c21786ee99d71a41e96101c0a34f8f81ab9e0b489aa3685cd50d24e84",
+    "scope": "Catalogue levels and walkthrough AND/OR prerequisite edges; baked static data only. Agreement is not live-client verification.",
+    "catalogueCount": 263,
+    "matched": [
+      5723,
+      5728,
+      5724,
+      5722,
+      5761,
+      5725,
+      96403,
+      96394,
+      96393,
+      95250,
+      97288,
+      92401,
+      92421,
+      92415,
+      92422,
+      95195,
+      95189,
+      95204,
+      95216,
+      214,
+      92753,
+      168,
+      167,
+      2040,
+      166,
+      373,
+      1486,
+      1491,
+      962,
+      959,
+      1487,
+      6981,
+      1098,
+      1740,
+      1013,
+      1014,
+      6562,
+      971,
+      1198,
+      1275,
+      1199,
+      6565,
+      6561,
+      386,
+      377,
+      387,
+      388,
+      391,
+      1221,
+      2922,
+      2923,
+      2927,
+      2928,
+      2842,
+      2843,
+      98423,
+      96391,
+      378,
+      2924,
+      2930,
+      2929,
+      2962,
+      2841,
+      2951,
+      2945,
+      1102,
+      1109,
+      6522,
+      1101,
+      1142,
+      1048,
+      1053,
+      1051,
+      1113,
+      1049,
+      1050,
+      1951,
+      1654,
+      6921,
+      6922,
+      3341,
+      6521,
+      3636,
+      6626,
+      3523,
+      3525,
+      2342,
+      2202,
+      2283,
+      1360,
+      2398,
+      17,
+      704,
+      2198,
+      2418,
+      709,
+      2278,
+      1956,
+      2936,
+      2991,
+      2768,
+      2865,
+      3042,
+      2846,
+      2770,
+      3527,
+      7068,
+      7029,
+      7064,
+      7070,
+      7041,
+      7065,
+      7028,
+      7044,
+      7067,
+      7046,
+      1445,
+      4146,
+      4143,
+      1446,
+      3373,
+      3447,
+      3528,
+      4081,
+      4134,
+      4082,
+      4063,
+      3906,
+      3907,
+      3981,
+      4132,
+      4003,
+      4262,
+      4263,
+      4286,
+      4126,
+      4341,
+      4362,
+      4241,
+      4322,
+      4123,
+      7848,
+      3802,
+      4201,
+      4024,
+      7489,
+      7488,
+      7441,
+      5526,
+      7463,
+      7461,
+      7507,
+      7481,
+      7482,
+      5518,
+      7703,
+      4724,
+      4981,
+      4903,
+      4701,
+      5089,
+      5001,
+      4862,
+      4729,
+      4866,
+      4742,
+      4867,
+      4788,
+      5341,
+      5343,
+      5529,
+      5382,
+      5515,
+      5384,
+      4771,
+      5466,
+      5214,
+      5251,
+      5282,
+      5122,
+      5262,
+      5848,
+      5243,
+      5212,
+      5213,
+      5125,
+      5263,
+      5463,
+      8945,
+      4768,
+      4974,
+      6602,
+      4764,
+      5102,
+      6502,
+      7761,
+      5160,
+      4735,
+      5127,
+      2931,
+      2925,
+      95697,
+      95663,
+      95664,
+      95795,
+      95647,
+      95810,
+      95737,
+      95772,
+      1442,
+      79360,
+      92456,
+      92458,
+      96987,
+      92489,
+      96988,
+      92457,
+      96986,
+      96800,
+      92819,
+      2948,
+      2950,
+      1394,
+      1806,
+      3765,
+      463
+    ],
+    "missing": [
+      3366,
+      78916,
+      78917,
+      3911
+    ],
+    "differences": [
+      {
+        "id": 96395,
+        "name": "An Ancient Grudge",
+        "fields": {
+          "minLevel": {
+            "catalogue": 10,
+            "questieDB": 0
+          }
+        }
+      },
+      {
+        "id": 1489,
+        "name": "Hamuul Runetotem",
+        "fields": {
+          "minLevel": {
+            "catalogue": 10,
+            "questieDB": 12
+          }
+        }
+      },
+      {
+        "id": 1490,
+        "name": "Nara Wildmane",
+        "fields": {
+          "minLevel": {
+            "catalogue": 10,
+            "questieDB": 12
+          }
+        }
+      },
+      {
+        "id": 914,
+        "name": "Leaders of the Fang",
+        "fields": {
+          "minLevel": {
+            "catalogue": 10,
+            "questieDB": 11
+          }
+        }
+      },
+      {
+        "id": 6564,
+        "name": "Allegiance to the Old Gods",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": [
+                6562
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 6563,
+        "name": "The Essence of Aku'Mai",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                6562
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 1200,
+        "name": "Blackfathom Villainy",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                1198
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 1144,
+        "name": "Willix the Importer",
+        "fields": {
+          "minLevel": {
+            "catalogue": 22,
+            "questieDB": 23
+          }
+        }
+      },
+      {
+        "id": 2926,
+        "name": "Gnogaine",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                2927
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 2904,
+        "name": "A Fine Mess",
+        "fields": {
+          "minLevel": {
+            "catalogue": 20,
+            "questieDB": 24
+          }
+        }
+      },
+      {
+        "id": 1160,
+        "name": "Test of Lore",
+        "fields": {
+          "minLevel": {
+            "catalogue": 26,
+            "questieDB": 25
+          }
+        }
+      },
+      {
+        "id": 2240,
+        "name": "The Hidden Chamber",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                2398
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 1139,
+        "name": "The Lost Tablets of Will",
+        "fields": {
+          "minLevel": {
+            "catalogue": 30,
+            "questieDB": 35
+          }
+        }
+      },
+      {
+        "id": 7066,
+        "name": "Seed of Life",
+        "fields": {
+          "minLevel": {
+            "catalogue": 39,
+            "questieDB": 45
+          }
+        }
+      },
+      {
+        "id": 1475,
+        "name": "Into The Temple of Atal'Hakkar",
+        "fields": {
+          "minLevel": {
+            "catalogue": 38,
+            "questieDB": 41
+          }
+        }
+      },
+      {
+        "id": 7201,
+        "name": "The Last Element",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": [
+                3906
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 4136,
+        "name": "Ribbly Screwspigot",
+        "fields": {
+          "minLevel": {
+            "catalogue": 50,
+            "questieDB": 48
+          }
+        }
+      },
+      {
+        "id": 5525,
+        "name": "Free Knot!",
+        "fields": {
+          "minLevel": {
+            "catalogue": 56,
+            "questieDB": 57
+          }
+        }
+      },
+      {
+        "id": 5528,
+        "name": "The Gordok Taste Test",
+        "fields": {
+          "minLevel": {
+            "catalogue": 56,
+            "questieDB": 57
+          }
+        }
+      },
+      {
+        "id": 7668,
+        "name": "The Darkreaver Menace",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": [
+                7667
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 6163,
+        "name": "Ramstein",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                6135
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [
+                6135,
+                6136
+              ],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 5047,
+        "name": "Finkle Einhorn, At Your Service!",
+        "fields": {
+          "minLevel": {
+            "catalogue": 57,
+            "questieDB": 55
+          }
+        }
+      },
+      {
+        "id": 6821,
+        "name": "Eye of the Emberseer",
+        "fields": {
+          "minLevel": {
+            "catalogue": 55,
+            "questieDB": 56
+          }
+        }
+      },
+      {
+        "id": 98815,
+        "name": "Highland Hides",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                484
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 98823,
+        "name": "Earthen Echo",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                95664
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 95809,
+        "name": "Heartwoven",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                95647
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 95646,
+        "name": "Horrors in the Highland",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                275
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 95682,
+        "name": "Open the Maw",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                95663
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 98824,
+        "name": "Prehistoric Prism",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                95810
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 96264,
+        "name": "Elemental Aid",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                94789
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      },
+      {
+        "id": 2947,
+        "name": "Return of the Ring",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": [
+                2945
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 2949,
+        "name": "Return of the Ring",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": [
+                2945
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 96984,
+        "name": "Heart of Disruption",
+        "fields": {
+          "prerequisites": {
+            "catalogue": {
+              "all": [
+                92434
+              ],
+              "any": []
+            },
+            "questieDB": {
+              "all": [],
+              "any": []
+            }
+          }
+        }
+      }
+    ],
+    "buildInputsChanged": false
+  }
+}

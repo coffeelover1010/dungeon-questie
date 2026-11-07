@@ -1,0 +1,58 @@
+{
+  "id": 98815,
+  "checked": "2026-10-09",
+  "sources": [
+    "https://www.wowhead.com/forever/quest=98815/highland-hides",
+    "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests"
+  ],
+  "reason": "Firsthand Wowhead comment identifies Young Crocolisk Skins and explicitly rejects Daily Delivery; Icy Veins independently lists the same prerequisite and Alliance faction. Prior Daily Delivery claim retained in historical audit only. No local client proof.",
+  "old": {
+    "restrictionUnknown": true,
+    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "pickup": "Guide lists James Halloran in Menethil Harbor, Wetlands.",
+    "prereqs": [],
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "preparationNote": "Check James Halloran directly. A current player report says Young Crocolisk Skins (484) unlocks this quest and Daily Delivery is unnecessary; the older guide disagrees. Requirement not enforced until verified.",
+    "chain": [
+      {
+        "role": "Reported prerequisite (unverified)",
+        "name": "Young Crocolisk Skins",
+        "id": 484
+      }
+    ],
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "prereqs": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "chain": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "preparationNote": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "faction": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "restrictionUnknown": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests"
+    }
+  },
+  "new": {
+    "restrictionUnknown": false,
+    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "pickup": "Guide lists James Halloran in Menethil Harbor, Wetlands.",
+    "prereqs": [
+      484
+    ],
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "preparationNote": "Complete Young Crocolisk Skins for James Halloran in Menethil Harbor, then collect Highland Hides.",
+    "chain": [
+      {
+        "id": 484,
+        "name": "Young Crocolisk Skins",
+        "role": "Prerequisite"
+      }
+    ],
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "prereqs": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "chain": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "preparationNote": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "faction": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "restrictionUnknown": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests"
+    },
+    "faction": "Alliance"
+  }
+}

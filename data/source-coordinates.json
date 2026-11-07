@@ -74,14 +74,26 @@
   "166": {
     "pin": {
       "map": 1436,
-      "x": 56.4,
-      "y": 47.5,
+      "x": 56.3,
+      "y": 47.6,
       "zone": "Westfall",
       "title": "Gryan Stoutmantle"
     },
-    "pickup": "Gryan Stoutmantle - Sentinel Tower (56.4, 47.5)",
+    "pickup": "Gryan Stoutmantle - Sentinel Tower (56.3, 47.6)",
     "locationSource": "https://wowforevertalents.com/quests/the-defias-brotherhood-166/",
-    "locationEvidence": "Website-reported beta pickup coordinates"
+    "locationEvidence": "WFT Beta Log pickup coordinates, 23 October 2026; checked 2026-11-07",
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Gryan Stoutmantle",
+        "location": "Sentinel Tower (56.3, 47.6)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Gryan Stoutmantle",
+        "location": "Sentinel Tower (56.3, 47.6)"
+      }
+    ]
   },
   "387": {
     "pin": {
@@ -278,25 +290,96 @@
   "92458": {
     "pin": {
       "map": 1421,
-      "x": 68.6,
+      "x": 68.7,
       "y": 45.2,
       "zone": "Silverpine Forest",
       "title": "Archmage Modera (creature 269127)"
     },
-    "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.7, 45.2); the beta log identifies the giver as creature 269127.",
     "locationSource": "https://wowforevertalents.com/quests/heart-of-disruption-92458/",
-    "locationEvidence": "Beta log pickup coordinates, 8 October 2026; NPC name from quest text"
+    "locationEvidence": "WFT Beta Log pickup coordinates, 23 October 2026; checked 2026-11-07",
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Creature #269127",
+        "location": "Silverpine Forest (68.7, 45.2)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Creature #269127",
+        "location": "Silverpine Forest (68.7, 45.2)"
+      }
+    ]
   },
   "92457": {
     "pin": {
       "map": 1421,
-      "x": 68.6,
+      "x": 68.7,
       "y": 45.2,
       "zone": "Silverpine Forest",
       "title": "Archmage Modera (creature 269127)"
     },
-    "pickup": "Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "pickup": "Archmage Modera (creature 269127) - Silverpine Forest (68.7, 45.2).",
     "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
-    "locationEvidence": "Beta log pickup coordinates, 8 October 2026; NPC name from quest text"
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October."
+  },
+  "96403": {
+    "pin": {
+      "map": 1455,
+      "x": 32,
+      "y": 45,
+      "zone": "Ironforge",
+      "title": "Thom Filch"
+    },
+    "pickup": "Thom Filch - Ironforge (32, 45).",
+    "locationSource": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October."
+  },
+  "96394": {
+    "pin": {
+      "map": 1455,
+      "x": 33.9,
+      "y": 48.1,
+      "zone": "Ironforge",
+      "title": "Afadra Dunwall"
+    },
+    "pickup": "Afadra Dunwall - Ironforge (33.9, 48.1).",
+    "locationSource": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October."
+  },
+  "96393": {
+    "pin": {
+      "map": 1426,
+      "x": 64.8,
+      "y": 58.5,
+      "zone": "Dun Morogh",
+      "title": "Earthseer Farsen"
+    },
+    "pickup": "Earthseer Farsen - Dun Morogh (64.8, 58.5).",
+    "locationSource": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October."
+  },
+  "168": {
+    "pin": {
+      "map": 1453,
+      "x": 70.2,
+      "y": 40.9,
+      "zone": "Stormwind City",
+      "title": "Wilder Thistlenettle"
+    },
+    "pickup": "Wilder Thistlenettle - Stormwind City (70.2, 40.9).",
+    "locationSource": "https://wowforevertalents.com/quests/collecting-memories-168/",
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October."
+  },
+  "92456": {
+    "pin": {
+      "map": 1453,
+      "x": 31.3,
+      "y": 62.9,
+      "zone": "Stormwind City",
+      "title": "Shylamiir"
+    },
+    "locationSource": "https://wowforevertalents.com/quests/a-green-sample-92456/",
+    "locationEvidence": "WFT Beta Log pickup coordinates, 23 October 2026; checked 2026-11-07"
   }
 }

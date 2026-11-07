@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 $source = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '..')).Path
-$addons = 'C:\Program Files (x86)\World of Warcraft\_classic_beta_\Interface\AddOns'
+$addons = 'C:\Program Files (x86)\World of Warcraft\_forever_\Interface\AddOns'
 if (-not (Test-Path -LiteralPath $addons -PathType Container)) { throw 'Forever addon directory not found.' }
 $destination = Join-Path $addons 'DungeonGuideForever'
 if (Test-Path -LiteralPath $destination) {
@@ -13,6 +13,10 @@ $files = @('DungeonGuideForever.toc', 'README.md', 'AI-RESEARCH-README.md', 'RES
 $files += Get-Content -LiteralPath (Join-Path $source 'DungeonGuideForever.toc') | Where-Object { $_ -and -not $_.StartsWith('#') }
 $files += 'RESEARCH-2026-10-03.md'
 $files += 'RESEARCH-2026-10-09.md'
+$files += 'RESEARCH-2026-10-09-DEEP.md'
+$files += 'RESEARCH-2026-10-17.md'
+$files += 'RESEARCH-2026-11-01.md'
+$files += 'RESEARCH-2026-11-07.md'
 foreach ($file in $files) {
     $from = Join-Path $source $file
     $to = Join-Path $destination $file

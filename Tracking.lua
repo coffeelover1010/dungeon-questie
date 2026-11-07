@@ -17,7 +17,7 @@ function A.Restriction(q)
  if q.faction and q.faction ~= UnitFactionGroup("player") then return q.faction.." only" end
  if q.class and q.class ~= class then return q.class.." only" end
  if q.excludeRace == race then return "Unavailable to this race" end
- if q.restrictionUnknown and not A.log[q.id] and A.Completed(q.id)~=true then return "Eligibility unverified for this character" end
+ if q.restrictionUnknown and not A.log[q.id] and A.Completed(q.id)~=true then return "Character eligibility unavailable" end
 end
 function A.InDungeon(q, dungeon)
  if not dungeon then return true end
@@ -70,7 +70,7 @@ function A.Preparation(q)
  if A.WalkStep then
   local n,phase=A.WalkStep(q)
   if phase=="blocked" then return "blocked","NOT ELIGIBLE NOW",7 end
-  if phase=="check" then return "check","WALKTHROUGH NEEDS CHECKING",3 end
+  if phase=="check" then return "check","QUEST DETAILS",3 end
   if phase=="inside" then return "inside","PICK UP INSIDE",5 end
   if n.id~=q.id then
    local label=phase=="pickup" and "PICK UP FIRST: " or (phase=="ready" and "TURN IN FIRST: " or "IN YOUR LOG: ")
@@ -79,10 +79,10 @@ function A.Preparation(q)
   if phase=="pickup" then return "pickup","COLLECT BEFORE ENTERING",1 end
  end
  if q.pickupInside then return "inside", "PICK UP INSIDE", 5 end
- if not A.logAvailable or A.Completed(q.id)==nil then return "check", "CHECK QUEST STATUS", 3 end
- if q.preparationNote then return "chain", "CHECK EARLIER QUEST FIRST", 2 end
+ if not A.logAvailable or A.Completed(q.id)==nil then return "check", "STATUS UNAVAILABLE", 3 end
+ if q.preparationNote then return "chain", "EARLIER QUEST", 2 end
  for _,id in ipairs(q.prereqs or {}) do
-  if A.Completed(id)~=true then return "chain", "CHECK EARLIER QUEST FIRST", 2 end
+  if A.Completed(id)~=true then return "chain", "EARLIER QUEST", 2 end
  end
  if not q.pickup or q.pickup=="" then return "check", "PICKUP LOCATION UNKNOWN", 3 end
  return "pickup", "COLLECT BEFORE ENTERING", 1
@@ -90,7 +90,7 @@ end
 function A.PreparationSummary(dungeon)
  local counts={pickup=0,chain=0,check=0,packed=0,inside=0,done=0,blocked=0,total=0,collected=0}
  for _,q in ipairs(A.quests) do
-  if A.InDungeon(q,dungeon) and A.ChecklistVisible(q) and not A.Restriction(q) and (not A.db.betaOnly or q.evidence~="Classic reference") then
+  if A.InDungeon(q,dungeon) and A.ChecklistVisible(q) and not A.Restriction(q) then
    local stage=A.Preparation(q); counts[stage]=counts[stage]+1
    counts.total=counts.total+1
    if A.RunReadiness(q) then counts.collected=counts.collected+1 end
@@ -170,12 +170,34 @@ function A.Matches(q)
  if not A.InDungeon(q,db.dungeon) then return false end
  if not A.ChecklistVisible(q) then return false end
  if A.Restriction(q) then return false end
- if db.betaOnly and q.evidence=="Classic reference" then return false end
  if db.search and db.search~="" then
   local hay=(q.name.." "..table.concat(q.dungeons," ").." "..(q.pickup or "").." "..q.id):lower()
   if not hay:find(db.search:lower(),1,true) then return false end
  end
  return true
+end
+function A.EmptyQuestMessage()
+ local recorded,eligible,unknown=0,0,0
+ for _,q in ipairs(A.quests) do
+  if A.InDungeon(q,A.db.dungeon) then
+   recorded=recorded+1
+   if A.ChecklistVisible(q) then
+    local reason=A.Restriction(q)
+    if not reason then eligible=eligible+1
+    elseif reason=="Character eligibility unavailable" then unknown=unknown+1 end
+   end
+  end
+ end
+ if recorded==0 then
+  return "No quest data for this dungeon yet."
+ end
+ if eligible>0 and A.db.search and A.db.search~="" then
+  return "No quests match your search.\n\nTry another search."
+ end
+ if unknown>0 then
+  return "Character requirements unavailable.\n\nFaction or class details are missing."
+ end
+ return "No quests for your faction or class."
 end
 local events=CreateFrame("Frame")
 A.events=events
@@ -194,6 +216,7 @@ events:SetScript("OnEvent",function(_,event,arg)
   A.db=DungeonGuideForeverDB
   A.db.confirmed=A.db.confirmed or {}; A.db.manual=nil; A.db.minimap=A.db.minimap or {minimapPos=240}
   A.db.mine=nil -- Remove the retired character-filter choice.
+  A.db.betaOnly=nil -- Retired filter has no UI; retain labelled Classic references.
   if A.db.pins==nil then A.db.pins=true end
   local validDungeon=false
   for _,d in ipairs(A.dungeons) do if d.name==A.db.dungeon then validDungeon=true; break end end

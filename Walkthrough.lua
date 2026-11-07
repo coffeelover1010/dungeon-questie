@@ -55,7 +55,7 @@ local function resolve(id,path)
  end
  path[id]=nil
  if n.requirementsNote then return n,"check",n.requirementsNote end
- if n.unverifiedChain then return n,"check","The full Forever prerequisite chain has not been verified. Check the quest source before travelling." end
+ if n.unverifiedChain then return n,"check","Prerequisite details are incomplete. See the quest source for preparation." end
  return n,"pickup"
 end
 function A.WalkStep(q)
@@ -88,18 +88,18 @@ function A.WalkInstructions(q)
  end
  local n,phase,note=A.WalkStep(q)
  if phase=="packed" or phase=="done" then return nil end
- local label=(phase=="pickup" or phase=="inside") and "Pick up: " or ((phase=="active" or phase=="ready") and "In quest log: " or "Check: ")
+ local label=(phase=="pickup" or phase=="inside") and "Pick up: " or ((phase=="active" or phase=="ready") and "In quest log: " or "Quest: ")
  local lines={label..n.name}
  if n.id~=q.id then table.insert(lines,"Prerequisite for: "..q.name) end
- if note then table.insert(lines,note) end
+ if note and phase~="check" then table.insert(lines,note) end
  if n.preparationNote and (phase=="pickup" or phase=="inside") then table.insert(lines,n.preparationNote) end
  if n.routeNote and (phase=="active" or phase=="ready") then table.insert(lines,n.routeNote) end
  local target
- if phase=="pickup" then
+ if phase=="pickup" or phase=="check" then
   table.insert(lines,"From: "..(n.pickup or (n.id==q.id and q.pickup) or "Location not recorded."))
   local known=A.byID[n.id]
-  if known and known.pin then target=known end
-  if not target and n.pin then target=n end
+  if phase=="pickup" and known and known.pin then target=known end
+  if phase=="pickup" and not target and n.pin then target=n end
  elseif phase=="active" then
   table.insert(lines,"Complete and turn in this prerequisite.")
   local live=A.Safe(C_QuestLog and C_QuestLog.GetQuestObjectives,n.id)
@@ -112,14 +112,7 @@ function A.WalkInstructions(q)
  elseif phase=="inside" then
   table.insert(lines,"Collect this during the dungeon run: "..(n.pickup or (n.id==q.id and q.pickup) or "See the quest source."))
  end
- local referencePin=target and target.pin and target.pin.reference
- if n.referenceDetails then table.insert(lines,n.referenceDetails) end
- if n.evidence=="Classic reference" or referencePin then
-  local referenceNote=n.evidence=="Classic reference" and "requirements may differ in Forever" or nil
-  if referencePin then referenceNote=(referenceNote and referenceNote.."; " or "").."approximate pin unverified in Forever" end
-  table.insert(lines,"Classic reference: "..referenceNote..".")
- end
  for i,line in ipairs(lines) do lines[i]="- "..line end
- local headings={pickup="Accept quest",active="Complete prerequisite",ready="Turn in prerequisite",inside="Accept inside the dungeon",blocked="Requirement to check",check="Step to check"}
+ local headings={pickup="Accept quest",active="Complete prerequisite",ready="Turn in prerequisite",inside="Accept inside the dungeon",blocked="Requirements",check="Quest details"}
  return table.concat(lines,"\n"),target,headings[phase] or "Next step",n,phase
 end

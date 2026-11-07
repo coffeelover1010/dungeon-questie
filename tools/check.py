@@ -204,7 +204,7 @@ for _,q in ipairs(A.quests) do
 end
 A.window.search:SetText("no such quest 1234567890"); assert(A.window.detailTitle:GetText()=="Select a quest")
 A.window.search:SetText("")
-A.db.dungeon="The Drowned City"; A.Refresh(); assert(A.window.detailText:GetText():find("coverage gap"))
+A.db.dungeon="Alcaz Prison"; A.Refresh(); assert(A.window.detailText:GetText():find("coverage gap"))
 A.SelectQuest(A.byID[168]); A.RefreshPins()
 A.Toggle(); assert(not A.window:IsShown())
 ''')
@@ -216,3 +216,29 @@ A.Navigate(A.byID[168])
 assert(WorldMapFrame:IsShown() and mapID==1453 and not A.window:IsShown())
 """)
 print(f'PASS: Lua 5.1 syntax, manifest, {len(data)} unique records, coordinates, completion, abandonment, ignored legacy marks, restrictions, prerequisites, isolation, unavailable APIs, waypoint/map guards, window construction and every detail panel (mocked UI)')
+lua.execute('''
+local savedDungeon,savedSearch,savedFaction,savedLevel=A.db.dungeon,A.db.search,faction,level
+A.db.dungeon="Zul'Farrak"; A.db.search=""; A.db.betaOnly=true; level=30
+for _,side in ipairs({"Alliance","Horde"}) do
+ faction=side
+ local visible=0
+ for _,q in ipairs(A.quests) do if A.Matches(q) then visible=visible+1 end end
+ assert(visible==7, "Show six shared Zul'Farrak quests and the recorded faction quest")
+ assert(A.PreparationSummary(A.db.dungeon).blocked==7, "Higher-level quests stay visible as not eligible")
+end
+A.db.search="no such quest"
+assert(A.EmptyQuestMessage():find("match your search",1,true))
+A.db.dungeon="Alcaz Prison"
+assert(A.EmptyQuestMessage()=="No quest data for this dungeon yet.")
+A.db.dungeon="__test_empty_reason"; A.db.search=""
+local test={id=990009,name="Test",dungeons={A.db.dungeon},faction="Alliance"}
+table.insert(A.quests,test); faction="Horde"
+assert(A.EmptyQuestMessage():find("faction or class",1,true))
+test.faction=nil; test.restrictionUnknown=true
+assert(A.EmptyQuestMessage():find("Character requirements unavailable",1,true))
+table.remove(A.quests)
+A.events.OnEvent(nil,"ADDON_LOADED","DungeonGuideForever")
+assert(A.db.betaOnly==nil)
+A.db.dungeon=savedDungeon; A.db.search=savedSearch; faction=savedFaction; level=savedLevel
+''')
+print('PASS: retired beta filter migration, higher-level Zul\'Farrak quests on both factions, and specific empty-list explanations')

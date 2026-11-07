@@ -1,0 +1,313 @@
+[
+  {
+    "id": 96984,
+    "source": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+    "checked": "2026-10-09",
+    "reason": "Current dungeon guide names Modera as giver; quest text names Voidglare as recipient.",
+    "old": {
+      "pickup": "Magus Wordeen Voidglare in Tarren Mill (quest-text report; exact pickup unverified).",
+      "prereqs": [],
+      "locationSource": "https://wowforevertalents.com/quests/heart-of-disruption-96984/",
+      "locationEvidence": "Beta log or quest-text report; see source details",
+      "people": [
+        "Picked up from: Magus Wordeen Voidglare"
+      ],
+      "personEvidence": [
+        {
+          "role": "Picked up from",
+          "name": "Magus Wordeen Voidglare",
+          "location": null
+        }
+      ],
+      "preparationNote": "Reported earlier step: Blood in the Streets. Its quest ID and full chain are not yet verified.",
+      "routeNote": null
+    },
+    "new": {
+      "pickup": "Image of Archmage Modera outside the Dalaran sewer entrance, after Blood in the Streets.",
+      "prereqs": [
+        92434
+      ],
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "locationEvidence": "Forever guide pickup; quest text separately identifies the turn-in NPC.",
+      "people": [
+        "Picked up from: Image of Archmage Modera",
+        "Turned in to: Magus Wordeen Voidglare"
+      ],
+      "personEvidence": [
+        {
+          "role": "Picked up from",
+          "name": "Image of Archmage Modera",
+          "location": "Outside Dalaran; guide report"
+        },
+        {
+          "role": "Turned in to",
+          "name": "Magus Wordeen Voidglare",
+          "location": "Tarren Mill; quest objective"
+        }
+      ],
+      "preparationNote": "Horde key route: Prison Break In and Key to the City, then Dalaran Patrols, then Blood in the Streets. Accept this quest from Modera to receive the sewer key.",
+      "routeNote": "Collect the Arcane Mote in Dalaran; take it to Magus Wordeen Voidglare in Tarren Mill. The sewer key is provided on acceptance, not a completion reward."
+    }
+  },
+  {
+    "id": 92458,
+    "source": "https://www.wowhead.com/forever/quest=92432",
+    "checked": "2026-10-09",
+    "reason": "Resolve the Alliance lead-in ID without making an optional introduction a hard gate.",
+    "old": {
+      "preparationNote": "Reported earlier step: An Alarming Request. Its quest ID and full chain are not yet verified.",
+      "chain": [
+        {
+          "role": "Comes after",
+          "name": "An Alarming Request"
+        },
+        {
+          "role": "Leads to",
+          "name": "Friend of the Kirin Tor"
+        }
+      ]
+    },
+    "new": {
+      "preparationNote": "An Alarming Request (92432), from Emissary Jacques, introduces Modera. Current access reports allow Alliance to speak directly to Modera; the introduction is not enforced as a prerequisite.",
+      "chain": [
+        {
+          "role": "Related quest (requirement unverified)",
+          "name": "An Alarming Request",
+          "id": 92432
+        },
+        {
+          "role": "Leads to",
+          "name": "Friend of the Kirin Tor",
+          "id": 92459
+        }
+      ]
+    }
+  },
+  {
+    "id": 96987,
+    "source": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+    "checked": "2026-10-09",
+    "reason": "Guide places Rexxie at entry inside the dungeon.",
+    "old": {
+      "pickupInside": null,
+      "pickup": "Rexxie Copperclutch near the Dalaran sewer entrance (quest-text report; exact pickup unverified).",
+      "locationSource": "https://wowforevertalents.com/quests/opportunistic-education-96987/"
+    },
+    "new": {
+      "pickupInside": true,
+      "pickup": "Rexxie Copperclutch just inside the City of Dalaran entrance (guide report).",
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards"
+    }
+  },
+  {
+    "id": 92456,
+    "source": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+    "checked": "2026-10-09",
+    "reason": "Replace vague Stormwind pickup with the named district.",
+    "old": {
+      "pickup": "Shylamiir in Stormwind City (quest-text report; exact pickup unverified).",
+      "locationSource": "https://wowforevertalents.com/quests/a-green-sample-92456/"
+    },
+    "new": {
+      "pickup": "Shylamiir in The Park, Stormwind City (Forever guide; no verified pin).",
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards"
+    }
+  },
+  {
+    "id": 96988,
+    "source": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+    "checked": "2026-10-09",
+    "reason": "Add the named Undercity pickup district.",
+    "old": {
+      "pickup": "Doctor Martin Felben in Undercity (quest-text report; exact pickup unverified).",
+      "locationSource": "https://wowforevertalents.com/quests/source-of-power-96988/"
+    },
+    "new": {
+      "pickup": "Doctor Martin Felben in The Apothecarium, Undercity (Forever guide; no verified pin).",
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards"
+    }
+  },
+  {
+    "id": 79360,
+    "source": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+    "checked": "2026-10-09",
+    "reason": "Current Shaman-only weapon-chain report resolves the previously unknown class restriction.",
+    "old": {
+      "class": null,
+      "restrictionUnknown": true,
+      "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification."
+    },
+    "new": {
+      "class": "SHAMAN",
+      "restrictionUnknown": false,
+      "notes": "Beta-cache objectives; Shaman-only eligibility supported by current Forever weapon-chain reports. No local live-client verification."
+    }
+  },
+  {
+    "id": 96264,
+    "source": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+    "checked": "2026-10-09",
+    "reason": "Current Shaman-only weapon-chain report resolves the previously unknown class restriction.",
+    "old": {
+      "class": null,
+      "restrictionUnknown": true,
+      "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification."
+    },
+    "new": {
+      "class": "SHAMAN",
+      "restrictionUnknown": false,
+      "notes": "Beta-cache objectives; Shaman-only eligibility supported by current Forever weapon-chain reports. No local live-client verification."
+    }
+  },
+  {
+    "id": 96264,
+    "source": "https://www.wowhead.com/forever/quest=96264",
+    "checked": "2026-10-09",
+    "reason": "Quest series and current facts identify the Alliance trainer and preceding Call of Air.",
+    "old": {
+      "pickup": "Pickup NPC not verified. Defeat Charlga Razorflank for the Tattered Note once you have the quest.",
+      "prereqs": [],
+      "preparationNote": "Elemental class quest: class eligibility and the full earlier chain need verification. Check the source and your trainer.",
+      "routeNote": null,
+      "locationSource": null
+    },
+    "new": {
+      "pickup": "Veyric Thunderhame in the northern Arathi Highlands, after Call of Air (94789).",
+      "prereqs": [
+        94789
+      ],
+      "preparationNote": "Shaman only. Finish Call of Air with Veyric before the Razorfen Kraul run.",
+      "routeNote": "Defeat Charlga Razorflank, loot the Tattered Note and return to Veyric Thunderhame in Arathi Highlands.",
+      "locationSource": "https://www.wowhead.com/forever/quest=96264"
+    }
+  },
+  {
+    "id": 79360,
+    "source": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+    "checked": "2026-10-09",
+    "reason": "Current reports place the RFK step after the air-totem quest; exact Horde prerequisite variant is not established.",
+    "old": {
+      "pickup": "Pickup NPC not verified. Defeat Charlga Razorflank for the Tattered Note once you have the quest.",
+      "preparationNote": "Elemental class quest: class eligibility and the full earlier chain need verification. Check the source and your trainer.",
+      "routeNote": null
+    },
+    "new": {
+      "pickup": "Check Prate Cloudseer in Thousand Needles after obtaining your Air Totem; the exact Horde pickup still needs client confirmation.",
+      "preparationNote": "Shaman only. Complete your Call of Air first. Several quests share that title; no unverified Horde prerequisite ID is enforced.",
+      "routeNote": "With Elemental Aid accepted, defeat Charlga Razorflank and loot the Tattered Note. The current beta-cache objective sends the note to Rau Cliffrunner in Thousand Needles; older Wowhead text describes a different step."
+    }
+  },
+  {
+    "id": 95647,
+    "source": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239",
+    "checked": "2026-10-09",
+    "reason": "Current guide labels Seeking Caitlin as a breadcrumb, not required preparation.",
+    "old": {
+      "prereqs": [
+        95737
+      ],
+      "chain": [
+        {
+          "role": "Leads to",
+          "name": "Heartwoven",
+          "id": 95809
+        }
+      ],
+      "preparationNote": null
+    },
+    "new": {
+      "prereqs": [],
+      "chain": [
+        {
+          "role": "Optional lead-in",
+          "name": "Seeking Caitlin",
+          "id": 95737
+        },
+        {
+          "role": "Leads to",
+          "name": "Heartwoven",
+          "id": 95809
+        }
+      ],
+      "preparationNote": "Seeking Caitlin is an optional introduction from Llana in Astranaar. Check Caitlin directly in Menethil Harbor before travelling to Ashenvale."
+    }
+  },
+  {
+    "id": 98815,
+    "source": "https://www.wowhead.com/forever/quest=98815",
+    "checked": "2026-10-09",
+    "reason": "Player report contradicts the guide hard gate; withhold both disputed requirements.",
+    "old": {
+      "prereqs": [
+        469
+      ],
+      "chain": [
+        {
+          "role": "Leads to",
+          "name": "Young Crocolisk Skins",
+          "id": 484
+        }
+      ],
+      "preparationNote": "The guide lists Daily Delivery first. Confirm whether James offers Highland Hides before doing earlier steps."
+    },
+    "new": {
+      "prereqs": [],
+      "chain": [
+        {
+          "role": "Reported prerequisite (unverified)",
+          "name": "Young Crocolisk Skins",
+          "id": 484
+        }
+      ],
+      "preparationNote": "Check James Halloran directly. A current player report says Young Crocolisk Skins (484) unlocks this quest and Daily Delivery is unnecessary; the older guide disagrees. Requirement not enforced until verified."
+    }
+  },
+  {
+    "id": 95697,
+    "source": "https://www.wowhead.com/forever/quest=95697",
+    "checked": "2026-10-09",
+    "reason": "Firsthand pickup comment agrees with the current Wetlands guide.",
+    "old": {
+      "pickup": "Pickup location not verified; check the source before travelling.",
+      "locationSource": null,
+      "locationEvidence": null,
+      "routeNote": null
+    },
+    "new": {
+      "pickup": "Borstan near the cooking trainer in The Drag, Orgrimmar. Player-reported location: 57.5, 53.4.",
+      "locationSource": "https://www.wowhead.com/forever/quest=95697",
+      "locationEvidence": "Forever player pickup report, corroborated by dungeon quest guide.",
+      "routeNote": "Collect four Thicket Raptor Meat inside Excavation Site: Wetlands, then return to Borstan."
+    }
+  },
+  {
+    "id": 95663,
+    "source": "https://www.wowhead.com/forever/quest=95663",
+    "checked": "2026-10-09",
+    "reason": "Two pickup reports identify Zaruk; destination is not the pickup.",
+    "old": {
+      "pickup": "Pickup location not verified; check the source before travelling.",
+      "locationSource": null,
+      "routeNote": null
+    },
+    "new": {
+      "pickup": "Zaruk at the bottom of the stairs in Hammerfall, Arathi Highlands (player report).",
+      "locationSource": "https://www.wowhead.com/forever/quest=95663",
+      "routeNote": "Travel south into Wetlands. Near Thelgen Rock and the meeting stone, follow the uphill path to the Deathstalker Agent above the Dragonmaw camp. Player-reported destination: 51.4, 59.2; this is not the quest pickup."
+    }
+  },
+  {
+    "id": 95682,
+    "source": "https://www.wowhead.com/forever/quest=95682",
+    "checked": "2026-10-09",
+    "reason": "Clarify the approach to the agent without inventing a precise pin.",
+    "old": {
+      "pickup": "After Dragonmaw Rumors, meet the Deathstalker Agent above the Dragonmaw camp in Wetlands. Exact position unverified.",
+      "locationSource": "https://wowforevertalents.com/quests/open-the-maw-95682/"
+    },
+    "new": {
+      "pickup": "Deathstalker Agent in the hills above the Dragonmaw camp, Wetlands. Follow the new uphill path near Thelgen Rock and the meeting stone.",
+      "locationSource": "https://www.wowhead.com/forever/quest=95682"
+    }
+  }
+]

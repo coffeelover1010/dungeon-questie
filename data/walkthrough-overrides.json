@@ -191,7 +191,15 @@
       96391
     ],
     "any": [],
-    "unverifiedChain": false
+    "unverifiedChain": false,
+    "pickup": "Earthseer Farsen - Dun Morogh (64.8, 58.5).",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pin": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+      "pickup": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+      "locationSource": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+      "locationEvidence": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/"
+    }
   },
   "5722": {
     "pickup": "Rahauro, Elder Rise, Thunder Bluff.",
@@ -253,7 +261,10 @@
     ],
     "turnin": "Deathstalker Agent, hills above the Dragonmaw camp, Wetlands.",
     "checked": "2026-10-03",
-    "source": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/"
+    "source": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/",
+    "faction": "Horde",
+    "eligibilitySource": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+    "eligibilityChecked": "2026-11-07"
   },
   "95737": {
     "objectives": [
@@ -261,7 +272,10 @@
     ],
     "turnin": "Caitlin Grassman, Menethil Harbor, Wetlands.",
     "checked": "2026-10-03",
-    "source": "https://wowforevertalents.com/quests/seeking-caitlin-95737/"
+    "source": "https://wowforevertalents.com/quests/seeking-caitlin-95737/",
+    "faction": "Alliance",
+    "eligibilitySource": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+    "eligibilityChecked": "2026-11-07"
   },
   "95772": {
     "objectives": [
@@ -269,7 +283,10 @@
     ],
     "turnin": "Check Daewyn Songblade inside Excavation Site; exact hand-in interaction unverified.",
     "checked": "2026-10-03",
-    "source": "https://wowforevertalents.com/quests/songblade-search-95772/"
+    "source": "https://wowforevertalents.com/quests/songblade-search-95772/",
+    "faction": "Alliance",
+    "eligibilitySource": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+    "eligibilityChecked": "2026-11-07"
   },
   "95795": {
     "objectives": [
@@ -277,12 +294,22 @@
     ],
     "turnin": "Dorin Songblade, Lakeshire, Redridge Mountains.",
     "checked": "2026-10-03",
-    "source": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/"
+    "source": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/",
+    "faction": "Alliance",
+    "eligibilitySource": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+    "eligibilityChecked": "2026-11-07"
   },
   "98815": {
     "turnin": "James Halloran, Menethil Harbor, Wetlands.",
-    "checked": "2026-10-03",
-    "source": "https://wowforevertalents.com/quests/highland-hides-98815/"
+    "checked": "2026-10-09",
+    "source": "https://wowforevertalents.com/quests/highland-hides-98815/",
+    "all": [
+      484
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "preparationNote": "Complete Young Crocolisk Skins for James Halloran in Menethil Harbor, then collect Highland Hides.",
+    "chainSource": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests"
   },
   "95809": {
     "turnin": "Caitlin Grassman, Menethil Harbor, Wetlands.",
@@ -435,5 +462,225 @@
     "checked": "2026-10-03",
     "chainEvidence": "Two player reports on the Forever quest page; user screenshot shows Tramping Paws offered.",
     "routeNote": "This is outdoor preparation for Horrors in the Highland. Return to Rethiel after completing the quest."
+  },
+  "544": {
+    "name": "Prison Break In",
+    "faction": "Horde",
+    "pickup": "Magus Wordeen Voidglare, Tarren Mill, Hillsbrad Foothills.",
+    "turnin": "Magus Wordeen Voidglare, Tarren Mill, Hillsbrad Foothills.",
+    "objectives": [
+      "Recover the four bloodstone artifacts from the traitors at Lordamere Internment Camp."
+    ],
+    "all": [],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=544",
+    "checked": "2026-10-09",
+    "preparationNote": "Current Dalaran key guide includes this quest. Take Key to the City on the same trip; exact minimum level is not reverified."
+  },
+  "545": {
+    "name": "Dalaran Patrols",
+    "faction": "Horde",
+    "pickup": "Magus Wordeen Voidglare, Tarren Mill, Hillsbrad Foothills.",
+    "turnin": "Magus Wordeen Voidglare, Tarren Mill, Hillsbrad Foothills.",
+    "objectives": [
+      "Defeat 6 Dalaran Summoners and 12 Elemental Slaves."
+    ],
+    "all": [
+      544
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=545",
+    "checked": "2026-10-09"
+  },
+  "93680": {
+    "name": "Key to the City",
+    "faction": "Horde",
+    "pickup": "Magus Wordeen Voidglare, Tarren Mill, Hillsbrad Foothills.",
+    "turnin": "Magus Wordeen Voidglare, Tarren Mill, Hillsbrad Foothills.",
+    "objectives": [
+      "Recover the Grimy Key from the Dalaran camps."
+    ],
+    "all": [],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=93680",
+    "checked": "2026-10-09"
+  },
+  "92434": {
+    "name": "Blood in the Streets",
+    "faction": "Horde",
+    "pickup": "Magus Wordeen Voidglare, Tarren Mill, Hillsbrad Foothills.",
+    "turnin": "Image of Archmage Modera, outside Dalaran by Lordamere Lake.",
+    "objectives": [
+      "Find the sewer approach beside Lordamere Lake and speak to Modera."
+    ],
+    "all": [
+      545,
+      93680
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=92434",
+    "checked": "2026-10-09",
+    "preparationNote": "Current guide and quest text support the patrol and key preparation. Keeper Bel'varil's Stone Tokens and Bracers of Binding are not enforced."
+  },
+  "96984": {
+    "name": "Heart of Disruption",
+    "faction": "Horde",
+    "pickup": "Image of Archmage Modera outside the Dalaran sewer entrance, after Blood in the Streets.",
+    "turnin": "Magus Wordeen Voidglare, Tarren Mill, Hillsbrad Foothills.",
+    "objectives": [
+      "Recover the Arcane Mote from the City of Dalaran."
+    ],
+    "all": [
+      92434
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=96984",
+    "checked": "2026-10-09",
+    "routeNote": "Collect the Arcane Mote in Dalaran; take it to Magus Wordeen Voidglare in Tarren Mill. The sewer key is provided on acceptance, not a completion reward.",
+    "chainSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards"
+  },
+  "94789": {
+    "name": "Call of Air",
+    "faction": "Alliance",
+    "pickup": "Ask your Shaman trainer for Call of Air (94789); the exact starting NPC is not verified.",
+    "turnin": "Veyric Thunderhame, northern Arathi Highlands.",
+    "objectives": [
+      "Find Veyric in Arathi Highlands and obtain the Air Totem."
+    ],
+    "all": [],
+    "any": [],
+    "unverifiedChain": true,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=94789",
+    "checked": "2026-10-09",
+    "class": "SHAMAN",
+    "minLevel": 30,
+    "requirementsNote": "Ask your Shaman trainer for the level-30 air-totem quest; the exact starting NPC and earlier requirements are unverified."
+  },
+  "96264": {
+    "name": "Elemental Aid",
+    "faction": "Alliance",
+    "pickup": "Veyric Thunderhame in the northern Arathi Highlands, after Call of Air (94789).",
+    "turnin": "Veyric Thunderhame, Arathi Highlands.",
+    "objectives": [
+      "Loot the Tattered Note from Charlga Razorflank in Razorfen Kraul."
+    ],
+    "all": [
+      94789
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=96264",
+    "checked": "2026-10-09",
+    "class": "SHAMAN",
+    "minLevel": 30
+  },
+  "79360": {
+    "class": "SHAMAN",
+    "turnin": "Rau Cliffrunner, Thousand Needles.",
+    "checked": "2026-10-09"
+  },
+  "95647": {
+    "all": [],
+    "any": [],
+    "unverifiedChain": false,
+    "preparationNote": "Seeking Caitlin is an optional introduction from Llana in Astranaar. Check Caitlin directly in Menethil Harbor before travelling to Ashenvale.",
+    "checked": "2026-10-09",
+    "chainSource": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239"
+  },
+  "484": {
+    "name": "Young Crocolisk Skins",
+    "all": [],
+    "any": [],
+    "unverifiedChain": false,
+    "faction": "Alliance",
+    "pickup": "James Halloran, Menethil Harbor, Wetlands.",
+    "turnin": "James Halloran, Menethil Harbor, Wetlands.",
+    "objectives": [
+      "Collect 6 Young Crocolisk Skins from the young crocolisks in the waters outside Menethil Harbor."
+    ],
+    "evidence": "Forever database",
+    "source": "https://www.wowhead.com/forever/quest=484/young-crocolisk-skins",
+    "checked": "2026-10-09"
+  },
+  "2948": {
+    "pickup": "Talvash del Kissel, Mystic Ward, Ironforge.",
+    "turnin": "Talvash del Kissel, Ironforge.",
+    "objectives": [
+      "Bring the Brilliant Gold Ring, one Silver Bar, one Moss Agate and 30 silver."
+    ],
+    "checked": "2026-11-01",
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "routeNote": "Classic reference facts; current Forever rewards and availability have not been checked in game."
+  },
+  "2950": {
+    "pickup": "Nogg, Valley of Honor, Orgrimmar.",
+    "turnin": "Nogg, Orgrimmar.",
+    "objectives": [
+      "Bring the Brilliant Gold Ring, one Silver Bar, one Moss Agate and 30 silver."
+    ],
+    "checked": "2026-11-01",
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "routeNote": "Classic reference facts; current Forever rewards and availability have not been checked in game."
+  },
+  "1394": {
+    "pickup": "Parqual Fintallas, Undercity.",
+    "turnin": "Dorn Plainstalker, Thousand Needles.",
+    "objectives": [
+      "Return to Dorn Plainstalker after the Test of Lore chain."
+    ],
+    "checked": "2026-11-01",
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "routeNote": "Classic reference facts; current Forever rewards and availability have not been checked in game. Outdoor final turn-in after the Scarlet Monastery Library portion of Test of Lore."
+  },
+  "1806": {
+    "pickup": "Jordan Stilwell, outside Ironforge in Dun Morogh.",
+    "turnin": "Jordan Stilwell, Dun Morogh.",
+    "objectives": [
+      "Wait for Jordan Stilwell to finish forging your weapon."
+    ],
+    "checked": "2026-11-01",
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "routeNote": "Classic reference facts; current Forever rewards and availability have not been checked in game. Reward step after the separate dungeon-material collection quest (1654)."
+  },
+  "3765": {
+    "pickup": "Argos Nightwhisper, The Park, Stormwind.",
+    "turnin": "Gershala Nightwhisper, Auberdine, Darkshore.",
+    "objectives": [
+      "Speak to Gershala Nightwhisper in Auberdine."
+    ],
+    "checked": "2026-11-01",
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "routeNote": "Classic reference facts; current Forever rewards and availability have not been checked in game. Optional introductory quest; do not require it if the destination NPC already offers the next quest."
+  },
+  "463": {
+    "pickup": "First Mate Fitzsimmons, Menethil Harbor, Wetlands.",
+    "turnin": "Rethiel the Greenwarden, Wetlands.",
+    "objectives": [
+      "Find Rethiel the Greenwarden in the Wetlands."
+    ],
+    "checked": "2026-11-01",
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "routeNote": "Classic reference facts; current Forever rewards and availability have not been checked in game. Optional introductory quest; do not require it if the destination NPC already offers the next quest."
+  },
+  "2947": {
+    "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. Return it to Talvash del Kissel in Ironforge."
   }
 }

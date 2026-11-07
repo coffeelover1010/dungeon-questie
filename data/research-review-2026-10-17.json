@@ -1,0 +1,1516 @@
+{
+  "changes": [
+    {
+      "id": 92457,
+      "source": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "checked": "2026-10-17",
+      "changes": {
+        "faction": {
+          "old": null,
+          "new": "Alliance"
+        },
+        "restrictionUnknown": {
+          "old": true,
+          "new": false
+        }
+      }
+    },
+    {
+      "id": 92489,
+      "source": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "checked": "2026-10-17",
+      "changes": {
+        "pickup": {
+          "old": "High Sorcerer Andromath in Stormwind City (quest-text report; exact pickup unverified).",
+          "new": "High Sorcerer Andromath, Mage Quarter, Stormwind City."
+        },
+        "locationSource": {
+          "old": "https://wowforevertalents.com/quests/power-overwhelming-92489/",
+          "new": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
+        },
+        "locationEvidence": {
+          "old": "Beta log or quest-text report; see source details",
+          "new": "Method dungeon guide, updated 15 October 2026."
+        }
+      }
+    },
+    {
+      "id": 96986,
+      "source": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "checked": "2026-10-17",
+      "changes": {
+        "pickup": {
+          "old": "Melisara in Tarren Mill (quest-text report; exact pickup unverified).",
+          "new": "Melisara, Tarren Mill, Hillsbrad Foothills."
+        },
+        "locationSource": {
+          "old": "https://wowforevertalents.com/quests/the-grave-knight-96986/",
+          "new": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
+        },
+        "locationEvidence": {
+          "old": "Beta log or quest-text report; see source details",
+          "new": "Method dungeon guide, updated 15 October 2026."
+        }
+      }
+    },
+    {
+      "id": 96403,
+      "source": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+      "checked": "2026-10-17",
+      "changes": {
+        "pin": {
+          "old": null,
+          "new": {
+            "map": 1455,
+            "x": 32,
+            "y": 45,
+            "zone": "Ironforge",
+            "title": "Thom Filch"
+          }
+        },
+        "pickup": {
+          "old": "Thom Filch, Old Ironforge. Interior map coordinates not verified.",
+          "new": "Thom Filch - Ironforge (32, 45)."
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/important-heirlooms-96403/"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Beta Log pickup report, 16 October 2026; checked 17 October."
+        }
+      }
+    },
+    {
+      "id": 96394,
+      "source": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+      "checked": "2026-10-17",
+      "changes": {
+        "pin": {
+          "old": null,
+          "new": {
+            "map": 1455,
+            "x": 33.9,
+            "y": 48.1,
+            "zone": "Ironforge",
+            "title": "Afadra Dunwall"
+          }
+        },
+        "pickup": {
+          "old": "Afadra Dunwall, Old Ironforge. Published coordinates conflict; no reliable map pin.",
+          "new": "Afadra Dunwall - Ironforge (33.9, 48.1)."
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/the-restless-dead-96394/"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Beta Log pickup report, 16 October 2026; checked 17 October."
+        }
+      }
+    },
+    {
+      "id": 96393,
+      "source": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+      "checked": "2026-10-17",
+      "changes": {
+        "pin": {
+          "old": null,
+          "new": {
+            "map": 1426,
+            "x": 64.8,
+            "y": 58.5,
+            "zone": "Dun Morogh",
+            "title": "Earthseer Farsen"
+          }
+        },
+        "pickup": {
+          "old": "Earthseer Farsen, Gol'Bolar Quarry in Dun Morogh, after Underground Map.",
+          "new": "Earthseer Farsen - Dun Morogh (64.8, 58.5)."
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Beta Log pickup report, 16 October 2026; checked 17 October."
+        }
+      }
+    },
+    {
+      "id": 168,
+      "source": "https://wowforevertalents.com/quests/collecting-memories-168/",
+      "checked": "2026-10-17",
+      "changes": {
+        "pin": {
+          "old": {
+            "map": 1453,
+            "x": 65,
+            "y": 21,
+            "zone": "Stormwind City",
+            "title": "Wilder Thistlenettle"
+          },
+          "new": {
+            "map": 1453,
+            "x": 70.2,
+            "y": 40.9,
+            "zone": "Stormwind City",
+            "title": "Wilder Thistlenettle"
+          }
+        },
+        "pickup": {
+          "old": "Wilder Thistlenettle - Stormwind City",
+          "new": "Wilder Thistlenettle - Stormwind City (70.2, 40.9)."
+        },
+        "locationSource": {
+          "old": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+          "new": "https://wowforevertalents.com/quests/collecting-memories-168/"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Beta Log pickup report, 16 October 2026; checked 17 October."
+        }
+      }
+    },
+    {
+      "id": 92457,
+      "source": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "checked": "2026-10-17",
+      "changes": {
+        "pin": {
+          "old": {
+            "map": 1421,
+            "x": 68.6,
+            "y": 45.2,
+            "zone": "Silverpine Forest",
+            "title": "Archmage Modera (creature 269127)"
+          },
+          "new": {
+            "map": 1421,
+            "x": 68.7,
+            "y": 45.2,
+            "zone": "Silverpine Forest",
+            "title": "Archmage Modera (creature 269127)"
+          }
+        },
+        "pickup": {
+          "old": "Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+          "new": "Archmage Modera (creature 269127) - Silverpine Forest (68.7, 45.2)."
+        },
+        "locationSource": {
+          "old": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+          "new": "https://wowforevertalents.com/quests/starving-arcane-92457/"
+        },
+        "locationEvidence": {
+          "old": "Beta log pickup coordinates, 8 October 2026; NPC name from quest text",
+          "new": "Beta Log pickup report, 16 October 2026; checked 17 October."
+        }
+      }
+    },
+    {
+      "id": 98423,
+      "source": "https://www.icy-veins.com/wow-forever/hall-of-thanes-quests",
+      "checked": "2026-10-17",
+      "changes": {
+        "minLevel": {
+          "old": 16,
+          "new": 9
+        },
+        "notes": {
+          "old": "Bring the treaty to King Magni Bronzebeard. Pickup level is guide-reported.",
+          "new": "Guide-reported pickup level 9. Find the treaty in a vault in the final boss room and take it to King Magni Bronzebeard."
+        },
+        "pickupInside": {
+          "old": true,
+          "new": true
+        }
+      }
+    },
+    {
+      "id": 3911,
+      "source": "https://wowforevertalents.com/quests/the-last-element-3911/",
+      "checked": "2026-10-17",
+      "changes": {
+        "restrictionUnknown": {
+          "old": null,
+          "new": true
+        },
+        "pickup": {
+          "old": null,
+          "new": "Vivian Lagrave is mentioned in the quest text; the actual pickup location is not yet verified."
+        },
+        "notes": {
+          "old": null,
+          "new": "Beta-cache objectives and reward; faction, pickup and prerequisite requirements remain unverified."
+        }
+      }
+    },
+    {
+      "id": 95250,
+      "source": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "checked": "2026-10-17",
+      "changes": {
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "pickup": {
+          "old": "Pickup location not yet verified. Check the source and quest notes.",
+          "new": "Captain Truman inside Ruins of Lordaeron."
+        },
+        "pickupInside": {
+          "old": null,
+          "new": true
+        }
+      }
+    },
+    {
+      "id": 92421,
+      "source": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "checked": "2026-10-17",
+      "changes": {
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "pickup": {
+          "old": "Pickup location not yet verified. Check the source and quest notes.",
+          "new": "Morbin Lightbane, Undercity."
+        },
+        "routeNote": {
+          "old": null,
+          "new": "Collect Intact Limbs from skeletons and zombies in the dungeon."
+        }
+      }
+    },
+    {
+      "id": 95216,
+      "source": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "checked": "2026-10-17",
+      "changes": {
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "pickup": {
+          "old": "Pickup location not yet verified. Check the source and quest notes.",
+          "new": "Theodore Griffs, Undercity."
+        },
+        "routeNote": {
+          "old": null,
+          "new": "Loot the Highly Toxic Strain from Witherfang."
+        }
+      }
+    },
+    {
+      "id": 92415,
+      "source": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "checked": "2026-10-17",
+      "changes": {
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "pickup": {
+          "old": "Quest-starting item in Ruins of Lordaeron. Exact drop location unverified.",
+          "new": "Blood-Stained Letter near Rath'mael in the Lordaeron Graveyard area inside the dungeon."
+        },
+        "pickupInside": {
+          "old": true,
+          "new": true
+        }
+      }
+    },
+    {
+      "id": 97288,
+      "source": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "checked": "2026-10-17",
+      "changes": {
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "pickup": {
+          "old": "Quest-starting item in Ruins of Lordaeron; the chain has multiple distinct steps.",
+          "new": "Abominable Head dropped by The Baron inside Ruins of Lordaeron."
+        },
+        "pickupInside": {
+          "old": true,
+          "new": true
+        }
+      }
+    },
+    {
+      "id": 95195,
+      "source": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "checked": "2026-10-17",
+      "changes": {
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "pickup": {
+          "old": "Quest-starting Bloodied Insignia; bring it to General Marcus Jonathan in Stormwind.",
+          "new": "Bloodied Insignia dropped by skeletons inside Ruins of Lordaeron."
+        },
+        "pickupInside": {
+          "old": null,
+          "new": true
+        }
+      }
+    },
+    {
+      "id": 95189,
+      "source": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "checked": "2026-10-17",
+      "changes": {
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "routeNote": {
+          "old": null,
+          "new": "Find a Crest of Lordaeron inside the dungeon, then take it to Lady Dena Kennedy in Stormwind."
+        }
+      }
+    },
+    {
+      "id": 95204,
+      "source": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "checked": "2026-10-17",
+      "changes": {
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "routeNote": {
+          "old": null,
+          "new": "Find a Crest of Lordaeron inside the dungeon, then take it to Oran Snakewrithe in Undercity."
+        }
+      }
+    }
+  ],
+  "deferred": [
+    {
+      "id": 2971,
+      "reason": "Unused placeholder",
+      "record": {
+        "id": 2971,
+        "name": "<UNUSED>",
+        "dungeons": [
+          "Gnomeregan"
+        ],
+        "source": "https://wowforevertalents.com/quests/unused-2971/",
+        "evidence": "Beta cache report",
+        "checked": "2026-10-17",
+        "level": 32,
+        "minLevel": 23,
+        "objectives": [],
+        "rewards": [],
+        "people": [],
+        "personEvidence": [],
+        "sourceDetails": [],
+        "chain": []
+      }
+    },
+    {
+      "id": 95776,
+      "reason": "Preview only; current access and pickups not confirmed",
+      "record": {
+        "id": 95776,
+        "name": "The Only Good Brinescale...",
+        "dungeons": [
+          "The Drowned City"
+        ],
+        "source": "https://wowforevertalents.com/quests/the-only-good-brinescale-95776/",
+        "evidence": "Beta cache report",
+        "checked": "2026-10-17",
+        "level": 38,
+        "minLevel": 30,
+        "faction": "Horde",
+        "objectives": [],
+        "rewards": [
+          {
+            "id": 279888,
+            "name": "Tidesoaked Leggings"
+          },
+          {
+            "id": 279889,
+            "name": "Naga Priestess's Mantle"
+          }
+        ],
+        "people": [],
+        "personEvidence": [],
+        "sourceDetails": [],
+        "chain": []
+      }
+    },
+    {
+      "id": 96774,
+      "reason": "Preview only; current access and pickups not confirmed",
+      "record": {
+        "id": 96774,
+        "name": "Ancient Gurubashi Idol",
+        "dungeons": [
+          "The Drowned City"
+        ],
+        "source": "https://wowforevertalents.com/quests/ancient-gurubashi-idol-96774/",
+        "evidence": "Beta cache report",
+        "checked": "2026-10-17",
+        "level": 40,
+        "minLevel": 30,
+        "faction": "Horde",
+        "objectives": [
+          "Ancient Gurubashi Idol"
+        ],
+        "rewards": [],
+        "people": [],
+        "personEvidence": [],
+        "sourceDetails": [],
+        "chain": []
+      }
+    },
+    {
+      "id": 95775,
+      "reason": "Preview only; current access and pickups not confirmed",
+      "record": {
+        "id": 95775,
+        "name": "The Drowned City",
+        "dungeons": [
+          "The Drowned City"
+        ],
+        "source": "https://wowforevertalents.com/quests/the-drowned-city-95775/",
+        "evidence": "Beta cache report",
+        "checked": "2026-10-17",
+        "level": 40,
+        "minLevel": 30,
+        "faction": "Horde",
+        "objectives": [
+          "The First Tablet of I'lalai",
+          "The Second Tablet of I'lalai",
+          "The Third Tablet of I'lalai",
+          "The Fourth Tablet of I'lalai"
+        ],
+        "rewards": [],
+        "people": [],
+        "personEvidence": [],
+        "sourceDetails": [],
+        "chain": []
+      }
+    }
+  ],
+  "conflicts": [
+    "Method calls Prison Break In optional; existing individual-page chain retained pending stronger evidence.",
+    "Existing user-confirmed 1275 exception and Highland Hides prerequisite retained."
+  ],
+  "catalogueDiff": [
+    {
+      "id": 96403,
+      "name": "Important Heirlooms",
+      "fields": {
+        "checked": {
+          "old": "2026-10-09",
+          "new": "2026-10-17"
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Picked up from: Thom Filch",
+            "Turned in to: Thom Filch"
+          ]
+        },
+        "pickup": {
+          "old": "Thom Filch, Old Ironforge. Interior map coordinates not verified.",
+          "new": "Thom Filch - Ironforge (32, 45)."
+        },
+        "personEvidence": {
+          "old": [],
+          "new": [
+            {
+              "role": "Picked up from",
+              "name": "Thom Filch",
+              "location": "Ironforge, Ironforge (32.0, 45.0)"
+            },
+            {
+              "role": "Turned in to",
+              "name": "Thom Filch",
+              "location": "Ironforge, Ironforge (32.0, 45.0)"
+            }
+          ]
+        },
+        "sourceDetails": {
+          "old": [],
+          "new": [
+            "Sources: the WFT Beta Log addon, 16 October 2026 · the beta client's creature cache, 16 October 2026 (creaturecache.wdb, build 70425)"
+          ]
+        },
+        "pin": {
+          "old": null,
+          "new": {
+            "map": 1455,
+            "x": 32,
+            "y": 45,
+            "zone": "Ironforge",
+            "title": "Thom Filch"
+          }
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/important-heirlooms-96403/"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Beta Log pickup report, 16 October 2026; checked 17 October."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "pin": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+            "pickup": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+            "locationSource": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+            "locationEvidence": "https://wowforevertalents.com/quests/important-heirlooms-96403/"
+          }
+        }
+      }
+    },
+    {
+      "id": 96394,
+      "name": "The Restless Dead",
+      "fields": {
+        "checked": {
+          "old": "2026-10-09",
+          "new": "2026-10-17"
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Picked up from: Afadra Dunwall",
+            "Turned in to: Afadra Dunwall"
+          ]
+        },
+        "pickup": {
+          "old": "Afadra Dunwall, Old Ironforge. Published coordinates conflict; no reliable map pin.",
+          "new": "Afadra Dunwall - Ironforge (33.9, 48.1)."
+        },
+        "personEvidence": {
+          "old": [],
+          "new": [
+            {
+              "role": "Picked up from",
+              "name": "Afadra Dunwall",
+              "location": "Ironforge, Ironforge (33.9, 48.1)"
+            },
+            {
+              "role": "Turned in to",
+              "name": "Afadra Dunwall",
+              "location": "Ironforge, Ironforge (33.9, 48.1)"
+            }
+          ]
+        },
+        "sourceDetails": {
+          "old": [],
+          "new": [
+            "Sources: the WFT Beta Log addon, 16 October 2026 · the beta client's creature cache, 16 October 2026 (creaturecache.wdb, build 70425)"
+          ]
+        },
+        "pin": {
+          "old": null,
+          "new": {
+            "map": 1455,
+            "x": 33.9,
+            "y": 48.1,
+            "zone": "Ironforge",
+            "title": "Afadra Dunwall"
+          }
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/the-restless-dead-96394/"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Beta Log pickup report, 16 October 2026; checked 17 October."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "pin": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+            "pickup": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+            "locationSource": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+            "locationEvidence": "https://wowforevertalents.com/quests/the-restless-dead-96394/"
+          }
+        }
+      }
+    },
+    {
+      "id": 96393,
+      "name": "Old Ironforge Incursion",
+      "fields": {
+        "checked": {
+          "old": "2026-10-09",
+          "new": "2026-10-17"
+        },
+        "people": {
+          "old": [
+            "Turned in to: King Magni Bronzebeard"
+          ],
+          "new": [
+            "Picked up from: Earthseer Farsen",
+            "Turned in to: King Magni Bronzebeard"
+          ]
+        },
+        "pickup": {
+          "old": "Earthseer Farsen, Gol'Bolar Quarry in Dun Morogh, after Underground Map.",
+          "new": "Earthseer Farsen - Dun Morogh (64.8, 58.5)."
+        },
+        "personEvidence": {
+          "old": [
+            {
+              "role": "Turned in to",
+              "name": "King Magni Bronzebeard",
+              "location": null
+            }
+          ],
+          "new": [
+            {
+              "role": "Picked up from",
+              "name": "Earthseer Farsen",
+              "location": "Dun Morogh, The Tundrid Hills (64.8, 58.5)"
+            },
+            {
+              "role": "Turned in to",
+              "name": "King Magni Bronzebeard",
+              "location": "Ironforge, The High Seat (39.5, 56.1)"
+            }
+          ]
+        },
+        "sourceDetails": {
+          "old": [
+            "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+          ],
+          "new": [
+            "Sources: the WFT Beta Log addon, 16 October 2026 · the beta client's creature cache, 16 October 2026 (creaturecache.wdb, build 70425)"
+          ]
+        },
+        "pin": {
+          "old": null,
+          "new": {
+            "map": 1426,
+            "x": 64.8,
+            "y": 58.5,
+            "zone": "Dun Morogh",
+            "title": "Earthseer Farsen"
+          }
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Beta Log pickup report, 16 October 2026; checked 17 October."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "pin": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+            "pickup": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+            "locationSource": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+            "locationEvidence": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/"
+          }
+        }
+      }
+    },
+    {
+      "id": 95250,
+      "name": "Abominable Creatures",
+      "fields": {
+        "pickup": {
+          "old": "Pickup location not yet verified. Check the source and quest notes.",
+          "new": "Captain Truman inside Ruins of Lordaeron."
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "pickupInside": {
+          "old": null,
+          "new": true
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+          }
+        }
+      }
+    },
+    {
+      "id": 97288,
+      "name": "Unending Torment",
+      "fields": {
+        "pickup": {
+          "old": "Quest-starting item in Ruins of Lordaeron; the chain has multiple distinct steps.",
+          "new": "Abominable Head dropped by The Baron inside Ruins of Lordaeron."
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+          }
+        }
+      }
+    },
+    {
+      "id": 92421,
+      "name": "Light's Justice",
+      "fields": {
+        "pickup": {
+          "old": "Pickup location not yet verified. Check the source and quest notes.",
+          "new": "Morbin Lightbane, Undercity."
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "routeNote": {
+          "old": null,
+          "new": "Collect Intact Limbs from skeletons and zombies in the dungeon."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+          }
+        }
+      }
+    },
+    {
+      "id": 92415,
+      "name": "Remember That I Love You",
+      "fields": {
+        "pickup": {
+          "old": "Quest-starting item in Ruins of Lordaeron. Exact drop location unverified.",
+          "new": "Blood-Stained Letter near Rath'mael in the Lordaeron Graveyard area inside the dungeon."
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+          }
+        }
+      }
+    },
+    {
+      "id": 95195,
+      "name": "Bloodied Insignia",
+      "fields": {
+        "pickup": {
+          "old": "Quest-starting Bloodied Insignia; bring it to General Marcus Jonathan in Stormwind.",
+          "new": "Bloodied Insignia dropped by skeletons inside Ruins of Lordaeron."
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "pickupInside": {
+          "old": null,
+          "new": true
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+          }
+        }
+      }
+    },
+    {
+      "id": 95189,
+      "name": "Crest of Lordaeron",
+      "fields": {
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "routeNote": {
+          "old": null,
+          "new": "Find a Crest of Lordaeron inside the dungeon, then take it to Lady Dena Kennedy in Stormwind."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+          }
+        }
+      }
+    },
+    {
+      "id": 95204,
+      "name": "Crest of Lordaeron",
+      "fields": {
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "routeNote": {
+          "old": null,
+          "new": "Find a Crest of Lordaeron inside the dungeon, then take it to Oran Snakewrithe in Undercity."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+          }
+        }
+      }
+    },
+    {
+      "id": 95216,
+      "name": "The New Plague",
+      "fields": {
+        "pickup": {
+          "old": "Pickup location not yet verified. Check the source and quest notes.",
+          "new": "Theodore Griffs, Undercity."
+        },
+        "locationSource": {
+          "old": null,
+          "new": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Forever quest guide; rechecked 17 October 2026."
+        },
+        "routeNote": {
+          "old": null,
+          "new": "Loot the Highly Toxic Strain from Witherfang."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+            "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+          }
+        }
+      }
+    },
+    {
+      "id": 168,
+      "name": "Collecting Memories",
+      "fields": {
+        "checked": {
+          "old": "2026-10-09",
+          "new": "2026-10-17"
+        },
+        "people": {
+          "old": [
+            "Turned in to: Wilder Thistlenettle"
+          ],
+          "new": [
+            "Picked up from: Wilder Thistlenettle",
+            "Turned in to: Wilder Thistlenettle"
+          ]
+        },
+        "pickup": {
+          "old": "Wilder Thistlenettle - Stormwind City",
+          "new": "Wilder Thistlenettle - Stormwind City (70.2, 40.9)."
+        },
+        "pin": {
+          "old": {
+            "map": 1453,
+            "x": 65,
+            "y": 21,
+            "zone": "Stormwind City",
+            "title": "Wilder Thistlenettle"
+          },
+          "new": {
+            "map": 1453,
+            "x": 70.2,
+            "y": 40.9,
+            "zone": "Stormwind City",
+            "title": "Wilder Thistlenettle"
+          }
+        },
+        "locationSource": {
+          "old": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+          "new": "https://wowforevertalents.com/quests/collecting-memories-168/"
+        },
+        "personEvidence": {
+          "old": [
+            {
+              "role": "Turned in to",
+              "name": "Wilder Thistlenettle",
+              "location": null
+            }
+          ],
+          "new": [
+            {
+              "role": "Picked up from",
+              "name": "Wilder Thistlenettle",
+              "location": "Stormwind City, Dwarven District (70.2, 40.9)"
+            },
+            {
+              "role": "Turned in to",
+              "name": "Wilder Thistlenettle",
+              "location": "Stormwind City, Dwarven District (70.2, 40.9)"
+            }
+          ]
+        },
+        "sourceDetails": {
+          "old": [
+            "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+          ],
+          "new": [
+            "Sources: the WFT Beta Log addon, 16 October 2026 · the beta client's creature cache, 16 October 2026 (creaturecache.wdb, build 70425) · the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
+          ]
+        },
+        "locationEvidence": {
+          "old": null,
+          "new": "Beta Log pickup report, 16 October 2026; checked 17 October."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "pin": "https://wowforevertalents.com/quests/collecting-memories-168/",
+            "pickup": "https://wowforevertalents.com/quests/collecting-memories-168/",
+            "locationSource": "https://wowforevertalents.com/quests/collecting-memories-168/",
+            "locationEvidence": "https://wowforevertalents.com/quests/collecting-memories-168/"
+          }
+        }
+      }
+    },
+    {
+      "id": 98423,
+      "name": "The Treaty of Understanding",
+      "fields": {
+        "minLevel": {
+          "old": 16,
+          "new": 9
+        },
+        "notes": {
+          "old": "Bring the treaty to King Magni Bronzebeard. Pickup level is guide-reported.",
+          "new": "Guide-reported pickup level 9. Find the treaty in a vault in the final boss room and take it to King Magni Bronzebeard."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "minLevel": "https://www.icy-veins.com/wow-forever/hall-of-thanes-quests",
+            "notes": "https://www.icy-veins.com/wow-forever/hall-of-thanes-quests",
+            "pickupInside": "https://www.icy-veins.com/wow-forever/hall-of-thanes-quests"
+          }
+        }
+      }
+    },
+    {
+      "id": 6922,
+      "name": "Baron Aquanis",
+      "fields": {
+        "objectives": {
+          "old": [],
+          "new": [
+            "Strange Water Globe"
+          ]
+        },
+        "rewards": {
+          "old": [],
+          "new": [
+            {
+              "id": 16886,
+              "name": "Outlaw Sabre"
+            },
+            {
+              "id": 16887,
+              "name": "Witch's Finger"
+            },
+            {
+              "id": 270043,
+              "name": "Dreamer's Chestguard"
+            }
+          ]
+        },
+        "people": {
+          "old": [],
+          "new": [
+            "Turned in to: Je'neu Sancrea"
+          ]
+        },
+        "source": {
+          "old": "https://www.wowhead.com/forever/quest=6922",
+          "new": "https://wowforevertalents.com/quests/baron-aquanis-6922/"
+        },
+        "evidence": {
+          "old": "Classic reference",
+          "new": "Beta cache report"
+        },
+        "checked": {
+          "old": "2026-10-01",
+          "new": "2026-10-17"
+        },
+        "notes": {
+          "old": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.",
+          "new": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status."
+        },
+        "level": {
+          "old": null,
+          "new": 30
+        },
+        "personEvidence": {
+          "old": null,
+          "new": [
+            {
+              "role": "Turned in to",
+              "name": "Je'neu Sancrea",
+              "location": null
+            }
+          ]
+        },
+        "sourceDetails": {
+          "old": null,
+          "new": [
+            "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
+          ]
+        }
+      }
+    },
+    {
+      "id": 92489,
+      "name": "Power Overwhelming",
+      "fields": {
+        "pickup": {
+          "old": "High Sorcerer Andromath in Stormwind City (quest-text report; exact pickup unverified).",
+          "new": "High Sorcerer Andromath, Mage Quarter, Stormwind City."
+        },
+        "checked": {
+          "old": "2026-10-09",
+          "new": "2026-10-17"
+        },
+        "people": {
+          "old": [
+            "Picked up from: High Sorcerer Andromath"
+          ],
+          "new": [
+            "Picked up from: High Sorcerer Andromath",
+            "Turned in to: High Sorcerer Andromath"
+          ]
+        },
+        "personEvidence": {
+          "old": [
+            {
+              "role": "Picked up from",
+              "name": "High Sorcerer Andromath",
+              "location": null
+            }
+          ],
+          "new": [
+            {
+              "role": "Picked up from",
+              "name": "High Sorcerer Andromath",
+              "location": "Stormwind City, Wizard's Sanctum (48.8, 87.6)"
+            },
+            {
+              "role": "Turned in to",
+              "name": "High Sorcerer Andromath",
+              "location": "Stormwind City, Wizard's Sanctum (48.8, 87.6)"
+            }
+          ]
+        },
+        "sourceDetails": {
+          "old": [
+            "Source: the beta client's quest cache, 7 October 2026 (questcache.wdb, build 70245)"
+          ],
+          "new": [
+            "Sources: the WFT Beta Log addon, 16 October 2026 · the beta client's creature cache, 16 October 2026 (creaturecache.wdb, build 70425)"
+          ]
+        },
+        "locationSource": {
+          "old": "https://wowforevertalents.com/quests/power-overwhelming-92489/",
+          "new": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
+        },
+        "locationEvidence": {
+          "old": "Beta log or quest-text report; see source details",
+          "new": "Method dungeon guide, updated 15 October 2026."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "pickup": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+            "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+            "locationEvidence": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
+          }
+        }
+      }
+    },
+    {
+      "id": 92457,
+      "name": "Starving Arcane",
+      "fields": {
+        "pickup": {
+          "old": "Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+          "new": "Archmage Modera (creature 269127) - Silverpine Forest (68.7, 45.2)."
+        },
+        "checked": {
+          "old": "2026-10-09",
+          "new": "2026-10-17"
+        },
+        "faction": {
+          "old": null,
+          "new": "Alliance"
+        },
+        "people": {
+          "old": [
+            "Picked up from: Creature #269127"
+          ],
+          "new": [
+            "Picked up from: Creature #269127",
+            "Turned in to: Creature #269127"
+          ]
+        },
+        "personEvidence": {
+          "old": [
+            {
+              "role": "Picked up from",
+              "name": "Creature #269127",
+              "location": "Silverpine Forest (68.6, 45.2)"
+            }
+          ],
+          "new": [
+            {
+              "role": "Picked up from",
+              "name": "Creature #269127",
+              "location": "Silverpine Forest (68.7, 45.2)"
+            },
+            {
+              "role": "Turned in to",
+              "name": "Creature #269127",
+              "location": "Silverpine Forest (68.7, 45.2)"
+            }
+          ]
+        },
+        "sourceDetails": {
+          "old": [
+            "Source: the WFT Beta Log addon, 8 October 2026"
+          ],
+          "new": [
+            "Source: the WFT Beta Log addon, 16 October 2026"
+          ]
+        },
+        "locationEvidence": {
+          "old": "Beta log pickup coordinates, 8 October 2026; NPC name from quest text",
+          "new": "Beta Log pickup report, 16 October 2026; checked 17 October."
+        },
+        "restrictionUnknown": {
+          "old": true,
+          "new": false
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "faction": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+            "restrictionUnknown": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+            "pin": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+            "pickup": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+            "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+            "locationEvidence": "https://wowforevertalents.com/quests/starving-arcane-92457/"
+          }
+        },
+        "pin": {
+          "old": {
+            "map": 1421,
+            "x": 68.6,
+            "y": 45.2,
+            "zone": "Silverpine Forest",
+            "title": "Archmage Modera (creature 269127)"
+          },
+          "new": {
+            "map": 1421,
+            "x": 68.7,
+            "y": 45.2,
+            "zone": "Silverpine Forest",
+            "title": "Archmage Modera (creature 269127)"
+          }
+        }
+      }
+    },
+    {
+      "id": 96986,
+      "name": "The Grave Knight",
+      "fields": {
+        "pickup": {
+          "old": "Melisara in Tarren Mill (quest-text report; exact pickup unverified).",
+          "new": "Melisara, Tarren Mill, Hillsbrad Foothills."
+        },
+        "locationSource": {
+          "old": "https://wowforevertalents.com/quests/the-grave-knight-96986/",
+          "new": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
+        },
+        "locationEvidence": {
+          "old": "Beta log or quest-text report; see source details",
+          "new": "Method dungeon guide, updated 15 October 2026."
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "pickup": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+            "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+            "locationEvidence": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
+          }
+        }
+      }
+    },
+    {
+      "id": 3911,
+      "name": "The Last Element",
+      "fields": {
+        "id": {
+          "old": null,
+          "new": 3911
+        },
+        "pickup": {
+          "old": null,
+          "new": "Vivian Lagrave is mentioned in the quest text; the actual pickup location is not yet verified."
+        },
+        "prereqs": {
+          "old": null,
+          "new": []
+        },
+        "notes": {
+          "old": null,
+          "new": "Beta-cache objectives and reward; faction, pickup and prerequisite requirements remain unverified."
+        },
+        "name": {
+          "old": null,
+          "new": "The Last Element"
+        },
+        "dungeons": {
+          "old": null,
+          "new": [
+            "Blackrock Depths"
+          ]
+        },
+        "source": {
+          "old": null,
+          "new": "https://wowforevertalents.com/quests/the-last-element-3911/"
+        },
+        "evidence": {
+          "old": null,
+          "new": "Beta cache report"
+        },
+        "checked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "level": {
+          "old": null,
+          "new": 54
+        },
+        "minLevel": {
+          "old": null,
+          "new": 48
+        },
+        "objectives": {
+          "old": null,
+          "new": [
+            "Essence of the Elements ×10"
+          ]
+        },
+        "rewards": {
+          "old": null,
+          "new": [
+            {
+              "id": 12038,
+              "name": "Lagrave's Seal"
+            }
+          ]
+        },
+        "people": {
+          "old": null,
+          "new": []
+        },
+        "personEvidence": {
+          "old": null,
+          "new": []
+        },
+        "sourceDetails": {
+          "old": null,
+          "new": []
+        },
+        "chain": {
+          "old": null,
+          "new": []
+        },
+        "fieldChecked": {
+          "old": null,
+          "new": "2026-10-17"
+        },
+        "fieldSources": {
+          "old": null,
+          "new": {
+            "pickup": "https://wowforevertalents.com/quests/the-last-element-3911/",
+            "notes": "https://wowforevertalents.com/quests/the-last-element-3911/",
+            "restrictionUnknown": "https://wowforevertalents.com/quests/the-last-element-3911/"
+          }
+        },
+        "restrictionUnknown": {
+          "old": null,
+          "new": true
+        }
+      }
+    }
+  ]
+}

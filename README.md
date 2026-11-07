@@ -1,7 +1,7 @@
 # Dungeon Questie
 
-A dungeon quest checklist for **WoW Forever**. Pick a dungeon, find its quests,
-and check what you still need before your run.
+A simple dungeon-only quest addon for players who prefer a focused checklist
+or want a companion to their existing quest addon. Made for **WoW Forever**.
 
 - Pickup directions, rewards and prerequisite steps.
 - Progress from your quest log and confirmed turn-ins.
@@ -11,10 +11,13 @@ and check what you still need before your run.
 
 Open with **`/dungeons`**, **`/dgf`**, or the minimap button.
 
-**Beta:** coverage is incomplete. Classic reference entries and approximate pins
-may differ in Forever. An empty dungeon list does not mean you have every quest.
+Coverage: **266 quests across 25 dungeon groups**, reviewed 7 November 2026.
+Four dungeon groups have no catalogue records. Source details distinguish
+Classic references and approximate pins. Empty lists do not mean every quest is done.
 
 ## Screenshots
+
+![Deadmines quest checklist and prerequisite tracking](release-media/deadmines-quests.png)
 
 ![Gnomeregan quest checklist](release-media/gnomeregan-quests.png)
 
@@ -23,7 +26,7 @@ may differ in Forever. An empty dungeon list does not mean you have every quest.
 ## Install
 
 Download the addon ZIP from Releases and extract `DungeonGuideForever` into
-`World of Warcraft/_classic_beta_/Interface/AddOns/`. Restart the game if it is
+`World of Warcraft/_forever_/Interface/AddOns/`. Restart the game if it is
 not in the AddOns list. Keep that folder name even though the addon is called
 Dungeon Questie.
 
@@ -39,3 +42,4 @@ This is an independent addon, unaffiliated with the Questie project.
 
 [Data sources and checks](SOURCE-REBUILD.md) · [Walkthrough details](WALKTHROUGHS.md)
 · [Maintainer guide](AI-RESEARCH-README.md)
+· [7 November review and dependency recommendation](RESEARCH-2026-11-07.md)

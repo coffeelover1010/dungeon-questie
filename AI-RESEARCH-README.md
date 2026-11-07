@@ -2,6 +2,12 @@
 
 Read this alongside README.md and WALKTHROUGHS.md. The display name is Dungeon Questie; the folder, TOC, saved variables and Lua namespace still use DungeonGuideForever. Preserve those identifiers and the player's settings. This guide is a research procedure, not permission to publish, message players, or change unrelated addons.
 
+Latest review: [7 November 2026](RESEARCH-2026-11-07.md). The installed Questie
+12.6.2 uses standalone QuestieDB 1.0.11. Use `tools/compare_questiedb.py` for
+its baked Forever TOC; the older `compare_questie.py` targets Classic v10 inputs.
+Comparison files are not build inputs. Reviewed factual corrections belong in
+the override layer with field-level sources. Install to `_forever_`, not the retired beta path.
+
 ## What to keep current
 
 - Dungeon identity and aliases; announced versus actually available content; build/date, entry requirements and supported party size.

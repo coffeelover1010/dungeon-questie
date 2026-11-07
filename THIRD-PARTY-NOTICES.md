@@ -30,8 +30,13 @@ Minimap libraries: see `Libs/NOTICE.txt` and `Libs/Ace3-LICENSE.txt`.
 LibDataBroker is embedded as directed by its upstream project:
 https://www.wowace.com/projects/libdatabroker-1-1
 
-Questie is used only for a separate local comparison, not as a build input.
-No Questie database, implementation or generated research copy is distributed.
+Questie and QuestieDB are used for offline research, not read by the builders.
+The 7 November 2026 review uses QuestieDB 1.0.11 (revision
+80866960788084ae1592abf66a08f0d306458a95) to corroborate selected faction
+facts and identify creature 264265 as Magus Olvek. Reviewed factual corrections
+and their source links are recorded in the editable overrides and research report.
+No Questie database rows, dialogue or implementation are bundled.
+QuestieDB source: https://github.com/Questie/QuestieDB
 Dungeon Questie is an independent addon and is not affiliated with Questie.
 
 World of Warcraft names, quest content and game artwork belong to Blizzard

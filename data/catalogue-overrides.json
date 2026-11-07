@@ -3,16 +3,54 @@
     "pickupInside": true
   },
   "97288": {
-    "pickupInside": true
+    "pickupInside": true,
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "pickup": "Abominable Head dropped by The Baron inside Ruins of Lordaeron.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   "92415": {
-    "pickupInside": true
+    "pickupInside": true,
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "pickup": "Blood-Stained Letter near Rath'mael in the Lordaeron Graveyard area inside the dungeon.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   "95189": {
-    "pickupInside": true
+    "pickupInside": true,
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "routeNote": "Find a Crest of Lordaeron inside the dungeon, then take it to Lady Dena Kennedy in Stormwind.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   "95204": {
-    "pickupInside": true
+    "pickupInside": true,
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "routeNote": "Find a Crest of Lordaeron inside the dungeon, then take it to Oran Snakewrithe in Undercity.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   "92753": {
     "checked": "2026-10-02",
@@ -61,7 +99,15 @@
     "pickupInside": true
   },
   "98423": {
-    "pickupInside": true
+    "pickupInside": true,
+    "minLevel": 9,
+    "notes": "Guide-reported pickup level 9. Find the treaty in a vault in the final boss room and take it to King Magni Bronzebeard.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "minLevel": "https://www.icy-veins.com/wow-forever/hall-of-thanes-quests",
+      "notes": "https://www.icy-veins.com/wow-forever/hall-of-thanes-quests",
+      "pickupInside": "https://www.icy-veins.com/wow-forever/hall-of-thanes-quests"
+    }
   },
   "2945": {
     "pickupInside": true
@@ -79,7 +125,14 @@
     "pickupInside": true
   },
   "2240": {
-    "pickupInside": true
+    "pickupInside": true,
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   "2278": {
     "pickupInside": true
@@ -130,79 +183,140 @@
     "pickupInside": true
   },
   "2931": {
-    "restrictionUnknown": true,
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+    "restrictionUnknown": false,
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
+    "faction": "Alliance",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   "2925": {
-    "restrictionUnknown": true,
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification."
+    "restrictionUnknown": false,
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
+    "faction": "Alliance",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   "98815": {
-    "restrictionUnknown": true,
+    "restrictionUnknown": false,
     "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
     "pickup": "Guide lists James Halloran in Menethil Harbor, Wetlands.",
     "prereqs": [
-      469
+      484
     ],
     "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
-    "preparationNote": "The guide lists Daily Delivery first. Confirm whether James offers Highland Hides before doing earlier steps."
+    "preparationNote": "Complete Young Crocolisk Skins for James Halloran in Menethil Harbor, then collect Highland Hides.",
+    "chain": [
+      {
+        "id": 484,
+        "name": "Young Crocolisk Skins",
+        "role": "Prerequisite"
+      }
+    ],
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "prereqs": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "chain": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "preparationNote": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "faction": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "restrictionUnknown": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests"
+    },
+    "faction": "Alliance"
   },
   "95663": {
-    "restrictionUnknown": true,
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "restrictionUnknown": false,
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
     "objectives": [
       "Meet the Deathstalker Agent in the hills above the Dragonmaw camp in Wetlands."
     ],
-    "fieldChecked": "2026-10-03",
+    "fieldChecked": "2026-11-07",
     "fieldSources": {
-      "objectives": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/"
-    }
+      "objectives": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/",
+      "pickup": "https://www.wowhead.com/forever/quest=95663",
+      "locationSource": "https://www.wowhead.com/forever/quest=95663",
+      "routeNote": "https://www.wowhead.com/forever/quest=95663",
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    },
+    "pickup": "Zaruk at the bottom of the stairs in Hammerfall, Arathi Highlands (player report).",
+    "locationSource": "https://www.wowhead.com/forever/quest=95663",
+    "routeNote": "Travel south into Wetlands. Near Thelgen Rock and the meeting stone, follow the uphill path to the Deathstalker Agent above the Dragonmaw camp. Player-reported destination: 51.4, 59.2; this is not the quest pickup.",
+    "faction": "Horde"
   },
   "95795": {
-    "restrictionUnknown": true,
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "restrictionUnknown": false,
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
     "pickup": "Daewyn Songblade's body inside Excavation Site; return to Dorin in Lakeshire. Exact location unverified.",
     "pickupInside": true,
     "locationSource": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/",
     "objectives": [
       "Tell Dorin Songblade what happened to Daewyn."
     ],
-    "fieldChecked": "2026-10-03",
+    "fieldChecked": "2026-11-07",
     "fieldSources": {
-      "objectives": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/"
-    }
+      "objectives": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/",
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    },
+    "faction": "Alliance"
   },
   "95682": {
-    "restrictionUnknown": true,
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
-    "pickup": "After Dragonmaw Rumors, meet the Deathstalker Agent above the Dragonmaw camp in Wetlands. Exact position unverified.",
-    "locationSource": "https://wowforevertalents.com/quests/open-the-maw-95682/"
+    "restrictionUnknown": false,
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
+    "pickup": "Deathstalker Agent in the hills above the Dragonmaw camp, Wetlands. Follow the new uphill path near Thelgen Rock and the meeting stone.",
+    "locationSource": "https://www.wowhead.com/forever/quest=95682",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "pickup": "https://www.wowhead.com/forever/quest=95682",
+      "locationSource": "https://www.wowhead.com/forever/quest=95682",
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    },
+    "faction": "Horde"
   },
   "95737": {
-    "restrictionUnknown": true,
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "restrictionUnknown": false,
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
     "pickup": "Guide lists Llana in Astranaar, Ashenvale; ask about Caitlin.",
     "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
     "objectives": [
       "Speak to Caitlin Grassman in Menethil Harbor."
     ],
-    "fieldChecked": "2026-10-03",
+    "fieldChecked": "2026-11-07",
     "fieldSources": {
-      "objectives": "https://wowforevertalents.com/quests/seeking-caitlin-95737/"
-    }
+      "objectives": "https://wowforevertalents.com/quests/seeking-caitlin-95737/",
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    },
+    "faction": "Alliance"
   },
   "95772": {
-    "restrictionUnknown": true,
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "restrictionUnknown": false,
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
     "pickup": "Guide lists Dorin Songblade in Lakeshire, Redridge Mountains.",
     "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
     "objectives": [
       "Search the Excavation Site for Daewyn Songblade."
     ],
-    "fieldChecked": "2026-10-03",
+    "fieldChecked": "2026-11-07",
     "fieldSources": {
-      "objectives": "https://wowforevertalents.com/quests/songblade-search-95772/"
-    }
+      "objectives": "https://wowforevertalents.com/quests/songblade-search-95772/",
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    },
+    "faction": "Alliance"
   },
   "5722": {
     "pickup": "Rahauro, Elder Rise, Thunder Bluff.",
@@ -238,10 +352,27 @@
   },
   "95647": {
     "pickup": "Caitlin Grassman, Menethil Harbor, after Seeking Caitlin (guide-reported).",
-    "prereqs": [
-      95737
+    "prereqs": [],
+    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "chain": [
+      {
+        "role": "Optional lead-in",
+        "name": "Seeking Caitlin",
+        "id": 95737
+      },
+      {
+        "role": "Leads to",
+        "name": "Heartwoven",
+        "id": 95809
+      }
     ],
-    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location"
+    "preparationNote": "Seeking Caitlin is an optional introduction from Llana in Astranaar. Check Caitlin directly in Menethil Harbor before travelling to Ashenvale.",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "prereqs": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239",
+      "chain": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239",
+      "preparationNote": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239"
+    }
   },
   "95809": {
     "pickup": "Reed-woven Heart from Ardin Grassman inside Excavation Site, after Lost in the Thicket Things.",
@@ -326,10 +457,22 @@
     "pickupInside": true
   },
   "2947": {
-    "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. The return is optional; the current follow-up is not fully mapped.",
+    "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. Return it to Talvash del Kissel in Ironforge.",
     "locationSource": "https://wowforevertalents.com/quests/return-of-the-ring-2947/",
     "locationEvidence": "Beta log or quest-text report; see source details",
-    "pickupInside": true
+    "pickupInside": true,
+    "chain": [
+      {
+        "role": "Leads to",
+        "name": "Quest #80131"
+      },
+      {
+        "role": "Classic reference follow-up",
+        "id": 2948,
+        "name": "Gnome Improvement"
+      }
+    ],
+    "notes": "The beta cache links an unidentified Quest #80131. Gnome Improvement (2948) is the known Classic ring-upgrade follow-up; the current Forever branch remains unverified."
   },
   "2949": {
     "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. The return is optional.",
@@ -338,61 +481,796 @@
     "pickupInside": true
   },
   "92456": {
-    "pickup": "Shylamiir in Stormwind City (quest-text report; exact pickup unverified).",
-    "locationSource": "https://wowforevertalents.com/quests/a-green-sample-92456/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "pickup": "Shylamiir in The Park, Stormwind City (31.3, 62.9).",
+    "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "pickup": "https://wowforevertalents.com/quests/a-green-sample-92456/",
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "people": "https://wowforevertalents.com/quests/a-green-sample-92456/",
+      "personEvidence": "https://wowforevertalents.com/quests/a-green-sample-92456/"
+    },
+    "people": [
+      "Picked up from: Shylamiir",
+      "Turned in to: Shylamiir"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Shylamiir",
+        "location": "Stormwind City, The Park (31.3, 62.9)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Shylamiir",
+        "location": "Stormwind City, The Park (31.3, 62.9)"
+      }
+    ]
   },
   "92458": {
-    "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.7, 45.2); the beta log identifies the giver as creature 269127.",
     "locationSource": "https://wowforevertalents.com/quests/heart-of-disruption-92458/",
     "locationEvidence": "Beta log or quest-text report; see source details",
-    "preparationNote": "Reported earlier step: An Alarming Request. Its quest ID and full chain are not yet verified."
+    "preparationNote": "An Alarming Request (92432), from Emissary Jacques, introduces Modera. Current access reports allow Alliance to speak directly to Modera; the introduction is not enforced as a prerequisite.",
+    "chain": [
+      {
+        "role": "Related quest (requirement unverified)",
+        "name": "An Alarming Request",
+        "id": 92432
+      },
+      {
+        "role": "Leads to",
+        "name": "Friend of the Kirin Tor",
+        "id": 92459
+      }
+    ],
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "preparationNote": "https://www.wowhead.com/forever/quest=92432",
+      "chain": "https://www.wowhead.com/forever/quest=92432",
+      "pickup": "https://wowforevertalents.com/quests/heart-of-disruption-92458/"
+    }
   },
   "96984": {
-    "pickup": "Magus Wordeen Voidglare in Tarren Mill (quest-text report; exact pickup unverified).",
-    "locationSource": "https://wowforevertalents.com/quests/heart-of-disruption-96984/",
-    "locationEvidence": "Beta log or quest-text report; see source details",
-    "preparationNote": "Reported earlier step: Blood in the Streets. Its quest ID and full chain are not yet verified."
+    "pickup": "Image of Archmage Modera outside the Dalaran sewer entrance, after Blood in the Streets.",
+    "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+    "locationEvidence": "Forever guide pickup; quest text separately identifies the turn-in NPC.",
+    "preparationNote": "Horde key route: Prison Break In and Key to the City, then Dalaran Patrols, then Blood in the Streets. Accept this quest from Modera to receive the sewer key.",
+    "prereqs": [
+      92434
+    ],
+    "people": [
+      "Picked up from: Image of Archmage Modera",
+      "Turned in to: Magus Wordeen Voidglare"
+    ],
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Image of Archmage Modera",
+        "location": "Outside Dalaran; guide report"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Magus Wordeen Voidglare",
+        "location": "Tarren Mill; quest objective"
+      }
+    ],
+    "routeNote": "Collect the Arcane Mote in Dalaran; take it to Magus Wordeen Voidglare in Tarren Mill. The sewer key is provided on acceptance, not a completion reward.",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "pickup": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "prereqs": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "locationEvidence": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "people": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "personEvidence": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "preparationNote": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "routeNote": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards"
+    }
   },
   "96987": {
-    "pickup": "Rexxie Copperclutch near the Dalaran sewer entrance (quest-text report; exact pickup unverified).",
-    "locationSource": "https://wowforevertalents.com/quests/opportunistic-education-96987/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "pickup": "Rexxie Copperclutch just inside the City of Dalaran entrance (guide report).",
+    "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "pickupInside": true,
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "pickupInside": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "pickup": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards"
+    }
   },
   "92489": {
-    "pickup": "High Sorcerer Andromath in Stormwind City (quest-text report; exact pickup unverified).",
-    "locationSource": "https://wowforevertalents.com/quests/power-overwhelming-92489/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "pickup": "High Sorcerer Andromath, Mage Quarter, Stormwind City.",
+    "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+    "locationEvidence": "Method dungeon guide, updated 15 October 2026.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pickup": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "locationEvidence": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
+    }
   },
   "96988": {
-    "pickup": "Doctor Martin Felben in Undercity (quest-text report; exact pickup unverified).",
-    "locationSource": "https://wowforevertalents.com/quests/source-of-power-96988/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "pickup": "Doctor Martin Felben in The Apothecarium, Undercity (Forever guide; no verified pin).",
+    "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "pickup": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards"
+    }
   },
   "92457": {
-    "pickup": "Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "pickup": "Archmage Modera (creature 269127) - Silverpine Forest (68.7, 45.2).",
     "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
-    "locationEvidence": "Beta log or quest-text report; see source details",
-    "restrictionUnknown": true
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
+    "restrictionUnknown": false,
+    "faction": "Alliance",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "faction": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "restrictionUnknown": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "pin": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "pickup": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "locationEvidence": "https://wowforevertalents.com/quests/starving-arcane-92457/"
+    },
+    "pin": {
+      "map": 1421,
+      "x": 68.7,
+      "y": 45.2,
+      "zone": "Silverpine Forest",
+      "title": "Archmage Modera (creature 269127)"
+    }
   },
   "96986": {
-    "pickup": "Melisara in Tarren Mill (quest-text report; exact pickup unverified).",
-    "locationSource": "https://wowforevertalents.com/quests/the-grave-knight-96986/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "pickup": "Melisara, Tarren Mill, Hillsbrad Foothills.",
+    "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+    "locationEvidence": "Method dungeon guide, updated 15 October 2026.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pickup": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "locationEvidence": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
+    }
   },
   "96800": {
-    "pickup": "Creature 264265 at Tempered Tomes in City of Dalaran (9.5, 63.1). NPC name and map pin remain unverified.",
+    "pickup": "Magus Olvek at Tempered Tomes in City of Dalaran (9.5, 63.1).",
     "locationSource": "https://wowforevertalents.com/quests/past-due-96800/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "people": [
+      "Picked up from: Magus Olvek"
+    ],
+    "notes": "QuestieDB identifies creature 264265 as Magus Olvek. Pickup location is recorded by the WFT Beta Log. No map pin is supplied for this interior location.",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "pickup": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "people": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   "79360": {
-    "restrictionUnknown": true,
-    "preparationNote": "Elemental class quest: class eligibility and the full earlier chain need verification. Check the source and your trainer.",
-    "pickup": "Pickup NPC not verified. Defeat Charlga Razorflank for the Tattered Note once you have the quest."
+    "restrictionUnknown": false,
+    "preparationNote": "Shaman only. Complete your Call of Air first. Several quests share that title; no unverified Horde prerequisite ID is enforced.",
+    "pickup": "Check Prate Cloudseer in Thousand Needles after obtaining your Air Totem; the exact Horde pickup still needs client confirmation.",
+    "class": "SHAMAN",
+    "notes": "Beta-cache objectives; Shaman-only eligibility supported by current Forever weapon-chain reports. No local live-client verification.",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "class": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "restrictionUnknown": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "notes": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "pickup": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "preparationNote": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "routeNote": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290"
+    },
+    "routeNote": "With Elemental Aid accepted, defeat Charlga Razorflank and loot the Tattered Note. The current beta-cache objective sends the note to Rau Cliffrunner in Thousand Needles; older Wowhead text describes a different step."
   },
   "96264": {
-    "restrictionUnknown": true,
-    "preparationNote": "Elemental class quest: class eligibility and the full earlier chain need verification. Check the source and your trainer.",
-    "pickup": "Pickup NPC not verified. Defeat Charlga Razorflank for the Tattered Note once you have the quest."
+    "restrictionUnknown": false,
+    "preparationNote": "Shaman only. Finish Call of Air with Veyric before the Razorfen Kraul run.",
+    "pickup": "Veyric Thunderhame in the northern Arathi Highlands, after Call of Air (94789).",
+    "class": "SHAMAN",
+    "notes": "Beta-cache objectives; Shaman-only eligibility supported by current Forever weapon-chain reports. No local live-client verification.",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "class": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "restrictionUnknown": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "notes": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "pickup": "https://www.wowhead.com/forever/quest=96264",
+      "prereqs": "https://www.wowhead.com/forever/quest=96264",
+      "preparationNote": "https://www.wowhead.com/forever/quest=96264",
+      "routeNote": "https://www.wowhead.com/forever/quest=96264",
+      "locationSource": "https://www.wowhead.com/forever/quest=96264"
+    },
+    "prereqs": [
+      94789
+    ],
+    "routeNote": "Defeat Charlga Razorflank, loot the Tattered Note and return to Veyric Thunderhame in Arathi Highlands.",
+    "locationSource": "https://www.wowhead.com/forever/quest=96264"
+  },
+  "95697": {
+    "pickup": "Borstan near the cooking trainer in The Drag, Orgrimmar. Player-reported location: 57.5, 53.4.",
+    "locationSource": "https://www.wowhead.com/forever/quest=95697",
+    "locationEvidence": "Forever player pickup report, corroborated by dungeon quest guide.",
+    "routeNote": "Collect four Thicket Raptor Meat inside Excavation Site: Wetlands, then return to Borstan.",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "pickup": "https://www.wowhead.com/forever/quest=95697",
+      "locationSource": "https://www.wowhead.com/forever/quest=95697",
+      "locationEvidence": "https://www.wowhead.com/forever/quest=95697",
+      "routeNote": "https://www.wowhead.com/forever/quest=95697"
+    }
+  },
+  "96403": {
+    "pin": {
+      "map": 1455,
+      "x": 32,
+      "y": 45,
+      "zone": "Ironforge",
+      "title": "Thom Filch"
+    },
+    "pickup": "Thom Filch - Ironforge (32, 45).",
+    "locationSource": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pin": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+      "pickup": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+      "locationSource": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+      "locationEvidence": "https://wowforevertalents.com/quests/important-heirlooms-96403/"
+    }
+  },
+  "96394": {
+    "pin": {
+      "map": 1455,
+      "x": 33.9,
+      "y": 48.1,
+      "zone": "Ironforge",
+      "title": "Afadra Dunwall"
+    },
+    "pickup": "Afadra Dunwall - Ironforge (33.9, 48.1).",
+    "locationSource": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pin": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+      "pickup": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+      "locationSource": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+      "locationEvidence": "https://wowforevertalents.com/quests/the-restless-dead-96394/"
+    }
+  },
+  "96393": {
+    "pin": {
+      "map": 1426,
+      "x": 64.8,
+      "y": 58.5,
+      "zone": "Dun Morogh",
+      "title": "Earthseer Farsen"
+    },
+    "pickup": "Earthseer Farsen - Dun Morogh (64.8, 58.5).",
+    "locationSource": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pin": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+      "pickup": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+      "locationSource": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+      "locationEvidence": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/"
+    }
+  },
+  "168": {
+    "pin": {
+      "map": 1453,
+      "x": 70.2,
+      "y": 40.9,
+      "zone": "Stormwind City",
+      "title": "Wilder Thistlenettle"
+    },
+    "pickup": "Wilder Thistlenettle - Stormwind City (70.2, 40.9).",
+    "locationSource": "https://wowforevertalents.com/quests/collecting-memories-168/",
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pin": "https://wowforevertalents.com/quests/collecting-memories-168/",
+      "pickup": "https://wowforevertalents.com/quests/collecting-memories-168/",
+      "locationSource": "https://wowforevertalents.com/quests/collecting-memories-168/",
+      "locationEvidence": "https://wowforevertalents.com/quests/collecting-memories-168/"
+    }
+  },
+  "3911": {
+    "pickup": "Vivian Lagrave is mentioned in the quest text; the actual pickup location is not yet verified.",
+    "notes": "Beta-cache objectives and reward; faction, pickup and prerequisite requirements remain unverified.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pickup": "https://wowforevertalents.com/quests/the-last-element-3911/",
+      "notes": "https://wowforevertalents.com/quests/the-last-element-3911/",
+      "restrictionUnknown": "https://wowforevertalents.com/quests/the-last-element-3911/"
+    },
+    "restrictionUnknown": true
+  },
+  "95250": {
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "pickup": "Captain Truman inside Ruins of Lordaeron.",
+    "pickupInside": true,
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
+  },
+  "92421": {
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "pickup": "Morbin Lightbane, Undercity.",
+    "routeNote": "Collect Intact Limbs from skeletons and zombies in the dungeon.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
+  },
+  "95216": {
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "pickup": "Theodore Griffs, Undercity.",
+    "routeNote": "Loot the Highly Toxic Strain from Witherfang.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
+  },
+  "95195": {
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "pickup": "Bloodied Insignia dropped by skeletons inside Ruins of Lordaeron.",
+    "pickupInside": true,
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
+  },
+  "3341": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "6521": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "3636": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "2342": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "2202": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "2283": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "1360": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "2398": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "17": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "704": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "1139": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "2198": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "2936": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "2991": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "7068": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "7029": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "7064": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "7070": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "7041": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "7065": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "1445": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "4146": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "4143": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "1475": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "7489": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "7488": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "7481": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "7482": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "4724": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "4981": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "4903": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "4701": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "5089": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "5001": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "5341": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "7668": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "5343": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "6163": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "4768": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "4974": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "6602": {
+    "faction": "Horde",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "4764": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "5102": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "6502": {
+    "faction": "Alliance",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "166": {
+    "pickup": "Gryan Stoutmantle - Sentinel Tower (56.3, 47.6)",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "pickup": "https://wowforevertalents.com/quests/the-defias-brotherhood-166/"
+    }
+  },
+  "95775": {
+    "pickup": "Pickup location not recorded. See the quest source.",
+    "notes": "Quest ID, Horde eligibility and level are present in both the beta cache and QuestieDB 1.0.11. The prerequisite chain is not recorded.",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "minLevel": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "95776": {
+    "pickup": "Pickup location not recorded. See the quest source.",
+    "notes": "Quest ID, Horde eligibility and level are present in both the beta cache and QuestieDB 1.0.11. The prerequisite chain is not recorded.",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "minLevel": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  "96774": {
+    "pickup": "Pickup location not recorded. See the quest source.",
+    "notes": "Quest ID, Horde eligibility and level are present in both the beta cache and QuestieDB 1.0.11. The prerequisite chain is not recorded.",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "minLevel": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   }
 }

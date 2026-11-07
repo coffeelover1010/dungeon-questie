@@ -110,6 +110,13 @@ add(92819,'Destruction in Deadmines','Deadmines',9,'Alliance',
     'Alba Fairmoon at the Deadmines rear exit, in the hills behind Moonbrook.',
     [92753],evidence='Forever database')
 
+# Reviewed Classic facts supplement the catalogue without claiming beta evidence.
+reference_additions=ROOT/'data/reference-additions.json'
+if reference_additions.exists():
+    for record in json.loads(reference_additions.read_text(encoding='utf-8')):
+        if record['id'] in by: raise ValueError(f'Duplicate reference addition {record["id"]}')
+        qs.append(record); by[record['id']]=record
+
 overrides=ROOT/'data/catalogue-overrides.json'
 if overrides.exists():
     for quest_id,patch in json.loads(overrides.read_text(encoding='utf-8')).items():

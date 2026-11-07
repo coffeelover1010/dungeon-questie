@@ -7,7 +7,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/testing-an-enemy-s-strength-5723/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 15,
     "minLevel": 9,
     "objectives": [
@@ -45,7 +45,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -57,7 +57,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/hidden-enemies-5728/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 16,
     "minLevel": 9,
     "objectives": [
@@ -108,7 +108,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -120,7 +120,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/returning-the-lost-satchel-5724/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 16,
     "minLevel": 9,
     "objectives": [
@@ -172,7 +172,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -183,7 +183,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/searching-for-the-lost-satchel-5722/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 16,
     "minLevel": 9,
     "objectives": [],
@@ -210,7 +210,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "pickupInside": false,
     "pin": {
@@ -235,7 +235,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/slaying-the-beast-5761/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 16,
     "minLevel": 9,
     "objectives": [
@@ -272,7 +272,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -284,7 +284,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-power-to-destroy-5725/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 16,
     "minLevel": 9,
     "objectives": [
@@ -335,7 +335,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the WFT Beta Log addon, 8 October 2026"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the WFT Beta Log addon, 23 October 2026"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -347,7 +347,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/an-ancient-grudge-96395/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 15,
     "minLevel": 10,
     "objectives": [
@@ -380,7 +380,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 15,
     "minLevel": 10,
     "objectives": [
@@ -396,13 +396,45 @@
         "name": "Tomb Robber's Gloves"
       }
     ],
-    "people": [],
+    "people": [
+      "Picked up from: Thom Filch",
+      "Turned in to: Thom Filch"
+    ],
     "chain": [],
-    "pickup": "Thom Filch, Old Ironforge. Interior map coordinates not verified.",
+    "pickup": "Thom Filch - Ironforge (32, 45).",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [],
-    "personEvidence": [],
-    "sourceDetails": []
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Thom Filch",
+        "location": "Ironforge, Ironforge (32.0, 45.0)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Thom Filch",
+        "location": "Ironforge, Ironforge (32.0, 45.0)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
+    ],
+    "pin": {
+      "map": 1455,
+      "x": 32,
+      "y": 45,
+      "zone": "Ironforge",
+      "title": "Thom Filch"
+    },
+    "locationSource": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pin": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+      "pickup": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+      "locationSource": "https://wowforevertalents.com/quests/important-heirlooms-96403/",
+      "locationEvidence": "https://wowforevertalents.com/quests/important-heirlooms-96403/"
+    }
   },
   {
     "id": 96394,
@@ -412,7 +444,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 15,
     "minLevel": 10,
     "faction": "Alliance",
@@ -430,13 +462,45 @@
         "name": "Cryptwalker Bracers"
       }
     ],
-    "people": [],
+    "people": [
+      "Picked up from: Afadra Dunwall",
+      "Turned in to: Afadra Dunwall"
+    ],
     "chain": [],
-    "pickup": "Afadra Dunwall, Old Ironforge. Published coordinates conflict; no reliable map pin.",
+    "pickup": "Afadra Dunwall - Ironforge (33.9, 48.1).",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [],
-    "personEvidence": [],
-    "sourceDetails": []
+    "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Afadra Dunwall",
+        "location": "Ironforge, Ironforge (33.9, 48.1)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Afadra Dunwall",
+        "location": "Ironforge, Ironforge (33.9, 48.1)"
+      }
+    ],
+    "sourceDetails": [
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
+    ],
+    "pin": {
+      "map": 1455,
+      "x": 33.9,
+      "y": 48.1,
+      "zone": "Ironforge",
+      "title": "Afadra Dunwall"
+    },
+    "locationSource": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pin": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+      "pickup": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+      "locationSource": "https://wowforevertalents.com/quests/the-restless-dead-96394/",
+      "locationEvidence": "https://wowforevertalents.com/quests/the-restless-dead-96394/"
+    }
   },
   {
     "id": 96393,
@@ -446,7 +510,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 16,
     "minLevel": 9,
     "objectives": [
@@ -467,6 +531,7 @@
       }
     ],
     "people": [
+      "Picked up from: Earthseer Farsen",
       "Turned in to: King Magni Bronzebeard"
     ],
     "chain": [
@@ -475,7 +540,7 @@
         "name": "Underground Map"
       }
     ],
-    "pickup": "Earthseer Farsen, Gol'Bolar Quarry in Dun Morogh, after Underground Map.",
+    "pickup": "Earthseer Farsen - Dun Morogh (64.8, 58.5).",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [
       96391
@@ -483,14 +548,35 @@
     "faction": "Alliance",
     "personEvidence": [
       {
+        "role": "Picked up from",
+        "name": "Earthseer Farsen",
+        "location": "Dun Morogh, The Tundrid Hills (64.8, 58.5)"
+      },
+      {
         "role": "Turned in to",
         "name": "King Magni Bronzebeard",
-        "location": null
+        "location": "Ironforge, The High Seat (39.5, 56.1)"
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
-    ]
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
+    ],
+    "pin": {
+      "map": 1426,
+      "x": 64.8,
+      "y": 58.5,
+      "zone": "Dun Morogh",
+      "title": "Earthseer Farsen"
+    },
+    "locationSource": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pin": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+      "pickup": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+      "locationSource": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/",
+      "locationEvidence": "https://wowforevertalents.com/quests/old-ironforge-incursion-96393/"
+    }
   },
   {
     "id": 95250,
@@ -500,7 +586,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/abominable-creatures-95250/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 21,
     "minLevel": 16,
     "faction": "Alliance",
@@ -525,7 +611,7 @@
       "Turned in to: Captain Truman"
     ],
     "chain": [],
-    "pickup": "Pickup location not yet verified. Check the source and quest notes.",
+    "pickup": "Captain Truman inside Ruins of Lordaeron.",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [],
     "personEvidence": [
@@ -536,8 +622,18 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
-    ]
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
+    ],
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "pickupInside": true,
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   {
     "id": 97288,
@@ -547,7 +643,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/unending-torment-97288/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 21,
     "minLevel": 16,
     "faction": "Horde",
@@ -564,7 +660,7 @@
         "name": "Unending Torment"
       }
     ],
-    "pickup": "Quest-starting item in Ruins of Lordaeron; the chain has multiple distinct steps.",
+    "pickup": "Abominable Head dropped by The Baron inside Ruins of Lordaeron.",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location. Only the initial quest ID is represented in this cache capture; later turn-ins are not implied by completing it.",
     "prereqs": [],
     "personEvidence": [
@@ -575,9 +671,18 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
-    "pickupInside": true
+    "pickupInside": true,
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   {
     "id": 92401,
@@ -587,7 +692,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/a-frightened-request-92401/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 15,
     "faction": "Horde",
@@ -627,7 +732,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -639,7 +744,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/light-s-justice-92421/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 15,
     "faction": "Horde",
@@ -660,7 +765,7 @@
       "Picked up from: Morbin Lightbane"
     ],
     "chain": [],
-    "pickup": "Pickup location not yet verified. Check the source and quest notes.",
+    "pickup": "Morbin Lightbane, Undercity.",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [],
     "personEvidence": [
@@ -671,8 +776,18 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
-    ]
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
+    ],
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "routeNote": "Collect Intact Limbs from skeletons and zombies in the dungeon.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   {
     "id": 92415,
@@ -682,7 +797,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/remember-that-i-love-you-92415/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 15,
     "faction": "Alliance",
@@ -699,7 +814,7 @@
         "name": "Remember That I Love You"
       }
     ],
-    "pickup": "Quest-starting item in Ruins of Lordaeron. Exact drop location unverified.",
+    "pickup": "Blood-Stained Letter near Rath'mael in the Lordaeron Graveyard area inside the dungeon.",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [],
     "personEvidence": [
@@ -710,9 +825,18 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
-    "pickupInside": true
+    "pickupInside": true,
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   {
     "id": 92422,
@@ -722,7 +846,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-wrath-of-rath-mael-92422/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 15,
     "objectives": [
@@ -754,7 +878,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -765,7 +889,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/bloodied-insignia-95195/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 16,
     "faction": "Alliance",
@@ -786,7 +910,7 @@
       "Turned in to: General Marcus Jonathan"
     ],
     "chain": [],
-    "pickup": "Quest-starting Bloodied Insignia; bring it to General Marcus Jonathan in Stormwind.",
+    "pickup": "Bloodied Insignia dropped by skeletons inside Ruins of Lordaeron.",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [],
     "personEvidence": [
@@ -797,8 +921,18 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
-    ]
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
+    ],
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "pickupInside": true,
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   {
     "id": 95189,
@@ -808,7 +942,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95189/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 16,
     "faction": "Alliance",
@@ -836,9 +970,18 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
-    "pickupInside": true
+    "pickupInside": true,
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "routeNote": "Find a Crest of Lordaeron inside the dungeon, then take it to Lady Dena Kennedy in Stormwind.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   {
     "id": 95204,
@@ -848,7 +991,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95204/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 16,
     "objectives": [
@@ -876,9 +1019,18 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
-    "pickupInside": true
+    "pickupInside": true,
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "routeNote": "Find a Crest of Lordaeron inside the dungeon, then take it to Oran Snakewrithe in Undercity.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   {
     "id": 95216,
@@ -888,7 +1040,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-new-plague-95216/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 16,
     "faction": "Horde",
@@ -909,7 +1061,7 @@
       "Picked up from: Theodore Griffs"
     ],
     "chain": [],
-    "pickup": "Pickup location not yet verified. Check the source and quest notes.",
+    "pickup": "Theodore Griffs, Undercity.",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [],
     "personEvidence": [
@@ -920,8 +1072,18 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
-    ]
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
+    ],
+    "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "locationEvidence": "Forever quest guide; rechecked 17 October 2026.",
+    "routeNote": "Loot the Highly Toxic Strain from Witherfang.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "locationSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
+    }
   },
   {
     "id": 214,
@@ -931,7 +1093,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/red-silk-bandanas-214/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 17,
     "minLevel": 14,
     "objectives": [
@@ -985,7 +1147,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -1024,7 +1186,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "routeNote": "Use Extra-Destructive Explosives beside the forge inside Deadmines. Players report the placement spot near the centre of the Gilnid foundry room. After the run, leave through the rear exit instead of hearthing. Meet Alba in the hills behind Moonbrook, turn this in, and accept the second Destruction in Deadmines quest (92819) to use the detonator."
   },
@@ -1036,7 +1198,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/collecting-memories-168/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 18,
     "minLevel": 14,
     "objectives": [
@@ -1057,31 +1219,45 @@
       }
     ],
     "people": [
+      "Picked up from: Wilder Thistlenettle",
       "Turned in to: Wilder Thistlenettle"
     ],
     "chain": [],
-    "pickup": "Wilder Thistlenettle - Stormwind City",
+    "pickup": "Wilder Thistlenettle - Stormwind City (70.2, 40.9).",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [],
     "faction": "Alliance",
     "pin": {
       "map": 1453,
-      "x": 65,
-      "y": 21,
+      "x": 70.2,
+      "y": 40.9,
       "zone": "Stormwind City",
       "title": "Wilder Thistlenettle"
     },
-    "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
+    "locationSource": "https://wowforevertalents.com/quests/collecting-memories-168/",
     "personEvidence": [
+      {
+        "role": "Picked up from",
+        "name": "Wilder Thistlenettle",
+        "location": "Stormwind City, Dwarven District (70.2, 40.9)"
+      },
       {
         "role": "Turned in to",
         "name": "Wilder Thistlenettle",
-        "location": null
+        "location": "Stormwind City, Dwarven District (70.2, 40.9)"
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
-    ]
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
+    ],
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pin": "https://wowforevertalents.com/quests/collecting-memories-168/",
+      "pickup": "https://wowforevertalents.com/quests/collecting-memories-168/",
+      "locationSource": "https://wowforevertalents.com/quests/collecting-memories-168/",
+      "locationEvidence": "https://wowforevertalents.com/quests/collecting-memories-168/"
+    }
   },
   {
     "id": 167,
@@ -1091,7 +1267,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/oh-brother-167/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 20,
     "minLevel": 15,
     "objectives": [
@@ -1135,7 +1311,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -1146,7 +1322,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/underground-assault-2040/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 20,
     "minLevel": 15,
     "objectives": [
@@ -1202,7 +1378,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the WFT Beta Log addon, 8 October 2026"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the WFT Beta Log addon, 23 October 2026"
     ]
   },
   {
@@ -1213,7 +1389,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-defias-brotherhood-166/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 14,
     "objectives": [
@@ -1244,7 +1420,7 @@
         "id": 155
       }
     ],
-    "pickup": "Gryan Stoutmantle - Sentinel Tower (56.4, 47.5)",
+    "pickup": "Gryan Stoutmantle - Sentinel Tower (56.3, 47.6)",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [
       155
@@ -1252,8 +1428,8 @@
     "faction": "Alliance",
     "pin": {
       "map": 1436,
-      "x": 56.4,
-      "y": 47.5,
+      "x": 56.3,
+      "y": 47.6,
       "zone": "Westfall",
       "title": "Gryan Stoutmantle"
     },
@@ -1262,18 +1438,22 @@
       {
         "role": "Picked up from",
         "name": "Gryan Stoutmantle",
-        "location": "Sentinel Tower (56.4, 47.5)"
+        "location": "Sentinel Tower (56.3, 47.6)"
       },
       {
         "role": "Turned in to",
         "name": "Gryan Stoutmantle",
-        "location": "Sentinel Tower (56.4, 47.5)"
+        "location": "Sentinel Tower (56.3, 47.6)"
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 20 September 2026 · the beta client's creature cache, 20 September 2026 (creaturecache.wdb, build 69913)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
-    "locationEvidence": "Website-reported beta pickup coordinates"
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "pickup": "https://wowforevertalents.com/quests/the-defias-brotherhood-166/"
+    },
+    "locationEvidence": "WFT Beta Log pickup coordinates, 23 October 2026; checked 2026-11-07"
   },
   {
     "id": 373,
@@ -1283,7 +1463,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-unsent-letter-373/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 16,
     "faction": "Alliance",
@@ -1312,7 +1492,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "pickupInside": true
   },
@@ -1324,7 +1504,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/hamuul-runetotem-1489/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 16,
     "minLevel": 10,
     "objectives": [],
@@ -1351,7 +1531,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -1362,7 +1542,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/nara-wildmane-1490/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 16,
     "minLevel": 10,
     "objectives": [],
@@ -1404,7 +1584,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -1415,7 +1595,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/deviate-hides-1486/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 17,
     "minLevel": 13,
     "objectives": [
@@ -1454,7 +1634,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -1465,7 +1645,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/smart-drinks-1491/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 18,
     "minLevel": 13,
     "objectives": [
@@ -1501,7 +1681,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the WFT Beta Log addon, 8 October 2026"
+      "Source: the WFT Beta Log addon, 23 October 2026"
     ]
   },
   {
@@ -1512,7 +1692,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/serpentbloom-962/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 18,
     "minLevel": 14,
     "objectives": [
@@ -1556,7 +1736,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -1567,7 +1747,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/trouble-at-the-docks-959/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 18,
     "minLevel": 14,
     "objectives": [
@@ -1597,7 +1777,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -1608,7 +1788,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/deviate-eradication-1487/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 21,
     "minLevel": 15,
     "objectives": [
@@ -1654,7 +1834,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -1665,7 +1845,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/leaders-of-the-fang-914/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 10,
     "objectives": [
@@ -1720,7 +1900,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -1731,7 +1911,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-glowing-shard-3366/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 25,
     "minLevel": 15,
     "objectives": [
@@ -1755,7 +1935,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-glowing-shard-6981/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 26,
     "minLevel": 15,
     "objectives": [
@@ -1777,7 +1957,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the WFT Beta Log addon, 8 October 2026"
+      "Source: the WFT Beta Log addon, 23 October 2026"
     ]
   },
   {
@@ -1788,7 +1968,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/deathstalkers-in-shadowfang-1098/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 25,
     "minLevel": 18,
     "objectives": [],
@@ -1832,7 +2012,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-orb-of-soran-ruk-1740/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 25,
     "minLevel": 20,
     "objectives": [
@@ -1873,7 +2053,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 7 October 2026 (questcache.wdb, build 70245)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -1884,7 +2064,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-book-of-ur-1013/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 26,
     "minLevel": 16,
     "objectives": [
@@ -1928,7 +2108,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -1939,7 +2119,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/arugal-must-die-1014/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 27,
     "minLevel": 18,
     "objectives": [
@@ -1975,7 +2155,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -1986,7 +2166,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/allegiance-to-the-old-gods-6564/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 17,
     "objectives": [
@@ -2015,7 +2195,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -2026,7 +2206,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-essence-of-aku-mai-6563/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 17,
     "objectives": [
@@ -2065,7 +2245,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -2076,7 +2256,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/trouble-in-the-deeps-6562/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 17,
     "objectives": [],
@@ -2103,7 +2283,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -2114,7 +2294,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/knowledge-in-the-deeps-971/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 23,
     "minLevel": 10,
     "objectives": [
@@ -2156,7 +2336,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -2168,7 +2348,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/in-search-of-thaelrid-1198/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 24,
     "minLevel": 18,
     "objectives": [],
@@ -2203,7 +2383,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -2214,7 +2394,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/researching-the-corruption-1275/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 24,
     "minLevel": 18,
     "objectives": [
@@ -2270,7 +2450,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -2282,7 +2462,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/twilight-falls-1199/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 25,
     "minLevel": 20,
     "faction": "Alliance",
@@ -2326,7 +2506,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -2337,7 +2517,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/allegiance-to-the-old-gods-6565/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 26,
     "minLevel": 17,
     "objectives": [
@@ -2385,7 +2565,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -2396,7 +2576,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/blackfathom-villainy-1200/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 27,
     "minLevel": 18,
     "faction": "Alliance",
@@ -2444,7 +2624,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the WFT Beta Log addon, 8 October 2026"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the WFT Beta Log addon, 23 October 2026"
     ],
     "pickupInside": true
   },
@@ -2456,7 +2636,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/blackfathom-villainy-6561/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 27,
     "minLevel": 18,
     "faction": "Horde",
@@ -2496,7 +2676,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "pickupInside": true
   },
@@ -2508,7 +2688,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/what-comes-around-386/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 25,
     "minLevel": 22,
     "objectives": [
@@ -2558,7 +2738,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -2570,7 +2750,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/crime-and-punishment-377/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 26,
     "minLevel": 22,
     "objectives": [
@@ -2612,7 +2792,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -2623,7 +2803,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/quell-the-uprising-387/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 26,
     "minLevel": 22,
     "objectives": [
@@ -2662,7 +2842,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -2674,7 +2854,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-color-of-blood-388/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 26,
     "minLevel": 22,
     "objectives": [
@@ -2703,7 +2883,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "pin": {
       "map": 1453,
@@ -2723,7 +2903,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-stockade-riots-391/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 29,
     "minLevel": 16,
     "objectives": [
@@ -2767,7 +2947,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -2778,7 +2958,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/blueleaf-tubers-1221/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 26,
     "minLevel": 20,
     "objectives": [
@@ -2822,7 +3002,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the WFT Beta Log addon, 8 October 2026"
+      "Source: the WFT Beta Log addon, 23 October 2026"
     ]
   },
   {
@@ -2833,7 +3013,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/willix-the-importer-1144/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 30,
     "minLevel": 22,
     "objectives": [],
@@ -2872,7 +3052,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/save-techbot-s-brain-2922/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 26,
     "minLevel": 20,
     "objectives": [
@@ -2911,7 +3091,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -2922,7 +3102,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/tinkmaster-overspark-2923/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 26,
     "minLevel": 20,
     "objectives": [],
@@ -2949,7 +3129,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -2960,7 +3140,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/gnogaine-2926/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 27,
     "minLevel": 20,
     "objectives": [
@@ -2997,7 +3177,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -3009,7 +3189,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-day-after-2927/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 27,
     "minLevel": 20,
     "objectives": [],
@@ -3030,7 +3210,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -3041,7 +3221,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/a-fine-mess-2904/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 30,
     "minLevel": 20,
     "objectives": [],
@@ -3074,7 +3254,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "pickupInside": true
   },
@@ -3086,7 +3266,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/gyrodrillmatic-excavationators-2928/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 30,
     "minLevel": 20,
     "objectives": [
@@ -3130,7 +3310,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the WFT Beta Log addon, 8 October 2026"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the WFT Beta Log addon, 23 October 2026"
     ]
   },
   {
@@ -3141,7 +3321,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/chief-engineer-scooty-2842/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 35,
     "minLevel": 20,
     "objectives": [],
@@ -3176,7 +3356,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 20 September 2026 (questcache.wdb, build 69913) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -3187,7 +3367,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/gnomer-gooooone-2843/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 35,
     "minLevel": 20,
     "objectives": [],
@@ -3228,7 +3408,7 @@
     "dungeons": [
       "The Hall of Thanes"
     ],
-    "minLevel": 16,
+    "minLevel": 9,
     "faction": "Alliance",
     "pickup": "Interact with the treaty vault in the Reliquary of Kings inside the dungeon.",
     "prereqs": [],
@@ -3239,8 +3419,14 @@
     "source": "https://www.wowhead.com/forever/quest=98423",
     "evidence": "Forever database",
     "checked": "2026-10-01",
-    "notes": "Bring the treaty to King Magni Bronzebeard. Pickup level is guide-reported.",
-    "pickupInside": true
+    "notes": "Guide-reported pickup level 9. Find the treaty in a vault in the final boss room and take it to King Magni Bronzebeard.",
+    "pickupInside": true,
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "minLevel": "https://www.icy-veins.com/wow-forever/hall-of-thanes-quests",
+      "notes": "https://www.icy-veins.com/wow-forever/hall-of-thanes-quests",
+      "pickupInside": "https://www.icy-veins.com/wow-forever/hall-of-thanes-quests"
+    }
   },
   {
     "id": 96391,
@@ -3296,7 +3482,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/the-fury-runs-deep-378/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "pin": {
       "map": 1437,
@@ -3315,7 +3501,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -3347,7 +3533,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/essential-artificials-2924/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "level": 30,
     "personEvidence": [
@@ -3363,7 +3549,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "pin": {
       "map": 1455,
@@ -3413,7 +3599,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/data-rescue-2930/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "pin": {
       "map": 1455,
@@ -3437,7 +3623,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the WFT Beta Log addon, 8 October 2026"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the WFT Beta Log addon, 23 October 2026"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -3475,7 +3661,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/the-grand-betrayal-2929/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "pin": {
       "map": 1455,
@@ -3499,7 +3685,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -3527,7 +3713,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/the-only-cure-is-more-green-glow-2962/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "pin": {
       "map": 1426,
@@ -3551,7 +3737,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -3589,7 +3775,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/rig-wars-2841/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "pin": {
       "map": 1454,
@@ -3608,7 +3794,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -3657,7 +3843,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/grime-encrusted-ring-2945/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "level": 34,
     "personEvidence": [],
@@ -3701,7 +3887,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/a-vengeful-fate-1102/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "pin": {
       "map": 1456,
@@ -3720,7 +3906,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -3749,7 +3935,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/going-going-guano-1109/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "pin": {
       "map": 1458,
@@ -3768,7 +3954,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -3835,7 +4021,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-crone-of-the-kraul-1101/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "level": 34,
     "personEvidence": [
@@ -3846,7 +4032,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -3882,7 +4068,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/mortality-wanes-1142/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "level": 30,
     "personEvidence": [
@@ -3893,7 +4079,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 7 October 2026 (questcache.wdb, build 70245)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ],
     "pickupInside": true
   },
@@ -3968,7 +4154,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/vorrel-s-revenge-1051/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "level": 33,
     "personEvidence": [
@@ -3979,7 +4165,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ],
     "pickupInside": true
   },
@@ -4011,7 +4197,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/hearts-of-zeal-1113/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "pin": {
       "map": 1458,
@@ -4030,7 +4216,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the beta client's quest cache, 1 October 2026 (questcache.wdb, build 70124)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -4066,7 +4252,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/compendium-of-the-fallen-1049/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "excludeRace": "Scourge",
     "level": 38,
@@ -4078,7 +4264,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -4114,7 +4300,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/test-of-lore-1160/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "level": 36,
     "personEvidence": [
@@ -4125,7 +4311,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ]
   },
   {
@@ -4154,7 +4340,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/mythology-of-the-titans-1050/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "pin": {
       "map": 1455,
@@ -4178,7 +4364,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "locationEvidence": "Website-reported beta pickup coordinates; checked 2026-10-09"
   },
@@ -4210,7 +4396,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/rituals-of-power-1951/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "class": "MAGE",
     "pin": {
@@ -4230,7 +4416,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -4283,7 +4469,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/amongst-the-ruins-6921/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "pin": {
       "map": 1440,
@@ -4302,7 +4488,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -4315,14 +4501,42 @@
     "faction": "Horde",
     "pickup": "Strange Water Globe dropped by Baron Aquanis.",
     "prereqs": [],
-    "objectives": [],
-    "rewards": [],
-    "people": [],
+    "objectives": [
+      "Strange Water Globe"
+    ],
+    "rewards": [
+      {
+        "id": 16886,
+        "name": "Outlaw Sabre"
+      },
+      {
+        "id": 16887,
+        "name": "Witch's Finger"
+      },
+      {
+        "id": 270043,
+        "name": "Dreamer's Chestguard"
+      }
+    ],
+    "people": [
+      "Turned in to: Je'neu Sancrea"
+    ],
     "chain": [],
-    "source": "https://www.wowhead.com/forever/quest=6922",
-    "evidence": "Classic reference",
-    "checked": "2026-10-01",
-    "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling."
+    "source": "https://wowforevertalents.com/quests/baron-aquanis-6922/",
+    "evidence": "Beta cache report",
+    "checked": "2026-11-07",
+    "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
+    "level": 30,
+    "personEvidence": [
+      {
+        "role": "Turned in to",
+        "name": "Je'neu Sancrea",
+        "location": null
+      }
+    ],
+    "sourceDetails": [
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
+    ]
   },
   {
     "id": 3341,
@@ -4331,7 +4545,7 @@
       "Razorfen Downs"
     ],
     "minLevel": 37,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Undercity, Magic Quarter - Andrew Brownell /way 74 33",
     "prereqs": [],
     "objectives": [],
@@ -4342,7 +4556,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 6521,
@@ -4351,7 +4570,7 @@
       "Razorfen Downs"
     ],
     "minLevel": 28,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Undercity, Royal Quarter - Varimathras /way 36 26",
     "prereqs": [],
     "objectives": [
@@ -4381,9 +4600,9 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/an-unholy-alliance-6521/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
-    "restrictionUnknown": true,
+    "restrictionUnknown": false,
     "level": 36,
     "personEvidence": [
       {
@@ -4393,8 +4612,13 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the WFT Beta Log addon, 8 October 2026"
-    ]
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the WFT Beta Log addon, 23 October 2026"
+    ],
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 3636,
@@ -4403,7 +4627,7 @@
       "Razorfen Downs"
     ],
     "minLevel": 39,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Stormwind, Cathedral - Archbishop Benedictus /way 39 27",
     "prereqs": [],
     "objectives": [],
@@ -4414,7 +4638,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 6626,
@@ -4438,7 +4667,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/a-host-of-evil-6626/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "level": 35,
     "personEvidence": [
@@ -4449,7 +4678,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -4475,7 +4704,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/scourge-of-the-downs-3523/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "level": 37,
     "personEvidence": [],
@@ -4509,7 +4738,7 @@
       "Uldaman"
     ],
     "minLevel": 33,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Undercity, Center - Patrick Garrett /way 62 48",
     "prereqs": [],
     "objectives": [],
@@ -4520,7 +4749,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 2202,
@@ -4529,7 +4763,7 @@
       "Uldaman"
     ],
     "minLevel": 36,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Badlands, Kargath - Jarkal Mossmeld /way 3 46",
     "prereqs": [],
     "objectives": [],
@@ -4540,7 +4774,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. CompleteBadlands Reagent Run first Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 2283,
@@ -4549,7 +4788,7 @@
       "Uldaman"
     ],
     "minLevel": 37,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Badlands, Outside Uldaman instance - Shattered Necklace drop from Shadowforge or Shadowvault mobs",
     "prereqs": [],
     "objectives": [],
@@ -4560,7 +4799,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 1360,
@@ -4569,7 +4813,7 @@
       "Uldaman"
     ],
     "minLevel": 33,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Ironforge, Hall of Explorers - Krom Stoutarm /way 74 9",
     "prereqs": [],
     "objectives": [],
@@ -4580,7 +4824,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 2398,
@@ -4589,7 +4838,7 @@
       "Uldaman"
     ],
     "minLevel": 35,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Ironforge, Hall of Explorers - Prospector Stormpike /way 75 12",
     "prereqs": [],
     "objectives": [],
@@ -4600,7 +4849,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 2240,
@@ -4609,7 +4863,7 @@
       "Uldaman"
     ],
     "minLevel": 35,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Uldaman, Lost Dwarves area - Baelog's Journal",
     "prereqs": [],
     "objectives": [],
@@ -4620,8 +4874,13 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. CompleteThe Lost Dwarves first Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true,
-    "pickupInside": true
+    "restrictionUnknown": false,
+    "pickupInside": true,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 17,
@@ -4630,7 +4889,7 @@
       "Uldaman"
     ],
     "minLevel": 38,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Loch Modan, Thelsamar - Ghak Healtouch /way 37 49",
     "prereqs": [],
     "objectives": [],
@@ -4641,7 +4900,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. CompleteBadlands Reagent Run first Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 704,
@@ -4650,7 +4914,7 @@
       "Uldaman"
     ],
     "minLevel": 30,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Loch Modan, Ironband's Excavation Site - Prospector Ironband /way 65 65",
     "prereqs": [
       739
@@ -4684,9 +4948,9 @@
     ],
     "source": "https://wowforevertalents.com/quests/agmond-s-fate-704/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
-    "restrictionUnknown": true,
+    "restrictionUnknown": false,
     "level": 38,
     "personEvidence": [
       {
@@ -4696,8 +4960,13 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 7 October 2026 (questcache.wdb, build 70245) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
-    ]
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
+    ],
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 1139,
@@ -4706,7 +4975,7 @@
       "Uldaman"
     ],
     "minLevel": 30,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Ironforge, Hall of Explorers - Advisor Belgrum /way 77 9",
     "prereqs": [],
     "objectives": [],
@@ -4717,7 +4986,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete 8 quests, starting withA Sign of Hope first Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 2198,
@@ -4726,7 +5000,7 @@
       "Uldaman"
     ],
     "minLevel": 37,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Badlands, Outside Uldaman instance - Shattered Necklace drop from Shadowforge or Shadowvault mobs",
     "prereqs": [],
     "objectives": [],
@@ -4737,7 +5011,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 2418,
@@ -4777,7 +5056,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/power-stones-2418/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "level": 36,
     "personEvidence": [
@@ -4788,7 +5067,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -4824,7 +5103,7 @@
     "chain": [],
     "source": "https://wowforevertalents.com/quests/solution-to-doom-709/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "notes": "Quest fields now have beta-cache evidence. Earlier guide pickup and prerequisite details retain their original reference status.",
     "level": 40,
     "personEvidence": [
@@ -4835,7 +5114,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ]
   },
   {
@@ -4885,7 +5164,7 @@
       "Zul'Farrak"
     ],
     "minLevel": 40,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Durotar, Sen'jin Village - Master Gadrin /way 56 74",
     "prereqs": [],
     "objectives": [],
@@ -4896,7 +5175,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete 3 quests first, starting withVenom Bottles Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 2991,
@@ -4905,7 +5189,7 @@
       "Zul'Farrak"
     ],
     "minLevel": 40,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Blasted Lands, Nethergarde Keep - Thadius Grimshade /way 66 19",
     "prereqs": [],
     "objectives": [],
@@ -4916,7 +5200,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete 3 quests first, starting withWitherbark Cages Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 2768,
@@ -5039,7 +5328,7 @@
       "Maraudon"
     ],
     "minLevel": 39,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Orgrimmar, Valley of Spirits - Uthel'nay /way 39 86",
     "prereqs": [],
     "objectives": [],
@@ -5050,7 +5339,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 7029,
@@ -5059,7 +5353,7 @@
       "Maraudon"
     ],
     "minLevel": 41,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Desolace, Shadowprey Village - Vark Battlescar /way 23 70",
     "prereqs": [],
     "objectives": [],
@@ -5070,7 +5364,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 7064,
@@ -5079,7 +5378,7 @@
       "Maraudon"
     ],
     "minLevel": 45,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Desolace, S. of Shadowprey Village - Selendra /way 26 77",
     "prereqs": [],
     "objectives": [],
@@ -5090,7 +5389,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 7070,
@@ -5099,7 +5403,7 @@
       "Maraudon"
     ],
     "minLevel": 39,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Dustwallow Marsh, Theramore - Archmage Tervosh /way 66 49",
     "prereqs": [],
     "objectives": [],
@@ -5110,7 +5414,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 7041,
@@ -5119,7 +5428,7 @@
       "Maraudon"
     ],
     "minLevel": 41,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Desolace, Nijel's Point - Talendria /way 68 8",
     "prereqs": [],
     "objectives": [],
@@ -5130,7 +5439,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 7065,
@@ -5139,7 +5453,7 @@
       "Maraudon"
     ],
     "minLevel": 45,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Desolace, Nijel's Point - Keeper Marandis /way 63 10",
     "prereqs": [],
     "objectives": [],
@@ -5150,7 +5464,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 7028,
@@ -5256,7 +5575,7 @@
       "Sunken Temple"
     ],
     "minLevel": 38,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Swamp of Sorrows, Stonard - Fel'zerul /way 47 54",
     "prereqs": [],
     "objectives": [],
@@ -5267,7 +5586,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete 3 quests first, starting withPool of Tears Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 4146,
@@ -5276,7 +5600,7 @@
       "Sunken Temple"
     ],
     "minLevel": 47,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "The Barrens, Ratchet - Liv Rizzlefix /way 62 38",
     "prereqs": [],
     "objectives": [],
@@ -5287,7 +5611,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete 2 quests first, starting withLarion and Muigin Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 4143,
@@ -5296,7 +5625,7 @@
       "Sunken Temple"
     ],
     "minLevel": 47,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Feralas, Twin Colossals - Gregan Brewspewer /way 45 25",
     "prereqs": [],
     "objectives": [],
@@ -5307,7 +5636,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete 2 quests first, starting withMuigin and Larion Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 1475,
@@ -5316,7 +5650,7 @@
       "Sunken Temple"
     ],
     "minLevel": 38,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Stormwind, Dwarven District - Brohann Caskbelly /way 64 21",
     "prereqs": [],
     "objectives": [],
@@ -5327,7 +5661,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete 6 quests first, starting withIn Search of The Temple Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 1446,
@@ -5871,7 +6210,7 @@
       "Dire Maul"
     ],
     "minLevel": 54,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Feralas, Camp Mojache - Talo Thornhoof /way 76 43",
     "prereqs": [],
     "objectives": [],
@@ -5882,7 +6221,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 7488,
@@ -5891,7 +6235,7 @@
       "Dire Maul"
     ],
     "minLevel": 54,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Feralas, Feathermoon Stronghold - Latronicus Moonspear /way 30 46",
     "prereqs": [],
     "objectives": [],
@@ -5902,7 +6246,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 7441,
@@ -6010,7 +6359,7 @@
       "Dire Maul"
     ],
     "minLevel": 54,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Feralas, Camp Mojache - Sage Korolusk /way 74 43",
     "prereqs": [],
     "objectives": [],
@@ -6021,7 +6370,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete to be eligible forLibram of Protection ,Libram of Rapidity , andLibram of Focus Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 7482,
@@ -6030,7 +6384,7 @@
       "Dire Maul"
     ],
     "minLevel": 54,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Feralas, Feathermoon Stronghold - Scholar Runethorn /way 31 43",
     "prereqs": [],
     "objectives": [],
@@ -6041,7 +6395,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete to be eligible forLibram of Protection ,Libram of Rapidity , andLibram of Focus Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 5525,
@@ -6130,7 +6489,7 @@
       "Lower Blackrock Spire"
     ],
     "minLevel": 55,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Badlands, Kargath- Galamav the Marksman /way 6 47",
     "prereqs": [],
     "objectives": [],
@@ -6141,7 +6500,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 4981,
@@ -6150,7 +6514,7 @@
       "Lower Blackrock Spire"
     ],
     "minLevel": 55,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Badlands, Kargath - Lexlort /way 5 47",
     "prereqs": [],
     "objectives": [],
@@ -6161,7 +6525,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Leads toBijou's Belongings inside LBRS Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 4903,
@@ -6170,7 +6539,7 @@
       "Lower Blackrock Spire"
     ],
     "minLevel": 55,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Badlands, Kargath - Warlord Goretooth /way 5 47",
     "prereqs": [],
     "objectives": [],
@@ -6181,7 +6550,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 4701,
@@ -6190,7 +6564,7 @@
       "Lower Blackrock Spire"
     ],
     "minLevel": 55,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Burning Steppes, Morgan's Vigil - Helendis Riverhorn /way 65 69",
     "prereqs": [],
     "objectives": [],
@@ -6201,7 +6575,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 5089,
@@ -6210,7 +6589,7 @@
       "Lower Blackrock Spire"
     ],
     "minLevel": 55,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Blackrock Spire, Lower, General Drakkisath's Command , dropped from Overlord Wyrmthalak",
     "prereqs": [],
     "objectives": [],
@@ -6221,7 +6600,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 5001,
@@ -6230,7 +6614,7 @@
       "Lower Blackrock Spire"
     ],
     "minLevel": 55,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Blackrock Spire, Lower - Bijou",
     "prereqs": [],
     "objectives": [],
@@ -6241,7 +6625,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling.  Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 4862,
@@ -6365,7 +6754,7 @@
       "Scholomance"
     ],
     "minLevel": 52,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Tirisfal Glades, The Bulwark - Alexi Barov /way 83 71",
     "prereqs": [],
     "objectives": [],
@@ -6376,7 +6765,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Alexi Barov may be dead due to Alliance kill quest; 30m spawn timer Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 7668,
@@ -6385,7 +6779,7 @@
       "Scholomance"
     ],
     "minLevel": 58,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Shaman Only - Orgrimmar, Valley of Wisdom - Sagorne Creststrider /way 38 35",
     "prereqs": [],
     "objectives": [],
@@ -6396,8 +6790,13 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. CompleteMaterial Assistance first Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true,
-    "class": "SHAMAN"
+    "restrictionUnknown": false,
+    "class": "SHAMAN",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 5343,
@@ -6406,7 +6805,7 @@
       "Scholomance"
     ],
     "minLevel": 52,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Western Plaguelands, Chillwind Camp - Weldon Barov /way 43 83",
     "prereqs": [],
     "objectives": [],
@@ -6417,7 +6816,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Weldon Barov may be dead due to Horde kill quest; 30m spawn timer Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 5529,
@@ -6655,7 +7059,7 @@
       "Stratholme"
     ],
     "minLevel": 56,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Eastern Plaguelands, Marris Stead - Nathanos Blightcaller /way 26 74",
     "prereqs": [],
     "objectives": [],
@@ -6666,7 +7070,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete 4 quests, starting withThe Ranger Lord's Behest andTo Kill With Purpose Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 5243,
@@ -6809,7 +7218,7 @@
       "Upper Blackrock Spire"
     ],
     "minLevel": 57,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Badlands, Kargath - Shadowmage Vivian Lagrave /way 3 48",
     "prereqs": [],
     "objectives": [],
@@ -6820,7 +7229,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Pick up non-required breadcrumbVivian Lagrave and the Darkstone Tablet in Undercity for easy XP Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 4974,
@@ -6829,7 +7243,7 @@
       "Upper Blackrock Spire"
     ],
     "minLevel": 55,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Orgrimmar, Valley of Wisdom - Thrall /way 31 37",
     "prereqs": [],
     "objectives": [],
@@ -6840,7 +7254,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete 2 quests, starting withWarlord's Command first Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 6602,
@@ -6849,7 +7268,7 @@
       "Upper Blackrock Spire"
     ],
     "minLevel": 55,
-    "faction": null,
+    "faction": "Horde",
     "pickup": "Desolace, Rexxar , patrols (see database for path)",
     "prereqs": [],
     "objectives": [],
@@ -6860,7 +7279,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Complete 13 quests, starting withWarlord's Command first Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 4764,
@@ -6869,7 +7293,7 @@
       "Upper Blackrock Spire"
     ],
     "minLevel": 57,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Burning Steppes, Morgan's Vigil - Mayara Brightwing /way 84 69",
     "prereqs": [],
     "objectives": [],
@@ -6880,7 +7304,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Pick up non-required breadcrumbMayara Brightwing in Stormwind Keep for easy XP Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 5102,
@@ -6889,7 +7318,7 @@
       "Upper Blackrock Spire"
     ],
     "minLevel": 55,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Burning Steppes, Morgan's Vigil - Marshal Maxwell /way 84 68",
     "prereqs": [],
     "objectives": [],
@@ -6900,7 +7329,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. CompleteGeneral Drakkisath's Command first Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 6502,
@@ -6909,7 +7343,7 @@
       "Upper Blackrock Spire"
     ],
     "minLevel": 50,
-    "faction": null,
+    "faction": "Alliance",
     "pickup": "Winterspring, Mazthoril- Haleh /way 56 49",
     "prereqs": [],
     "objectives": [],
@@ -6920,7 +7354,12 @@
     "evidence": "Classic reference",
     "checked": "2026-10-01",
     "notes": "Listed in the Forever dungeon guide, which uses Classic reference data for untested content. Confirm in the current beta before travelling. Step on blue rune at end of cave to spawn NPC Reference coordinates are not pinned until checked against a Forever map.",
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 7761,
@@ -7040,14 +7479,14 @@
     "id": 2931,
     "pickup": "Pickup location not verified; check the source before travelling.",
     "prereqs": [],
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
     "name": "Castpipe's Task",
     "dungeons": [
       "Gnomeregan"
     ],
     "source": "https://wowforevertalents.com/quests/castpipe-s-task-2931/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 28,
     "minLevel": 25,
     "objectives": [],
@@ -7063,7 +7502,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the WFT Beta Log addon, 8 October 2026"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the WFT Beta Log addon, 23 October 2026"
     ],
     "chain": [
       {
@@ -7072,20 +7511,27 @@
         "id": 2930
       }
     ],
-    "restrictionUnknown": true
+    "restrictionUnknown": false,
+    "faction": "Alliance",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 2925,
     "pickup": "Mathiel - Darnassus, Darnassus (59.4, 45.4)",
     "prereqs": [],
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
     "name": "Klockmort's Essentials",
     "dungeons": [
       "Gnomeregan"
     ],
     "source": "https://wowforevertalents.com/quests/klockmort-s-essentials-2925/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 30,
     "minLevel": 24,
     "objectives": [],
@@ -7107,7 +7553,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [
       {
@@ -7116,7 +7562,14 @@
         "id": 2924
       }
     ],
-    "restrictionUnknown": true,
+    "restrictionUnknown": false,
+    "faction": "Alliance",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    },
     "pin": {
       "map": 1457,
       "x": 59.4,
@@ -7131,7 +7584,7 @@
     "id": 98815,
     "pickup": "James Halloran - Wetlands, Menethil Harbor (8.6, 55.8)",
     "prereqs": [
-      469
+      484
     ],
     "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
     "name": "Highland Hides",
@@ -7140,7 +7593,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/highland-hides-98815/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 28,
     "minLevel": 24,
     "objectives": [
@@ -7164,18 +7617,27 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [
       {
-        "role": "Leads to",
+        "id": 484,
         "name": "Young Crocolisk Skins",
-        "id": 484
+        "role": "Prerequisite"
       }
     ],
-    "restrictionUnknown": true,
+    "restrictionUnknown": false,
     "locationSource": "https://wowforevertalents.com/quests/highland-hides-98815/",
-    "preparationNote": "The guide lists Daily Delivery first. Confirm whether James offers Highland Hides before doing earlier steps.",
+    "preparationNote": "Complete Young Crocolisk Skins for James Halloran in Menethil Harbor, then collect Highland Hides.",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "prereqs": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "chain": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "preparationNote": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "faction": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests",
+      "restrictionUnknown": "https://www.icy-veins.com/wow-forever/excavation-site-wetlands-quests"
+    },
+    "faction": "Alliance",
     "pin": {
       "map": 1437,
       "x": 8.6,
@@ -7187,7 +7649,7 @@
   },
   {
     "id": 95697,
-    "pickup": "Pickup location not verified; check the source before travelling.",
+    "pickup": "Borstan near the cooking trainer in The Drag, Orgrimmar. Player-reported location: 57.5, 53.4.",
     "prereqs": [],
     "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
     "name": "Changing Tastes",
@@ -7196,7 +7658,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/changing-tastes-95697/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "faction": "Horde",
@@ -7224,20 +7686,30 @@
     "people": [],
     "personEvidence": [],
     "sourceDetails": [],
-    "chain": []
+    "chain": [],
+    "locationSource": "https://www.wowhead.com/forever/quest=95697",
+    "locationEvidence": "Forever player pickup report, corroborated by dungeon quest guide.",
+    "routeNote": "Collect four Thicket Raptor Meat inside Excavation Site: Wetlands, then return to Borstan.",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "pickup": "https://www.wowhead.com/forever/quest=95697",
+      "locationSource": "https://www.wowhead.com/forever/quest=95697",
+      "locationEvidence": "https://www.wowhead.com/forever/quest=95697",
+      "routeNote": "https://www.wowhead.com/forever/quest=95697"
+    }
   },
   {
     "id": 95663,
-    "pickup": "Pickup location not verified; check the source before travelling.",
+    "pickup": "Zaruk at the bottom of the stairs in Hammerfall, Arathi Highlands (player report).",
     "prereqs": [],
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
     "name": "Dragonmaw Rumors",
     "dungeons": [
       "Excavation Site: Wetlands"
     ],
     "source": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "objectives": [
@@ -7254,11 +7726,20 @@
         "id": 95682
       }
     ],
-    "restrictionUnknown": true,
-    "fieldChecked": "2026-10-03",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-11-07",
     "fieldSources": {
-      "objectives": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/"
-    }
+      "objectives": "https://wowforevertalents.com/quests/dragonmaw-rumors-95663/",
+      "pickup": "https://www.wowhead.com/forever/quest=95663",
+      "locationSource": "https://www.wowhead.com/forever/quest=95663",
+      "routeNote": "https://www.wowhead.com/forever/quest=95663",
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    },
+    "locationSource": "https://www.wowhead.com/forever/quest=95663",
+    "routeNote": "Travel south into Wetlands. Near Thelgen Rock and the meeting stone, follow the uphill path to the Deathstalker Agent above the Dragonmaw camp. Player-reported destination: 51.4, 59.2; this is not the quest pickup.",
+    "faction": "Horde"
   },
   {
     "id": 98823,
@@ -7273,7 +7754,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/earthen-echo-98823/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "faction": "Horde",
@@ -7305,7 +7786,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ],
     "chain": [
       {
@@ -7327,7 +7808,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/elder-knowledge-95664/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "faction": "Horde",
@@ -7357,14 +7838,14 @@
     "id": 95795,
     "pickup": "Daewyn Songblade's body inside Excavation Site; return to Dorin in Lakeshire. Exact location unverified.",
     "prereqs": [],
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
     "name": "Fallen in the Fen",
     "dungeons": [
       "Excavation Site: Wetlands"
     ],
     "source": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "objectives": [
@@ -7391,16 +7872,20 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [],
-    "restrictionUnknown": true,
+    "restrictionUnknown": false,
     "pickupInside": true,
     "locationSource": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/",
-    "fieldChecked": "2026-10-03",
+    "fieldChecked": "2026-11-07",
     "fieldSources": {
-      "objectives": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/"
-    }
+      "objectives": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/",
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    },
+    "faction": "Alliance"
   },
   {
     "id": 95809,
@@ -7415,7 +7900,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/heartwoven-95809/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "faction": "Alliance",
@@ -7451,7 +7936,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ],
     "chain": [
       {
@@ -7514,7 +7999,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [],
     "locationSource": "https://wowforevertalents.com/quests/horrors-in-the-highland-95646/",
@@ -7534,9 +8019,7 @@
   {
     "id": 95647,
     "pickup": "Caitlin Grassman - Wetlands, Menethil Harbor (11.9, 58.8)",
-    "prereqs": [
-      95737
-    ],
+    "prereqs": [],
     "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
     "name": "Lost in the Thicket Things",
     "dungeons": [
@@ -7544,7 +8027,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/lost-in-the-thicket-things-95647/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "faction": "Alliance",
@@ -7563,9 +8046,14 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ],
     "chain": [
+      {
+        "role": "Optional lead-in",
+        "name": "Seeking Caitlin",
+        "id": 95737
+      },
       {
         "role": "Leads to",
         "name": "Heartwoven",
@@ -7573,6 +8061,13 @@
       }
     ],
     "locationSource": "https://wowforevertalents.com/quests/lost-in-the-thicket-things-95647/",
+    "preparationNote": "Seeking Caitlin is an optional introduction from Llana in Astranaar. Check Caitlin directly in Menethil Harbor before travelling to Ashenvale.",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "prereqs": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239",
+      "chain": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239",
+      "preparationNote": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239"
+    },
     "pin": {
       "map": 1437,
       "x": 11.9,
@@ -7593,7 +8088,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/lost-relic-carry-95810/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "faction": "Alliance",
@@ -7612,7 +8107,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [
       {
@@ -7626,18 +8121,18 @@
   },
   {
     "id": 95682,
-    "pickup": "After Dragonmaw Rumors, meet the Deathstalker Agent above the Dragonmaw camp in Wetlands. Exact position unverified.",
+    "pickup": "Deathstalker Agent in the hills above the Dragonmaw camp, Wetlands. Follow the new uphill path near Thelgen Rock and the meeting stone.",
     "prereqs": [
       95663
     ],
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
     "name": "Open the Maw",
     "dungeons": [
       "Excavation Site: Wetlands"
     ],
     "source": "https://wowforevertalents.com/quests/open-the-maw-95682/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "objectives": [
@@ -7669,8 +8164,17 @@
         "id": 95663
       }
     ],
-    "restrictionUnknown": true,
-    "locationSource": "https://wowforevertalents.com/quests/open-the-maw-95682/"
+    "restrictionUnknown": false,
+    "locationSource": "https://www.wowhead.com/forever/quest=95682",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "pickup": "https://www.wowhead.com/forever/quest=95682",
+      "locationSource": "https://www.wowhead.com/forever/quest=95682",
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    },
+    "faction": "Horde"
   },
   {
     "id": 98824,
@@ -7685,7 +8189,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/prehistoric-prism-98824/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "faction": "Alliance",
@@ -7723,7 +8227,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [
       {
@@ -7738,14 +8242,14 @@
     "id": 95737,
     "pickup": "Guide lists Llana in Astranaar, Ashenvale; ask about Caitlin.",
     "prereqs": [],
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
     "name": "Seeking Caitlin",
     "dungeons": [
       "Excavation Site: Wetlands"
     ],
     "source": "https://wowforevertalents.com/quests/seeking-caitlin-95737/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "objectives": [
@@ -7763,28 +8267,32 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ],
     "chain": [],
-    "restrictionUnknown": true,
+    "restrictionUnknown": false,
     "locationSource": "https://www.wowhead.com/forever/guide/dungeons/every-dungeon-quest-location",
-    "fieldChecked": "2026-10-03",
+    "fieldChecked": "2026-11-07",
     "fieldSources": {
-      "objectives": "https://wowforevertalents.com/quests/seeking-caitlin-95737/"
-    }
+      "objectives": "https://wowforevertalents.com/quests/seeking-caitlin-95737/",
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    },
+    "faction": "Alliance"
   },
   {
     "id": 95772,
     "pickup": "Dorin Songblade - Redridge Mountains, Lakeshire (25.7, 46.5)",
     "prereqs": [],
-    "notes": "Beta-cache quest record. Faction eligibility is not established by the source; hidden until accepted or completed. No live-client verification.",
+    "notes": "Faction recorded by QuestieDB 1.0.11 for Forever. Pickup and chain fields retain their individual sources.",
     "name": "Songblade Search",
     "dungeons": [
       "Excavation Site: Wetlands"
     ],
     "source": "https://wowforevertalents.com/quests/songblade-search-95772/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 31,
     "minLevel": 24,
     "objectives": [
@@ -7802,15 +8310,19 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the WFT Beta Log addon, 8 October 2026 · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [],
-    "restrictionUnknown": true,
+    "restrictionUnknown": false,
     "locationSource": "https://wowforevertalents.com/quests/songblade-search-95772/",
-    "fieldChecked": "2026-10-03",
+    "fieldChecked": "2026-11-07",
     "fieldSources": {
-      "objectives": "https://wowforevertalents.com/quests/songblade-search-95772/"
+      "objectives": "https://wowforevertalents.com/quests/songblade-search-95772/",
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "restrictionUnknown": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
     },
+    "faction": "Alliance",
     "pin": {
       "map": 1433,
       "x": 25.7,
@@ -7831,7 +8343,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/seeking-the-kor-gem-1442/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 22,
     "minLevel": 20,
     "objectives": [
@@ -7854,7 +8366,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [],
     "restrictionUnknown": true,
@@ -7878,7 +8390,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-heart-of-the-void-78916/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 25,
     "faction": "Alliance",
     "objectives": [
@@ -7909,7 +8421,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the WFT Beta Log addon, 8 October 2026"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the WFT Beta Log addon, 23 October 2026"
     ],
     "chain": [],
     "locationSource": "https://wowforevertalents.com/quests/the-heart-of-the-void-78916/",
@@ -7927,7 +8439,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-heart-of-the-void-78917/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 25,
     "faction": "Horde",
     "objectives": [
@@ -7958,7 +8470,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291) · the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70205)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [],
     "locationSource": "https://wowforevertalents.com/quests/the-heart-of-the-void-78917/",
@@ -7967,16 +8479,16 @@
   },
   {
     "id": 79360,
-    "pickup": "Pickup NPC not verified. Defeat Charlga Razorflank for the Tattered Note once you have the quest.",
+    "pickup": "Check Prate Cloudseer in Thousand Needles after obtaining your Air Totem; the exact Horde pickup still needs client confirmation.",
     "prereqs": [],
-    "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
+    "notes": "Beta-cache objectives; Shaman-only eligibility supported by current Forever weapon-chain reports. No local live-client verification.",
     "name": "Elemental Aid",
     "dungeons": [
       "Razorfen Kraul"
     ],
     "source": "https://wowforevertalents.com/quests/elemental-aid-79360/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 33,
     "minLevel": 30,
     "faction": "Horde",
@@ -7995,7 +8507,7 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ],
     "chain": [
       {
@@ -8004,21 +8516,34 @@
         "id": 79364
       }
     ],
-    "restrictionUnknown": true,
-    "preparationNote": "Elemental class quest: class eligibility and the full earlier chain need verification. Check the source and your trainer."
+    "restrictionUnknown": false,
+    "preparationNote": "Shaman only. Complete your Call of Air first. Several quests share that title; no unverified Horde prerequisite ID is enforced.",
+    "class": "SHAMAN",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "class": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "restrictionUnknown": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "notes": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "pickup": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "preparationNote": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "routeNote": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290"
+    },
+    "routeNote": "With Elemental Aid accepted, defeat Charlga Razorflank and loot the Tattered Note. The current beta-cache objective sends the note to Rau Cliffrunner in Thousand Needles; older Wowhead text describes a different step."
   },
   {
     "id": 96264,
-    "pickup": "Pickup NPC not verified. Defeat Charlga Razorflank for the Tattered Note once you have the quest.",
-    "prereqs": [],
-    "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
+    "pickup": "Veyric Thunderhame in the northern Arathi Highlands, after Call of Air (94789).",
+    "prereqs": [
+      94789
+    ],
+    "notes": "Beta-cache objectives; Shaman-only eligibility supported by current Forever weapon-chain reports. No local live-client verification.",
     "name": "Elemental Aid",
     "dungeons": [
       "Razorfen Kraul"
     ],
     "source": "https://wowforevertalents.com/quests/elemental-aid-96264/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 33,
     "minLevel": 30,
     "faction": "Alliance",
@@ -8037,7 +8562,7 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [
       {
@@ -8050,21 +8575,35 @@
         "id": 79358
       }
     ],
-    "restrictionUnknown": true,
-    "preparationNote": "Elemental class quest: class eligibility and the full earlier chain need verification. Check the source and your trainer."
+    "restrictionUnknown": false,
+    "preparationNote": "Shaman only. Finish Call of Air with Veyric before the Razorfen Kraul run.",
+    "class": "SHAMAN",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "class": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "restrictionUnknown": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "notes": "https://www.wowhead.com/forever/news/unlock-powerful-weapons-with-level-30-shaman-quest-in-wow-forever-383290",
+      "pickup": "https://www.wowhead.com/forever/quest=96264",
+      "prereqs": "https://www.wowhead.com/forever/quest=96264",
+      "preparationNote": "https://www.wowhead.com/forever/quest=96264",
+      "routeNote": "https://www.wowhead.com/forever/quest=96264",
+      "locationSource": "https://www.wowhead.com/forever/quest=96264"
+    },
+    "routeNote": "Defeat Charlga Razorflank, loot the Tattered Note and return to Veyric Thunderhame in Arathi Highlands.",
+    "locationSource": "https://www.wowhead.com/forever/quest=96264"
   },
   {
     "id": 2947,
-    "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. The return is optional; the current follow-up is not fully mapped.",
+    "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. Return it to Talvash del Kissel in Ironforge.",
     "prereqs": [],
-    "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
+    "notes": "The beta cache links an unidentified Quest #80131. Gnome Improvement (2948) is the known Classic ring-upgrade follow-up; the current Forever branch remains unverified.",
     "name": "Return of the Ring",
     "dungeons": [
       "Gnomeregan"
     ],
     "source": "https://wowforevertalents.com/quests/return-of-the-ring-2947/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 34,
     "minLevel": 28,
     "faction": "Alliance",
@@ -8079,6 +8618,11 @@
       {
         "role": "Leads to",
         "name": "Quest #80131"
+      },
+      {
+        "role": "Classic reference follow-up",
+        "id": 2948,
+        "name": "Gnome Improvement"
       }
     ],
     "locationSource": "https://wowforevertalents.com/quests/return-of-the-ring-2947/",
@@ -8096,7 +8640,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/return-of-the-ring-2949/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 34,
     "minLevel": 28,
     "faction": "Horde",
@@ -8120,7 +8664,7 @@
   },
   {
     "id": 92456,
-    "pickup": "Shylamiir in Stormwind City (quest-text report; exact pickup unverified).",
+    "pickup": "Shylamiir in The Park, Stormwind City (31.3, 62.9).",
     "prereqs": [],
     "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
     "name": "A Green Sample",
@@ -8129,7 +8673,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/a-green-sample-92456/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 33,
     "minLevel": 24,
     "faction": "Alliance",
@@ -8147,25 +8691,45 @@
       }
     ],
     "people": [
-      "Picked up from: Shylamiir"
+      "Picked up from: Shylamiir",
+      "Turned in to: Shylamiir"
     ],
     "personEvidence": [
       {
         "role": "Picked up from",
         "name": "Shylamiir",
-        "location": null
+        "location": "Stormwind City, The Park (31.3, 62.9)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Shylamiir",
+        "location": "Stormwind City, The Park (31.3, 62.9)"
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 7 October 2026 (questcache.wdb, build 70245) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Source: the WFT Beta Log addon, 23 October 2026"
     ],
     "chain": [],
     "locationSource": "https://wowforevertalents.com/quests/a-green-sample-92456/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "locationEvidence": "WFT Beta Log pickup coordinates, 23 October 2026; checked 2026-11-07",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "pickup": "https://wowforevertalents.com/quests/a-green-sample-92456/",
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "people": "https://wowforevertalents.com/quests/a-green-sample-92456/",
+      "personEvidence": "https://wowforevertalents.com/quests/a-green-sample-92456/"
+    },
+    "pin": {
+      "map": 1453,
+      "x": 31.3,
+      "y": 62.9,
+      "zone": "Stormwind City",
+      "title": "Shylamiir"
+    }
   },
   {
     "id": 92458,
-    "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.7, 45.2); the beta log identifies the giver as creature 269127.",
     "prereqs": [],
     "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
     "name": "Heart of Disruption",
@@ -8174,7 +8738,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/heart-of-disruption-92458/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 33,
     "minLevel": 24,
     "faction": "Alliance",
@@ -8203,33 +8767,41 @@
       {
         "role": "Picked up from",
         "name": "Creature #269127",
-        "location": "Silverpine Forest (68.6, 45.2)"
+        "location": "Silverpine Forest (68.7, 45.2)"
       },
       {
         "role": "Turned in to",
         "name": "Creature #269127",
-        "location": "Silverpine Forest (68.6, 45.2)"
+        "location": "Silverpine Forest (68.7, 45.2)"
       }
     ],
     "sourceDetails": [
-      "Source: the WFT Beta Log addon, 8 October 2026"
+      "Source: the WFT Beta Log addon, 23 October 2026"
     ],
     "chain": [
       {
-        "role": "Comes after",
-        "name": "An Alarming Request"
+        "role": "Related quest (requirement unverified)",
+        "name": "An Alarming Request",
+        "id": 92432
       },
       {
         "role": "Leads to",
-        "name": "Friend of the Kirin Tor"
+        "name": "Friend of the Kirin Tor",
+        "id": 92459
       }
     ],
     "locationSource": "https://wowforevertalents.com/quests/heart-of-disruption-92458/",
-    "locationEvidence": "Beta log pickup coordinates, 8 October 2026; NPC name from quest text",
-    "preparationNote": "Reported earlier step: An Alarming Request. Its quest ID and full chain are not yet verified.",
+    "locationEvidence": "WFT Beta Log pickup coordinates, 23 October 2026; checked 2026-11-07",
+    "preparationNote": "An Alarming Request (92432), from Emissary Jacques, introduces Modera. Current access reports allow Alliance to speak directly to Modera; the introduction is not enforced as a prerequisite.",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "preparationNote": "https://www.wowhead.com/forever/quest=92432",
+      "chain": "https://www.wowhead.com/forever/quest=92432",
+      "pickup": "https://wowforevertalents.com/quests/heart-of-disruption-92458/"
+    },
     "pin": {
       "map": 1421,
-      "x": 68.6,
+      "x": 68.7,
       "y": 45.2,
       "zone": "Silverpine Forest",
       "title": "Archmage Modera (creature 269127)"
@@ -8237,8 +8809,10 @@
   },
   {
     "id": 96984,
-    "pickup": "Magus Wordeen Voidglare in Tarren Mill (quest-text report; exact pickup unverified).",
-    "prereqs": [],
+    "pickup": "Image of Archmage Modera outside the Dalaran sewer entrance, after Blood in the Streets.",
+    "prereqs": [
+      92434
+    ],
     "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
     "name": "Heart of Disruption",
     "dungeons": [
@@ -8246,7 +8820,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/heart-of-disruption-96984/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 33,
     "minLevel": 24,
     "faction": "Horde",
@@ -8268,17 +8842,23 @@
       }
     ],
     "people": [
-      "Picked up from: Magus Wordeen Voidglare"
+      "Picked up from: Image of Archmage Modera",
+      "Turned in to: Magus Wordeen Voidglare"
     ],
     "personEvidence": [
       {
         "role": "Picked up from",
+        "name": "Image of Archmage Modera",
+        "location": "Outside Dalaran; guide report"
+      },
+      {
+        "role": "Turned in to",
         "name": "Magus Wordeen Voidglare",
-        "location": null
+        "location": "Tarren Mill; quest objective"
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 6 October 2026 (questcache.wdb, build 70235)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ],
     "chain": [
       {
@@ -8290,13 +8870,25 @@
         "name": "Shrewd Negotiations"
       }
     ],
-    "locationSource": "https://wowforevertalents.com/quests/heart-of-disruption-96984/",
-    "locationEvidence": "Beta log or quest-text report; see source details",
-    "preparationNote": "Reported earlier step: Blood in the Streets. Its quest ID and full chain are not yet verified."
+    "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+    "locationEvidence": "Forever guide pickup; quest text separately identifies the turn-in NPC.",
+    "preparationNote": "Horde key route: Prison Break In and Key to the City, then Dalaran Patrols, then Blood in the Streets. Accept this quest from Modera to receive the sewer key.",
+    "routeNote": "Collect the Arcane Mote in Dalaran; take it to Magus Wordeen Voidglare in Tarren Mill. The sewer key is provided on acceptance, not a completion reward.",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "pickup": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "prereqs": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "locationEvidence": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "people": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "personEvidence": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "preparationNote": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "routeNote": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards"
+    }
   },
   {
     "id": 96987,
-    "pickup": "Rexxie Copperclutch near the Dalaran sewer entrance (quest-text report; exact pickup unverified).",
+    "pickup": "Rexxie Copperclutch just inside the City of Dalaran entrance (guide report).",
     "prereqs": [],
     "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
     "name": "Opportunistic Education",
@@ -8305,7 +8897,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/opportunistic-education-96987/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 33,
     "minLevel": 24,
     "faction": "Horde",
@@ -8326,12 +8918,19 @@
     "personEvidence": [],
     "sourceDetails": [],
     "chain": [],
-    "locationSource": "https://wowforevertalents.com/quests/opportunistic-education-96987/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "pickupInside": true,
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "pickupInside": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "pickup": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards"
+    }
   },
   {
     "id": 92489,
-    "pickup": "High Sorcerer Andromath in Stormwind City (quest-text report; exact pickup unverified).",
+    "pickup": "High Sorcerer Andromath, Mage Quarter, Stormwind City.",
     "prereqs": [],
     "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
     "name": "Power Overwhelming",
@@ -8340,7 +8939,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/power-overwhelming-92489/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 33,
     "minLevel": 24,
     "faction": "Alliance",
@@ -8358,25 +8957,37 @@
       }
     ],
     "people": [
-      "Picked up from: High Sorcerer Andromath"
+      "Picked up from: High Sorcerer Andromath",
+      "Turned in to: High Sorcerer Andromath"
     ],
     "personEvidence": [
       {
         "role": "Picked up from",
         "name": "High Sorcerer Andromath",
-        "location": null
+        "location": "Stormwind City, Wizard's Sanctum (48.8, 87.6)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "High Sorcerer Andromath",
+        "location": "Stormwind City, Wizard's Sanctum (48.8, 87.6)"
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 7 October 2026 (questcache.wdb, build 70245)"
+      "Sources: the WFT Beta Log addon, 23 October 2026 · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [],
-    "locationSource": "https://wowforevertalents.com/quests/power-overwhelming-92489/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+    "locationEvidence": "Method dungeon guide, updated 15 October 2026.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pickup": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "locationEvidence": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
+    }
   },
   {
     "id": 96988,
-    "pickup": "Doctor Martin Felben in Undercity (quest-text report; exact pickup unverified).",
+    "pickup": "Doctor Martin Felben in The Apothecarium, Undercity (Forever guide; no verified pin).",
     "prereqs": [],
     "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
     "name": "Source of Power",
@@ -8385,7 +8996,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/source-of-power-96988/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 33,
     "minLevel": 24,
     "faction": "Horde",
@@ -8413,15 +9024,20 @@
       }
     ],
     "sourceDetails": [
-      "Sources: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170) · the beta client's creature cache, 8 October 2026 (creaturecache.wdb, build 70291)"
+      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
     ],
     "chain": [],
-    "locationSource": "https://wowforevertalents.com/quests/source-of-power-96988/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "fieldChecked": "2026-10-09",
+    "fieldSources": {
+      "pickup": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
+      "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards"
+    }
   },
   {
     "id": 92457,
-    "pickup": "Archmage Modera outside Dalaran, Silverpine Forest (68.6, 45.2); the beta log identifies the giver as creature 269127.",
+    "pickup": "Archmage Modera (creature 269127) - Silverpine Forest (68.7, 45.2).",
     "prereqs": [],
     "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
     "name": "Starving Arcane",
@@ -8430,9 +9046,10 @@
     ],
     "source": "https://wowforevertalents.com/quests/starving-arcane-92457/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 33,
     "minLevel": 24,
+    "faction": "Alliance",
     "objectives": [
       "Seeking Remnant ×8",
       "Saturated Remnant ×8",
@@ -8449,25 +9066,40 @@
       }
     ],
     "people": [
-      "Picked up from: Creature #269127"
+      "Picked up from: Creature #269127",
+      "Turned in to: Creature #269127"
     ],
     "personEvidence": [
       {
         "role": "Picked up from",
         "name": "Creature #269127",
-        "location": "Silverpine Forest (68.6, 45.2)"
+        "location": "Silverpine Forest (68.7, 45.2)"
+      },
+      {
+        "role": "Turned in to",
+        "name": "Creature #269127",
+        "location": "Silverpine Forest (68.7, 45.2)"
       }
     ],
     "sourceDetails": [
-      "Source: the WFT Beta Log addon, 8 October 2026"
+      "Source: the WFT Beta Log addon, 23 October 2026"
     ],
     "chain": [],
     "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
-    "locationEvidence": "Beta log pickup coordinates, 8 October 2026; NPC name from quest text",
-    "restrictionUnknown": true,
+    "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
+    "restrictionUnknown": false,
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "faction": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "restrictionUnknown": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "pin": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "pickup": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "locationEvidence": "https://wowforevertalents.com/quests/starving-arcane-92457/"
+    },
     "pin": {
       "map": 1421,
-      "x": 68.6,
+      "x": 68.7,
       "y": 45.2,
       "zone": "Silverpine Forest",
       "title": "Archmage Modera (creature 269127)"
@@ -8475,7 +9107,7 @@
   },
   {
     "id": 96986,
-    "pickup": "Melisara in Tarren Mill (quest-text report; exact pickup unverified).",
+    "pickup": "Melisara, Tarren Mill, Hillsbrad Foothills.",
     "prereqs": [],
     "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
     "name": "The Grave Knight",
@@ -8484,7 +9116,7 @@
     ],
     "source": "https://wowforevertalents.com/quests/the-grave-knight-96986/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 33,
     "minLevel": 24,
     "faction": "Horde",
@@ -8512,24 +9144,30 @@
       }
     ],
     "sourceDetails": [
-      "Source: the beta client's quest cache, 3 October 2026 (questcache.wdb, build 70170)"
+      "Source: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338)"
     ],
     "chain": [],
-    "locationSource": "https://wowforevertalents.com/quests/the-grave-knight-96986/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+    "locationEvidence": "Method dungeon guide, updated 15 October 2026.",
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pickup": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "locationEvidence": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
+    }
   },
   {
     "id": 96800,
-    "pickup": "Creature 264265 at Tempered Tomes in City of Dalaran (9.5, 63.1). NPC name and map pin remain unverified.",
+    "pickup": "Magus Olvek at Tempered Tomes in City of Dalaran (9.5, 63.1).",
     "prereqs": [],
-    "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
+    "notes": "QuestieDB identifies creature 264265 as Magus Olvek. Pickup location is recorded by the WFT Beta Log. No map pin is supplied for this interior location.",
     "name": "Past Due",
     "dungeons": [
       "Scarlet Monastery"
     ],
     "source": "https://wowforevertalents.com/quests/past-due-96800/",
     "evidence": "Beta cache report",
-    "checked": "2026-10-09",
+    "checked": "2026-11-07",
     "level": 38,
     "minLevel": 30,
     "faction": "Alliance",
@@ -8547,7 +9185,7 @@
       }
     ],
     "people": [
-      "Picked up from: Creature #264265"
+      "Picked up from: Magus Olvek"
     ],
     "personEvidence": [
       {
@@ -8557,11 +9195,149 @@
       }
     ],
     "sourceDetails": [
-      "Source: the WFT Beta Log addon, 8 October 2026"
+      "Source: the WFT Beta Log addon, 23 October 2026"
     ],
     "chain": [],
     "locationSource": "https://wowforevertalents.com/quests/past-due-96800/",
-    "locationEvidence": "Beta log or quest-text report; see source details"
+    "locationEvidence": "Beta log or quest-text report; see source details",
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "pickup": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "people": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "notes": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  {
+    "id": 3911,
+    "pickup": "Vivian Lagrave is mentioned in the quest text; the actual pickup location is not yet verified.",
+    "prereqs": [],
+    "notes": "Beta-cache objectives and reward; faction, pickup and prerequisite requirements remain unverified.",
+    "name": "The Last Element",
+    "dungeons": [
+      "Blackrock Depths"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-last-element-3911/",
+    "evidence": "Beta cache report",
+    "checked": "2026-11-07",
+    "level": 54,
+    "minLevel": 48,
+    "objectives": [
+      "Essence of the Elements ×10"
+    ],
+    "rewards": [
+      {
+        "id": 12038,
+        "name": "Lagrave's Seal"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": [],
+    "fieldChecked": "2026-10-17",
+    "fieldSources": {
+      "pickup": "https://wowforevertalents.com/quests/the-last-element-3911/",
+      "notes": "https://wowforevertalents.com/quests/the-last-element-3911/",
+      "restrictionUnknown": "https://wowforevertalents.com/quests/the-last-element-3911/"
+    },
+    "restrictionUnknown": true
+  },
+  {
+    "id": 95776,
+    "pickup": "Pickup location not recorded. See the quest source.",
+    "prereqs": [],
+    "notes": "Quest ID, Horde eligibility and level are present in both the beta cache and QuestieDB 1.0.11. The prerequisite chain is not recorded.",
+    "name": "The Only Good Brinescale...",
+    "dungeons": [
+      "The Drowned City"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-only-good-brinescale-95776/",
+    "evidence": "Beta cache report",
+    "checked": "2026-11-07",
+    "level": 38,
+    "minLevel": 30,
+    "faction": "Horde",
+    "objectives": [],
+    "rewards": [
+      {
+        "id": 279888,
+        "name": "Tidesoaked Leggings"
+      },
+      {
+        "id": 279889,
+        "name": "Naga Priestess's Mantle"
+      }
+    ],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": [],
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "minLevel": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  {
+    "id": 96774,
+    "pickup": "Pickup location not recorded. See the quest source.",
+    "prereqs": [],
+    "notes": "Quest ID, Horde eligibility and level are present in both the beta cache and QuestieDB 1.0.11. The prerequisite chain is not recorded.",
+    "name": "Ancient Gurubashi Idol",
+    "dungeons": [
+      "The Drowned City"
+    ],
+    "source": "https://wowforevertalents.com/quests/ancient-gurubashi-idol-96774/",
+    "evidence": "Beta cache report",
+    "checked": "2026-11-07",
+    "level": 40,
+    "minLevel": 30,
+    "faction": "Horde",
+    "objectives": [
+      "Ancient Gurubashi Idol"
+    ],
+    "rewards": [],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": [],
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "minLevel": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
+  },
+  {
+    "id": 95775,
+    "pickup": "Pickup location not recorded. See the quest source.",
+    "prereqs": [],
+    "notes": "Quest ID, Horde eligibility and level are present in both the beta cache and QuestieDB 1.0.11. The prerequisite chain is not recorded.",
+    "name": "The Drowned City",
+    "dungeons": [
+      "The Drowned City"
+    ],
+    "source": "https://wowforevertalents.com/quests/the-drowned-city-95775/",
+    "evidence": "Beta cache report",
+    "checked": "2026-11-07",
+    "level": 40,
+    "minLevel": 30,
+    "faction": "Horde",
+    "objectives": [
+      "The First Tablet of I'lalai",
+      "The Second Tablet of I'lalai",
+      "The Third Tablet of I'lalai",
+      "The Fourth Tablet of I'lalai"
+    ],
+    "rewards": [],
+    "people": [],
+    "personEvidence": [],
+    "sourceDetails": [],
+    "chain": [],
+    "fieldChecked": "2026-11-07",
+    "fieldSources": {
+      "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+      "minLevel": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
+    }
   },
   {
     "id": 92819,
@@ -8589,5 +9365,220 @@
     "notes": "Forever quest record; rear-exit route corroborated by player reports. No precise pickup pin verified.",
     "checklistPrevious": 92753,
     "routeNote": "Final Toxic Soil step after planting the explosives: follow the quest log to use the detonator outside, then speak to Alba to finish."
+  },
+  {
+    "id": 2948,
+    "name": "Gnome Improvement",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "minLevel": 28,
+    "level": 35,
+    "faction": "Alliance",
+    "pickup": "Talvash del Kissel, Mystic Ward, Ironforge.",
+    "turnin": "Talvash del Kissel, Ironforge.",
+    "prereqs": [
+      2947
+    ],
+    "objectives": [
+      "Bring the Brilliant Gold Ring, one Silver Bar, one Moss Agate and 30 silver."
+    ],
+    "rewards": [
+      {
+        "id": 9538,
+        "name": "Talvash's Gold Ring"
+      }
+    ],
+    "people": [],
+    "chain": [
+      {
+        "role": "Comes after",
+        "id": 2947,
+        "name": "Return of the Ring"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game.",
+    "pickupInside": false
+  },
+  {
+    "id": 2950,
+    "name": "Nogg's Ring Redo",
+    "dungeons": [
+      "Gnomeregan"
+    ],
+    "minLevel": 28,
+    "level": 35,
+    "faction": "Horde",
+    "pickup": "Nogg, Valley of Honor, Orgrimmar.",
+    "turnin": "Nogg, Orgrimmar.",
+    "prereqs": [
+      2949
+    ],
+    "objectives": [
+      "Bring the Brilliant Gold Ring, one Silver Bar, one Moss Agate and 30 silver."
+    ],
+    "rewards": [
+      {
+        "id": 9588,
+        "name": "Nogg's Gold Ring"
+      }
+    ],
+    "people": [],
+    "chain": [
+      {
+        "role": "Comes after",
+        "id": 2949,
+        "name": "Return of the Ring"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game.",
+    "pickupInside": false
+  },
+  {
+    "id": 1394,
+    "name": "Final Passage",
+    "dungeons": [
+      "Scarlet Monastery"
+    ],
+    "minLevel": 25,
+    "level": 36,
+    "faction": "Horde",
+    "pickup": "Parqual Fintallas, Undercity.",
+    "turnin": "Dorn Plainstalker, Thousand Needles.",
+    "prereqs": [
+      6628
+    ],
+    "objectives": [
+      "Return to Dorn Plainstalker after the Test of Lore chain."
+    ],
+    "rewards": [
+      {
+        "id": 6804,
+        "name": "Windstorm Hammer"
+      },
+      {
+        "id": 6806,
+        "name": "Dancing Flame"
+      }
+    ],
+    "people": [],
+    "chain": [
+      {
+        "role": "Comes after",
+        "id": 6628,
+        "name": "Test of Lore"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game. Outdoor final turn-in after the Scarlet Monastery Library portion of Test of Lore.",
+    "pickupInside": false
+  },
+  {
+    "id": 1806,
+    "name": "The Test of Righteousness",
+    "dungeons": [
+      "Deadmines",
+      "Shadowfang Keep",
+      "Blackfathom Deeps"
+    ],
+    "minLevel": 20,
+    "level": 22,
+    "faction": "Alliance",
+    "pickup": "Jordan Stilwell, outside Ironforge in Dun Morogh.",
+    "turnin": "Jordan Stilwell, Dun Morogh.",
+    "prereqs": [
+      1654
+    ],
+    "objectives": [
+      "Wait for Jordan Stilwell to finish forging your weapon."
+    ],
+    "rewards": [
+      {
+        "id": 6953,
+        "name": "Verigan's Fist"
+      }
+    ],
+    "people": [],
+    "chain": [
+      {
+        "role": "Comes after",
+        "id": 1654,
+        "name": "The Test of Righteousness"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game. Reward step after the separate dungeon-material collection quest (1654).",
+    "pickupInside": false,
+    "class": "PALADIN"
+  },
+  {
+    "id": 3765,
+    "name": "The Corruption Abroad",
+    "dungeons": [
+      "Blackfathom Deeps"
+    ],
+    "minLevel": 18,
+    "level": 24,
+    "faction": "Alliance",
+    "pickup": "Argos Nightwhisper, The Park, Stormwind.",
+    "turnin": "Gershala Nightwhisper, Auberdine, Darkshore.",
+    "prereqs": [],
+    "objectives": [
+      "Speak to Gershala Nightwhisper in Auberdine."
+    ],
+    "rewards": [],
+    "people": [],
+    "chain": [
+      {
+        "role": "Optional lead-in to",
+        "id": 1275,
+        "name": "Researching the Corruption"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game. Optional introductory quest; do not require it if the destination NPC already offers the next quest.",
+    "pickupInside": false
+  },
+  {
+    "id": 463,
+    "name": "The Greenwarden",
+    "dungeons": [
+      "Excavation Site: Wetlands"
+    ],
+    "minLevel": 20,
+    "level": 21,
+    "faction": "Alliance",
+    "pickup": "First Mate Fitzsimmons, Menethil Harbor, Wetlands.",
+    "turnin": "Rethiel the Greenwarden, Wetlands.",
+    "prereqs": [],
+    "objectives": [
+      "Find Rethiel the Greenwarden in the Wetlands."
+    ],
+    "rewards": [],
+    "people": [],
+    "chain": [
+      {
+        "role": "Optional lead-in to",
+        "id": 276,
+        "name": "Tramping Paws"
+      }
+    ],
+    "source": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
+    "evidence": "Classic reference",
+    "checked": "2026-11-01",
+    "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game. Optional introductory quest; do not require it if the destination NPC already offers the next quest.",
+    "pickupInside": false
   }
 ]

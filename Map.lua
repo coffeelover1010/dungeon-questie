@@ -25,7 +25,7 @@ end
 function A.Navigate(q)
  if not A.NeedsPickup(q) then A.Print("You already have or completed "..q.name..". Open its quest log for the next destination."); return end
  local p=q.pin
- if not p then A.Print("No verified pickup pin for "..q.name..". See its pickup directions."); return end
+ if not p then A.Print("No pickup pin for "..q.name..". See its pickup directions."); return end
  if InCombatLockdown() then A.Print("Set a waypoint after combat."); return end
  if not valid(p) then A.Print("Map does not match this client: "..p.zone.." "..p.x..", "..p.y); return end
  A.ClearWaypoint()
@@ -49,7 +49,7 @@ function A.Navigate(q)
  end
  local drawn=A.RefreshPins()
  A.Print(q.name..": "..p.zone.." "..p.x..", "..p.y..(set and " (waypoint set)" or (drawn and drawn>0 and " (pickup marked on world map)" or " (coordinates; map marker unavailable)")))
- if p.reference then A.Print("Classic reference pin - approximate; not verified in Forever.") end
+ if p.reference then A.Print("Approximate pickup pin from Classic reference data.") end
 end
 function A.RefreshPins()
  local map=WorldMapFrame
@@ -77,7 +77,7 @@ function A.RefreshPins()
    b:SetScript("OnEnter",function(self)
     GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine("Dungeon Questie - pickup",0.2,1,0.3)
     GameTooltip:AddLine(self.group.p.title,1,1,1)
-    if self.group.p.reference then GameTooltip:AddLine("Classic reference - approximate; not verified in Forever.",1,0.8,0.3,true) end
+    if self.group.p.reference then GameTooltip:AddLine("Approximate pickup pin from Classic reference data.",1,0.8,0.3,true) end
     for _,q in ipairs(self.group.quests) do GameTooltip:AddLine(q.name.." - "..(A.labels[A.state[q.id]] or ""),0.8,0.9,1) end
     GameTooltip:AddLine("Click to open the quest. Shift-click to set a waypoint.",0.7,0.7,0.7,true); GameTooltip:Show()
    end)

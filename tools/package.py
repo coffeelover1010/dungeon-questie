@@ -5,10 +5,11 @@ ROOT=Path(__file__).resolve().parents[1]
 version=next(x.split(':',1)[1].strip() for x in (ROOT/'DungeonGuideForever.toc').read_text().splitlines() if x.startswith('## Version:'))
 files={ROOT/'DungeonGuideForever.toc',ROOT/'LICENSE'}
 files.update(ROOT/x.strip().replace('\\','/') for x in (ROOT/'DungeonGuideForever.toc').read_text().splitlines() if x.strip() and not x.startswith('#'))
-files.update(ROOT/x for x in ('README.md','WALKTHROUGHS.md','AI-RESEARCH-README.md','SOURCE-REBUILD.md','THIRD-PARTY-NOTICES.md','RELEASE-NOTES.md','RESEARCH-2026-10-02.md','RESEARCH-2026-10-03.md','RESEARCH-2026-10-09.md','Libs/NOTICE.txt','Libs/Ace3-LICENSE.txt'))
+files.update(ROOT/x for x in ('README.md','WALKTHROUGHS.md','AI-RESEARCH-README.md','SOURCE-REBUILD.md','THIRD-PARTY-NOTICES.md','RELEASE-NOTES.md','RESEARCH-2026-10-02.md','RESEARCH-2026-10-03.md','RESEARCH-2026-10-09.md','RESEARCH-2026-10-09-DEEP.md','Libs/NOTICE.txt','Libs/Ace3-LICENSE.txt'))
 for directory in ('data','tools','licenses'):
     files.update(p for p in (ROOT/directory).iterdir() if p.is_file() and p.suffix in ('.json','.csv','.txt','.py','.ps1','.md'))
 files.add(ROOT/'licenses/ClassicDB-AUTHORS')
+files.add(ROOT/'RESEARCH-2026-11-07.md')
 out=ROOT/'dist';out.mkdir(exist_ok=True)
 archive=out/f'DungeonQuestie-{version}.zip'
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
