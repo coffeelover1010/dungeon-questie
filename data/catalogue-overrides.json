@@ -1,4 +1,26 @@
 {
+  "3366": {
+    "pickup": "Loot the Glowing Shard from Mutanus the Devourer in Wailing Caverns, then right-click it to start the quest.",
+    "pickupInside": true,
+    "preparationNote": "Defeat Lady Anacondra, Lord Cobrahn, Lord Pythas and Lord Serpentis. Return to the Disciple of Naralex near the instance entrance and escort him. Protect him during the ritual, then defeat Mutanus and loot the shard.",
+    "locationSource": "https://www.warcraftforever.wiki/wiki/Wailing_Caverns",
+    "locationEvidence": "Drop and event directions; event mechanics are Classic reference, not live-verified.",
+    "fieldChecked": "2026-11-07",
+    "checklistAlternatives": [
+      6981
+    ]
+  },
+  "6981": {
+    "pickup": "Loot the Glowing Shard from Mutanus the Devourer in Wailing Caverns, then right-click it to start the quest.",
+    "pickupInside": true,
+    "preparationNote": "Defeat Lady Anacondra, Lord Cobrahn, Lord Pythas and Lord Serpentis. Return to the Disciple of Naralex near the instance entrance and escort him. Protect him during the ritual, then defeat Mutanus and loot the shard.",
+    "locationSource": "https://www.warcraftforever.wiki/wiki/Wailing_Caverns",
+    "locationEvidence": "Drop and event directions; event mechanics are Classic reference, not live-verified.",
+    "fieldChecked": "2026-11-07",
+    "checklistAlternatives": [
+      3366
+    ]
+  },
   "96395": {
     "pickupInside": true
   },
@@ -70,9 +92,6 @@
     ]
   },
   "373": {
-    "pickupInside": true
-  },
-  "3366": {
     "pickupInside": true
   },
   "1275": {

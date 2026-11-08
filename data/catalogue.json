@@ -1920,12 +1920,19 @@
     "rewards": [],
     "people": [],
     "chain": [],
-    "pickup": "Glowing Shard dropped by Mutanus in Wailing Caverns.",
+    "pickup": "Loot the Glowing Shard from Mutanus the Devourer in Wailing Caverns, then right-click it to start the quest.",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [],
     "personEvidence": [],
     "sourceDetails": [],
-    "pickupInside": true
+    "pickupInside": true,
+    "preparationNote": "Defeat Lady Anacondra, Lord Cobrahn, Lord Pythas and Lord Serpentis. Return to the Disciple of Naralex near the instance entrance and escort him. Protect him during the ritual, then defeat Mutanus and loot the shard.",
+    "locationSource": "https://www.warcraftforever.wiki/wiki/Wailing_Caverns",
+    "locationEvidence": "Drop and event directions; event mechanics are Classic reference, not live-verified.",
+    "fieldChecked": "2026-11-07",
+    "checklistAlternatives": [
+      6981
+    ]
   },
   {
     "id": 6981,
@@ -1946,7 +1953,7 @@
       "Turned in to: Creature #8418"
     ],
     "chain": [],
-    "pickup": "Glowing Shard variant; check the current quest offered by the item.",
+    "pickup": "Loot the Glowing Shard from Mutanus the Devourer in Wailing Caverns, then right-click it to start the quest.",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
     "prereqs": [],
     "personEvidence": [
@@ -1958,6 +1965,14 @@
     ],
     "sourceDetails": [
       "Source: the WFT Beta Log addon, 23 October 2026"
+    ],
+    "pickupInside": true,
+    "preparationNote": "Defeat Lady Anacondra, Lord Cobrahn, Lord Pythas and Lord Serpentis. Return to the Disciple of Naralex near the instance entrance and escort him. Protect him during the ritual, then defeat Mutanus and loot the shard.",
+    "locationSource": "https://www.warcraftforever.wiki/wiki/Wailing_Caverns",
+    "locationEvidence": "Drop and event directions; event mechanics are Classic reference, not live-verified.",
+    "fieldChecked": "2026-11-07",
+    "checklistAlternatives": [
+      3366
     ]
   },
   {

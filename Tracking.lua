@@ -37,6 +37,13 @@ function A.NeedsPickup(q)
 end
 -- Same-name sequential stages share one checklist slot.
 function A.ChecklistVisible(q)
+ -- Suppress an unused variant only when live progress identifies its counterpart.
+ -- Never infer completion, or hide a quest that is itself accepted/completed.
+ if not A.log[q.id] and A.Completed(q.id)~=true then
+  for _,other in ipairs(q.checklistAlternatives or {}) do
+   if A.log[other] or A.Completed(other)==true then return false end
+  end
+ end
  if q.checklistPrevious and not A.log[q.id] and A.Completed(q.id)~=true and A.Completed(q.checklistPrevious)~=true then return false end
  for _,nextQuest in ipairs(A.quests) do
   if nextQuest.checklistPrevious==q.id and (A.Completed(q.id)==true or A.log[nextQuest.id] or A.Completed(nextQuest.id)==true) then return false end

@@ -257,6 +257,9 @@ local function details()
  local contentTop=91+math.max(24,f.detailTitle:GetStringHeight())+10
  f.detailScroll:ClearAllPoints(); f.detailScroll:SetPoint("TOPLEFT",604,-contentTop); f.detailScroll:SetHeight(math.max(180,630-contentTop))
  local lines={"|cff684018"..(heading or "Where to pick it up").."|r",instructions}
+ local chainLabel,chainDetails
+ if A.ChainProgress then chainLabel,chainDetails=A.ChainProgress(q) end
+ if chainLabel then table.insert(lines,1,"|cff684018"..chainLabel.."|r\n") end
  local live=A.Safe(C_QuestLog and C_QuestLog.GetQuestObjectives,q.id)
  if current==q and A.log[q.id] and type(live)=="table" and #live>0 then
   table.insert(lines,"\n|cff684018Objectives|r")
@@ -274,6 +277,7 @@ local function details()
   for _,c in ipairs(q.chain or {}) do table.insert(lines,c.role..": "..c.name..(c.id and (" ("..c.id..")") or " [ID unavailable]")) end
  end
  if current==q and A.log[q.id] and q.routeNote then table.insert(lines,"\n|cff684018Quest directions|r\n"..q.routeNote) end
+ if chainDetails then table.insert(lines,"\n|cff684018Quest chain|r\n"..chainDetails) end
  if q.repeatable then table.insert(lines,"Repeatable; excluded from the one-time completion total.") end
  if #(q.rewards or {})>0 then table.insert(lines,"\n|cff684018Rewards|r") end
  f.detailText:SetText(A.DisplayText(table.concat(lines,"\n")))
@@ -363,7 +367,7 @@ function A.Refresh()
   local statusLabel,statusIcon,statusTip=A.QuestRowStatus(q)
   r.statusTip=statusTip
   r.title:SetText(q.name); r.status:SetText(statusLabel); r.status:SetTextColor(unpack(colors[s]))
-  r.meta:SetText(not A.NeedsPickup(q) and ((s=="done" and "Quest completed") or (q.id==1198 and "Find Argent Guard Thaelrid inside Blackfathom Deeps") or "See quest log for your next destination") or (q.pickupInside and ("Get inside "..q.dungeons[1]) or (q.pickup or "Pickup location not recorded")))
+  r.meta:SetText(not A.NeedsPickup(q) and ((s=="done" and "Quest completed") or (q.id==1198 and "Find Argent Guard Thaelrid inside Blackfathom Deeps") or "See quest log for your next destination") or (q.pickup or (q.pickupInside and ("Get inside "..q.dungeons[1]) or "Pickup location not recorded")))
   if A.WalkStep and A.NeedsPickup(q) then
    local step,phase=A.WalkStep(q)
    if step.id~=q.id then r.meta:SetText(step.pickup or "Open the walkthrough for this step.") end
@@ -442,7 +446,7 @@ function A.CreateWindow()
  if A.db.position then local p=A.db.position; f:ClearAllPoints(); f:SetPoint(p[1],UIParent,p[2],p[3],p[4]) end
  tinsert(UISpecialFrames,"DungeonGuideForeverWindow")
  local crest=f:CreateTexture(nil,"ARTWORK")
- crest:SetSize(40,40); crest:SetPoint("TOPLEFT",23,-20); crest:SetTexture(A.dungeonArtwork["The Hall of Thanes"])
+ crest:SetSize(40,40); crest:SetPoint("TOPLEFT",23,-20); crest:SetTexture("Interface\\Icons\\INV_Misc_Map_01")
  local crestBorder=f:CreateTexture(nil,"OVERLAY")
  crestBorder:SetSize(52,52); crestBorder:SetPoint("CENTER",crest,"CENTER"); crestBorder:SetTexture("Interface\\Buttons\\UI-Quickslot2")
  local title=text(f,21,75,-27,350); title:SetText("Dungeon Questie"); title:SetTextColor(1,0.82,0.35); title:SetShadowOffset(1,-1)

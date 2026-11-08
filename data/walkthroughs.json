@@ -1369,8 +1369,9 @@
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/the-glowing-shard-3366/",
     "unverifiedChain": true,
-    "pickup": "Glowing Shard dropped by Mutanus in Wailing Caverns.",
+    "pickup": "Loot the Glowing Shard from Mutanus the Devourer in Wailing Caverns, then right-click it to start the quest.",
     "pickupInside": true,
+    "preparationNote": "Defeat Lady Anacondra, Lord Cobrahn, Lord Pythas and Lord Serpentis. Return to the Disciple of Naralex near the instance entrance and escort him. Protect him during the ritual, then defeat Mutanus and loot the shard.",
     "minLevel": 15,
     "objectives": [
       "Glowing Shard"
@@ -1383,7 +1384,7 @@
     "minLevel": 15,
     "raceMask": 255,
     "classMask": 0,
-    "pickup": "Glowing Shard variant; check the current quest offered by the item.",
+    "pickup": "Loot the Glowing Shard from Mutanus the Devourer in Wailing Caverns, then right-click it to start the quest.",
     "turnin": "Falla Sagewind - The Barrens",
     "all": [],
     "any": [],
@@ -1394,6 +1395,8 @@
       "Glowing Shard"
     ],
     "exclusive": [],
+    "pickupInside": true,
+    "preparationNote": "Defeat Lady Anacondra, Lord Cobrahn, Lord Pythas and Lord Serpentis. Return to the Disciple of Naralex near the instance entrance and escort him. Protect him during the ritual, then defeat Mutanus and loot the shard.",
     "checked": "2026-11-07",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
   },

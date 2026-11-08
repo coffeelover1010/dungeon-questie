@@ -1,3 +1,11 @@
+# Dungeon Questie 0.1.7
+
+- Improve walkthrough progression through prerequisite quests and completed steps.
+- Correct both Glowing Shard entries with Mutanus, the Fanglord/Disciple event and item-start directions.
+- Show recorded pickup directions in dungeon quest rows.
+
+Stable release for WoW Forever. Offline tracking, walkthrough, catalogue and packaging checks passed. Community and Classic-reference data retain their source labels; live quest offers and rendering are not established by these checks.
+
 ## 0.1.6 — 7 November 2026
 
 Reviewed against QuestieDB 1.0.11 and fresh quest-cache pages. Resolved 52 faction eligibility gaps, added three Drowned City quests, named Magus Olvek, refreshed pickup coordinates, and replaced blanket confidence labels with source details. Catalogue: 266 quests in 25 populated groups. See RESEARCH-2026-11-07.md for scope and remaining gaps.

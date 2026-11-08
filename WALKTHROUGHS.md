@@ -36,3 +36,7 @@ The detail panel distinguishes accepting, completing, and turning in a prerequis
 An amber warning icon beside the row title and detail header replaces repeated uncertainty paragraphs. Hover for the reason: incomplete requirements, eligibility, reference data or approximate pins. Directions stay readable; unresolved steps retain their readiness gates. Source records keep their full evidence and historical notes.
 
 The follow-up October 9 review resolves Highland Hides to Young Crocolisk Skins (484), based on a firsthand Wowhead report corroborated by Icy Veins. The prerequisite's current quest page specifies six skins. See data/confidence-review-2026-10-09.json. Client rendering and offered-quest behavior have not been observed locally.
+
+## Chain progress
+
+Quest details show **Step X of Y** and a numbered route with completed, in-log, ready-to-turn-in and uncollected states. The current step is marked with `>`. Required parallel prerequisites count once each; alternative prerequisites count only the selected route. Unambiguous recorded follow-ups are included, including return trips after the selected dungeon quest. Multiple possible follow-ups stop the count at the known route. Incomplete records are labelled **known route**; the count does not claim the full server chain is known. Single-step quests have no chain counter. Offline Lua/UI checks pass; live layout remains to be checked.

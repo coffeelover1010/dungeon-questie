@@ -74,6 +74,83 @@ function A.WalkStep(q)
  if phase=="pickup" and (n.pickupInside or (n.id==q.id and q.pickupInside)) then phase="inside" end
  return n,phase,note
 end
+-- Build the recorded route, keeping AND prerequisites and one OR branch.
+-- Extend past the selected dungeon quest only along an unambiguous follow-up.
+function A.ChainProgress(q)
+ local function record(id) return nodes[id] or A.byID[id] end
+ local partial,branched=false,false
+ local function alternative(n)
+  local choices=n.any or {}
+  if #choices==0 then return end
+  branched=true
+  for _,id in ipairs(choices) do if A.Completed(id)==true then return id end end
+  for _,id in ipairs(choices) do if A.log[id] then return id end end
+  for _,id in ipairs(choices) do
+   local _,phase=resolve(id,{})
+   if phase~="blocked" and phase~="check" then return id end
+  end
+  return choices[#choices]
+ end
+ local function dependencies(n)
+  local ids={}
+  for _,id in ipairs(n.all or n.prereqs or {}) do ids[#ids+1]=id end
+  local choice=alternative(n); if choice then ids[#ids+1]=choice end
+  return ids
+ end
+ local endpoint=q.id; local extended={}
+ local _,class=UnitClass("player"); local _,race=UnitRace("player")
+ local faction=UnitFactionGroup("player")
+ while not extended[endpoint] do
+  extended[endpoint]=true
+  local successors={}
+  for id,n in pairs(nodes) do
+   -- Exclude other characters' branches, but not future level requirements.
+   local eligible=contains(n.classMask,classBits[class]) and contains(n.raceMask,raceBits[race])
+    and (not n.class or n.class==class) and (not n.faction or n.faction==faction)
+   if eligible then
+    local linked=false
+    for _,prior in ipairs(n.all or n.prereqs or {}) do if prior==endpoint then linked=true end end
+    for _,prior in ipairs(n.any or {}) do
+     if prior==endpoint and alternative(n)==endpoint then linked=true end
+    end
+    if linked then successors[#successors+1]=id end
+   end
+  end
+  if #successors~=1 then
+   if #successors>1 then partial=true end
+   break
+  end
+  endpoint=successors[1]
+ end
+ local route,seen,path={},{},{}
+ local function visit(id)
+  if path[id] then partial=true; return end
+  if seen[id] then return end
+  local n=record(id)
+  if not n then partial=true; return end
+  if n.unverifiedChain or n.requirementsNote then partial=true end
+  path[id]=true
+  for _,prior in ipairs(dependencies(n)) do visit(prior) end
+  path[id]=nil; seen[id]=true; route[#route+1]=n
+ end
+ visit(endpoint)
+ if #route<2 then return end
+ local current=A.WalkStep(q)
+ local index
+ for i,n in ipairs(route) do if n.id==current.id then index=i end end
+ if not index then return end
+ local label="Step "..index.." of "..#route
+ if partial then label=label.." (known route)" elseif branched then label=label.." (selected route)" end
+ local lines={}
+ for i,n in ipairs(route) do
+  local state=A.Completed(n.id)==true and "Completed" or
+   (A.log[n.id] and (A.log[n.id].complete and "Ready to turn in" or "In quest log") or "Not collected")
+  lines[#lines+1]=(i==index and "> " or "")..i..". "..n.name.." — "..state
+ end
+ if partial then lines[#lines+1]="Only recorded steps are counted; further or branching steps may exist." end
+ return label,table.concat(lines,"\n"),index,#route
+end
+
 function A.WalkInstructions(q)
  if A.RunReadiness and A.NeedsPickup(q) then
   local ready,reason=A.RunReadiness(q)
