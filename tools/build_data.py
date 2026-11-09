@@ -135,7 +135,7 @@ names=order+gaps
 populated={d for q in qs for d in q['dungeons']}
 notes_path=ROOT/'data/dungeon-notes.json'
 notes=json.loads(notes_path.read_text(encoding='utf-8')) if notes_path.exists() else {}
-dungeons=[dict(name=n,note=notes.get(n,'Beta-reported records plus labelled reference additions. Coverage is incomplete; access is not implied by quest level.' if n in populated else 'No curated Forever quest records in this version. This is a coverage gap, not a claim that the dungeon has no quests.')) for n in names]
+dungeons=[dict(name=n,note=notes.get(n,'Select a quest from the list to see where to pick it up, its requirements and rewards.' if n in populated else 'No curated Forever quest records in this version. This is a coverage gap, not a claim that the dungeon has no quests.')) for n in names]
 def lua(v):
     if v is None:return 'nil'
     if v is True:return 'true'

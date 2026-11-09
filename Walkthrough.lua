@@ -1,11 +1,11 @@
 local _, A = ...
 local nodes=A.walkthroughs or {}
--- Keep curated Forever locations; fill gaps with labelled Classic reference pins.
+-- Keep curated Forever locations; fill gaps from the walkthrough records.
 for _,q in ipairs(A.quests) do
  local n=nodes[q.id]
  if not q.pin and not q.pickupInside and n and n.pin then
   q.pin=n.pin
-  q.pickup=n.pickup.." (Classic reference pin)"
+  q.pickup=n.pickup
  end
 end
 local classBits={WARRIOR=1,PALADIN=2,HUNTER=4,ROGUE=8,PRIEST=16,SHAMAN=64,MAGE=128,WARLOCK=256,DRUID=1024}
@@ -19,14 +19,40 @@ function A.WalkRestriction(n)
  if n.class and n.class~=class then return n.class.." only." end
  if n.minLevel and UnitLevel("player")<n.minLevel then return "Requires level "..n.minLevel.."." end
 end
+-- Reference successors help detect progress beyond the direct destination too.
+local successors={}
+for id,n in pairs(nodes) do
+ for _,field in ipairs({"all","any"}) do
+  for _,prior in ipairs(n[field] or {}) do
+   successors[prior]=successors[prior] or {}; table.insert(successors[prior],id)
+  end
+ end
+end
+local function progressed(id,seen)
+ if seen[id] then return end; seen[id]=true
+ if A.log[id] or A.Completed(id)==true then return id end
+ for _,nextID in ipairs(successors[id] or {}) do
+  local found=progressed(nextID,seen); if found then return found end
+ end
+ local n=nodes[id] or A.byID[id]
+ if n and n.breadcrumbFor then return progressed(n.breadcrumbFor,seen) end
+end
+-- A breadcrumb is optional, never a required predecessor. Live acceptance wins.
+function A.BreadcrumbSuccessor(id)
+ local n=nodes[id] or A.byID[id]
+ if n and n.breadcrumbFor then return progressed(n.breadcrumbFor,{[id]=true}) end
+end
 local function resolve(id,path)
  if A.Completed(id)==true then return nil end
  local n=nodes[id] or A.byID[id]
  if not n then return {id=id,name="Quest "..id},"check","This prerequisite has no walkthrough record." end
  if A.log[id] then return n,A.log[id].complete and "ready" or "active" end
+ if A.BreadcrumbSuccessor(id) and A.Availability(id)~=true then return nil end
+ if A.offers[id]==true then return n,"pickup" end
  if path[id] then return n,"check","Conflicting chain links; check the source." end
  local restriction=A.WalkRestriction(n)
- if restriction then return n,"blocked",restriction end
+ local levelBlocked=n.minLevel and UnitLevel("player")<n.minLevel and restriction=="Requires level "..n.minLevel.."."
+ if restriction and not levelBlocked then return n,"blocked",restriction end
  for _,other in ipairs(n.exclusive or {}) do
   if A.Completed(other)==true then return nil end
   if A.log[other] then
@@ -54,14 +80,21 @@ local function resolve(id,path)
   if not fulfilled then path[id]=nil; return fallback,fp,fn end
  end
  path[id]=nil
+ if levelBlocked then return n,"blocked",restriction end
  if n.requirementsNote then return n,"check",n.requirementsNote end
  if n.unverifiedChain then return n,"check","Prerequisite details are incomplete. See the quest source for preparation." end
+ if A.Availability(id)==false then return n,"unavailable","Not offered by the current NPC." end
+ if A.Availability(id)~=true then return n,"check","Availability unconfirmed. The client has not reported an offer for this quest; guide level and prerequisites alone do not prove it is collectible." end
  return n,"pickup"
 end
 function A.WalkStep(q)
  if A.Completed(q.id)==true then return q,"done" end
- if A.log[q.id] then return q,"packed" end
+ if A.log[q.id] then return q,A.log[q.id].complete and "ready" or "packed" end
+ if A.offers[q.id]==true then return q,q.pickupInside and "inside" or "pickup" end
+ local successor=A.BreadcrumbSuccessor(q.id)
+ if successor and A.Availability(q.id)~=true then return q,"skipped","Optional breadcrumb skipped: a later quest is already collected or completed. This is not a quest completion. The breadcrumb link is reference data; a live offer takes precedence." end
  if A.Restriction(q) then return q,"blocked",A.Restriction(q) end
+ if not nodes[q.id] and q.minLevel and UnitLevel("player")<q.minLevel then return q,"blocked","Requires level "..q.minLevel.."." end
  local root=nodes[q.id]
  if root then
   for _,other in ipairs(root.exclusive or {}) do
@@ -144,7 +177,7 @@ function A.ChainProgress(q)
  local lines={}
  for i,n in ipairs(route) do
   local state=A.Completed(n.id)==true and "Completed" or
-   (A.log[n.id] and (A.log[n.id].complete and "Ready to turn in" or "In quest log") or "Not collected")
+   (A.log[n.id] and (A.log[n.id].complete and "Ready to turn in" or "In quest log") or (A.BreadcrumbSuccessor(n.id) and "Skipped breadcrumb" or "Not collected"))
   lines[#lines+1]=(i==index and "> " or "")..i..". "..n.name.." — "..state
  end
  if partial then lines[#lines+1]="Only recorded steps are counted; further or branching steps may exist." end
@@ -168,11 +201,11 @@ function A.WalkInstructions(q)
  local label=(phase=="pickup" or phase=="inside") and "Pick up: " or ((phase=="active" or phase=="ready") and "In quest log: " or "Quest: ")
  local lines={label..n.name}
  if n.id~=q.id then table.insert(lines,"Prerequisite for: "..q.name) end
- if note and phase~="check" then table.insert(lines,note) end
+ if note then table.insert(lines,note) end
  if n.preparationNote and (phase=="pickup" or phase=="inside") then table.insert(lines,n.preparationNote) end
  if n.routeNote and (phase=="active" or phase=="ready") then table.insert(lines,n.routeNote) end
  local target
- if phase=="pickup" or phase=="check" then
+ if phase=="pickup" then
   table.insert(lines,"From: "..(n.pickup or (n.id==q.id and q.pickup) or "Location not recorded."))
   local known=A.byID[n.id]
   if phase=="pickup" and known and known.pin then target=known end
@@ -183,13 +216,13 @@ function A.WalkInstructions(q)
   if type(live)=="table" and #live>0 then
    for _,o in ipairs(live) do table.insert(lines,(o.finished and "[x] " or "[ ] ")..(o.text or "Objective")) end
   else for _,o in ipairs(n.objectives or {}) do table.insert(lines,o) end end
-  table.insert(lines,"Turn in to: "..(n.turnin or "See your quest log."))
+  table.insert(lines,"Turn in to: "..(n.turnin or (nodes[n.id] and nodes[n.id].turnin) or "See your quest log."))
  elseif phase=="ready" then
-  table.insert(lines,"Turn in to: "..(n.turnin or "See your quest log."))
+  table.insert(lines,"Turn in to: "..(n.turnin or (nodes[n.id] and nodes[n.id].turnin) or "See your quest log."))
  elseif phase=="inside" then
   table.insert(lines,"Collect this during the dungeon run: "..(n.pickup or (n.id==q.id and q.pickup) or "See the quest source."))
  end
  for i,line in ipairs(lines) do lines[i]="- "..line end
- local headings={pickup="Accept quest",active="Complete prerequisite",ready="Turn in prerequisite",inside="Accept inside the dungeon",blocked="Requirements",check="Quest details"}
- return table.concat(lines,"\n"),target,headings[phase] or "Next step",n,phase
+ local headings={skipped="Skipped breadcrumb",unavailable="Unavailable",pickup="Accept quest",active="Complete prerequisite",ready="Turn in prerequisite",inside="Accept inside the dungeon",blocked="Requirements",check="Quest details"}
+ return table.concat(lines,"\n"),target,(phase=="ready" and n.id==q.id and "Turn in quest" or headings[phase]) or "Next step",n,phase
 end

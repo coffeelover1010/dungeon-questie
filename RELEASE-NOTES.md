@@ -1,3 +1,14 @@
+# Dungeon Questie 0.1.8
+
+- Show ready counts and green ticks for confirmed quest offers and ready-to-turn-in steps, including prerequisites.
+- Distinguish active quests, unknown availability, unavailable offers and skipped optional breadcrumbs.
+- Add a manual target button for the current step's recorded quest giver or turn-in NPC, with combat guards.
+- Prevent pickup navigation from pointing at a quest that is no longer the current pickup step.
+- Simplify the window header, use Blizzard's dungeon minimap icon, and fix dungeon artwork layering.
+- Refresh the README with a current in-game screenshot.
+
+Stable release for WoW Forever. Offline Lua, tracking, walkthrough, data reproducibility, group controls and packaging checks passed. The supplied screenshot confirms the updated header and dungeon artwork in game; quest offers, targeting and combat behavior are covered by mocks and still need live verification.
+
 # Dungeon Questie 0.1.7
 
 - Improve walkthrough progression through prerequisite quests and completed steps.

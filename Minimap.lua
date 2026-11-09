@@ -12,7 +12,7 @@ events:SetScript("OnEvent",function(self)
  icons=LibStub("LibDBIcon-1.0")
  local broker=LibStub("LibDataBroker-1.1")
  local launcher=broker:GetDataObjectByName(name) or broker:NewDataObject(name,{
-  type="launcher",text="Dungeon Questie",icon="Interface\\Icons\\INV_Misc_Map_01",
+  type="launcher",text="Dungeon Questie",icon="Interface\\LFGFrame\\LFGIcon-Dungeon",
   OnClick=function() A.Toggle() end,
   OnTooltipShow=function(t)
    t:AddLine("Dungeon Questie",1,0.82,0.4)

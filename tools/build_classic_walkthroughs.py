@@ -66,6 +66,9 @@ def visit(i):
     if r:
         all_of,any_of,complex_case=prerequisites(r)
         n=dict(id=i,name=r['Title'],minLevel=r['MinLevel'],raceMask=r['RequiredRaces'],classMask=r['RequiredClasses'],pickup=people(starters[i]),turnin=people(finishers[i]),all=all_of,any=any_of,source=f'https://www.wowhead.com/classic/quest={i}',dataSource=provenance['source'],evidence='Classic reference',objectives=[])
+        n['pickupNPCs']=[entity(k,v) for k,v in sorted(starters[i]) if k=='npc']
+        n['turninNPCs']=[entity(k,v) for k,v in sorted(finishers[i]) if k=='npc']
+        if r.get('BreadcrumbForQuestId'): n['breadcrumbFor']=r['BreadcrumbForQuestId']
         group=r['ExclusiveGroup']; n['exclusive']=sorted(groups[group]-{i}) if group>0 else []
         pins=[p for giver in starters[i] for p in spawn_pins[giver]]
         if pins:n['pin']=sorted(pins,key=lambda p:(p['map'],p['title'],p['x'],p['y']))[0]
@@ -92,7 +95,7 @@ def visit(i):
         n.update(o)
         if o.get('evidence'):n.pop('referenceDetails',None)
     nodes[str(i)]=n
-    for prior in n.get('all',[])+n.get('any',[]):
+    for prior in n.get('all',[])+n.get('any',[])+([n['breadcrumbFor']] if n.get('breadcrumbFor') else []):
         if prior>0:visit(prior)
 for q in catalogue:visit(q['id'])
 def to_lua(v):

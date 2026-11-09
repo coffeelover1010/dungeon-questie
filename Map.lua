@@ -23,6 +23,10 @@ function A.ClearWaypoint()
  A.waypoint=nil
 end
 function A.Navigate(q)
+ if A.WalkStep then
+  local step,phase=A.WalkStep(q)
+  if step.id~=q.id or (phase~="pickup" and phase~="inside") then A.Print("No confirmed pickup action for this quest. See its current step."); return end
+ end
  if not A.NeedsPickup(q) then A.Print("You already have or completed "..q.name..". Open its quest log for the next destination."); return end
  local p=q.pin
  if not p then A.Print("No pickup pin for "..q.name..". See its pickup directions."); return end

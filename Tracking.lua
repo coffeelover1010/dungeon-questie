@@ -11,6 +11,29 @@ function A.Completed(id)
  if A.db and A.db.confirmed[id] then return true end
  return A.Safe(C_QuestLog and C_QuestLog.IsQuestFlaggedCompleted or IsQuestFlaggedCompleted,id)
 end
+-- Offers are session-local evidence, never inferred from level or an empty log.
+A.offers={}
+function A.Availability(id)
+ if A.offers[id]~=nil then return A.offers[id] end
+ return nil
+end
+function A.ReadOffers()
+ A.offers={}
+ local available=A.Safe(C_GossipInfo and C_GossipInfo.GetAvailableQuests)
+ if type(available)=="table" then
+  local npc=A.Safe(UnitName,"npc")
+  if npc then
+   for id,n in pairs(A.walkthroughs or {}) do
+    for _,name in ipairs(n.pickupNPCs or {}) do if name==npc then A.offers[id]=false end end
+   end
+  end
+  for _,offer in ipairs(available) do
+   if type(offer.questID)=="number" then
+    A.offers[offer.questID]=true
+   end
+  end
+ end
+end
 function A.Restriction(q)
  local _, class = UnitClass("player")
  local _, race = UnitRace("player")
@@ -69,9 +92,23 @@ function A.RunReadiness(q)
  elseif q.pickupInside then return true,"Pick up inside the dungeon." end
  return false
 end
+function A.ActionReadiness(q)
+ if not A.WalkStep then return false end
+ local n,phase=A.WalkStep(q)
+ return phase=="ready" or phase=="pickup" or phase=="inside",n,phase
+end
 function A.Preparation(q)
+ if A.WalkStep then
+  local n,phase=A.WalkStep(q)
+  if phase=="skipped" then return "skipped","SKIPPED BREADCRUMB",8 end
+  if phase=="unavailable" then return "blocked","UNAVAILABLE",7 end
+  if phase=="active" then return "chain","IN YOUR LOG: "..n.name,2 end
+  if phase=="pickup" and n.id~=q.id then return "chain","PICK UP FIRST: "..n.name,2 end
+  if phase=="ready" then return "turnin","TURN IN FIRST: "..n.name,1 end
+  if phase=="check" then return "check","AVAILABILITY UNKNOWN",3 end
+ end
  if A.Completed(q.id)==true then return "done", "ALREADY COMPLETED", 6 end
- if A.log[q.id] then return "packed", "READY FOR DUNGEON", 4 end
+ if A.log[q.id] then return "packed", "IN YOUR LOG", 4 end
  if A.RunReadiness(q) then return "inside", "READY FOR DUNGEON", 5 end
  if A.Restriction(q) or (q.minLevel and UnitLevel("player")<q.minLevel) then return "blocked", "NOT ELIGIBLE NOW", 7 end
  if A.WalkStep then
@@ -95,11 +132,12 @@ function A.Preparation(q)
  return "pickup", "COLLECT BEFORE ENTERING", 1
 end
 function A.PreparationSummary(dungeon)
- local counts={pickup=0,chain=0,check=0,packed=0,inside=0,done=0,blocked=0,total=0,collected=0}
+ local counts={pickup=0,chain=0,check=0,packed=0,inside=0,done=0,blocked=0,total=0,collected=0,turnin=0,skipped=0,ready=0}
  for _,q in ipairs(A.quests) do
   if A.InDungeon(q,dungeon) and A.ChecklistVisible(q) and not A.Restriction(q) then
    local stage=A.Preparation(q); counts[stage]=counts[stage]+1
    counts.total=counts.total+1
+   if A.ActionReadiness(q) then counts.ready=counts.ready+1 end
    if A.RunReadiness(q) then counts.collected=counts.collected+1 end
   end
  end
@@ -142,7 +180,12 @@ end
 function A.Scan()
  if not A.db then return end
  A.ReadLog()
- if A.target and A.byID[A.target] and not A.NeedsPickup(A.byID[A.target]) then
+ local targetInvalid=false
+ if A.target and A.WalkStep then
+  local q=A.byID[A.target] or (A.walkthroughs or {})[A.target]
+  if q then local step,phase=A.WalkStep(q); targetInvalid=step.id~=q.id or (phase~="pickup" and phase~="inside") end
+ end
+ if A.target and (targetInvalid or (A.byID[A.target] and not A.NeedsPickup(A.byID[A.target]))) then
   if A.ClearWaypoint then A.ClearWaypoint() end
   A.target=nil
  end
@@ -156,6 +199,7 @@ end
 -- Progress counts quests available now, plus quests already accepted or completed.
 function A.CountsForProgress(q)
  if not A.ChecklistVisible(q) then return false end
+ if A.WalkStep and select(2,A.WalkStep(q))=="skipped" then return false end
  if A.Restriction(q) or q.repeatable then return false end
  if A.Completed(q.id)==true or A.log[q.id] then return true end
  if q.minLevel and UnitLevel("player")<q.minLevel then return false end
@@ -229,10 +273,14 @@ events:SetScript("OnEvent",function(_,event,arg)
   for _,d in ipairs(A.dungeons) do if d.name==A.db.dungeon then validDungeon=true; break end end
   if not validDungeon then A.db.dungeon=A.dungeons[1].name end
   A.db.filter=nil
-  for _,e in ipairs({"PLAYER_LOGIN","PLAYER_ENTERING_WORLD","QUEST_LOG_UPDATE","QUEST_ACCEPTED","QUEST_REMOVED","QUEST_TURNED_IN","PLAYER_LEVEL_UP","GET_ITEM_INFO_RECEIVED"}) do events:RegisterEvent(e) end
+  for _,e in ipairs({"PLAYER_LOGIN","PLAYER_ENTERING_WORLD","QUEST_LOG_UPDATE","QUEST_ACCEPTED","QUEST_REMOVED","QUEST_TURNED_IN","PLAYER_LEVEL_UP","GET_ITEM_INFO_RECEIVED","PLAYER_REGEN_ENABLED","GOSSIP_SHOW","GOSSIP_CLOSED","QUEST_DETAIL","QUEST_FINISHED"}) do events:RegisterEvent(e) end
   return
  end
  if not A.db then return end
+ if event=="GOSSIP_SHOW" then A.ReadOffers()
+ elseif event=="QUEST_DETAIL" then
+  local id=A.Safe(GetQuestID); if type(id)=="number" and id>0 then A.offers[id]=true end
+ elseif event=="GOSSIP_CLOSED" or event=="QUEST_FINISHED" or event=="QUEST_ACCEPTED" or event=="QUEST_REMOVED" or event=="QUEST_TURNED_IN" or event=="PLAYER_ENTERING_WORLD" then A.offers={} end
  if event=="QUEST_TURNED_IN" and type(arg)=="number" then A.db.confirmed[arg]=true end
  queue()
 end)
@@ -242,6 +290,7 @@ SlashCmdList.DUNGEONGUIDEFOREVER=function(msg)
  if not A.db then return end
  msg=(msg or ""):lower()
  if msg=="resetpos" then
+  if InCombatLockdown() then A.Print("Move the window after combat."); return end
   A.db.position=nil; if A.window then A.window:ClearAllPoints(); A.window:SetPoint("CENTER") end
  elseif msg:find("^minimap") then
   local shown=msg:find("show") or (not msg:find("hide") and A.db.minimap.hide)

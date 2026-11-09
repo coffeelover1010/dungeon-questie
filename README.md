@@ -17,11 +17,33 @@ Classic references and approximate pins. Empty lists do not mean every quest is 
 
 ## Screenshots
 
+![Blackfathom Deeps quest actions and walkthrough](release-media/blackfathom-quests.png)
+
 ![Deadmines quest checklist and prerequisite tracking](release-media/deadmines-quests.png)
 
 ![Gnomeregan quest checklist](release-media/gnomeregan-quests.png)
 
 ![Dungeon list and an empty catalogue](release-media/dungeon-list.png)
+
+## Quest actions and availability
+
+Green ticks and the ready count refer to the currently actionable step: a confirmed
+quest offer or a quest ready to turn in, including prerequisites. Accepted quests
+with unfinished objectives show Active. Completed quests remain separate.
+
+Uncollected quests show availability unknown until an NPC offer is reported by
+`C_GossipInfo.GetAvailableQuests` or `QUEST_DETAIL`. An absent offer at the recorded
+NPC shows unavailable for that interaction; closing it clears that evidence.
+Optional breadcrumbs show Skipped when their recorded follow-up has progressed;
+they are not marked completed. A live offer overrides a reference breadcrumb link.
+The bundled links and creature names include Classic reference data, not verified
+Forever server availability.
+
+The target icon uses the active step's structured NPC name and a secure
+`/targetexact` click (pickup NPC for collection, recipient for turn-in). Missing
+NPC records and non-actionable steps disable it. The window closes securely on
+combat entry; reopen it afterwards to rescan. Native targeting, range, rendering,
+and combat taint still require an in-game check after `/reload`.
 
 ## Install
 

@@ -61,6 +61,7 @@ def main():
         for r in result['quest_template']:
             if r['entry'] in selected:
                 if r['PrevQuestId']:selected.add(abs(r['PrevQuestId']))
+                if r['BreadcrumbForQuestId']:selected.add(r['BreadcrumbForQuestId'])
             if abs(r['NextQuestId']) in selected or r['BreadcrumbForQuestId'] in selected or r['ExclusiveGroup'] in group_ids:selected.add(r['entry'])
         if old==selected:break
     result['quest_template']=[r for r in result['quest_template'] if r['entry'] in selected]

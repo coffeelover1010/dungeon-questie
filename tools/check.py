@@ -98,6 +98,10 @@ UISpecialFrames={}; tinsert=table.insert
 function IsShiftKeyDown() return false end
 local methods={}
 for _,k in ipairs({"SetShadowOffset","SetAlpha","SetAtlas","SetTexCoord","SetNormalTexture","SetPushedTexture","SetHighlightTexture","SetDisabledTexture","SetFont","SetPoint","ClearAllPoints","SetJustifyH","SetJustifyV","SetTextColor","SetFrameStrata","SetClampedToScreen","SetBackdrop","SetBackdropColor","SetBackdropBorderColor","EnableMouse","SetMovable","RegisterForDrag","StartMoving","StopMovingOrSizing","SetAutoFocus","SetMaxLetters","ClearFocus","SetAllPoints","SetTexture","SetDesaturated","SetVertexColor","SetChecked","SetColorTexture","SetVerticalScroll","SetFocus","HighlightText","SetOwner","AddLine","SetHyperlink"}) do methods[k]=function() end end
+function RegisterStateDriver(f,state,condition) f.stateDriver=condition end
+function methods:SetAttribute(k,v) self.attributes=self.attributes or {}; self.attributes[k]=v end
+function methods:GetAttribute(k) return self.attributes and self.attributes[k] end
+function methods:RegisterForClicks(...) self.clicks={...} end
 function methods:SetSize(w,h) self.w=w; self.h=h end
 function methods:SetWidth(w) self.w=w end
 function methods:SetHeight(h) self.h=h end
@@ -120,7 +124,11 @@ function methods:GetFrameLevel() return 5 end
 function methods:SetFrameLevel() end
 function methods:RegisterEvent() end
 function methods:GetPoint() return "CENTER",UIParent,"CENTER",0,0 end
-function CreateFrame(_,_,p) return setmetatable({parent=p,shown=true},{__index=methods}) end
+function CreateFrame(_,_,p,template)
+ local f=setmetatable({parent=p,shown=true,template=template},{__index=methods})
+ if template and template:find("SecureActionButtonTemplate",1,true) then f.OnClick=function() end; f.secureClick=f.OnClick end
+ return f
+end
 function methods:CreateFontString() return CreateFrame() end
 function methods:CreateTexture() return CreateFrame() end
 for _,k in ipairs({"GetNormalTexture","GetPushedTexture","GetHighlightTexture","GetDisabledTexture"}) do methods[k]=function() return CreateFrame() end end
@@ -204,7 +212,7 @@ for _,q in ipairs(A.quests) do
 end
 A.window.search:SetText("no such quest 1234567890"); assert(A.window.detailTitle:GetText()=="Select a quest")
 A.window.search:SetText("")
-A.db.dungeon="Alcaz Prison"; A.Refresh(); assert(A.window.detailText:GetText():find("coverage gap"))
+A.db.dungeon="Alcaz Prison"; A.Refresh(); assert(A.window.detailText:GetText():find("does not have quests"))
 A.SelectQuest(A.byID[168]); A.RefreshPins()
 A.Toggle(); assert(not A.window:IsShown())
 ''')

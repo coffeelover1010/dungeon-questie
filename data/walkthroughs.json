@@ -16,6 +16,12 @@
       "Ragefire Trogg ×8",
       "Ragefire Shaman ×8"
     ],
+    "pickupNPCs": [
+      "Rahauro"
+    ],
+    "turninNPCs": [
+      "Rahauro"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1456,
@@ -47,6 +53,12 @@
       "Bazzalan",
       "Jergosh the Invoker"
     ],
+    "pickupNPCs": [
+      "Thrall"
+    ],
+    "turninNPCs": [
+      "Thrall"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -75,6 +87,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Thrall"
+    ],
+    "turninNPCs": [
+      "Thrall"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -100,6 +118,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Lieutenant's Insignia"
+    ],
+    "pickupNPCs": [
+      "Thrall"
+    ],
+    "turninNPCs": [
+      "Thrall"
     ],
     "exclusive": [],
     "pin": {
@@ -129,6 +153,12 @@
     "objectives": [
       "Grimtotem Satchel"
     ],
+    "pickupNPCs": [
+      "Maur Grimtotem"
+    ],
+    "turninNPCs": [
+      "Rahauro"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1456,
@@ -155,6 +185,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Rahauro"
+    ],
+    "turninNPCs": [
+      "Maur Grimtotem"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1456,
@@ -188,6 +224,12 @@
     "objectives": [
       "Taragaman the Hungerer's Heart"
     ],
+    "pickupNPCs": [
+      "Neeru Fireblade"
+    ],
+    "turninNPCs": [
+      "Neeru Fireblade"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -216,6 +258,12 @@
     "objectives": [
       "Spells of Shadow",
       "Incantations from the Nether"
+    ],
+    "pickupNPCs": [
+      "Varimathras"
+    ],
+    "turninNPCs": [
+      "Varimathras"
     ],
     "exclusive": [],
     "pin": {
@@ -527,6 +575,12 @@
     "objectives": [
       "Red Silk Bandana ×10"
     ],
+    "pickupNPCs": [
+      "Scout Riell"
+    ],
+    "turninNPCs": [
+      "Scout Riell"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1436,
@@ -555,6 +609,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "The Defias Traitor"
+    ],
+    "turninNPCs": [
+      "Gryan Stoutmantle"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1436,
@@ -582,6 +642,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 A Mysterious Message"
+    ],
+    "pickupNPCs": [
+      "Gryan Stoutmantle"
+    ],
+    "turninNPCs": [
+      "Gryan Stoutmantle"
     ],
     "exclusive": [],
     "pin": {
@@ -611,6 +677,12 @@
     "objectives": [
       "Collect 1 Shaw's Report"
     ],
+    "pickupNPCs": [
+      "Master Mathias Shaw"
+    ],
+    "turninNPCs": [
+      "Gryan Stoutmantle"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -638,6 +710,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Wiley's Note"
+    ],
+    "pickupNPCs": [
+      "Gryan Stoutmantle"
+    ],
+    "turninNPCs": [
+      "Master Mathias Shaw"
     ],
     "exclusive": [],
     "pin": {
@@ -667,6 +745,12 @@
     "objectives": [
       "Collect 1 Wiley's Note"
     ],
+    "pickupNPCs": [
+      "Wiley the Black"
+    ],
+    "turninNPCs": [
+      "Gryan Stoutmantle"
+    ],
     "exclusive": []
   },
   "65": {
@@ -683,6 +767,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Gryan Stoutmantle"
+    ],
+    "turninNPCs": [
+      "Wiley the Black"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1436,
@@ -904,6 +994,12 @@
     "objectives": [
       "Miners' Union Card ×4"
     ],
+    "pickupNPCs": [
+      "Wilder Thistlenettle"
+    ],
+    "turninNPCs": [
+      "Wilder Thistlenettle"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -932,6 +1028,12 @@
     "objectives": [
       "Thistlenettle's Badge"
     ],
+    "pickupNPCs": [
+      "Wilder Thistlenettle"
+    ],
+    "turninNPCs": [
+      "Wilder Thistlenettle"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -959,6 +1061,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Gnoam Sprecklesprocket"
+    ],
+    "pickupNPCs": [
+      "Shoni the Shilent"
+    ],
+    "turninNPCs": [
+      "Shoni the Shilent"
     ],
     "exclusive": [],
     "pin": {
@@ -990,6 +1098,12 @@
     "objectives": [
       "Head of VanCleef"
     ],
+    "pickupNPCs": [
+      "Gryan Stoutmantle"
+    ],
+    "turninNPCs": [
+      "Gryan Stoutmantle"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1436,
@@ -1018,6 +1132,10 @@
     "objectives": [
       "An Unsent Letter"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Baros Alexston"
+    ],
     "exclusive": [],
     "pickupInside": true,
     "faction": "Alliance",
@@ -1040,6 +1158,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Tonga Runetotem"
+    ],
+    "turninNPCs": [
+      "Arch Druid Hamuul Runetotem"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -1071,6 +1195,12 @@
     "objectives": [
       "Collect 8 Altered Snapjaw Shell"
     ],
+    "pickupNPCs": [
+      "Tonga Runetotem"
+    ],
+    "turninNPCs": [
+      "Tonga Runetotem"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -1099,6 +1229,12 @@
     "objectives": [
       "Use the required spell on Bubbling Fissure (1)"
     ],
+    "pickupNPCs": [
+      "Tonga Runetotem"
+    ],
+    "turninNPCs": [
+      "Tonga Runetotem"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -1123,6 +1259,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Tonga Runetotem"
+    ],
+    "turninNPCs": [
+      "Tonga Runetotem"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -1149,6 +1291,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Arch Druid Hamuul Runetotem"
+    ],
+    "turninNPCs": [
+      "Nara Wildmane"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1456,
@@ -1176,6 +1324,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Deviate Hide ×20"
+    ],
+    "pickupNPCs": [
+      "Nalpak"
+    ],
+    "turninNPCs": [
+      "Nalpak"
     ],
     "exclusive": [],
     "pin": {
@@ -1206,6 +1360,12 @@
     "objectives": [
       "Wailing Essence ×6"
     ],
+    "pickupNPCs": [
+      "Mebok Mizzyrix"
+    ],
+    "turninNPCs": [
+      "Mebok Mizzyrix"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -1233,6 +1393,12 @@
     "objectives": [
       "Collect 5 Intact Raptor Horn"
     ],
+    "pickupNPCs": [
+      "Mebok Mizzyrix"
+    ],
+    "turninNPCs": [
+      "Mebok Mizzyrix"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -1258,6 +1424,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Serpentbloom ×10"
+    ],
+    "pickupNPCs": [
+      "Apothecary Zamah"
+    ],
+    "turninNPCs": [
+      "Apothecary Zamah"
     ],
     "exclusive": [],
     "pin": {
@@ -1286,6 +1458,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "99-Year-Old Port"
+    ],
+    "pickupNPCs": [
+      "Crane Operator Bigglefuzz"
+    ],
+    "turninNPCs": [
+      "Crane Operator Bigglefuzz"
     ],
     "exclusive": [],
     "pin": {
@@ -1316,6 +1494,12 @@
       "Deviate Viper ×7",
       "Deviate Shambler ×7",
       "Deviate Dreadfang ×7"
+    ],
+    "pickupNPCs": [
+      "Ebru"
+    ],
+    "turninNPCs": [
+      "Ebru"
     ],
     "exclusive": [],
     "pin": {
@@ -1348,6 +1532,12 @@
       "Gem of Anacondra",
       "Gem of Pythas",
       "Gem of Serpentis"
+    ],
+    "pickupNPCs": [
+      "Nara Wildmane"
+    ],
+    "turninNPCs": [
+      "Nara Wildmane"
     ],
     "exclusive": [],
     "pin": {
@@ -1394,6 +1584,10 @@
     "objectives": [
       "Glowing Shard"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Falla Sagewind"
+    ],
     "exclusive": [],
     "pickupInside": true,
     "preparationNote": "Defeat Lady Anacondra, Lord Cobrahn, Lord Pythas and Lord Serpentis. Return to the Disciple of Naralex near the instance entrance and escort him. Protect him during the ritual, then defeat Mutanus and loot the shard.",
@@ -1414,6 +1608,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "High Executor Hadrec"
+    ],
+    "turninNPCs": [
+      "Deathstalker Vincent"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1421,
@@ -1443,6 +1643,12 @@
       "Soran'ruk Fragment ×3",
       "Large Soran'ruk Fragment"
     ],
+    "pickupNPCs": [
+      "Doan Karhan"
+    ],
+    "turninNPCs": [
+      "Doan Karhan"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -1470,6 +1676,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "The Book of Ur"
+    ],
+    "pickupNPCs": [
+      "Keeper Bel'dugur"
+    ],
+    "turninNPCs": [
+      "Keeper Bel'dugur"
     ],
     "exclusive": [],
     "pin": {
@@ -1499,6 +1711,12 @@
     "objectives": [
       "Head of Arugal"
     ],
+    "pickupNPCs": [
+      "Dalar Dawnweaver"
+    ],
+    "turninNPCs": [
+      "Dalar Dawnweaver"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1421,
@@ -1527,6 +1745,10 @@
     "objectives": [
       "Damp Note"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Je'neu Sancrea"
+    ],
     "exclusive": [],
     "faction": "Horde",
     "checked": "2026-11-07",
@@ -1549,6 +1771,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Sapphire of Aku'Mai ×20"
+    ],
+    "pickupNPCs": [
+      "Je'neu Sancrea"
+    ],
+    "turninNPCs": [
+      "Je'neu Sancrea"
     ],
     "exclusive": [],
     "pin": {
@@ -1576,6 +1804,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Tsunaman"
+    ],
+    "turninNPCs": [
+      "Je'neu Sancrea"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -1605,6 +1839,12 @@
     "objectives": [
       "Lorgalis Manuscript"
     ],
+    "pickupNPCs": [
+      "Gerrig Bonegrip"
+    ],
+    "turninNPCs": [
+      "Gerrig Bonegrip"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1455,
@@ -1631,6 +1871,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Dawnwatcher Shaedlass"
+    ],
+    "turninNPCs": [
+      "Argent Guard Thaelrid"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1457,
@@ -1659,6 +1905,12 @@
     "objectives": [
       "Corrupted Brain Stem ×8"
     ],
+    "pickupNPCs": [
+      "Gershala Nightwhisper"
+    ],
+    "turninNPCs": [
+      "Gershala Nightwhisper"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1439,
@@ -1686,6 +1938,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Twilight Pendant ×10"
+    ],
+    "pickupNPCs": [
+      "Argent Guard Manados"
+    ],
+    "turninNPCs": [
+      "Argent Guard Manados"
     ],
     "exclusive": [],
     "pin": {
@@ -1717,6 +1975,12 @@
     "objectives": [
       "Lorgus Jett"
     ],
+    "pickupNPCs": [
+      "Je'neu Sancrea"
+    ],
+    "turninNPCs": [
+      "Je'neu Sancrea"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1440,
@@ -1747,6 +2011,12 @@
     "objectives": [
       "Head of Kelris"
     ],
+    "pickupNPCs": [
+      "Argent Guard Thaelrid"
+    ],
+    "turninNPCs": [
+      "Dawnwatcher Selgorm"
+    ],
     "exclusive": [],
     "pickupInside": true,
     "faction": "Alliance",
@@ -1769,6 +2039,12 @@
     "objectives": [
       "Head of Kelris"
     ],
+    "pickupNPCs": [
+      "Argent Guard Thaelrid"
+    ],
+    "turninNPCs": [
+      "Bashana Runetotem"
+    ],
     "exclusive": [],
     "pickupInside": true,
     "faction": "Horde",
@@ -1790,6 +2066,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Head of Targorr"
+    ],
+    "pickupNPCs": [
+      "Guard Berton"
+    ],
+    "turninNPCs": [
+      "Guard Berton"
     ],
     "exclusive": [],
     "pin": {
@@ -1818,6 +2100,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Hand of Dextren Ward"
+    ],
+    "pickupNPCs": [
+      "Councilman Millstipe"
+    ],
+    "turninNPCs": [
+      "Councilman Millstipe"
     ],
     "exclusive": [],
     "pin": {
@@ -1850,6 +2138,12 @@
       "Defias Convict ×8",
       "Defias Insurgent ×8"
     ],
+    "pickupNPCs": [
+      "Warden Thelwater"
+    ],
+    "turninNPCs": [
+      "Warden Thelwater"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -1877,6 +2171,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Red Wool Bandana ×10"
+    ],
+    "pickupNPCs": [
+      "Nikova Raskol"
+    ],
+    "turninNPCs": [
+      "Nikova Raskol"
     ],
     "exclusive": [],
     "pin": {
@@ -1908,6 +2208,12 @@
     "objectives": [
       "Head of Bazil Thredd"
     ],
+    "pickupNPCs": [
+      "Warden Thelwater"
+    ],
+    "turninNPCs": [
+      "Warden Thelwater"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -1936,6 +2242,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Baros Alexston"
+    ],
+    "turninNPCs": [
+      "Warden Thelwater"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -1965,6 +2277,12 @@
       "Snufflenose Owner's Manual",
       "Snufflenose Command Stick"
     ],
+    "pickupNPCs": [
+      "Mebok Mizzyrix"
+    ],
+    "turninNPCs": [
+      "Mebok Mizzyrix"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -1990,6 +2308,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Willix the Importer"
+    ],
+    "turninNPCs": [
+      "Willix the Importer"
+    ],
     "exclusive": [],
     "pickupInside": true,
     "checked": "2026-11-07",
@@ -2010,6 +2334,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Techbot's Memory Core"
+    ],
+    "pickupNPCs": [
+      "Tinkmaster Overspark"
+    ],
+    "turninNPCs": [
+      "Tinkmaster Overspark"
     ],
     "exclusive": [],
     "pin": {
@@ -2037,6 +2367,13 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Brother Sarno"
+    ],
+    "turninNPCs": [
+      "Tinkmaster Overspark"
+    ],
+    "breadcrumbFor": 2922,
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -2068,6 +2405,12 @@
     "objectives": [
       "Full Leaden Collection Phial"
     ],
+    "pickupNPCs": [
+      "Ozzie Togglevolt"
+    ],
+    "turninNPCs": [
+      "Ozzie Togglevolt"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -2094,6 +2437,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Gnoarn"
+    ],
+    "turninNPCs": [
+      "Ozzie Togglevolt"
+    ],
     "exclusive": [],
     "faction": "Alliance",
     "checked": "2026-11-07",
@@ -2113,6 +2462,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Kernobee"
+    ],
+    "turninNPCs": [
+      "Scooty"
+    ],
     "exclusive": [],
     "pickupInside": true,
     "checked": "2026-11-07",
@@ -2133,6 +2488,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Robo-mechanical Guts ×24"
+    ],
+    "pickupNPCs": [
+      "Shoni the Shilent"
+    ],
+    "turninNPCs": [
+      "Shoni the Shilent"
     ],
     "exclusive": [],
     "pin": {
@@ -2160,6 +2521,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Sovik"
+    ],
+    "turninNPCs": [
+      "Scooty"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -2189,6 +2556,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Scooty"
+    ],
+    "turninNPCs": [
+      "Scooty"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1434,
@@ -2233,6 +2606,12 @@
     "objectives": [
       "Head of Deepfury"
     ],
+    "pickupNPCs": [
+      "Motley Garmason"
+    ],
+    "turninNPCs": [
+      "Motley Garmason"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1437,
@@ -2264,6 +2643,12 @@
       "Defeat Dark Iron Saboteur (5)",
       "Defeat Dark Iron Demolitionist (5)"
     ],
+    "pickupNPCs": [
+      "Motley Garmason"
+    ],
+    "turninNPCs": [
+      "Motley Garmason"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1437,
@@ -2289,6 +2674,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Essential Artificial ×12"
+    ],
+    "pickupNPCs": [
+      "Klockmort Spannerspan"
+    ],
+    "turninNPCs": [
+      "Klockmort Spannerspan"
     ],
     "exclusive": [],
     "pin": {
@@ -2318,6 +2709,12 @@
     "objectives": [
       "Prismatic Punch Card"
     ],
+    "pickupNPCs": [
+      "Master Mechanic Castpipe"
+    ],
+    "turninNPCs": [
+      "Master Mechanic Castpipe"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1455,
@@ -2345,6 +2742,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Mekgineer Thermaplugg"
+    ],
+    "pickupNPCs": [
+      "High Tinker Mekkatorque"
+    ],
+    "turninNPCs": [
+      "High Tinker Mekkatorque"
     ],
     "exclusive": [],
     "pin": {
@@ -2377,6 +2780,12 @@
       "High Potency Radioactive Fallout",
       "Heavy Leaden Collection Phial"
     ],
+    "pickupNPCs": [
+      "Ozzie Togglevolt"
+    ],
+    "turninNPCs": [
+      "Ozzie Togglevolt"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -2406,6 +2815,12 @@
       "Rig Blueprints",
       "Thermaplugg's Safe Combination"
     ],
+    "pickupNPCs": [
+      "Nogg"
+    ],
+    "turninNPCs": [
+      "Nogg"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -2434,6 +2849,8 @@
     "objectives": [
       "Bring 1 Grime-Encrusted Object and 3 silver to the Sparklematic 5200."
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [],
     "exclusive": [],
     "pickupInside": true,
     "preparationNote": "Bring 1 Grime-Encrusted Object and 3 silver. Use the machine in the Clean Zone.",
@@ -2458,6 +2875,8 @@
     "objectives": [
       "Grime-Encrusted Ring"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [],
     "exclusive": [],
     "pickupInside": true,
     "checked": "2026-11-07",
@@ -2478,6 +2897,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Razorflank's Heart"
+    ],
+    "pickupNPCs": [
+      "Auld Stonespire"
+    ],
+    "turninNPCs": [
+      "Auld Stonespire"
     ],
     "exclusive": [],
     "pin": {
@@ -2507,6 +2932,12 @@
     "objectives": [
       "Kraul Guano"
     ],
+    "pickupNPCs": [
+      "Master Apothecary Faranell"
+    ],
+    "turninNPCs": [
+      "Master Apothecary Faranell"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1458,
@@ -2535,6 +2966,10 @@
     "objectives": [
       "Collect 1 Small Scroll"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Varimathras"
+    ],
     "exclusive": []
   },
   "1101": {
@@ -2554,6 +2989,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Razorflank's Medallion"
+    ],
+    "pickupNPCs": [
+      "Falfindel Waywarder"
+    ],
+    "turninNPCs": [
+      "Falfindel Waywarder"
     ],
     "exclusive": [],
     "faction": "Alliance",
@@ -2576,6 +3017,10 @@
     "objectives": [
       "Collect 1 Lonebrow's Journal"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Falfindel Waywarder"
+    ],
     "exclusive": []
   },
   "1142": {
@@ -2593,6 +3038,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Treshala's Pendant"
+    ],
+    "pickupNPCs": [
+      "Heralath Fallowbrook"
+    ],
+    "turninNPCs": [
+      "Treshala Fallowbrook"
     ],
     "exclusive": [],
     "pickupInside": true,
@@ -2619,6 +3070,12 @@
       "Defeat Herod (1)",
       "Defeat Houndmaster Loksey (1)"
     ],
+    "pickupNPCs": [
+      "Varimathras"
+    ],
+    "turninNPCs": [
+      "Varimathras"
+    ],
     "exclusive": []
   },
   "1053": {
@@ -2642,6 +3099,12 @@
       "Defeat Herod (1)",
       "Defeat Houndmaster Loksey (1)"
     ],
+    "pickupNPCs": [
+      "Raleigh the Devout"
+    ],
+    "turninNPCs": [
+      "Raleigh the Devout"
+    ],
     "exclusive": []
   },
   "1052": {
@@ -2661,6 +3124,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Letter of Commendation"
+    ],
+    "pickupNPCs": [
+      "Brother Anton"
+    ],
+    "turninNPCs": [
+      "Raleigh the Devout"
     ],
     "exclusive": [],
     "pin": {
@@ -2688,6 +3157,12 @@
     "objectives": [
       "Defeat Undead Ravager (30)"
     ],
+    "pickupNPCs": [
+      "Brother Anton"
+    ],
+    "turninNPCs": [
+      "Brother Anton"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -2714,6 +3189,12 @@
     "objectives": [
       "Vorrel's Wedding Ring"
     ],
+    "pickupNPCs": [
+      "Vorrel Sengutz"
+    ],
+    "turninNPCs": [
+      "Monika Sengutz"
+    ],
     "exclusive": [],
     "pickupInside": true,
     "faction": "Horde",
@@ -2737,6 +3218,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Heart of Zeal ×20"
+    ],
+    "pickupNPCs": [
+      "Master Apothecary Faranell"
+    ],
+    "turninNPCs": [
+      "Master Apothecary Faranell"
     ],
     "exclusive": [],
     "pin": {
@@ -2766,6 +3253,12 @@
     "objectives": [
       "Compendium of the Fallen"
     ],
+    "pickupNPCs": [
+      "Sage Truthseeker"
+    ],
+    "turninNPCs": [
+      "Sage Truthseeker"
+    ],
     "exclusive": [],
     "faction": "Horde",
     "checked": "2026-11-07",
@@ -2789,6 +3282,12 @@
     "objectives": [
       "Beginnings of the Undead Threat"
     ],
+    "pickupNPCs": [
+      "Parqual Fintallas"
+    ],
+    "turninNPCs": [
+      "Parqual Fintallas"
+    ],
     "exclusive": [],
     "faction": "Horde",
     "checked": "2026-11-07",
@@ -2810,6 +3309,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Braug Dimspirit"
+    ],
+    "turninNPCs": [
+      "Parqual Fintallas"
+    ],
     "exclusive": []
   },
   "6627": {
@@ -2828,6 +3333,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Braug Dimspirit"
+    ],
+    "turninNPCs": [
+      "Braug Dimspirit"
+    ],
     "exclusive": []
   },
   "1154": {
@@ -2848,6 +3359,12 @@
     "objectives": [
       "Collect 1 Legacy of the Aspects"
     ],
+    "pickupNPCs": [
+      "Braug Dimspirit"
+    ],
+    "turninNPCs": [
+      "Braug Dimspirit"
+    ],
     "exclusive": []
   },
   "1152": {
@@ -2866,6 +3383,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Dorn Plainstalker"
+    ],
+    "turninNPCs": [
+      "Braug Dimspirit"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1441,
@@ -2893,6 +3416,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Fragments of Rok'Alim"
+    ],
+    "pickupNPCs": [
+      "Dorn Plainstalker"
+    ],
+    "turninNPCs": [
+      "Dorn Plainstalker"
     ],
     "exclusive": [],
     "pin": {
@@ -2922,6 +3451,12 @@
     "objectives": [
       "Collect 1 Grenka's Claw"
     ],
+    "pickupNPCs": [
+      "Dorn Plainstalker"
+    ],
+    "turninNPCs": [
+      "Dorn Plainstalker"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1441,
@@ -2946,6 +3481,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Dorn Plainstalker"
+    ],
+    "turninNPCs": [
+      "Dorn Plainstalker"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1441,
@@ -2971,6 +3512,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Mythology of the Titans"
+    ],
+    "pickupNPCs": [
+      "Librarian Mae Paledust"
+    ],
+    "turninNPCs": [
+      "Librarian Mae Paledust"
     ],
     "exclusive": [],
     "pin": {
@@ -3002,6 +3549,12 @@
     "objectives": [
       "Rituals of Power"
     ],
+    "pickupNPCs": [
+      "Magus Tirth"
+    ],
+    "turninNPCs": [
+      "Tabetha"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1441,
@@ -3030,6 +3583,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Magus Tirth"
+    ],
+    "turninNPCs": [
+      "Magus Tirth"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1441,
@@ -3056,6 +3615,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Tabetha"
+    ],
+    "turninNPCs": [
+      "Magus Tirth"
+    ],
     "exclusive": []
   },
   "1947": {
@@ -3072,6 +3637,13 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Jennea Cannon",
+      "Deino"
+    ],
+    "turninNPCs": [
+      "Tabetha"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -3103,6 +3675,12 @@
       "Collect 1 Jordan's Smithing Hammer",
       "Collect 1 Purified Kor Gem"
     ],
+    "pickupNPCs": [
+      "Jordan Stilwell"
+    ],
+    "turninNPCs": [
+      "Jordan Stilwell"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -3128,6 +3706,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Duthorian Rall"
+    ],
+    "turninNPCs": [
+      "Jordan Stilwell"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -3154,6 +3738,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Daphne Stilwell"
+    ],
+    "turninNPCs": [
+      "Duthorian Rall"
+    ],
     "exclusive": []
   },
   "1651": {
@@ -3172,6 +3762,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Daphne Stilwell"
+    ],
+    "turninNPCs": [
+      "Daphne Stilwell"
+    ],
     "exclusive": []
   },
   "1650": {
@@ -3190,6 +3786,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Duthorian Rall"
+    ],
+    "turninNPCs": [
+      "Daphne Stilwell"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -3214,6 +3816,10 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Duthorian Rall"
+    ],
     "exclusive": []
   },
   "6921": {
@@ -3231,6 +3837,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Fathom Core"
+    ],
+    "pickupNPCs": [
+      "Je'neu Sancrea"
+    ],
+    "turninNPCs": [
+      "Je'neu Sancrea"
     ],
     "exclusive": [],
     "pin": {
@@ -3260,6 +3872,10 @@
     "objectives": [
       "Strange Water Globe"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Je'neu Sancrea"
+    ],
     "exclusive": [],
     "faction": "Horde",
     "checked": "2026-11-07",
@@ -3281,6 +3897,12 @@
     "objectives": [
       "Collect 1 Skull of the Coldbringer"
     ],
+    "pickupNPCs": [
+      "Andrew Brownell"
+    ],
+    "turninNPCs": [
+      "Andrew Brownell"
+    ],
     "exclusive": []
   },
   "6521": {
@@ -3300,6 +3922,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Ambassador Malcin's Head"
+    ],
+    "pickupNPCs": [
+      "Varimathras"
+    ],
+    "turninNPCs": [
+      "Varimathras"
     ],
     "exclusive": [],
     "faction": "Horde",
@@ -3321,6 +3949,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Defeat Amnennar the Coldbringer (1)"
+    ],
+    "pickupNPCs": [
+      "Archbishop Benedictus"
+    ],
+    "turninNPCs": [
+      "Archbishop Benedictus"
     ],
     "exclusive": [],
     "pin": {
@@ -3350,6 +3984,12 @@
       "Razorfen Thornweaver ×8",
       "Death's Head Cultist ×8"
     ],
+    "pickupNPCs": [
+      "Myriam Moonsinger"
+    ],
+    "turninNPCs": [
+      "Myriam Moonsinger"
+    ],
     "exclusive": [],
     "checked": "2026-11-07",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
@@ -3369,6 +4009,12 @@
     "evidence": "Beta cache report",
     "objectives": [
       "Belnistrasz's Oathstone"
+    ],
+    "pickupNPCs": [
+      "Belnistrasz"
+    ],
+    "turninNPCs": [
+      "Belnistrasz"
     ],
     "exclusive": [],
     "pickupInside": true,
@@ -3391,6 +4037,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Belnistrasz"
+    ],
+    "turninNPCs": [
+      "Belnistrasz"
+    ],
     "exclusive": [],
     "pickupInside": true
   },
@@ -3409,6 +4061,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Garrett Family Treasure"
+    ],
+    "pickupNPCs": [
+      "Patrick Garrett"
+    ],
+    "turninNPCs": [
+      "Patrick Garrett"
     ],
     "exclusive": []
   },
@@ -3429,6 +4087,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 12 Magenta Fungus Cap"
+    ],
+    "pickupNPCs": [
+      "Jarkal Mossmeld"
+    ],
+    "turninNPCs": [
+      "Jarkal Mossmeld"
     ],
     "exclusive": [],
     "pin": {
@@ -3458,6 +4122,12 @@
       "Collect 10 Crag Coyote Fang",
       "Collect 5 Rock Elemental Shard"
     ],
+    "pickupNPCs": [
+      "Jarkal Mossmeld"
+    ],
+    "turninNPCs": [
+      "Jarkal Mossmeld"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -3483,6 +4153,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Shattered Necklace"
+    ],
+    "pickupNPCs": [
+      "Dran Droffers"
+    ],
+    "turninNPCs": [
+      "Dran Droffers"
     ],
     "exclusive": [],
     "pin": {
@@ -3510,6 +4186,12 @@
     "objectives": [
       "Collect 1 Krom Stoutarm's Treasure"
     ],
+    "pickupNPCs": [
+      "Krom Stoutarm"
+    ],
+    "turninNPCs": [
+      "Krom Stoutarm"
+    ],
     "exclusive": []
   },
   "2398": {
@@ -3526,6 +4208,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Prospector Stormpike"
+    ],
+    "turninNPCs": [
+      "Baelog"
+    ],
     "exclusive": []
   },
   "2240": {
@@ -3544,6 +4232,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Baelog"
+    ],
+    "turninNPCs": [
+      "Prospector Stormpike"
+    ],
     "exclusive": [],
     "pickupInside": true
   },
@@ -3564,6 +4258,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 12 Magenta Fungus Cap"
+    ],
+    "pickupNPCs": [
+      "Ghak Healtouch"
+    ],
+    "turninNPCs": [
+      "Ghak Healtouch"
     ],
     "exclusive": [],
     "pin": {
@@ -3593,6 +4293,12 @@
       "Collect 10 Crag Coyote Fang",
       "Collect 5 Rock Elemental Shard"
     ],
+    "pickupNPCs": [
+      "Ghak Healtouch"
+    ],
+    "turninNPCs": [
+      "Ghak Healtouch"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -3621,6 +4327,12 @@
     "objectives": [
       "Carved Stone Urn ×4"
     ],
+    "pickupNPCs": [
+      "Prospector Ironband"
+    ],
+    "turninNPCs": [
+      "Prospector Ironband"
+    ],
     "exclusive": [],
     "faction": "Alliance",
     "checked": "2026-11-07",
@@ -3645,6 +4357,10 @@
       "Defeat Murdaloc (1)",
       "Defeat Stonevault Bonesnapper (12)"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Prospector Ironband"
+    ],
     "exclusive": []
   },
   "738": {
@@ -3663,6 +4379,10 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Prospector Ironband"
+    ],
+    "turninNPCs": [],
     "exclusive": []
   },
   "707": {
@@ -3679,6 +4399,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Prospector Stormpike"
+    ],
+    "turninNPCs": [
+      "Prospector Ironband"
+    ],
     "exclusive": []
   },
   "1139": {
@@ -3698,6 +4424,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Tablet of Will"
+    ],
+    "pickupNPCs": [
+      "Advisor Belgrum"
+    ],
+    "turninNPCs": [
+      "Advisor Belgrum"
     ],
     "exclusive": []
   },
@@ -3719,6 +4451,12 @@
     "objectives": [
       "Collect 1 Ambassador Infernus' Bracer"
     ],
+    "pickupNPCs": [
+      "Historian Karnik"
+    ],
+    "turninNPCs": [
+      "Advisor Belgrum"
+    ],
     "exclusive": []
   },
   "726": {
@@ -3737,6 +4475,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Advisor Belgrum"
+    ],
+    "turninNPCs": [
+      "Historian Karnik"
+    ],
     "exclusive": []
   },
   "725": {
@@ -3756,6 +4500,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Sealed Note to Advisor Belgrum"
+    ],
+    "pickupNPCs": [
+      "Historian Karnik"
+    ],
+    "turninNPCs": [
+      "Advisor Belgrum"
     ],
     "exclusive": []
   },
@@ -3777,6 +4527,12 @@
     "objectives": [
       "Collect 1 Hammertoe's Amulet"
     ],
+    "pickupNPCs": [
+      "Prospector Ryedol"
+    ],
+    "turninNPCs": [
+      "Historian Karnik"
+    ],
     "exclusive": []
   },
   "723": {
@@ -3796,6 +4552,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Hammertoe's Amulet"
+    ],
+    "pickupNPCs": [
+      "Hammertoe Grez"
+    ],
+    "turninNPCs": [
+      "Prospector Ryedol"
     ],
     "exclusive": [],
     "pin": {
@@ -3825,6 +4587,12 @@
     "objectives": [
       "Collect 1 Hammertoe's Amulet"
     ],
+    "pickupNPCs": [
+      "Hammertoe Grez"
+    ],
+    "turninNPCs": [
+      "Hammertoe Grez"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -3851,6 +4619,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Prospector Ryedol"
+    ],
+    "turninNPCs": [
+      "Hammertoe Grez"
+    ],
     "exclusive": []
   },
   "720": {
@@ -3867,6 +4641,10 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Prospector Ryedol"
+    ],
     "exclusive": []
   },
   "2198": {
@@ -3884,6 +4662,10 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Shattered Necklace"
+    ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Talvash del Kissel"
     ],
     "exclusive": []
   },
@@ -3903,6 +4685,12 @@
     "objectives": [
       "Dentrium Power Stone ×8",
       "An'Alleum Power Stone ×8"
+    ],
+    "pickupNPCs": [
+      "Rigglefuzz"
+    ],
+    "turninNPCs": [
+      "Rigglefuzz"
     ],
     "exclusive": [],
     "checked": "2026-11-07",
@@ -3924,6 +4712,12 @@
     "objectives": [
       "Tablet of Ryun'eh"
     ],
+    "pickupNPCs": [
+      "Theldurin the Lost"
+    ],
+    "turninNPCs": [
+      "Theldurin the Lost"
+    ],
     "exclusive": [],
     "checked": "2026-11-07",
     "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
@@ -3942,6 +4736,8 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [],
+    "turninNPCs": [],
     "exclusive": [],
     "pickupInside": true
   },
@@ -3963,6 +4759,12 @@
     "objectives": [
       "Collect 1 Obsidian Power Source"
     ],
+    "pickupNPCs": [
+      "Tabetha"
+    ],
+    "turninNPCs": [
+      "Tabetha"
+    ],
     "exclusive": []
   },
   "1955": {
@@ -3982,6 +4784,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Defeat Demon of the Orb (1)"
+    ],
+    "pickupNPCs": [
+      "Tabetha"
+    ],
+    "turninNPCs": [
+      "Tabetha"
     ],
     "exclusive": []
   },
@@ -4003,6 +4811,12 @@
     "objectives": [
       "Collect 1 Infernal Orb"
     ],
+    "pickupNPCs": [
+      "Tabetha"
+    ],
+    "turninNPCs": [
+      "Tabetha"
+    ],
     "exclusive": []
   },
   "1953": {
@@ -4019,6 +4833,15 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Anastasia Hartwell",
+      "Bink",
+      "Jennea Cannon",
+      "Uthel'nay"
+    ],
+    "turninNPCs": [
+      "Tabetha"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -4045,6 +4868,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Master Gadrin"
+    ],
+    "turninNPCs": [
+      "Master Gadrin"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -4071,6 +4900,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Apothecary Lydon"
+    ],
+    "turninNPCs": [
+      "Master Gadrin"
+    ],
     "exclusive": []
   },
   "2934": {
@@ -4091,6 +4926,12 @@
     "objectives": [
       "Collect 1 Undamaged Venom Sac"
     ],
+    "pickupNPCs": [
+      "Apothecary Lydon"
+    ],
+    "turninNPCs": [
+      "Apothecary Lydon"
+    ],
     "exclusive": []
   },
   "2933": {
@@ -4108,6 +4949,10 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Venom Bottle"
+    ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Apothecary Lydon"
     ],
     "exclusive": []
   },
@@ -4129,6 +4974,12 @@
     "objectives": [
       "Collect 1 Nekrum's Medallion"
     ],
+    "pickupNPCs": [
+      "Thadius Grimshade"
+    ],
+    "turninNPCs": [
+      "Thadius Grimshade"
+    ],
     "exclusive": []
   },
   "2990": {
@@ -4149,6 +5000,12 @@
     "objectives": [
       "Collect 1 Sharpbeak's Feather"
     ],
+    "pickupNPCs": [
+      "Gryphon Master Talonaxe"
+    ],
+    "turninNPCs": [
+      "Thadius Grimshade"
+    ],
     "exclusive": []
   },
   "2989": {
@@ -4167,6 +5024,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Gryphon Master Talonaxe"
+    ],
+    "turninNPCs": [
+      "Gryphon Master Talonaxe"
+    ],
     "exclusive": []
   },
   "2988": {
@@ -4187,6 +5050,12 @@
       "Interact with Second Witherbark Cage (1)",
       "Interact with Third Witherbark Cage (1)"
     ],
+    "pickupNPCs": [
+      "Gryphon Master Talonaxe"
+    ],
+    "turninNPCs": [
+      "Gryphon Master Talonaxe"
+    ],
     "exclusive": []
   },
   "2768": {
@@ -4204,6 +5073,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Divino-matic Rod"
+    ],
+    "pickupNPCs": [
+      "Chief Engineer Bilgewhizzle"
+    ],
+    "turninNPCs": [
+      "Chief Engineer Bilgewhizzle"
     ],
     "exclusive": []
   },
@@ -4223,6 +5098,12 @@
     "objectives": [
       "Collect 5 Uncracked Scarab Shell"
     ],
+    "pickupNPCs": [
+      "Tran'rek"
+    ],
+    "turninNPCs": [
+      "Tran'rek"
+    ],
     "exclusive": []
   },
   "3042": {
@@ -4240,6 +5121,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 20 Troll Temper"
+    ],
+    "pickupNPCs": [
+      "Trenton Lighthammer"
+    ],
+    "turninNPCs": [
+      "Trenton Lighthammer"
     ],
     "exclusive": []
   },
@@ -4259,6 +5146,12 @@
     "objectives": [
       "Collect 1 Tiara of the Deep"
     ],
+    "pickupNPCs": [
+      "Tabetha"
+    ],
+    "turninNPCs": [
+      "Tabetha"
+    ],
     "exclusive": []
   },
   "2770": {
@@ -4276,6 +5169,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Gahz'rilla's Electrified Scale"
+    ],
+    "pickupNPCs": [
+      "Wizzle Brassbolts"
+    ],
+    "turninNPCs": [
+      "Wizzle Brassbolts"
     ],
     "exclusive": [],
     "pin": {
@@ -4306,6 +5205,12 @@
       "Collect 1 First Mosh'aru Tablet",
       "Collect 1 Second Mosh'aru Tablet"
     ],
+    "pickupNPCs": [
+      "Yeh'kinya"
+    ],
+    "turninNPCs": [
+      "Yeh'kinya"
+    ],
     "exclusive": []
   },
   "3520": {
@@ -4325,6 +5230,12 @@
       "Defeat Screecher Spirit (3)",
       "Collect 1 Yeh'kinya's Bramble"
     ],
+    "pickupNPCs": [
+      "Yeh'kinya"
+    ],
+    "turninNPCs": [
+      "Yeh'kinya"
+    ],
     "exclusive": []
   },
   "7068": {
@@ -4342,6 +5253,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 10 Shadowshard Fragment"
+    ],
+    "pickupNPCs": [
+      "Uthel'nay"
+    ],
+    "turninNPCs": [
+      "Uthel'nay"
     ],
     "exclusive": []
   },
@@ -4362,6 +5279,12 @@
       "Defeat Noxxious Scion (8)",
       "Collect 1 Filled Cerulean Vial"
     ],
+    "pickupNPCs": [
+      "Vark Battlescar"
+    ],
+    "turninNPCs": [
+      "Vark Battlescar"
+    ],
     "exclusive": []
   },
   "7064": {
@@ -4380,6 +5303,12 @@
     "objectives": [
       "Defeat Princess Theradras (1)"
     ],
+    "pickupNPCs": [
+      "Selendra"
+    ],
+    "turninNPCs": [
+      "Selendra"
+    ],
     "exclusive": []
   },
   "7070": {
@@ -4397,6 +5326,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 10 Shadowshard Fragment"
+    ],
+    "pickupNPCs": [
+      "Archmage Tervosh"
+    ],
+    "turninNPCs": [
+      "Archmage Tervosh"
     ],
     "exclusive": [],
     "pin": {
@@ -4425,6 +5360,12 @@
       "Defeat Noxxious Scion (8)",
       "Collect 1 Filled Cerulean Vial"
     ],
+    "pickupNPCs": [
+      "Talendria"
+    ],
+    "turninNPCs": [
+      "Talendria"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -4451,6 +5392,12 @@
     "objectives": [
       "Defeat Princess Theradras (1)"
     ],
+    "pickupNPCs": [
+      "Keeper Marandis"
+    ],
+    "turninNPCs": [
+      "Keeper Marandis"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -4476,6 +5423,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 15 Theradric Crystal Carving"
+    ],
+    "pickupNPCs": [
+      "Willow"
+    ],
+    "turninNPCs": [
+      "Willow"
     ],
     "exclusive": [],
     "pin": {
@@ -4504,6 +5457,12 @@
       "Collect 1 Celebrian Diamond",
       "Collect 1 Celebrian Rod"
     ],
+    "pickupNPCs": [
+      "Cavindra"
+    ],
+    "turninNPCs": [
+      "Celebras the Redeemed"
+    ],
     "exclusive": []
   },
   "7066": {
@@ -4521,6 +5480,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Seed of Life"
+    ],
+    "pickupNPCs": [
+      "Zaetar's Spirit"
+    ],
+    "turninNPCs": [
+      "Keeper Remulos"
     ],
     "exclusive": [],
     "pickupInside": true
@@ -4540,6 +5505,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Amulet of Union"
+    ],
+    "pickupNPCs": [
+      "Centaur Pariah"
+    ],
+    "turninNPCs": [
+      "Centaur Pariah"
     ],
     "exclusive": [],
     "pin": {
@@ -4567,6 +5538,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Celebras the Redeemed"
+    ],
+    "turninNPCs": [
+      "Celebras the Redeemed"
+    ],
     "exclusive": [],
     "pickupInside": true
   },
@@ -4588,6 +5565,12 @@
     "objectives": [
       "Collect 20 Fetish of Hakkar"
     ],
+    "pickupNPCs": [
+      "Fel'zerul"
+    ],
+    "turninNPCs": [
+      "Fel'zerul"
+    ],
     "exclusive": []
   },
   "1444": {
@@ -4606,6 +5589,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Atal'ai Exile"
+    ],
+    "turninNPCs": [
+      "Fel'zerul"
+    ],
     "exclusive": []
   },
   "1429": {
@@ -4626,6 +5615,12 @@
     "objectives": [
       "Collect 1 Bundle of Atal'ai Artifacts"
     ],
+    "pickupNPCs": [
+      "Fel'zerul"
+    ],
+    "turninNPCs": [
+      "Atal'ai Exile"
+    ],
     "exclusive": []
   },
   "1424": {
@@ -4643,6 +5638,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 10 Atal'ai Artifact"
+    ],
+    "pickupNPCs": [
+      "Fel'zerul"
+    ],
+    "turninNPCs": [
+      "Fel'zerul"
     ],
     "exclusive": []
   },
@@ -4664,6 +5665,12 @@
     "objectives": [
       "Collect 1 Unloaded Zapper",
       "Collect 5 Atal'ai Haze"
+    ],
+    "pickupNPCs": [
+      "Liv Rizzlefix"
+    ],
+    "turninNPCs": [
+      "Larion"
     ],
     "exclusive": [],
     "pin": {
@@ -4691,6 +5698,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Larion"
+    ],
+    "turninNPCs": [
+      "Liv Rizzlefix"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1441,
@@ -4720,6 +5733,12 @@
       "Defeat Bloodpetal Flayer (5)",
       "Defeat Bloodpetal Thresher (5)"
     ],
+    "pickupNPCs": [
+      "Larion"
+    ],
+    "turninNPCs": [
+      "Larion"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1441,
@@ -4747,6 +5766,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 5 Atal'ai Haze"
+    ],
+    "pickupNPCs": [
+      "Gregan Brewspewer"
+    ],
+    "turninNPCs": [
+      "Muigin"
     ],
     "exclusive": [],
     "pin": {
@@ -4776,6 +5801,12 @@
     "objectives": [
       "Collect 1 Bloodpetal"
     ],
+    "pickupNPCs": [
+      "Muigin"
+    ],
+    "turninNPCs": [
+      "Gregan Brewspewer"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1441,
@@ -4801,6 +5832,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 15 Bloodpetal"
+    ],
+    "pickupNPCs": [
+      "Muigin"
+    ],
+    "turninNPCs": [
+      "Muigin"
     ],
     "exclusive": [],
     "pin": {
@@ -4830,6 +5867,12 @@
     "objectives": [
       "Collect 10 Atal'ai Tablet"
     ],
+    "pickupNPCs": [
+      "Brohann Caskbelly"
+    ],
+    "turninNPCs": [
+      "Brohann Caskbelly"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -4858,6 +5901,12 @@
     "objectives": [
       "Collect 1 Atal'ai Tablet Fragment"
     ],
+    "pickupNPCs": [
+      "Rhapsody Shindigger"
+    ],
+    "turninNPCs": [
+      "Brohann Caskbelly"
+    ],
     "exclusive": []
   },
   "1452": {
@@ -4880,6 +5929,12 @@
       "Collect 3 Ironfur Liver",
       "Collect 3 Groddoc Liver"
     ],
+    "pickupNPCs": [
+      "Rhapsody Shindigger"
+    ],
+    "turninNPCs": [
+      "Rhapsody Shindigger"
+    ],
     "exclusive": []
   },
   "1451": {
@@ -4898,6 +5953,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Gryphon Master Talonaxe"
+    ],
+    "turninNPCs": [
+      "Rhapsody Shindigger"
+    ],
     "exclusive": []
   },
   "1450": {
@@ -4916,6 +5977,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Falstad Wildhammer"
+    ],
+    "turninNPCs": [
+      "Gryphon Master Talonaxe"
+    ],
     "exclusive": []
   },
   "1449": {
@@ -4934,6 +6001,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Brohann Caskbelly"
+    ],
+    "turninNPCs": [
+      "Falstad Wildhammer"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -4958,6 +6031,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Brohann Caskbelly"
+    ],
+    "turninNPCs": [
+      "Brohann Caskbelly"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -4984,6 +6063,12 @@
     "objectives": [
       "Collect 1 Head of Jammal'an"
     ],
+    "pickupNPCs": [
+      "Atal'ai Exile"
+    ],
+    "turninNPCs": [
+      "Atal'ai Exile"
+    ],
     "exclusive": []
   },
   "3373": {
@@ -5002,6 +6087,8 @@
     "objectives": [
       "Collect 1 Essence of Eranikus"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [],
     "exclusive": [],
     "pickupInside": true
   },
@@ -5021,6 +6108,10 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Marvon Rivetseeker"
+    ],
+    "turninNPCs": [],
     "exclusive": []
   },
   "3444": {
@@ -5042,6 +6133,12 @@
     "objectives": [
       "Collect 1 Stone Circle"
     ],
+    "pickupNPCs": [
+      "Marvon Rivetseeker"
+    ],
+    "turninNPCs": [
+      "Marvon Rivetseeker"
+    ],
     "exclusive": []
   },
   "3380": {
@@ -5058,6 +6155,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Witch Doctor Uzer'i"
+    ],
+    "turninNPCs": [
+      "Marvon Rivetseeker"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -5082,6 +6185,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Angelas Moonbreeze"
+    ],
+    "turninNPCs": [
+      "Marvon Rivetseeker"
+    ],
     "exclusive": []
   },
   "3528": {
@@ -5101,6 +6210,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Filled Egg of Hakkar"
+    ],
+    "pickupNPCs": [
+      "Yeh'kinya"
+    ],
+    "turninNPCs": [
+      "Yeh'kinya"
     ],
     "exclusive": []
   },
@@ -5122,6 +6237,12 @@
     "objectives": [
       "Collect 1 Ancient Egg"
     ],
+    "pickupNPCs": [
+      "Yeh'kinya"
+    ],
+    "turninNPCs": [
+      "Yeh'kinya"
+    ],
     "exclusive": []
   },
   "4081": {
@@ -5141,6 +6262,10 @@
       "Defeat Anvilrage Guardsman (15)",
       "Defeat Anvilrage Warden (10)",
       "Defeat Anvilrage Footman (5)"
+    ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Warlord Goretooth"
     ],
     "exclusive": [],
     "pin": {
@@ -5167,6 +6292,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Lost Thunderbrew Recipe"
+    ],
+    "pickupNPCs": [
+      "Shadowmage Vivian Lagrave"
+    ],
+    "turninNPCs": [
+      "Shadowmage Vivian Lagrave"
     ],
     "exclusive": [],
     "pin": {
@@ -5198,6 +6329,10 @@
       "Defeat Anvilrage Soldier (10)",
       "Defeat Anvilrage Officer (10)"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Warlord Goretooth"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -5227,6 +6362,12 @@
       "Collect 1 Head of Argelmach",
       "Collect 10 Intact Elemental Core"
     ],
+    "pickupNPCs": [
+      "Lotwil Veriatus"
+    ],
+    "turninNPCs": [
+      "Lotwil Veriatus"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -5255,6 +6396,12 @@
     "objectives": [
       "Collect 1 Elemental Shard Sample"
     ],
+    "pickupNPCs": [
+      "Hierophant Theodora Mulvadania"
+    ],
+    "turninNPCs": [
+      "Lotwil Veriatus"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -5281,6 +6428,12 @@
     "objectives": [
       "Collect 10 Fractured Elemental Shard"
     ],
+    "pickupNPCs": [
+      "Hierophant Theodora Mulvadania"
+    ],
+    "turninNPCs": [
+      "Hierophant Theodora Mulvadania"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -5306,6 +6459,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Defeat Overmaster Pyron (1)"
+    ],
+    "pickupNPCs": [
+      "Thunderheart"
+    ],
+    "turninNPCs": [
+      "Thunderheart"
     ],
     "exclusive": [],
     "pin": {
@@ -5336,6 +6495,12 @@
       "Defeat Lord Incendius (1)",
       "Collect 1 Tablet of Kurniya"
     ],
+    "pickupNPCs": [
+      "Thunderheart"
+    ],
+    "turninNPCs": [
+      "Thunderheart"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -5362,6 +6527,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Galamav the Marksman"
+    ],
+    "turninNPCs": [
+      "Commander Gor'shak"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -5387,6 +6558,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 10 Essence of the Elements"
+    ],
+    "pickupNPCs": [
+      "Shadowmage Vivian Lagrave"
+    ],
+    "turninNPCs": [
+      "Shadowmage Vivian Lagrave"
     ],
     "exclusive": [],
     "pin": {
@@ -5416,6 +6593,12 @@
     "objectives": [
       "Defeat General Angerforge (1)"
     ],
+    "pickupNPCs": [
+      "Warlord Goretooth"
+    ],
+    "turninNPCs": [
+      "Warlord Goretooth"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -5444,6 +6627,12 @@
     "objectives": [
       "Collect 1 Thorium Shackles"
     ],
+    "pickupNPCs": [
+      "Grark Lorkrub"
+    ],
+    "turninNPCs": [
+      "Lexlort"
+    ],
     "exclusive": []
   },
   "4122": {
@@ -5460,6 +6649,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Lexlort"
+    ],
+    "turninNPCs": [
+      "Grark Lorkrub"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -5488,6 +6683,12 @@
     "objectives": [
       "Defeat Emperor Dagran Thaurissan (1)"
     ],
+    "pickupNPCs": [
+      "Thrall"
+    ],
+    "turninNPCs": [
+      "Princess Moira Bronzebeard"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -5514,6 +6715,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Thrall"
+    ],
+    "turninNPCs": [
+      "Thrall"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -5540,6 +6747,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Commander Gor'shak"
+    ],
+    "turninNPCs": [
+      "Thrall"
+    ],
     "exclusive": []
   },
   "3982": {
@@ -5558,6 +6771,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Commander Gor'shak"
+    ],
+    "turninNPCs": [
+      "Commander Gor'shak"
+    ],
     "exclusive": []
   },
   "4262": {
@@ -5575,6 +6794,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Defeat Overmaster Pyron (1)"
+    ],
+    "pickupNPCs": [
+      "Jalinda Sprig"
+    ],
+    "turninNPCs": [
+      "Jalinda Sprig"
     ],
     "exclusive": []
   },
@@ -5596,6 +6821,12 @@
     "objectives": [
       "Defeat Lord Incendius (1)"
     ],
+    "pickupNPCs": [
+      "Jalinda Sprig"
+    ],
+    "turninNPCs": [
+      "Jalinda Sprig"
+    ],
     "exclusive": []
   },
   "4286": {
@@ -5614,6 +6845,12 @@
     "objectives": [
       "Collect 20 Dark Iron Fanny Pack"
     ],
+    "pickupNPCs": [
+      "Oralius"
+    ],
+    "turninNPCs": [
+      "Oralius"
+    ],
     "exclusive": []
   },
   "4126": {
@@ -5631,6 +6868,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Lost Thunderbrew Recipe"
+    ],
+    "pickupNPCs": [
+      "Ragnar Thunderbrew"
+    ],
+    "turninNPCs": [
+      "Ragnar Thunderbrew"
     ],
     "exclusive": [],
     "pin": {
@@ -5658,6 +6901,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "King Magni Bronzebeard"
+    ],
+    "turninNPCs": [
+      "Kharan Mighthammer"
+    ],
     "exclusive": []
   },
   "3701": {
@@ -5678,6 +6927,12 @@
     "objectives": [
       "Interact with Thaurissan Relic (12)"
     ],
+    "pickupNPCs": [
+      "Royal Historian Archesonus"
+    ],
+    "turninNPCs": [
+      "Royal Historian Archesonus"
+    ],
     "exclusive": []
   },
   "3702": {
@@ -5694,6 +6949,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Royal Historian Archesonus"
+    ],
+    "turninNPCs": [
+      "Royal Historian Archesonus"
+    ],
     "exclusive": []
   },
   "4362": {
@@ -5714,6 +6975,12 @@
     "objectives": [
       "Defeat Emperor Dagran Thaurissan (1)"
     ],
+    "pickupNPCs": [
+      "King Magni Bronzebeard"
+    ],
+    "turninNPCs": [
+      "Princess Moira Bronzebeard"
+    ],
     "exclusive": []
   },
   "4361": {
@@ -5732,6 +6999,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Kharan Mighthammer"
+    ],
+    "turninNPCs": [
+      "King Magni Bronzebeard"
+    ],
     "exclusive": []
   },
   "4241": {
@@ -5750,6 +7023,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Marshal Maxwell"
+    ],
+    "turninNPCs": [
+      "Marshal Windsor"
+    ],
     "exclusive": []
   },
   "4224": {
@@ -5768,6 +7047,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Marshal Maxwell"
+    ],
+    "turninNPCs": [
+      "Marshal Maxwell"
+    ],
     "exclusive": []
   },
   "4223": {
@@ -5786,6 +7071,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Magistrate Solomon"
+    ],
+    "turninNPCs": [
+      "Marshal Maxwell"
+    ],
     "exclusive": []
   },
   "4186": {
@@ -5805,6 +7096,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Bolvar's Decree"
+    ],
+    "pickupNPCs": [
+      "Highlord Bolvar Fordragon"
+    ],
+    "turninNPCs": [
+      "Magistrate Solomon"
     ],
     "exclusive": [],
     "pin": {
@@ -5832,6 +7129,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Highlord Bolvar Fordragon"
+    ],
+    "turninNPCs": [
+      "Highlord Bolvar Fordragon"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -5860,6 +7163,12 @@
     "objectives": [
       "Collect 1 Solomon's Plea to Bolvar"
     ],
+    "pickupNPCs": [
+      "Magistrate Solomon"
+    ],
+    "turninNPCs": [
+      "Highlord Bolvar Fordragon"
+    ],
     "exclusive": []
   },
   "4183": {
@@ -5879,6 +7188,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Helendis Riverhorn's Letter"
+    ],
+    "pickupNPCs": [
+      "Helendis Riverhorn"
+    ],
+    "turninNPCs": [
+      "Magistrate Solomon"
     ],
     "exclusive": []
   },
@@ -5901,6 +7216,12 @@
       "Defeat Black Drake (1)",
       "Defeat Black Wyrmkin (4)"
     ],
+    "pickupNPCs": [
+      "Helendis Riverhorn"
+    ],
+    "turninNPCs": [
+      "Helendis Riverhorn"
+    ],
     "exclusive": []
   },
   "4322": {
@@ -5919,6 +7240,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Marshal Windsor"
+    ],
+    "turninNPCs": [
+      "Marshal Maxwell"
+    ],
     "exclusive": [],
     "pickupInside": true
   },
@@ -5941,6 +7268,12 @@
       "Collect 1 Marshal Windsor's Lost Information",
       "Collect 1 Marshal Windsor's Lost Information"
     ],
+    "pickupNPCs": [
+      "Marshal Windsor"
+    ],
+    "turninNPCs": [
+      "Marshal Windsor"
+    ],
     "exclusive": []
   },
   "4264": {
@@ -5961,6 +7294,10 @@
     "objectives": [
       "Collect 1 A Crumpled Up Note"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Marshal Windsor"
+    ],
     "exclusive": []
   },
   "4242": {
@@ -5979,6 +7316,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Marshal Windsor"
+    ],
+    "turninNPCs": [
+      "Marshal Maxwell"
+    ],
     "exclusive": []
   },
   "4136": {
@@ -5996,6 +7339,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Ribbly's Head"
+    ],
+    "pickupNPCs": [
+      "Yuka Screwspigot"
+    ],
+    "turninNPCs": [
+      "Yuka Screwspigot"
     ],
     "exclusive": []
   },
@@ -6015,6 +7364,12 @@
     "objectives": [
       "Collect 1 The Heart of the Mountain"
     ],
+    "pickupNPCs": [
+      "Maxwort Uberglint"
+    ],
+    "turninNPCs": [
+      "Maxwort Uberglint"
+    ],
     "exclusive": []
   },
   "7848": {
@@ -6032,6 +7387,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Core Fragment"
+    ],
+    "pickupNPCs": [
+      "Lothos Riftwaker"
+    ],
+    "turninNPCs": [
+      "Lothos Riftwaker"
     ],
     "exclusive": []
   },
@@ -6053,6 +7414,10 @@
     "objectives": [
       "Collect 1 Ironfel"
     ],
+    "pickupNPCs": [
+      "Franclorn Forgewright"
+    ],
+    "turninNPCs": [],
     "exclusive": []
   },
   "3801": {
@@ -6069,6 +7434,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Franclorn Forgewright"
+    ],
+    "turninNPCs": [
+      "Franclorn Forgewright"
+    ],
     "exclusive": []
   },
   "4201": {
@@ -6088,6 +7459,12 @@
       "Collect 4 Gromsblood",
       "Collect 10 Giant Silver Vein",
       "Collect 1 Nagmara's Filled Vial"
+    ],
+    "pickupNPCs": [
+      "Mistress Nagmara"
+    ],
+    "turninNPCs": [
+      "Mistress Nagmara"
     ],
     "exclusive": [],
     "pickupInside": true
@@ -6111,6 +7488,12 @@
     "objectives": [
       "Collect 1 Encased Fiery Essence"
     ],
+    "pickupNPCs": [
+      "Cyrus Therepentous"
+    ],
+    "turninNPCs": [
+      "Cyrus Therepentous"
+    ],
     "exclusive": []
   },
   "4022": {
@@ -6130,6 +7513,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Black Dragonflight Molt"
+    ],
+    "pickupNPCs": [
+      "Cyrus Therepentous"
+    ],
+    "turninNPCs": [
+      "Cyrus Therepentous"
     ],
     "exclusive": [
       4023
@@ -6151,6 +7540,8 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [],
+    "turninNPCs": [],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -6182,6 +7573,12 @@
       "Interact with Sentry Brazier (1)",
       "Interact with Sentry Brazier (1)"
     ],
+    "pickupNPCs": [
+      "Squire Maltrake"
+    ],
+    "turninNPCs": [
+      "Squire Maltrake"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -6208,6 +7605,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Kalaran Windblade"
+    ],
+    "turninNPCs": [
+      "Squire Maltrake"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -6234,6 +7637,10 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Kalaran Windblade"
+    ],
+    "turninNPCs": [],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -6260,6 +7667,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Kalaran Windblade"
+    ],
+    "turninNPCs": [
+      "Kalaran Windblade"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -6288,6 +7701,12 @@
     "objectives": [
       "Collect 1 Symbol of Ragnaros"
     ],
+    "pickupNPCs": [
+      "Kalaran Windblade"
+    ],
+    "turninNPCs": [
+      "Kalaran Windblade"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -6315,6 +7734,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 8 Thorium Plated Dagger"
+    ],
+    "pickupNPCs": [
+      "Kalaran Windblade"
+    ],
+    "turninNPCs": [
+      "Kalaran Windblade"
     ],
     "exclusive": [],
     "pin": {
@@ -6345,6 +7770,12 @@
       "Collect 4 Heart of Flame",
       "Collect 4 Golem Oil"
     ],
+    "pickupNPCs": [
+      "Kalaran Windblade"
+    ],
+    "turninNPCs": [
+      "Kalaran Windblade"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -6369,6 +7800,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Kalaran Windblade"
+    ],
+    "turninNPCs": [
+      "Kalaran Windblade"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -6395,6 +7832,12 @@
     "objectives": [
       "Collect 1 Black Dragonflight Molt"
     ],
+    "pickupNPCs": [
+      "Cyrus Therepentous"
+    ],
+    "turninNPCs": [
+      "Cyrus Therepentous"
+    ],
     "exclusive": [
       4022
     ]
@@ -6414,6 +7857,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Lethtendris's Web"
+    ],
+    "pickupNPCs": [
+      "Talo Thornhoof"
+    ],
+    "turninNPCs": [
+      "Talo Thornhoof"
     ],
     "exclusive": [],
     "pin": {
@@ -6441,6 +7890,12 @@
     "objectives": [
       "Collect 1 Lethtendris's Web"
     ],
+    "pickupNPCs": [
+      "Latronicus Moonspear"
+    ],
+    "turninNPCs": [
+      "Latronicus Moonspear"
+    ],
     "exclusive": []
   },
   "7441": {
@@ -6458,6 +7913,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Book of Incantations"
+    ],
+    "pickupNPCs": [
+      "Azj'Tordin"
+    ],
+    "turninNPCs": [
+      "Azj'Tordin"
     ],
     "exclusive": [],
     "pin": {
@@ -6487,6 +7948,12 @@
     "objectives": [
       "Collect 1 Sealed Reliquary of Purity"
     ],
+    "pickupNPCs": [
+      "Rabine Saturna"
+    ],
+    "turninNPCs": [
+      "Rabine Saturna"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1439,
@@ -6512,6 +7979,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Reliquary of Purity"
+    ],
+    "pickupNPCs": [
+      "Rabine Saturna"
+    ],
+    "turninNPCs": [
+      "Rabine Saturna"
     ],
     "exclusive": [],
     "pin": {
@@ -6539,6 +8012,12 @@
     "objectives": [
       "Collect 1 Hydrospawn Essence"
     ],
+    "pickupNPCs": [
+      "Lorekeeper Lydros"
+    ],
+    "turninNPCs": [
+      "Lorekeeper Lydros"
+    ],
     "exclusive": [],
     "pickupInside": true
   },
@@ -6559,6 +8038,12 @@
       "Defeat Immol'thar (1)",
       "Defeat Prince Tortheldrin (1)"
     ],
+    "pickupNPCs": [
+      "Shen'dralar Ancient"
+    ],
+    "turninNPCs": [
+      "Shen'dralar Ancient"
+    ],
     "exclusive": [],
     "pickupInside": true
   },
@@ -6578,6 +8063,10 @@
     "objectives": [
       "Collect 1 Foror's Compendium of Dragon Slaying"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Lorekeeper Lydros"
+    ],
     "exclusive": [],
     "pickupInside": true
   },
@@ -6595,6 +8084,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Sage Korolusk"
+    ],
+    "turninNPCs": [
+      "Sage Korolusk"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -6619,6 +8114,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Scholar Runethorn"
+    ],
+    "turninNPCs": [
+      "Scholar Runethorn"
+    ],
     "exclusive": []
   },
   "5525": {
@@ -6636,6 +8137,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Gordok Shackle Key"
+    ],
+    "pickupNPCs": [
+      "Knot Thimblejack"
+    ],
+    "turninNPCs": [
+      "Knot Thimblejack"
     ],
     "exclusive": [],
     "pickupInside": true
@@ -6659,6 +8166,12 @@
       "Collect 2 Rune Thread",
       "Collect 1 Ogre Tannin"
     ],
+    "pickupNPCs": [
+      "Knot Thimblejack"
+    ],
+    "turninNPCs": [
+      "Knot Thimblejack"
+    ],
     "exclusive": [],
     "pickupInside": true
   },
@@ -6676,6 +8189,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Stomper Kreeg"
+    ],
+    "turninNPCs": [
+      "Stomper Kreeg"
+    ],
     "exclusive": [],
     "pickupInside": true
   },
@@ -6694,6 +8213,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Gauntlet of Gordok Might"
+    ],
+    "pickupNPCs": [
+      "Captain Kromcrush"
+    ],
+    "turninNPCs": [
+      "Captain Kromcrush"
     ],
     "exclusive": [],
     "requirementsNote": "Additional or conditional requirements need checking in your quest log or at the quest giver.",
@@ -6714,6 +8239,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Defeat Halycon (1)"
+    ],
+    "pickupNPCs": [
+      "Galamav the Marksman"
+    ],
+    "turninNPCs": [
+      "Galamav the Marksman"
     ],
     "exclusive": [],
     "pin": {
@@ -6739,6 +8270,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Lexlort"
+    ],
+    "turninNPCs": [
+      "Bijou"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -6768,6 +8305,10 @@
       "Defeat War Master Voone (1)",
       "Collect 1 Important Blackrock Documents"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Warlord Goretooth"
+    ],
     "exclusive": []
   },
   "4701": {
@@ -6785,6 +8326,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Defeat Halycon (1)"
+    ],
+    "pickupNPCs": [
+      "Helendis Riverhorn"
+    ],
+    "turninNPCs": [
+      "Helendis Riverhorn"
     ],
     "exclusive": []
   },
@@ -6804,6 +8351,10 @@
     "objectives": [
       "Collect 1 General Drakkisath's Command"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Marshal Maxwell"
+    ],
     "exclusive": []
   },
   "5001": {
@@ -6821,6 +8372,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Bijou's Belongings"
+    ],
+    "pickupNPCs": [
+      "Bijou"
+    ],
+    "turninNPCs": [
+      "Bijou"
     ],
     "exclusive": []
   },
@@ -6840,6 +8397,12 @@
     "objectives": [
       "Collect 15 Spire Spider Egg"
     ],
+    "pickupNPCs": [
+      "Kibler"
+    ],
+    "turninNPCs": [
+      "Kibler"
+    ],
     "exclusive": []
   },
   "4729": {
@@ -6858,6 +8421,12 @@
     "objectives": [
       "Collect 1 Caged Worg Pup"
     ],
+    "pickupNPCs": [
+      "Kibler"
+    ],
+    "turninNPCs": [
+      "Kibler"
+    ],
     "exclusive": []
   },
   "4866": {
@@ -6874,6 +8443,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Ragged John"
+    ],
+    "turninNPCs": [
+      "Ragged John"
+    ],
     "exclusive": []
   },
   "4742": {
@@ -6895,6 +8470,12 @@
       "Collect 1 Gemstone of Bloodaxe",
       "Collect 1 Unadorned Seal of Ascension"
     ],
+    "pickupNPCs": [
+      "Vaelan"
+    ],
+    "turninNPCs": [
+      "Vaelan"
+    ],
     "exclusive": []
   },
   "4867": {
@@ -6912,6 +8493,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Warosh's Mojo"
+    ],
+    "pickupNPCs": [
+      "Warosh"
+    ],
+    "turninNPCs": [
+      "Warosh"
     ],
     "exclusive": [],
     "pickupInside": true
@@ -6935,6 +8522,12 @@
       "Collect 1 Fifth Mosh'aru Tablet",
       "Collect 1 Sixth Mosh'aru Tablet"
     ],
+    "pickupNPCs": [
+      "Prospector Ironboot"
+    ],
+    "turninNPCs": [
+      "Prospector Ironboot"
+    ],
     "exclusive": []
   },
   "5065": {
@@ -6956,6 +8549,12 @@
       "Collect 1 Third Mosh'aru Tablet",
       "Collect 1 Fourth Mosh'aru Tablet"
     ],
+    "pickupNPCs": [
+      "Prospector Ironboot"
+    ],
+    "turninNPCs": [
+      "Prospector Ironboot"
+    ],
     "exclusive": []
   },
   "5341": {
@@ -6976,6 +8575,12 @@
       "Collect 1 The Deed to Caer Darrow",
       "Collect 1 The Deed to Southshore",
       "Collect 1 The Deed to Tarren Mill"
+    ],
+    "pickupNPCs": [
+      "Alexi Barov"
+    ],
+    "turninNPCs": [
+      "Alexi Barov"
     ],
     "exclusive": [],
     "pin": {
@@ -7016,6 +8621,12 @@
       "Collect 1 The Deed to Southshore",
       "Collect 1 The Deed to Tarren Mill"
     ],
+    "pickupNPCs": [
+      "Weldon Barov"
+    ],
+    "turninNPCs": [
+      "Weldon Barov"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1420,
@@ -7042,6 +8653,12 @@
     "objectives": [
       "Defeat Plagued Hatchling (20)"
     ],
+    "pickupNPCs": [
+      "Betina Bigglezink"
+    ],
+    "turninNPCs": [
+      "Betina Bigglezink"
+    ],
     "exclusive": []
   },
   "5382": {
@@ -7061,6 +8678,12 @@
       "Defeat Doctor Theolen Krastinov (1)",
       "Interact with Remains of Eva Sarkhoff (1)",
       "Interact with Remains of Lucien Sarkhoff (1)"
+    ],
+    "pickupNPCs": [
+      "Eva Sarkhoff"
+    ],
+    "turninNPCs": [
+      "Eva Sarkhoff"
     ],
     "exclusive": []
   },
@@ -7082,6 +8705,12 @@
     "objectives": [
       "Collect 1 Krastinov's Bag of Horrors"
     ],
+    "pickupNPCs": [
+      "Eva Sarkhoff"
+    ],
+    "turninNPCs": [
+      "Eva Sarkhoff"
+    ],
     "exclusive": []
   },
   "5384": {
@@ -7101,6 +8730,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Defeat Kirtonos the Herald (1)"
+    ],
+    "pickupNPCs": [
+      "Eva Sarkhoff"
+    ],
+    "turninNPCs": [
+      "Eva Sarkhoff"
     ],
     "exclusive": []
   },
@@ -7122,6 +8757,12 @@
     "objectives": [
       "Defeat Vectus (1)"
     ],
+    "pickupNPCs": [
+      "Betina Bigglezink"
+    ],
+    "turninNPCs": [
+      "Betina Bigglezink"
+    ],
     "exclusive": []
   },
   "5531": {
@@ -7142,6 +8783,12 @@
     "objectives": [
       "Collect 1 Frozen Eggs"
     ],
+    "pickupNPCs": [
+      "Leonid Barthalomew the Revered"
+    ],
+    "turninNPCs": [
+      "Betina Bigglezink"
+    ],
     "exclusive": []
   },
   "5522": {
@@ -7161,6 +8808,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Frozen Eggs"
+    ],
+    "pickupNPCs": [
+      "Tinkee Steamboil"
+    ],
+    "turninNPCs": [
+      "Leonid Barthalomew the Revered"
     ],
     "exclusive": []
   },
@@ -7183,6 +8836,12 @@
       "Collect 8 Collected Dragon Egg",
       "Collect 1 Collectronic Module"
     ],
+    "pickupNPCs": [
+      "Tinkee Steamboil"
+    ],
+    "turninNPCs": [
+      "Tinkee Steamboil"
+    ],
     "exclusive": []
   },
   "4734": {
@@ -7200,6 +8859,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Eggscilloscope Prototype"
+    ],
+    "pickupNPCs": [
+      "Tinkee Steamboil"
+    ],
+    "turninNPCs": [
+      "Tinkee Steamboil"
     ],
     "exclusive": []
   },
@@ -7221,6 +8886,12 @@
     "objectives": [
       "Collect 1 Human Head of Ras Frostwhisper"
     ],
+    "pickupNPCs": [
+      "Magistrate Marduke"
+    ],
+    "turninNPCs": [
+      "Magistrate Marduke"
+    ],
     "exclusive": []
   },
   "5465": {
@@ -7240,6 +8911,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Soulbound Keepsake"
+    ],
+    "pickupNPCs": [
+      "Leonid Barthalomew the Revered"
+    ],
+    "turninNPCs": [
+      "Magistrate Marduke"
     ],
     "exclusive": []
   },
@@ -7261,6 +8938,10 @@
     "objectives": [
       "Collect 1 Soulbound Keepsake"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Leonid Barthalomew the Revered"
+    ],
     "exclusive": []
   },
   "5463": {
@@ -7281,6 +8962,10 @@
     "objectives": [
       "Collect 1 Keepsake of Remembrance"
     ],
+    "pickupNPCs": [
+      "Leonid Barthalomew the Revered"
+    ],
+    "turninNPCs": [],
     "exclusive": []
   },
   "5462": {
@@ -7300,6 +8985,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Keepsake of Remembrance"
+    ],
+    "pickupNPCs": [
+      "Magistrate Marduke"
+    ],
+    "turninNPCs": [
+      "Leonid Barthalomew the Revered"
     ],
     "exclusive": []
   },
@@ -7321,6 +9012,12 @@
     "objectives": [
       "Collect 1 Keepsake of Remembrance"
     ],
+    "pickupNPCs": [
+      "Magistrate Marduke"
+    ],
+    "turninNPCs": [
+      "Magistrate Marduke"
+    ],
     "exclusive": []
   },
   "5214": {
@@ -7338,6 +9035,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Siabi's Premium Tobacco"
+    ],
+    "pickupNPCs": [
+      "Smokey LaRue"
+    ],
+    "turninNPCs": [
+      "Smokey LaRue"
     ],
     "exclusive": []
   },
@@ -7357,6 +9060,12 @@
     "objectives": [
       "Defeat Archivist Galford (1)",
       "Interact with Scarlet Archive (1)"
+    ],
+    "pickupNPCs": [
+      "Duke Nicholas Zverenhoff"
+    ],
+    "turninNPCs": [
+      "Duke Nicholas Zverenhoff"
     ],
     "exclusive": []
   },
@@ -7378,6 +9087,12 @@
     "objectives": [
       "Defeat Restless Soul (15)"
     ],
+    "pickupNPCs": [
+      "Egan"
+    ],
+    "turninNPCs": [
+      "Egan"
+    ],
     "exclusive": []
   },
   "5281": {
@@ -7394,6 +9109,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Caretaker Alen"
+    ],
+    "turninNPCs": [
+      "Egan"
+    ],
     "exclusive": []
   },
   "5122": {
@@ -7411,6 +9132,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Medallion of Faith"
+    ],
+    "pickupNPCs": [
+      "Aurius"
+    ],
+    "turninNPCs": [
+      "Aurius"
     ],
     "exclusive": [],
     "requirementsNote": "Additional or conditional requirements need checking in your quest log or at the quest giver.",
@@ -7434,6 +9161,10 @@
     "objectives": [
       "Collect 1 Head of Balnazzar"
     ],
+    "pickupNPCs": [],
+    "turninNPCs": [
+      "Duke Nicholas Zverenhoff"
+    ],
     "exclusive": []
   },
   "5848": {
@@ -7454,6 +9185,12 @@
     "objectives": [
       "Collect 1 Of Love and Family"
     ],
+    "pickupNPCs": [
+      "Artist Renfray"
+    ],
+    "turninNPCs": [
+      "Tirion Fordring"
+    ],
     "exclusive": []
   },
   "5846": {
@@ -7472,6 +9209,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Tirion Fordring"
+    ],
+    "turninNPCs": [
+      "Artist Renfray"
+    ],
     "exclusive": []
   },
   "5845": {
@@ -7491,6 +9234,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Symbol of Lost Honor"
+    ],
+    "pickupNPCs": [
+      "Tirion Fordring"
+    ],
+    "turninNPCs": [
+      "Tirion Fordring"
     ],
     "exclusive": []
   },
@@ -7512,6 +9261,12 @@
     "objectives": [
       "Collect 1 Taelan's Hammer"
     ],
+    "pickupNPCs": [
+      "Tirion Fordring"
+    ],
+    "turninNPCs": [
+      "Tirion Fordring"
+    ],
     "exclusive": []
   },
   "5742": {
@@ -7532,6 +9287,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Tirion Fordring"
+    ],
+    "turninNPCs": [
+      "Tirion Fordring"
+    ],
     "exclusive": []
   },
   "5542": {
@@ -7552,6 +9313,12 @@
       "Defeat Plaguehound (5)",
       "Defeat Frenzied Plaguehound (5)"
     ],
+    "pickupNPCs": [
+      "Tirion Fordring"
+    ],
+    "turninNPCs": [
+      "Tirion Fordring"
+    ],
     "exclusive": []
   },
   "5543": {
@@ -7570,6 +9337,12 @@
     "objectives": [
       "Defeat Plaguebat (30)"
     ],
+    "pickupNPCs": [
+      "Tirion Fordring"
+    ],
+    "turninNPCs": [
+      "Tirion Fordring"
+    ],
     "exclusive": []
   },
   "5544": {
@@ -7587,6 +9360,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 15 Slab of Carrion Worm Meat"
+    ],
+    "pickupNPCs": [
+      "Tirion Fordring"
+    ],
+    "turninNPCs": [
+      "Tirion Fordring"
     ],
     "exclusive": []
   },
@@ -7608,6 +9387,12 @@
     "objectives": [
       "Collect 1 Head of Ramstein the Gorger"
     ],
+    "pickupNPCs": [
+      "Nathanos Blightcaller"
+    ],
+    "turninNPCs": [
+      "Nathanos Blightcaller"
+    ],
     "exclusive": [],
     "requirementsNote": "Additional or conditional requirements need checking in your quest log or at the quest giver."
   },
@@ -7628,6 +9413,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Patch of Duskwing's Fur"
+    ],
+    "pickupNPCs": [
+      "Nathanos Blightcaller"
+    ],
+    "turninNPCs": [
+      "Nathanos Blightcaller"
     ],
     "exclusive": [],
     "requirementsNote": "Additional or conditional requirements need checking in your quest log or at the quest giver."
@@ -7651,6 +9442,12 @@
       "Defeat Woodsman (8)",
       "Collect 1 Quel'Thalas Registry"
     ],
+    "pickupNPCs": [
+      "Nathanos Blightcaller"
+    ],
+    "turninNPCs": [
+      "Nathanos Blightcaller"
+    ],
     "exclusive": []
   },
   "5243": {
@@ -7669,6 +9466,12 @@
     "objectives": [
       "Collect 5 Stratholme Holy Water"
     ],
+    "pickupNPCs": [
+      "Leonid Barthalomew the Revered"
+    ],
+    "turninNPCs": [
+      "Leonid Barthalomew the Revered"
+    ],
     "exclusive": []
   },
   "5212": {
@@ -7686,6 +9489,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 10 Plagued Flesh Sample"
+    ],
+    "pickupNPCs": [
+      "Betina Bigglezink"
+    ],
+    "turninNPCs": [
+      "Betina Bigglezink"
     ],
     "exclusive": []
   },
@@ -7707,6 +9516,12 @@
     "objectives": [
       "Collect 1 Scourge Data"
     ],
+    "pickupNPCs": [
+      "Betina Bigglezink"
+    ],
+    "turninNPCs": [
+      "Betina Bigglezink"
+    ],
     "exclusive": []
   },
   "5125": {
@@ -7725,6 +9540,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Aurius"
+    ],
+    "turninNPCs": [
+      "Aurius"
+    ],
     "exclusive": [],
     "requirementsNote": "Additional or conditional requirements need checking in your quest log or at the quest giver.",
     "pickupInside": true
@@ -7747,6 +9568,12 @@
     "objectives": [
       "Collect 1 Head of Baron Rivendare"
     ],
+    "pickupNPCs": [
+      "Duke Nicholas Zverenhoff"
+    ],
+    "turninNPCs": [
+      "Duke Nicholas Zverenhoff"
+    ],
     "exclusive": []
   },
   "8945": {
@@ -7767,6 +9594,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Defeat Ysida Harmon (1)"
+    ],
+    "pickupNPCs": [
+      "Anthion Harmon"
+    ],
+    "turninNPCs": [
+      "Ysida Harmon"
     ],
     "exclusive": []
   },
@@ -7793,6 +9626,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Anthion Harmon"
+    ],
     "exclusive": []
   },
   "8926": {
@@ -7814,6 +9653,12 @@
       "Collect 1 Wildheart Belt",
       "Collect 1 Wildheart Gloves"
     ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
+    ],
     "exclusive": []
   },
   "8977": {
@@ -7833,6 +9678,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Extra-Dimensional Ghost Revealer"
+    ],
+    "pickupNPCs": [
+      "Mux Manascrambler"
+    ],
+    "turninNPCs": [
+      "Deliana"
     ],
     "exclusive": []
   },
@@ -7854,6 +9705,12 @@
     "objectives": [
       "Collect 1 Fel Elemental Rod"
     ],
+    "pickupNPCs": [
+      "Mux Manascrambler"
+    ],
+    "turninNPCs": [
+      "Mux Manascrambler"
+    ],
     "exclusive": []
   },
   "8925": {
@@ -7873,6 +9730,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Magma Core"
+    ],
+    "pickupNPCs": [
+      "Mux Manascrambler"
+    ],
+    "turninNPCs": [
+      "Mux Manascrambler"
     ],
     "exclusive": []
   },
@@ -7897,6 +9760,12 @@
       "Collect 12 Stable Ectoplasm",
       "Collect 1 Ectoplasmic Distiller"
     ],
+    "pickupNPCs": [
+      "Mux Manascrambler"
+    ],
+    "turninNPCs": [
+      "Mux Manascrambler"
+    ],
     "exclusive": []
   },
   "8921": {
@@ -7920,6 +9789,12 @@
       "Collect 4 Greater Eternal Essence",
       "Collect 10 Stonescale Oil",
       "Collect 25 Volcanic Ash"
+    ],
+    "pickupNPCs": [
+      "Mux Manascrambler"
+    ],
+    "turninNPCs": [
+      "Mux Manascrambler"
     ],
     "exclusive": []
   },
@@ -7948,6 +9823,12 @@
     "objectives": [
       "Collect 1 Sealed Blood Container"
     ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Mux Manascrambler"
+    ],
     "exclusive": []
   },
   "8905": {
@@ -7966,6 +9847,12 @@
     "objectives": [
       "Collect 15 Winterspring Blood Sample",
       "Collect 1 Wildheart Bracers"
+    ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
     ],
     "exclusive": []
   },
@@ -7986,6 +9873,12 @@
       "Collect 15 Winterspring Blood Sample",
       "Collect 1 Beaststalker's Bindings"
     ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
+    ],
     "exclusive": []
   },
   "8907": {
@@ -8004,6 +9897,12 @@
     "objectives": [
       "Collect 15 Winterspring Blood Sample",
       "Collect 1 Magister's Bindings"
+    ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
     ],
     "exclusive": []
   },
@@ -8024,6 +9923,12 @@
       "Collect 15 Winterspring Blood Sample",
       "Collect 1 Lightforge Bracers"
     ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
+    ],
     "exclusive": []
   },
   "8909": {
@@ -8042,6 +9947,12 @@
     "objectives": [
       "Collect 15 Winterspring Blood Sample",
       "Collect 1 Devout Bracers"
+    ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
     ],
     "exclusive": []
   },
@@ -8062,6 +9973,12 @@
       "Collect 15 Winterspring Blood Sample",
       "Collect 1 Shadowcraft Bracers"
     ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
+    ],
     "exclusive": []
   },
   "8911": {
@@ -8081,6 +9998,12 @@
       "Collect 15 Winterspring Blood Sample",
       "Collect 1 Dreadmist Bracers"
     ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
+    ],
     "exclusive": []
   },
   "8912": {
@@ -8099,6 +10022,12 @@
     "objectives": [
       "Collect 15 Winterspring Blood Sample",
       "Collect 1 Bracers of Valor"
+    ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
     ],
     "exclusive": []
   },
@@ -8127,6 +10056,12 @@
     "objectives": [
       "Collect 1 Sealed Venom Container"
     ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mux Manascrambler"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8153,6 +10088,12 @@
     "objectives": [
       "Collect 15 Silithus Venom Sample",
       "Collect 1 Wildheart Bracers"
+    ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
     ],
     "exclusive": [],
     "pin": {
@@ -8181,6 +10122,12 @@
       "Collect 15 Silithus Venom Sample",
       "Collect 1 Beaststalker's Bindings"
     ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8207,6 +10154,12 @@
     "objectives": [
       "Collect 15 Silithus Venom Sample",
       "Collect 1 Magister's Bindings"
+    ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
     ],
     "exclusive": [],
     "pin": {
@@ -8235,6 +10188,12 @@
       "Collect 15 Silithus Venom Sample",
       "Collect 1 Devout Bracers"
     ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8261,6 +10220,12 @@
     "objectives": [
       "Collect 15 Silithus Venom Sample",
       "Collect 1 Shadowcraft Bracers"
+    ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
     ],
     "exclusive": [],
     "pin": {
@@ -8289,6 +10254,12 @@
       "Collect 15 Silithus Venom Sample",
       "Collect 1 Bindings of Elements"
     ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8316,6 +10287,12 @@
       "Collect 15 Silithus Venom Sample",
       "Collect 1 Dreadmist Bracers"
     ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8342,6 +10319,12 @@
     "objectives": [
       "Collect 15 Silithus Venom Sample",
       "Collect 1 Bracers of Valor"
+    ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
     ],
     "exclusive": [],
     "pin": {
@@ -8372,6 +10355,12 @@
       "Collect 1 Beaststalker's Belt",
       "Collect 1 Beaststalker's Gloves"
     ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
+    ],
     "exclusive": []
   },
   "8932": {
@@ -8392,6 +10381,12 @@
     "objectives": [
       "Collect 1 Magister's Belt",
       "Collect 1 Magister's Gloves"
+    ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
     ],
     "exclusive": []
   },
@@ -8414,6 +10409,12 @@
       "Collect 1 Lightforge Belt",
       "Collect 1 Lightforge Gauntlets"
     ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
+    ],
     "exclusive": []
   },
   "8934": {
@@ -8434,6 +10435,12 @@
     "objectives": [
       "Collect 1 Devout Belt",
       "Collect 1 Devout Gloves"
+    ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
     ],
     "exclusive": []
   },
@@ -8456,6 +10463,12 @@
       "Collect 1 Shadowcraft Belt",
       "Collect 1 Shadowcraft Gloves"
     ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
+    ],
     "exclusive": []
   },
   "8936": {
@@ -8477,6 +10490,12 @@
       "Collect 1 Dreadmist Belt",
       "Collect 1 Dreadmist Wraps"
     ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
+    ],
     "exclusive": []
   },
   "8937": {
@@ -8497,6 +10516,12 @@
     "objectives": [
       "Collect 1 Belt of Valor",
       "Collect 1 Gauntlets of Valor"
+    ],
+    "pickupNPCs": [
+      "Deliana"
+    ],
+    "turninNPCs": [
+      "Deliana"
     ],
     "exclusive": []
   },
@@ -8523,6 +10548,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Anthion Harmon"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8552,6 +10583,12 @@
       "Collect 1 Wildheart Belt",
       "Collect 1 Wildheart Gloves"
     ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8580,6 +10617,12 @@
     "objectives": [
       "Collect 1 Extra-Dimensional Ghost Revealer"
     ],
+    "pickupNPCs": [
+      "Mux Manascrambler"
+    ],
+    "turninNPCs": [
+      "Mokvar"
+    ],
     "exclusive": []
   },
   "8938": {
@@ -8600,6 +10643,12 @@
     "objectives": [
       "Collect 1 Beaststalker's Belt",
       "Collect 1 Beaststalker's Gloves"
+    ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
     ],
     "exclusive": [],
     "pin": {
@@ -8630,6 +10679,12 @@
       "Collect 1 Magister's Belt",
       "Collect 1 Magister's Gloves"
     ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8658,6 +10713,12 @@
     "objectives": [
       "Collect 1 Devout Belt",
       "Collect 1 Devout Gloves"
+    ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
     ],
     "exclusive": [],
     "pin": {
@@ -8688,6 +10749,12 @@
       "Collect 1 Shadowcraft Belt",
       "Collect 1 Shadowcraft Gloves"
     ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8716,6 +10783,12 @@
     "objectives": [
       "Collect 1 Cord of Elements",
       "Collect 1 Gauntlets of Elements"
+    ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
     ],
     "exclusive": [],
     "pin": {
@@ -8746,6 +10819,12 @@
       "Collect 1 Dreadmist Belt",
       "Collect 1 Dreadmist Wraps"
     ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8775,6 +10854,12 @@
       "Collect 1 Belt of Valor",
       "Collect 1 Gauntlets of Valor"
     ],
+    "pickupNPCs": [
+      "Mokvar"
+    ],
+    "turninNPCs": [
+      "Mokvar"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8800,6 +10885,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Darkstone Tablet"
+    ],
+    "pickupNPCs": [
+      "Shadowmage Vivian Lagrave"
+    ],
+    "turninNPCs": [
+      "Shadowmage Vivian Lagrave"
     ],
     "exclusive": [],
     "pin": {
@@ -8829,6 +10920,12 @@
     "objectives": [
       "Collect 1 Head of Rend Blackhand"
     ],
+    "pickupNPCs": [
+      "Thrall"
+    ],
+    "turninNPCs": [
+      "Thrall"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -8855,6 +10952,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Warlord Goretooth"
+    ],
+    "turninNPCs": [
+      "Thrall"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1426,
@@ -8882,6 +10985,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Blood of the Black Dragon Champion"
+    ],
+    "pickupNPCs": [
+      "Rexxar"
+    ],
+    "turninNPCs": [
+      "Rexxar"
     ],
     "exclusive": [],
     "pin": {
@@ -8911,6 +11020,12 @@
     "objectives": [
       "Collect 1 Dull Drakefire Amulet"
     ],
+    "pickupNPCs": [
+      "Emberstrife"
+    ],
+    "turninNPCs": [
+      "Rexxar"
+    ],
     "exclusive": []
   },
   "6585": {
@@ -8933,6 +11048,12 @@
     "objectives": [
       "Collect 1 The Skull of Axtroz"
     ],
+    "pickupNPCs": [
+      "Emberstrife"
+    ],
+    "turninNPCs": [
+      "Emberstrife"
+    ],
     "exclusive": []
   },
   "6582": {
@@ -8953,6 +11074,12 @@
     "objectives": [
       "Collect 1 The Skull of Scryer"
     ],
+    "pickupNPCs": [
+      "Emberstrife"
+    ],
+    "turninNPCs": [
+      "Emberstrife"
+    ],
     "exclusive": []
   },
   "6570": {
@@ -8971,6 +11098,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Myranda the Hag"
+    ],
+    "turninNPCs": [
+      "Emberstrife"
+    ],
     "exclusive": []
   },
   "6569": {
@@ -8991,6 +11124,12 @@
     "objectives": [
       "Collect 20 Black Dragonspawn Eye"
     ],
+    "pickupNPCs": [
+      "Myranda the Hag"
+    ],
+    "turninNPCs": [
+      "Myranda the Hag"
+    ],
     "exclusive": []
   },
   "6568": {
@@ -9010,6 +11149,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Rexxar's Testament"
+    ],
+    "pickupNPCs": [
+      "Rexxar"
+    ],
+    "turninNPCs": [
+      "Myranda the Hag"
     ],
     "exclusive": [],
     "pin": {
@@ -9037,6 +11182,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Thrall"
+    ],
+    "turninNPCs": [
+      "Rexxar"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -9063,6 +11214,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Thrall"
+    ],
+    "turninNPCs": [
+      "Thrall"
+    ],
     "exclusive": [],
     "pin": {
       "map": 1454,
@@ -9091,6 +11248,12 @@
     "objectives": [
       "Collect 1 The Skull of Somnus"
     ],
+    "pickupNPCs": [
+      "Emberstrife"
+    ],
+    "turninNPCs": [
+      "Emberstrife"
+    ],
     "exclusive": []
   },
   "6584": {
@@ -9111,6 +11274,12 @@
     "objectives": [
       "Collect 1 The Skull of Chronalis"
     ],
+    "pickupNPCs": [
+      "Emberstrife"
+    ],
+    "turninNPCs": [
+      "Emberstrife"
+    ],
     "exclusive": []
   },
   "4764": {
@@ -9128,6 +11297,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Doomrigger's Clasp"
+    ],
+    "pickupNPCs": [
+      "Mayara Brightwing"
+    ],
+    "turninNPCs": [
+      "Mayara Brightwing"
     ],
     "exclusive": []
   },
@@ -9149,6 +11324,12 @@
     "objectives": [
       "Defeat General Drakkisath (1)"
     ],
+    "pickupNPCs": [
+      "Marshal Maxwell"
+    ],
+    "turninNPCs": [
+      "Marshal Maxwell"
+    ],
     "exclusive": []
   },
   "6502": {
@@ -9169,6 +11350,12 @@
     "objectives": [
       "Collect 1 Blood of the Black Dragon Champion"
     ],
+    "pickupNPCs": [
+      "Haleh"
+    ],
+    "turninNPCs": [
+      "Haleh"
+    ],
     "exclusive": []
   },
   "6501": {
@@ -9188,6 +11375,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Fragment of the Dragon's Eye"
+    ],
+    "pickupNPCs": [
+      "Highlord Bolvar Fordragon"
+    ],
+    "turninNPCs": [
+      "Haleh"
     ],
     "exclusive": [],
     "pin": {
@@ -9215,6 +11408,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Reginald Windsor"
+    ],
+    "turninNPCs": [
+      "Highlord Bolvar Fordragon"
+    ],
     "exclusive": []
   },
   "6402": {
@@ -9233,6 +11432,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Marshal Maxwell"
+    ],
+    "turninNPCs": [
+      "Reginald Windsor"
+    ],
     "exclusive": []
   },
   "7761": {
@@ -9249,6 +11454,8 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [],
+    "turninNPCs": [],
     "exclusive": []
   },
   "5160": {
@@ -9267,6 +11474,12 @@
     "objectives": [
       "Collect 1 Awbee's Scale"
     ],
+    "pickupNPCs": [
+      "Awbee"
+    ],
+    "turninNPCs": [
+      "Haleh"
+    ],
     "exclusive": []
   },
   "5047": {
@@ -9284,6 +11497,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Collect 1 Glowing Hunk of the Beast's Flesh"
+    ],
+    "pickupNPCs": [
+      "Finkle Einhorn"
+    ],
+    "turninNPCs": [
+      "Malyfous Darkhammer"
     ],
     "exclusive": []
   },
@@ -9306,6 +11525,12 @@
     "objectives": [
       "Collect 1 Eye of the Emberseer"
     ],
+    "pickupNPCs": [
+      "Duke Hydraxis"
+    ],
+    "turninNPCs": [
+      "Duke Hydraxis"
+    ],
     "exclusive": []
   },
   "6804": {
@@ -9325,6 +11550,12 @@
       "Collect 12 Discordant Bracers",
       "Collect 1 Aspect of Neptulon"
     ],
+    "pickupNPCs": [
+      "Duke Hydraxis"
+    ],
+    "turninNPCs": [
+      "Duke Hydraxis"
+    ],
     "exclusive": []
   },
   "6805": {
@@ -9343,6 +11574,12 @@
     "objectives": [
       "Defeat Dust Stormer (15)",
       "Defeat Desert Rumbler (15)"
+    ],
+    "pickupNPCs": [
+      "Duke Hydraxis"
+    ],
+    "turninNPCs": [
+      "Duke Hydraxis"
     ],
     "exclusive": []
   },
@@ -9365,6 +11602,12 @@
       "Collect 1 Soul Stained Pike",
       "Collect 1 Unforged Rune Covered Breastplate"
     ],
+    "pickupNPCs": [
+      "Lorax"
+    ],
+    "turninNPCs": [
+      "Lorax"
+    ],
     "exclusive": [],
     "requirementsNote": "Additional or conditional requirements need checking in your quest log or at the quest giver."
   },
@@ -9382,6 +11625,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Lorax"
+    ],
+    "turninNPCs": [
+      "Lorax"
+    ],
     "exclusive": [],
     "requirementsNote": "Additional or conditional requirements need checking in your quest log or at the quest giver."
   },
@@ -9399,6 +11648,13 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Gaxim Rustfizzle"
+    ],
+    "turninNPCs": [
+      "Master Mechanic Castpipe"
+    ],
+    "breadcrumbFor": 2930,
     "exclusive": [],
     "pin": {
       "map": 1413,
@@ -9426,6 +11682,13 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Beta cache report",
     "objectives": [],
+    "pickupNPCs": [
+      "Mathiel"
+    ],
+    "turninNPCs": [
+      "Klockmort Spannerspan"
+    ],
+    "breadcrumbFor": 2924,
     "exclusive": [],
     "pin": {
       "map": 1457,
@@ -10318,6 +12581,12 @@
     "objectives": [
       "Bring the Brilliant Gold Ring, one Silver Bar, one Moss Agate and 30 silver."
     ],
+    "pickupNPCs": [
+      "Talvash del Kissel"
+    ],
+    "turninNPCs": [
+      "Talvash del Kissel"
+    ],
     "exclusive": [],
     "pickupInside": false,
     "checked": "2026-11-01",
@@ -10340,6 +12609,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Bring the Brilliant Gold Ring, one Silver Bar, one Moss Agate and 30 silver."
+    ],
+    "pickupNPCs": [
+      "Nogg"
+    ],
+    "turninNPCs": [
+      "Nogg"
     ],
     "exclusive": [],
     "pin": {
@@ -10372,6 +12647,12 @@
     "objectives": [
       "Return to Dorn Plainstalker after the Test of Lore chain."
     ],
+    "pickupNPCs": [
+      "Parqual Fintallas"
+    ],
+    "turninNPCs": [
+      "Dorn Plainstalker"
+    ],
     "exclusive": [],
     "pickupInside": false,
     "checked": "2026-11-01",
@@ -10393,6 +12674,12 @@
     "dataSource": "https://github.com/cmangos/classic-db/tree/ec4f596146be6467ea93c57397858e329e2db852",
     "evidence": "Classic reference",
     "objectives": [],
+    "pickupNPCs": [
+      "Parqual Fintallas"
+    ],
+    "turninNPCs": [
+      "Parqual Fintallas"
+    ],
     "exclusive": []
   },
   "1806": {
@@ -10412,6 +12699,12 @@
     "evidence": "Classic reference",
     "objectives": [
       "Wait for Jordan Stilwell to finish forging your weapon."
+    ],
+    "pickupNPCs": [
+      "Jordan Stilwell"
+    ],
+    "turninNPCs": [
+      "Jordan Stilwell"
     ],
     "exclusive": [],
     "pickupInside": false,
@@ -10434,6 +12727,13 @@
     "objectives": [
       "Speak to Gershala Nightwhisper in Auberdine."
     ],
+    "pickupNPCs": [
+      "Argos Nightwhisper"
+    ],
+    "turninNPCs": [
+      "Gershala Nightwhisper"
+    ],
+    "breadcrumbFor": 1275,
     "exclusive": [],
     "pin": {
       "map": 1453,
@@ -10463,6 +12763,13 @@
     "objectives": [
       "Find Rethiel the Greenwarden in the Wetlands."
     ],
+    "pickupNPCs": [
+      "First Mate Fitzsimmons"
+    ],
+    "turninNPCs": [
+      "Rethiel the Greenwarden"
+    ],
+    "breadcrumbFor": 276,
     "exclusive": [],
     "pin": {
       "map": 1437,

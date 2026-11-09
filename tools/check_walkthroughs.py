@@ -7,6 +7,8 @@ lua=ctx['lua']
 for f in ('WalkthroughData.lua','Walkthrough.lua'):
     lua.execute((root/f).read_text(encoding='utf-8'),'DungeonGuideForever',lua.globals().A)
 lua.execute('''
+-- These route tests supply positive availability; unknown/negative evidence is tested separately.
+A.Availability=function() return true end
 completed={}; log={}; A.db.confirmed={}; faction="Alliance"; class="MAGE"; race="Gnome"; level=30
 C_QuestLog.GetNumQuestLogEntries=function() return #log end
 C_QuestLog.GetInfo=function(i) return log[i] end
@@ -110,7 +112,9 @@ completed={}; log={}; faction="Alliance"; race="Human"; class="WARRIOR"; level=6
 local q=A.byID[377]
 assert(q.pin and q.pin.reference and q.pin.map==1431)
 local instructions,target=A.WalkInstructions(q)
-assert(target==q and A.DataWarning(q,A.walkthroughs[q.id]):find("Approximate pickup pin",1,true))
+assert(target==q)
+local warning=A.DataWarning(q,A.walkthroughs[q.id]) or ""
+assert(warning:find("Classic reference",1,true))
 assert(not A.byID[168].pin.reference) -- curated location wins
 C_Map.GetMapInfo=function() return {name="Duskwood"} end
 function WorldMapFrame:GetMapID() return 1431 end
@@ -205,11 +209,11 @@ A.SelectQuest(A.byID[92458])
 assert(A.window.warning:IsShown() and A.window.warning.tip:find("Source details",1,true))
 local text=A.window.detailText:GetText():lower()
 assert(not text:find("needs checking",1,true) and not text:find("not been verified",1,true))
-assert(text:find("modera",1,true))
+assert(text:find("prerequisite",1,true))
 assert(not A.RunReadiness(A.byID[92458]))
 A.SelectQuest(A.byID[95647]); assert(not A.window.warning:IsShown())
 assert(A.DisplayText("Melisara in Tarren Mill (quest-text report; exact pickup unverified).") == "Melisara in Tarren Mill.")
-assert(A.DataWarning({id=990999,evidence="Classic reference",pin={reference=true}}))
+assert(A.DataWarning({id=990999,evidence="Classic reference",pin={reference=true}}):find("Classic reference",1,true))
 ''')
 print('PASS: confidence icon, concise directions, resolved warning removal and unchanged readiness gates')
 lua.execute('''
@@ -229,7 +233,7 @@ assert(label=="Level 42" and tip:find("Earlier step",1,true))
 level=42
 assert(A.QuestRowStatus(q)~="Level 42", "Level label must clear when eligible")
 A.log[q.id]={complete=false}; level=30
-assert(A.QuestRowStatus(q)=="Ready", "Accepted quests must not be blocked by reference level data")
+assert(A.QuestRowStatus(q)=="Active", "Accepted quests must not be blocked by reference level data")
 A.log[q.id]=nil; completed[q.id]=true
 local done,doneIcon=A.QuestRowStatus(q)
 assert(done=="Completed" and doneIcon)
