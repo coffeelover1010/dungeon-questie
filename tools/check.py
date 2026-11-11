@@ -163,7 +163,7 @@ A.quests={collectionQuest,{id=990021,dungeons={"Collection test"},pickupInside=t
  {id=990023,dungeons={"Collection test"},faction="Horde"}}
 local summary=A.PreparationSummary("Collection test"); assert(summary.collected==1 and summary.total==3)
 A.log[990020]={}; summary=A.PreparationSummary("Collection test"); assert(summary.collected==2 and summary.total==3)
-A.log[990020].complete=true; summary=A.PreparationSummary("Collection test"); assert(summary.collected==2 and summary.total==3)
+A.log[990020].complete=true; summary=A.PreparationSummary("Collection test"); assert(summary.collected==1 and summary.total==3)
 A.log[990020]=nil; A.db.confirmed[990020]=true
 summary=A.PreparationSummary("Collection test"); assert(summary.collected==1 and summary.total==3)
 A.db.confirmed[990021]=true; A.db.confirmed[990022]=true

@@ -40,21 +40,8 @@ function A.DisplayText(value)
  return result
 end
 function A.DataWarning(q,n,phase)
- if not q then return nil end
- local reasons={}; local seen={}
- local function add(t) if not seen[t] then seen[t]=true; reasons[#reasons+1]=t end end
- for _,record in ipairs({q,n or q}) do
-  if record.evidence=="Classic reference" or record.referenceDetails then add("Includes Classic reference data; Forever availability is not verified by this source.") end
-  if record.unverifiedChain or record.requirementsNote then add("Quest requirements may vary.") end
-  if record.restrictionUnknown then add("Character eligibility is incomplete.") end
-  for _,key in ipairs({"pickup","preparationNote","routeNote","requirementsNote"}) do
-   local v=record[key]
-   if v and (v:lower():find("not reverified",1,true) or v:lower():find("not verified",1,true) or v:lower():find("not yet verified",1,true) or v:lower():find("confirmation",1,true) or v:lower():find("unverified",1,true) or v:lower():find("unnecessary",1,true) or v:lower():find("older wowhead",1,true)) then add("Some directions rely on incomplete or conflicting reports.") end
-  end
- end
- if phase=="check" then add("This step is not included in ready-for-dungeon totals.") end
- if #reasons==0 then return nil end
- return "Source details\n"..table.concat(reasons,"\n")
+ -- Source confidence stays in research records; quest state and readiness supply guidance.
+ return nil
 end
 local function warningIcon(parent)
  local b=CreateFrame("Button",nil,parent); b:SetSize(18,18)
@@ -65,6 +52,16 @@ local function warningIcon(parent)
  return b
 end
 local selected,rows,dungeonButtons,rewardButtons=nil,{},{},{}
+local expandedChains,chainDisplay={},{ }
+function A.DungeonReadinessBadge(q)
+ local ready,reason=A.RunReadiness(q)
+ if ready then return "Interface\\RaidFrame\\ReadyCheck-Ready","Ready for dungeon\n"..(reason or "Continue inside the dungeon.") end
+ if A.Completed(q.id)==true then return "Interface\\Buttons\\UI-CheckBox-Check","Completed\nQuest already turned in." end
+ local stage=A.Preparation(q)
+ if stage=="blocked" then return "Interface\\DialogFrame\\UI-Dialog-Icon-AlertNew","Not ready for dungeon\nQuest requirements are not met." end
+ if stage=="skipped" then return "Interface\\Buttons\\UI-GroupLoot-Pass-Up","Skipped\nOptional breadcrumb no longer needed." end
+ return "Interface\\Icons\\INV_Misc_PocketWatch_01","Not ready for dungeon\n"..(reason or "Finish preparation or check availability. See the quest's next step.")
+end
 local statusLabels={
  ["SKIPPED BREADCRUMB"]="Skipped",
  ["AVAILABILITY UNKNOWN"]="Availability unknown",
@@ -93,6 +90,10 @@ end
 function A.QuestRowStatus(q)
  local stage,label=A.Preparation(q)
  local value=readableStatus(label)
+ if stage=="check" and A.StepContext then
+  local n,phase,note=A.WalkStep(q)
+  local _,title=A.StepContext(q,n,phase,note); value=title
+ end
  local actionable,_,actionPhase=A.ActionReadiness(q)
  if actionable then value=actionPhase=="ready" and "Turn in" or "Collect" end
  local prefix,quest=label:match("^([^:]+): (.+)$")
@@ -243,7 +244,11 @@ local function details()
  local instructions,target,heading
  if q then instructions,target,heading=A.PickupSteps(q) end
  f.pickupTarget=target
- f.mapButton:SetEnabled(target and target.pin~=nil or false)
+ local mapTarget,mapTip
+ if A.MapLocation then mapTarget,mapTip=A.MapLocation(q) end
+ f.mapTarget=mapTarget or target
+ f.mapButton:SetEnabled(f.mapTarget and f.mapTarget.pin~=nil or false)
+ f.mapButton.tip=mapTip or "Show recorded location on map"
  local current,phase
  if q and A.WalkStep then current,phase=A.WalkStep(q) else current=q end
  f.warning.tip=A.DataWarning(q,current,phase); f.warning:SetShown(f.warning.tip~=nil)
@@ -334,6 +339,23 @@ local function details()
  end
  f.detailChild:SetHeight(math.max(1,-actionsY+44))
 end
+function A.QuestRowPriority(q)
+ local stage=A.Preparation(q)
+ if stage=="skipped" then return 9 end
+ if A.FutureQuestStep and A.FutureQuestStep(q) then return 7 end
+ if stage=="blocked" then return 8 end
+ if A.Completed(q.id)==true then return 6 end
+ if A.log[q.id] then return A.log[q.id].complete and 2 or 3 end
+ local step,phase
+ if A.WalkStep then step,phase=A.WalkStep(q) end
+ -- Only an actual offer is a pickup now. Unknown availability is not an offer.
+ if step and step.id==q.id and phase=="pickup" then return 1 end
+ if A.RunReadiness(q) then return 4 end
+ return 5
+end
+local function rowBackground(row,chosen,index)
+ row.bg:SetColorTexture(1,0.88,0.62,chosen and 0.90 or (index%2==0 and 0.70 or 0.55))
+end
 function A.Refresh()
  if InCombatLockdown() then return end
  local f=A.window; if not f or not f:IsShown() then return end
@@ -344,6 +366,8 @@ function A.Refresh()
  local visible={}
  for _,q in ipairs(A.quests) do if A.Matches(q) then visible[#visible+1]=q end end
  table.sort(visible,function(a,b)
+  local ap,bp=A.QuestRowPriority(a),A.QuestRowPriority(b)
+  if ap~=bp then return ap<bp end
   local _,_,ar=A.Preparation(a); local _,_,br=A.Preparation(b)
   if ar~=br then return ar<br end
   local az=a.pin and a.pin.zone or a.pickup or ""; local bz=b.pin and b.pin.zone or b.pickup or ""
@@ -351,7 +375,36 @@ function A.Refresh()
   if (a.minLevel or 0)==(b.minLevel or 0) then return a.id<b.id end
   return (a.minLevel or 0)<(b.minLevel or 0)
  end)
- local found=false; for _,q in ipairs(visible) do if q==selected then found=true end end
+ local entries={}
+ if A.QuestChainGroups then
+  local groups=A.QuestChainGroups(visible)
+  table.sort(groups,function(a,b)
+   local function priority(g)
+    local rank=A.QuestRowPriority(g.quest)
+    for _,n in ipairs(g.steps) do rank=math.min(rank,A.QuestRowPriority(n)) end
+    return rank
+   end
+   local ar,br=priority(a),priority(b)
+   if ar~=br then return ar<br end
+   return a.quest.id<b.quest.id
+  end)
+  visible={}
+  for _,g in ipairs(groups) do
+   visible[#visible+1]=g.quest; entries[#visible]={group=g}
+   if expandedChains[g.quest.id] then
+    for _,n in ipairs(g.steps) do
+     local child=n
+     if not n.dungeons then
+      child=chainDisplay[n.id] or {}; chainDisplay[n.id]=child
+      for k,v in pairs(n) do child[k]=v end
+      child.dungeons=g.quest.dungeons; child.rewards=child.rewards or {}; child.objectives=child.objectives or {}
+     end
+     visible[#visible+1]=child; entries[#visible]={parent=g.quest}
+    end
+   end
+  end
+ end
+ local found=false; for _,q in ipairs(visible) do if selected and q.id==selected.id then selected=q; found=true; break end end
  if not found then selected=visible[1]; f.detailScroll:SetVerticalScroll(0) end
  local listHeight=0
  for i,q in ipairs(visible) do
@@ -365,7 +418,18 @@ function A.Refresh()
    r.selection=r:CreateTexture(nil,"ARTWORK"); r.selection:SetColorTexture(0.65,0.35,0.04,1); r.selection:SetWidth(4); r.selection:SetPoint("TOPLEFT"); r.selection:SetPoint("BOTTOMLEFT")
    r:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight"); r:GetHighlightTexture():SetAlpha(0.25)
    r.title=text(r,15,10,-8,314); r.status=text(r,12,10,-36,314); r.meta=text(r,11,10,-54,314)
-   r.warning=warningIcon(r); r.warning:SetPoint("TOPRIGHT",-6,-8)
+   r.readiness=warningIcon(r); r.readiness:SetPoint("TOPRIGHT",-6,-8)
+   r.warning=warningIcon(r); r.warning:SetPoint("TOPRIGHT",-28,-8)
+   r.expand=CreateFrame("Button",nil,r); r.expand:SetSize(20,20); r.expand:SetPoint("TOPLEFT",8,-6)
+   local expandText=r.expand:CreateFontString(nil,"OVERLAY")
+   expandText:SetFont("Fonts\\FRIZQT__.TTF",17,""); expandText:SetPoint("CENTER",0,0)
+   expandText:SetTextColor(0.32,0.23,0.12); r.expand.label=expandText
+   r.expand:SetHighlightTexture("Interface\\Buttons\\WHITE8X8")
+   r.expand:GetHighlightTexture():SetVertexColor(0.40,0.29,0.13,0.12)
+   r.expand:SetScript("OnClick",function()
+    local id=r.quest.id; expandedChains[id]=not expandedChains[id]
+    selected=r.quest; A.Refresh()
+   end)
    r:SetScript("OnEnter",function(self)
     if self.statusTip then GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine(self.statusTip,1,1,1,true); GameTooltip:Show() end
    end)
@@ -384,22 +448,43 @@ function A.Refresh()
    end
    r:SetScript("OnClick",function(self)
     selected=self.quest; f.detailScroll:SetVerticalScroll(0)
+    if self.hasSteps then
+     expandedChains[self.quest.id]=not expandedChains[self.quest.id]
+     A.Refresh(); return
+    end
     -- Selection changes only the highlight and detail pane, not quest state.
     for index,row in ipairs(rows) do
      local chosen=row.quest==selected
      row.selection:SetShown(chosen)
-     row.bg:SetColorTexture(1,0.88,0.62,chosen and 0.90 or (index%2==0 and 0.70 or 0.55))
+     rowBackground(row,chosen,index)
     end
     details()
    end); rows[i]=r
   end
-  r.quest=q; r:ClearAllPoints(); r:SetPoint("TOPLEFT",0,-listHeight)
-  local s=A.state[q.id] or "unknown"
+  local entry=entries[i] or {}
+  local child=entry.parent~=nil
+  local hasSteps=entry.group and #entry.group.steps>0
+  r.hasSteps=hasSteps
+  r.quest=q; r:ClearAllPoints(); r:SetPoint("TOPLEFT",child and 18 or 0,-listHeight)
+  r:SetWidth(child and 316 or 334)
+  r.expand:SetShown(hasSteps or false)
+  r.expand.label:SetText("...")
+  r.title:ClearAllPoints(); r.title:SetPoint("TOPLEFT",hasSteps and 38 or 10,-8)
+  r.status:SetWidth(child and 296 or 314); r.meta:SetWidth(child and 296 or 314)
+  local s=A.state[q.id] or A.Status(q)
   local stage,prepLabel=A.Preparation(q)
+  local breadcrumb=((A.walkthroughs or {})[q.id] or q).breadcrumbFor~=nil
+  local unnecessary=breadcrumb and stage=="skipped"
+  local future=A.FutureQuestStep and A.FutureQuestStep(q)
+  r:SetAlpha(1)
+  r.title:SetTextColor(0.12,0.075,0.035)
+  r.meta:SetTextColor(0.19,0.12,0.06)
   local warningStep,warningPhase
   if A.WalkStep then warningStep,warningPhase=A.WalkStep(q) end
   r.warning.tip=A.DataWarning(q,warningStep,warningPhase); r.warning:SetShown(r.warning.tip~=nil)
-  r.title:SetWidth(r.warning.tip and 290 or 314)
+  local readinessIcon,readinessTip=A.DungeonReadinessBadge(q)
+  r.readiness.icon:SetTexture(readinessIcon); r.readiness.tip=readinessTip; r.readiness:Show()
+  r.title:SetWidth((r.warning.tip and 268 or 290)-(child and 18 or 0)-(hasSteps and 28 or 0))
   local statusLabel,statusIcon,statusTip=A.QuestRowStatus(q)
   r.statusTip=statusTip
   r.title:SetText(q.name); r.status:SetText(statusLabel); r.status:SetTextColor(unpack(colors[s]))
@@ -418,8 +503,35 @@ function A.Refresh()
    statusIcon="Interface\\Buttons\\UI-CheckBox-Check"
   end
   if warningPhase=="check" or warningPhase=="skipped" or warningPhase=="unavailable" or warningPhase=="blocked" then
-   local _,_,reason=A.WalkStep(q); r.meta:SetText(reason or "See quest details.")
+   local step,phase,reason=A.WalkStep(q)
+   if phase=="skipped" then r.meta:SetText(reason or "See quest details.")
+   else r.meta:SetText((A.StepContext(q,step,phase,reason))) end
   elseif warningPhase=="active" then r.meta:SetText("Complete objectives: "..warningStep.name)
+  end
+  if future then
+   r.status:SetText("Later step")
+   r.status:SetTextColor(0.30,0.23,0.15)
+   r.statusTip="This quest comes later in the chain. Current step: "..future.name..".\n"..(r.statusTip or "")
+   r.meta:SetText("Current step: "..future.name.."\n"..r.meta:GetText())
+   statusIcon="Interface\\Icons\\INV_Misc_PocketWatch_01"
+  end
+  if breadcrumb then
+   if unnecessary then
+    r.status:SetText("Breadcrumb - not needed")
+    r.status:SetTextColor(0.30,0.23,0.15)
+    statusIcon="Interface\\Buttons\\UI-GroupLoot-Pass-Up"
+    r.meta:SetText("You already have or completed a later quest in this chain.")
+    r.statusTip="Optional breadcrumb: not needed for dungeon preparation because you have progressed beyond it."
+   else
+    r.status:SetText("Breadcrumb - "..r.status:GetText())
+    r.statusTip="Optional introduction quest.\n"..(r.statusTip or "")
+   end
+  end
+  if hasSteps then
+   local current=A.WalkStep(q)
+   r.status:SetText("Quest chain - "..#entry.group.steps.." earlier steps")
+   r.meta:SetText("Current step: "..current.name.."\n"..(expandedChains[q.id] and "Click this box to collapse steps." or "Click this box to expand steps."))
+   statusIcon=nil
   end
   if statusIcon then r.status:SetText("|T"..statusIcon..":14:14:0:0|t "..r.status:GetText()) end
   r.meta:SetText(A.DisplayText(r.meta:GetText()))
@@ -443,7 +555,7 @@ function A.Refresh()
    rowHeight=rowHeight+30
   end
   r:SetHeight(rowHeight); listHeight=listHeight+rowHeight+8
-  r.bg:SetColorTexture(1,0.88,0.62,q==selected and 0.90 or (i%2==0 and 0.70 or 0.55)); r.selection:SetShown(q==selected); r:Show()
+  rowBackground(r,q==selected,i); r.selection:SetShown(q==selected); r:Show()
  end
  for i=#visible+1,#rows do rows[i]:Hide() end
  f.listChild:SetHeight(math.max(1,listHeight)); f.empty:SetShown(#visible==0)
@@ -462,6 +574,12 @@ end
 function A.SelectQuest(q)
  if InCombatLockdown() then return end
  A.db.dungeon=q.dungeons[1]; A.db.search=""; selected=q
+ if A.QuestChainGroups then
+  local candidates={}; for _,n in ipairs(A.quests) do if A.Matches(n) then candidates[#candidates+1]=n end end
+  for _,g in ipairs(A.QuestChainGroups(candidates)) do
+   for _,n in ipairs(g.steps) do if n.id==q.id then expandedChains[g.quest.id]=true end end
+  end
+ end
  if not A.window then A.CreateWindow() end
  A.window.search:SetText(""); A.window:Show(); A.Scan()
  A.RevealSelectedDungeon()
@@ -535,7 +653,7 @@ function A.CreateWindow()
  f.warning=warningIcon(f.metadata)
  f.detailScroll,f.detailChild=scroll(f,604,-124,313,452)
  f.detailText=text(f.detailChild,12,0,0,300)
- f.mapButton=iconButton(f.detailChild,"Show pickup on map","Interface\\Icons\\INV_Misc_Map_01",604,-600,function() if f.pickupTarget then A.Navigate(f.pickupTarget) end end)
+ f.mapButton=iconButton(f.detailChild,"Show location on map","Interface\\Icons\\INV_Misc_Map_01",604,-600,function() if f.mapTarget then A.Navigate(f.mapTarget) end end)
  f.logButton=iconButton(f.detailChild,"Open quest log","Interface\\Icons\\INV_Misc_Book_09",648,-600,function()
   if not selected then return end
   local current=f.currentQuest or selected

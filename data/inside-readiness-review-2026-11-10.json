@@ -1,0 +1,196 @@
+{
+  "checked": "2026-11-10",
+  "scope": "16 previously flagged inside-pickup quests; no inference of availability from missing QuestieDB fields.",
+  "questieDBVersion": "1.0.13",
+  "resolved": [
+    96395,
+    98423,
+    95250,
+    97288,
+    92415,
+    95195,
+    95189,
+    95204,
+    95664,
+    95809,
+    2947,
+    2949,
+    96987
+  ],
+  "remaining": {
+    "3366": "This older Glowing Shard quest variant is not in the installed Forever QuestieDB. Use the Glowing Shard to check which quest ID it offers; the recorded current item-start variant is 6981.",
+    "78916": "The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item.",
+    "78917": "The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item."
+  },
+  "supportingSteps": [
+    2945,
+    95647
+  ],
+  "sources": {
+    "hall": "https://warcraft.blizzplanet.com/hall-of-thanes-dungeon-world-of-warcraft-forever/",
+    "ruins": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "wetlands": "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands-quests",
+    "relic": "https://www.wowhead.com/forever/item=270866/titan-relic",
+    "ring": "https://questing.wiki/wow-forever/quests/2945/",
+    "dalaran": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
+  },
+  "patches": {
+    "96395": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://warcraft.blizzplanet.com/hall-of-thanes-dungeon-world-of-warcraft-forever/",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "turninInside": true,
+      "dungeonObjective": true,
+      "turnin": "Ghostly Attendant inside the Hall of Thanes."
+    },
+    "98423": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://warcraft.blizzplanet.com/hall-of-thanes-dungeon-world-of-warcraft-forever/",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "turninInside": false,
+      "dungeonObjective": false
+    },
+    "95250": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "turninInside": true,
+      "dungeonObjective": true,
+      "turnin": "Captain Truman inside Ruins of Lordaeron."
+    },
+    "97288": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "turninInside": false,
+      "dungeonObjective": false
+    },
+    "92415": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "turninInside": false,
+      "dungeonObjective": false
+    },
+    "95195": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "turninInside": false,
+      "dungeonObjective": true
+    },
+    "95189": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "turninInside": false,
+      "dungeonObjective": false
+    },
+    "95204": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "turninInside": false,
+      "dungeonObjective": false
+    },
+    "95664": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://www.wowhead.com/forever/item=270866/titan-relic",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "turninInside": false,
+      "dungeonObjective": false,
+      "turnin": "Bashana Runetotem, Elder Rise, Thunder Bluff."
+    },
+    "95809": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands-quests",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "all": [
+        95647
+      ],
+      "any": [],
+      "turninInside": false,
+      "dungeonObjective": false
+    },
+    "2947": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://questing.wiki/wow-forever/quests/2945/",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "all": [
+        2945
+      ],
+      "any": [],
+      "turninInside": false,
+      "dungeonObjective": false
+    },
+    "2949": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://questing.wiki/wow-forever/quests/2945/",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "all": [
+        2945
+      ],
+      "any": [],
+      "turninInside": false,
+      "dungeonObjective": false
+    },
+    "96987": {
+      "unverifiedChain": false,
+      "pickupInside": true,
+      "chainSource": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "chainChecked": "2026-11-10",
+      "readinessReviewed": "2026-11-10",
+      "turninInside": true,
+      "dungeonObjective": true,
+      "turnin": "Rexxie Copperclutch inside City of Dalaran, near the sewer entrance."
+    },
+    "2945": {
+      "dungeonObjective": true,
+      "turninInside": true,
+      "readinessReviewed": "2026-11-10",
+      "readinessSource": "https://questing.wiki/wow-forever/quests/2945/"
+    },
+    "95647": {
+      "dungeonObjective": true,
+      "turninInside": true,
+      "readinessReviewed": "2026-11-10",
+      "readinessSource": "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands-quests"
+    },
+    "3366": {
+      "requirementsNote": "This older Glowing Shard quest variant is not in the installed Forever QuestieDB. Use the Glowing Shard to check which quest ID it offers; the recorded current item-start variant is 6981.",
+      "readinessReviewed": "2026-11-10"
+    },
+    "78916": {
+      "requirementsNote": "The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item.",
+      "readinessReviewed": "2026-11-10"
+    },
+    "78917": {
+      "requirementsNote": "The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item.",
+      "readinessReviewed": "2026-11-10"
+    }
+  }
+}

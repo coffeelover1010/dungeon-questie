@@ -1,0 +1,808 @@
+{
+  "checked": "2026-11-10",
+  "version": "1.0.13",
+  "commit": "0f7d8adc92b28ac6594f4ad8745257f4d9784edf",
+  "sha256": "9e5410bbe8634541c6e59f699772368fd5e40a74b922df9d18a319ef6b20d21c",
+  "scope": "Catalogue levels and walkthrough AND/OR prerequisite edges; baked static data only. Agreement is not live-client verification.",
+  "catalogueCount": 266,
+  "matched": [
+    5723,
+    5728,
+    5724,
+    5722,
+    5761,
+    5725,
+    96403,
+    96394,
+    96393,
+    92401,
+    92421,
+    92415,
+    214,
+    92753,
+    168,
+    167,
+    2040,
+    166,
+    373,
+    1486,
+    1491,
+    962,
+    959,
+    1487,
+    6981,
+    1098,
+    1740,
+    1013,
+    1014,
+    6562,
+    971,
+    1198,
+    1275,
+    1199,
+    6565,
+    6561,
+    386,
+    377,
+    387,
+    388,
+    391,
+    1221,
+    2922,
+    2923,
+    2927,
+    2928,
+    2842,
+    2843,
+    98423,
+    96391,
+    378,
+    2924,
+    2930,
+    2929,
+    2962,
+    2841,
+    2951,
+    2945,
+    1102,
+    1109,
+    6522,
+    1101,
+    1142,
+    1048,
+    1053,
+    1051,
+    1113,
+    1049,
+    1050,
+    1951,
+    1654,
+    6921,
+    6922,
+    3341,
+    6521,
+    3636,
+    6626,
+    3523,
+    3525,
+    2342,
+    2202,
+    2283,
+    1360,
+    2398,
+    17,
+    704,
+    2198,
+    2418,
+    709,
+    2278,
+    1956,
+    2936,
+    2991,
+    2768,
+    2865,
+    3042,
+    2846,
+    2770,
+    3527,
+    7068,
+    7029,
+    7064,
+    7070,
+    7041,
+    7065,
+    7028,
+    7044,
+    7067,
+    7046,
+    1445,
+    4146,
+    4143,
+    1446,
+    3373,
+    3447,
+    3528,
+    4081,
+    4134,
+    4082,
+    4063,
+    3906,
+    3907,
+    3981,
+    4132,
+    4003,
+    4262,
+    4263,
+    4286,
+    4126,
+    4341,
+    4362,
+    4241,
+    4322,
+    4123,
+    7848,
+    3802,
+    4201,
+    4024,
+    7489,
+    7488,
+    7441,
+    5526,
+    7463,
+    7461,
+    7507,
+    7481,
+    7482,
+    5518,
+    7703,
+    4724,
+    4981,
+    4903,
+    4701,
+    5089,
+    5001,
+    4862,
+    4729,
+    4866,
+    4742,
+    4867,
+    4788,
+    5341,
+    5343,
+    5529,
+    5382,
+    5515,
+    5384,
+    4771,
+    5466,
+    5214,
+    5251,
+    5282,
+    5122,
+    5262,
+    5848,
+    5243,
+    5212,
+    5213,
+    5125,
+    5263,
+    5463,
+    8945,
+    4768,
+    4974,
+    6602,
+    4764,
+    5102,
+    6502,
+    7761,
+    5160,
+    4735,
+    5127,
+    2931,
+    2925,
+    95697,
+    95663,
+    95664,
+    95795,
+    95647,
+    95810,
+    95737,
+    95772,
+    1442,
+    79360,
+    92456,
+    92458,
+    96987,
+    92489,
+    96988,
+    92457,
+    96986,
+    96800,
+    95776,
+    96774,
+    95775,
+    92819,
+    2948,
+    2950,
+    1394,
+    1806,
+    3765,
+    463
+  ],
+  "missing": [
+    3366,
+    78916,
+    78917,
+    3911
+  ],
+  "differences": [
+    {
+      "id": 96395,
+      "name": "An Ancient Grudge",
+      "fields": {
+        "minLevel": {
+          "catalogue": 10,
+          "questieDB": 0
+        }
+      }
+    },
+    {
+      "id": 95250,
+      "name": "Abominable Creatures",
+      "fields": {
+        "minLevel": {
+          "catalogue": 16,
+          "questieDB": 15
+        }
+      }
+    },
+    {
+      "id": 97288,
+      "name": "Unending Torment",
+      "fields": {
+        "minLevel": {
+          "catalogue": 16,
+          "questieDB": 15
+        }
+      }
+    },
+    {
+      "id": 92422,
+      "name": "The Wrath of Rath'mael",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": [
+              99156
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 95195,
+      "name": "Bloodied Insignia",
+      "fields": {
+        "minLevel": {
+          "catalogue": 16,
+          "questieDB": 15
+        }
+      }
+    },
+    {
+      "id": 95189,
+      "name": "Crest of Lordaeron",
+      "fields": {
+        "minLevel": {
+          "catalogue": 16,
+          "questieDB": 15
+        }
+      }
+    },
+    {
+      "id": 95204,
+      "name": "Crest of Lordaeron",
+      "fields": {
+        "minLevel": {
+          "catalogue": 16,
+          "questieDB": 15
+        }
+      }
+    },
+    {
+      "id": 95216,
+      "name": "The New Plague",
+      "fields": {
+        "minLevel": {
+          "catalogue": 16,
+          "questieDB": 15
+        },
+        "prerequisites": {
+          "catalogue": {
+            "all": [],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": [
+              451
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 1489,
+      "name": "Hamuul Runetotem",
+      "fields": {
+        "minLevel": {
+          "catalogue": 10,
+          "questieDB": 12
+        }
+      }
+    },
+    {
+      "id": 1490,
+      "name": "Nara Wildmane",
+      "fields": {
+        "minLevel": {
+          "catalogue": 10,
+          "questieDB": 12
+        }
+      }
+    },
+    {
+      "id": 914,
+      "name": "Leaders of the Fang",
+      "fields": {
+        "minLevel": {
+          "catalogue": 10,
+          "questieDB": 11
+        }
+      }
+    },
+    {
+      "id": 6564,
+      "name": "Allegiance to the Old Gods",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": [
+              6562
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 6563,
+      "name": "The Essence of Aku'Mai",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              6562
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 1200,
+      "name": "Blackfathom Villainy",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              1198
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 1144,
+      "name": "Willix the Importer",
+      "fields": {
+        "minLevel": {
+          "catalogue": 22,
+          "questieDB": 23
+        }
+      }
+    },
+    {
+      "id": 2926,
+      "name": "Gnogaine",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              2927
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 2904,
+      "name": "A Fine Mess",
+      "fields": {
+        "minLevel": {
+          "catalogue": 20,
+          "questieDB": 24
+        }
+      }
+    },
+    {
+      "id": 1160,
+      "name": "Test of Lore",
+      "fields": {
+        "minLevel": {
+          "catalogue": 26,
+          "questieDB": 25
+        }
+      }
+    },
+    {
+      "id": 2240,
+      "name": "The Hidden Chamber",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              2398
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 1139,
+      "name": "The Lost Tablets of Will",
+      "fields": {
+        "minLevel": {
+          "catalogue": 30,
+          "questieDB": 35
+        }
+      }
+    },
+    {
+      "id": 7066,
+      "name": "Seed of Life",
+      "fields": {
+        "minLevel": {
+          "catalogue": 39,
+          "questieDB": 45
+        }
+      }
+    },
+    {
+      "id": 1475,
+      "name": "Into The Temple of Atal'Hakkar",
+      "fields": {
+        "minLevel": {
+          "catalogue": 38,
+          "questieDB": 41
+        }
+      }
+    },
+    {
+      "id": 7201,
+      "name": "The Last Element",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": [
+              3906
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 4136,
+      "name": "Ribbly Screwspigot",
+      "fields": {
+        "minLevel": {
+          "catalogue": 50,
+          "questieDB": 48
+        }
+      }
+    },
+    {
+      "id": 5525,
+      "name": "Free Knot!",
+      "fields": {
+        "minLevel": {
+          "catalogue": 56,
+          "questieDB": 57
+        }
+      }
+    },
+    {
+      "id": 5528,
+      "name": "The Gordok Taste Test",
+      "fields": {
+        "minLevel": {
+          "catalogue": 56,
+          "questieDB": 57
+        }
+      }
+    },
+    {
+      "id": 7668,
+      "name": "The Darkreaver Menace",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": [
+              7667
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 6163,
+      "name": "Ramstein",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              6135
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [
+              6135,
+              6136
+            ],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 5047,
+      "name": "Finkle Einhorn, At Your Service!",
+      "fields": {
+        "minLevel": {
+          "catalogue": 57,
+          "questieDB": 55
+        }
+      }
+    },
+    {
+      "id": 6821,
+      "name": "Eye of the Emberseer",
+      "fields": {
+        "minLevel": {
+          "catalogue": 55,
+          "questieDB": 56
+        }
+      }
+    },
+    {
+      "id": 98815,
+      "name": "Highland Hides",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              484
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 98823,
+      "name": "Earthen Echo",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              95664
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 95809,
+      "name": "Heartwoven",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              95647
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 95646,
+      "name": "Horrors in the Highland",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              275
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 95682,
+      "name": "Open the Maw",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              95663
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 98824,
+      "name": "Prehistoric Prism",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              95810
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 96264,
+      "name": "Elemental Aid",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              94789
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    },
+    {
+      "id": 2947,
+      "name": "Return of the Ring",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": [
+              2945
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 2949,
+      "name": "Return of the Ring",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": [
+              2945
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 96984,
+      "name": "Heart of Disruption",
+      "fields": {
+        "prerequisites": {
+          "catalogue": {
+            "all": [
+              92434
+            ],
+            "any": []
+          },
+          "questieDB": {
+            "all": [],
+            "any": []
+          }
+        }
+      }
+    }
+  ],
+  "buildInputsChanged": false
+}

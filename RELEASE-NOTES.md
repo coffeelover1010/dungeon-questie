@@ -1,3 +1,13 @@
+# Dungeon Questie 0.1.9 - 2026-11-11
+
+- Group prerequisite chains into expandable quest rows and prioritize current steps.
+- Improve dungeon readiness counts and icons, including inside pickups and hand-ins while excluding outside deliveries.
+- Correct reviewed prerequisite links, pickup locations and recipient details.
+- Add optional QuestieDB location support and map destinations for every quest state.
+- Preserve useful directions and requirement context when availability is uncertain.
+- Simplify source-warning presentation and clarify quest status.
+
+Offline Lua, quest progression, readiness, location, group controls and data reproducibility checks passed. Live rendering and server quest availability remain subject to in-game verification.
 # Dungeon Questie 0.1.8
 
 - Show ready counts and green ticks for confirmed quest offers and ready-to-turn-in steps, including prerequisites.

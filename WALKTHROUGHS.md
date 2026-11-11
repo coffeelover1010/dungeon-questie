@@ -31,9 +31,9 @@ After installation, `/reload`, select Deadmines and Destruction in Deadmines. Ch
 The detail panel distinguishes accepting, completing, and turning in a prerequisite. Rewards remain those of the selected dungeon goal and name that quest explicitly; when a prerequisite is shown, the panel explains that the rewards are for the goal. A prerequisite with missing pickup directions never borrows the goal quest location.
 
 
-## Confidence icon
+## Source confidence
 
-An amber warning icon beside the row title and detail header replaces repeated uncertainty paragraphs. Hover for the reason: incomplete requirements, eligibility, reference data or approximate pins. Directions stay readable; unresolved steps retain their readiness gates. Source records keep their full evidence and historical notes.
+Generic source-confidence warning icons are hidden in quest rows and detail headers. Quest status, next steps and dungeon readiness still show actionable guidance. Source records retain their evidence and historical notes; readiness gates are unchanged.
 
 The follow-up October 9 review resolves Highland Hides to Young Crocolisk Skins (484), based on a firsthand Wowhead report corroborated by Icy Veins. The prerequisite's current quest page specifies six skins. See data/confidence-review-2026-10-09.json. Client rendering and offered-quest behavior have not been observed locally.
 

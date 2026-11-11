@@ -55,3 +55,39 @@ assert(A.window.detailText:GetText():find("Quest chain",1,true))
 ''')
 print('PASS: chain numbering, return trips, accepted/turn-in/completed states, abandonment, AND/OR branches, missing data, cycles and detail UI.')
 
+lua.execute('''
+completed={}; A.db.confirmed={}; A.log={}; A.offers={}; A.logAvailable=true; level=60
+local reviewed=0
+for _,profile in ipairs({{"Alliance","Human","WARRIOR"},{"Horde","Orc","SHAMAN"},{"Alliance","Gnome","MAGE"}}) do
+ faction,race,class=unpack(profile)
+ for id,n in pairs(A.walkthroughs) do
+  A.log={}; A.offers={}; completed={}
+  local current,phase=A.WalkStep(n)
+  local future=A.FutureQuestStep(n)
+  assert((future~=nil)==(current.id~=id and phase~="done" and phase~="skipped"),id)
+  A.log[id]={complete=false}; assert(not A.FutureQuestStep(n),id)
+  A.log[id].complete=true; assert(not A.FutureQuestStep(n),id)
+  A.log={}; A.offers[id]=true; assert(not A.FutureQuestStep(n),id)
+  A.offers={}; completed[id]=true; assert(not A.FutureQuestStep(n),id)
+  reviewed=reviewed+1
+ end
+end
+-- Completing the precursor restores normal prominence, without asserting an offer.
+completed={}; A.log={}; A.offers={}; faction="Alliance"; race="Human"; class="WARRIOR"
+local q=A.byID[95809]
+assert(A.FutureQuestStep(q).id==95647)
+A.log[95647]={complete=true}; assert(A.FutureQuestStep(q).id==95647)
+A.log={}; completed[95647]=true; assert(not A.FutureQuestStep(q))
+completed={}; assert(A.FutureQuestStep(q).id==95647)
+-- Unknown standalone availability stays normal; maps remain independent.
+assert(not A.FutureQuestStep(A.byID[95810]))
+-- Unknown inside quests must not outrank accepted quests or confirmed offers.
+completed={}; A.log={[95772]={complete=true},[95647]={complete=false}}; A.offers={}
+assert(A.QuestRowPriority(A.byID[95772])<A.QuestRowPriority(A.byID[95810]))
+assert(A.QuestRowPriority(A.byID[95647])<A.QuestRowPriority(A.byID[95795]))
+assert(A.QuestRowPriority(A.byID[95810])<A.QuestRowPriority(A.byID[95795]))
+A.offers[95737]=true
+assert(A.QuestRowPriority(A.byID[95737])<A.QuestRowPriority(A.byID[95772]))
+print("PASS: future-step presentation audited across "..reviewed.." node/profile combinations; accepted, ready, completed, live offers and precursor advancement")
+''')
+

@@ -23,11 +23,11 @@ function A.ClearWaypoint()
  A.waypoint=nil
 end
 function A.Navigate(q)
- if A.WalkStep then
+ if not q.mapOnly and A.WalkStep then
   local step,phase=A.WalkStep(q)
   if step.id~=q.id or (phase~="pickup" and phase~="inside") then A.Print("No confirmed pickup action for this quest. See its current step."); return end
  end
- if not A.NeedsPickup(q) then A.Print("You already have or completed "..q.name..". Open its quest log for the next destination."); return end
+ if not q.mapOnly and not A.NeedsPickup(q) then A.Print("You already have or completed "..q.name..". Open its quest log for the next destination."); return end
  local p=q.pin
  if not p then A.Print("No pickup pin for "..q.name..". See its pickup directions."); return end
  if InCombatLockdown() then A.Print("Set a waypoint after combat."); return end
@@ -42,7 +42,8 @@ function A.Navigate(q)
   A.tomtom=A.Safe(TomTom.AddWaypoint,TomTom,p.map,p.x/100,p.y/100,{title=q.name.." - "..p.title..(p.reference and " (Classic reference)" or ""),persistent=false,minimap=true,world=true})
   set=set or A.tomtom~=nil
  end
- A.target=q.id
+ A.target=not q.mapOnly and q.id or nil
+ A.locationTarget=q.mapOnly and q or nil
  A.db.pins=true
  if OpenWorldMap then OpenWorldMap(p.map)
  elseif WorldMapFrame then WorldMapFrame:Show() end
@@ -52,7 +53,7 @@ function A.Navigate(q)
   if A.window then A.window:Hide() end
  end
  local drawn=A.RefreshPins()
- A.Print(q.name..": "..p.zone.." "..p.x..", "..p.y..(set and " (waypoint set)" or (drawn and drawn>0 and " (pickup marked on world map)" or " (coordinates; map marker unavailable)")))
+ A.Print(q.name..": "..p.title.." - "..p.zone.." "..p.x..", "..p.y..(set and " (waypoint set)" or (drawn and drawn>0 and " (marked on world map)" or " (coordinates; map marker unavailable)")))
  if p.reference then A.Print("Approximate pickup pin from Classic reference data.") end
 end
 function A.RefreshPins()
@@ -61,15 +62,23 @@ function A.RefreshPins()
  local canvas=map:GetCanvas(); if not canvas then for _,p in ipairs(pins) do p:Hide() end; return 0 end
  local mapID=map:GetMapID(); local groups={}; local order={}
  local candidates={}
- for _,q in ipairs(A.quests) do candidates[#candidates+1]=q end
+ for _,q in ipairs(A.quests) do
+  if A.MapLocation and A.Matches(q) then
+   local location=A.MapLocation(q)
+   if location then candidates[#candidates+1]=location end
+  else candidates[#candidates+1]=q end
+ end
+ if A.locationTarget then candidates[#candidates+1]=A.locationTarget end
  local step=A.walkthroughs and A.walkthroughs[A.target]
  if step and not A.byID[step.id] then candidates[#candidates+1]=step end
  for _,q in ipairs(candidates) do
   local p=q.pin; local s=A.state[q.id]
-  if p and A.NeedsPickup(q) and p.map==mapID and valid(p) and (q.id==A.target or (A.Preparation(q)=="pickup" and A.Matches(q))) then
+  if p and p.map==mapID and valid(p) and (q.mapOnly or (A.NeedsPickup(q) and (q.id==A.target or (A.Preparation(q)=="pickup" and A.Matches(q))))) then
    local key=p.x..":"..p.y
-   if not groups[key] then groups[key]={p=p,quests={}}; order[#order+1]=key end
-   table.insert(groups[key].quests,q)
+   if not groups[key] then groups[key]={p=p,quests={},seen={}}; order[#order+1]=key end
+   if not groups[key].seen[q.id] then
+    table.insert(groups[key].quests,q); groups[key].seen[q.id]=true
+   end
   end
  end
  for i,key in ipairs(order) do
@@ -79,8 +88,9 @@ function A.RefreshPins()
    b.icon=b:CreateTexture(nil,"OVERLAY"); b.icon:SetAllPoints(); b.icon:SetTexture("Interface\\GossipFrame\\AvailableQuestIcon")
    b.icon:SetDesaturated(true); b.icon:SetVertexColor(0.2,1,0.3)
    b:SetScript("OnEnter",function(self)
-    GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine("Dungeon Questie - pickup",0.2,1,0.3)
+    GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine("Dungeon Questie - "..(self.group.p.kind or "pickup"),0.2,1,0.3)
     GameTooltip:AddLine(self.group.p.title,1,1,1)
+    if self.group.p.kind=="entrance" then GameTooltip:AddLine("Dungeon entrance / approach, not an exact quest location.",1,0.8,0.3,true) end
     if self.group.p.reference then GameTooltip:AddLine("Approximate pickup pin from Classic reference data.",1,0.8,0.3,true) end
     for _,q in ipairs(self.group.quests) do GameTooltip:AddLine(q.name.." - "..(A.labels[A.state[q.id]] or ""),0.8,0.9,1) end
     GameTooltip:AddLine("Click to open the quest. Shift-click to set a waypoint.",0.7,0.7,0.7,true); GameTooltip:Show()
@@ -88,7 +98,7 @@ function A.RefreshPins()
    b:SetScript("OnLeave",function() GameTooltip:Hide() end)
    b:SetScript("OnClick",function(self)
     local q=self.group.quests[1]
-    if IsShiftKeyDown() then A.Navigate(q) else A.SelectQuest(q) end
+    if IsShiftKeyDown() then A.Navigate(q) else A.SelectQuest(q.origin or A.byID[q.id] or q) end
    end)
    pins[i]=b
   end

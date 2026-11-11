@@ -74,16 +74,40 @@ function A.ChecklistVisible(q)
  return true
 end
 -- Preparation is separate from quest completion: having a quest is enough.
+local function handInInside(q)
+ local n=(A.walkthroughs or {})[q.id] or q
+ -- Existing curated inside destinations: Thaelrid and Daewyn Songblade.
+ return q.turninInside or n.turninInside or q.id==1198 or q.id==95772
+end
 function A.RunReadiness(q)
  if A.Completed(q.id)==true then return false,"Already completed." end
- if A.log[q.id] then return true,"Collected — follow your quest log." end
+ local location=(A.walkthroughs or {})[q.id] or q
+ if A.log[q.id] then
+  if A.log[q.id].complete then
+   if handInInside(q) then return true,"Turn in inside: "..(q.name or "Quest") end
+   return false,"Objectives complete — turn in outside the dungeon or check the hand-in location."
+  end
+  if location.dungeonObjective==false then return false,"The remaining task is outside the dungeon; follow your quest log." end
+  return true,"Collected — follow your quest log."
+ end
  if A.Restriction(q) or (q.minLevel and UnitLevel("player")<q.minLevel) then return false end
  if A.WalkStep then
-  local n,phase=A.WalkStep(q)
+  local n,phase,note=A.WalkStep(q)
   if phase=="inside" then return true,"Pick up inside: "..n.name end
+  -- Planning an inside pickup does not assert that the NPC has offered it.
+  -- The resolver has already checked level, prerequisites and known restrictions.
+  if phase=="check" and note=="Not yet confirmed available for this character." and
+     (n.pickupInside or (n.id==q.id and q.pickupInside)) then
+   return true,"Pick up inside: "..n.name..". "..(n.pickup or q.pickup or "").." Availability still needs confirming inside."
+  end
+  if phase=="ready" and handInInside(n) then
+   return true,"Turn in inside: "..n.name
+  end
   local record=A.byID[n.id]
   local tag=A.Safe(C_QuestLog and C_QuestLog.GetQuestTagInfo,n.id)
-  local dungeonObjective=n.id==95647 or (tag and tag.tagID==81)
+  local dungeonObjective=n.dungeonObjective
+  if dungeonObjective==nil then dungeonObjective=((A.walkthroughs or {})[n.id] or {}).dungeonObjective end
+  if dungeonObjective==nil then dungeonObjective=tag and tag.tagID==81 end
   if phase=="active" and record and dungeonObjective then
    for _,d in ipairs(q.dungeons) do
     if A.InDungeon(record,d) then return true,"Continue inside: "..n.name end
@@ -137,7 +161,7 @@ function A.PreparationSummary(dungeon)
   if A.InDungeon(q,dungeon) and A.ChecklistVisible(q) and not A.Restriction(q) then
    local stage=A.Preparation(q); counts[stage]=counts[stage]+1
    counts.total=counts.total+1
-   if A.ActionReadiness(q) then counts.ready=counts.ready+1 end
+   if A.RunReadiness(q) then counts.ready=counts.ready+1 end
    if A.RunReadiness(q) then counts.collected=counts.collected+1 end
   end
  end
@@ -179,6 +203,7 @@ function A.ReadLog()
 end
 function A.Scan()
  if not A.db then return end
+ if A.LoadLocations then A.LoadLocations() end
  A.ReadLog()
  local targetInvalid=false
  if A.target and A.WalkStep then

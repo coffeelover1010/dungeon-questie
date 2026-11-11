@@ -114,7 +114,7 @@ assert(q.pin and q.pin.reference and q.pin.map==1431)
 local instructions,target=A.WalkInstructions(q)
 assert(target==q)
 local warning=A.DataWarning(q,A.walkthroughs[q.id]) or ""
-assert(warning:find("Classic reference",1,true))
+assert(not warning:find("Classic reference",1,true))
 assert(not A.byID[168].pin.reference) -- curated location wins
 C_Map.GetMapInfo=function() return {name="Duskwood"} end
 function WorldMapFrame:GetMapID() return 1431 end
@@ -206,16 +206,16 @@ print(f'PASS: {len(data)} chain records, all edges resolve, no cycles; step adva
 lua.execute('''
 completed={}; log={}; A.db.confirmed={}; faction="Alliance"; class="MAGE"; race="Gnome"; level=30; A.Scan()
 A.SelectQuest(A.byID[92458])
-assert(A.window.warning:IsShown() and A.window.warning.tip:find("Source details",1,true))
+assert(not A.window.warning:IsShown())
 local text=A.window.detailText:GetText():lower()
 assert(not text:find("needs checking",1,true) and not text:find("not been verified",1,true))
 assert(text:find("prerequisite",1,true))
 assert(not A.RunReadiness(A.byID[92458]))
 A.SelectQuest(A.byID[95647]); assert(not A.window.warning:IsShown())
 assert(A.DisplayText("Melisara in Tarren Mill (quest-text report; exact pickup unverified).") == "Melisara in Tarren Mill.")
-assert(A.DataWarning({id=990999,evidence="Classic reference",pin={reference=true}}):find("Classic reference",1,true))
+assert(not A.DataWarning({id=990999,evidence="Classic reference",pin={reference=true}}))
 ''')
-print('PASS: confidence icon, concise directions, resolved warning removal and unchanged readiness gates')
+print('PASS: hidden source warnings, concise directions and unchanged readiness gates')
 lua.execute('''
 local oldLevel,oldFaction=level,faction
 level=30; faction="Alliance"
@@ -271,3 +271,32 @@ for _,records in ipairs({A.quests,A.walkthroughs}) do
  end
 end
 ''')
+
+lua.execute('''
+completed={}; log={}; A.db.confirmed={}; level=60; faction="Alliance"; class="WARRIOR"; race="Human"; A.Scan()
+A.Availability=function() return nil end
+A.offers={}
+local q=A.byID[95810]
+local n,p,note=A.WalkStep(q)
+assert(p=="check")
+local text,title=A.StepContext(q,n,p,note)
+assert(text:find("Titan Relic",1,true) and text:find("Recorded level requirement met",1,true))
+assert(title=="Check availability" and not A.ActionReadiness(q))
+assert(A.WalkInstructions(q):find("Titan Relic",1,true))
+assert(A.QuestRowStatus(q)=="Check availability")
+q=A.byID[95795]; n,p,note=A.WalkStep(q)
+text,title=A.StepContext(q,n,p,note)
+assert(n.id==95772 and text:find("Dorin",1,true) and title=="Check requirements")
+completed[95810]=true
+q=A.byID[98824]; n,p,note=A.WalkStep(q)
+text=A.StepContext(q,n,p,note)
+assert(n.id==98824 and text:find("1/1",1,true) and text:find("Whelgar",1,true))
+assert(p=="check" and not A.ActionReadiness(q))
+A.Availability=function() return false end
+n,p,note=A.WalkStep(q)
+text=A.StepContext(q,n,p,note)
+assert(p=="unavailable" and text:find("Not offered by the current NPC",1,true))
+A.offers[q.id]=true
+assert(select(2,A.WalkStep(q))=="pickup")
+''')
+print('PASS: uncertain steps retain pickup directions, level and completion progress without claiming availability; live offers still win')

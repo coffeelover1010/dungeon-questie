@@ -89,13 +89,51 @@ A.events.OnEvent(nil,"GOSSIP_CLOSED")
 assert(A.Availability(3765)==nil and select(2,A.WalkStep(crumb))=="check")
 assert(not b.enabled and b:GetAttribute("macrotext")==nil)
 C_GossipInfo=nil; A.ReadOffers(); assert(A.Availability(3765)==nil)
--- Summary numerators exactly match actionable row statuses.
+-- Summary numerators exactly match dungeon readiness badges.
 state({{questID=1198,title="In Search of Thaelrid",complete=true},{questID=1275,title="Researching the Corruption",complete=false}})
 local count=0
 for _,quest in ipairs(A.quests) do
- if A.InDungeon(quest,"Blackfathom Deeps") and A.ChecklistVisible(quest) and not A.Restriction(quest) and A.ActionReadiness(quest) then count=count+1 end
+ if A.InDungeon(quest,"Blackfathom Deeps") and A.ChecklistVisible(quest) and not A.Restriction(quest) and A.RunReadiness(quest) then count=count+1 end
 end
 assert(A.PreparationSummary("Blackfathom Deeps").ready==count and count>0)
+-- Inside pickup planning does not invent a live offer or bypass requirements.
+completed={}; A.db.confirmed={}; A.offers={}; state({})
+local fallen=A.byID[95795]
+assert(not A.RunReadiness(fallen))
+state({{questID=95772,title="Songblade Search",complete=false}})
+assert(A.RunReadiness(fallen),"Accepted dungeon precursor is ready for the run")
+log[1].complete=true; A.Scan(); assert(A.RunReadiness(fallen))
+completed[95772]=true; state({}); assert(A.RunReadiness(fallen),"Follow-up is collected inside")
+assert(not A.ActionReadiness(fallen),"Planning readiness does not invent an NPC offer")
+completed[95795]=true; assert(not A.RunReadiness(fallen))
+local reference={id=990991,evidence="Classic reference",unverifiedChain=true,restrictionUnknown=true,pickup="Pickup unverified"}
+assert(not A.DataWarning(reference),"Source warning icons stay hidden")
+A.log[reference.id]={complete=false}; assert(not A.DataWarning(reference))
+reference.turnin="Exact hand-in unverified"
+assert(not A.DataWarning(reference),"Unverified directions do not restore removed warning icons")
+completed[reference.id]=true; assert(not A.DataWarning(reference))
+A.log[reference.id]=nil; completed[reference.id]=nil; reference.turnin=nil
+A.offers[reference.id]=true; assert(not A.DataWarning(reference)); A.offers[reference.id]=nil
+completed={}; A.db.confirmed={}; A.offers={}; state({})
+local relic=A.byID[95810]
+assert(A.RunReadiness(relic))
+assert(not A.ActionReadiness(relic) and select(2,A.WalkStep(relic))=="check")
+assert(select(1,A.DungeonReadinessBadge(relic)):find("ReadyCheck-Ready",1,true))
+level=1; assert(not A.RunReadiness(relic)); level=60
+A.offers[95810]=false; assert(not A.RunReadiness(relic)); A.offers={}
+local node=A.walkthroughs[95810]
+node.requirementsNote="Needs a key"; assert(not A.RunReadiness(relic)); node.requirementsNote=nil
+state({{questID=95772,title="Songblade Search",complete=true}})
+assert(A.RunReadiness(A.byID[95772]))
+state({{questID=1198,title="In Search of Thaelrid",complete=true}})
+assert(A.RunReadiness(q),"Inside prerequisite hand-in is ready for the run")
+state({{questID=1275,title="Researching the Corruption",complete=false}})
+assert(A.RunReadiness(A.byID[1275]))
+state({{questID=1275,title="Researching the Corruption",complete=true}})
+assert(not A.RunReadiness(A.byID[1275]),"Outside hand-in does not need a dungeon run")
+completed[1275]=true; state({})
+assert(not A.RunReadiness(A.byID[1275]))
+assert(select(1,A.DungeonReadinessBadge(A.byID[1275])):find("UI-CheckBox-Check",1,true))
 -- Combat guard: model the registered secure state transition, then assert
 -- no insecure attribute/layout mutation; reopening rescans the latest state.
 A.SelectQuest(q)

@@ -267,6 +267,7 @@
     "eligibilityChecked": "2026-11-07"
   },
   "95737": {
+    "breadcrumbFor": 95647,
     "objectives": [
       "Speak to Caitlin Grassman in Menethil Harbor."
     ],
@@ -278,6 +279,8 @@
     "eligibilityChecked": "2026-11-07"
   },
   "95772": {
+    "dungeonObjective": true,
+    "turninInside": true,
     "objectives": [
       "Search the Excavation Site for Daewyn Songblade."
     ],
@@ -289,6 +292,14 @@
     "eligibilityChecked": "2026-11-07"
   },
   "95795": {
+    "all": [
+      95772
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands-quests",
+    "chainChecked": "2026-11-10",
     "objectives": [
       "Tell Dorin Songblade what happened to Daewyn."
     ],
@@ -314,7 +325,18 @@
   "95809": {
     "turnin": "Caitlin Grassman, Menethil Harbor, Wetlands.",
     "checked": "2026-10-03",
-    "source": "https://wowforevertalents.com/quests/heartwoven-95809/"
+    "source": "https://wowforevertalents.com/quests/heartwoven-95809/",
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "all": [
+      95647
+    ],
+    "any": [],
+    "turninInside": false,
+    "dungeonObjective": false
   },
   "95810": {
     "turnin": "Prospector Whelgar at the outdoor excavation in Wetlands.",
@@ -339,9 +361,16 @@
     "pickup": "Prospector Whelgar at the outdoor excavation in Wetlands, after turning in Lost Relic Carry."
   },
   "95664": {
-    "turnin": "Elder Rise, Thunder Bluff; the source does not identify the NPC.",
+    "turnin": "Bashana Runetotem, Elder Rise, Thunder Bluff.",
     "checked": "2026-10-03",
-    "source": "https://wowforevertalents.com/quests/elder-knowledge-95664/"
+    "source": "https://wowforevertalents.com/quests/elder-knowledge-95664/",
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://www.wowhead.com/forever/item=270866/titan-relic",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
   },
   "98823": {
     "turnin": "Muln Earthfury, Skywatcher Plateau, northwest Mulgore.",
@@ -597,7 +626,11 @@
     "unverifiedChain": false,
     "preparationNote": "Seeking Caitlin is an optional introduction from Llana in Astranaar. Check Caitlin directly in Menethil Harbor before travelling to Ashenvale.",
     "checked": "2026-10-09",
-    "chainSource": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239"
+    "chainSource": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239",
+    "dungeonObjective": true,
+    "turninInside": true,
+    "readinessReviewed": "2026-11-10",
+    "readinessSource": "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands-quests"
   },
   "484": {
     "name": "Young Crocolisk Skins",
@@ -681,6 +714,132 @@
     "routeNote": "Classic reference facts; current Forever rewards and availability have not been checked in game. Optional introductory quest; do not require it if the destination NPC already offers the next quest."
   },
   "2947": {
-    "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. Return it to Talvash del Kissel in Ironforge."
+    "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. Return it to Talvash del Kissel in Ironforge.",
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://questing.wiki/wow-forever/quests/2945/",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "all": [
+      2945
+    ],
+    "any": [],
+    "turninInside": false,
+    "dungeonObjective": false
+  },
+  "96395": {
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://warcraft.blizzplanet.com/hall-of-thanes-dungeon-world-of-warcraft-forever/",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": true,
+    "dungeonObjective": true,
+    "turnin": "Ghostly Attendant inside the Hall of Thanes."
+  },
+  "98423": {
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://warcraft.blizzplanet.com/hall-of-thanes-dungeon-world-of-warcraft-forever/",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
+  },
+  "95250": {
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": true,
+    "dungeonObjective": true,
+    "turnin": "Captain Truman inside Ruins of Lordaeron."
+  },
+  "97288": {
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
+  },
+  "92415": {
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
+  },
+  "95195": {
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": true
+  },
+  "95189": {
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
+  },
+  "95204": {
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
+  },
+  "2949": {
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://questing.wiki/wow-forever/quests/2945/",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "all": [
+      2945
+    ],
+    "any": [],
+    "turninInside": false,
+    "dungeonObjective": false
+  },
+  "96987": {
+    "unverifiedChain": false,
+    "pickupInside": true,
+    "chainSource": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": true,
+    "dungeonObjective": true,
+    "turnin": "Rexxie Copperclutch inside City of Dalaran, near the sewer entrance."
+  },
+  "2945": {
+    "dungeonObjective": true,
+    "turninInside": true,
+    "readinessReviewed": "2026-11-10",
+    "readinessSource": "https://questing.wiki/wow-forever/quests/2945/"
+  },
+  "3366": {
+    "requirementsNote": "This older Glowing Shard quest variant is not in the installed Forever QuestieDB. Use the Glowing Shard to check which quest ID it offers; the recorded current item-start variant is 6981.",
+    "readinessReviewed": "2026-11-10"
+  },
+  "78916": {
+    "requirementsNote": "The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item.",
+    "readinessReviewed": "2026-11-10"
+  },
+  "78917": {
+    "requirementsNote": "The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item.",
+    "readinessReviewed": "2026-11-10"
   }
 }

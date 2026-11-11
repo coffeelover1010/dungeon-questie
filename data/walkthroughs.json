@@ -284,14 +284,20 @@
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/an-ancient-grudge-96395/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Ghostly Attendant, Anvilmar's Rest inside Hall of Thanes.",
     "pickupInside": true,
     "minLevel": 10,
     "objectives": [
       "Faldrim Anvilmar"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "chainSource": "https://warcraft.blizzplanet.com/hall-of-thanes-dungeon-world-of-warcraft-forever/",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": true,
+    "dungeonObjective": true,
+    "turnin": "Ghostly Attendant inside the Hall of Thanes."
   },
   "96403": {
     "id": 96403,
@@ -391,7 +397,7 @@
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/abominable-creatures-95250/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Captain Truman inside Ruins of Lordaeron.",
     "pickupInside": true,
     "minLevel": 16,
@@ -399,7 +405,13 @@
     "objectives": [
       "Head of the Baron"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": true,
+    "dungeonObjective": true,
+    "turnin": "Captain Truman inside Ruins of Lordaeron."
   },
   "97288": {
     "id": 97288,
@@ -408,7 +420,7 @@
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/unending-torment-97288/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Abominable Head dropped by The Baron inside Ruins of Lordaeron.",
     "pickupInside": true,
     "minLevel": 16,
@@ -416,7 +428,12 @@
     "objectives": [
       "Abominable Head"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
   },
   "92401": {
     "id": 92401,
@@ -464,7 +481,7 @@
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/remember-that-i-love-you-92415/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Blood-Stained Letter near Rath'mael in the Lordaeron Graveyard area inside the dungeon.",
     "pickupInside": true,
     "minLevel": 15,
@@ -472,7 +489,12 @@
     "objectives": [
       "Blood-Stained Letter"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
   },
   "92422": {
     "id": 92422,
@@ -497,7 +519,7 @@
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/bloodied-insignia-95195/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Bloodied Insignia dropped by skeletons inside Ruins of Lordaeron.",
     "pickupInside": true,
     "minLevel": 16,
@@ -505,7 +527,12 @@
     "objectives": [
       "Bloodied Insignia ×10"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": true
   },
   "95189": {
     "id": 95189,
@@ -514,7 +541,7 @@
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95189/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Crest item found inside Ruins of Lordaeron; faction-specific quest.",
     "pickupInside": true,
     "minLevel": 16,
@@ -522,7 +549,12 @@
     "objectives": [
       "Crest of Lordaeron"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
   },
   "95204": {
     "id": 95204,
@@ -531,7 +563,7 @@
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/crest-of-lordaeron-95204/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Crest item found inside Ruins of Lordaeron; faction-specific quest.",
     "pickupInside": true,
     "minLevel": 16,
@@ -539,7 +571,12 @@
     "objectives": [
       "Crest of Lordaeron"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "chainSource": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
   },
   "95216": {
     "id": 95216,
@@ -1566,7 +1603,9 @@
     "objectives": [
       "Glowing Shard"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "requirementsNote": "This older Glowing Shard quest variant is not in the installed Forever QuestieDB. Use the Glowing Shard to check which quest ID it offers; the recorded current item-start variant is 6981.",
+    "readinessReviewed": "2026-11-10"
   },
   "6981": {
     "id": 6981,
@@ -2581,12 +2620,17 @@
     "any": [],
     "evidence": "Forever database",
     "source": "https://www.wowhead.com/forever/quest=98423",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Interact with the treaty vault in the Reliquary of Kings inside the dungeon.",
     "pickupInside": true,
     "minLevel": 9,
     "faction": "Alliance",
-    "checked": "2026-10-01"
+    "checked": "2026-10-01",
+    "chainSource": "https://warcraft.blizzplanet.com/hall-of-thanes-dungeon-world-of-warcraft-forever/",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
   },
   "378": {
     "id": 378,
@@ -2880,7 +2924,11 @@
     "exclusive": [],
     "pickupInside": true,
     "checked": "2026-11-07",
-    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data.",
+    "dungeonObjective": true,
+    "turninInside": true,
+    "readinessReviewed": "2026-11-10",
+    "readinessSource": "https://questing.wiki/wow-forever/quests/2945/"
   },
   "1102": {
     "id": 1102,
@@ -11806,7 +11854,7 @@
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/elder-knowledge-95664/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Use the Titan Relic looted inside Excavation Site (guide-reported).",
     "pickupInside": true,
     "minLevel": 24,
@@ -11815,16 +11863,23 @@
       "Titan Relic"
     ],
     "checked": "2026-10-03",
-    "turnin": "Elder Rise, Thunder Bluff; the source does not identify the NPC."
+    "turnin": "Bashana Runetotem, Elder Rise, Thunder Bluff.",
+    "chainSource": "https://www.wowhead.com/forever/item=270866/titan-relic",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
   },
   "95795": {
     "id": 95795,
     "name": "Fallen in the Fen",
-    "all": [],
+    "all": [
+      95772
+    ],
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/fallen-in-the-fen-95795/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Daewyn Songblade's body inside Excavation Site; return to Dorin in Lakeshire. Exact location unverified.",
     "pickupInside": true,
     "minLevel": 24,
@@ -11833,7 +11888,37 @@
       "Tell Dorin Songblade what happened to Daewyn."
     ],
     "checked": "2026-10-03",
+    "chainSource": "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands-quests",
+    "chainChecked": "2026-11-10",
     "turnin": "Dorin Songblade, Lakeshire, Redridge Mountains.",
+    "eligibilitySource": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
+    "eligibilityChecked": "2026-11-07"
+  },
+  "95772": {
+    "id": 95772,
+    "name": "Songblade Search",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/songblade-search-95772/",
+    "unverifiedChain": true,
+    "pickup": "Dorin Songblade - Redridge Mountains, Lakeshire (25.7, 46.5)",
+    "pin": {
+      "map": 1433,
+      "x": 25.7,
+      "y": 46.5,
+      "zone": "Redridge Mountains",
+      "title": "Dorin Songblade"
+    },
+    "minLevel": 24,
+    "faction": "Alliance",
+    "objectives": [
+      "Search the Excavation Site for Daewyn Songblade."
+    ],
+    "checked": "2026-10-03",
+    "dungeonObjective": true,
+    "turninInside": true,
+    "turnin": "Check Daewyn Songblade inside Excavation Site; exact hand-in interaction unverified.",
     "eligibilitySource": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
     "eligibilityChecked": "2026-11-07"
   },
@@ -11846,7 +11931,7 @@
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/heartwoven-95809/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Reed-woven Heart from Ardin Grassman inside Excavation Site, after Lost in the Thicket Things.",
     "pickupInside": true,
     "minLevel": 24,
@@ -11855,7 +11940,12 @@
       "Reed-woven Heart"
     ],
     "checked": "2026-10-03",
-    "turnin": "Caitlin Grassman, Menethil Harbor, Wetlands."
+    "turnin": "Caitlin Grassman, Menethil Harbor, Wetlands.",
+    "chainSource": "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands-quests",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
   },
   "95647": {
     "id": 95647,
@@ -11880,7 +11970,11 @@
       "Learn what happened to Ardin Grassman"
     ],
     "checked": "2026-10-09",
-    "chainSource": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239"
+    "chainSource": "https://www.wowhead.com/news/every-quest-in-excavation-site-wetlands-wow-forever-383239",
+    "dungeonObjective": true,
+    "turninInside": true,
+    "readinessReviewed": "2026-11-10",
+    "readinessSource": "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands-quests"
   },
   "95646": {
     "id": 95646,
@@ -12061,33 +12155,8 @@
       "Speak to Caitlin Grassman in Menethil Harbor."
     ],
     "checked": "2026-10-03",
+    "breadcrumbFor": 95647,
     "turnin": "Caitlin Grassman, Menethil Harbor, Wetlands.",
-    "eligibilitySource": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
-    "eligibilityChecked": "2026-11-07"
-  },
-  "95772": {
-    "id": 95772,
-    "name": "Songblade Search",
-    "all": [],
-    "any": [],
-    "evidence": "Beta cache report",
-    "source": "https://wowforevertalents.com/quests/songblade-search-95772/",
-    "unverifiedChain": true,
-    "pickup": "Dorin Songblade - Redridge Mountains, Lakeshire (25.7, 46.5)",
-    "pin": {
-      "map": 1433,
-      "x": 25.7,
-      "y": 46.5,
-      "zone": "Redridge Mountains",
-      "title": "Dorin Songblade"
-    },
-    "minLevel": 24,
-    "faction": "Alliance",
-    "objectives": [
-      "Search the Excavation Site for Daewyn Songblade."
-    ],
-    "checked": "2026-10-03",
-    "turnin": "Check Daewyn Songblade inside Excavation Site; exact hand-in interaction unverified.",
     "eligibilitySource": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
     "eligibilityChecked": "2026-11-07"
   },
@@ -12123,7 +12192,9 @@
     "objectives": [
       "Perfect Blackfathom Pearl"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "requirementsNote": "The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item.",
+    "readinessReviewed": "2026-11-10"
   },
   "78917": {
     "id": 78917,
@@ -12139,7 +12210,9 @@
     "objectives": [
       "Perfect Blackfathom Pearl"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "requirementsNote": "The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item.",
+    "readinessReviewed": "2026-11-10"
   },
   "79360": {
     "id": 79360,
@@ -12203,11 +12276,13 @@
   "2947": {
     "id": 2947,
     "name": "Return of the Ring",
-    "all": [],
+    "all": [
+      2945
+    ],
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/return-of-the-ring-2947/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. Return it to Talvash del Kissel in Ironforge.",
     "pickupInside": true,
     "minLevel": 28,
@@ -12215,16 +12290,23 @@
     "objectives": [
       "Brilliant Gold Ring"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "chainSource": "https://questing.wiki/wow-forever/quests/2945/",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
   },
   "2949": {
     "id": 2949,
     "name": "Return of the Ring",
-    "all": [],
+    "all": [
+      2945
+    ],
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/return-of-the-ring-2949/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Use the Brilliant Gold Ring from the Sparklematic 5200 in Gnomeregan. The return is optional.",
     "pickupInside": true,
     "minLevel": 28,
@@ -12232,7 +12314,12 @@
     "objectives": [
       "Brilliant Gold Ring"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "chainSource": "https://questing.wiki/wow-forever/quests/2945/",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": false,
+    "dungeonObjective": false
   },
   "92456": {
     "id": 92456,
@@ -12381,7 +12468,7 @@
     "any": [],
     "evidence": "Beta cache report",
     "source": "https://wowforevertalents.com/quests/opportunistic-education-96987/",
-    "unverifiedChain": true,
+    "unverifiedChain": false,
     "pickup": "Rexxie Copperclutch just inside the City of Dalaran entrance (guide report).",
     "pickupInside": true,
     "minLevel": 24,
@@ -12389,7 +12476,13 @@
     "objectives": [
       "The Founding of Dalaran"
     ],
-    "checked": "2026-11-07"
+    "checked": "2026-11-07",
+    "chainSource": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+    "chainChecked": "2026-11-10",
+    "readinessReviewed": "2026-11-10",
+    "turninInside": true,
+    "dungeonObjective": true,
+    "turnin": "Rexxie Copperclutch inside City of Dalaran, near the sewer entrance."
   },
   "92489": {
     "id": 92489,

@@ -82,10 +82,36 @@ local function resolve(id,path)
  path[id]=nil
  if levelBlocked then return n,"blocked",restriction end
  if n.requirementsNote then return n,"check",n.requirementsNote end
- if n.unverifiedChain then return n,"check","Prerequisite details are incomplete. See the quest source for preparation." end
+ if n.unverifiedChain then return n,"check","Earlier quest requirements are not fully recorded." end
  if A.Availability(id)==false then return n,"unavailable","Not offered by the current NPC." end
- if A.Availability(id)~=true then return n,"check","Availability unconfirmed. The client has not reported an offer for this quest; guide level and prerequisites alone do not prove it is collectible." end
+ if A.Availability(id)~=true then return n,"check","Not yet confirmed available for this character." end
  return n,"pickup"
+end
+-- Share useful guide context between uncertain list cards and the walkthrough.
+-- This is presentation only; it never promotes a step to pickup/readiness.
+function A.StepContext(q,n,phase,note)
+ local known=A.byID[n.id] or {}
+ local lines={}
+ if n.id~=q.id then lines[#lines+1]="Next recorded step: "..n.name end
+ local pickup=n.pickup or known.pickup
+ lines[#lines+1]=pickup and ("Guide pickup: "..pickup) or "Pickup location is not recorded. Check the quest source."
+ local prep=n.preparationNote or known.preparationNote
+ if prep then lines[#lines+1]=prep end
+ if n.minLevel and UnitLevel("player")>=n.minLevel then
+  lines[#lines+1]="Recorded level requirement met ("..n.minLevel..")."
+ end
+ local required=n.all or n.prereqs or {}
+ local count=0
+ for _,id in ipairs(required) do if A.Completed(id)==true then count=count+1 end end
+ if #required>0 then lines[#lines+1]="Recorded prerequisites completed: "..count.."/"..#required.."." end
+ local alternatives=n.any or {}
+ for _,id in ipairs(alternatives) do
+  if A.Completed(id)==true then lines[#lines+1]="A recorded alternative prerequisite is completed."; break end
+ end
+ if note then lines[#lines+1]=note end
+ local title="Check availability"
+ if n.requirementsNote or n.unverifiedChain then title="Check requirements" end
+ return table.concat(lines,"\n"),title
 end
 function A.WalkStep(q)
  if A.Completed(q.id)==true then return q,"done" end
@@ -108,6 +134,49 @@ function A.WalkStep(q)
  return n,phase,note
 end
 -- Build the recorded route, keeping AND prerequisites and one OR branch.
+-- Presentation follows the same resolver as the walkthrough, including branches
+-- and live offers. Missing availability alone does not make a quest a later step.
+function A.FutureQuestStep(q)
+ if A.Completed(q.id)==true or A.log[q.id] or A.Availability(q.id)==true then return nil end
+ local n,phase=A.WalkStep(q)
+ if n and n.id~=q.id and phase~="done" and phase~="skipped" then return n end
+end
+
+-- Group by visible final destinations. Shared prerequisites may appear under
+-- more than one destination; they still have one live quest state.
+function A.QuestChainGroups(visible)
+ local routes,covered={},{}
+ for _,q in ipairs(visible) do
+  local route,seen,path={},{},{}
+  local function visit(id)
+   if seen[id] or path[id] then return end
+   local n=nodes[id] or A.byID[id]; if not n then return end
+   path[id]=true
+   for _,prior in ipairs(n.all or n.prereqs or {}) do visit(prior) end
+   local choice
+   for _,prior in ipairs(n.any or {}) do
+    local _,phase=resolve(prior,{})
+    if A.Completed(prior)==true or A.log[prior] then choice=prior; break end
+    if not choice and phase~="blocked" then choice=prior end
+   end
+   if choice then visit(choice) end
+   -- Optional introductions are labelled separately, not enforced prerequisites.
+   for bid,b in pairs(nodes) do if b.breadcrumbFor==id and not A.WalkRestriction(b) then visit(bid) end end
+   path[id]=nil; seen[id]=true
+   if id~=q.id then route[#route+1]=A.byID[id] or n end
+  end
+  visit(q.id); routes[q.id]=route
+  for _,n in ipairs(route) do covered[n.id]=true end
+ end
+ local groups={}
+ for _,q in ipairs(visible) do
+  if not covered[q.id] then groups[#groups+1]={quest=q,steps=routes[q.id]} end
+ end
+ -- Malformed cyclic source links must never hide every box.
+ if #groups==0 then for _,q in ipairs(visible) do groups[#groups+1]={quest=q,steps={}} end end
+ return groups
+end
+
 -- Extend past the selected dungeon quest only along an unambiguous follow-up.
 function A.ChainProgress(q)
  local function record(id) return nodes[id] or A.byID[id] end
@@ -201,7 +270,9 @@ function A.WalkInstructions(q)
  local label=(phase=="pickup" or phase=="inside") and "Pick up: " or ((phase=="active" or phase=="ready") and "In quest log: " or "Quest: ")
  local lines={label..n.name}
  if n.id~=q.id then table.insert(lines,"Prerequisite for: "..q.name) end
- if note then table.insert(lines,note) end
+ if phase=="check" or phase=="blocked" or phase=="unavailable" then
+  table.insert(lines,(A.StepContext(q,n,phase,note)))
+ elseif note then table.insert(lines,note) end
  if n.preparationNote and (phase=="pickup" or phase=="inside") then table.insert(lines,n.preparationNote) end
  if n.routeNote and (phase=="active" or phase=="ready") then table.insert(lines,n.routeNote) end
  local target

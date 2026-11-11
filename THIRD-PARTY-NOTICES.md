@@ -31,6 +31,13 @@ LibDataBroker is embedded as directed by its upstream project:
 https://www.wowace.com/projects/libdatabroker-1-1
 
 Questie and QuestieDB are used for offline research, not read by the builders.
+As of 10 November 2026, an optional runtime adapter also reads locations through
+the installed QuestieDB public API (Forever flavor, compatible contract 4).
+The provider is not bundled; its installed data supplies missing giver, recipient,
+drop-area and entrance locations. Curated bundled pins take precedence.
+The separate approximate Drowned City entrance (Stranglethorn Vale 21.4, 27.9)
+was checked against https://www.warcrafttavern.com/forever/guides/the-drowned-city
+and https://warcraft.wiki.gg/wiki/Drowned_City on 10 November 2026.
 The 7 November 2026 review uses QuestieDB 1.0.11 (revision
 80866960788084ae1592abf66a08f0d306458a95) to corroborate selected faction
 facts and identify creature 264265 as Magus Olvek. Reviewed factual corrections
