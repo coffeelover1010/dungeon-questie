@@ -1,5 +1,5 @@
 local _, A = ...
--- Optional public QuestieDB reads. No provider rows are copied into this addon.
+-- Required public QuestieDB reads. No provider rows are copied into this addon.
 local provider, zones, areaMaps, parents
 local aliases={Deadmines="The Deadmines",["Stormwind Stockade"]="The Stockade",["Sunken Temple"]="The Temple of Atal'Hakkar",["Lower Blackrock Spire"]="Blackrock Spire",["Upper Blackrock Spire"]="Blackrock Spire"}
 local function tableValue(value)
@@ -96,11 +96,60 @@ local function relationPin(id,field)
   end
  end
 end
+-- Only a single structured objective can supply an unambiguous destination.
+-- Multiple objectives and event-only tasks require explicit routing data.
+local function objectivePin(id)
+ local objectives=read("Quest",id,"objectives")
+ if type(objectives)~="table" then return end
+ local entity,ident,count=nil,nil,0
+ for slot,entries in pairs(objectives) do
+  for _,entry in ipairs(entries) do
+   count=count+1
+   if slot==1 or slot==2 then entity=slot==1 and "Npc" or "Object"; ident=entry[1] end
+  end
+ end
+ if count==1 and entity then return entityPin(entity,ident,"objective") end
+end
+-- Match by entity name, never by the provider's grouped objective order.
+-- A live unmatched/event objective remains a gap rather than a guessed trip.
+function A.LiveObjectivePin(id)
+ local live=A.Safe(C_QuestLog and C_QuestLog.GetQuestObjectives,id)
+ if type(live)~="table" or #live==0 or not connect() then return nil,false end
+ local objectives=read("Quest",id,"objectives")
+ if type(objectives)~="table" then return nil,false end
+ for _,objective in ipairs(live) do
+  if not objective.finished then
+   local matches={}
+   for slot,entity in ipairs({"Npc","Object","Item"}) do
+    for _,entry in ipairs(objectives[slot] or {}) do
+     local name=read(entity,entry[1],"name")
+     if type(name)=="string" and name~="" and (objective.text or ""):lower():find(name:lower(),1,true) then
+      matches[#matches+1]={entity=entity,id=entry[1]}
+     end
+    end
+   end
+   if #matches~=1 then return nil,true end
+   local match=matches[1]
+   if match.entity~="Item" then return entityPin(match.entity,match.id,"objective"),true end
+   for _,source in ipairs({{"Npc","npcDrops"},{"Object","objectDrops"}}) do
+    for _,entityID in ipairs(read("Item",match.id,source[2]) or {}) do
+     local p=entityPin(source[1],entityID,"objective"); if p then return p,true end
+    end
+   end
+   return nil,true
+  end
+ end
+ return nil,true
+end
 function A.LoadLocations()
  if not connect() or A.locationsLoaded==provider then return end
  local function fill(q)
-  if not q.pin then q.pin=relationPin(q.id,"startedBy") end
-  if not q.turninPin then q.turninPin=relationPin(q.id,"finishedBy") end
+  local correction=A.providerCorrections and A.providerCorrections[q.id]
+  local values=correction and correction.values or {}
+  local cleared={}; for _,k in ipairs(correction and correction.clear or {}) do cleared[k]=true end
+  if not q.objectivePin then q.objectivePin=objectivePin(q.id) end
+  if not values.pin and not cleared.pin then q.pin=relationPin(q.id,"startedBy") or q.pin end
+  if not values.turninPin and not cleared.turninPin then q.turninPin=relationPin(q.id,"finishedBy") or q.turninPin end
  end
  for _,n in pairs(A.walkthroughs or {}) do fill(n) end
  for _,q in ipairs(A.quests) do
@@ -119,20 +168,51 @@ function A.MapLocation(q)
  local record=(A.walkthroughs or {})[n.id] or n
  local known=A.byID[n.id] or n
  local p
- if phase=="ready" or phase=="done" or ((phase=="active" or phase=="packed") and record.breadcrumbFor) then p=n.turninPin or record.turninPin or known.turninPin
- elseif phase~="active" and phase~="packed" then p=n.pin or record.pin or known.pin end
- -- Active dungeon quests lead to the run; active outdoor prerequisites retain
- -- their recorded giver as a reference, not as a claimed objective coordinate.
- if not p and n.id~=q.id then p=n.pin or record.pin or known.pin end
- if not p and (phase=="done" or phase=="ready") then p=n.pin or record.pin or known.pin end
- if not p then
+ if phase=="ready" or phase=="done" or ((phase=="active" or phase=="packed") and record.breadcrumbFor) then
+  p=n.turninPin or record.turninPin or known.turninPin
+ elseif phase=="active" or phase=="packed" then
+  p=n.objectivePin or record.objectivePin or known.objectivePin
+  -- Curated mechanic destinations take precedence over generic spawn matching.
+  if not record.objectiveInstructions then
+   local live,available=A.LiveObjectivePin(n.id)
+   if available then p=live end
+  end
+ elseif phase=="pickup" or phase=="inside" or phase==nil then
+  p=n.pin or record.pin or known.pin
+ end
+ -- Association is not a destination. Only a current, dungeon-ready step can
+ -- use the associated entrance when its exact objective location is absent.
+ if not p and A.RunReadiness and A.RunReadiness(q) then
   local dungeon=A.db and A.db.dungeon
   if not dungeon or not A.InDungeon(q,dungeon) then dungeon=q.dungeons and q.dungeons[1] end
   p=A.DungeonEntrance(dungeon)
  end
- if not p then p=q.pin or q.turninPin end
- if not p then return end
+ if not p then return nil,"Current destination is not mapped. Follow the current quest instructions or quest log." end
  local kind=p.kind or "pickup"
- local tip=(kind=="entrance" and "Dungeon entrance / approach\nNot an exact quest-giver or objective pin." or (kind=="hand-in" and "Recorded hand-in location" or (kind=="drop" and "Recorded quest-item drop area" or "Recorded pickup location")))
+ local tip=kind=="objective" and "Current quest objective" or (kind=="entrance" and "Dungeon entrance / approach\nNot an exact quest-giver or objective pin." or (kind=="hand-in" and "Recorded hand-in location" or (kind=="drop" and "Recorded quest-item drop area" or "Recorded pickup location")))
  return {id=n.id,name=n.name or q.name,pin=p,mapOnly=true,origin=q},tip.."\n"..p.title.."\n"..p.zone.." "..p.x..", "..p.y
+end
+function A.RouteInstruction(q)
+ local n,phase=A.WalkStep(q)
+ local record=(A.walkthroughs or {})[n.id] or n
+ if phase=="active" or phase=="packed" then
+  if record.objectiveInstructions then return record.objectiveInstructions end
+ elseif phase=="ready" then
+  return record.turninInstructions or ("Turn in to: "..(record.turnin or n.turnin or "the destination in your quest log"))
+ end
+ if phase=="done" then return "Completed: this quest has been turned in." end
+ local target=A.MapLocation(q)
+ local where=target and (target.pin.title.." - "..target.pin.zone) or "Current destination is not mapped."
+ if phase=="pickup" or phase=="inside" then
+  return where.."\nAccept "..n.name.." from "..(record.pickup or n.pickup or "the quest giver listed in your quest log").."."
+ end
+ if phase=="active" or phase=="packed" then
+  local live=A.Safe(C_QuestLog and C_QuestLog.GetQuestObjectives,n.id)
+  for _,o in ipairs(type(live)=="table" and live or {}) do
+   if not o.finished and o.text then return where.."\n"..o.text end
+  end
+  local objectives=record.objectives or n.objectives or {}
+  return where.."\n"..(#objectives>0 and table.concat(objectives,"; ") or "Follow the current instructions in your quest log.")
+ end
+ return where.."\n".."Check the current prerequisite and quest requirements below."
 end

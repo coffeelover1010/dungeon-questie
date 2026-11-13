@@ -156,6 +156,10 @@ function R:Create()
  f.low=levelBox(70); f.high=levelBox(126)
  label(f,11,116,-78,10):SetText("-")
  button(f,"Refresh",90,185,-73,function() A.FindGroup(R.dungeon) end)
+ button(f,"Reload UI",110,285,-73,function()
+  if InCombatLockdown() then A.Print("Leave combat before reloading the UI."); return end
+  ReloadUI()
+ end)
  f.rangeNote=label(f,10,16,-103,405)
  f.roleButtons={}
  for i,option in ipairs({{title="All roles"},{title="Need tank",role="tank"},{title="Need healer",role="healer"}}) do

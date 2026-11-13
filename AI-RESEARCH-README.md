@@ -2,7 +2,9 @@
 
 Read this alongside README.md and WALKTHROUGHS.md. The display name is Dungeon Questie; the folder, TOC, saved variables and Lua namespace still use DungeonGuideForever. Preserve those identifiers and the player's settings. This guide is a research procedure, not permission to publish, message players, or change unrelated addons.
 
-Latest review: [7 November 2026](RESEARCH-2026-11-07.md). The installed Questie
+Current runtime integration: [12 November 2026](PROVIDER-INTEGRATION.md). QuestieDB is required; Questie is optional. After changing research data, regenerate ProviderCorrections.lua and LocalData.lua using the procedure in that integration document.
+
+Historical review: [7 November 2026](RESEARCH-2026-11-07.md). The installed Questie
 12.6.2 uses standalone QuestieDB 1.0.11. Use `tools/compare_questiedb.py` for
 its baked Forever TOC; the older `compare_questie.py` targets Classic v10 inputs.
 Comparison files are not build inputs. Reviewed factual corrections belong in
@@ -108,5 +110,5 @@ Write a dated research report in the addon: sources checked, actual additions/co
 First trial: [RESEARCH-2026-10-02.md](RESEARCH-2026-10-02.md). It found new Wetlands records, stale reward names and a rebuild that would have erased earlier corrections. It also found Dalaran cache records without matching current availability. Use those as examples of why a source delta needs human-readable review before regeneration.
 
 ## Source rebuild (3 October 2026)
-Read SOURCE-REBUILD.md and THIRD-PARTY-NOTICES.md. Questie is comparison-only: never use research/ as a build input. tools/build_walkthroughs.py now imports build_classic_walkthroughs.py, reading data/classic-source.json and independently sourced overrides. The optional comparison output is not a build input.
+Read SOURCE-REBUILD.md and THIRD-PARTY-NOTICES.md. Questie is comparison-only: never use research/ as a build input. QuestieDB is now a separate required runtime API provider; its database is never a build input. tools/build_walkthroughs.py now imports build_classic_walkthroughs.py, reading data/classic-source.json and independently sourced overrides. The optional comparison output is not a build input.
 

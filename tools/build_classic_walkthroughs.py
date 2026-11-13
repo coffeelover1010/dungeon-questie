@@ -58,6 +58,10 @@ def prerequisites(r):
     else: all_of=[]; any_of=[]
     complex_case=any(i<0 for i in candidates) or (len(bundles)>1 and any(len(b)>1 for b in bundles))
     return all_of,any_of,complex_case
+review=json.loads((ROOT/'data/forever-review-2026-11-13.json').read_text(encoding='utf-8'))
+for quest_id,patch in review['nodes'].items():
+    overrides.setdefault(quest_id,{}).update(patch)
+
 def visit(i):
     if str(i) in nodes:return
     r=quests.get(i); q=catalogue_by_id.get(i); o=overrides.get(str(i),{})
@@ -98,6 +102,7 @@ def visit(i):
     for prior in n.get('all',[])+n.get('any',[])+([n['breadcrumbFor']] if n.get('breadcrumbFor') else []):
         if prior>0:visit(prior)
 for q in catalogue:visit(q['id'])
+for quest_id in review['nodes']:visit(int(quest_id))
 def to_lua(v):
     if v is None:return 'nil'
     if v is True:return 'true'

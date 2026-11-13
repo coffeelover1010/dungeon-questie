@@ -1,0 +1,97 @@
+[
+  {
+    "file": "DungeonGuideForever.toc",
+    "sha256": "516CE15FC3B6DF39EAD899A621003C4944E4762CA6EB486B878E4655414CEB6C",
+    "matched": true
+  },
+  {
+    "file": "Libs\\LibStub.lua",
+    "sha256": "26401BC42C26D1D1B6F7AD9410AA464EDCBE4D32D74EBADEEECD8C0110236F7D",
+    "matched": true
+  },
+  {
+    "file": "Libs\\CallbackHandler-1.0.lua",
+    "sha256": "24F7342068E0D1B8D38EE1B8C7CEEEA625BEA079A01F0222E341660C7B104432",
+    "matched": true
+  },
+  {
+    "file": "Libs\\LibDataBroker-1.1.lua",
+    "sha256": "F3D4758F2060215492C9764B1D7DC2A336826D4CD253CD54FF9FF7C6D78F04E2",
+    "matched": true
+  },
+  {
+    "file": "Libs\\LibDBIcon-1.0.lua",
+    "sha256": "85C426947FA50319071B64C7CB845326C44316341713A3847DC8149C1E36716B",
+    "matched": true
+  },
+  {
+    "file": "LocalData.lua",
+    "sha256": "E271692AA14DDE8958BB000ADB72632B8434E4FB1090535A9B3D2C9DE534B43A",
+    "matched": true
+  },
+  {
+    "file": "ProviderCorrections.lua",
+    "sha256": "DC53E8C4E4F727B885389CE44F4907377EF37DCBBDDBE6A0827DDEF65FA03759",
+    "matched": true
+  },
+  {
+    "file": "Provider.lua",
+    "sha256": "E3E25A63F400ABD5CDDFC460B9F97ECE25CDD1CC7280E1CA66AFC524BAEECC2D",
+    "matched": true
+  },
+  {
+    "file": "Tracking.lua",
+    "sha256": "07201CD03FEF09AC325A950A02AAD1B7BB38C570AC275FB6A5F3F903F5C3EE82",
+    "matched": true
+  },
+  {
+    "file": "Walkthrough.lua",
+    "sha256": "E9297C0852814CD585E3D77944EF077E175DAF895906A19F65BC5A85EDF9D627",
+    "matched": true
+  },
+  {
+    "file": "Locations.lua",
+    "sha256": "24A2B1E3625479D73A05819E4D40DD3122802A93162057D1FB4B820C769169C7",
+    "matched": true
+  },
+  {
+    "file": "QuestLog.lua",
+    "sha256": "047448C49E943D5A6E48253BC8083113E21D3F28A465B5AB52D3374098E142AA",
+    "matched": true
+  },
+  {
+    "file": "Map.lua",
+    "sha256": "054419EB1D3D1A517B487CD29559C84B918DB71F80C5E9F11290AE208160EB90",
+    "matched": true
+  },
+  {
+    "file": "GroupFinder.lua",
+    "sha256": "F146373C2B44D25355990A9AAD30810AD95C37D73D253E33C3BF0DC3B58E48F1",
+    "matched": true
+  },
+  {
+    "file": "QuestGroups.lua",
+    "sha256": "501496B97010ACD25385D20363073FF2A75806452FC9A3A2621CD681443CEE6B",
+    "matched": true
+  },
+  {
+    "file": "Recruit.lua",
+    "sha256": "67AE406964FD65BE4FA8B59AF831C31302C9FE372AF47C99424831E221A70981",
+    "matched": true
+  },
+  {
+    "file": "Artwork.lua",
+    "sha256": "8780182CC30F993E7FC33929D6983A1C45BBEA910A8B1146C92E1DFC4C3EE586",
+    "matched": true
+  },
+  {
+    "file": "Window.lua",
+    "sha256": "7ABD4FCAA917B6777F9EC3FA601C9DDE3FF93F54BBE338EDAD612511E9909F01",
+    "matched": true
+  },
+  {
+    "file": "Minimap.lua",
+    "sha256": "D7EAB100EB107D087684ED5C47E377BEFBC10445CE6D79C94A1843A95E60CA5A",
+    "matched": true
+  }
+]

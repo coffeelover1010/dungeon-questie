@@ -835,11 +835,77 @@
     "readinessReviewed": "2026-11-10"
   },
   "78916": {
-    "requirementsNote": "The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item.",
+    "requirementsNote": "Right-click the Perfect Blackfathom Pearl to check whether you can accept this quest. Its minimum level is not yet confirmed.",
     "readinessReviewed": "2026-11-10"
   },
   "78917": {
-    "requirementsNote": "The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item.",
+    "requirementsNote": "Right-click the Perfect Blackfathom Pearl to check whether you can accept this quest. Its minimum level is not yet confirmed.",
     "readinessReviewed": "2026-11-10"
+  },
+  "92456": {
+    "turnin": "Shylamiir in The Park, Stormwind City.",
+    "routeNote": "Collect a Fel Infused Blossom from the grass near the Fel Ancient encounter in City of Dalaran, then return to Shylamiir in Stormwind.",
+    "fieldChecked": "2026-11-12",
+    "fieldSources": {
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
+    },
+    "unverifiedChain": false,
+    "chainSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+    "chainChecked": "2026-11-12"
+  },
+  "92457": {
+    "pickup": "Image of Archmage Modera outside the Dalaran sewer entrance, Silverpine Forest (68.7, 45.2).",
+    "turnin": "Image of Archmage Modera outside the Dalaran sewer entrance.",
+    "routeNote": "Defeat 8 Seeking Remnants, 8 Saturated Remnants and 8 Mana Echoes inside City of Dalaran. Return to Modera outside the entrance when all three objectives are complete.",
+    "fieldChecked": "2026-11-12",
+    "fieldSources": {
+      "pickup": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
+    },
+    "unverifiedChain": false,
+    "chainSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+    "chainChecked": "2026-11-12"
+  },
+  "92458": {
+    "pickup": "Image of Archmage Modera outside the Dalaran sewer entrance, Silverpine Forest (68.7, 45.2).",
+    "turnin": "Image of Archmage Modera outside the Dalaran sewer entrance.",
+    "routeNote": "Accept the quest to receive the Dalaran Sewer Key. Loot the Arcane Mote from the Shade of the Archmage, then return to Modera outside the entrance.",
+    "preparationNote": "An Alarming Request from Emissary Jacques in Southshore town hall leads to Modera. Visit Jacques if Modera does not offer Heart of Disruption.",
+    "fieldChecked": "2026-11-12",
+    "fieldSources": {
+      "pickup": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "preparationNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
+    }
+  },
+  "92489": {
+    "turnin": "High Sorcerer Andromath in the Mage Quarter, Stormwind City.",
+    "routeNote": "Defeat Arcanic Enigma in City of Dalaran, then return to High Sorcerer Andromath in Stormwind. No quest item needs to be looted.",
+    "fieldChecked": "2026-11-12",
+    "fieldSources": {
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
+    },
+    "unverifiedChain": false,
+    "chainSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+    "chainChecked": "2026-11-12"
+  },
+  "1950": {
+    "dungeonObjective": false,
+    "objectivePin": {
+      "map": 1441,
+      "x": 80,
+      "y": 76,
+      "zone": "Thousand Needles",
+      "title": "\"Plucky\" Johnson - Mirage Raceway (approximate)",
+      "kind": "objective",
+      "source": "https://forever-xp.com/quests/1950/"
+    },
+    "objectiveInstructions": "Find \"Plucky\" Johnson, the chicken near the lookout tower at Mirage Raceway in Thousand Needles. Target him and type /beckon, then speak to him in human form to learn the secret phrase.",
+    "turninInstructions": "Return to Magus Tirth at Mirage Raceway in Thousand Needles and turn in Get the Scoop.",
+    "locationSource": "https://www.wowhead.com/forever/quest=1950/get-the-scoop ; https://forever-xp.com/quests/1950/"
   }
 }

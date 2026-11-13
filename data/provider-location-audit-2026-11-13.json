@@ -1,0 +1,2463 @@
+{
+  "providerVersion": "1.1.0",
+  "quests": [
+    {
+      "id": 96395,
+      "name": "An Ancient Grudge",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1455,
+      "x": 27.63,
+      "y": 47.83,
+      "title": "The Hall of Thanes entrance / approach"
+    },
+    {
+      "id": 96393,
+      "name": "Old Ironforge Incursion",
+      "pickupKind": "pickup",
+      "mapKind": "drop",
+      "map": 1426,
+      "x": 76.96,
+      "y": 60.93,
+      "title": "Dark Iron Spy - item drop area"
+    },
+    {
+      "id": 95250,
+      "name": "Abominable Creatures",
+      "pickupKind": null,
+      "mapKind": "entrance",
+      "map": 1458,
+      "x": 72.41,
+      "y": 11.37,
+      "title": "Ruins of Lordaeron entrance / approach"
+    },
+    {
+      "id": 92415,
+      "name": "Remember That I Love You",
+      "pickupKind": null,
+      "mapKind": "entrance",
+      "map": 1458,
+      "x": 72.41,
+      "y": 11.37,
+      "title": "Ruins of Lordaeron entrance / approach"
+    },
+    {
+      "id": 95195,
+      "name": "Bloodied Insignia",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1458,
+      "x": 72.41,
+      "y": 11.37,
+      "title": "Ruins of Lordaeron entrance / approach"
+    },
+    {
+      "id": 95189,
+      "name": "Crest of Lordaeron",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1458,
+      "x": 72.41,
+      "y": 11.37,
+      "title": "Ruins of Lordaeron entrance / approach"
+    },
+    {
+      "id": 214,
+      "name": "Red Silk Bandanas",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1436,
+      "x": 56.33,
+      "y": 47.52,
+      "title": "Gryan Stoutmantle"
+    },
+    {
+      "id": 92753,
+      "name": "Destruction in Deadmines",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1436,
+      "x": 52.48,
+      "y": 52.97,
+      "title": "Alba Fairmoon"
+    },
+    {
+      "id": 168,
+      "name": "Collecting Memories",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 70.31,
+      "y": 40.82,
+      "title": "Wilder Thistlenettle"
+    },
+    {
+      "id": 167,
+      "name": "Oh Brother...",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 70.31,
+      "y": 40.82,
+      "title": "Wilder Thistlenettle"
+    },
+    {
+      "id": 2040,
+      "name": "Underground Assault",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 62.63,
+      "y": 34.11,
+      "title": "Shoni the Shilent"
+    },
+    {
+      "id": 166,
+      "name": "The Defias Brotherhood",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1436,
+      "x": 56.33,
+      "y": 47.52,
+      "title": "Gryan Stoutmantle"
+    },
+    {
+      "id": 373,
+      "name": "The Unsent Letter",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1436,
+      "x": 42.5,
+      "y": 71.7,
+      "title": "The Deadmines entrance / approach"
+    },
+    {
+      "id": 1486,
+      "name": "Deviate Hides",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1413,
+      "x": 45.99,
+      "y": 35.66,
+      "title": "Nalpak"
+    },
+    {
+      "id": 1491,
+      "name": "Smart Drinks",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1413,
+      "x": 62.37,
+      "y": 37.62,
+      "title": "Mebok Mizzyrix"
+    },
+    {
+      "id": 959,
+      "name": "Trouble at the Docks",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1413,
+      "x": 63.09,
+      "y": 37.61,
+      "title": "Crane Operator Bigglefuzz"
+    },
+    {
+      "id": 1487,
+      "name": "Deviate Eradication",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1413,
+      "x": 46.01,
+      "y": 35.74,
+      "title": "Ebru"
+    },
+    {
+      "id": 6981,
+      "name": "The Glowing Shard",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1413,
+      "x": 46,
+      "y": 36.5,
+      "title": "Wailing Caverns entrance / approach"
+    },
+    {
+      "id": 971,
+      "name": "Knowledge in the Deeps",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 50.83,
+      "y": 5.62,
+      "title": "Gerrig Bonegrip"
+    },
+    {
+      "id": 1198,
+      "name": "In Search of Thaelrid",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1457,
+      "x": 55.36,
+      "y": 25.03,
+      "title": "Dawnwatcher Shaedlass"
+    },
+    {
+      "id": 1275,
+      "name": "Researching the Corruption",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1439,
+      "x": 38.33,
+      "y": 43.04,
+      "title": "Gershala Nightwhisper"
+    },
+    {
+      "id": 1199,
+      "name": "Twilight Falls",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1457,
+      "x": 55.24,
+      "y": 23.99,
+      "title": "Argent Guard Manados"
+    },
+    {
+      "id": 1200,
+      "name": "Blackfathom Villainy",
+      "pickupKind": "entrance",
+      "mapKind": "pickup",
+      "map": 1457,
+      "x": 55.36,
+      "y": 25.03,
+      "title": "Dawnwatcher Shaedlass"
+    },
+    {
+      "id": 386,
+      "name": "What Comes Around...",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1433,
+      "x": 21.17,
+      "y": 46.58,
+      "title": "Guard Berton"
+    },
+    {
+      "id": 377,
+      "name": "Crime and Punishment",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1431,
+      "x": 71.92,
+      "y": 47.79,
+      "title": "Councilman Millstipe"
+    },
+    {
+      "id": 387,
+      "name": "Quell the Uprising",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 51.49,
+      "y": 69.38,
+      "title": "Warden Thelwater"
+    },
+    {
+      "id": 388,
+      "name": "The Color of Blood",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 76.42,
+      "y": 63.67,
+      "title": "Nikova Raskol"
+    },
+    {
+      "id": 391,
+      "name": "The Stockade Riots",
+      "pickupKind": "pickup",
+      "mapKind": "entrance",
+      "map": 1436,
+      "x": 42.5,
+      "y": 71.7,
+      "title": "The Deadmines entrance / approach"
+    },
+    {
+      "id": 1221,
+      "name": "Blueleaf Tubers",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1413,
+      "x": 62.37,
+      "y": 37.62,
+      "title": "Mebok Mizzyrix"
+    },
+    {
+      "id": 1144,
+      "name": "Willix the Importer",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1413,
+      "x": 42.9,
+      "y": 90.2,
+      "title": "Razorfen Kraul entrance / approach"
+    },
+    {
+      "id": 2922,
+      "name": "Save Techbot's Brain!",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 69.55,
+      "y": 50.33,
+      "title": "Tinkmaster Overspark"
+    },
+    {
+      "id": 2923,
+      "name": "Tinkmaster Overspark",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 51.05,
+      "y": 48.39,
+      "title": "Brother Sarno"
+    },
+    {
+      "id": 2926,
+      "name": "Gnogaine",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 69.18,
+      "y": 50.55,
+      "title": "Gnoarn"
+    },
+    {
+      "id": 2927,
+      "name": "The Day After",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 69.18,
+      "y": 50.55,
+      "title": "Gnoarn"
+    },
+    {
+      "id": 2904,
+      "name": "A Fine Mess",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1426,
+      "x": 24.3,
+      "y": 39.8,
+      "title": "Gnomeregan entrance / approach"
+    },
+    {
+      "id": 2928,
+      "name": "Gyrodrillmatic Excavationators",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 62.63,
+      "y": 34.11,
+      "title": "Shoni the Shilent"
+    },
+    {
+      "id": 98423,
+      "name": "The Treaty of Understanding",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1455,
+      "x": 27.63,
+      "y": 47.83,
+      "title": "The Hall of Thanes entrance / approach"
+    },
+    {
+      "id": 96391,
+      "name": "Underground Map",
+      "pickupKind": "drop",
+      "mapKind": "drop",
+      "map": 1426,
+      "x": 76.96,
+      "y": 60.93,
+      "title": "Dark Iron Spy - item drop area"
+    },
+    {
+      "id": 378,
+      "name": "The Fury Runs Deep",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1437,
+      "x": 49.67,
+      "y": 18.23,
+      "title": "Motley Garmason"
+    },
+    {
+      "id": 2924,
+      "name": "Essential Artificials",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 67.92,
+      "y": 46.1,
+      "title": "Klockmort Spannerspan"
+    },
+    {
+      "id": 2930,
+      "name": "Data Rescue",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 69.83,
+      "y": 48.1,
+      "title": "Master Mechanic Castpipe"
+    },
+    {
+      "id": 2929,
+      "name": "The Grand Betrayal",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 68.75,
+      "y": 48.97,
+      "title": "High Tinker Mekkatorque"
+    },
+    {
+      "id": 2962,
+      "name": "The Only Cure is More Green Glow",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 69.18,
+      "y": 50.55,
+      "title": "Gnoarn"
+    },
+    {
+      "id": 2951,
+      "name": "The Sparklematic 5200!",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1426,
+      "x": 24.3,
+      "y": 39.8,
+      "title": "Gnomeregan entrance / approach"
+    },
+    {
+      "id": 2945,
+      "name": "Grime-Encrusted Ring",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1426,
+      "x": 24.3,
+      "y": 39.8,
+      "title": "Gnomeregan entrance / approach"
+    },
+    {
+      "id": 1101,
+      "name": "The Crone of the Kraul",
+      "pickupKind": "pickup",
+      "mapKind": "drop",
+      "map": 1441,
+      "x": 30.73,
+      "y": 24.35,
+      "title": "Henrig Lonebrow's Journal - item drop area"
+    },
+    {
+      "id": 1142,
+      "name": "Mortality Wanes",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1413,
+      "x": 42.9,
+      "y": 90.2,
+      "title": "Razorfen Kraul entrance / approach"
+    },
+    {
+      "id": 1053,
+      "name": "In the Name of the Light",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1443,
+      "x": 66.52,
+      "y": 7.91,
+      "title": "Brother Anton"
+    },
+    {
+      "id": 1050,
+      "name": "Mythology of the Titans",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 74.97,
+      "y": 12.48,
+      "title": "Librarian Mae Paledust"
+    },
+    {
+      "id": 3636,
+      "name": "Bring the Light",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 50.31,
+      "y": 45.47,
+      "title": "Archbishop Benedictus"
+    },
+    {
+      "id": 6626,
+      "name": "A Host of Evil",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1413,
+      "x": 49.01,
+      "y": 94.94,
+      "title": "Myriam Moonsinger"
+    },
+    {
+      "id": 3523,
+      "name": "Scourge of the Downs",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1413,
+      "x": 49,
+      "y": 93.9,
+      "title": "Razorfen Downs entrance / approach"
+    },
+    {
+      "id": 3525,
+      "name": "Extinguishing the Idol",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1413,
+      "x": 49,
+      "y": 93.9,
+      "title": "Razorfen Downs entrance / approach"
+    },
+    {
+      "id": 1360,
+      "name": "Reclaimed Treasures",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 74.19,
+      "y": 9.39,
+      "title": "Krom Stoutarm"
+    },
+    {
+      "id": 2398,
+      "name": "The Lost Dwarves",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 74.64,
+      "y": 11.74,
+      "title": "Prospector Stormpike"
+    },
+    {
+      "id": 2240,
+      "name": "The Hidden Chamber",
+      "pickupKind": "entrance",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 74.64,
+      "y": 11.74,
+      "title": "Prospector Stormpike"
+    },
+    {
+      "id": 17,
+      "name": "Uldaman Reagent Run",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1432,
+      "x": 37.07,
+      "y": 49.38,
+      "title": "Ghak Healtouch"
+    },
+    {
+      "id": 704,
+      "name": "Agmond's Fate",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 74.64,
+      "y": 11.74,
+      "title": "Prospector Stormpike"
+    },
+    {
+      "id": 1139,
+      "name": "The Lost Tablets of Will",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1418,
+      "x": 53.03,
+      "y": 33.94,
+      "title": "Crumpled Map"
+    },
+    {
+      "id": 2198,
+      "name": "The Shattered Necklace",
+      "pickupKind": "drop",
+      "mapKind": "drop",
+      "map": 1418,
+      "x": 43.8,
+      "y": 10.6,
+      "title": "Shadowforge Surveyor - item drop area"
+    },
+    {
+      "id": 2418,
+      "name": "Power Stones",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1418,
+      "x": 42.39,
+      "y": 52.93,
+      "title": "Rigglefuzz"
+    },
+    {
+      "id": 709,
+      "name": "Solution to Doom",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1418,
+      "x": 51.39,
+      "y": 76.87,
+      "title": "Theldurin the Lost"
+    },
+    {
+      "id": 2278,
+      "name": "The Platinum Discs",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1418,
+      "x": 44.6,
+      "y": 12.1,
+      "title": "Uldaman entrance / approach"
+    },
+    {
+      "id": 2991,
+      "name": "Nekrum's Medallion",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1425,
+      "x": 9.75,
+      "y": 44.47,
+      "title": "Gryphon Master Talonaxe"
+    },
+    {
+      "id": 2768,
+      "name": "Divino-matic Rod",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1446,
+      "x": 52.46,
+      "y": 28.51,
+      "title": "Chief Engineer Bilgewhizzle"
+    },
+    {
+      "id": 2865,
+      "name": "Scarab Shells",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1446,
+      "x": 51.57,
+      "y": 26.76,
+      "title": "Tran'rek"
+    },
+    {
+      "id": 3042,
+      "name": "Troll Temper",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1446,
+      "x": 51.41,
+      "y": 28.75,
+      "title": "Trenton Lighthammer"
+    },
+    {
+      "id": 2846,
+      "name": "Tiara of the Deep",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1445,
+      "x": 46.06,
+      "y": 57.09,
+      "title": "Tabetha"
+    },
+    {
+      "id": 2770,
+      "name": "Gahz'rilla",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1441,
+      "x": 78.14,
+      "y": 77.12,
+      "title": "Wizzle Brassbolts"
+    },
+    {
+      "id": 3527,
+      "name": "The Prophecy of Mosh'aru",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1446,
+      "x": 66.99,
+      "y": 22.36,
+      "title": "Yeh'kinya"
+    },
+    {
+      "id": 7070,
+      "name": "Shadowshard Fragments",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1445,
+      "x": 66.42,
+      "y": 49.26,
+      "title": "Archmage Tervosh"
+    },
+    {
+      "id": 7041,
+      "name": "Vyletongue Corruption",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1443,
+      "x": 68.5,
+      "y": 8.88,
+      "title": "Talendria"
+    },
+    {
+      "id": 7065,
+      "name": "Corruption of Earth and Seed",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1443,
+      "x": 63.83,
+      "y": 10.67,
+      "title": "Keeper Marandis"
+    },
+    {
+      "id": 7028,
+      "name": "Twisted Evils",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1443,
+      "x": 62.2,
+      "y": 39.63,
+      "title": "Willow"
+    },
+    {
+      "id": 7044,
+      "name": "Legends of Maraudon",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1443,
+      "x": 31.9,
+      "y": 63.8,
+      "title": "Cavindra"
+    },
+    {
+      "id": 7066,
+      "name": "Seed of Life",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1443,
+      "x": 29.1,
+      "y": 62.5,
+      "title": "Maraudon entrance / approach"
+    },
+    {
+      "id": 7067,
+      "name": "The Pariah's Instructions",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1443,
+      "x": 50.42,
+      "y": 86.65,
+      "title": "Centaur Pariah"
+    },
+    {
+      "id": 7046,
+      "name": "The Scepter of Celebras",
+      "pickupKind": "entrance",
+      "mapKind": "pickup",
+      "map": 1443,
+      "x": 31.9,
+      "y": 63.8,
+      "title": "Cavindra"
+    },
+    {
+      "id": 4143,
+      "name": "Haze of Evil",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1449,
+      "x": 42.94,
+      "y": 9.64,
+      "title": "Muigin"
+    },
+    {
+      "id": 1475,
+      "name": "Into The Temple of Atal'Hakkar",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 69.45,
+      "y": 40.4,
+      "title": "Brohann Caskbelly"
+    },
+    {
+      "id": 1446,
+      "name": "Jammal'an the Prophet",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1425,
+      "x": 33.75,
+      "y": 75.21,
+      "title": "Atal'ai Exile"
+    },
+    {
+      "id": 3373,
+      "name": "The Essence of Eranikus",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1435,
+      "x": 69.9,
+      "y": 53.5,
+      "title": "The Temple of Atal'Hakkar entrance / approach"
+    },
+    {
+      "id": 3447,
+      "name": "Secret of the Circle",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1444,
+      "x": 31.83,
+      "y": 45.61,
+      "title": "Angelas Moonbreeze"
+    },
+    {
+      "id": 3528,
+      "name": "The God Hakkar",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1446,
+      "x": 66.99,
+      "y": 22.36,
+      "title": "Yeh'kinya"
+    },
+    {
+      "id": 4262,
+      "name": "Overmaster Pyron",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 85.41,
+      "y": 70.06,
+      "title": "Jalinda Sprig"
+    },
+    {
+      "id": 4263,
+      "name": "Incendius!",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 85.41,
+      "y": 70.06,
+      "title": "Jalinda Sprig"
+    },
+    {
+      "id": 4286,
+      "name": "The Good Stuff",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 84.56,
+      "y": 68.68,
+      "title": "Oralius"
+    },
+    {
+      "id": 4126,
+      "name": "Hurley Blackbreath",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1426,
+      "x": 46.83,
+      "y": 52.36,
+      "title": "Ragnar Thunderbrew"
+    },
+    {
+      "id": 4341,
+      "name": "Kharan Mighthammer",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 38.37,
+      "y": 55.31,
+      "title": "Royal Historian Archesonus"
+    },
+    {
+      "id": 4362,
+      "name": "The Fate of the Kingdom",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 38.37,
+      "y": 55.31,
+      "title": "Royal Historian Archesonus"
+    },
+    {
+      "id": 4241,
+      "name": "Marshal Windsor",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 85.82,
+      "y": 68.95,
+      "title": "Helendis Riverhorn"
+    },
+    {
+      "id": 4322,
+      "name": "Jail Break!",
+      "pickupKind": "entrance",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 85.82,
+      "y": 68.95,
+      "title": "Helendis Riverhorn"
+    },
+    {
+      "id": 4136,
+      "name": "Ribbly Screwspigot",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 66.06,
+      "y": 21.95,
+      "title": "Yuka Screwspigot"
+    },
+    {
+      "id": 4123,
+      "name": "The Heart of the Mountain",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 65.15,
+      "y": 23.91,
+      "title": "Maxwort Uberglint"
+    },
+    {
+      "id": 7848,
+      "name": "Attunement to the Core",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1427,
+      "x": 32.13,
+      "y": 94.7,
+      "title": "Lothos Riftwaker"
+    },
+    {
+      "id": 3802,
+      "name": "Dark Iron Legacy",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 28.96,
+      "y": 28.93,
+      "title": "Franclorn Forgewright"
+    },
+    {
+      "id": 4201,
+      "name": "The Love Potion",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1427,
+      "x": 34.8,
+      "y": 85.3,
+      "title": "Blackrock Depths entrance / approach"
+    },
+    {
+      "id": 4024,
+      "name": "A Taste of Flame",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1427,
+      "x": 39.06,
+      "y": 38.99,
+      "title": "Kalaran Windblade"
+    },
+    {
+      "id": 7488,
+      "name": "Lethtendris's Web",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1444,
+      "x": 30.38,
+      "y": 46.17,
+      "title": "Latronicus Moonspear"
+    },
+    {
+      "id": 7441,
+      "name": "Pusillin and the Elder Azj'Tordin",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1444,
+      "x": 76.91,
+      "y": 37.35,
+      "title": "Azj'Tordin"
+    },
+    {
+      "id": 5526,
+      "name": "Shards of the Felvine",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1450,
+      "x": 51.69,
+      "y": 45.1,
+      "title": "Rabine Saturna"
+    },
+    {
+      "id": 7461,
+      "name": "The Madness Within",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1444,
+      "x": 60.3,
+      "y": 30.2,
+      "title": "Dire Maul entrance / approach"
+    },
+    {
+      "id": 7507,
+      "name": "Foror's Compendium",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1444,
+      "x": 62.5,
+      "y": 24.9,
+      "title": "Dire Maul entrance / approach"
+    },
+    {
+      "id": 7482,
+      "name": "Elven Legends",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1444,
+      "x": 31.65,
+      "y": 43.45,
+      "title": "Scholar Runethorn"
+    },
+    {
+      "id": 5525,
+      "name": "Free Knot!",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1444,
+      "x": 62.5,
+      "y": 24.9,
+      "title": "Dire Maul entrance / approach"
+    },
+    {
+      "id": 5518,
+      "name": "The Gordok Ogre Suit",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1444,
+      "x": 62.5,
+      "y": 24.9,
+      "title": "Dire Maul entrance / approach"
+    },
+    {
+      "id": 5528,
+      "name": "The Gordok Taste Test",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1444,
+      "x": 62.5,
+      "y": 24.9,
+      "title": "Dire Maul entrance / approach"
+    },
+    {
+      "id": 4701,
+      "name": "Put Her Down",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 85.82,
+      "y": 68.95,
+      "title": "Helendis Riverhorn"
+    },
+    {
+      "id": 5089,
+      "name": "General Drakkisath's Command",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1427,
+      "x": 34.8,
+      "y": 85.3,
+      "title": "Blackrock Spire entrance / approach"
+    },
+    {
+      "id": 5001,
+      "name": "Bijou's Belongings",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1427,
+      "x": 34.8,
+      "y": 85.3,
+      "title": "Blackrock Spire entrance / approach"
+    },
+    {
+      "id": 4862,
+      "name": "En-Ay-Es-Tee-Why",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 65.89,
+      "y": 21.92,
+      "title": "Kibler"
+    },
+    {
+      "id": 4729,
+      "name": "Kibler's Exotic Pets",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 65.89,
+      "y": 21.92,
+      "title": "Kibler"
+    },
+    {
+      "id": 4866,
+      "name": "Mother's Milk",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 65.01,
+      "y": 23.76,
+      "title": "Ragged John"
+    },
+    {
+      "id": 4742,
+      "name": "Seal of Ascension",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1427,
+      "x": 34.8,
+      "y": 85.3,
+      "title": "Blackrock Spire entrance / approach"
+    },
+    {
+      "id": 4867,
+      "name": "Urok Doomhowl",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1427,
+      "x": 34.8,
+      "y": 85.3,
+      "title": "Blackrock Spire entrance / approach"
+    },
+    {
+      "id": 4788,
+      "name": "The Final Tablets",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1446,
+      "x": 66.99,
+      "y": 22.36,
+      "title": "Yeh'kinya"
+    },
+    {
+      "id": 5343,
+      "name": "Barov Family Fortune",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1422,
+      "x": 43.45,
+      "y": 83.73,
+      "title": "Weldon Barov"
+    },
+    {
+      "id": 5529,
+      "name": "Plagued Hatchlings",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1423,
+      "x": 71.66,
+      "y": 49.94,
+      "title": "Betina Bigglezink"
+    },
+    {
+      "id": 5382,
+      "name": "Doctor Theolen Krastinov, the Butcher",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1422,
+      "x": 70.22,
+      "y": 73.71,
+      "title": "Eva Sarkhoff"
+    },
+    {
+      "id": 5515,
+      "name": "Krastinov's Bag of Horrors",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1422,
+      "x": 70.22,
+      "y": 73.71,
+      "title": "Eva Sarkhoff"
+    },
+    {
+      "id": 5384,
+      "name": "Kirtonos the Herald",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1422,
+      "x": 70.22,
+      "y": 73.71,
+      "title": "Eva Sarkhoff"
+    },
+    {
+      "id": 4771,
+      "name": "Dawn's Gambit",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 65.24,
+      "y": 24,
+      "title": "Tinkee Steamboil"
+    },
+    {
+      "id": 5466,
+      "name": "The Lich, Ras Frostwhisper",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1422,
+      "x": 70.22,
+      "y": 73.71,
+      "title": "Eva Sarkhoff"
+    },
+    {
+      "id": 5214,
+      "name": "The Great Fras Siabi",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1423,
+      "x": 70.88,
+      "y": 48.43,
+      "title": "Smokey LaRue"
+    },
+    {
+      "id": 5251,
+      "name": "The Archivist",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1423,
+      "x": 71.63,
+      "y": 50.09,
+      "title": "Duke Nicholas Zverenhoff"
+    },
+    {
+      "id": 5282,
+      "name": "The Restless Souls",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1423,
+      "x": 69.93,
+      "y": 53.72,
+      "title": "Caretaker Alen"
+    },
+    {
+      "id": 5262,
+      "name": "The Truth Comes Crashing Down",
+      "pickupKind": "entrance",
+      "mapKind": "pickup",
+      "map": 1423,
+      "x": 71.63,
+      "y": 50.09,
+      "title": "Duke Nicholas Zverenhoff"
+    },
+    {
+      "id": 5848,
+      "name": "Of Love and Family",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1423,
+      "x": 5.16,
+      "y": 35.57,
+      "title": "Tirion Fordring"
+    },
+    {
+      "id": 5243,
+      "name": "Houses of the Holy",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1423,
+      "x": 71.89,
+      "y": 48.29,
+      "title": "Leonid Barthalomew the Revered"
+    },
+    {
+      "id": 5212,
+      "name": "The Flesh Does Not Lie",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1423,
+      "x": 71.66,
+      "y": 49.94,
+      "title": "Betina Bigglezink"
+    },
+    {
+      "id": 5213,
+      "name": "The Active Agent",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1423,
+      "x": 71.66,
+      "y": 49.94,
+      "title": "Betina Bigglezink"
+    },
+    {
+      "id": 5263,
+      "name": "Above and Beyond",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1423,
+      "x": 71.63,
+      "y": 50.09,
+      "title": "Duke Nicholas Zverenhoff"
+    },
+    {
+      "id": 5463,
+      "name": "Menethil's Gift",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1422,
+      "x": 70.22,
+      "y": 73.71,
+      "title": "Eva Sarkhoff"
+    },
+    {
+      "id": 8945,
+      "name": "Dead Man's Plea",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 43.53,
+      "y": 52.64,
+      "title": "Deliana"
+    },
+    {
+      "id": 4764,
+      "name": "Doomrigger's Clasp",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 84.84,
+      "y": 69.12,
+      "title": "Mayara Brightwing"
+    },
+    {
+      "id": 5102,
+      "name": "General Drakkisath's Demise",
+      "pickupKind": "pickup",
+      "mapKind": "entrance",
+      "map": 1427,
+      "x": 34.8,
+      "y": 85.3,
+      "title": "Blackrock Spire entrance / approach"
+    },
+    {
+      "id": 6502,
+      "name": "Drakefire Amulet",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 85.82,
+      "y": 68.95,
+      "title": "Helendis Riverhorn"
+    },
+    {
+      "id": 7761,
+      "name": "Blackhand's Command",
+      "pickupKind": "drop",
+      "mapKind": "drop",
+      "map": 1415,
+      "x": 49.119,
+      "y": 64.098,
+      "title": "Scarshield Quartermaster - item drop area"
+    },
+    {
+      "id": 5160,
+      "name": "The Matron Protectorate",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1427,
+      "x": 34.8,
+      "y": 85.3,
+      "title": "Blackrock Spire entrance / approach"
+    },
+    {
+      "id": 5047,
+      "name": "Finkle Einhorn, At Your Service!",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1427,
+      "x": 34.8,
+      "y": 85.3,
+      "title": "Blackrock Spire entrance / approach"
+    },
+    {
+      "id": 4735,
+      "name": "Egg Collection",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1428,
+      "x": 65.24,
+      "y": 24,
+      "title": "Tinkee Steamboil"
+    },
+    {
+      "id": 6821,
+      "name": "Eye of the Emberseer",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1447,
+      "x": 79.28,
+      "y": 73.7,
+      "title": "Duke Hydraxis"
+    },
+    {
+      "id": 2931,
+      "name": "Castpipe's Task",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1442,
+      "x": 59.52,
+      "y": 67.15,
+      "title": "Gaxim Rustfizzle"
+    },
+    {
+      "id": 2925,
+      "name": "Klockmort's Essentials",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1457,
+      "x": 59.51,
+      "y": 45.38,
+      "title": "Mathiel"
+    },
+    {
+      "id": 98815,
+      "name": "Highland Hides",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1437,
+      "x": 8.55,
+      "y": 55.74,
+      "title": "James Halloran"
+    },
+    {
+      "id": 95809,
+      "name": "Heartwoven",
+      "pickupKind": null,
+      "mapKind": "pickup",
+      "map": 1437,
+      "x": 11.88,
+      "y": 58.82,
+      "title": "Caitlin Grassman"
+    },
+    {
+      "id": 95646,
+      "name": "Horrors in the Highland",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1437,
+      "x": 56.37,
+      "y": 40.4,
+      "title": "Rethiel the Greenwarden"
+    },
+    {
+      "id": 95647,
+      "name": "Lost in the Thicket Things",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1437,
+      "x": 11.88,
+      "y": 58.82,
+      "title": "Caitlin Grassman"
+    },
+    {
+      "id": 95810,
+      "name": "Lost Relic Carry",
+      "pickupKind": null,
+      "mapKind": "entrance",
+      "map": 1437,
+      "x": 47.79,
+      "y": 56.16,
+      "title": "Excavation Site: Wetlands entrance / approach"
+    },
+    {
+      "id": 98824,
+      "name": "Prehistoric Prism",
+      "pickupKind": "pickup",
+      "mapKind": "entrance",
+      "map": 1437,
+      "x": 47.79,
+      "y": 56.16,
+      "title": "Excavation Site: Wetlands entrance / approach"
+    },
+    {
+      "id": 2947,
+      "name": "Return of the Ring",
+      "pickupKind": "entrance",
+      "mapKind": "entrance",
+      "map": 1426,
+      "x": 24.3,
+      "y": 39.8,
+      "title": "Gnomeregan entrance / approach"
+    },
+    {
+      "id": 92456,
+      "name": "A Green Sample",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 31.5,
+      "y": 62.61,
+      "title": "Shylamiir"
+    },
+    {
+      "id": 92489,
+      "name": "Power Overwhelming",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 48.71,
+      "y": 87.62,
+      "title": "High Sorcerer Andromath"
+    },
+    {
+      "id": 92457,
+      "name": "Starving Arcane",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1416,
+      "x": 14.3,
+      "y": 59.57,
+      "title": "Image of Archmage Modera"
+    },
+    {
+      "id": 92819,
+      "name": "Destruction in Deadmines",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1436,
+      "x": 52.48,
+      "y": 52.97,
+      "title": "Alba Fairmoon"
+    },
+    {
+      "id": 2948,
+      "name": "Gnome Improvement",
+      "pickupKind": "pickup",
+      "mapKind": "entrance",
+      "map": 1426,
+      "x": 24.3,
+      "y": 39.8,
+      "title": "Gnomeregan entrance / approach"
+    },
+    {
+      "id": 3765,
+      "name": "The Corruption Abroad",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 36.24,
+      "y": 67.61,
+      "title": "Argos Nightwhisper"
+    },
+    {
+      "id": 463,
+      "name": "The Greenwarden",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1437,
+      "x": 10.9,
+      "y": 59.64,
+      "title": "First Mate Fitzsimmons"
+    },
+    {
+      "id": 96772,
+      "name": "The Dragon's Journal",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1416,
+      "x": 15.3,
+      "y": 73.93,
+      "title": "Archmage Lan'dalock"
+    },
+    {
+      "id": 95263,
+      "name": "Somber News",
+      "pickupKind": null,
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 78.31,
+      "y": 70.74,
+      "title": "Master Mathias Shaw"
+    },
+    {
+      "id": 95262,
+      "name": "The Secret Prison",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1453,
+      "x": 78.31,
+      "y": 70.74,
+      "title": "Master Mathias Shaw"
+    },
+    {
+      "id": 96771,
+      "name": "Vengeance of the Highborne",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1416,
+      "x": 17.8,
+      "y": 65.95,
+      "title": "Ranath Nightstride"
+    },
+    {
+      "id": 97327,
+      "name": "Blackmaw Pouches",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1447,
+      "x": 42,
+      "y": 38.88,
+      "title": "Ekkal"
+    },
+    {
+      "id": 97173,
+      "name": "Blackmaw Magic",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1416,
+      "x": 15.37,
+      "y": 74.09,
+      "title": "Archmage Timear"
+    },
+    {
+      "id": 92344,
+      "name": "Get to the Roots of It",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1447,
+      "x": 11.81,
+      "y": 78.36,
+      "title": "Commander Truesong"
+    },
+    {
+      "id": 92069,
+      "name": "Claws That Rend, Tusks that Gore",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1447,
+      "x": 42.4,
+      "y": 42.62,
+      "title": "Ogtinc"
+    },
+    {
+      "id": 95925,
+      "name": "Mapping the Way Forward",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 71.5,
+      "y": 15.74,
+      "title": "Curator Thorius"
+    },
+    {
+      "id": 95924,
+      "name": "Panic at the Digsite",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 71.5,
+      "y": 15.74,
+      "title": "Curator Thorius"
+    },
+    {
+      "id": 97130,
+      "name": "Ancient Gurubashi Secrets",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1416,
+      "x": 15.37,
+      "y": 74.09,
+      "title": "Archmage Timear"
+    },
+    {
+      "id": 95791,
+      "name": "The Saltseer Captain",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1434,
+      "x": 26.95,
+      "y": 77.21,
+      "title": "Krazek"
+    },
+    {
+      "id": 95789,
+      "name": "Shady Saltseers",
+      "pickupKind": "pickup",
+      "mapKind": "pickup",
+      "map": 1434,
+      "x": 26.95,
+      "y": 77.21,
+      "title": "Krazek"
+    }
+  ],
+  "nodesWithoutPickup": [
+    {
+      "id": 92070,
+      "name": "A Lost Memento"
+    },
+    {
+      "id": 95790,
+      "name": "Digestible Research"
+    },
+    {
+      "id": 86777,
+      "name": "Master Feardred"
+    },
+    {
+      "id": 96369,
+      "name": "Bad News for Folkar"
+    },
+    {
+      "id": 95795,
+      "name": "Fallen in the Fen"
+    },
+    {
+      "id": 78916,
+      "name": "The Heart of the Void"
+    },
+    {
+      "id": 78917,
+      "name": "The Heart of the Void"
+    },
+    {
+      "id": 96246,
+      "name": "Blackmaw Pouches"
+    },
+    {
+      "id": 94969,
+      "name": "Krol'dok No More!"
+    },
+    {
+      "id": 95483,
+      "name": "Thrall Needs to Know"
+    },
+    {
+      "id": 95809,
+      "name": "Heartwoven"
+    },
+    {
+      "id": 95682,
+      "name": "Open the Maw"
+    },
+    {
+      "id": 95810,
+      "name": "Lost Relic Carry"
+    },
+    {
+      "id": 1649,
+      "name": "The Tome of Valor"
+    },
+    {
+      "id": 3366,
+      "name": "The Glowing Shard"
+    },
+    {
+      "id": 95056,
+      "name": "Krol'dok No More!"
+    },
+    {
+      "id": 96335,
+      "name": "The Man in the Iron Chains"
+    },
+    {
+      "id": 95250,
+      "name": "Abominable Creatures"
+    },
+    {
+      "id": 96337,
+      "name": "More Valuable Than Gold"
+    },
+    {
+      "id": 86792,
+      "name": "Thinning Their Forces"
+    },
+    {
+      "id": 86796,
+      "name": "Later, Satyr"
+    },
+    {
+      "id": 86797,
+      "name": "Return to Rageroar"
+    },
+    {
+      "id": 86798,
+      "name": "Timbermaw Reinforcements"
+    },
+    {
+      "id": 87346,
+      "name": "Chieftain Bloodmaw"
+    },
+    {
+      "id": 86814,
+      "name": "Blackmaw Counter-Offensive"
+    },
+    {
+      "id": 92066,
+      "name": "The Twin Bears"
+    },
+    {
+      "id": 94980,
+      "name": "Krol'dok Moulding"
+    },
+    {
+      "id": 94973,
+      "name": "Krol'dok Moulding"
+    },
+    {
+      "id": 95454,
+      "name": "The Honor of the Kor'kron"
+    },
+    {
+      "id": 96377,
+      "name": "State Secrets"
+    },
+    {
+      "id": 95664,
+      "name": "Elder Knowledge"
+    },
+    {
+      "id": 3911,
+      "name": "The Last Element"
+    },
+    {
+      "id": 96987,
+      "name": "Opportunistic Education"
+    },
+    {
+      "id": 92065,
+      "name": "Blackmaw Reclamation"
+    },
+    {
+      "id": 95263,
+      "name": "Somber News"
+    },
+    {
+      "id": 92067,
+      "name": "Feeding Time!"
+    },
+    {
+      "id": 92415,
+      "name": "Remember That I Love You"
+    }
+  ],
+  "questsWithoutMap": [
+    {
+      "id": 5723,
+      "name": "Testing an Enemy's Strength"
+    },
+    {
+      "id": 5728,
+      "name": "Hidden Enemies"
+    },
+    {
+      "id": 5724,
+      "name": "Returning the Lost Satchel"
+    },
+    {
+      "id": 5722,
+      "name": "Searching for the Lost Satchel"
+    },
+    {
+      "id": 5761,
+      "name": "Slaying the Beast"
+    },
+    {
+      "id": 5725,
+      "name": "The Power to Destroy..."
+    },
+    {
+      "id": 96403,
+      "name": "Important Heirlooms"
+    },
+    {
+      "id": 96394,
+      "name": "The Restless Dead"
+    },
+    {
+      "id": 97288,
+      "name": "Unending Torment"
+    },
+    {
+      "id": 92401,
+      "name": "A Frightened Request"
+    },
+    {
+      "id": 92421,
+      "name": "Light's Justice"
+    },
+    {
+      "id": 92422,
+      "name": "The Wrath of Rath'mael"
+    },
+    {
+      "id": 95204,
+      "name": "Crest of Lordaeron"
+    },
+    {
+      "id": 95216,
+      "name": "The New Plague"
+    },
+    {
+      "id": 1489,
+      "name": "Hamuul Runetotem"
+    },
+    {
+      "id": 1490,
+      "name": "Nara Wildmane"
+    },
+    {
+      "id": 962,
+      "name": "Serpentbloom"
+    },
+    {
+      "id": 914,
+      "name": "Leaders of the Fang"
+    },
+    {
+      "id": 3366,
+      "name": "The Glowing Shard"
+    },
+    {
+      "id": 1098,
+      "name": "Deathstalkers in Shadowfang"
+    },
+    {
+      "id": 1740,
+      "name": "The Orb of Soran'ruk"
+    },
+    {
+      "id": 1013,
+      "name": "The Book of Ur"
+    },
+    {
+      "id": 1014,
+      "name": "Arugal Must Die"
+    },
+    {
+      "id": 6564,
+      "name": "Allegiance to the Old Gods"
+    },
+    {
+      "id": 6563,
+      "name": "The Essence of Aku'Mai"
+    },
+    {
+      "id": 6562,
+      "name": "Trouble in the Deeps"
+    },
+    {
+      "id": 6565,
+      "name": "Allegiance to the Old Gods"
+    },
+    {
+      "id": 6561,
+      "name": "Blackfathom Villainy"
+    },
+    {
+      "id": 2842,
+      "name": "Chief Engineer Scooty"
+    },
+    {
+      "id": 2843,
+      "name": "Gnomer-gooooone!"
+    },
+    {
+      "id": 2841,
+      "name": "Rig Wars"
+    },
+    {
+      "id": 1102,
+      "name": "A Vengeful Fate"
+    },
+    {
+      "id": 1109,
+      "name": "Going, Going, Guano!"
+    },
+    {
+      "id": 6522,
+      "name": "An Unholy Alliance"
+    },
+    {
+      "id": 1048,
+      "name": "Into The Scarlet Monastery"
+    },
+    {
+      "id": 1051,
+      "name": "Vorrel's Revenge"
+    },
+    {
+      "id": 1113,
+      "name": "Hearts of Zeal"
+    },
+    {
+      "id": 1049,
+      "name": "Compendium of the Fallen"
+    },
+    {
+      "id": 1160,
+      "name": "Test of Lore"
+    },
+    {
+      "id": 1951,
+      "name": "Rituals of Power"
+    },
+    {
+      "id": 1654,
+      "name": "The Test of Righteousness"
+    },
+    {
+      "id": 6921,
+      "name": "Amongst the Ruins"
+    },
+    {
+      "id": 6922,
+      "name": "Baron Aquanis"
+    },
+    {
+      "id": 3341,
+      "name": "Bring the End"
+    },
+    {
+      "id": 6521,
+      "name": "An Unholy Alliance"
+    },
+    {
+      "id": 2342,
+      "name": "Reclaimed Treasures"
+    },
+    {
+      "id": 2202,
+      "name": "Uldaman Reagent Run"
+    },
+    {
+      "id": 2283,
+      "name": "Necklace Recovery"
+    },
+    {
+      "id": 1956,
+      "name": "Power in Uldaman"
+    },
+    {
+      "id": 2936,
+      "name": "The Spider God"
+    },
+    {
+      "id": 7068,
+      "name": "Shadowshard Fragments"
+    },
+    {
+      "id": 7029,
+      "name": "Vyletongue Corruption"
+    },
+    {
+      "id": 7064,
+      "name": "Corruption of Earth and Seed"
+    },
+    {
+      "id": 1445,
+      "name": "The Temple of Atal'Hakkar"
+    },
+    {
+      "id": 4146,
+      "name": "Zapper Fuel"
+    },
+    {
+      "id": 4081,
+      "name": "KILL ON SIGHT: Dark Iron Dwarves"
+    },
+    {
+      "id": 4134,
+      "name": "Lost Thunderbrew Recipe"
+    },
+    {
+      "id": 4082,
+      "name": "KILL ON SIGHT: High Ranking Dark Iron Officials"
+    },
+    {
+      "id": 4063,
+      "name": "The Rise of the Machines"
+    },
+    {
+      "id": 3906,
+      "name": "Disharmony of Flame"
+    },
+    {
+      "id": 3907,
+      "name": "Disharmony of Fire"
+    },
+    {
+      "id": 3981,
+      "name": "Commander Gor'shak"
+    },
+    {
+      "id": 7201,
+      "name": "The Last Element"
+    },
+    {
+      "id": 4132,
+      "name": "Operation: Death to Angerforge"
+    },
+    {
+      "id": 4003,
+      "name": "The Royal Rescue"
+    },
+    {
+      "id": 7489,
+      "name": "Lethtendris's Web"
+    },
+    {
+      "id": 7463,
+      "name": "Arcane Refreshment"
+    },
+    {
+      "id": 7481,
+      "name": "Elven Legends"
+    },
+    {
+      "id": 7703,
+      "name": "Unfinished Gordok Business"
+    },
+    {
+      "id": 4724,
+      "name": "The Pack Mistress"
+    },
+    {
+      "id": 4981,
+      "name": "Operative Bijou"
+    },
+    {
+      "id": 4903,
+      "name": "Warlord's Command"
+    },
+    {
+      "id": 5341,
+      "name": "Barov Family Fortune"
+    },
+    {
+      "id": 7668,
+      "name": "The Darkreaver Menace"
+    },
+    {
+      "id": 5122,
+      "name": "The Medallion of Faith"
+    },
+    {
+      "id": 6163,
+      "name": "Ramstein"
+    },
+    {
+      "id": 5125,
+      "name": "Aurius' Reckoning"
+    },
+    {
+      "id": 4768,
+      "name": "The Darkstone Tablet"
+    },
+    {
+      "id": 4974,
+      "name": "For The Horde!"
+    },
+    {
+      "id": 6602,
+      "name": "Blood of the Black Dragon Champion"
+    },
+    {
+      "id": 5127,
+      "name": "The Demon Forge"
+    },
+    {
+      "id": 95697,
+      "name": "Changing Tastes"
+    },
+    {
+      "id": 95663,
+      "name": "Dragonmaw Rumors"
+    },
+    {
+      "id": 98823,
+      "name": "Earthen Echo"
+    },
+    {
+      "id": 95664,
+      "name": "Elder Knowledge"
+    },
+    {
+      "id": 95795,
+      "name": "Fallen in the Fen"
+    },
+    {
+      "id": 95682,
+      "name": "Open the Maw"
+    },
+    {
+      "id": 95737,
+      "name": "Seeking Caitlin"
+    },
+    {
+      "id": 95772,
+      "name": "Songblade Search"
+    },
+    {
+      "id": 1442,
+      "name": "Seeking the Kor Gem"
+    },
+    {
+      "id": 78916,
+      "name": "The Heart of the Void"
+    },
+    {
+      "id": 78917,
+      "name": "The Heart of the Void"
+    },
+    {
+      "id": 79360,
+      "name": "Elemental Aid"
+    },
+    {
+      "id": 96264,
+      "name": "Elemental Aid"
+    },
+    {
+      "id": 2949,
+      "name": "Return of the Ring"
+    },
+    {
+      "id": 92458,
+      "name": "Heart of Disruption"
+    },
+    {
+      "id": 96984,
+      "name": "Heart of Disruption"
+    },
+    {
+      "id": 96987,
+      "name": "Opportunistic Education"
+    },
+    {
+      "id": 96988,
+      "name": "Source of Power"
+    },
+    {
+      "id": 96986,
+      "name": "The Grave Knight"
+    },
+    {
+      "id": 96800,
+      "name": "Past Due"
+    },
+    {
+      "id": 3911,
+      "name": "The Last Element"
+    },
+    {
+      "id": 95776,
+      "name": "The Only Good Brinescale..."
+    },
+    {
+      "id": 96774,
+      "name": "Ancient Gurubashi Idol"
+    },
+    {
+      "id": 95775,
+      "name": "The Drowned City"
+    },
+    {
+      "id": 2950,
+      "name": "Nogg's Ring Redo"
+    },
+    {
+      "id": 1394,
+      "name": "Final Passage"
+    },
+    {
+      "id": 1806,
+      "name": "The Test of Righteousness"
+    },
+    {
+      "id": 96381,
+      "name": "A Bit of Wet Work"
+    },
+    {
+      "id": 96379,
+      "name": "State Secrets"
+    },
+    {
+      "id": 96377,
+      "name": "State Secrets"
+    },
+    {
+      "id": 96376,
+      "name": "State Secrets"
+    },
+    {
+      "id": 96369,
+      "name": "Bad News for Folkar"
+    },
+    {
+      "id": 96337,
+      "name": "More Valuable Than Gold"
+    },
+    {
+      "id": 96335,
+      "name": "The Man in the Iron Chains"
+    },
+    {
+      "id": 96334,
+      "name": "Blood Red Bandanas"
+    },
+    {
+      "id": 96332,
+      "name": "A Little Payback"
+    },
+    {
+      "id": 95483,
+      "name": "Thrall Needs to Know"
+    },
+    {
+      "id": 95454,
+      "name": "The Honor of the Kor'kron"
+    },
+    {
+      "id": 95309,
+      "name": "No Orc Left Behind"
+    },
+    {
+      "id": 95056,
+      "name": "Krol'dok No More!"
+    },
+    {
+      "id": 94998,
+      "name": "Curios of Curiosity"
+    },
+    {
+      "id": 94997,
+      "name": "Lingering Essence"
+    },
+    {
+      "id": 94984,
+      "name": "Tome of Twilight"
+    },
+    {
+      "id": 94983,
+      "name": "Twilight Mementos"
+    },
+    {
+      "id": 94982,
+      "name": "Eye of Mugg"
+    },
+    {
+      "id": 94981,
+      "name": "Key Ingredients"
+    },
+    {
+      "id": 94980,
+      "name": "Krol'dok Moulding"
+    },
+    {
+      "id": 94975,
+      "name": "A Token of Vengeance"
+    },
+    {
+      "id": 94974,
+      "name": "Key Ingredients"
+    },
+    {
+      "id": 94973,
+      "name": "Krol'dok Moulding"
+    },
+    {
+      "id": 94972,
+      "name": "Tome of Twilight"
+    },
+    {
+      "id": 94969,
+      "name": "Krol'dok No More!"
+    },
+    {
+      "id": 94968,
+      "name": "Eye of Mugg"
+    },
+    {
+      "id": 97198,
+      "name": "Blackmaw Magic"
+    },
+    {
+      "id": 96246,
+      "name": "Blackmaw Pouches"
+    },
+    {
+      "id": 92343,
+      "name": "Get to the Roots of It"
+    },
+    {
+      "id": 92070,
+      "name": "A Lost Memento"
+    },
+    {
+      "id": 92067,
+      "name": "Feeding Time!"
+    },
+    {
+      "id": 92066,
+      "name": "The Twin Bears"
+    },
+    {
+      "id": 92065,
+      "name": "Blackmaw Reclamation"
+    },
+    {
+      "id": 97049,
+      "name": "Essence of Seeping Slimes"
+    },
+    {
+      "id": 95928,
+      "name": "Crystalline Elements"
+    },
+    {
+      "id": 95926,
+      "name": "The Dark Crystal"
+    },
+    {
+      "id": 95790,
+      "name": "Digestible Research"
+    },
+    {
+      "id": 95788,
+      "name": "Magics of the Drowned City"
+    },
+    {
+      "id": 95787,
+      "name": "Take Two With Water"
+    },
+    {
+      "id": 95798,
+      "name": "The Web of Magic"
+    },
+    {
+      "id": 95799,
+      "name": "Findings for the Explorer's League"
+    }
+  ]
+}

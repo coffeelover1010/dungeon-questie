@@ -3,7 +3,7 @@
 Original Dungeon Questie code: Copyright (c) 2026 Videocat, MIT (LICENSE).
 
 Classic reference data in `data/classic-source.json`, `data/walkthroughs.json`
-and `WalkthroughData.lua` is adapted from CMaNGOS Classic-DB, GPL version 3.
+`WalkthroughData.lua`, and the retained local fallback fields in `LocalData.lua` are adapted from CMaNGOS Classic-DB, GPL version 3.
 The original code retains its MIT permission. Libraries retain their individual
 terms. This is a mixed-licence distribution; do not describe the whole package
 as MIT-only. The editable data and generation tools accompany the data.
@@ -30,11 +30,12 @@ Minimap libraries: see `Libs/NOTICE.txt` and `Libs/Ace3-LICENSE.txt`.
 LibDataBroker is embedded as directed by its upstream project:
 https://www.wowace.com/projects/libdatabroker-1-1
 
-Questie and QuestieDB are used for offline research, not read by the builders.
-As of 10 November 2026, an optional runtime adapter also reads locations through
-the installed QuestieDB public API (Forever flavor, compatible contract 4).
-The provider is not bundled; its installed data supplies missing giver, recipient,
-drop-area and entrance locations. Curated bundled pins take precedence.
+QuestieDB is a required, separately installed runtime provider as of 12 November
+2026. Questie remains optional. The adapter calls the documented contract 4 API
+for the Forever flavour. No provider database, schema implementation, decoder,
+code or artwork is bundled or copied into generated runtime data. A presence-only
+audit removes redundant fields from our independently sourced local export.
+See PROVIDER-INTEGRATION.md for the installed version, API and licensing review.
 The separate approximate Drowned City entrance (Stranglethorn Vale 21.4, 27.9)
 was checked against https://www.warcrafttavern.com/forever/guides/the-drowned-city
 and https://warcraft.wiki.gg/wiki/Drowned_City on 10 November 2026.

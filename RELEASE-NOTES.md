@@ -1,3 +1,37 @@
+## 0.2.3
+
+- Resolve map destinations from the current quest phase: pickup, objective or hand-in. Missing preparation locations no longer fall back to dungeon entrances.
+- Add Get the Scoop objective directions and approximate Plucky Johnson location; switch to Magus Tirth after completion.
+- Re-resolve selected markers and clear stale waypoints when the current destination changes.
+- Audit all 230 non-catalogue preparation nodes; see ROUTING-REVIEW-2026-11-13.md for remaining coverage gaps.
+
+## 0.2.2
+
+- Show dungeon preparation separately from finished dungeon objectives and quest turn-ins.
+- Replace chain-length labels with the action needed before entering.
+- Do not show outdoor prerequisite quests as dungeon-ready.
+- Order all dungeon groups by recommended entry level.
+
+# 0.2.1 — 13 November 2026
+
+- Added 54 quest records, including two Drowned City reward handoffs, using current
+  individual Icy Veins Forever records and the Wowhead Forever dungeon guide.
+- Populated Krol'dok Stronghold, Alcaz Prison, Blackmaw Hold and Shaper's Terrace;
+  expanded Drowned City, reviewed all other new dungeon categories, corrected
+  Ruins of Lordaeron prerequisites, and recorded Unending Torment continuations.
+- Preserved independent minimum-level and faction/class facts when provider values
+  are defaults. Missing eligibility and temporary gates no longer hide quests.
+- Incomplete quest data is explicitly labelled and never establishes readiness.
+- See RESEARCH-2026-11-13.md for quest IDs, source conflicts, remaining gaps and tests.
+
+# Dungeon Questie 0.2.0 - 2026-11-12
+
+- Require the separate Forever QuestieDB addon for quest details, requirements and map locations; Questie remains optional.
+- Show compact quest cards, expandable chains and current-step dungeon readiness.
+- Improve City of Dalaran quest details and pickup guidance.
+- Use recorded character requirements and quest progress for pickup guidance across the catalogue and prerequisite chains, without requiring a live NPC offer.
+- Remove blanket not-yet-confirmed messages; retain specific missing-data, conflicting-chain and observed-unavailable states.
+
 # Dungeon Questie 0.1.9 - 2026-11-11
 
 - Group prerequisite chains into expandable quest rows and prioritize current steps.

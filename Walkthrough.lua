@@ -11,16 +11,26 @@ end
 local classBits={WARRIOR=1,PALADIN=2,HUNTER=4,ROGUE=8,PRIEST=16,SHAMAN=64,MAGE=128,WARLOCK=256,DRUID=1024}
 local raceBits={Human=1,Orc=2,Dwarf=4,NightElf=8,Scourge=16,Tauren=32,Gnome=64,Troll=128}
 local function contains(mask,flag) return not mask or mask==0 or not flag or math.floor(mask/flag)%2==1 end
-function A.WalkRestriction(n)
+function A.WalkRestriction(n,ignoreLevel)
  local _,class=UnitClass("player"); local _,race=UnitRace("player")
  if not contains(n.classMask,classBits[class]) then return "This reference step is for another class." end
  if not contains(n.raceMask,raceBits[race]) then return "This reference step is for another race or faction." end
+ -- Character filtering only excludes known race/class/faction restrictions.
+ -- Temporary gates remain visible and are evaluated by the step resolver.
+ if not ignoreLevel then
+  if n.maxLevel and n.maxLevel>0 and UnitLevel("player")>n.maxLevel then return "Above the maximum level." end
+  if n.availableUntilCompleted and n.availableUntilCompleted>0 and A.Completed(n.availableUntilCompleted)==true then return "No longer available." end
+  if n.disabledByQuest and n.disabledByQuest>0 and A.log[n.disabledByQuest] then return "Another active quest prevents pickup." end
+  if n.availableStartingWith and n.availableStartingWith>0 and not A.log[n.availableStartingWith] and A.Completed(n.availableStartingWith)~=true then return "Requires an earlier quest." end
+ end
  if n.faction and n.faction~=UnitFactionGroup("player") then return n.faction.." only." end
  if n.class and n.class~=class then return n.class.." only." end
- if n.minLevel and UnitLevel("player")<n.minLevel then return "Requires level "..n.minLevel.."." end
+ if not ignoreLevel and n.minLevel and UnitLevel("player")<n.minLevel then return "Requires level "..n.minLevel.."." end
 end
 -- Reference successors help detect progress beyond the direct destination too.
 local successors={}
+function A.RebuildSuccessors()
+ successors={}
 for id,n in pairs(nodes) do
  for _,field in ipairs({"all","any"}) do
   for _,prior in ipairs(n[field] or {}) do
@@ -28,6 +38,8 @@ for id,n in pairs(nodes) do
   end
  end
 end
+end
+A.RebuildSuccessors()
 local function progressed(id,seen)
  if seen[id] then return end; seen[id]=true
  if A.log[id] or A.Completed(id)==true then return id end
@@ -61,6 +73,7 @@ local function resolve(id,path)
   end
  end
  if A.Completed(id)==nil then return n,"check","Completion information is unavailable. Open your quest log and try again." end
+ if n.restrictionUnknown then return n,"check","Character eligibility unavailable; check the quest giver." end
  path[id]=true
  for _,prior in ipairs(n.all or n.prereqs or {}) do
   local step,phase,note=resolve(prior,path)
@@ -81,10 +94,12 @@ local function resolve(id,path)
  end
  path[id]=nil
  if levelBlocked then return n,"blocked",restriction end
+ if A.ProviderGate then local gate=A.ProviderGate(n); if gate then return n,"check",gate end end
  if n.requirementsNote then return n,"check",n.requirementsNote end
  if n.unverifiedChain then return n,"check","Earlier quest requirements are not fully recorded." end
+ if n.pickupUnknown then return n,"check","Pickup source is not verified." end
  if A.Availability(id)==false then return n,"unavailable","Not offered by the current NPC." end
- if A.Availability(id)~=true then return n,"check","Not yet confirmed available for this character." end
+ -- Known requirements suffice for guide pickup; a live offer is not required.
  return n,"pickup"
 end
 -- Share useful guide context between uncertain list cards and the walkthrough.
@@ -108,9 +123,16 @@ function A.StepContext(q,n,phase,note)
  for _,id in ipairs(alternatives) do
   if A.Completed(id)==true then lines[#lines+1]="A recorded alternative prerequisite is completed."; break end
  end
- if note then lines[#lines+1]=note end
- local title="Check availability"
- if n.requirementsNote or n.unverifiedChain then title="Check requirements" end
+ if note and not (phase=="check" and (n.requirementsNote or n.unverifiedChain)) then lines[#lines+1]=note end
+ local title="Quest details"
+ if phase=="check" then
+  title="Data incomplete"
+  if n.unverifiedChain or n.requirementsNote then
+   lines[#lines+1]="Prerequisite information is incomplete. Confirm availability with the quest giver."
+  elseif n.pickupUnknown then
+   lines[#lines+1]="Pickup information is incomplete."
+  end
+ end
  return table.concat(lines,"\n"),title
 end
 function A.WalkStep(q)

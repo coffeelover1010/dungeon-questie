@@ -1,0 +1,3429 @@
+{
+  "version": "1.1.0",
+  "flavour": "Forever",
+  "contract": 4,
+  "fields": {
+    "5723": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "5728": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "5727": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "5726": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "5724": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "5722": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "5761": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "5725": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "96395": [
+      "level",
+      "objectives"
+    ],
+    "96403": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "96394": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "96393": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "96391": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95250": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "97288": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "92401": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "92421": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "92415": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "92422": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "99156": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "356": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95195": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95189": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95204": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95216": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "451": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "450": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "447": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "214": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "155": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "142": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "141": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "135": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "132": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "65": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "92753": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "92752": [
+      "minLevel",
+      "level",
+      "objectives",
+      "all",
+      "raceMask"
+    ],
+    "92751": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "92750": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "92749": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "92748": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "92747": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "92745": [
+      "minLevel",
+      "level",
+      "objectives",
+      "all",
+      "raceMask"
+    ],
+    "92744": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "92742": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "168": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "167": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2040": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "166": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "373": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1489": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "880": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "877": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "870": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1490": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1486": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "1491": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "865": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "962": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "959": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "1487": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "914": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6981": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "1098": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1740": [
+      "minLevel",
+      "level",
+      "objectives",
+      "classMask"
+    ],
+    "1013": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1014": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "6564": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6563": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "6562": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "971": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1198": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "1275": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1199": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "6565": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1200": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "6561": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "386": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "377": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "387": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "388": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "391": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "389": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1221": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "1144": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "2922": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2923": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2926": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2927": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2904": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "2928": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2842": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2843": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "98423": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "378": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "303": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2924": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2930": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2929": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2962": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2841": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2951": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "2945": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "1102": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1109": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "6522": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1101": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1100": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1142": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1048": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1053": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1052": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "261": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1051": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1113": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1049": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1160": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1159": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6627": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1154": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1152": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1151": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1150": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1149": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1050": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1951": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "classMask"
+    ],
+    "1950": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "classMask"
+    ],
+    "1949": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "classMask"
+    ],
+    "1947": [
+      "minLevel",
+      "level",
+      "objectives",
+      "classMask"
+    ],
+    "1654": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "1653": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "1652": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "1651": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "1650": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "1649": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "6921": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "6922": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "3341": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "6521": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "3636": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "6626": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "3523": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "3525": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "2342": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2202": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2258": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2283": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1360": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2398": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2240": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "17": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2500": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "704": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "739": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "738": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "707": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1139": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "762": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "726": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "725": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "724": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "723": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "722": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "721": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "720": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2198": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2418": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "709": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "2278": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "1956": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "classMask"
+    ],
+    "1955": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "classMask"
+    ],
+    "1954": [
+      "minLevel",
+      "level",
+      "objectives",
+      "classMask"
+    ],
+    "1953": [
+      "minLevel",
+      "level",
+      "objectives",
+      "classMask"
+    ],
+    "2936": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2935": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2934": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2933": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2991": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2990": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2989": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2988": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2768": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "2865": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "3042": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "2846": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "2770": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "3527": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3520": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "7068": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "7029": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "7064": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "7070": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "7041": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "7065": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "7028": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "7044": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "7066": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "7067": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "7046": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "1445": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1444": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1429": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1424": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4146": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4147": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4145": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4143": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4142": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4141": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1475": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1469": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1452": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1451": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1450": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1449": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1448": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1446": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "3373": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "3447": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3444": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3380": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "3445": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "3528": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "4787": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "4081": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4134": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4082": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4063": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4062": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4061": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "3906": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "3907": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "3981": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "7201": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4132": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4121": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4122": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4003": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4002": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4001": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "3982": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4262": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4263": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4286": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4126": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4341": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "3701": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "3702": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4362": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4361": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4241": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4224": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4223": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4186": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4185": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4184": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4183": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4182": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4322": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4282": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4264": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4242": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4136": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "4123": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "7848": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "3802": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3801": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "4201": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "4024": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "4022": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3481": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3463": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3462": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3454": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3453": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3452": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3443": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3442": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "3441": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "4023": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "7489": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "7488": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "7441": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5526": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5527": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "7463": [
+      "minLevel",
+      "level",
+      "objectives",
+      "classMask"
+    ],
+    "7461": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "7507": [
+      "minLevel",
+      "level",
+      "objectives",
+      "classMask"
+    ],
+    "7481": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "7482": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "5525": [
+      "minLevel",
+      "level"
+    ],
+    "5518": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5528": [
+      "minLevel",
+      "level"
+    ],
+    "7703": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "4724": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4981": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4903": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4701": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "5089": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "5001": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4862": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "4729": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "4866": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "4742": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "4867": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "4788": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5065": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5341": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "7668": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "5343": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "5529": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5382": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5515": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5384": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "4771": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5531": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5522": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "4735": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "4734": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5466": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5465": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5464": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5463": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5462": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5461": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5214": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5251": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5282": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5281": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5122": [
+      "minLevel",
+      "level"
+    ],
+    "5262": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5848": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5846": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5845": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5781": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5742": [
+      "minLevel",
+      "level",
+      "objectives",
+      "all"
+    ],
+    "5542": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5543": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5544": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "6163": [
+      "minLevel",
+      "level",
+      "objectives",
+      "all",
+      "raceMask"
+    ],
+    "6135": [
+      "minLevel",
+      "level",
+      "objectives",
+      "all",
+      "raceMask"
+    ],
+    "6133": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "5243": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5212": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5213": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5125": [
+      "minLevel",
+      "level",
+      "any"
+    ],
+    "5263": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "8945": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "8929": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "8926": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8977": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "8928": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "8925": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "8924": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "8921": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "8922": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "8905": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8906": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8907": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8908": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8909": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8910": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8911": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8912": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8923": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "8913": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8914": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8915": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8916": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8917": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8918": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8919": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8920": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "8931": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8932": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8933": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8934": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8935": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8936": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8937": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8930": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "8927": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8978": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "8938": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8939": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8940": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8941": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8942": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8943": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "8944": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "4768": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "4974": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4941": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6602": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6601": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6585": [
+      "minLevel",
+      "level",
+      "objectives",
+      "all",
+      "raceMask"
+    ],
+    "6582": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6570": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6569": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6568": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6567": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6566": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6583": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6584": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "4764": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "5102": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6502": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6501": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6403": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6402": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "7761": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5160": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5047": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "6821": [
+      "minLevel",
+      "level",
+      "objectives",
+      "all"
+    ],
+    "6804": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "6805": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "5127": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any"
+    ],
+    "5126": [
+      "minLevel",
+      "level",
+      "objectives",
+      "classMask"
+    ],
+    "2931": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "2925": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "98815": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "484": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95697": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95663": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "98823": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95664": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95795": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95772": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95809": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95647": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95646": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "275": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "277": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "276": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95810": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95682": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "98824": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95737": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "1442": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "78916": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "78917": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "79360": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "96264": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "94789": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask",
+      "classMask"
+    ],
+    "2947": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2949": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "92456": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "92458": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "96984": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "92434": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "545": [
+      "minLevel",
+      "level",
+      "objectives",
+      "all",
+      "raceMask"
+    ],
+    "544": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "93680": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "96987": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "92489": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "96988": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "92457": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "96986": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "96800": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95776": [
+      "minLevel",
+      "level",
+      "objectives",
+      "all",
+      "raceMask"
+    ],
+    "95770": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95773": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "96774": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95775": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "92819": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2948": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "2950": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1394": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "6628": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "1806": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask",
+      "classMask"
+    ],
+    "3765": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "463": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "96772": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "96381": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "96379": [],
+    "96377": [
+      "minLevel",
+      "level",
+      "raceMask"
+    ],
+    "96376": [
+      "minLevel",
+      "level",
+      "raceMask"
+    ],
+    "96369": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95454": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95309": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95285": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95284": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95283": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "96337": [
+      "level",
+      "objectives",
+      "any"
+    ],
+    "96335": [
+      "level",
+      "objectives"
+    ],
+    "96334": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "96332": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95483": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95263": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95262": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95198": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95196": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95194": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "96771": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "94998": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "94997": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "94983": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "94984": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "94907": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "94982": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "94981": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "94980": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "94975": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "94974": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "94973": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "94972": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "94969": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "94968": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "97327": [
+      "level",
+      "objectives"
+    ],
+    "97198": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "97173": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "96246": [
+      "any"
+    ],
+    "92344": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "92345": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "92343": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "92346": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "92069": [
+      "level",
+      "objectives"
+    ],
+    "92067": [],
+    "92066": [
+      "level",
+      "objectives"
+    ],
+    "92065": [
+      "level",
+      "objectives"
+    ],
+    "97049": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95928": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95926": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95925": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95924": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95790": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "97130": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95791": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "95789": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "95788": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95786": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "205": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95787": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95798": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "95799": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "97289": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "97290": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "97291": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ],
+    "97292": [
+      "minLevel",
+      "level",
+      "objectives",
+      "any",
+      "raceMask"
+    ]
+  },
+  "coverage": {
+    "version": "1.1.0",
+    "flavour": "Forever",
+    "contract": 4,
+    "catalogue": 320,
+    "providerFound": 316,
+    "missing": [
+      3366,
+      3911,
+      95056,
+      92070
+    ],
+    "positiveMinimum": 306,
+    "objectivesText": 307,
+    "starters": 296,
+    "finishers": 295,
+    "prerequisiteLinks": 125
+  }
+}

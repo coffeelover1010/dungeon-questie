@@ -140,7 +140,7 @@ C_Map.GetMapInfo=function(id) return {name=id==1453 and "Stormwind City" or "Oth
 faction="Alliance"; class="MAGE"; level=30
 C_QuestLog.IsQuestFlaggedCompleted=function(id) return false end
 C_QuestLog.GetNumQuestLogEntries=function() return 0 end
--- A locked seventh quest must not leave six completed quests at 6/7.
+-- Legacy completion counts retain their level filter; preparation includes future quests.
 local savedQuests=A.quests
 A.quests={}
 for i=1,6 do local id=900000+i; A.quests[i]={id=id,dungeons={"Eligibility test"}}; A.db.confirmed[id]=true; A.state[id]="done" end
@@ -212,7 +212,7 @@ for _,q in ipairs(A.quests) do
 end
 A.window.search:SetText("no such quest 1234567890"); assert(A.window.detailTitle:GetText()=="Select a quest")
 A.window.search:SetText("")
-A.db.dungeon="Alcaz Prison"; A.Refresh(); assert(A.window.detailText:GetText():find("does not have quests"))
+A.db.dungeon="__missing_dungeon"; A.Refresh(); assert(A.EmptyQuestMessage()=="No quest data for this dungeon yet.")
 A.SelectQuest(A.byID[168]); A.RefreshPins()
 A.Toggle(); assert(not A.window:IsShown())
 ''')
@@ -236,14 +236,14 @@ for _,side in ipairs({"Alliance","Horde"}) do
 end
 A.db.search="no such quest"
 assert(A.EmptyQuestMessage():find("match your search",1,true))
-A.db.dungeon="Alcaz Prison"
+A.db.dungeon="__missing_dungeon"
 assert(A.EmptyQuestMessage()=="No quest data for this dungeon yet.")
 A.db.dungeon="__test_empty_reason"; A.db.search=""
 local test={id=990009,name="Test",dungeons={A.db.dungeon},faction="Alliance"}
 table.insert(A.quests,test); faction="Horde"
 assert(A.EmptyQuestMessage():find("faction or class",1,true))
 test.faction=nil; test.restrictionUnknown=true
-assert(A.EmptyQuestMessage():find("Character requirements unavailable",1,true))
+assert(A.Matches(test),"Unknown eligibility must remain visible")
 table.remove(A.quests)
 A.events.OnEvent(nil,"ADDON_LOADED","DungeonGuideForever")
 assert(A.db.betaOnly==nil)

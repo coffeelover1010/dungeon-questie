@@ -35,12 +35,16 @@ function A.ReadOffers()
  end
 end
 function A.Restriction(q)
+ if A.log[q.id] or A.Completed(q.id)==true or A.Availability(q.id)==true then return end
+ if A.WalkRestriction then
+  local reason=A.WalkRestriction(q,true); if reason then return reason end
+ end
  local _, class = UnitClass("player")
  local _, race = UnitRace("player")
  if q.faction and q.faction ~= UnitFactionGroup("player") then return q.faction.." only" end
  if q.class and q.class ~= class then return q.class.." only" end
  if q.excludeRace == race then return "Unavailable to this race" end
- if q.restrictionUnknown and not A.log[q.id] and A.Completed(q.id)~=true then return "Character eligibility unavailable" end
+ -- Unknown eligibility is a data gap, not evidence of another faction/class.
 end
 function A.InDungeon(q, dungeon)
  if not dungeon then return true end
@@ -88,18 +92,13 @@ function A.RunReadiness(q)
    return false,"Objectives complete — turn in outside the dungeon or check the hand-in location."
   end
   if location.dungeonObjective==false then return false,"The remaining task is outside the dungeon; follow your quest log." end
+  if q.prerequisiteOnly and location.dungeonObjective~=true then return false,"Finish this prerequisite before entering." end
   return true,"Collected — follow your quest log."
  end
- if A.Restriction(q) or (q.minLevel and UnitLevel("player")<q.minLevel) then return false end
+ if A.Availability(q.id)~=true and (A.Restriction(q) or (q.minLevel and UnitLevel("player")<q.minLevel)) then return false end
  if A.WalkStep then
   local n,phase,note=A.WalkStep(q)
   if phase=="inside" then return true,"Pick up inside: "..n.name end
-  -- Planning an inside pickup does not assert that the NPC has offered it.
-  -- The resolver has already checked level, prerequisites and known restrictions.
-  if phase=="check" and note=="Not yet confirmed available for this character." and
-     (n.pickupInside or (n.id==q.id and q.pickupInside)) then
-   return true,"Pick up inside: "..n.name..". "..(n.pickup or q.pickup or "").." Availability still needs confirming inside."
-  end
   if phase=="ready" and handInInside(n) then
    return true,"Turn in inside: "..n.name
   end
@@ -129,7 +128,7 @@ function A.Preparation(q)
   if phase=="active" then return "chain","IN YOUR LOG: "..n.name,2 end
   if phase=="pickup" and n.id~=q.id then return "chain","PICK UP FIRST: "..n.name,2 end
   if phase=="ready" then return "turnin","TURN IN FIRST: "..n.name,1 end
-  if phase=="check" then return "check","AVAILABILITY UNKNOWN",3 end
+  if phase=="check" then return "check","QUEST DETAILS",3 end
  end
  if A.Completed(q.id)==true then return "done", "ALREADY COMPLETED", 6 end
  if A.log[q.id] then return "packed", "IN YOUR LOG", 4 end
@@ -155,12 +154,16 @@ function A.Preparation(q)
  if not q.pickup or q.pickup=="" then return "check", "PICKUP LOCATION UNKNOWN", 3 end
  return "pickup", "COLLECT BEFORE ENTERING", 1
 end
+function A.DungeonWorkFinished(q)
+ return A.log[q.id] and A.log[q.id].complete and not handInInside(q) or false
+end
 function A.PreparationSummary(dungeon)
- local counts={pickup=0,chain=0,check=0,packed=0,inside=0,done=0,blocked=0,total=0,collected=0,turnin=0,skipped=0,ready=0}
+ local counts={pickup=0,chain=0,check=0,packed=0,inside=0,done=0,blocked=0,total=0,collected=0,turnin=0,skipped=0,ready=0,finished=0}
  for _,q in ipairs(A.quests) do
   if A.InDungeon(q,dungeon) and A.ChecklistVisible(q) and not A.Restriction(q) then
    local stage=A.Preparation(q); counts[stage]=counts[stage]+1
    counts.total=counts.total+1
+   if A.DungeonWorkFinished(q) then counts.finished=counts.finished+1 end
    if A.RunReadiness(q) then counts.ready=counts.ready+1 end
    if A.RunReadiness(q) then counts.collected=counts.collected+1 end
   end
@@ -302,6 +305,9 @@ events:SetScript("OnEvent",function(_,event,arg)
   return
  end
  if not A.db then return end
+ if event=="PLAYER_LOGIN" and A.LoadQuestData then
+  A.LoadQuestData(); if A.providerError then A.Print(A.providerError) end
+ end
  if event=="GOSSIP_SHOW" then A.ReadOffers()
  elseif event=="QUEST_DETAIL" then
   local id=A.Safe(GetQuestID); if type(id)=="number" and id>0 then A.offers[id]=true end

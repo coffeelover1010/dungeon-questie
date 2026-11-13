@@ -641,15 +641,13 @@
     "dungeons": [
       "Ruins of Lordaeron"
     ],
-    "source": "https://wowforevertalents.com/quests/unending-torment-97288/",
-    "evidence": "Beta cache report",
-    "checked": "2026-11-07",
+    "source": "https://db.icy-veins.com/wow-forever/quests/97288",
+    "evidence": "Forever database",
+    "checked": "2026-11-13",
     "level": 21,
-    "minLevel": 16,
+    "minLevel": 15,
     "faction": "Horde",
-    "objectives": [
-      "Abominable Head"
-    ],
+    "objectives": [],
     "rewards": [],
     "people": [
       "Turned in to: Master Apothecary Faranell"
@@ -682,7 +680,10 @@
       "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
       "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
       "pickupInside": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
-    }
+    },
+    "turnin": "Master Apothecary Faranell",
+    "unverifiedChain": false,
+    "dungeonObjective": false
   },
   {
     "id": 92401,
@@ -844,9 +845,9 @@
     "dungeons": [
       "Ruins of Lordaeron"
     ],
-    "source": "https://wowforevertalents.com/quests/the-wrath-of-rath-mael-92422/",
-    "evidence": "Beta cache report",
-    "checked": "2026-11-07",
+    "source": "https://www.wowhead.com/forever/news/new-prerequisites-required-for-ruins-of-lordaeron-dungeon-quests-in-wow-forever-383769",
+    "evidence": "Forever database",
+    "checked": "2026-11-13",
     "level": 22,
     "minLevel": 15,
     "objectives": [
@@ -868,7 +869,9 @@
     "chain": [],
     "pickup": "Deathguard Kristof, Brill, Tirisfal Glades.",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
-    "prereqs": [],
+    "prereqs": [
+      99156
+    ],
     "faction": "Horde",
     "personEvidence": [
       {
@@ -879,7 +882,13 @@
     ],
     "sourceDetails": [
       "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
-    ]
+    ],
+    "all": [
+      99156
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "requirementsNote": null
   },
   {
     "id": 95195,
@@ -1038,9 +1047,9 @@
     "dungeons": [
       "Ruins of Lordaeron"
     ],
-    "source": "https://wowforevertalents.com/quests/the-new-plague-95216/",
-    "evidence": "Beta cache report",
-    "checked": "2026-11-07",
+    "source": "https://www.wowhead.com/forever/news/new-prerequisites-required-for-ruins-of-lordaeron-dungeon-quests-in-wow-forever-383769",
+    "evidence": "Forever database",
+    "checked": "2026-11-13",
     "level": 22,
     "minLevel": 16,
     "faction": "Horde",
@@ -1063,7 +1072,9 @@
     "chain": [],
     "pickup": "Theodore Griffs, Undercity.",
     "notes": "Reported from a beta quest cache; availability and rewards may change. NPC names read from quest text are not proof of a pickup location.",
-    "prereqs": [],
+    "prereqs": [
+      451
+    ],
     "personEvidence": [
       {
         "role": "Picked up from",
@@ -1083,7 +1094,13 @@
       "locationEvidence": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
       "pickup": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests",
       "routeNote": "https://www.icy-veins.com/wow-forever/ruins-of-lordaeron-quests"
-    }
+    },
+    "all": [
+      451
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "requirementsNote": null
   },
   {
     "id": 214,
@@ -8727,13 +8744,17 @@
     "chain": [],
     "locationSource": "https://wowforevertalents.com/quests/a-green-sample-92456/",
     "locationEvidence": "WFT Beta Log pickup coordinates, 23 October 2026; checked 2026-11-07",
-    "fieldChecked": "2026-11-07",
+    "fieldChecked": "2026-11-12",
     "fieldSources": {
       "pickup": "https://wowforevertalents.com/quests/a-green-sample-92456/",
       "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
       "people": "https://wowforevertalents.com/quests/a-green-sample-92456/",
-      "personEvidence": "https://wowforevertalents.com/quests/a-green-sample-92456/"
+      "personEvidence": "https://wowforevertalents.com/quests/a-green-sample-92456/",
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
     },
+    "turnin": "Shylamiir in The Park, Stormwind City.",
+    "routeNote": "Collect a Fel Infused Blossom from the grass near the Fel Ancient encounter in City of Dalaran, then return to Shylamiir in Stormwind.",
     "pin": {
       "map": 1453,
       "x": 31.3,
@@ -8807,13 +8828,17 @@
     ],
     "locationSource": "https://wowforevertalents.com/quests/heart-of-disruption-92458/",
     "locationEvidence": "WFT Beta Log pickup coordinates, 23 October 2026; checked 2026-11-07",
-    "preparationNote": "An Alarming Request (92432), from Emissary Jacques, introduces Modera. Current access reports allow Alliance to speak directly to Modera; the introduction is not enforced as a prerequisite.",
-    "fieldChecked": "2026-11-07",
+    "preparationNote": "An Alarming Request from Emissary Jacques in Southshore town hall leads to Modera. Visit Jacques if Modera does not offer Heart of Disruption.",
+    "fieldChecked": "2026-11-12",
     "fieldSources": {
-      "preparationNote": "https://www.wowhead.com/forever/quest=92432",
+      "preparationNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
       "chain": "https://www.wowhead.com/forever/quest=92432",
-      "pickup": "https://wowforevertalents.com/quests/heart-of-disruption-92458/"
+      "pickup": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
     },
+    "turnin": "Image of Archmage Modera outside the Dalaran sewer entrance.",
+    "routeNote": "Accept the quest to receive the Dalaran Sewer Key. Loot the Arcane Mote from the Shade of the Archmage, then return to Modera outside the entrance.",
     "pin": {
       "map": 1421,
       "x": 68.7,
@@ -8993,12 +9018,16 @@
     "chain": [],
     "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
     "locationEvidence": "Method dungeon guide, updated 15 October 2026.",
-    "fieldChecked": "2026-10-17",
+    "fieldChecked": "2026-11-12",
     "fieldSources": {
       "pickup": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
       "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
-      "locationEvidence": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
-    }
+      "locationEvidence": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
+    },
+    "turnin": "High Sorcerer Andromath in the Mage Quarter, Stormwind City.",
+    "routeNote": "Defeat Arcanic Enigma in City of Dalaran, then return to High Sorcerer Andromath in Stormwind. No quest item needs to be looted."
   },
   {
     "id": 96988,
@@ -9103,14 +9132,16 @@
     "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
     "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
     "restrictionUnknown": false,
-    "fieldChecked": "2026-10-17",
+    "fieldChecked": "2026-11-12",
     "fieldSources": {
       "faction": "https://wowforevertalents.com/quests/starving-arcane-92457/",
       "restrictionUnknown": "https://wowforevertalents.com/quests/starving-arcane-92457/",
       "pin": "https://wowforevertalents.com/quests/starving-arcane-92457/",
-      "pickup": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "pickup": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
       "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
-      "locationEvidence": "https://wowforevertalents.com/quests/starving-arcane-92457/"
+      "locationEvidence": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
     },
     "pin": {
       "map": 1421,
@@ -9118,7 +9149,9 @@
       "y": 45.2,
       "zone": "Silverpine Forest",
       "title": "Archmage Modera (creature 269127)"
-    }
+    },
+    "turnin": "Image of Archmage Modera outside the Dalaran sewer entrance.",
+    "routeNote": "Defeat 8 Seeking Remnants, 8 Saturated Remnants and 8 Mana Echoes inside City of Dalaran. Return to Modera outside the entrance when all three objectives are complete."
   },
   {
     "id": 96986,
@@ -9259,20 +9292,25 @@
   },
   {
     "id": 95776,
-    "pickup": "Pickup location not recorded. See the quest source.",
-    "prereqs": [],
+    "pickup": "Commander Aggro'gosh",
+    "prereqs": [
+      95770,
+      95773
+    ],
     "notes": "Quest ID, Horde eligibility and level are present in both the beta cache and QuestieDB 1.0.11. The prerequisite chain is not recorded.",
     "name": "The Only Good Brinescale...",
     "dungeons": [
       "The Drowned City"
     ],
-    "source": "https://wowforevertalents.com/quests/the-only-good-brinescale-95776/",
-    "evidence": "Beta cache report",
-    "checked": "2026-11-07",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95776",
+    "evidence": "Forever database",
+    "checked": "2026-11-13",
     "level": 38,
     "minLevel": 30,
     "faction": "Horde",
-    "objectives": [],
+    "objectives": [
+      "Var'Taka slain (1)"
+    ],
     "rewards": [
       {
         "id": 279888,
@@ -9291,25 +9329,34 @@
     "fieldSources": {
       "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
       "minLevel": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
-    }
+    },
+    "turnin": "Commander Aggro'gosh",
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      95770,
+      95773
+    ],
+    "any": []
   },
   {
     "id": 96774,
-    "pickup": "Pickup location not recorded. See the quest source.",
+    "pickup": "Mazu'kon",
     "prereqs": [],
     "notes": "Quest ID, Horde eligibility and level are present in both the beta cache and QuestieDB 1.0.11. The prerequisite chain is not recorded.",
     "name": "Ancient Gurubashi Idol",
     "dungeons": [
       "The Drowned City"
     ],
-    "source": "https://wowforevertalents.com/quests/ancient-gurubashi-idol-96774/",
-    "evidence": "Beta cache report",
-    "checked": "2026-11-07",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96774",
+    "evidence": "Forever database",
+    "checked": "2026-11-13",
     "level": 40,
     "minLevel": 30,
     "faction": "Horde",
     "objectives": [
-      "Ancient Gurubashi Idol"
+      "Ancient Gurubashi Idol (1)"
     ],
     "rewards": [],
     "people": [],
@@ -9320,28 +9367,34 @@
     "fieldSources": {
       "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
       "minLevel": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
-    }
+    },
+    "turnin": "Mazu'kon",
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false
   },
   {
     "id": 95775,
-    "pickup": "Pickup location not recorded. See the quest source.",
-    "prereqs": [],
+    "pickup": "Kin'weelay",
+    "prereqs": [
+      95770
+    ],
     "notes": "Quest ID, Horde eligibility and level are present in both the beta cache and QuestieDB 1.0.11. The prerequisite chain is not recorded.",
     "name": "The Drowned City",
     "dungeons": [
       "The Drowned City"
     ],
-    "source": "https://wowforevertalents.com/quests/the-drowned-city-95775/",
-    "evidence": "Beta cache report",
-    "checked": "2026-11-07",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95775",
+    "evidence": "Forever database",
+    "checked": "2026-11-13",
     "level": 40,
     "minLevel": 30,
     "faction": "Horde",
     "objectives": [
-      "The First Tablet of I'lalai",
-      "The Second Tablet of I'lalai",
-      "The Third Tablet of I'lalai",
-      "The Fourth Tablet of I'lalai"
+      "The First Tablet of I'lalai (1)",
+      "The Second Tablet of I'lalai (1)",
+      "The Third Tablet of I'lalai (1)",
+      "The Fourth Tablet of I'lalai (1)"
     ],
     "rewards": [],
     "people": [],
@@ -9352,7 +9405,15 @@
     "fieldSources": {
       "faction": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95",
       "minLevel": "https://github.com/Questie/QuestieDB/tree/80866960788084ae1592abf66a08f0d306458a95"
-    }
+    },
+    "turnin": "Kin'weelay",
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      95770
+    ],
+    "any": []
   },
   {
     "id": 92819,
@@ -9595,5 +9656,1777 @@
     "checked": "2026-11-01",
     "notes": "Classic reference facts; current Forever rewards and availability have not been checked in game. Optional introductory quest; do not require it if the destination NPC already offers the next quest.",
     "pickupInside": false
+  },
+  {
+    "id": 96772,
+    "name": "The Dragon's Journal",
+    "minLevel": 46,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96772",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Archmage Lan'dalock",
+    "turnin": "Archmage Lan'dalock",
+    "objectives": [
+      "Recover the Journal (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 96381,
+    "name": "A Bit of Wet Work",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96381",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Sully McCleary",
+    "turnin": "Sully McCleary",
+    "objectives": [
+      "Strashaz Soldier slain (15)",
+      "Strashaz Enchantress slain (8)",
+      "Ca'zass's Head (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [
+      {
+        "id": 279825,
+        "name": "Theramore Defender's Gauntlets"
+      },
+      {
+        "id": 279826,
+        "name": "Marshdweller's Pants"
+      },
+      {
+        "id": 279829,
+        "name": "Naga Scale Spaulders"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 96379,
+    "name": "State Secrets",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96379",
+    "checked": "2026-11-13",
+    "faction": null,
+    "objectives": [
+      "Find Mason Connery's Treasure (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeonObjective": false,
+    "requirementsNote": "State Secrets variants are recorded, but their starting conditions and relationship are not verified.",
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 96377,
+    "name": "State Secrets",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96377",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "turnin": "Renzik \"The Shiv\"",
+    "objectives": [
+      "Find Mason Connery's Treasure (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeonObjective": false,
+    "requirementsNote": "State Secrets variants are recorded, but their starting conditions and relationship are not verified.",
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 96376,
+    "name": "State Secrets",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96376",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "objectives": [
+      "Find Mason Connery's Treasure (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeonObjective": false,
+    "requirementsNote": "State Secrets variants are recorded, but their starting conditions and relationship are not verified.",
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 96369,
+    "name": "Bad News for Folkar",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96369",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "objectives": [],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      95454
+    ],
+    "any": [],
+    "pickup": "Pickup not verified; check the quest source.",
+    "turninInside": true,
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      95454
+    ],
+    "pickupUnknown": true,
+    "checklistPrevious": 95454
+  },
+  {
+    "id": 96337,
+    "name": "More Valuable Than Gold",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96337",
+    "checked": "2026-11-13",
+    "faction": null,
+    "turnin": "Connery's Trunk",
+    "objectives": [
+      "Find Mason Connery's Treasure (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeonObjective": false,
+    "requirementsNote": "The provider lists The Man in the Iron Chains first; the complete treasure route is not independently confirmed.",
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 96335,
+    "name": "The Man in the Iron Chains",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96335",
+    "checked": "2026-11-13",
+    "faction": null,
+    "objectives": [
+      "Ornate Shackle Key (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 96334,
+    "name": "Blood Red Bandanas",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96334",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Sergeant Ulka",
+    "turnin": "Eitrigg",
+    "objectives": [
+      "Blood Red Bandana (8)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [
+      {
+        "id": 279448,
+        "name": "Bloodsplattered Bandana"
+      },
+      {
+        "id": 279473,
+        "name": "Makeshift Belt"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 96332,
+    "name": "A Little Payback",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96332",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Sergeant Ulka",
+    "turnin": "Sergeant Ulka",
+    "objectives": [
+      "Strashaz Soldier slain (15)",
+      "Strashaz Enchantress slain (8)",
+      "Ca'zass's Head (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [
+      {
+        "id": 279824,
+        "name": "Kor'kron Battle Gauntlets"
+      },
+      {
+        "id": 279826,
+        "name": "Marshdweller's Pants"
+      },
+      {
+        "id": 279829,
+        "name": "Naga Scale Spaulders"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 95483,
+    "name": "Thrall Needs to Know",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95483",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "turnin": "Thrall",
+    "objectives": [],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      96369
+    ],
+    "any": [],
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeonObjective": false,
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [
+      {
+        "id": 279831,
+        "name": "Fatebound Buckler"
+      },
+      {
+        "id": 279833,
+        "name": "Courier's Clasp"
+      },
+      {
+        "id": 279474,
+        "name": "Dustwallow Dirk"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      96369
+    ],
+    "pickupUnknown": true,
+    "checklistPrevious": 96369
+  },
+  {
+    "id": 95454,
+    "name": "The Honor of the Kor'kron",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95454",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "objectives": [
+      "Find Varian Wrynn (1)",
+      "Read the note on the ground (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      95309
+    ],
+    "any": [],
+    "pickup": "Commander Folkar inside Alcaz Prison",
+    "pickupInside": true,
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      95309
+    ],
+    "checklistPrevious": 95309
+  },
+  {
+    "id": 95309,
+    "name": "No Orc Left Behind",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95309",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Sergeant Ulka",
+    "objectives": [
+      "Find Commander Folkar (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      95285
+    ],
+    "any": [],
+    "turninInside": true,
+    "turnin": "Commander Folkar inside Alcaz Prison",
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      95285
+    ]
+  },
+  {
+    "id": 95263,
+    "name": "Somber News",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95263",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "turnin": "Sully McCleary",
+    "objectives": [],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "all": [],
+    "any": [
+      95262,
+      96335
+    ],
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeonObjective": false,
+    "requirementsNote": "Sources show two routes into Somber News; the exact alternative requirements need confirmation.",
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      95262
+    ],
+    "pickupUnknown": true
+  },
+  {
+    "id": 95262,
+    "name": "The Secret Prison",
+    "minLevel": 48,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95262",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Sully McCleary",
+    "objectives": [
+      "Explore Alcaz Prison (1)",
+      "Learn what became of Varian Wrynn (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      95198
+    ],
+    "any": [],
+    "dungeons": [
+      "Alcaz Prison"
+    ],
+    "level": 53,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      95198
+    ]
+  },
+  {
+    "id": 96771,
+    "name": "Vengeance of the Highborne",
+    "minLevel": 37,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96771",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Ranath Nightstride",
+    "turnin": "Ranath Nightstride",
+    "objectives": [
+      "Zalfan Moonshadow slain (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 45,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 95056,
+    "name": "Krol'dok No More!",
+    "minLevel": 40,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95056",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "objectives": [],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "requirementsNote": "Quest ID and rewards are recorded; pickup and prerequisites are not verified.",
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 42,
+    "rewards": [
+      {
+        "id": 279861,
+        "name": "Item #279861"
+      },
+      {
+        "id": 279862,
+        "name": "Item #279862"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 94998,
+    "name": "Curios of Curiosity",
+    "minLevel": 38,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94998",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Ashe Amberhall",
+    "turnin": "Melanie Sable",
+    "objectives": [],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      94997
+    ],
+    "any": [],
+    "dungeonObjective": false,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 42,
+    "rewards": [
+      {
+        "id": 279850,
+        "name": "Curio-Adorned Necklace"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      94997
+    ],
+    "checklistPrevious": 94997
+  },
+  {
+    "id": 94997,
+    "name": "Lingering Essence",
+    "minLevel": 38,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94997",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Sergeant Riftan",
+    "turnin": "Ashe Amberhall",
+    "objectives": [],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      94983
+    ],
+    "any": [],
+    "dungeonObjective": false,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 42,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      94983
+    ],
+    "checklistPrevious": 94983
+  },
+  {
+    "id": 94984,
+    "name": "Tome of Twilight",
+    "minLevel": 39,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94984",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Ashe Amberhall",
+    "turnin": "Ashe Amberhall",
+    "objectives": [
+      "Tome of Twilight (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      94907
+    ],
+    "any": [],
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 44,
+    "rewards": [
+      {
+        "id": 279854,
+        "name": "Twilight Initiate's Belt"
+      },
+      {
+        "id": 279855,
+        "name": "Torn Cultist Cloak"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      94907
+    ]
+  },
+  {
+    "id": 94983,
+    "name": "Twilight Mementos",
+    "minLevel": 38,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94983",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Sergeant Riftan",
+    "turnin": "Sergeant Riftan",
+    "objectives": [
+      "Twilight Bangle (8)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 42,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 94982,
+    "name": "Eye of Mugg",
+    "minLevel": 40,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94982",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Demar Brant",
+    "turnin": "Demar Brant",
+    "objectives": [
+      "Eye of Mugg (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 45,
+    "rewards": [
+      {
+        "id": 279852,
+        "name": "Rock on Stick"
+      },
+      {
+        "id": 279853,
+        "name": "Stick No Rock"
+      },
+      {
+        "id": 279480,
+        "name": "Bigger Rock on Bigger Stick"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 94981,
+    "name": "Key Ingredients",
+    "minLevel": 38,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94981",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Alphonse Dumas",
+    "turnin": "Alphonse Dumas",
+    "objectives": [
+      "Thick Leather (4)",
+      "Iron Bar (12)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      94980
+    ],
+    "any": [],
+    "dungeonObjective": false,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 41,
+    "rewards": [
+      {
+        "id": 267089,
+        "name": "Krol'dok Compound Key"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      94980
+    ],
+    "checklistPrevious": 94980
+  },
+  {
+    "id": 94980,
+    "name": "Krol'dok Moulding",
+    "minLevel": 38,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94980",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "turnin": "Alphonse Dumas",
+    "objectives": [],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "pickup": "Use Krol'dok Moulding dropped by Tunk inside Krol'dok Stronghold.",
+    "pickupInside": true,
+    "dungeonObjective": false,
+    "startingItem": 267138,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 41,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 94975,
+    "name": "A Token of Vengeance",
+    "minLevel": 38,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94975",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Da'grosh",
+    "turnin": "Da'grosh",
+    "objectives": [
+      "Cultist Ear (15)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 42,
+    "rewards": [
+      {
+        "id": 267090,
+        "name": "Semblance of Twilight"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 94974,
+    "name": "Key Ingredients",
+    "minLevel": 38,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94974",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Kreza Darkthorn",
+    "turnin": "Kreza Darkthorn",
+    "objectives": [
+      "Thick Leather (4)",
+      "Iron Bar (12)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      94973
+    ],
+    "any": [],
+    "dungeonObjective": false,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 41,
+    "rewards": [
+      {
+        "id": 267089,
+        "name": "Krol'dok Compound Key"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      94973
+    ],
+    "checklistPrevious": 94973
+  },
+  {
+    "id": 94973,
+    "name": "Krol'dok Moulding",
+    "minLevel": 38,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94973",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "turnin": "Kreza Darkthorn",
+    "objectives": [],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "pickup": "Use Krol'dok Moulding dropped by Tunk inside Krol'dok Stronghold.",
+    "pickupInside": true,
+    "dungeonObjective": false,
+    "startingItem": 267137,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 41,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 94972,
+    "name": "Tome of Twilight",
+    "minLevel": 39,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94972",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Tran'gul",
+    "turnin": "Tran'gul",
+    "objectives": [
+      "Tome of Twilight (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 44,
+    "rewards": [
+      {
+        "id": 279859,
+        "name": "Indoctrinated Choker"
+      },
+      {
+        "id": 279860,
+        "name": "Convert's Bindings"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 94969,
+    "name": "Krol'dok No More!",
+    "minLevel": 40,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94969",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "objectives": [],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "requirementsNote": "Quest ID and rewards are recorded; pickup and prerequisites are not verified.",
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 42,
+    "rewards": [
+      {
+        "id": 279851,
+        "name": "Item #279851"
+      },
+      {
+        "id": 279929,
+        "name": "Item #279929"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 94968,
+    "name": "Eye of Mugg",
+    "minLevel": 40,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/94968",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Krom'rosh",
+    "turnin": "Krom'rosh",
+    "objectives": [
+      "Eye of Mugg (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "dungeons": [
+      "Krol'dok Stronghold"
+    ],
+    "level": 45,
+    "rewards": [
+      {
+        "id": 279852,
+        "name": "Rock on Stick"
+      },
+      {
+        "id": 279480,
+        "name": "Bigger Rock on Bigger Stick"
+      },
+      {
+        "id": 279853,
+        "name": "Stick No Rock"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 97327,
+    "name": "Blackmaw Pouches",
+    "minLevel": 55,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/97327",
+    "checked": "2026-11-13",
+    "faction": null,
+    "pickup": "Ekkal",
+    "turnin": "Ekkal",
+    "objectives": [
+      "Blackmaw Pouch (5)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "Blackmaw Hold"
+    ],
+    "level": 60,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 97198,
+    "name": "Blackmaw Magic",
+    "minLevel": 52,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/97198",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Muln Earthfury",
+    "turnin": "Muln Earthfury",
+    "objectives": [
+      "Blackmaw Ritual Totem (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "Blackmaw Hold"
+    ],
+    "level": 59,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 97173,
+    "name": "Blackmaw Magic",
+    "minLevel": 52,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/97173",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Archmage Timear",
+    "objectives": [
+      "Blackmaw Ritual Totem (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "Blackmaw Hold"
+    ],
+    "level": 59,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 96246,
+    "name": "Blackmaw Pouches",
+    "minLevel": 55,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/96246",
+    "checked": "2026-11-13",
+    "faction": null,
+    "objectives": [
+      "Blackmaw Pouch (5)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "requirementsNote": "The provider lists another Blackmaw Pouches quest first; repeatability and the full route need confirmation.",
+    "dungeons": [
+      "Blackmaw Hold"
+    ],
+    "level": 60,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 92344,
+    "name": "Get to the Roots of It",
+    "minLevel": 45,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/92344",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Mathrengyl Bearwalker",
+    "turnin": "Mathrengyl Bearwalker",
+    "objectives": [
+      "Nordrassil Root Cap (10)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      92345
+    ],
+    "any": [],
+    "dungeons": [
+      "Blackmaw Hold"
+    ],
+    "level": 55,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      92345
+    ]
+  },
+  {
+    "id": 92343,
+    "name": "Get to the Roots of It",
+    "minLevel": 45,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/92343",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Nara Wildmane",
+    "turnin": "Nara Wildmane",
+    "objectives": [
+      "Nordrassil Root Cap (10)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      92346
+    ],
+    "any": [],
+    "dungeons": [
+      "Blackmaw Hold"
+    ],
+    "level": 55,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      92346
+    ]
+  },
+  {
+    "id": 92070,
+    "name": "A Lost Memento",
+    "minLevel": 47,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/92070",
+    "checked": "2026-11-13",
+    "faction": null,
+    "objectives": [
+      "Feathered Charm Necklace (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeons": [
+      "Blackmaw Hold"
+    ],
+    "level": 55,
+    "rewards": [
+      {
+        "id": 279893,
+        "name": "Nama's Cherished Necklace"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 92069,
+    "name": "Claws That Rend, Tusks that Gore",
+    "minLevel": 45,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/92069",
+    "checked": "2026-11-13",
+    "faction": null,
+    "pickup": "Ogtinc",
+    "turnin": "Ogtinc",
+    "objectives": [
+      "Claws of the Great Bear (1)",
+      "Tusks of the Unbroken (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "Blackmaw Hold"
+    ],
+    "level": 58,
+    "rewards": [
+      {
+        "id": 260213,
+        "name": "Great Bear Claw"
+      },
+      {
+        "id": 260214,
+        "name": "Staff of Wild Beasts"
+      },
+      {
+        "id": 260215,
+        "name": "Wild Malleus"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 92067,
+    "name": "Feeding Time!",
+    "minLevel": 45,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/92067",
+    "checked": "2026-11-13",
+    "faction": null,
+    "objectives": [
+      "Fel-Tainted Flesh (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeons": [
+      "Blackmaw Hold"
+    ],
+    "level": 55,
+    "rewards": [
+      {
+        "id": 249900,
+        "name": "Regurgitated Seed Pod"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 92066,
+    "name": "The Twin Bears",
+    "minLevel": 47,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/92066",
+    "checked": "2026-11-13",
+    "faction": null,
+    "objectives": [
+      "Totem of Ursoc (1)",
+      "Totem of Ursol (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeons": [
+      "Blackmaw Hold"
+    ],
+    "level": 55,
+    "rewards": [
+      {
+        "id": 279891,
+        "name": "Guidance of Ursoc"
+      },
+      {
+        "id": 279892,
+        "name": "Wisdom of Ursol"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 92065,
+    "name": "Blackmaw Reclamation",
+    "minLevel": 47,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/92065",
+    "checked": "2026-11-13",
+    "faction": null,
+    "objectives": [
+      "Head of Varrox Bleakhoof (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      86814
+    ],
+    "any": [],
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeons": [
+      "Blackmaw Hold"
+    ],
+    "level": 60,
+    "rewards": [
+      {
+        "id": 260216,
+        "name": "Ouroboros Ring"
+      },
+      {
+        "id": 260217,
+        "name": "Eagle's Head Signet"
+      },
+      {
+        "id": 260218,
+        "name": "Malefactor's End"
+      },
+      {
+        "id": 260219,
+        "name": "Engraved Band"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      86814
+    ],
+    "pickupUnknown": true
+  },
+  {
+    "id": 97049,
+    "name": "Essence of Seeping Slimes",
+    "minLevel": 55,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/97049",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Chemist Fuely",
+    "turnin": "Chemist Fuely",
+    "objectives": [
+      "Seeping Slime Essence (8)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "The Shaper's Terrace"
+    ],
+    "level": 60,
+    "rewards": [
+      {
+        "id": 279932,
+        "name": "Slime-Resistant Shroud"
+      },
+      {
+        "id": 279902,
+        "name": "Reinforced Muck Protectors"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 95928,
+    "name": "Crystalline Elements",
+    "minLevel": 55,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95928",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Mayena Earthseeker",
+    "turnin": "Mayena Earthseeker",
+    "objectives": [
+      "Fiery Crystal (1)",
+      "Charged Crystal (1)",
+      "Noxious Crystal (1)",
+      "Moist Crystal (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "The Shaper's Terrace"
+    ],
+    "level": 60,
+    "rewards": [
+      {
+        "id": 279904,
+        "name": "Crystalline Pauldrons"
+      },
+      {
+        "id": 279906,
+        "name": "Potent Treads"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 95926,
+    "name": "The Dark Crystal",
+    "minLevel": 55,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95926",
+    "checked": "2026-11-13",
+    "faction": "Horde",
+    "pickup": "Master Apothecary Faranell",
+    "turnin": "Master Apothecary Faranell",
+    "objectives": [
+      "Drained Crystal Fragment (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "The Shaper's Terrace"
+    ],
+    "level": 60,
+    "rewards": [
+      {
+        "id": 279908,
+        "name": "Crystal-Infused Cleaver"
+      },
+      {
+        "id": 279910,
+        "name": "Beastslayer's Trident"
+      },
+      {
+        "id": 279912,
+        "name": "Faintly Glowing Orb"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 95925,
+    "name": "Mapping the Way Forward",
+    "minLevel": 55,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95925",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Curator Thorius",
+    "turnin": "Curator Thorius",
+    "objectives": [
+      "Pillar of Assimilation (1)",
+      "The Achromatic Crystal (1)",
+      "The Western Gates (1)",
+      "The Regrowth Vestibule (1)",
+      "The Unearthed Stone Watcher (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "The Shaper's Terrace"
+    ],
+    "level": 60,
+    "rewards": [
+      {
+        "id": 279908,
+        "name": "Crystal-Infused Cleaver"
+      },
+      {
+        "id": 279910,
+        "name": "Beastslayer's Trident"
+      },
+      {
+        "id": 279912,
+        "name": "Faintly Glowing Orb"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 95924,
+    "name": "Panic at the Digsite",
+    "minLevel": 55,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95924",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Curator Thorius",
+    "turnin": "Curator Thorius",
+    "objectives": [
+      "Venomridge slain (1)",
+      "Ravasaur Matriarch slain (6)",
+      "Ironhide Ravasaur slain (9)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "The Shaper's Terrace"
+    ],
+    "level": 60,
+    "rewards": [
+      {
+        "id": 279903,
+        "name": "Diemetradon Scale Spaulders"
+      },
+      {
+        "id": 279905,
+        "name": "Ravasaur Hide Footpads"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 95790,
+    "name": "Digestible Research",
+    "minLevel": 55,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95790",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "objectives": [
+      "Partially Digested Journal Page (15)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": true,
+    "pickup": "Pickup not verified; check the quest source.",
+    "dungeons": [
+      "The Shaper's Terrace"
+    ],
+    "level": 60,
+    "rewards": [
+      {
+        "id": 279931,
+        "name": "Lost Researcher's Hood"
+      },
+      {
+        "id": 279901,
+        "name": "Expeditionary Legplates"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": [],
+    "pickupUnknown": true
+  },
+  {
+    "id": 97130,
+    "name": "Ancient Gurubashi Secrets",
+    "minLevel": 34,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/97130",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Archmage Timear",
+    "turnin": "Archmage Timear",
+    "objectives": [
+      "Ancient Gurubashi Idol (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "The Drowned City"
+    ],
+    "level": 40,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 95791,
+    "name": "The Saltseer Captain",
+    "minLevel": 34,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95791",
+    "checked": "2026-11-13",
+    "faction": null,
+    "pickup": "Krazek",
+    "turnin": "Krazek",
+    "objectives": [
+      "Captain Dreadrise slain (1)",
+      "Saltseer Coroner slain (3)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "The Drowned City"
+    ],
+    "level": 40,
+    "rewards": [
+      {
+        "id": 279883,
+        "name": "Mutinous Cuffs"
+      },
+      {
+        "id": 279884,
+        "name": "South Seas Shroud"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 95789,
+    "name": "Shady Saltseers",
+    "minLevel": 34,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95789",
+    "checked": "2026-11-13",
+    "faction": null,
+    "pickup": "Krazek",
+    "turnin": "Krazek",
+    "objectives": [
+      "Voodoo-Infused Artifact (10)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "dungeons": [
+      "The Drowned City"
+    ],
+    "level": 40,
+    "rewards": [
+      {
+        "id": 279882,
+        "name": "Rusted Troll War Belt"
+      },
+      {
+        "id": 279930,
+        "name": "Saltseer's Helm"
+      }
+    ],
+    "people": [],
+    "chain": [],
+    "prereqs": []
+  },
+  {
+    "id": 95788,
+    "name": "Magics of the Drowned City",
+    "minLevel": 30,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95788",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Loremaster Dibbs",
+    "turnin": "Loremaster Dibbs",
+    "objectives": [
+      "I'lalai Fetish (5)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      95786
+    ],
+    "any": [],
+    "dungeons": [
+      "The Drowned City"
+    ],
+    "level": 40,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      95786
+    ]
+  },
+  {
+    "id": 95787,
+    "name": "Take Two With Water",
+    "minLevel": 30,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95787",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "pickup": "Loremaster Dibbs",
+    "turnin": "Loremaster Dibbs",
+    "objectives": [
+      "The First Tablet of I'lalai (1)",
+      "The Second Tablet of I'lalai (1)",
+      "The Third Tablet of I'lalai (1)",
+      "The Fourth Tablet of I'lalai (1)"
+    ],
+    "raceMask": null,
+    "restrictionUnknown": false,
+    "unverifiedChain": false,
+    "all": [
+      95786
+    ],
+    "any": [],
+    "dungeons": [
+      "The Drowned City"
+    ],
+    "level": 40,
+    "rewards": [],
+    "people": [],
+    "chain": [],
+    "prereqs": [
+      95786
+    ]
+  },
+  {
+    "id": 95798,
+    "name": "The Web of Magic",
+    "minLevel": 30,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95798",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "level": 40,
+    "pickup": "Loremaster Dibbs",
+    "turnin": "Abra Cadabra",
+    "objectives": [],
+    "all": [
+      95788
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "dungeonObjective": false,
+    "dungeons": [
+      "The Drowned City"
+    ],
+    "prereqs": [
+      95788
+    ],
+    "rewards": [
+      {
+        "id": 279879,
+        "name": "Rune-Etched Epaulets"
+      },
+      {
+        "id": 279878,
+        "name": "Apprentice Sorcerer's Slacks"
+      }
+    ],
+    "checklistPrevious": 95788
+  },
+  {
+    "id": 95799,
+    "name": "Findings for the Explorer's League",
+    "minLevel": 30,
+    "evidence": "Forever database",
+    "source": "https://db.icy-veins.com/wow-forever/quests/95799",
+    "checked": "2026-11-13",
+    "faction": "Alliance",
+    "level": 40,
+    "pickup": "Loremaster Dibbs",
+    "turnin": "Historian Karnik",
+    "objectives": [],
+    "all": [
+      95787
+    ],
+    "any": [],
+    "unverifiedChain": false,
+    "dungeonObjective": false,
+    "dungeons": [
+      "The Drowned City"
+    ],
+    "prereqs": [
+      95787
+    ],
+    "rewards": [
+      {
+        "id": 279880,
+        "name": "Ancient Voodoo Pouch"
+      },
+      {
+        "id": 279881,
+        "name": "Intrepid Explorer's Chainmail"
+      },
+      {
+        "id": 272124,
+        "name": "Translated Tale of I'lalai"
+      }
+    ],
+    "checklistPrevious": 95787
   }
 ]

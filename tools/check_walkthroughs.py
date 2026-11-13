@@ -86,7 +86,7 @@ local step,phase=A.WalkStep(goal)
 assert(step.id==303 and phase=="pickup")
 A.SelectQuest(goal)
 local text=A.window.detailText:GetText()
-assert(text:find("From: Motley Garmason",1,true))
+assert(text:find("Who offers this step|r",1,true) and text:find("Motley Garmason",1,true))
 assert(text:find("|cff684018Rewards|r",1,true))
 assert(not text:find("not the current prerequisite",1,true))
 log={{questID=303,title="The Dark Iron War",complete=false}}; A.Scan()
@@ -125,6 +125,7 @@ assert(not A.NeedsPickup(q)) -- fallback must not become a turn-in pin
 ''')
 lua.execute('''
 -- Horde Dalaran needs both the patrol route and the key; late acceptance wins.
+A.offers={}; A.Availability=function(id) return A.offers[id] end
 completed={}; log={}; A.db.confirmed={}; level=30; faction="Horde"; class="SHAMAN"; race="Orc"; A.Scan()
 local q=A.byID[96984]
 local n,phase=A.WalkStep(q); assert(n.id==544 and phase=="pickup")
@@ -209,8 +210,18 @@ A.SelectQuest(A.byID[92458])
 assert(not A.window.warning:IsShown())
 local text=A.window.detailText:GetText():lower()
 assert(not text:find("needs checking",1,true) and not text:find("not been verified",1,true))
-assert(text:find("prerequisite",1,true))
+assert(A.window.detailTitle:GetText()==A.byID[92458].name) -- uncertainty prose is omitted
+assert(text:find("shade of the archmage",1,true))
+assert(text:find("return to",1,true))
 assert(not A.RunReadiness(A.byID[92458]))
+for _,id in ipairs({92456,92457,92489}) do
+ local step,phase=A.WalkStep(A.byID[id]); assert(step.id==id and phase=="pickup")
+ A.SelectQuest(A.byID[id])
+ local detail=A.window.detailText:GetText():lower()
+ assert(detail:find("objectives",1,true) and detail:find("return to",1,true))
+end
+A.SelectQuest(A.byID[92456])
+assert(A.window.detailText:GetText():find("Fel Ancient",1,true))
 A.SelectQuest(A.byID[95647]); assert(not A.window.warning:IsShown())
 assert(A.DisplayText("Melisara in Tarren Mill (quest-text report; exact pickup unverified).") == "Melisara in Tarren Mill.")
 assert(not A.DataWarning({id=990999,evidence="Classic reference",pin={reference=true}}))
@@ -278,20 +289,20 @@ A.Availability=function() return nil end
 A.offers={}
 local q=A.byID[95810]
 local n,p,note=A.WalkStep(q)
-assert(p=="check")
+assert(p=="inside")
 local text,title=A.StepContext(q,n,p,note)
 assert(text:find("Titan Relic",1,true) and text:find("Recorded level requirement met",1,true))
-assert(title=="Check availability" and not A.ActionReadiness(q))
+assert(A.ActionReadiness(q))
 assert(A.WalkInstructions(q):find("Titan Relic",1,true))
-assert(A.QuestRowStatus(q)=="Check availability")
+assert(A.QuestRowStatus(q)=="Collect quest")
 q=A.byID[95795]; n,p,note=A.WalkStep(q)
 text,title=A.StepContext(q,n,p,note)
-assert(n.id==95772 and text:find("Dorin",1,true) and title=="Check requirements")
+assert(n.id==95772 and text:find("Dorin",1,true) and title=="Data incomplete")
 completed[95810]=true
 q=A.byID[98824]; n,p,note=A.WalkStep(q)
 text=A.StepContext(q,n,p,note)
 assert(n.id==98824 and text:find("1/1",1,true) and text:find("Whelgar",1,true))
-assert(p=="check" and not A.ActionReadiness(q))
+assert(p=="pickup" and A.ActionReadiness(q))
 A.Availability=function() return false end
 n,p,note=A.WalkStep(q)
 text=A.StepContext(q,n,p,note)

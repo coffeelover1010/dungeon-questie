@@ -23,6 +23,11 @@ function A.ClearWaypoint()
  A.waypoint=nil
 end
 function A.Navigate(q)
+ if q.mapOnly and q.origin and A.MapLocation then
+  local current=A.MapLocation(q.origin)
+  if not current then A.ClearWaypoint(); A.locationTarget=nil; A.Print("Current destination is not mapped. Follow your quest log."); return end
+  q=current
+ end
  if not q.mapOnly and A.WalkStep then
   local step,phase=A.WalkStep(q)
   if step.id~=q.id or (phase~="pickup" and phase~="inside") then A.Print("No confirmed pickup action for this quest. See its current step."); return end
@@ -57,6 +62,17 @@ function A.Navigate(q)
  if p.reference then A.Print("Approximate pickup pin from Classic reference data.") end
 end
 function A.RefreshPins()
+ -- Re-resolve selected locations after acceptance, objective completion or hand-in.
+ -- Never leave an old arrow pointing at a previous step.
+ if A.locationTarget and A.locationTarget.origin and A.MapLocation then
+  local previous=A.locationTarget
+  local current=A.MapLocation(previous.origin)
+  local old,new=previous.pin,current and current.pin
+  if not current or current.id~=previous.id or old.map~=new.map or old.x~=new.x or old.y~=new.y then
+   A.ClearWaypoint()
+  end
+  A.locationTarget=current
+ end
  local map=WorldMapFrame
  if not A.db or not A.db.pins or not map or not map:IsShown() or not map.GetCanvas or not map.GetMapID then for _,p in ipairs(pins) do p:Hide() end; return 0 end
  local canvas=map:GetCanvas(); if not canvas then for _,p in ipairs(pins) do p:Hide() end; return 0 end

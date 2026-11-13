@@ -3,6 +3,19 @@ A.labels={done="TURNED IN",ready="READY TO TURN IN",active="IN QUEST LOG",restri
 local colors={done={0.16,0.36,0.14},ready={0.48,0.27,0.04},active={0.12,0.29,0.43},restricted={0.38,0.34,0.28},level={0.55,0.16,0.10},prereq={0.40,0.24,0.38},unknown={0.55,0.16,0.10},todo={0.30,0.23,0.15}}
 -- Presentation only: evidence and resolver gates stay in the source records.
 local wording={
+ {"Guide pickup: ","Pickup: "},
+ {"Minimum level unknown","Minimum level: ?"},
+ {"Its minimum level is not yet confirmed.",""},
+ {"Right-click the Perfect Blackfathom Pearl to check whether you can accept this quest.","Right-click the Perfect Blackfathom Pearl to start the quest."},
+ {"Check requirements","Quest details"},
+ {"Quest data incomplete","Quest details"},
+ {"Availability unknown","Quest details"},
+ {"availability unknown","Quest details"},
+ {"Pickup location unavailable.","Pickup: ?"},
+ {"Pickup location not recorded in this guide.","Pickup: ?"},
+ {"Pickup location not recorded.","Pickup: ?"},
+ {"Pickup not recorded.","Pickup: ?"},
+ {"Location not recorded.","?"},
  {"Classic reference facts; current Forever rewards and availability have not been checked in game.",""},
  {" (Classic reference pin)",""},
  {"Related quest (requirement unverified)","Related quest"},
@@ -37,7 +50,21 @@ function A.DisplayText(value)
    result=result:sub(1,a-1)..pair[2]..result:sub(b+1); start=a+#pair[2]
   end
  end
- return result
+ -- Hide research caveats throughout quest prose, without changing source data
+ -- or claiming that an unseen quest offer has been confirmed.
+ local caveats={"beta", "cache", "unverified", "unconfirmed", "not confirmed", "not verified", "not yet verified", "not fully recorded", "needs verification", "need verification", "needs confirmation", "need confirmation", "reference data", "reference facts", "may exist", "not in the installed", "not reverified"}
+ local lines={}
+ for line in result:gmatch("[^\n]+") do
+  local parts={}
+  for sentence in line:gmatch("[^.!?]+[.!?]*") do
+   local lower=sentence:lower(); local hide=false
+   for _,marker in ipairs(caveats) do if lower:find(marker,1,true) then hide=true; break end end
+   if not hide then parts[#parts+1]=sentence end
+  end
+  local clean=table.concat(parts):match("^%s*(.-)%s*$")
+  if clean~="" and clean~="-" then lines[#lines+1]=clean end
+ end
+ return table.concat(lines,"\n")
 end
 function A.DataWarning(q,n,phase)
  -- Source confidence stays in research records; quest state and readiness supply guidance.
@@ -55,27 +82,50 @@ local selected,rows,dungeonButtons,rewardButtons=nil,{},{},{}
 local expandedChains,chainDisplay={},{ }
 function A.DungeonReadinessBadge(q)
  local ready,reason=A.RunReadiness(q)
- if ready then return "Interface\\RaidFrame\\ReadyCheck-Ready","Ready for dungeon\n"..(reason or "Continue inside the dungeon.") end
  if A.Completed(q.id)==true then return "Interface\\Buttons\\UI-CheckBox-Check","Completed\nQuest already turned in." end
+ if A.log[q.id] and A.log[q.id].complete then return "Interface\\Buttons\\UI-CheckBox-Check","Objectives finished\nStill needs to be turned in." end
+ if A.DungeonWorkFinished(q) then return "Interface\\Buttons\\UI-CheckBox-Check","Dungeon objectives finished\nTurn in the quest; no further dungeon objectives remain for this quest." end
+ if ready then return A.log[q.id] and "Interface\\RaidFrame\\ReadyCheck-Ready" or nil,"Ready for dungeon\n"..(reason or "Continue inside the dungeon.") end
  local stage=A.Preparation(q)
- if stage=="blocked" then return "Interface\\DialogFrame\\UI-Dialog-Icon-AlertNew","Not ready for dungeon\nQuest requirements are not met." end
- if stage=="skipped" then return "Interface\\Buttons\\UI-GroupLoot-Pass-Up","Skipped\nOptional breadcrumb no longer needed." end
- return "Interface\\Icons\\INV_Misc_PocketWatch_01","Not ready for dungeon\n"..(reason or "Finish preparation or check availability. See the quest's next step.")
+ if stage=="blocked" then return nil,"Not ready for dungeon\nQuest requirements are not met." end
+ if stage=="skipped" then return nil,"Skipped\nOptional breadcrumb no longer needed." end
+ return nil,"Not ready for dungeon\n"..(reason or "Finish preparation or check availability. See the quest's next step.")
+end
+function A.DungeonInstruction(q)
+ if A.Completed(q.id)==true then return "Completed", "Quest turned in." end
+ if A.log[q.id] and A.log[q.id].complete then return "Objectives finished", "Turn in: "..q.name end
+ if A.DungeonWorkFinished(q) then return "Objectives finished", "Turn in: "..q.name end
+ if A.RunReadiness(q) then return "Ready for dungeon", "Continue inside the dungeon." end
+ if A.log[q.id] then return "Active", "Follow the current objectives in your quest log." end
+ if not A.WalkStep then return "Readiness unknown", "Check the quest details before entering." end
+ local n,phase=A.WalkStep(q)
+ if phase=="pickup" then return "Collect quest", "Accept: "..n.name.." from "..(n.pickup or "the quest giver") end
+ if phase=="active" then return n.id==q.id and "Active" or "Preparation needed", "Finish: "..n.name end
+ if phase=="ready" then return "Preparation needed", "Turn in: "..n.name end
+ if phase=="blocked" then return "Preparation needed", "Check the quest requirements." end
+ return "Readiness unknown", "Check the quest details before entering."
+end
+function A.DungeonSummary(c)
+ local remaining=c.total-c.done-c.skipped-c.finished
+ if c.total==0 then return "No eligible quests" end
+ if remaining==0 then return c.finished>0 and "Dungeon work finished" or "Completed" end
+ if c.ready==remaining then return "Ready for dungeon" end
+ return "Preparation needed"
 end
 local statusLabels={
  ["SKIPPED BREADCRUMB"]="Skipped",
  ["AVAILABILITY UNKNOWN"]="Availability unknown",
  ["UNAVAILABLE"]="Unavailable",
  ["NOT ELIGIBLE NOW"]="Ineligible",
- ["READY FOR DUNGEON"]="Ready",
+ ["READY FOR DUNGEON"]="Ready for dungeon",
  ["ALREADY COMPLETED"]="Completed",
- ["COLLECT BEFORE ENTERING"]="Collect",
+ ["COLLECT BEFORE ENTERING"]="Collect quest",
  ["PICK UP INSIDE"]="Inside",
  ["QUEST DETAILS"]="Details",
  ["STATUS UNAVAILABLE"]="Unknown",
  ["EARLIER QUEST"]="Prerequisite",
  ["PICKUP LOCATION UNKNOWN"]="Unknown",
- ["PICK UP FIRST"]="Collect",
+ ["PICK UP FIRST"]="Collect quest",
  ["TURN IN FIRST"]="Turn in",
  ["IN YOUR LOG"]="Active",
 }
@@ -94,8 +144,8 @@ function A.QuestRowStatus(q)
   local n,phase,note=A.WalkStep(q)
   local _,title=A.StepContext(q,n,phase,note); value=title
  end
- local actionable,_,actionPhase=A.ActionReadiness(q)
- if actionable then value=actionPhase=="ready" and "Turn in" or "Collect" end
+ local actionable,actionStep,actionPhase=A.ActionReadiness(q)
+ if actionable then value=actionPhase=="ready" and (actionStep.id==q.id and "Objectives finished" or "Preparation needed") or "Collect quest" end
  local prefix,quest=label:match("^([^:]+): (.+)$")
  local tip=(prefix or label):lower():gsub("^%l",string.upper)
  if quest then tip=tip..": "..quest end
@@ -110,14 +160,14 @@ function A.QuestRowStatus(q)
   end
  end
  local icon
- if stage=="turnin" or (A.ActionReadiness and A.ActionReadiness(q)) then icon="Interface\\Buttons\\UI-CheckBox-Check"
- elseif stage=="done" then icon="Interface\\Buttons\\UI-CheckBox-Check"
- elseif stage=="pickup" or stage=="inside" then icon="Interface\\GossipFrame\\AvailableQuestIcon"
- elseif stage=="packed" then icon="Interface\\GossipFrame\\ActiveQuestIcon"
- elseif stage=="chain" then icon="Interface\\Icons\\INV_Misc_Note_01"
+ if A.Completed(q.id)==true then
+  value="Completed"; icon="Interface\\Buttons\\UI-CheckBox-Check"
+ elseif A.log[q.id] and A.log[q.id].complete then
+  value="Objectives finished"; icon="Interface\\Buttons\\UI-CheckBox-Check"
+ elseif A.log[q.id] then value="Active"
  end
  -- Keep level numbers and uncertain/blocked labels explicit; the warning already has its own icon.
- return value,icon,tip
+ return A.DisplayText(value),icon,A.DisplayText(tip)
 end
 function A.RevealSelectedDungeon()
  local f=A.window
@@ -130,6 +180,14 @@ function A.RevealSelectedDungeon()
    return
   end
  end
+end
+-- Cards are a checklist; the selected quest panel owns directions and locations.
+function A.QuestCardSummary(q)
+ if not A.WalkStep then return "" end
+ local n,phase=A.WalkStep(q)
+ if n and n.id~=q.id then return "Next: "..n.name end
+ if phase=="inside" then return "Pick up inside the dungeon." end
+ return ""
 end
 local function text(parent,size,x,y,w)
  local t=parent:CreateFontString(nil,"OVERLAY"); t:SetFont("Fonts\\FRIZQT__.TTF",size,"")
@@ -246,9 +304,12 @@ local function details()
  f.pickupTarget=target
  local mapTarget,mapTip
  if A.MapLocation then mapTarget,mapTip=A.MapLocation(q) end
- f.mapTarget=mapTarget or target
+ f.mapTarget=A.MapLocation and mapTarget or target
+ if A.MapLocation and not mapTarget then f.mapTarget=nil end
  f.mapButton:SetEnabled(f.mapTarget and f.mapTarget.pin~=nil or false)
  f.mapButton.tip=mapTip or "Show recorded location on map"
+ local artworkHeight=A.UpdateLocationArtwork(f.locationArtwork,q,mapTarget,mapTip)
+ f.detailText:ClearAllPoints(); f.detailText:SetPoint("TOPLEFT",0,-artworkHeight)
  local current,phase
  if q and A.WalkStep then current,phase=A.WalkStep(q) else current=q end
  f.warning.tip=A.DataWarning(q,current,phase); f.warning:SetShown(f.warning.tip~=nil)
@@ -276,7 +337,7 @@ local function details()
  f.levelBadge.label:SetText(q.minLevel and tostring(q.minLevel) or "?")
  local underLevel=q.minLevel and UnitLevel("player")<q.minLevel
  f.levelBadge.label:SetTextColor(underLevel and 0.7 or 0.18,underLevel and 0.12 or 0.38,0.08)
- f.levelBadge.tip=q.minLevel and ("Minimum level: "..q.minLevel) or "Minimum level unknown"
+ f.levelBadge.tip=q.minLevel and ("Minimum level: "..q.minLevel) or "Minimum level: ?"
  f.factionBadge:SetShown(q.faction~=nil)
  if q.faction then
   f.factionBadge.icon:SetTexture("Interface\\PVPFrame\\PVP-Currency-"..q.faction)
@@ -296,32 +357,50 @@ local function details()
  f.classBadge:ClearAllPoints(); f.classBadge:SetPoint("RIGHT",q.faction and -56 or -28,0)
  local contentTop=91+math.max(24,f.detailTitle:GetStringHeight())+10
  f.detailScroll:ClearAllPoints(); f.detailScroll:SetPoint("TOPLEFT",604,-contentTop); f.detailScroll:SetHeight(math.max(180,630-contentTop))
- local lines={"|cff684018"..(heading or "Where to pick it up").."|r",instructions}
- local chainLabel,chainDetails
- if A.ChainProgress then chainLabel,chainDetails=A.ChainProgress(q) end
- if chainLabel then table.insert(lines,1,"|cff684018"..chainLabel.."|r\n") end
- local live=A.Safe(C_QuestLog and C_QuestLog.GetQuestObjectives,q.id)
- if current==q and A.log[q.id] and type(live)=="table" and #live>0 then
-  table.insert(lines,"\n|cff684018Objectives|r")
-  for _,o in ipairs(live) do table.insert(lines,(o.finished and "[x] " or "[ ] ")..(o.text or "Objective")) end
- elseif current==q and A.log[q.id] and #(q.objectives or {})>0 then
-  table.insert(lines,"\n|cff684018Objectives|r")
-  for _,o in ipairs(q.objectives) do table.insert(lines,"- "..o) end
+ local node=(A.walkthroughs or {})[current.id] or current
+ local function concise(value)
+  local result=(value or "?"):gsub("%s*%(%s*%d+%.?%d*%s*,%s*%d+%.?%d*%s*%)", "")
+  result=result:gsub("%s*%d+%.%d+%s*,%s*%d+%.%d+", "")
+  result=A.DisplayText(result)
+  return result~="" and result or "?"
  end
- if not A.WalkStep and (#(q.prereqs or {})>0 or #(q.chain or {})>0) then
-  table.insert(lines,"\n|cff684018Quest chain|r")
-  for _,id in ipairs(q.prereqs or {}) do
-   local prior=A.byID[id]; local title=prior and prior.name or A.Safe(C_QuestLog and C_QuestLog.GetTitleForQuestID,id) or ("Quest "..id)
-   table.insert(lines,(A.Completed(id)==true and "[x] " or "[ ] ")..title.." ("..id..")")
+ local pickup=node.pickup or current.pickup or "?"
+ local destination=node.turnin or current.turnin or "?"
+ local lines={}
+ local location=mapTarget and mapTarget.pin
+ lines[#lines+1]="|cff684018Where to go|r\n"..(location and (location.title.." - "..location.zone) or "Current destination is not mapped.").."\n"
+ if A.RouteInstruction then lines[#lines+1]="|cff684018What to do|r\n"..A.RouteInstruction(q).."\n" end
+ if current.id~=q.id then lines[#lines+1]=current.name end
+ local chainLabel
+ if A.ChainProgress then chainLabel=A.ChainProgress(q) end
+ if chainLabel then lines[#lines+1]=chainLabel end
+ lines[#lines+1]="|cff684018Who offers this step|r\n"..concise(pickup)
+ lines[#lines+1]="\n|cff684018Objectives|r"
+ if A.log[current.id] and A.log[current.id].complete then lines[#lines+1]="Ready to turn in" end
+ local live=A.log[current.id] and A.Safe(C_QuestLog and C_QuestLog.GetQuestObjectives,current.id)
+ if type(live)=="table" and #live>0 then
+  for _,o in ipairs(live) do lines[#lines+1]=(o.finished and "[x] " or "[ ] ")..(o.text or "Objective") end
+ else
+  local objectives=node.objectives or current.objectives or {}
+  if #objectives==0 then lines[#lines+1]="?" end
+  for _,o in ipairs(objectives) do lines[#lines+1]="- "..o end
+ end
+ lines[#lines+1]="\n|cff684018Return to|r\n"..concise(destination)
+ -- Keep bespoke mechanics, not repeated pickup/return directions or source prose.
+ local special=node.specialInstructions or node.routeNote or node.preparationNote
+ if special and special~=pickup and special~=destination then
+  local cleaned=concise(special)
+  if not cleaned:lower():find("unverified",1,true) and not cleaned:lower():find("not confirmed",1,true)
+   and not cleaned:lower():find("questiedb",1,true) and not cleaned:lower():find("reference",1,true) then
+   lines[#lines+1]="\n"..cleaned
   end
-  for _,c in ipairs(q.chain or {}) do table.insert(lines,c.role..": "..c.name..(c.id and (" ("..c.id..")") or " [ID unavailable]")) end
  end
- if current==q and A.log[q.id] and q.routeNote then table.insert(lines,"\n|cff684018Quest directions|r\n"..q.routeNote) end
- if chainDetails then table.insert(lines,"\n|cff684018Quest chain|r\n"..chainDetails) end
- if q.repeatable then table.insert(lines,"Repeatable; excluded from the one-time completion total.") end
- if #(q.rewards or {})>0 then table.insert(lines,"\n|cff684018Rewards|r") end
+ if #(q.rewards or {})>0 then
+  lines[#lines+1]="\n|cff684018Rewards|r"
+  if current.id~=q.id then lines[#lines+1]=q.name end
+ end
  f.detailText:SetText(A.DisplayText(table.concat(lines,"\n")))
- local y=-(f.detailText:GetStringHeight()+10)
+ local y=-(artworkHeight+f.detailText:GetStringHeight()+10)
  for i,item in ipairs(q.rewards or {}) do
   local b=rewardButtons[i]
   if not b then
@@ -329,7 +408,7 @@ local function details()
    b.icon=b:CreateTexture(nil,"ARTWORK"); b.icon:SetSize(26,26); b.icon:SetPoint("LEFT")
    b.label=text(b,12,34,-4,260); b:SetScript("OnEnter",itemTooltip); b:SetScript("OnLeave",function() GameTooltip:Hide() end); b:SetScript("OnClick",itemClick); rewardButtons[i]=b
   end
-  b.item=item; b:ClearAllPoints(); b:SetPoint("TOPLEFT",0,y-(i-1)*34); b.label:SetText(item.name)
+  b.item=item; b:ClearAllPoints(); b:SetPoint("TOPLEFT",0,y-(i-1)*34); b.label:SetText(A.Safe(C_Item and C_Item.GetItemNameByID or GetItemInfo,item.id) or item.name or ("Item "..item.id))
   local icon=A.Safe(C_Item and C_Item.GetItemIconByID or GetItemIcon,item.id)
   b.icon:SetTexture(icon or "Interface\\Icons\\INV_Misc_QuestionMark"); b:Show()
  end
@@ -348,7 +427,7 @@ function A.QuestRowPriority(q)
  if A.log[q.id] then return A.log[q.id].complete and 2 or 3 end
  local step,phase
  if A.WalkStep then step,phase=A.WalkStep(q) end
- -- Only an actual offer is a pickup now. Unknown availability is not an offer.
+ -- Recorded requirements determine the current pickup; live offers override the guide.
  if step and step.id==q.id and phase=="pickup" then return 1 end
  if A.RunReadiness(q) then return 4 end
  return 5
@@ -361,7 +440,7 @@ function A.Refresh()
  local f=A.window; if not f or not f:IsShown() then return end
  local prep=A.PreparationSummary(A.db.dungeon)
  local remaining=prep.total-prep.done-prep.skipped
- f.progress:SetText((remaining==0 and prep.done==prep.total and prep.total>0 and "Completed" or (prep.ready.." / "..remaining.." ready")).."\n"..prep.done.." completed | "..prep.pickup.." collect | "..(prep.chain+prep.check).." preparing | "..prep.blocked.." blocked | "..prep.skipped.." skipped")
+ f.progress:SetText(A.DungeonSummary(prep).."\n"..prep.ready.." ready | "..prep.pickup.." collect | "..(prep.chain+prep.check+prep.turnin-prep.finished).." preparing | "..prep.blocked.." blocked\n"..prep.finished.." objectives finished | "..prep.done.." turned in | "..prep.skipped.." skipped")
  f.heading:SetText(A.db.dungeon)
  local visible={}
  for _,q in ipairs(A.quests) do if A.Matches(q) then visible[#visible+1]=q end end
@@ -397,7 +476,7 @@ function A.Refresh()
      if not n.dungeons then
       child=chainDisplay[n.id] or {}; chainDisplay[n.id]=child
       for k,v in pairs(n) do child[k]=v end
-      child.dungeons=g.quest.dungeons; child.rewards=child.rewards or {}; child.objectives=child.objectives or {}
+      child.prerequisiteOnly=true; child.dungeons=g.quest.dungeons; child.rewards=child.rewards or {}; child.objectives=child.objectives or {}
      end
      visible[#visible+1]=child; entries[#visible]={parent=g.quest}
     end
@@ -483,11 +562,11 @@ function A.Refresh()
   if A.WalkStep then warningStep,warningPhase=A.WalkStep(q) end
   r.warning.tip=A.DataWarning(q,warningStep,warningPhase); r.warning:SetShown(r.warning.tip~=nil)
   local readinessIcon,readinessTip=A.DungeonReadinessBadge(q)
-  r.readiness.icon:SetTexture(readinessIcon); r.readiness.tip=readinessTip; r.readiness:Show()
-  r.title:SetWidth((r.warning.tip and 268 or 290)-(child and 18 or 0)-(hasSteps and 28 or 0))
+  r.readiness.icon:SetTexture(readinessIcon); r.readiness.tip=A.DisplayText(readinessTip); r.readiness:SetShown(readinessIcon~=nil)
+  r.title:SetWidth((314-(r.warning.tip and 22 or 0)-(readinessIcon and 24 or 0))-(child and 18 or 0)-(hasSteps and 28 or 0))
   local statusLabel,statusIcon,statusTip=A.QuestRowStatus(q)
   r.statusTip=statusTip
-  r.title:SetText(q.name); r.status:SetText(statusLabel); r.status:SetTextColor(unpack(colors[s]))
+  r.title:SetText(q.name); r.status:SetText(A.DisplayText(statusLabel)); r.status:SetTextColor(unpack(colors[s]))
   r.meta:SetText(not A.NeedsPickup(q) and ((s=="done" and "Quest completed") or (q.id==1198 and "Find Argent Guard Thaelrid inside Blackfathom Deeps") or "See quest log for your next destination") or (q.pickup or (q.pickupInside and ("Get inside "..q.dungeons[1]) or "Pickup location not recorded")))
   if A.WalkStep and A.NeedsPickup(q) then
    local step,phase=A.WalkStep(q)
@@ -498,9 +577,8 @@ function A.Refresh()
    r.status:SetText("Completed"); r.status:SetTextColor(0.16,0.36,0.14)
    r.meta:SetText("Quest turned in.")
   elseif actionReady then
-   r.status:SetText(actionPhase=="ready" and "Turn in" or "Collect"); r.status:SetTextColor(0.12,0.38,0.08)
+   r.status:SetText(statusLabel); r.status:SetTextColor(unpack(colors[s]))
    r.meta:SetText(actionStep.name)
-   statusIcon="Interface\\Buttons\\UI-CheckBox-Check"
   end
   if warningPhase=="check" or warningPhase=="skipped" or warningPhase=="unavailable" or warningPhase=="blocked" then
    local step,phase,reason=A.WalkStep(q)
@@ -513,13 +591,13 @@ function A.Refresh()
    r.status:SetTextColor(0.30,0.23,0.15)
    r.statusTip="This quest comes later in the chain. Current step: "..future.name..".\n"..(r.statusTip or "")
    r.meta:SetText("Current step: "..future.name.."\n"..r.meta:GetText())
-   statusIcon="Interface\\Icons\\INV_Misc_PocketWatch_01"
+   statusIcon=nil
   end
   if breadcrumb then
    if unnecessary then
     r.status:SetText("Breadcrumb - not needed")
     r.status:SetTextColor(0.30,0.23,0.15)
-    statusIcon="Interface\\Buttons\\UI-GroupLoot-Pass-Up"
+    statusIcon=nil
     r.meta:SetText("You already have or completed a later quest in this chain.")
     r.statusTip="Optional breadcrumb: not needed for dungeon preparation because you have progressed beyond it."
    else
@@ -529,12 +607,27 @@ function A.Refresh()
   end
   if hasSteps then
    local current=A.WalkStep(q)
-   r.status:SetText("Quest chain - "..#entry.group.steps.." earlier steps")
+   r.status:SetText(A.DungeonInstruction(q))
    r.meta:SetText("Current step: "..current.name.."\n"..(expandedChains[q.id] and "Click this box to collapse steps." or "Click this box to expand steps."))
    statusIcon=nil
   end
   if statusIcon then r.status:SetText("|T"..statusIcon..":14:14:0:0|t "..r.status:GetText()) end
-  r.meta:SetText(A.DisplayText(r.meta:GetText()))
+  local summary=A.QuestCardSummary(q)
+  if future then summary="Next: "..future.name end
+  if hasSteps then
+   local current=A.WalkStep(q)
+   local instruction; instruction,summary=A.DungeonInstruction(q)
+  end
+  if not child and not future and not breadcrumb then
+   local instruction,action=A.DungeonInstruction(q)
+   r.status:SetText(instruction); summary=action
+  end
+  if breadcrumb and unnecessary then summary="" end
+  r.meta:SetText(summary)
+  r.meta:SetShown(summary~="")
+  if warningPhase=="check" and not future and not hasSteps and not breadcrumb then
+   r.status:SetText("Pickup details")
+  end
   -- Measure the final text, including readiness descriptions, before sizing.
   -- Round up scaled font measurements and leave room for wrapped descenders.
   local function lineHeight(label)
@@ -544,7 +637,7 @@ function A.Refresh()
   r.status:ClearAllPoints(); r.status:SetPoint("TOPLEFT",10,-statusTop)
   local metaTop=statusTop+lineHeight(r.status)+5
   r.meta:ClearAllPoints(); r.meta:SetPoint("TOPLEFT",10,-metaTop)
-  local rowHeight=math.max(66,metaTop+lineHeight(r.meta)+14)
+  local rowHeight=math.max(66,summary~="" and (metaTop+lineHeight(r.meta)+14) or (metaTop+9))
   local current=A.WalkStep and A.WalkStep(q) or q
   r.groupQuest=current
   local group=A.IsGroupQuest and A.IsGroupQuest(current) and A.Completed(current.id)~=true and not (A.log[current.id] and A.log[current.id].complete) or false
@@ -563,7 +656,7 @@ function A.Refresh()
  for _,b in ipairs(dungeonButtons) do
   local c=A.PreparationSummary(b.dungeon)
   local remaining=c.total-c.done-c.skipped
-  b:SetText(b.dungeon.."\n"..(remaining==0 and c.done==c.total and c.total>0 and "Completed" or (c.ready.." / "..remaining.." ready")))
+  b:SetText(b.dungeon.."\n"..A.DungeonSummary(c))
   b:GetFontString():SetTextColor(b.dungeon==A.db.dungeon and 1 or 0.8,b.dungeon==A.db.dungeon and 0.82 or 0.8,0.65)
  end
  f.pinsToggle.tip="Map pins: "..(A.db.pins and "On" or "Off").." - click to toggle"
@@ -652,6 +745,7 @@ function A.CreateWindow()
  f.factionBadge=badge(-28); f.classBadge=badge(-56)
  f.warning=warningIcon(f.metadata)
  f.detailScroll,f.detailChild=scroll(f,604,-124,313,452)
+ f.locationArtwork=A.CreateLocationArtwork(f.detailChild)
  f.detailText=text(f.detailChild,12,0,0,300)
  f.mapButton=iconButton(f.detailChild,"Show location on map","Interface\\Icons\\INV_Misc_Map_01",604,-600,function() if f.mapTarget then A.Navigate(f.mapTarget) end end)
  f.logButton=iconButton(f.detailChild,"Open quest log","Interface\\Icons\\INV_Misc_Book_09",648,-600,function()

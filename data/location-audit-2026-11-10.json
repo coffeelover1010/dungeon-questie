@@ -1625,11 +1625,11 @@
       "id": 4024,
       "name": "A Taste of Flame",
       "pickupKind": "pickup",
-      "mapKind": "pickup",
-      "map": 1428,
-      "x": 95.09,
-      "y": 31.56,
-      "title": "Cyrus Therepentous"
+      "mapKind": "curated",
+      "map": 1426,
+      "x": 60.84,
+      "y": 85.37,
+      "title": "Kalaran Windblade"
     },
     {
       "id": 7489,
@@ -2105,11 +2105,11 @@
       "id": 8945,
       "name": "Dead Man's Plea",
       "pickupKind": "pickup",
-      "mapKind": "curated",
-      "map": 1454,
-      "x": 34.95,
-      "y": 38.29,
-      "title": "Mokvar"
+      "mapKind": "pickup",
+      "map": 1455,
+      "x": 43.53,
+      "y": 52.64,
+      "title": "Deliana"
     },
     {
       "id": 4768,

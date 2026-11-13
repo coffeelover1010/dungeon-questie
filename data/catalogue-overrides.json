@@ -503,12 +503,14 @@
     "pickup": "Shylamiir in The Park, Stormwind City (31.3, 62.9).",
     "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
     "locationEvidence": "Beta log or quest-text report; see source details",
-    "fieldChecked": "2026-11-07",
+    "fieldChecked": "2026-11-12",
     "fieldSources": {
       "pickup": "https://wowforevertalents.com/quests/a-green-sample-92456/",
       "locationSource": "https://www.wowhead.com/forever/guide/city-of-dalaran-dungeon-overview-location-rewards",
       "people": "https://wowforevertalents.com/quests/a-green-sample-92456/",
-      "personEvidence": "https://wowforevertalents.com/quests/a-green-sample-92456/"
+      "personEvidence": "https://wowforevertalents.com/quests/a-green-sample-92456/",
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
     },
     "people": [
       "Picked up from: Shylamiir",
@@ -525,13 +527,15 @@
         "name": "Shylamiir",
         "location": "Stormwind City, The Park (31.3, 62.9)"
       }
-    ]
+    ],
+    "turnin": "Shylamiir in The Park, Stormwind City.",
+    "routeNote": "Collect a Fel Infused Blossom from the grass near the Fel Ancient encounter in City of Dalaran, then return to Shylamiir in Stormwind."
   },
   "92458": {
-    "pickup": "Image of Archmage Modera outside Dalaran, Silverpine Forest (68.7, 45.2); the beta log identifies the giver as creature 269127.",
+    "pickup": "Image of Archmage Modera outside the Dalaran sewer entrance, Silverpine Forest (68.7, 45.2).",
     "locationSource": "https://wowforevertalents.com/quests/heart-of-disruption-92458/",
     "locationEvidence": "Beta log or quest-text report; see source details",
-    "preparationNote": "An Alarming Request (92432), from Emissary Jacques, introduces Modera. Current access reports allow Alliance to speak directly to Modera; the introduction is not enforced as a prerequisite.",
+    "preparationNote": "An Alarming Request from Emissary Jacques in Southshore town hall leads to Modera. Visit Jacques if Modera does not offer Heart of Disruption.",
     "chain": [
       {
         "role": "Related quest (requirement unverified)",
@@ -544,12 +548,16 @@
         "id": 92459
       }
     ],
-    "fieldChecked": "2026-11-07",
+    "fieldChecked": "2026-11-12",
     "fieldSources": {
-      "preparationNote": "https://www.wowhead.com/forever/quest=92432",
+      "preparationNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
       "chain": "https://www.wowhead.com/forever/quest=92432",
-      "pickup": "https://wowforevertalents.com/quests/heart-of-disruption-92458/"
-    }
+      "pickup": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
+    },
+    "turnin": "Image of Archmage Modera outside the Dalaran sewer entrance.",
+    "routeNote": "Accept the quest to receive the Dalaran Sewer Key. Loot the Arcane Mote from the Shade of the Archmage, then return to Modera outside the entrance."
   },
   "96984": {
     "pickup": "Image of Archmage Modera outside the Dalaran sewer entrance, after Blood in the Streets.",
@@ -604,12 +612,16 @@
     "pickup": "High Sorcerer Andromath, Mage Quarter, Stormwind City.",
     "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
     "locationEvidence": "Method dungeon guide, updated 15 October 2026.",
-    "fieldChecked": "2026-10-17",
+    "fieldChecked": "2026-11-12",
     "fieldSources": {
       "pickup": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
       "locationSource": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
-      "locationEvidence": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran"
-    }
+      "locationEvidence": "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
+    },
+    "turnin": "High Sorcerer Andromath in the Mage Quarter, Stormwind City.",
+    "routeNote": "Defeat Arcanic Enigma in City of Dalaran, then return to High Sorcerer Andromath in Stormwind. No quest item needs to be looted."
   },
   "96988": {
     "pickup": "Doctor Martin Felben in The Apothecarium, Undercity (Forever guide; no verified pin).",
@@ -622,19 +634,21 @@
     }
   },
   "92457": {
-    "pickup": "Archmage Modera (creature 269127) - Silverpine Forest (68.7, 45.2).",
+    "pickup": "Image of Archmage Modera outside the Dalaran sewer entrance, Silverpine Forest (68.7, 45.2).",
     "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
     "locationEvidence": "Beta Log pickup report, 16 October 2026; checked 17 October.",
     "restrictionUnknown": false,
     "faction": "Alliance",
-    "fieldChecked": "2026-10-17",
+    "fieldChecked": "2026-11-12",
     "fieldSources": {
       "faction": "https://wowforevertalents.com/quests/starving-arcane-92457/",
       "restrictionUnknown": "https://wowforevertalents.com/quests/starving-arcane-92457/",
       "pin": "https://wowforevertalents.com/quests/starving-arcane-92457/",
-      "pickup": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "pickup": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
       "locationSource": "https://wowforevertalents.com/quests/starving-arcane-92457/",
-      "locationEvidence": "https://wowforevertalents.com/quests/starving-arcane-92457/"
+      "locationEvidence": "https://wowforevertalents.com/quests/starving-arcane-92457/",
+      "turnin": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/",
+      "routeNote": "https://www.icy-veins.com/wow-forever/city-of-dalaran-quests/"
     },
     "pin": {
       "map": 1421,
@@ -642,7 +656,9 @@
       "y": 45.2,
       "zone": "Silverpine Forest",
       "title": "Archmage Modera (creature 269127)"
-    }
+    },
+    "turnin": "Image of Archmage Modera outside the Dalaran sewer entrance.",
+    "routeNote": "Defeat 8 Seeking Remnants, 8 Saturated Remnants and 8 Mana Echoes inside City of Dalaran. Return to Modera outside the entrance when all three objectives are complete."
   },
   "96986": {
     "pickup": "Melisara, Tarren Mill, Hillsbrad Foothills.",

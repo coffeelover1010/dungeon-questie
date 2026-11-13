@@ -1,5 +1,7 @@
 # Dungeon preparation walkthroughs
 
+Current runtime: [QuestieDB integration](PROVIDER-INTEGRATION.md), 12 November 2026. QuestieDB is required and Questie optional. The provider supplies available fields; independently reviewed corrections and missing-field fallbacks remain local. Historical build descriptions below describe the retained research inputs.
+
 Choose a dungeon and select a quest from the list. The right panel shows one current quest on the path to that dungeon quest. While it is in the log, the panel shows its live objectives (or factual reference objectives if the API has none). When ready, it shows the turn-in NPC. Completing the turn-in advances the panel. Accepting the final dungeon quest marks that goal collected; select another quest from the list to view its details. No manual completion button is used.
 
 The goal is to collect outside quests before entering. Some prerequisites themselves require a dungeon visit, so no guide can always obtain every later quest before the first run. Inside pickups and unknown requirements do not count as collected.

@@ -30,8 +30,8 @@ for ident,source in ((2945,'ring'),(95647,'wetlands')):
  patches[ident]={'dungeonObjective':True,'turninInside':True,'readinessReviewed':'2026-11-10','readinessSource':sources[source]}
 unresolved={
  3366:'This older Glowing Shard quest variant is not in the installed Forever QuestieDB. Use the Glowing Shard to check which quest ID it offers; the recorded current item-start variant is 6981.',
- 78916:'The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item.',
- 78917:'The Perfect Blackfathom Pearl quest is recorded in a beta cache, but its current availability and minimum acceptance level are not confirmed. Check the quest offered by the item.',
+ 78916:'Right-click the Perfect Blackfathom Pearl to check whether you can accept this quest. Its minimum level is not yet confirmed.',
+ 78917:'Right-click the Perfect Blackfathom Pearl to check whether you can accept this quest. Its minimum level is not yet confirmed.',
 }
 for ident,note in unresolved.items(): patches[ident]={'requirementsNote':note,'readinessReviewed':'2026-11-10'}
 for ident,patch in patches.items(): overrides.setdefault(str(ident),{}).update(patch)

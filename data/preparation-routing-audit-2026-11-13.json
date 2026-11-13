@@ -1,0 +1,1842 @@
+[
+  {
+    "id": 65,
+    "name": "The Defias Brotherhood",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 261,
+    "name": "Down the Scarlet Path",
+    "objectiveLocation": "Undead Ravager",
+    "map": 1443,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1052,
+    "name": "Down the Scarlet Path",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 132,
+    "name": "The Defias Brotherhood",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4224,
+    "name": "The True Masters",
+    "objectiveLocation": "Ragged John",
+    "map": 1428,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4264,
+    "name": "A Crumpled Up Note",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 135,
+    "name": "The Defias Brotherhood",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 544,
+    "name": "Prison Break In",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 545,
+    "name": "Dalaran Patrols",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6402,
+    "name": "Stormwind Rendezvous",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1100,
+    "name": "Lonebrow's Journal",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 277,
+    "name": "Fire Taboo",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8912,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8920,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8928,
+    "name": "A Shifty Merchant",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8936,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 141,
+    "name": "The Defias Brotherhood",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5527,
+    "name": "A Reliquary of Purity",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5531,
+    "name": "Betina Bigglezink",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 2258,
+    "name": "Badlands Reagent Run",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5543,
+    "name": "Blood Tinged Skies",
+    "objectiveLocation": "Plaguebat",
+    "map": 1423,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 142,
+    "name": "The Defias Brotherhood",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6582,
+    "name": "The Test of Skulls, Scryer",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1149,
+    "name": "Test of Faith",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1150,
+    "name": "Test of Endurance",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1151,
+    "name": "Test of Strength",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1152,
+    "name": "Test of Lore",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1154,
+    "name": "Test of Lore",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1159,
+    "name": "Test of Lore",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5727,
+    "name": "Hidden Enemies",
+    "objectiveLocation": "Neeru Fireblade",
+    "map": 1454,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3443,
+    "name": "Forging the Shaft",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3445,
+    "name": "The Sunken Temple",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 93680,
+    "name": "Key to the City",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3453,
+    "name": "The Torch of Retribution",
+    "objectiveLocation": "Kalaran Windblade",
+    "map": 1427,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3481,
+    "name": "Trinkets...",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 155,
+    "name": "The Defias Brotherhood",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8905,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8913,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8921,
+    "name": "The Ectoplasmic Distiller",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8929,
+    "name": "In Search of Anthion",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8937,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 86777,
+    "name": "Master Feardred",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": false
+  },
+  {
+    "id": 6135,
+    "name": "Duskwing, Oh How I Hate Thee...",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4121,
+    "name": "Precarious Predicament",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4141,
+    "name": "Muigin and Larion",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4145,
+    "name": "Larion and Muigin",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4185,
+    "name": "The True Masters",
+    "objectiveLocation": "Lady Katrana Prestor",
+    "map": 1453,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92345,
+    "name": "Beneath Nordrassil",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3701,
+    "name": "The Smoldering Ruins of Thaurissan",
+    "objectiveLocation": "Thaurissan Relic",
+    "map": 1428,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6403,
+    "name": "The Great Masquerade",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4361,
+    "name": "The Bearer of Bad News",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92346,
+    "name": "Beneath Nordrassil",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5464,
+    "name": "Menethil's Gift",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8906,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8914,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8922,
+    "name": "A Supernatural Device",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8930,
+    "name": "In Search of Anthion",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8938,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8978,
+    "name": "Return to Mokvar",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5544,
+    "name": "Carrion Grubbage",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3801,
+    "name": "Dark Iron Legacy",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6583,
+    "name": "The Test of Skulls, Somnus",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6627,
+    "name": "Test of Lore",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 94907,
+    "name": "A Small Favor",
+    "objectiveLocation": "Twilight Thrall",
+    "map": 2548,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 707,
+    "name": "Ironband Wants You!",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 356,
+    "name": "Quest 356",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1429,
+    "name": "The Atal'ai Exile",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 720,
+    "name": "A Sign of Hope",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 721,
+    "name": "A Sign of Hope",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 722,
+    "name": "Amulet of Secrets",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1444,
+    "name": "Return to Fel'Zerul",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 723,
+    "name": "Prospect of Faith",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 724,
+    "name": "Prospect of Faith",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1448,
+    "name": "In Search of The Temple",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 725,
+    "name": "Passing Word of a Threat",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1450,
+    "name": "Gryphon Master Talonaxe",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 726,
+    "name": "Passing Word of a Threat",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1452,
+    "name": "Rhapsody's Kalimdor Kocktail",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 2934,
+    "name": "Undamaged Venom Sac",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 738,
+    "name": "Find Agmond",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 739,
+    "name": "Murdaloc",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4941,
+    "name": "Eitrigg's Wisdom",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 2988,
+    "name": "Witherbark Cages",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 2990,
+    "name": "Thadius Grimshade",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8907,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4023,
+    "name": "A Taste of Flame",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8923,
+    "name": "A Supernatural Device",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8939,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4061,
+    "name": "The Rise of the Machines",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 762,
+    "name": "An Ambassador of Evil",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5065,
+    "name": "The Lost Tablets of Mosh'aru",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4122,
+    "name": "Grark Lorkrub",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4142,
+    "name": "A Visit to Gregan",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92742,
+    "name": "Testing the Wells",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 389,
+    "name": "Bazil Thredd",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4182,
+    "name": "Dragonkin Menace",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4186,
+    "name": "The True Masters",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 94789,
+    "name": "Call of Air",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4242,
+    "name": "Abandoned Hope",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5281,
+    "name": "The Restless Souls",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92744,
+    "name": "Murloc Gills",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4282,
+    "name": "A Shred of Hope",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92745,
+    "name": "The State of the Mines",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8908,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8916,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8924,
+    "name": "Hunting for Ectoplasm",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92747,
+    "name": "Moonbrook Espionage",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8940,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 205,
+    "name": "Quest 205",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6568,
+    "name": "The Testament of Rexxar",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92748,
+    "name": "Explosive Consultation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6584,
+    "name": "The Test of Skulls, Chronalis",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1649,
+    "name": "The Tome of Valor",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1650,
+    "name": "The Tome of Valor",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1651,
+    "name": "The Tome of Valor",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1652,
+    "name": "The Tome of Valor",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1653,
+    "name": "The Test of Righteousness",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6628,
+    "name": "Test of Lore",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92749,
+    "name": "A Dynamite Plan",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 97289,
+    "name": "Unending Torment",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92750,
+    "name": "Detonation at a Distance",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 97290,
+    "name": "Unending Torment",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3380,
+    "name": "The Sunken Temple",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92751,
+    "name": "Detonation at a Distance",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4734,
+    "name": "Egg Freezing",
+    "objectiveLocation": "Blackrock Spire entrance / approach",
+    "map": 1427,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 97291,
+    "name": "Unending Torment",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5781,
+    "name": "Of Forgotten Memories",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92752,
+    "name": "Explosive Consultation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 97292,
+    "name": "Unending Torment",
+    "objectiveLocation": "Othmar's Head",
+    "map": 1458,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5845,
+    "name": "Of Lost Honor",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3442,
+    "name": "The Flawless Flame",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3444,
+    "name": "The Stone Circle",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3454,
+    "name": "The Torch of Retribution",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 865,
+    "name": "Raptor Horns",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3462,
+    "name": "Squire Maltrake",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 92434,
+    "name": "Blood in the Streets",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 870,
+    "name": "The Forgotten Pools",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 877,
+    "name": "The Stagnant Oasis",
+    "objectiveLocation": "Bubbling Fissure",
+    "map": 1413,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8909,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8917,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8925,
+    "name": "A Portable Power Source",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 880,
+    "name": "Altered Beings",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8941,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3520,
+    "name": "Screecher Spirits",
+    "objectiveLocation": "Screecher Spirit",
+    "map": 1444,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 447,
+    "name": "Quest 447",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6133,
+    "name": "The Ranger Lord's Behest",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5126,
+    "name": "Lorax's Tale",
+    "objectiveLocation": "Lorax",
+    "map": 1452,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 450,
+    "name": "A Recipe For Death",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 451,
+    "name": "A Recipe For Death",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4147,
+    "name": "Marvon's Workshop",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4183,
+    "name": "The True Masters",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4223,
+    "name": "The True Masters",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 95786,
+    "name": "An Acquaintance in Southshore",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 86792,
+    "name": "Thinning Their Forces",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": false
+  },
+  {
+    "id": 86796,
+    "name": "Later, Satyr",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": false
+  },
+  {
+    "id": 86797,
+    "name": "Return to Rageroar",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": false
+  },
+  {
+    "id": 86798,
+    "name": "Timbermaw Reinforcements",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": false
+  },
+  {
+    "id": 87346,
+    "name": "Chieftain Bloodmaw",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": false
+  },
+  {
+    "id": 86814,
+    "name": "Blackmaw Counter-Offensive",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": false
+  },
+  {
+    "id": 3702,
+    "name": "The Smoldering Ruins of Thaurissan",
+    "objectiveLocation": "Royal Historian Archesonus",
+    "map": 1455,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1449,
+    "name": "To The Hinterlands",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 95196,
+    "name": "Watch Yer Back",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3441,
+    "name": "Divine Retribution",
+    "objectiveLocation": "Kalaran Windblade",
+    "map": 1427,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 95283,
+    "name": "The Missing Kor'kron",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 95284,
+    "name": "The Elite of the Elite",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 95285,
+    "name": "Right Place, Wrong Time",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 99156,
+    "name": "Rear Guard Patrol",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5462,
+    "name": "The Dying, Ras Frostwhisper",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6501,
+    "name": "The Dragon's Eye",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8910,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8918,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8926,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8934,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 95773,
+    "name": "Enemies in the Water",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5522,
+    "name": "Leonid Barthalomew",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6569,
+    "name": "Oculus Illusions",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8942,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6585,
+    "name": "The Test of Skulls, Axtroz",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3452,
+    "name": "The Flame's Casing",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6601,
+    "name": "Ascension...",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 95194,
+    "name": "Our Man in Theramore",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 276,
+    "name": "Tramping Paws",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 275,
+    "name": "Blisters on the Land",
+    "objectiveLocation": "Fen Creeper",
+    "map": 1437,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 95770,
+    "name": "Locating the Lost City",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 484,
+    "name": "Young Crocolisk Skins",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5742,
+    "name": "Redemption",
+    "objectiveLocation": "Tirion Fordring",
+    "map": 1423,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6804,
+    "name": "Poisoned Water",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6566,
+    "name": "What the Wind Carries",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6567,
+    "name": "The Champion of the Horde",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6570,
+    "name": "Emberstrife",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8944,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8935,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8933,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8932,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8931,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5726,
+    "name": "Hidden Enemies",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8919,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1947,
+    "name": "Journey to the Marsh",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8915,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1949,
+    "name": "Hidden Secrets",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1950,
+    "name": "Get the Scoop",
+    "objectiveLocation": "\"Plucky\" Johnson - Mirage Raceway (approximate)",
+    "map": 1441,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8911,
+    "name": "An Earnest Proposition",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1953,
+    "name": "Return to the Marsh",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1954,
+    "name": "The Infernal Orb",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1955,
+    "name": "The Exorcism",
+    "objectiveLocation": "Demon of the Orb",
+    "map": 1445,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8977,
+    "name": "Return to Deliana",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5542,
+    "name": "Demon Dogs",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 6805,
+    "name": "Stormers and Rumblers",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5461,
+    "name": "The Human, Ras Frostwhisper",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4787,
+    "name": "The Ancient Egg",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5465,
+    "name": "Soulbound Keepsake",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 95198,
+    "name": "The Return of the King?",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 5846,
+    "name": "Of Love and Family",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 2933,
+    "name": "Venom Bottles",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 2935,
+    "name": "Consult Master Gadrin",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4001,
+    "name": "What Is Going On?",
+    "objectiveLocation": "Blackrock Depths entrance / approach",
+    "map": 1427,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3463,
+    "name": "Set Them Ablaze!",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 3982,
+    "name": "What Is Going On?",
+    "objectiveLocation": "Blackrock Depths entrance / approach",
+    "map": 1427,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4184,
+    "name": "The True Masters",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4002,
+    "name": "The Eastern Kingdom",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1451,
+    "name": "Rhapsody Shindigger",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1469,
+    "name": "Rhapsody's Tale",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 2989,
+    "name": "The Altar of Zul",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 1424,
+    "name": "Pool of Tears",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4022,
+    "name": "A Taste of Flame",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8927,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 8943,
+    "name": "Just Compensation",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 2500,
+    "name": "Badlands Reagent Run",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 4062,
+    "name": "The Rise of the Machines",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 303,
+    "name": "The Dark Iron War",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  }
+]

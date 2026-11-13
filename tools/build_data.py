@@ -129,9 +129,31 @@ if coordinates.exists():
     for quest_id,patch in json.loads(coordinates.read_text(encoding='utf-8')).items():
         by[int(quest_id)].update(patch)
 
-order=['The Hall of Thanes','Ragefire Chasm','Deadmines','Wailing Caverns','Ruins of Lordaeron','Shadowfang Keep','Blackfathom Deeps','Stormwind Stockade','Excavation Site: Wetlands','City of Dalaran','Razorfen Kraul','Gnomeregan','Scarlet Monastery','Razorfen Downs','Uldaman',"Zul'Farrak",'Maraudon','Sunken Temple','Blackrock Depths','Dire Maul','Lower Blackrock Spire','Upper Blackrock Spire','Scholomance','Stratholme']
-gaps=['The Drowned City',"Krol'dok Stronghold",'Alcaz Prison','Blackmaw Hold',"The Shaper's Terrace"]
-names=order+gaps
+# Recommended entry levels, rather than the minimum level of individual quests.
+# https://www.wowhead.com/forever/guide/dungeons-overview-locations-details
+# Checked 2026-11-13; grouped wings use their lowest recommended entry level.
+dungeon_levels=[
+    ('The Hall of Thanes',13),('Ragefire Chasm',13),
+    ('Ruins of Lordaeron',15),('Wailing Caverns',15),('Deadmines',18),
+    ('Shadowfang Keep',22),('Stormwind Stockade',22),
+    ('Excavation Site: Wetlands',24),('Blackfathom Deeps',24),
+    ('City of Dalaran',28),('Scarlet Monastery',28),('Gnomeregan',29),
+    ('Razorfen Kraul',30),('The Drowned City',35),
+    ("Krol'dok Stronghold",40),('Razorfen Downs',40),('Uldaman',42),
+    ("Zul'Farrak",44),('Maraudon',45),('Alcaz Prison',48),
+    ('Sunken Temple',50),('Blackrock Depths',52),
+    ('Blackmaw Hold',55),('Lower Blackrock Spire',55),
+    ("The Shaper's Terrace",58),('Upper Blackrock Spire',58),
+    ('Dire Maul',58),('Scholomance',58),('Stratholme',58),
+]
+names=[name for name,level in sorted(dungeon_levels,key=lambda entry:entry[1])]
+# Independent Forever review patches are applied last, preserving older records
+# not covered by this review. QuestieDB values are never generator inputs.
+review=json.loads((ROOT/'data/forever-review-2026-11-13.json').read_text(encoding='utf-8'))
+for record in review['catalogue']:
+    if record['id'] in by: by[record['id']].update(record)
+    else:
+        qs.append(record); by[record['id']]=record
 populated={d for q in qs for d in q['dungeons']}
 notes_path=ROOT/'data/dungeon-notes.json'
 notes=json.loads(notes_path.read_text(encoding='utf-8')) if notes_path.exists() else {}

@@ -18,11 +18,11 @@ local function state(entries) log=entries; A.Scan() end
 local q=A.byID[1200]; assert(q and q.name=="Blackfathom Villainy")
 state({{questID=1198,title="In Search of Thaelrid",complete=true}})
 local n,p=A.WalkStep(q); assert(n.id==1198 and p=="ready")
-assert(A.ActionReadiness(q)); assert(A.QuestRowStatus(q)=="Turn in")
+assert(A.ActionReadiness(q)); assert(A.QuestRowStatus(q)=="Preparation needed")
 local minimum=A.walkthroughs[1200].minLevel; A.walkthroughs[1200].minLevel=99
 assert(A.ActionReadiness(q),"Future level must not hide a ready prerequisite")
 A.walkthroughs[1200].minLevel=minimum
-local _,icon=A.QuestRowStatus(q); assert(icon:find("UI-CheckBox-Check",1,true))
+local _,icon=A.QuestRowStatus(q); assert(icon==nil,"An unaccepted goal must not display a tick for its prerequisite")
 A.SelectQuest(q)
 local b=A.window.targetButton
 assert(b:GetAttribute("macrotext")=="/targetexact Argent Guard Thaelrid")
@@ -36,13 +36,13 @@ assert(not A.ActionReadiness(q) and A.QuestRowStatus(q)=="Active")
 assert(not b.enabled and b:GetAttribute("macrotext")==nil)
 -- Completed predecessor does not prove the next quest is offered.
 completed[1198]=true; state({})
-n,p=A.WalkStep(q); assert(n.id==1200 and p=="check")
-assert(not A.ActionReadiness(q) and not A.window.pickupTarget)
+n,p=A.WalkStep(q); assert(n.id==1200 and p=="inside")
+assert(A.ActionReadiness(q))
 A.offers[1200]=true; A.Refresh()
-assert(A.ActionReadiness(q) and A.QuestRowStatus(q)=="Collect")
+assert(A.ActionReadiness(q) and A.QuestRowStatus(q)=="Collect quest")
 assert(b:GetAttribute("macrotext")=="/targetexact Argent Guard Thaelrid",tostring(b:GetAttribute("macrotext")))
 -- Unknown, missing and non-creature targets must clear the previous macro.
-A.SelectQuest(A.byID[1275]); assert(not b.enabled and b:GetAttribute("macrotext")==nil)
+A.offers[1275]=false; A.SelectQuest(A.byID[1275]); assert(not b.enabled and b:GetAttribute("macrotext")==nil)
 assert(not A.QuestGiverMacro({id=999999,pickup="A chest - A place"},"pickup"))
 assert(not A.QuestGiverMacro(q,"blocked"))
 -- Multi-step route advances to the current accepted step and its finisher.
@@ -86,8 +86,8 @@ A.events.OnEvent(nil,"GOSSIP_SHOW")
 assert(A.Availability(3765)==true and select(2,A.WalkStep(crumb))=="pickup")
 A.SelectQuest(crumb); assert(b:GetAttribute("macrotext")=="/targetexact Argos Nightwhisper")
 A.events.OnEvent(nil,"GOSSIP_CLOSED")
-assert(A.Availability(3765)==nil and select(2,A.WalkStep(crumb))=="check")
-assert(not b.enabled and b:GetAttribute("macrotext")==nil)
+assert(A.Availability(3765)==nil and select(2,A.WalkStep(crumb))=="pickup")
+assert(b.enabled and b:GetAttribute("macrotext")=="/targetexact Argos Nightwhisper")
 C_GossipInfo=nil; A.ReadOffers(); assert(A.Availability(3765)==nil)
 -- Summary numerators exactly match dungeon readiness badges.
 state({{questID=1198,title="In Search of Thaelrid",complete=true},{questID=1275,title="Researching the Corruption",complete=false}})
@@ -104,7 +104,7 @@ state({{questID=95772,title="Songblade Search",complete=false}})
 assert(A.RunReadiness(fallen),"Accepted dungeon precursor is ready for the run")
 log[1].complete=true; A.Scan(); assert(A.RunReadiness(fallen))
 completed[95772]=true; state({}); assert(A.RunReadiness(fallen),"Follow-up is collected inside")
-assert(not A.ActionReadiness(fallen),"Planning readiness does not invent an NPC offer")
+assert(A.ActionReadiness(fallen) and A.offers[fallen.id]==nil,"Guide pickup does not fabricate live evidence")
 completed[95795]=true; assert(not A.RunReadiness(fallen))
 local reference={id=990991,evidence="Classic reference",unverifiedChain=true,restrictionUnknown=true,pickup="Pickup unverified"}
 assert(not A.DataWarning(reference),"Source warning icons stay hidden")
@@ -117,8 +117,8 @@ A.offers[reference.id]=true; assert(not A.DataWarning(reference)); A.offers[refe
 completed={}; A.db.confirmed={}; A.offers={}; state({})
 local relic=A.byID[95810]
 assert(A.RunReadiness(relic))
-assert(not A.ActionReadiness(relic) and select(2,A.WalkStep(relic))=="check")
-assert(select(1,A.DungeonReadinessBadge(relic)):find("ReadyCheck-Ready",1,true))
+assert(A.ActionReadiness(relic) and select(2,A.WalkStep(relic))=="inside")
+assert(select(1,A.DungeonReadinessBadge(relic))==nil,"Inside pickup has no acceptance tick")
 level=1; assert(not A.RunReadiness(relic)); level=60
 A.offers[95810]=false; assert(not A.RunReadiness(relic)); A.offers={}
 local node=A.walkthroughs[95810]
@@ -149,7 +149,7 @@ state({}); A.SelectQuest(crumb); A.Toggle(); A.Refresh()
 assert(not f:IsShown() and b:GetAttribute("macrotext")==original)
 function InCombatLockdown() return false end
 A.events.OnEvent(nil,"PLAYER_REGEN_ENABLED"); A.Toggle()
-assert(f:IsShown() and not b.enabled and b:GetAttribute("macrotext")==nil)
+assert(f:IsShown() and b.enabled and b:GetAttribute("macrotext")=="/targetexact Dawnwatcher Shaedlass", "Reopened guide targets the current uncollected prerequisite")
 ''')
 source=json.loads((root/'data/classic-source.json').read_text())
 nodes=json.loads((root/'data/walkthroughs.json').read_text())

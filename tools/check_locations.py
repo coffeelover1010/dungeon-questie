@@ -54,12 +54,15 @@ completed={}; A.db.confirmed={}; A.log={}; A.offers={}; A.logAvailable=true
 faction="Alliance"; class="WARRIOR"; race="Human"; level=60
 A.LoadLocations()
 ''')
-report={'providerVersion':meta.get('Version'),'quests':[],'nodesWithoutPickup':[]}
+report={'providerVersion':meta.get('Version'),'quests':[],'nodesWithoutPickup':[],'questsWithoutMap':[]}
 A=lua.globals().A
 for _,q in A.quests.items():
     result=A.MapLocation(q)
     target=result[0] if isinstance(result,tuple) else result
-    assert target is not None, f"No map location: {q['id']} {q['name']}"
+    if target is None:
+        # Missing current-step coordinates must not fall back to a dungeon.
+        report['questsWithoutMap'].append({'id':q['id'],'name':q['name']})
+        continue
     p=target['pin']
     report['quests'].append({'id':q['id'],'name':q['name'],'pickupKind':q['pin'] and (q['pin']['kind'] or 'curated'),
                              'mapKind':p['kind'] or 'curated','map':p['map'],'x':p['x'],'y':p['y'],'title':p['title']})
@@ -76,29 +79,30 @@ for _,state in ipairs({"unknown","active","ready","done","blocked"}) do
  if state=="active" or state=="ready" then log={{questID=q.id,title=q.name,complete=state=="ready"}} end
  if state=="done" then completed[q.id]=true end
  if state=="blocked" then level=1 end
- assert(A.MapLocation(q),state)
+ local expected=A.MapLocation(q)
  A.SelectQuest(q)
- assert(A.window.mapButton.enabled and A.window.mapTarget,state.." map button disabled")
+ local actual=A.MapLocation(q)
+ assert((A.window.mapTarget~=nil)==(actual~=nil),state.." map button disagrees with resolver")
 end
 completed={}; level=60; A.log={[95647]={complete=false}}
 assert(select(2,A.WalkStep(A.byID[95737]))=="skipped")
-assert(A.MapLocation(A.byID[95737]))
+assert(not A.MapLocation(A.byID[95737]),"Skipped breadcrumb must not suggest a trip")
 -- Browse a completed quest's map and keep its pin across a scan.
 completed[q.id]=true; A.log={}; A.SelectQuest(q)
 local target=A.window.mapTarget
-A.Navigate(target); assert(A.locationTarget==target and A.RefreshPins()>0)
-A.Scan(); assert(A.locationTarget==target and A.RefreshPins()>0)
+A.Navigate(target); assert(A.locationTarget and A.locationTarget.id==target.id and A.RefreshPins()>0)
+A.Scan(); assert(A.locationTarget and A.locationTarget.id==target.id and A.RefreshPins()>0)
 A.locationTarget=nil; assert(A.RefreshPins()>0,"Completed quests must retain browseable map pins")
 assert(not A.window.pickupTarget,"Map browsing must not enable a pickup action")
--- Existing curated coordinates must survive provider enrichment.
-assert(A.byID[168].pin.source~="QuestieDB Forever")
+-- Provider coordinates supersede unreviewed fallback coordinates.
+assert(A.byID[168].pin.source=="QuestieDB Forever")
 -- Incompatible / absent providers must fail without throwing.
 local saved=LibQuestieDB; LibQuestieDB=nil; A.LoadLocations()
 assert(A.MapLocation(q)); LibQuestieDB=saved
 ''')
-out=root/'data/location-audit-2026-11-10.json'
+out=root/'data/provider-location-audit-2026-11-13.json'
 out.write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
 from collections import Counter
-print('PASS: all',len(report['quests']),'catalogue quests have map locations;',dict(Counter(q['mapKind'] for q in report['quests'])))
+print('PASS:',len(report['quests']),'catalogue maps;',len(report['questsWithoutMap']),'explicit map gaps;',dict(Counter(q['mapKind'] for q in report['quests'])))
 print('Catalogue pickup coverage:',dict(Counter(q['pickupKind'] for q in report['quests'])))
 print('Walkthrough nodes without exact pickup:',len(report['nodesWithoutPickup']))

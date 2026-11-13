@@ -1,0 +1,46 @@
+{
+  "threshold": 40,
+  "scope": "All 467 quest and prerequisite records; long directions remain in the detail panel, not cards.",
+  "quests": [
+    {
+      "id": 3366,
+      "name": "The Glowing Shard",
+      "words": 84
+    },
+    {
+      "id": 92753,
+      "name": "Destruction in Deadmines",
+      "words": 75
+    },
+    {
+      "id": 96984,
+      "name": "Heart of Disruption",
+      "words": 69
+    },
+    {
+      "id": 92458,
+      "name": "Heart of Disruption",
+      "words": 62
+    },
+    {
+      "id": 92745,
+      "name": "The State of the Mines",
+      "words": 55
+    },
+    {
+      "id": 6981,
+      "name": "The Glowing Shard",
+      "words": 53
+    },
+    {
+      "id": 2951,
+      "name": "The Sparklematic 5200!",
+      "words": 45
+    },
+    {
+      "id": 92457,
+      "name": "Starving Arcane",
+      "words": 40
+    }
+  ]
+}

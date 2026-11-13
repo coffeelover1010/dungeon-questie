@@ -17,7 +17,7 @@ for _,id in ipairs(reviewed) do
  local q=A.byID[id]; local n=A.walkthroughs[id]; reset(q)
  for _,prior in ipairs(n.all or {}) do completed[prior]=true end
  assert(A.RunReadiness(q),id.." eligible inside pickup")
- assert(not A.ActionReadiness(q),id.." must not invent an offer")
+ assert(A.ActionReadiness(q) and A.Availability(id)==nil,id.." guide pickup without fabricated offer")
  local saved=level; level=(n.minLevel or q.minLevel or 1)-1
  assert(not A.RunReadiness(q),id.." underlevel")
  level=saved; A.offers[id]=false; assert(not A.RunReadiness(q),id.." known absent offer")

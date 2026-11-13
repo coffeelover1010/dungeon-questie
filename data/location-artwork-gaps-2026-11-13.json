@@ -1,0 +1,3065 @@
+{
+  "scope": "Presence audit of 550 catalogue/prerequisite nodes with installed provider spawn locations; not live verification. Objective counts exclude dynamic live-text matches and dungeon-entrance fallbacks.",
+  "nodes": 550,
+  "gaps": [
+    {
+      "id": 17,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 65,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 132,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 135,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 141,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 142,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 155,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 166,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 167,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 168,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 205,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 214,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 276,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 277,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 303,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 356,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 373,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 377,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 378,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 386,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 387,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 388,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 389,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 391,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 447,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 450,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 451,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 463,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 484,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 544,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 545,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 704,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 707,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 709,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 720,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 721,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 722,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 723,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 724,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 725,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 726,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 738,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 739,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 762,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 865,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 870,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 880,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 914,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 959,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 962,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 971,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1013,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1014,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1048,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1049,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1050,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1051,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1052,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1053,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1098,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1100,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1101,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1102,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1109,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1113,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1139,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1142,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1144,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1149,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1150,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1151,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1152,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1154,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1159,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1160,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1198,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1199,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1200,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1221,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1275,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1360,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1394,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1424,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1429,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1442,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1444,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1445,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1446,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1448,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1449,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1450,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1451,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1452,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1469,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1475,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1486,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1487,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1489,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1490,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1491,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1649,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 1650,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1651,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1652,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1653,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1654,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1740,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1806,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1947,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1949,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1951,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1953,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1954,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 1956,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2040,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2198,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2202,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2240,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2258,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2278,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2283,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2342,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2398,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2418,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2500,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2768,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2770,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2841,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2842,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2846,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2865,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2904,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2922,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2923,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2924,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2925,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2926,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2927,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2928,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2930,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2931,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2933,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2934,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2935,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2936,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2945,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2947,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2948,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2949,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2950,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2951,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2962,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2988,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2989,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2990,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 2991,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3042,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3341,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3366,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 3373,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3380,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3442,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3443,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3444,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3445,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3447,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3452,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3454,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3462,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3463,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3481,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3523,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3525,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3527,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3528,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3765,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3801,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3802,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3907,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 3911,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 3981,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4002,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4022,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4023,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4024,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4061,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4062,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4063,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4081,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4082,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4121,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4122,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4123,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4126,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4134,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4136,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4141,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4142,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4143,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4145,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4146,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4147,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4182,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4183,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4184,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4186,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4201,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4223,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4241,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4242,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4264,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4282,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4286,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4322,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4341,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4361,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4729,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4742,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4764,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4768,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4787,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4788,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4862,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4867,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4903,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4941,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4974,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 4981,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5001,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5047,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5065,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5089,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5122,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5125,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5127,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5160,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5212,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5213,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5214,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5243,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5251,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5262,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5263,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5281,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5341,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5343,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5382,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5461,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5462,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5463,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5464,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5465,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5466,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5515,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5518,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5522,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5525,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5526,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5527,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5528,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5531,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5542,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5544,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5722,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5723,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5724,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5725,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5726,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5728,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5761,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5781,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5845,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5846,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 5848,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6133,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6135,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6163,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6402,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6403,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6501,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6502,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6521,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6522,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6561,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6562,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6563,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6564,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6566,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6567,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6568,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6569,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6570,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6582,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6583,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6584,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6585,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6601,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6602,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6626,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6627,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6628,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6804,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6805,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6821,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6921,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 6922,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7028,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7029,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7041,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7044,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7066,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7067,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7068,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7070,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7201,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7441,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7461,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7463,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7488,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7489,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7507,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7668,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7703,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7761,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 7848,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8905,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8906,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8907,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8908,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8909,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8910,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8911,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8912,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8913,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8914,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8915,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8916,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8917,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8918,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8919,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8920,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8921,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8922,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8923,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8924,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8925,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8926,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8927,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8928,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8929,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8930,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8931,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8932,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8933,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8934,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8935,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8936,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8937,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8938,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8939,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8940,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8941,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8942,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8943,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8944,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8977,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 8978,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 78916,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 78917,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 79360,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 86777,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 86792,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 86796,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 86797,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 86798,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 86814,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 87346,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 92065,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 92066,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 92067,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 92069,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92070,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 92343,
+      "missing": [
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 92344,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92345,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92346,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92401,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92415,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 92421,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92434,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92456,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92457,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92458,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92742,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92744,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92745,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92747,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92748,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92749,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92750,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92751,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 92752,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 93680,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 94789,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 94968,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 94969,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 94972,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 94973,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 94974,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 94975,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 94980,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 94981,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 94982,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 94983,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 94984,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 94997,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 94998,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95056,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95189,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95194,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95195,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95196,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95198,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95204,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95216,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95250,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95262,
+      "missing": [
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95263,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 95283,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95284,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95285,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95309,
+      "missing": [
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95454,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95483,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 95646,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95647,
+      "missing": [
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95663,
+      "missing": [
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95664,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 95682,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95697,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95737,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95770,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95772,
+      "missing": [
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95773,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95775,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95776,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95786,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95787,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95788,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95789,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95790,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95791,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95795,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 95798,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95799,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 95809,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 95810,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 95924,
+      "missing": [
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95925,
+      "missing": [
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95926,
+      "missing": [
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 95928,
+      "missing": [
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 96246,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 96264,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96332,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96334,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96335,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 96337,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 96369,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 96376,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96377,
+      "missing": [
+        "pickup",
+        "objective"
+      ]
+    },
+    {
+      "id": 96379,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96381,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96391,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96393,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96394,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96403,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96771,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96772,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96774,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96800,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96984,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96986,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 96987,
+      "missing": [
+        "pickup",
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 96988,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 97049,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 97130,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 97173,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 97198,
+      "missing": [
+        "objective",
+        "turn-in"
+      ]
+    },
+    {
+      "id": 97288,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 97289,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 97290,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 97291,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 97327,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 98423,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 98815,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 98823,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 98824,
+      "missing": [
+        "objective"
+      ]
+    },
+    {
+      "id": 99156,
+      "missing": [
+        "objective"
+      ]
+    }
+  ]
+}

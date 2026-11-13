@@ -1,5 +1,25 @@
 # Dungeon Questie
 
+Current location artwork and status changes: [13 November review](ARTWORK-REVIEW-2026-11-13.md). Every selected quest uses the shared current-destination map preview or an explicit unmapped fallback. Unaccepted actions have no completion tick; objectives finished and turned-in quests remain distinct. Coverage gaps and live-client checks are listed in the review.
+
+## 0.2.1 — Forever dungeon review, 13 November 2026
+
+The catalogue now has 320 quest records across all 29 dungeon groups. Drowned
+City has eight dungeon quests and two reward handoffs; Krol'dok has 15 records,
+Alcaz 15, Blackmaw 11, and Shaper's Terrace six. These counts include faction
+variants and related chain stages, not a promise of that many independent quests
+for one character. Ruins of Lordaeron launch prerequisites and Unending Torment
+continuations were also reviewed. See [the per-quest audit](RESEARCH-2026-11-13.md).
+
+Known faction/class restrictions filter the list. Missing eligibility stays
+visible, and temporary requirements remain blocked/preparing. **Data incomplete**
+means the guide cannot establish readiness; a real quest offer or acceptance
+still takes precedence. QuestieDB 1.1.0 was checked through its public API.
+Incomplete routes, missing pickups and source conflicts remain documented.
+Saved variables, settings and Classic quest functionality are preserved.
+
+The older coverage notes below describe earlier snapshots, not this version.
+
 A simple dungeon-only quest addon for players who prefer a focused checklist
 or want a companion to their existing quest addon. Made for **WoW Forever**.
 
@@ -17,13 +37,7 @@ Classic references and approximate pins. Empty lists do not mean every quest is 
 
 ## Screenshots
 
-![Blackfathom Deeps quest actions and walkthrough](release-media/blackfathom-quests.png)
-
-![Deadmines quest checklist and prerequisite tracking](release-media/deadmines-quests.png)
-
-![Gnomeregan quest checklist](release-media/gnomeregan-quests.png)
-
-![Dungeon list and an empty catalogue](release-media/dungeon-list.png)
+![Dungeon Questie dungeon readiness and quest details](release-media/dungeon-questie-2026-11-12.png)
 
 ## Quest actions and availability
 
@@ -39,7 +53,7 @@ Glowing Shard variant (3366) and Heart of the Void variants (78916/78917) retain
 specific availability/eligibility notes until the game supplies an offer.
 Evidence and field changes: `data/inside-readiness-review-2026-11-10.json`.
 
-Uncollected quests show availability unknown until an NPC offer is reported by
+Uncollected quests use recorded level, faction/class/race and prerequisite requirements to show the next pickup without requiring a visit to the quest giver. Specific missing or conflicting requirements remain labelled. Live offers override the guide through
 `C_GossipInfo.GetAvailableQuests` or `QUEST_DETAIL`. An absent offer at the recorded
 NPC shows unavailable for that interaction; closing it clears that evidence.
 Optional breadcrumbs show Skipped when their recorded follow-up has progressed;
@@ -60,23 +74,30 @@ Download the addon ZIP from Releases and extract `DungeonGuideForever` into
 not in the AddOns list. Keep that folder name even though the addon is called
 Dungeon Questie.
 
-For WoW Forever Interface **16001**. TomTom and QuestieDB are optional. Questie is not required.
+For WoW Forever Interface **16001**. **QuestieDB is required; Questie is not required.**
+Install and enable the separate Forever version of QuestieDB alongside DungeonGuideForever.
+Tested with QuestieDB **1.0.14**, public API contract **4**. TomTom remains optional.
+An incompatible provider produces an update message and prevents new readiness claims.
 
 ## Map locations
 
-With a compatible Forever QuestieDB installed, missing locations are read from
-its public API: quest givers, recipients, item-drop areas, and dungeon approaches.
-Existing curated pins take precedence. Dungeon-entrance pins are labelled as
-entrances, not exact NPC/objective coordinates. The Drowned City has a separate
-guide-sourced approximate underwater entrance pin.
+QuestieDB is the main source for available quest levels, objectives, giver and
+recipient names, restrictions, prerequisite links, and map locations. Reviewed
+local corrections take precedence over provider data; live quest acceptance,
+progress and completion take precedence over guide requirements. Unknown minimum
+levels display **?**. Reward item IDs, dungeon grouping and useful custom mechanics
+remain local; the game supplies item names, icons and tooltips.
+
+Provider locations supersede ordinary fallback pins. Explicitly reviewed local
+pins win. Dungeon-entrance pins remain labelled as approaches, not exact NPC or
+objective coordinates. The Drowned City keeps its reviewed approximate entrance.
 
 The map button works for unaccepted, active, completed, blocked and skipped
 quests. Viewing a location does not assert availability or change readiness.
 With map pins enabled, the quests matching the current dungeon/search remain
 marked regardless of their preparation or completion status.
 Ready-to-hand-in quests prefer recipient pins; active dungeon quests use their
-dungeon approach. Active breadcrumbs prefer the recipient. Without QuestieDB,
-the bundled curated locations remain available, but full coverage needs the provider.
+dungeon approach. Active breadcrumbs prefer the recipient. QuestieDB must be enabled even when Questie itself is disabled.
 
 ## Credits
 
@@ -89,3 +110,5 @@ This is an independent addon, unaffiliated with the Questie project.
 [Data sources and checks](SOURCE-REBUILD.md) · [Walkthrough details](WALKTHROUGHS.md)
 · [Maintainer guide](AI-RESEARCH-README.md)
 · [7 November review and dependency recommendation](RESEARCH-2026-11-07.md)
+
+[Provider integration, precedence, licensing and offline audit](PROVIDER-INTEGRATION.md).

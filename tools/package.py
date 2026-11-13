@@ -10,6 +10,10 @@ for directory in ('data','tools','licenses'):
     files.update(p for p in (ROOT/directory).iterdir() if p.is_file() and p.suffix in ('.json','.csv','.txt','.py','.ps1','.md'))
 files.add(ROOT/'licenses/ClassicDB-AUTHORS')
 files.add(ROOT/'RESEARCH-2026-11-07.md')
+files.add(ROOT/'PROVIDER-INTEGRATION.md')
+files.add(ROOT/'RESEARCH-2026-11-13.md')
+files.add(ROOT/'ARTWORK-REVIEW-2026-11-13.md')
+files.add(ROOT/'ROUTING-REVIEW-2026-11-13.md')
 out=ROOT/'dist';out.mkdir(exist_ok=True)
 archive=out/f'DungeonQuestie-{version}.zip'
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
