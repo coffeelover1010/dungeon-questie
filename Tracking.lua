@@ -323,7 +323,7 @@ SlashCmdList.DUNGEONGUIDEFOREVER=function(msg)
  msg=(msg or ""):lower()
  if msg=="resetpos" then
   if InCombatLockdown() then A.Print("Move the window after combat."); return end
-  A.db.position=nil; if A.window then A.window:ClearAllPoints(); A.window:SetPoint("CENTER") end
+  if A.ResetWindowGeometry then A.ResetWindowGeometry() end
  elseif msg:find("^minimap") then
   local shown=msg:find("show") or (not msg:find("hide") and A.db.minimap.hide)
   A.SetMinimapShown(shown and true or false)

@@ -320,7 +320,7 @@ local function details()
  local macro,names=A.QuestGiverMacro(current,phase)
  f.targetButton:SetAttribute("macrotext",macro)
  f.targetButton:SetEnabled(macro~=nil)
- f.targetButton.tip=names and ("Target step NPC: "..names.."\nOnly targets an NPC within targeting range.") or "No targetable quest giver name recorded."
+ f.targetButton.tip=names and ("Target step NPC: "..names.."\nOnly targets an NPC within targeting range. The journal minimizes after clicking.") or "No targetable quest giver name recorded."
  f.source:SetEnabled(q~=nil); f.logButton:SetEnabled(current and A.log[current.id]~=nil or false)
  for _,b in ipairs({f.mapButton,f.logButton,f.source,f.targetButton,f.chatButton}) do b:SetShown(q~=nil) end
  if not q then
@@ -663,6 +663,48 @@ function A.SelectQuest(q)
  A.window.search:SetText(""); A.window:Show(); A.Scan()
  A.RevealSelectedDungeon()
 end
+-- Keep the journal's three-column layout proportional while resizing.
+local function maxWindowScale()
+ return math.min(1.5,(UIParent:GetWidth()-35)/960,(UIParent:GetHeight()-35)/650)
+end
+local function saveWindowPosition(f)
+ local p,_,rp,x,y=f:GetPoint(); A.db.position={p,rp,x,y}
+end
+function A.SetWindowScale(scale)
+ if InCombatLockdown() or not A.window then return end
+ local maximum=maxWindowScale()
+ scale=math.max(math.min(0.55,maximum),math.min(tonumber(scale) or math.min(1,maximum),maximum))
+ A.window:SetScale(scale); A.db.windowScale=scale
+end
+function A.MinimizeWindow()
+ if InCombatLockdown() or not A.window or not A.window:IsShown() then return end
+ local f=A.window
+ if f.search then f.search:ClearFocus() end
+ if f.linkPanel then f.linkPanel:Hide() end
+ GameTooltip:Hide(); f:Hide(); A.minimizedWindow:Show()
+end
+function A.RestoreWindow()
+ if InCombatLockdown() or not A.window then return end
+ A.minimizedWindow:Hide(); A.window:Show()
+end
+function A.ResetWindowGeometry()
+ if InCombatLockdown() then return end
+ A.db.position=nil; A.db.windowScale=nil; A.db.minimizedPosition=nil
+ if A.window then
+  A.window:ClearAllPoints(); A.window:SetPoint("CENTER"); A.SetWindowScale(math.min(1,maxWindowScale()))
+  A.minimizedWindow:ClearAllPoints(); A.minimizedWindow:SetPoint("TOP",UIParent,"TOP",0,-40)
+ end
+end
+local function flatWindowControl(parent,glyph,label,action)
+ local b=CreateFrame("Button",nil,parent); b:SetSize(30,28)
+ local hover=b:CreateTexture(nil,"BACKGROUND"); hover:SetAllPoints(); hover:SetColorTexture(1,0.82,0.35,0.12); hover:Hide()
+ local mark=b:CreateFontString(nil,"OVERLAY","GameFontNormal")
+ mark:SetFont("Fonts\\FRIZQT__.TTF",18,""); mark:SetPoint("CENTER",0,1); mark:SetText(glyph); mark:SetTextColor(1,0.82,0.35)
+ b:SetScript("OnClick",action)
+ b:SetScript("OnEnter",function(self) hover:Show(); GameTooltip:SetOwner(self,"ANCHOR_LEFT"); GameTooltip:AddLine(label,1,0.82,0.35); GameTooltip:Show() end)
+ b:SetScript("OnLeave",function() hover:Hide(); GameTooltip:Hide() end)
+ return b
+end
 function A.CreateWindow()
  if InCombatLockdown() then return end
  if A.window then return end
@@ -671,7 +713,7 @@ function A.CreateWindow()
  -- combat entry, and leave reopening to the player after combat.
  f:SetAttribute("_onstate-combat","if newstate == 'combat' then self:Hide() end")
  RegisterStateDriver(f,"combat","[combat] combat; peace")
- f:SetSize(960,650); f:SetPoint("CENTER"); f:SetScale(math.min(1,(UIParent:GetWidth()-35)/960,(UIParent:GetHeight()-35)/650)); f:SetFrameStrata("DIALOG"); f:SetClampedToScreen(true)
+ f:SetSize(960,650); f:SetPoint("CENTER"); A.SetWindowScale(A.db.windowScale); f:SetFrameStrata("DIALOG"); f:SetClampedToScreen(true)
  f:SetBackdrop({bgFile="Interface\\DialogFrame\\UI-DialogBox-Background",edgeFile="Interface\\DialogFrame\\UI-DialogBox-Border",tile=true,tileSize=32,edgeSize=32,insets={left=8,right=8,top=8,bottom=8}})
  local parchment=f:CreateTexture(nil,"BACKGROUND",nil,1)
  parchment:SetPoint("TOPLEFT",12,-70); parchment:SetPoint("BOTTOMRIGHT",-12,12); parchment:SetAtlas("QuestBG-Parchment")
@@ -685,11 +727,61 @@ function A.CreateWindow()
   local divider=f:CreateTexture(nil,"ARTWORK"); divider:SetColorTexture(0.35,0.23,0.10,0.35); divider:SetSize(1,556); divider:SetPoint("TOPLEFT",x,-75)
  end
  f:EnableMouse(true); f:SetMovable(true); f:RegisterForDrag("LeftButton")
- f:SetScript("OnDragStart",f.StartMoving); f:SetScript("OnDragStop",function(self) self:StopMovingOrSizing(); local p,_,rp,x,y=self:GetPoint(); A.db.position={p,rp,x,y} end)
+ f:SetScript("OnDragStart",function(self) if not InCombatLockdown() then self:StartMoving() end end); f:SetScript("OnDragStop",function(self) self:StopMovingOrSizing(); local p,_,rp,x,y=self:GetPoint(); A.db.position={p,rp,x,y} end)
  if A.db.position then local p=A.db.position; f:ClearAllPoints(); f:SetPoint(p[1],UIParent,p[2],p[3],p[4]) end
  tinsert(UISpecialFrames,"DungeonGuideForeverWindow")
  local title=text(f,21,23,-27,402); title:SetText("Dungeon Questie"); title:SetTextColor(1,0.82,0.35); title:SetShadowOffset(1,-1)
- local close=CreateFrame("Button",nil,f,"UIPanelCloseButton"); close:SetPoint("TOPRIGHT",-3,-3)
+ local close=flatWindowControl(f,"×","Close Dungeon Questie",function() if not InCombatLockdown() then f:Hide() end end)
+ close:SetPoint("TOPRIGHT",-20,-21)
+ f.close=close
+ f.minimize=flatWindowControl(f,"−","Minimize Dungeon Questie",function() A.MinimizeWindow() end)
+ f.minimize:SetPoint("RIGHT",close,"LEFT",-1,0)
+ local mini=CreateFrame("Frame",nil,UIParent,"BackdropTemplate"); A.minimizedWindow=mini
+ mini:SetSize(220,34); mini:SetPoint("TOP",UIParent,"TOP",0,-40); mini:SetFrameStrata("DIALOG"); mini:SetClampedToScreen(true)
+ mini:SetBackdrop({bgFile="Interface\\DialogFrame\\UI-DialogBox-Background",edgeFile="Interface\\Tooltips\\UI-Tooltip-Border",tile=true,tileSize=16,edgeSize=16,insets={left=4,right=4,top=4,bottom=4}})
+ mini:EnableMouse(true); mini:SetMovable(true); mini:RegisterForDrag("LeftButton")
+ mini:SetScript("OnDragStart",function(self) self:StartMoving() end)
+ mini:SetScript("OnDragStop",function(self) self:StopMovingOrSizing(); local p,_,rp,x,y=self:GetPoint(); A.db.minimizedPosition={p,rp,x,y} end)
+ if A.db.minimizedPosition then local p=A.db.minimizedPosition; mini:ClearAllPoints(); mini:SetPoint(p[1],UIParent,p[2],p[3],p[4]) end
+ -- A title-bar hit area avoids stretching a decorative button across the strip.
+ mini.restore=CreateFrame("Button",nil,mini)
+ mini.restore:SetPoint("TOPLEFT",7,-4); mini.restore:SetPoint("BOTTOMRIGHT",-34,4)
+ local miniTitle=mini.restore:CreateFontString(nil,"OVERLAY","GameFontNormal")
+ miniTitle:SetPoint("LEFT",5,0); miniTitle:SetFont("Fonts\\FRIZQT__.TTF",13,"")
+ miniTitle:SetText("Dungeon Questie"); miniTitle:SetTextColor(1,0.82,0.35); miniTitle:SetShadowOffset(1,-1)
+ local restoreMark=mini.restore:CreateTexture(nil,"OVERLAY")
+ restoreMark:SetColorTexture(1,0.82,0.35,1); restoreMark:SetSize(10,2); restoreMark:SetPoint("RIGHT",-6,0)
+ local restoreStem=mini.restore:CreateTexture(nil,"OVERLAY")
+ restoreStem:SetColorTexture(1,0.82,0.35,1); restoreStem:SetSize(2,10); restoreStem:SetPoint("CENTER",restoreMark,"CENTER")
+ mini.restore:SetScript("OnClick",function() A.RestoreWindow() end)
+ mini.restore:SetScript("OnEnter",function(self)
+  miniTitle:SetTextColor(1,0.95,0.65)
+  GameTooltip:SetOwner(self,"ANCHOR_BOTTOM"); GameTooltip:AddLine("Restore Dungeon Questie",1,0.82,0); GameTooltip:AddLine("Drag to move",0.8,0.8,0.8); GameTooltip:Show()
+ end)
+ mini.restore:SetScript("OnLeave",function() miniTitle:SetTextColor(1,0.82,0.35); GameTooltip:Hide() end)
+ mini.restore:RegisterForDrag("LeftButton"); mini.restore:SetScript("OnDragStart",function() mini:StartMoving() end)
+ mini.restore:SetScript("OnDragStop",function() mini:GetScript("OnDragStop")(mini) end)
+ local miniClose=flatWindowControl(mini,"×","Close minimized journal",function() mini:Hide() end); miniClose:SetPoint("TOPRIGHT",-4,-3)
+ miniClose:SetScript("OnClick",function() mini:Hide() end); mini:Hide()
+ f.resize=CreateFrame("Button",nil,f); f.resize:SetSize(22,22); f.resize:SetPoint("BOTTOMRIGHT",-5,5)
+ f.resize:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
+ f.resize:SetHighlightTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Highlight")
+ f.resize:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Down")
+ f.resize:SetScript("OnMouseDown",function(self,mouse)
+  if mouse~="LeftButton" or InCombatLockdown() then return end
+  local parentScale=UIParent:GetEffectiveScale()
+  local left,top=f:GetLeft()*f:GetScale(),f:GetTop()*f:GetScale()
+  f:ClearAllPoints(); f:SetPoint("TOPLEFT",UIParent,"BOTTOMLEFT",left/f:GetScale(),top/f:GetScale())
+  self:SetScript("OnUpdate",function()
+   if InCombatLockdown() then self:SetScript("OnUpdate",nil); return end
+   local x,y=GetCursorPosition(); x=x/parentScale; y=y/parentScale
+   A.SetWindowScale(math.max((x-left)/960,(top-y)/650))
+   f:ClearAllPoints(); f:SetPoint("TOPLEFT",UIParent,"BOTTOMLEFT",left/f:GetScale(),top/f:GetScale())
+  end)
+ end)
+ f.resize:SetScript("OnMouseUp",function(self) self:SetScript("OnUpdate",nil); if not InCombatLockdown() then saveWindowPosition(f) end end)
+ f:SetScript("OnHide",function() f.resize:SetScript("OnUpdate",nil) end)
+
  f.search=CreateFrame("EditBox",nil,f,"InputBoxTemplate"); f.search:SetSize(210,24); f.search:SetPoint("TOPLEFT",480,-23); f.search:SetAutoFocus(false); f.search:SetMaxLetters(100)
  f.search:SetText(A.db.search or ""); f.search:SetScript("OnEscapePressed",function(self) self:ClearFocus() end)
  f.search:SetScript("OnTextChanged",function(self) A.db.search=self:GetText(); f.listScroll:SetVerticalScroll(0); A.Refresh(); A.RefreshPins() end)
@@ -768,12 +860,17 @@ function A.CreateWindow()
  f.targetButton=iconButton(f.detailChild,"Target quest giver","Interface\\Icons\\Ability_Hunter_SniperShot",736,-600,nil,"SecureActionButtonTemplate")
  f.targetButton:RegisterForClicks("AnyUp","AnyDown")
  f.targetButton:SetAttribute("type","macro")
- f:SetScript("OnShow",function() A.Scan(); A.RevealSelectedDungeon(); f.listScroll:SetVerticalScroll(0) end)
+ -- Wait for release and the secure action to finish before hiding its parent.
+ f.targetButton:SetScript("PostClick",function(self,mouse,down)
+  if mouse~="LeftButton" or down or not self:GetAttribute("macrotext") then return end
+  C_Timer.After(0,function() A.MinimizeWindow() end)
+ end)
+ f:SetScript("OnShow",function() A.minimizedWindow:Hide(); A.Scan(); A.RevealSelectedDungeon(); f.listScroll:SetVerticalScroll(0) end)
  f:Hide()
 end
 function A.Toggle()
  if InCombatLockdown() then A.Print("Dungeon Questie can be opened after combat."); return end
  if not A.db then return end
  if not A.window then A.CreateWindow() end
- A.window:SetShown(not A.window:IsShown())
+ if A.minimizedWindow:IsShown() then A.RestoreWindow() else A.window:SetShown(not A.window:IsShown()) end
 end

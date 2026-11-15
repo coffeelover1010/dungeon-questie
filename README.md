@@ -1,6 +1,6 @@
 # Dungeon Questie
 
-Version **0.2.4** — 15 November 2026. A focused dungeon quest journal with current-step cards, destination maps, quest chat links and copyable progress exports.
+Version **0.2.5** — 15 November 2026. A focused dungeon quest journal with current-step cards, destination maps, quest chat links and copyable progress exports.
 
 
 Scarlet Monastery now has separate Graveyard, Library, Armory and Cathedral
@@ -125,3 +125,12 @@ This is an independent addon, unaffiliated with the Questie project.
 [Provider integration, precedence, licensing and offline audit](PROVIDER-INTEGRATION.md).
 
 Quest chains show one current-step card, advancing through optional breadcrumbs and preparation to the dungeon quest. Click for current directions; Shift-click links the current quest. Missed breadcrumbs identify a directly active destination to abandon if you want to try recovering the breadcrumb. Progress may be lost and the offer is not guaranteed; completed quests cannot be undone.
+
+## Window controls
+
+Use the **_** button beside Close to minimize to a movable restore bar. Click
+**Dungeon Questie +**, the minimap button or `/dungeons` to restore it. Drag the
+bottom-right grip to resize the whole journal proportionally; size and position
+save per character. **Target NPC** minimizes after the click, even if the NPC is
+out of targeting range. Opening, resizing and targeting remain unavailable in
+combat. `/dungeons resetpos` restores the default size and positions.

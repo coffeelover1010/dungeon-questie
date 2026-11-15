@@ -1,3 +1,12 @@
+## 0.2.5 — 15 November 2026
+
+- Add minimize and restore controls with a movable compact title bar.
+- Add proportional window resizing with size and positions saved per character.
+- Minimize the journal after clicking Target NPC, including when the NPC is out of targeting range.
+- Extend `/dungeons resetpos` to reset window size and both window positions.
+
+Offline window lifecycle, resize and secure-targeting regression checks cover these changes. Live-client behavior remains unverified.
+
 ## 0.2.4 — 15 November 2026
 
 - Simplify quest cards around the current chain step, with clearer preparation and dungeon-ready states.
