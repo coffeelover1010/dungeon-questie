@@ -25,6 +25,9 @@ local themedIcons={
 }
 A.dungeonArtwork={}
 for name,icon in pairs(dungeonIcons) do A.dungeonArtwork[name]="Interface\\LFGFrame\\LFGIcon-"..icon end
+for _,wing in ipairs({"Graveyard","Library","Armory","Cathedral"}) do
+ A.dungeonArtwork["Scarlet Monastery - "..wing]=A.dungeonArtwork["Scarlet Monastery"]
+end
 for name,icon in pairs(themedIcons) do A.dungeonArtwork[name]="Interface\\Icons\\"..icon end
 -- Existing Lordaeron scenery, used as a thematic substitute for the new dungeon.
 A.dungeonArtwork["Ruins of Lordaeron"]="Interface\\LFGFrame\\LFGIcon-RuinsofLordaeron"

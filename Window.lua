@@ -79,12 +79,15 @@ local function warningIcon(parent)
  return b
 end
 local selected,rows,dungeonButtons,rewardButtons=nil,{},{},{}
-local expandedChains,chainDisplay={},{ }
 function A.DungeonReadinessBadge(q)
  local ready,reason=A.RunReadiness(q)
- if A.Completed(q.id)==true then return "Interface\\Buttons\\UI-CheckBox-Check","Completed\nQuest already turned in." end
- if A.log[q.id] and A.log[q.id].complete then return "Interface\\Buttons\\UI-CheckBox-Check","Objectives finished\nStill needs to be turned in." end
- if A.DungeonWorkFinished(q) then return "Interface\\Buttons\\UI-CheckBox-Check","Dungeon objectives finished\nTurn in the quest; no further dungeon objectives remain for this quest." end
+ if A.Completed(q.id)==true then return nil,"Completed\nQuest already turned in." end
+ if A.log[q.id] and A.log[q.id].complete then return "Interface\\GossipFrame\\ActiveQuestIcon","Objectives finished\nStill needs to be turned in." end
+ if A.DungeonWorkFinished(q) then return "Interface\\GossipFrame\\ActiveQuestIcon","Dungeon objectives finished\nTurn in the quest; no further dungeon objectives remain for this quest." end
+ if A.WalkStep then
+  local step,phase=A.WalkStep(q)
+  if phase=="ready" then return "Interface\\GossipFrame\\ActiveQuestIcon","Ready to turn in\n"..step.name end
+ end
  if ready then return A.log[q.id] and "Interface\\RaidFrame\\ReadyCheck-Ready" or nil,"Ready for dungeon\n"..(reason or "Continue inside the dungeon.") end
  local stage=A.Preparation(q)
  if stage=="blocked" then return nil,"Not ready for dungeon\nQuest requirements are not met." end
@@ -99,7 +102,7 @@ function A.DungeonInstruction(q)
  if A.log[q.id] then return "Active", "Follow the current objectives in your quest log." end
  if not A.WalkStep then return "Readiness unknown", "Check the quest details before entering." end
  local n,phase=A.WalkStep(q)
- if phase=="pickup" then return "Collect quest", "Accept: "..n.name.." from "..(n.pickup or "the quest giver") end
+ if phase=="pickup" then return "Pick up quest", "Accept: "..n.name.." from "..(n.pickup or "the quest giver") end
  if phase=="active" then return n.id==q.id and "Active" or "Preparation needed", "Finish: "..n.name end
  if phase=="ready" then return "Preparation needed", "Turn in: "..n.name end
  if phase=="blocked" then return "Preparation needed", "Check the quest requirements." end
@@ -107,7 +110,7 @@ function A.DungeonInstruction(q)
 end
 function A.DungeonSummary(c)
  local remaining=c.total-c.done-c.skipped-c.finished
- if c.total==0 then return "No eligible quests" end
+ if c.total==0 then return "" end
  if remaining==0 then return c.finished>0 and "Dungeon work finished" or "Completed" end
  if c.ready==remaining then return "Ready for dungeon" end
  return "Preparation needed"
@@ -119,13 +122,13 @@ local statusLabels={
  ["NOT ELIGIBLE NOW"]="Ineligible",
  ["READY FOR DUNGEON"]="Ready for dungeon",
  ["ALREADY COMPLETED"]="Completed",
- ["COLLECT BEFORE ENTERING"]="Collect quest",
+ ["COLLECT BEFORE ENTERING"]="Pick up quest",
  ["PICK UP INSIDE"]="Inside",
  ["QUEST DETAILS"]="Details",
  ["STATUS UNAVAILABLE"]="Unknown",
  ["EARLIER QUEST"]="Prerequisite",
  ["PICKUP LOCATION UNKNOWN"]="Unknown",
- ["PICK UP FIRST"]="Collect quest",
+ ["PICK UP FIRST"]="Pick up quest",
  ["TURN IN FIRST"]="Turn in",
  ["IN YOUR LOG"]="Active",
 }
@@ -145,7 +148,7 @@ function A.QuestRowStatus(q)
   local _,title=A.StepContext(q,n,phase,note); value=title
  end
  local actionable,actionStep,actionPhase=A.ActionReadiness(q)
- if actionable then value=actionPhase=="ready" and (actionStep.id==q.id and "Objectives finished" or "Preparation needed") or "Collect quest" end
+ if actionable then value=actionPhase=="ready" and (actionStep.id==q.id and "Objectives finished" or "Preparation needed") or "Pick up quest" end
  local prefix,quest=label:match("^([^:]+): (.+)$")
  local tip=(prefix or label):lower():gsub("^%l",string.upper)
  if quest then tip=tip..": "..quest end
@@ -161,9 +164,9 @@ function A.QuestRowStatus(q)
  end
  local icon
  if A.Completed(q.id)==true then
-  value="Completed"; icon="Interface\\Buttons\\UI-CheckBox-Check"
+  value="Completed"
  elseif A.log[q.id] and A.log[q.id].complete then
-  value="Objectives finished"; icon="Interface\\Buttons\\UI-CheckBox-Check"
+  value="Objectives finished"; icon="Interface\\GossipFrame\\ActiveQuestIcon"
  elseif A.log[q.id] then value="Active"
  end
  -- Keep level numbers and uncertain/blocked labels explicit; the warning already has its own icon.
@@ -319,7 +322,7 @@ local function details()
  f.targetButton:SetEnabled(macro~=nil)
  f.targetButton.tip=names and ("Target step NPC: "..names.."\nOnly targets an NPC within targeting range.") or "No targetable quest giver name recorded."
  f.source:SetEnabled(q~=nil); f.logButton:SetEnabled(current and A.log[current.id]~=nil or false)
- for _,b in ipairs({f.mapButton,f.logButton,f.source,f.targetButton}) do b:SetShown(q~=nil) end
+ for _,b in ipairs({f.mapButton,f.logButton,f.source,f.targetButton,f.chatButton}) do b:SetShown(q~=nil) end
  if not q then
   f.detailTitle:SetText("Select a quest"); f.metadata:Hide()
   local note="Select a quest from the list to see where to pick it up, its requirements and rewards."
@@ -371,6 +374,8 @@ local function details()
  lines[#lines+1]="|cff684018Where to go|r\n"..(location and (location.title.." - "..location.zone) or "Current destination is not mapped.").."\n"
  if A.RouteInstruction then lines[#lines+1]="|cff684018What to do|r\n"..A.RouteInstruction(q).."\n" end
  if current.id~=q.id then lines[#lines+1]=current.name end
+ local recovery=A.BreadcrumbRecovery and A.BreadcrumbRecovery(q)
+ if recovery then lines[#lines+1]=recovery end
  local chainLabel
  if A.ChainProgress then chainLabel=A.ChainProgress(q) end
  if chainLabel then lines[#lines+1]=chainLabel end
@@ -413,7 +418,7 @@ local function details()
   b.icon:SetTexture(icon or "Interface\\Icons\\INV_Misc_QuestionMark"); b:Show()
  end
  local actionsY=y-#(q.rewards or {})*34
- for i,b in ipairs({f.mapButton,f.logButton,f.source,f.targetButton}) do
+ for i,b in ipairs({f.mapButton,f.logButton,f.source,f.targetButton,f.chatButton}) do
   b:ClearAllPoints(); b:SetPoint("TOPLEFT",f.detailChild,"TOPLEFT",(i-1)*44,actionsY)
  end
  f.detailChild:SetHeight(math.max(1,-actionsY+44))
@@ -438,9 +443,6 @@ end
 function A.Refresh()
  if InCombatLockdown() then return end
  local f=A.window; if not f or not f:IsShown() then return end
- local prep=A.PreparationSummary(A.db.dungeon)
- local remaining=prep.total-prep.done-prep.skipped
- f.progress:SetText(A.DungeonSummary(prep).."\n"..prep.ready.." ready | "..prep.pickup.." collect | "..(prep.chain+prep.check+prep.turnin-prep.finished).." preparing | "..prep.blocked.." blocked\n"..prep.finished.." objectives finished | "..prep.done.." turned in | "..prep.skipped.." skipped")
  f.heading:SetText(A.db.dungeon)
  local visible={}
  for _,q in ipairs(A.quests) do if A.Matches(q) then visible[#visible+1]=q end end
@@ -470,17 +472,7 @@ function A.Refresh()
   visible={}
   for _,g in ipairs(groups) do
    visible[#visible+1]=g.quest; entries[#visible]={group=g}
-   if expandedChains[g.quest.id] then
-    for _,n in ipairs(g.steps) do
-     local child=n
-     if not n.dungeons then
-      child=chainDisplay[n.id] or {}; chainDisplay[n.id]=child
-      for k,v in pairs(n) do child[k]=v end
-      child.prerequisiteOnly=true; child.dungeons=g.quest.dungeons; child.rewards=child.rewards or {}; child.objectives=child.objectives or {}
-     end
-     visible[#visible+1]=child; entries[#visible]={parent=g.quest}
-    end
-   end
+
   end
  end
  local found=false; for _,q in ipairs(visible) do if selected and q.id==selected.id then selected=q; found=true; break end end
@@ -499,16 +491,6 @@ function A.Refresh()
    r.title=text(r,15,10,-8,314); r.status=text(r,12,10,-36,314); r.meta=text(r,11,10,-54,314)
    r.readiness=warningIcon(r); r.readiness:SetPoint("TOPRIGHT",-6,-8)
    r.warning=warningIcon(r); r.warning:SetPoint("TOPRIGHT",-28,-8)
-   r.expand=CreateFrame("Button",nil,r); r.expand:SetSize(20,20); r.expand:SetPoint("TOPLEFT",8,-6)
-   local expandText=r.expand:CreateFontString(nil,"OVERLAY")
-   expandText:SetFont("Fonts\\FRIZQT__.TTF",17,""); expandText:SetPoint("CENTER",0,0)
-   expandText:SetTextColor(0.32,0.23,0.12); r.expand.label=expandText
-   r.expand:SetHighlightTexture("Interface\\Buttons\\WHITE8X8")
-   r.expand:GetHighlightTexture():SetVertexColor(0.40,0.29,0.13,0.12)
-   r.expand:SetScript("OnClick",function()
-    local id=r.quest.id; expandedChains[id]=not expandedChains[id]
-    selected=r.quest; A.Refresh()
-   end)
    r:SetScript("OnEnter",function(self)
     if self.statusTip then GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine(self.statusTip,1,1,1,true); GameTooltip:Show() end
    end)
@@ -526,11 +508,8 @@ function A.Refresh()
     action:SetScript("OnLeave",function() GameTooltip:Hide() end)
    end
    r:SetScript("OnClick",function(self)
+    if IsShiftKeyDown() then A.LinkQuestInChat(A.WalkStep and A.WalkStep(self.quest) or self.quest); return end
     selected=self.quest; f.detailScroll:SetVerticalScroll(0)
-    if self.hasSteps then
-     expandedChains[self.quest.id]=not expandedChains[self.quest.id]
-     A.Refresh(); return
-    end
     -- Selection changes only the highlight and detail pane, not quest state.
     for index,row in ipairs(rows) do
      local chosen=row.quest==selected
@@ -546,10 +525,8 @@ function A.Refresh()
   r.hasSteps=hasSteps
   r.quest=q; r:ClearAllPoints(); r:SetPoint("TOPLEFT",child and 18 or 0,-listHeight)
   r:SetWidth(child and 316 or 334)
-  r.expand:SetShown(hasSteps or false)
-  r.expand.label:SetText("...")
-  r.title:ClearAllPoints(); r.title:SetPoint("TOPLEFT",hasSteps and 38 or 10,-8)
-  r.status:SetWidth(child and 296 or 314); r.meta:SetWidth(child and 296 or 314)
+  r.title:ClearAllPoints(); r.title:SetPoint("TOPLEFT",10,-8)
+  r.status:SetWidth((child and 296 or 314)-(hasSteps and 28 or 0)); r.meta:SetWidth((child and 296 or 314)-(hasSteps and 28 or 0))
   local s=A.state[q.id] or A.Status(q)
   local stage,prepLabel=A.Preparation(q)
   local breadcrumb=((A.walkthroughs or {})[q.id] or q).breadcrumbFor~=nil
@@ -563,7 +540,7 @@ function A.Refresh()
   r.warning.tip=A.DataWarning(q,warningStep,warningPhase); r.warning:SetShown(r.warning.tip~=nil)
   local readinessIcon,readinessTip=A.DungeonReadinessBadge(q)
   r.readiness.icon:SetTexture(readinessIcon); r.readiness.tip=A.DisplayText(readinessTip); r.readiness:SetShown(readinessIcon~=nil)
-  r.title:SetWidth((314-(r.warning.tip and 22 or 0)-(readinessIcon and 24 or 0))-(child and 18 or 0)-(hasSteps and 28 or 0))
+  r.title:SetWidth((314-(r.warning.tip and 22 or 0)-(readinessIcon and 24 or 0))-(child and 18 or 0))
   local statusLabel,statusIcon,statusTip=A.QuestRowStatus(q)
   r.statusTip=statusTip
   r.title:SetText(q.name); r.status:SetText(A.DisplayText(statusLabel)); r.status:SetTextColor(unpack(colors[s]))
@@ -605,29 +582,37 @@ function A.Refresh()
     r.statusTip="Optional introduction quest.\n"..(r.statusTip or "")
    end
   end
-  if hasSteps then
-   local current=A.WalkStep(q)
-   r.status:SetText(A.DungeonInstruction(q))
-   r.meta:SetText("Current step: "..current.name.."\n"..(expandedChains[q.id] and "Click this box to collapse steps." or "Click this box to expand steps."))
-   statusIcon=nil
-  end
   if statusIcon then r.status:SetText("|T"..statusIcon..":14:14:0:0|t "..r.status:GetText()) end
   local summary=A.QuestCardSummary(q)
   if future then summary="Next: "..future.name end
-  if hasSteps then
-   local current=A.WalkStep(q)
-   local instruction; instruction,summary=A.DungeonInstruction(q)
-  end
   if not child and not future and not breadcrumb then
    local instruction,action=A.DungeonInstruction(q)
    r.status:SetText(instruction); summary=action
   end
   if breadcrumb and unnecessary then summary="" end
+  if hasSteps then
+   local current=A.WalkStep(q)
+   local total,index=#entry.group.steps+1,nil
+   for i,n in ipairs(entry.group.steps) do if n.id==current.id then index=i end end
+   if current.id==q.id then index=total end
+   local completed=A.Completed(q.id)==true
+   r.title:SetText((index and not completed and (index.."/"..total.." - ") or "")..current.name)
+   local instruction,action=A.DungeonInstruction(q)
+   r.status:SetText(instruction)
+   summary=current.id~=q.id and ("Dungeon quest: "..q.name) or action
+  end
+  local recovery,dropQuest
+  if A.BreadcrumbRecovery then recovery,dropQuest=A.BreadcrumbRecovery(q) end
+  if recovery then summary=summary~="" and (summary.."\n"..recovery) or recovery end
   r.meta:SetText(summary)
   r.meta:SetShown(summary~="")
   if warningPhase=="check" and not future and not hasSteps and not breadcrumb then
    r.status:SetText("Pickup details")
   end
+  local cardStatus=dropQuest and "Drop quest" or (A.DungeonInstruction(q)=="Ready for dungeon" and "Ready for dungeon" or "")
+  r.status:SetText(cardStatus)
+  r.status:SetShown(cardStatus~="")
+  if dropQuest then r.status:SetTextColor(0.65,0.20,0.08) end
   -- Measure the final text, including readiness descriptions, before sizing.
   -- Round up scaled font measurements and leave room for wrapped descenders.
   local function lineHeight(label)
@@ -635,7 +620,7 @@ function A.Refresh()
   end
   local statusTop=8+lineHeight(r.title)+7
   r.status:ClearAllPoints(); r.status:SetPoint("TOPLEFT",10,-statusTop)
-  local metaTop=statusTop+lineHeight(r.status)+5
+  local metaTop=cardStatus~="" and (statusTop+lineHeight(r.status)+5) or statusTop
   r.meta:ClearAllPoints(); r.meta:SetPoint("TOPLEFT",10,-metaTop)
   local rowHeight=math.max(66,summary~="" and (metaTop+lineHeight(r.meta)+14) or (metaTop+9))
   local current=A.WalkStep and A.WalkStep(q) or q
@@ -656,7 +641,8 @@ function A.Refresh()
  for _,b in ipairs(dungeonButtons) do
   local c=A.PreparationSummary(b.dungeon)
   local remaining=c.total-c.done-c.skipped
-  b:SetText(b.dungeon.."\n"..A.DungeonSummary(c))
+  local status=A.DungeonSummary(c)
+  b:SetText(b.dungeon..(status~="" and ("\n"..status) or ""))
   b:GetFontString():SetTextColor(b.dungeon==A.db.dungeon and 1 or 0.8,b.dungeon==A.db.dungeon and 0.82 or 0.8,0.65)
  end
  f.pinsToggle.tip="Map pins: "..(A.db.pins and "On" or "Off").." - click to toggle"
@@ -670,7 +656,7 @@ function A.SelectQuest(q)
  if A.QuestChainGroups then
   local candidates={}; for _,n in ipairs(A.quests) do if A.Matches(n) then candidates[#candidates+1]=n end end
   for _,g in ipairs(A.QuestChainGroups(candidates)) do
-   for _,n in ipairs(g.steps) do if n.id==q.id then expandedChains[g.quest.id]=true end end
+   for _,n in ipairs(g.steps) do if n.id==q.id then selected=g.quest; break end end
   end
  end
  if not A.window then A.CreateWindow() end
@@ -709,11 +695,12 @@ function A.CreateWindow()
  f.search:SetScript("OnTextChanged",function(self) A.db.search=self:GetText(); f.listScroll:SetVerticalScroll(0); A.Refresh(); A.RefreshPins() end)
  local hint=text(f,10,480,-51,220); hint:SetText("Search quest, dungeon, NPC or ID"); hint:SetTextColor(0.82,0.77,0.65)
  f.pinsToggle=iconButton(f,"Map pins","Interface\\Icons\\INV_Misc_Map_01",710,-20,function() A.db.pins=not A.db.pins; A.Refresh(); A.RefreshPins() end)
+ f.export=iconButton(f,"Export quest progress","Interface\\Icons\\INV_Misc_Note_01",754,-20,function() A.ShowProgressExport(selected) end)
  local ds,dc=scroll(f,16,-81,183,551)
  f.dungeonScroll=ds; f.dungeonChild=dc
  local names={}; for _,d in ipairs(A.dungeons) do names[#names+1]=d.name end
  for i,d in ipairs(names) do
-  local b=button(dc,d,178,0,-(i-1)*86,function() A.db.dungeon=d; f.listScroll:SetVerticalScroll(0); f.detailScroll:SetVerticalScroll(0); A.Refresh(); A.RefreshPins() end)
+  local b=button(dc,d:gsub("^Scarlet Monastery %- ","SM - "),178,0,-(i-1)*86,function() A.db.dungeon=d; f.listScroll:SetVerticalScroll(0); f.detailScroll:SetVerticalScroll(0); A.Refresh(); A.RefreshPins() end)
   b:SetNormalTexture("Interface\\DialogFrame\\UI-DialogBox-Background")
   b:SetPushedTexture("Interface\\DialogFrame\\UI-DialogBox-Background")
   b.art=b:CreateTexture(nil,"OVERLAY"); b.art:SetSize(42,42); b.art:SetPoint("LEFT",5,0)
@@ -725,13 +712,13 @@ function A.CreateWindow()
   b:SetHeight(54); b:GetFontString():SetFont("Fonts\\FRIZQT__.TTF",11,""); b:GetFontString():SetWidth(122)
   b:GetFontString():ClearAllPoints(); b:GetFontString():SetPoint("RIGHT",-5,0)
   b.dungeon=d; dungeonButtons[i]=b
-  b.findGroup=button(dc,d=="Scarlet Monastery" and "All SM dungeons" or "Find Group",178,0,-(i-1)*86-55,function() A.FindGroup(d) end)
+  b.findGroup=button(dc,"Find Group",178,0,-(i-1)*86-55,function() A.FindGroup(d) end)
   b.findGroup:SetScript("OnEnter",function(self) GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine("Browse players for "..d); GameTooltip:AddLine("Select a player, then click Invite.",1,1,1); GameTooltip:Show() end)
   b.findGroup:SetScript("OnLeave",function() GameTooltip:Hide() end)
  end
  dc:SetHeight(#names*86)
- f.heading=text(f,14,232,-83,334); f.progress=text(f,11,232,-107,334)
- f.listScroll,f.listChild=scroll(f,230,-143,334,488)
+ f.heading=text(f,14,232,-83,334)
+ f.listScroll,f.listChild=scroll(f,230,-107,334,524)
  f.empty=text(f.listChild,13,12,-25,302)
  f.detailTitle=text(f,16,604,-91,313)
  f.metadata=CreateFrame("Frame",nil,f); f.metadata:SetSize(100,24); f.metadata:SetPoint("TOPRIGHT",f,"TOPLEFT",917,-91)
@@ -756,12 +743,28 @@ function A.CreateWindow()
  end)
  f.source=iconButton(f.detailChild,"Source link","Interface\\Icons\\INV_Misc_Spyglass_03",692,-600,function()
   if not selected then return end
+  local url=(f.currentQuest and f.currentQuest.source) or selected.source
+  if not url or url=="" then return end
   if not f.link then
-   f.link=CreateFrame("EditBox",nil,f,"InputBoxTemplate"); f.link:SetSize(650,27); f.link:SetPoint("BOTTOM",0,65); f.link:SetAutoFocus(false)
-   f.link:SetScript("OnEscapePressed",function(self) self:Hide() end); f.link:SetScript("OnEnterPressed",function(self) self:Hide() end)
+   f.linkPanel=CreateFrame("Frame",nil,f,"BackdropTemplate")
+   f.linkPanel:SetSize(313,90); f.linkPanel:SetPoint("BOTTOMRIGHT",f,"BOTTOMRIGHT",-30,25)
+   f.linkPanel:SetFrameStrata("DIALOG")
+   f.linkPanel:SetBackdrop({bgFile="Interface\\DialogFrame\\UI-DialogBox-Background",edgeFile="Interface\\Tooltips\\UI-Tooltip-Border",tile=true,tileSize=16,edgeSize=16,insets={left=4,right=4,top=4,bottom=4}})
+   text(f.linkPanel,13,14,-12,250):SetText("Source link")
+   text(f.linkPanel,10,14,-67,285):SetText("Ctrl+C to copy. Enter or Escape to close.")
+   local close=CreateFrame("Button",nil,f.linkPanel,"UIPanelCloseButton")
+   close:SetPoint("TOPRIGHT",0,0); close:SetScript("OnClick",function() f.linkPanel:Hide() end)
+   f.link=CreateFrame("EditBox",nil,f.linkPanel,"InputBoxTemplate")
+   f.link:SetSize(280,27); f.link:SetPoint("TOPLEFT",18,-33); f.link:SetAutoFocus(false)
+   f.link:SetScript("OnEscapePressed",function() f.linkPanel:Hide() end)
+   f.link:SetScript("OnEnterPressed",function() f.linkPanel:Hide() end)
+   f.linkPanel:SetScript("OnHide",function() f.link:ClearFocus() end)
   end
-  f.link:Show(); f.link:SetText((f.currentQuest and f.currentQuest.source) or selected.source); f.link:SetFocus(); f.link:HighlightText(); A.Print("Ctrl+C copies the source link; Escape closes the box.")
+  GameTooltip:Hide()
+  f.linkPanel:Show(); f.link:Show(); f.link:SetText(url); f.link:SetFocus(); f.link:HighlightText()
+
  end)
+ f.chatButton=iconButton(f.detailChild,"Link selected quest in chat (or Shift-click a quest)","Interface\\Icons\\INV_Misc_Note_01",780,-600,function() A.LinkQuestInChat(selected) end)
  f.targetButton=iconButton(f.detailChild,"Target quest giver","Interface\\Icons\\Ability_Hunter_SniperShot",736,-600,nil,"SecureActionButtonTemplate")
  f.targetButton:RegisterForClicks("AnyUp","AnyDown")
  f.targetButton:SetAttribute("type","macro")

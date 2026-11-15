@@ -1,0 +1,38 @@
+{
+  "78916": {
+    "id": 78916,
+    "name": "The Heart of the Void",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/the-heart-of-the-void-78916/",
+    "unverifiedChain": true,
+    "pickup": "Loot the quest-starting Perfect Blackfathom Pearl from Aku'mai in Blackfathom Deeps; take it to Dawnwatcher Selgorm in Darnassus.",
+    "pickupInside": true,
+    "faction": "Alliance",
+    "objectives": [
+      "Perfect Blackfathom Pearl"
+    ],
+    "checked": "2026-11-07",
+    "requirementsNote": "Right-click the Perfect Blackfathom Pearl to check whether you can accept this quest. Its minimum level is not yet confirmed.",
+    "readinessReviewed": "2026-11-10"
+  },
+  "78917": {
+    "id": 78917,
+    "name": "The Heart of the Void",
+    "all": [],
+    "any": [],
+    "evidence": "Beta cache report",
+    "source": "https://wowforevertalents.com/quests/the-heart-of-the-void-78917/",
+    "unverifiedChain": true,
+    "pickup": "Loot the quest-starting Perfect Blackfathom Pearl from Aku'mai in Blackfathom Deeps; take it to Bashana Runetotem in Thunder Bluff.",
+    "pickupInside": true,
+    "faction": "Horde",
+    "objectives": [
+      "Perfect Blackfathom Pearl"
+    ],
+    "checked": "2026-11-07",
+    "requirementsNote": "Right-click the Perfect Blackfathom Pearl to check whether you can accept this quest. Its minimum level is not yet confirmed.",
+    "readinessReviewed": "2026-11-10"
+  }
+}

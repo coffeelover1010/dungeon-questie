@@ -81,13 +81,19 @@ for _,state in ipairs({"unknown","active","ready","done","blocked"}) do
  if state=="blocked" then level=1 end
  local expected=A.MapLocation(q)
  A.SelectQuest(q)
- local actual=A.MapLocation(q)
+ local representative=q
+ local candidates={}; for _,candidate in ipairs(A.quests) do if A.Matches(candidate) then candidates[#candidates+1]=candidate end end
+ for _,group in ipairs(A.QuestChainGroups(candidates)) do
+  for _,step in ipairs(group.steps) do if step.id==q.id then representative=group.quest end end
+ end
+ local actual=A.MapLocation(representative)
  assert((A.window.mapTarget~=nil)==(actual~=nil),state.." map button disagrees with resolver")
 end
 completed={}; level=60; A.log={[95647]={complete=false}}
 assert(select(2,A.WalkStep(A.byID[95737]))=="skipped")
 assert(not A.MapLocation(A.byID[95737]),"Skipped breadcrumb must not suggest a trip")
--- Browse a completed quest's map and keep its pin across a scan.
+-- Browse a completed standalone quest; grouped quests may advance to the next goal.
+q=A.byID[168]
 completed[q.id]=true; A.log={}; A.SelectQuest(q)
 local target=A.window.mapTarget
 A.Navigate(target); assert(A.locationTarget and A.locationTarget.id==target.id and A.RefreshPins()>0)

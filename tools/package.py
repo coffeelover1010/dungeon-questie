@@ -14,6 +14,8 @@ files.add(ROOT/'PROVIDER-INTEGRATION.md')
 files.add(ROOT/'RESEARCH-2026-11-13.md')
 files.add(ROOT/'ARTWORK-REVIEW-2026-11-13.md')
 files.add(ROOT/'ROUTING-REVIEW-2026-11-13.md')
+files.add(ROOT/'SM-WINGS-2026-11-14.md')
+files.add(ROOT/'AVAILABILITY-REVIEW-2026-11-15.md')
 out=ROOT/'dist';out.mkdir(exist_ok=True)
 archive=out/f'DungeonQuestie-{version}.zip'
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:

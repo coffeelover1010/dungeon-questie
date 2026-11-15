@@ -26,6 +26,23 @@ end
 lua.execute((Path(__file__).resolve().parents[1]/'QuestGroups.lua').read_text(), 'DungeonGuideForever',lua.globals().A)
 lua.execute('''
 local q={id=123,name="Group Quest"}
+-- All quest types can be linked, without sending or replacing an open draft.
+tag=81
+local inserted
+ChatEdit_InsertLink=function(link) inserted=link; return true end
+A.LinkQuestInChat(q); assert(inserted==GetQuestLink(123) and draft==nil)
+ChatEdit_InsertLink=function() return false end
+A.LinkQuestInChat(q); assert(draft==GetQuestLink(123)); draft=nil
+local native=GetQuestLink; GetQuestLink=function() return nil end
+assert(A.QuestChatLink({id=456,name="Unaccepted",level=30})=="|cffffff00|Hquest:456:30|h[Unaccepted]|h|r")
+GetQuestLink=function() error("Not cached") end
+assert(A.QuestChatLink({id=456,name="Unknown level"}):find("quest:456:-1",1,true))
+GetQuestLink=native; ChatEdit_InsertLink=nil
+local modern=ChatFrameUtil; ChatFrameUtil=nil
+ChatFrame_OpenChat=function(s) draft=s end
+A.LinkQuestInChat(q); assert(draft==GetQuestLink(123)); draft=nil
+ChatFrame_OpenChat=nil; A.LinkQuestInChat(q); assert(message=="Chat input is unavailable.")
+A.LinkQuestInChat(nil); ChatFrameUtil=modern; tag=1
 assert(A.IsGroupQuest(q)); tag=41; assert(not A.IsGroupQuest(q))
 tag=0; size=3; assert(A.IsGroupQuest(q)); size=1; assert(not A.IsGroupQuest(q))
 size=5

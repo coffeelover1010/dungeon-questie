@@ -1,5 +1,5 @@
 {
-  "targets": 320,
+  "targets": 318,
   "nodes": 550,
   "targetsWithPrerequisites": 115,
   "unverifiedForeverTargets": [
@@ -16,8 +16,6 @@
     95737,
     95772,
     1442,
-    78916,
-    78917,
     79360,
     92458,
     96988,

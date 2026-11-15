@@ -1,5 +1,5 @@
 {
-  "providerVersion": "1.1.0",
+  "providerVersion": "1.1.1",
   "quests": [
     {
       "id": 96395,
@@ -206,10 +206,10 @@
       "name": "Researching the Corruption",
       "pickupKind": "pickup",
       "mapKind": "pickup",
-      "map": 1439,
-      "x": 38.33,
-      "y": 43.04,
-      "title": "Gershala Nightwhisper"
+      "map": 1453,
+      "x": 36.24,
+      "y": 67.61,
+      "title": "Argos Nightwhisper"
     },
     {
       "id": 1199,
@@ -306,10 +306,10 @@
       "name": "Save Techbot's Brain!",
       "pickupKind": "pickup",
       "mapKind": "pickup",
-      "map": 1455,
-      "x": 69.55,
-      "y": 50.33,
-      "title": "Tinkmaster Overspark"
+      "map": 1453,
+      "x": 51.05,
+      "y": 48.39,
+      "title": "Brother Sarno"
     },
     {
       "id": 2923,
@@ -396,20 +396,20 @@
       "name": "Essential Artificials",
       "pickupKind": "pickup",
       "mapKind": "pickup",
-      "map": 1455,
-      "x": 67.92,
-      "y": 46.1,
-      "title": "Klockmort Spannerspan"
+      "map": 1457,
+      "x": 59.51,
+      "y": 45.38,
+      "title": "Mathiel"
     },
     {
       "id": 2930,
       "name": "Data Rescue",
       "pickupKind": "pickup",
       "mapKind": "pickup",
-      "map": 1455,
-      "x": 69.83,
-      "y": 48.1,
-      "title": "Master Mechanic Castpipe"
+      "map": 1442,
+      "x": 59.52,
+      "y": 67.15,
+      "title": "Gaxim Rustfizzle"
     },
     {
       "id": 2929,
@@ -1467,9 +1467,9 @@
       "pickupKind": "pickup",
       "mapKind": "pickup",
       "map": 1437,
-      "x": 56.37,
-      "y": 40.4,
-      "title": "Rethiel the Greenwarden"
+      "x": 10.9,
+      "y": 59.64,
+      "title": "First Mate Fitzsimmons"
     },
     {
       "id": 95647,
@@ -1734,14 +1734,6 @@
       "name": "Fallen in the Fen"
     },
     {
-      "id": 78916,
-      "name": "The Heart of the Void"
-    },
-    {
-      "id": 78917,
-      "name": "The Heart of the Void"
-    },
-    {
       "id": 96246,
       "name": "Blackmaw Pouches"
     },
@@ -1790,6 +1782,14 @@
       "name": "More Valuable Than Gold"
     },
     {
+      "id": 78917,
+      "name": "The Heart of the Void"
+    },
+    {
+      "id": 78916,
+      "name": "The Heart of the Void"
+    },
+    {
       "id": 86792,
       "name": "Thinning Their Forces"
     },
@@ -1818,11 +1818,11 @@
       "name": "The Twin Bears"
     },
     {
-      "id": 94980,
+      "id": 94973,
       "name": "Krol'dok Moulding"
     },
     {
-      "id": 94973,
+      "id": 94980,
       "name": "Krol'dok Moulding"
     },
     {
@@ -2222,14 +2222,6 @@
     {
       "id": 1442,
       "name": "Seeking the Kor Gem"
-    },
-    {
-      "id": 78916,
-      "name": "The Heart of the Void"
-    },
-    {
-      "id": 78917,
-      "name": "The Heart of the Void"
     },
     {
       "id": 79360,

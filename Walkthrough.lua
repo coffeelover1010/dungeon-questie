@@ -99,6 +99,21 @@ local function resolve(id,path)
  if n.unverifiedChain then return n,"check","Earlier quest requirements are not fully recorded." end
  if n.pickupUnknown then return n,"check","Pickup source is not verified." end
  if A.Availability(id)==false then return n,"unavailable","Not offered by the current NPC." end
+ -- Offer optional introductions before their destination when still eligible.
+ local breadcrumbs={}
+ for bid,b in pairs(nodes) do
+  if b.breadcrumbFor==id and not path[bid] and A.Completed(bid)==false
+   and not A.WalkRestriction(b) and not A.BreadcrumbSuccessor(bid) then
+   breadcrumbs[#breadcrumbs+1]=bid
+  end
+ end
+ table.sort(breadcrumbs)
+ for _,bid in ipairs(breadcrumbs) do
+  path[id]=true
+  local step,phase,note=resolve(bid,path)
+  path[id]=nil
+  if step and (phase=="pickup" or phase=="active" or phase=="ready") then return step,phase,note end
+ end
  -- Known requirements suffice for guide pickup; a live offer is not required.
  return n,"pickup"
 end
@@ -197,6 +212,29 @@ function A.QuestChainGroups(visible)
  -- Malformed cyclic source links must never hide every box.
  if #groups==0 then for _,q in ipairs(visible) do groups[#groups+1]={quest=q,steps={}} end end
  return groups
+end
+
+-- Only suggest abandonment for the direct, active destination. Turn-ins
+-- cannot be undone, and reference links do not guarantee a restored offer.
+function A.BreadcrumbRecovery(q)
+ local groups=A.QuestChainGroups({q})
+ for _,g in ipairs(groups) do
+  local route={q}
+  for _,n in ipairs(g.steps) do route[#route+1]=n end
+  for _,n in ipairs(route) do
+   local b=nodes[n.id] or n
+   local target=b.breadcrumbFor
+   if target and A.Completed(b.id)==false and not A.log[b.id]
+    and not A.WalkRestriction(b) and A.Availability(b.id)~=true then
+    local destination=nodes[target] or A.byID[target]
+    if destination and A.log[target] and A.Completed(target)==false then
+     return "Missed breadcrumb: "..b.name..". To try to collect it, abandon "..destination.name.." first, then check the breadcrumb giver. Abandoning may lose quest progress; the breadcrumb offer is not guaranteed.",true
+    elseif A.BreadcrumbSuccessor(b.id) then
+     return "Missed breadcrumb: "..b.name..". You have progressed beyond it; abandoning a later quest cannot undo completed quests."
+    end
+   end
+  end
+ end
 end
 
 -- Extend past the selected dungeon quest only along an unambiguous follow-up.

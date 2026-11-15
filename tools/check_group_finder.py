@@ -41,6 +41,11 @@ assert(A.GroupActivities("Deadmines")[1]==11)
 assert(A.GroupActivities("The Hall of Thanes")[1]==13)
 assert(A.GroupActivities("Scarlet Monastery")[1]==12) -- client-defined wing group
 assert(#A.GroupActivities("Scarlet Monastery")==4) -- include wings without group metadata
+for wing,id in pairs({Graveyard=12,Library=14,Armory=15,Cathedral=16}) do
+ local ids=A.GroupActivities("Scarlet Monastery - "..wing)
+ assert(#ids==1 and ids[1]==id) -- never expand a wing to the whole monastery
+end
+assert(A.GroupActivities("Scarlet Monastery - Armoury")[1]==15)
 assert(#A.GroupActivities("Scarlet")==0) -- no guessed partial match
 A.FindGroup("Stormwind Stockade"); assert(searches==1 and selectedIDs[1]==10 and hidden==1)
 A.FindGroup("Deadmines"); assert(searches==2 and #selectedIDs==1 and selectedIDs[1]==11)

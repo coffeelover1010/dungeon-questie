@@ -1,3 +1,13 @@
+## 0.2.4 — 15 November 2026
+
+- Simplify quest cards around the current chain step, with clearer preparation and dungeon-ready states.
+- Split Scarlet Monastery into Graveyard, Library, Armory and Cathedral with wing-specific quests and Group Finder searches.
+- Add copyable quest-progress exports and clickable quest links in chat drafts.
+- Improve current-destination map previews, source-link copying and missed breadcrumb guidance.
+- Exclude the disputed Heart of the Void variants from the active catalogue and preserve explicit exclusions across rebuilds.
+
+The supplied in-game screenshot shows the current journal layout. Offline checks cover progression, routing, provider integration and packaging; they do not establish every live quest offer or server drop.
+
 ## 0.2.3
 
 - Resolve map destinations from the current quest phase: pickup, objective or hand-in. Missing preparation locations no longer fall back to dungeon entrances.

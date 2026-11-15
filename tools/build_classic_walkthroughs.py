@@ -102,6 +102,9 @@ def visit(i):
     for prior in n.get('all',[])+n.get('any',[])+([n['breadcrumbFor']] if n.get('breadcrumbFor') else []):
         if prior>0:visit(prior)
 for q in catalogue:visit(q['id'])
+# Retain reviewed excluded records for research without restoring checklist goals.
+for quest_id, record in read('excluded-walkthroughs.json').items():
+    if quest_id in read('catalogue-exclusions.json'): nodes.setdefault(quest_id, record)
 for quest_id in review['nodes']:visit(int(quest_id))
 def to_lua(v):
     if v is None:return 'nil'

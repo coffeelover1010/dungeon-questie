@@ -74,7 +74,13 @@ n,p=A.WalkStep(A.byID[1654]); assert(p=="blocked")
 -- Eligible catalogue details render with the real resolver; restricted ones stay hidden.
 for _,quest in ipairs(A.quests) do
  A.SelectQuest(quest)
- if not A.Restriction(quest) and A.ChecklistVisible(quest) then assert(A.window.detailTitle:GetText()==quest.name)
+ if not A.Restriction(quest) and A.ChecklistVisible(quest) then
+  local expected=quest
+  local candidates={}; for _,candidate in ipairs(A.quests) do if A.Matches(candidate) then candidates[#candidates+1]=candidate end end
+  for _,group in ipairs(A.QuestChainGroups(candidates)) do
+   for _,step in ipairs(group.steps) do if step.id==quest.id then expected=group.quest end end
+  end
+  assert(A.window.detailTitle:GetText()==expected.name,"Selected chain representative: "..quest.id)
  else assert(not A.Matches(quest)) end
 end
 ''')
@@ -103,7 +109,12 @@ for _,q in ipairs(A.quests) do
  A.SelectQuest(q)
  if not A.Restriction(q) and A.ChecklistVisible(q) then
   local hasHeading=A.window.detailText:GetText():find("|cff684018Rewards|r",1,true)~=nil
-  assert(hasHeading==(#(q.rewards or {})>0))
+  local representative=q
+  local candidates={}; for _,candidate in ipairs(A.quests) do if A.Matches(candidate) then candidates[#candidates+1]=candidate end end
+  for _,group in ipairs(A.QuestChainGroups(candidates)) do
+   for _,step in ipairs(group.steps) do if step.id==q.id then representative=group.quest end end
+  end
+  assert(hasHeading==(#(representative.rewards or {})>0))
  end
 end
 ''')
@@ -247,7 +258,7 @@ A.log[q.id]={complete=false}; level=30
 assert(A.QuestRowStatus(q)=="Active", "Accepted quests must not be blocked by reference level data")
 A.log[q.id]=nil; completed[q.id]=true
 local done,doneIcon=A.QuestRowStatus(q)
-assert(done=="Completed" and doneIcon)
+assert(done=="Completed" and doneIcon==nil,"Completed label does not reuse an actionable quest icon")
 completed[q.id]=nil; A.walkthroughs[q.id]=nil; A.walkthroughs[990082]=nil
 level=oldLevel; faction=oldFaction
 ''')
@@ -294,7 +305,7 @@ local text,title=A.StepContext(q,n,p,note)
 assert(text:find("Titan Relic",1,true) and text:find("Recorded level requirement met",1,true))
 assert(A.ActionReadiness(q))
 assert(A.WalkInstructions(q):find("Titan Relic",1,true))
-assert(A.QuestRowStatus(q)=="Collect quest")
+assert(A.QuestRowStatus(q)=="Pick up quest")
 q=A.byID[95795]; n,p,note=A.WalkStep(q)
 text,title=A.StepContext(q,n,p,note)
 assert(n.id==95772 and text:find("Dorin",1,true) and title=="Data incomplete")

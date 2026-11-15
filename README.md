@@ -1,5 +1,13 @@
 # Dungeon Questie
 
+Version **0.2.4** — 15 November 2026. A focused dungeon quest journal with current-step cards, destination maps, quest chat links and copyable progress exports.
+
+
+Scarlet Monastery now has separate Graveyard, Library, Armory and Cathedral
+entries, with wing-specific quest lists and Group Finder searches. Recruitment
+uses the selected wing's client-suggested levels. Shared quests retain shared
+progress. See [wing review](SM-WINGS-2026-11-14.md).
+
 Current location artwork and status changes: [13 November review](ARTWORK-REVIEW-2026-11-13.md). Every selected quest uses the shared current-destination map preview or an explicit unmapped fallback. Unaccepted actions have no completion tick; objectives finished and turned-in quests remain distinct. Coverage gaps and live-client checks are listed in the review.
 
 ## 0.2.1 — Forever dungeon review, 13 November 2026
@@ -31,13 +39,16 @@ or want a companion to their existing quest addon. Made for **WoW Forever**.
 
 Open with **`/dungeons`**, **`/dgf`**, or the minimap button.
 
-Coverage: **266 quests across 25 dungeon groups**, reviewed 7 November 2026.
-Four dungeon groups have no catalogue records. Source details distinguish
-Classic references and approximate pins. Empty lists do not mean every quest is done.
+**Shift-click a quest** to insert its clickable quest link into chat, or use
+**Link selected quest in chat** beneath its details. This also works for quests
+you have not picked up. If chat is closed, it opens a draft; press Enter to send.
+The link refers to the selected quest, including a prerequisite when selected.
+
+Current catalogue: **318 quest records across 32 dungeon groups**. Counts include faction variants and chain stages. Source details distinguish Classic references and approximate pins. Empty lists do not mean every quest is done.
 
 ## Screenshots
 
-![Dungeon Questie dungeon readiness and quest details](release-media/dungeon-questie-2026-11-12.png)
+![Dungeon Questie dungeon readiness and quest details](release-media/dungeon-questie-2026-11-15.png)
 
 ## Quest actions and availability
 
@@ -112,3 +123,5 @@ This is an independent addon, unaffiliated with the Questie project.
 · [7 November review and dependency recommendation](RESEARCH-2026-11-07.md)
 
 [Provider integration, precedence, licensing and offline audit](PROVIDER-INTEGRATION.md).
+
+Quest chains show one current-step card, advancing through optional breadcrumbs and preparation to the dungeon quest. Click for current directions; Shift-click links the current quest. Missed breadcrumbs identify a directly active destination to abandon if you want to try recovering the breadcrumb. Progress may be lost and the offer is not guaranteed; completed quests cannot be undone.

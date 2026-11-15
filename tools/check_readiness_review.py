@@ -44,7 +44,8 @@ for _,id in ipairs({2947,2949}) do
  completed[2945]=true; A.log={}; assert(A.RunReadiness(q))
  A.log[id]={complete=false}; assert(not A.RunReadiness(q),"Return to city no longer needs run")
 end
-for _,id in ipairs({3366,78916,78917}) do
+assert(not A.byID[78916] and not A.byID[78917],"Excluded pearl quests stay out of the catalogue")
+for _,id in ipairs({3366}) do
  local q=A.byID[id]; reset(q); assert(not A.RunReadiness(q))
  assert(A.walkthroughs[id].requirementsNote)
  A.offers[id]=true; assert(A.RunReadiness(q),"Real item offer overrides uncertain source")
@@ -59,5 +60,5 @@ for _,q in ipairs(A.quests) do
  if n.turninInside then assert(A.RunReadiness(q),q.id) end
  count=count+1
 end
-print("PASS: 13 reviewed pickups, 3 unresolved records, inside/outside transitions, both ring branches, Heartwoven advancement/abandonment and "..count.." catalogue invariants")
+print("PASS: 13 reviewed pickups, 1 unresolved active record and 2 excluded variants, inside/outside transitions, both ring branches, Heartwoven advancement/abandonment and "..count.." catalogue invariants")
 ''')

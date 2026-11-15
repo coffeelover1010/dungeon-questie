@@ -297,6 +297,7 @@ events:SetScript("OnEvent",function(_,event,arg)
   A.db.mine=nil -- Remove the retired character-filter choice.
   A.db.betaOnly=nil -- Retired filter has no UI; retain labelled Classic references.
   if A.db.pins==nil then A.db.pins=true end
+  if A.db.dungeon=="Scarlet Monastery" then A.db.dungeon="Scarlet Monastery - Graveyard" end
   local validDungeon=false
   for _,d in ipairs(A.dungeons) do if d.name==A.db.dungeon then validDungeon=true; break end end
   if not validDungeon then A.db.dungeon=A.dungeons[1].name end

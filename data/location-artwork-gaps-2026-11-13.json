@@ -2991,14 +2991,14 @@
     {
       "id": 97173,
       "missing": [
-        "objective"
+        "objective",
+        "turn-in"
       ]
     },
     {
       "id": 97198,
       "missing": [
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {

@@ -368,10 +368,26 @@
     "handInMapped": true
   },
   {
+    "id": 95284,
+    "name": "The Elite of the Elite",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
     "id": 4185,
     "name": "The True Masters",
     "objectiveLocation": "Lady Katrana Prestor",
     "map": 1453,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 95285,
+    "name": "Right Place, Wrong Time",
+    "objectiveLocation": null,
+    "map": null,
     "breadcrumb": false,
     "handInMapped": true
   },
@@ -1216,6 +1232,22 @@
     "handInMapped": true
   },
   {
+    "id": 78917,
+    "name": "The Heart of the Void",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
+    "id": 78916,
+    "name": "The Heart of the Void",
+    "objectiveLocation": null,
+    "map": null,
+    "breadcrumb": false,
+    "handInMapped": true
+  },
+  {
     "id": 95786,
     "name": "An Acquaintance in Southshore",
     "objectiveLocation": null,
@@ -1306,22 +1338,6 @@
   {
     "id": 95283,
     "name": "The Missing Kor'kron",
-    "objectiveLocation": null,
-    "map": null,
-    "breadcrumb": false,
-    "handInMapped": true
-  },
-  {
-    "id": 95284,
-    "name": "The Elite of the Elite",
-    "objectiveLocation": null,
-    "map": null,
-    "breadcrumb": false,
-    "handInMapped": true
-  },
-  {
-    "id": 95285,
-    "name": "Right Place, Wrong Time",
     "objectiveLocation": null,
     "map": null,
     "breadcrumb": false,

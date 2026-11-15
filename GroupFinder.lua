@@ -1,6 +1,6 @@
 local _, A = ...
 
-local aliases={stockade="stockades",stormwindstockade="stockades",stormwindstockades="stockades"}
+local aliases={stockade="stockades",stormwindstockade="stockades",stormwindstockades="stockades",scarletmonasteryarmoury="scarletmonasteryarmory"}
 local function key(name)
  local value=(name or ""):lower():gsub("^the%s+",""):gsub("[^%w]","")
  return aliases[value] or value

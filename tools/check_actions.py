@@ -39,7 +39,7 @@ completed[1198]=true; state({})
 n,p=A.WalkStep(q); assert(n.id==1200 and p=="inside")
 assert(A.ActionReadiness(q))
 A.offers[1200]=true; A.Refresh()
-assert(A.ActionReadiness(q) and A.QuestRowStatus(q)=="Collect quest")
+assert(A.ActionReadiness(q) and A.QuestRowStatus(q)=="Pick up quest")
 assert(b:GetAttribute("macrotext")=="/targetexact Argent Guard Thaelrid",tostring(b:GetAttribute("macrotext")))
 -- Unknown, missing and non-creature targets must clear the previous macro.
 A.offers[1275]=false; A.SelectQuest(A.byID[1275]); assert(not b.enabled and b:GetAttribute("macrotext")==nil)
@@ -133,7 +133,7 @@ state({{questID=1275,title="Researching the Corruption",complete=true}})
 assert(not A.RunReadiness(A.byID[1275]),"Outside hand-in does not need a dungeon run")
 completed[1275]=true; state({})
 assert(not A.RunReadiness(A.byID[1275]))
-assert(select(1,A.DungeonReadinessBadge(A.byID[1275])):find("UI-CheckBox-Check",1,true))
+assert(A.DungeonReadinessBadge(A.byID[1275])==nil,"Completed quests have no gold tick")
 -- Combat guard: model the registered secure state transition, then assert
 -- no insecure attribute/layout mutation; reopening rescans the latest state.
 A.SelectQuest(q)

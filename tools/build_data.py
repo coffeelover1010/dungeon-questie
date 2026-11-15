@@ -137,7 +137,9 @@ dungeon_levels=[
     ('Ruins of Lordaeron',15),('Wailing Caverns',15),('Deadmines',18),
     ('Shadowfang Keep',22),('Stormwind Stockade',22),
     ('Excavation Site: Wetlands',24),('Blackfathom Deeps',24),
-    ('City of Dalaran',28),('Scarlet Monastery',28),('Gnomeregan',29),
+    ('City of Dalaran',28),('Scarlet Monastery - Graveyard',28),('Gnomeregan',29),
+    ('Scarlet Monastery - Library',32),('Scarlet Monastery - Armory',35),
+    ('Scarlet Monastery - Cathedral',38),
     ('Razorfen Kraul',30),('The Drowned City',35),
     ("Krol'dok Stronghold",40),('Razorfen Downs',40),('Uldaman',42),
     ("Zul'Farrak",44),('Maraudon',45),('Alcaz Prison',48),
@@ -154,6 +156,17 @@ for record in review['catalogue']:
     if record['id'] in by: by[record['id']].update(record)
     else:
         qs.append(record); by[record['id']]=record
+# Wing selection is local catalogue policy; shared goals retain one quest ID.
+# See SM-WINGS-2026-11-14.md for membership evidence and level limitations.
+sm_wings=['Scarlet Monastery - '+wing for wing in ('Graveyard','Library','Armory','Cathedral')]
+sm_members={1051:[0],1113:[0,1,2,3],1048:[1,2,3],1053:[1,2,3],
+            1049:[1],1160:[1],1050:[1],1951:[1],96800:[1],1394:[1]}
+for q in qs:
+    if 'Scarlet Monastery' in q['dungeons']:
+        q['dungeons']=[d for d in q['dungeons'] if d!='Scarlet Monastery']+[sm_wings[i] for i in sm_members[q['id']]]
+# Explicit checklist exclusions retain their original research records.
+exclusions=json.loads((ROOT/'data/catalogue-exclusions.json').read_text(encoding='utf-8'))
+qs=[q for q in qs if str(q['id']) not in exclusions]
 populated={d for q in qs for d in q['dungeons']}
 notes_path=ROOT/'data/dungeon-notes.json'
 notes=json.loads(notes_path.read_text(encoding='utf-8')) if notes_path.exists() else {}

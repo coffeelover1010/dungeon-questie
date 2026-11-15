@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "flavour": "Forever",
   "contract": 4,
   "fields": {
@@ -2779,18 +2779,6 @@
       "raceMask",
       "classMask"
     ],
-    "78916": [
-      "minLevel",
-      "level",
-      "objectives",
-      "raceMask"
-    ],
-    "78917": [
-      "minLevel",
-      "level",
-      "objectives",
-      "raceMask"
-    ],
     "79360": [
       "minLevel",
       "level",
@@ -3272,6 +3260,10 @@
       "objectives",
       "raceMask"
     ],
+    "92070": [
+      "level",
+      "objectives"
+    ],
     "92069": [
       "level",
       "objectives"
@@ -3379,6 +3371,18 @@
       "any",
       "raceMask"
     ],
+    "78916": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "78917": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
     "97289": [
       "minLevel",
       "level",
@@ -3409,21 +3413,20 @@
     ]
   },
   "coverage": {
-    "version": "1.1.0",
+    "version": "1.1.1",
     "flavour": "Forever",
     "contract": 4,
-    "catalogue": 320,
-    "providerFound": 316,
+    "catalogue": 318,
+    "providerFound": 315,
     "missing": [
       3366,
       3911,
-      95056,
-      92070
+      95056
     ],
-    "positiveMinimum": 306,
-    "objectivesText": 307,
+    "positiveMinimum": 304,
+    "objectivesText": 306,
     "starters": 296,
-    "finishers": 295,
+    "finishers": 293,
     "prerequisiteLinks": 125
   }
 }

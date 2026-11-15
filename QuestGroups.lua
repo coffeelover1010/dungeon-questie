@@ -1,4 +1,19 @@
 local _, A = ...
+function A.QuestChatLink(q)
+ if not q or not tonumber(q.id) then return end
+ local link=A.Safe(GetQuestLink,q.id)
+ if type(link)=="string" and link~="" then return link end
+ -- Unaccepted quests may not be cached by the client yet.
+ local name=tostring(q.name or ("Quest "..q.id)):gsub("|",""):gsub("[\r\n]"," ")
+ return string.format("|cffffff00|Hquest:%d:%d|h[%s]|h|r",q.id,tonumber(q.level) or -1,name)
+end
+function A.LinkQuestInChat(q)
+ local link=A.QuestChatLink(q)
+ if not link then return end
+ if ChatEdit_InsertLink and ChatEdit_InsertLink(link) then return end
+ local open=ChatFrameUtil and ChatFrameUtil.OpenChat or ChatFrame_OpenChat
+ if open then open(link) else A.Print("Chat input is unavailable.") end
+end
 local instanceTags={[62]=true,[81]=true,[85]=true,[88]=true,[89]=true}
 function A.IsGroupQuest(q)
  if not q then return false end

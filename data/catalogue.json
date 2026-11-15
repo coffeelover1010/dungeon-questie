@@ -4119,7 +4119,9 @@
     "id": 1048,
     "name": "Into The Scarlet Monastery",
     "dungeons": [
-      "Scarlet Monastery"
+      "Scarlet Monastery - Library",
+      "Scarlet Monastery - Armory",
+      "Scarlet Monastery - Cathedral"
     ],
     "minLevel": 33,
     "faction": "Horde",
@@ -4138,7 +4140,9 @@
     "id": 1053,
     "name": "In the Name of the Light",
     "dungeons": [
-      "Scarlet Monastery"
+      "Scarlet Monastery - Library",
+      "Scarlet Monastery - Armory",
+      "Scarlet Monastery - Cathedral"
     ],
     "minLevel": 34,
     "faction": "Alliance",
@@ -4157,7 +4161,7 @@
     "id": 1051,
     "name": "Vorrel's Revenge",
     "dungeons": [
-      "Scarlet Monastery"
+      "Scarlet Monastery - Graveyard"
     ],
     "minLevel": 25,
     "faction": "Horde",
@@ -4205,7 +4209,10 @@
     "id": 1113,
     "name": "Hearts of Zeal",
     "dungeons": [
-      "Scarlet Monastery"
+      "Scarlet Monastery - Graveyard",
+      "Scarlet Monastery - Library",
+      "Scarlet Monastery - Armory",
+      "Scarlet Monastery - Cathedral"
     ],
     "minLevel": 30,
     "faction": "Horde",
@@ -4255,7 +4262,7 @@
     "id": 1049,
     "name": "Compendium of the Fallen",
     "dungeons": [
-      "Scarlet Monastery"
+      "Scarlet Monastery - Library"
     ],
     "minLevel": 28,
     "faction": "Horde",
@@ -4303,7 +4310,7 @@
     "id": 1160,
     "name": "Test of Lore",
     "dungeons": [
-      "Scarlet Monastery"
+      "Scarlet Monastery - Library"
     ],
     "minLevel": 26,
     "faction": "Horde",
@@ -4350,7 +4357,7 @@
     "id": 1050,
     "name": "Mythology of the Titans",
     "dungeons": [
-      "Scarlet Monastery"
+      "Scarlet Monastery - Library"
     ],
     "minLevel": 28,
     "faction": "Alliance",
@@ -4404,7 +4411,7 @@
     "id": 1951,
     "name": "Rituals of Power",
     "dungeons": [
-      "Scarlet Monastery"
+      "Scarlet Monastery - Library"
     ],
     "minLevel": 30,
     "faction": null,
@@ -8412,104 +8419,6 @@
     }
   },
   {
-    "id": 78916,
-    "pickup": "Loot the quest-starting Perfect Blackfathom Pearl from Aku'mai in Blackfathom Deeps; take it to Dawnwatcher Selgorm in Darnassus.",
-    "prereqs": [],
-    "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
-    "name": "The Heart of the Void",
-    "dungeons": [
-      "Blackfathom Deeps"
-    ],
-    "source": "https://wowforevertalents.com/quests/the-heart-of-the-void-78916/",
-    "evidence": "Beta cache report",
-    "checked": "2026-11-07",
-    "level": 25,
-    "faction": "Alliance",
-    "objectives": [
-      "Perfect Blackfathom Pearl"
-    ],
-    "rewards": [
-      {
-        "id": 211451,
-        "name": "Acolyte's Void Pearl"
-      },
-      {
-        "id": 211450,
-        "name": "Invoker's Void Pearl"
-      },
-      {
-        "id": 211449,
-        "name": "Avenger's Void Pearl"
-      }
-    ],
-    "people": [
-      "Turned in to: Dawnwatcher Selgorm"
-    ],
-    "personEvidence": [
-      {
-        "role": "Turned in to",
-        "name": "Dawnwatcher Selgorm",
-        "location": "Darnassus, Craftsmen's Terrace (56.0, 24.3)"
-      }
-    ],
-    "sourceDetails": [
-      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532) · the WFT Beta Log addon, 23 October 2026"
-    ],
-    "chain": [],
-    "locationSource": "https://wowforevertalents.com/quests/the-heart-of-the-void-78916/",
-    "locationEvidence": "Beta log or quest-text report; see source details",
-    "pickupInside": true
-  },
-  {
-    "id": 78917,
-    "pickup": "Loot the quest-starting Perfect Blackfathom Pearl from Aku'mai in Blackfathom Deeps; take it to Bashana Runetotem in Thunder Bluff.",
-    "prereqs": [],
-    "notes": "Reported from a beta cache; pickup and prerequisite requirements need verification.",
-    "name": "The Heart of the Void",
-    "dungeons": [
-      "Blackfathom Deeps"
-    ],
-    "source": "https://wowforevertalents.com/quests/the-heart-of-the-void-78917/",
-    "evidence": "Beta cache report",
-    "checked": "2026-11-07",
-    "level": 25,
-    "faction": "Horde",
-    "objectives": [
-      "Perfect Blackfathom Pearl"
-    ],
-    "rewards": [
-      {
-        "id": 211451,
-        "name": "Acolyte's Void Pearl"
-      },
-      {
-        "id": 211450,
-        "name": "Invoker's Void Pearl"
-      },
-      {
-        "id": 211449,
-        "name": "Avenger's Void Pearl"
-      }
-    ],
-    "people": [
-      "Turned in to: Bashana Runetotem"
-    ],
-    "personEvidence": [
-      {
-        "role": "Turned in to",
-        "name": "Bashana Runetotem",
-        "location": null
-      }
-    ],
-    "sourceDetails": [
-      "Sources: the beta client's quest cache, 13 October 2026 (questcache.wdb, build 70338) · the beta client's creature cache, 23 October 2026 (creaturecache.wdb, build 70532)"
-    ],
-    "chain": [],
-    "locationSource": "https://wowforevertalents.com/quests/the-heart-of-the-void-78917/",
-    "locationEvidence": "Beta log or quest-text report; see source details",
-    "pickupInside": true
-  },
-  {
     "id": 79360,
     "pickup": "Check Prate Cloudseer in Thousand Needles after obtaining your Air Totem; the exact Horde pickup still needs client confirmation.",
     "prereqs": [],
@@ -9211,7 +9120,7 @@
     "notes": "QuestieDB identifies creature 264265 as Magus Olvek. Pickup location is recorded by the WFT Beta Log. No map pin is supplied for this interior location.",
     "name": "Past Due",
     "dungeons": [
-      "Scarlet Monastery"
+      "Scarlet Monastery - Library"
     ],
     "source": "https://wowforevertalents.com/quests/past-due-96800/",
     "evidence": "Beta cache report",
@@ -9520,7 +9429,7 @@
     "id": 1394,
     "name": "Final Passage",
     "dungeons": [
-      "Scarlet Monastery"
+      "Scarlet Monastery - Library"
     ],
     "minLevel": 25,
     "level": 36,

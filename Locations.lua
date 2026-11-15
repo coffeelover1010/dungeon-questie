@@ -54,7 +54,7 @@ function A.DungeonEntrance(name)
   return {map=1434,x=21.4,y=27.9,zone="Stranglethorn Vale",title="The Drowned City underwater entrance (approximate)",kind="entrance",source="Warcraft Tavern dungeon guide"}
  end
  if not connect() then return end
- local wanted=aliases[name] or name
+ local wanted=aliases[name] or (name and name:match("^Scarlet Monastery %- ") and "Scarlet Monastery") or name
  local ids={}; for id,d in pairs(zones.dungeons or {}) do if d[1]==wanted then ids[#ids+1]=id end end
  table.sort(ids)
  for _,id in ipairs(ids) do local p=entrance(id); if p then return p end end
