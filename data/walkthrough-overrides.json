@@ -98,15 +98,15 @@
     "any": [],
     "unverifiedChain": false,
     "evidence": "Forever database",
-    "source": "https://www.wowhead.com/forever/quest=92749",
+    "source": "https://db.icy-veins.com/wow-forever/quests/92749",
     "faction": "Alliance",
     "pickup": "Sprite Jumpsprocket, Dwarven District, Stormwind.",
     "turnin": "Sprite Jumpsprocket, Dwarven District, Stormwind.",
     "objectives": [
-      "If offered and required, obtain 10 Coarse Dynamite for Sprite. Check whether Detonation at a Distance is already offered before buying materials."
+      "Bring 10 Rough Dynamite to Sprite Jumpsprocket. Craft them, trade with another player, or buy them at the auction house."
     ],
     "routeNote": "The published storyline includes this step, but beta players report it can be skipped. Accept a later offered step to advance the walkthrough; do not buy materials solely on this guide's say-so.",
-    "checked": "2026-10-02",
+    "checked": "2026-11-17",
     "minLevel": 9
   },
   "92750": {

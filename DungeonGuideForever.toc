@@ -2,10 +2,10 @@
 ## Title: Dungeon Questie
 ## Notes: Dungeon quest checklist, rewards, prerequisites and pickup pins. /dungeons
 ## Author: Videocat
-## Version: 0.2.5
+## Version: 0.2.6
 ## SavedVariablesPerCharacter: DungeonGuideForeverDB
 ## Dependencies: QuestieDB
-## OptionalDeps: TomTom, Questie
+## OptionalDeps: ForeverButtonControls, ShortestPathForever, TomTom, Questie
 
 Libs\LibStub.lua
 Libs\CallbackHandler-1.0.lua
@@ -15,10 +15,15 @@ LocalData.lua
 ProviderCorrections.lua
 Provider.lua
 Tracking.lua
+PreparationItems.lua
 Walkthrough.lua
 Locations.lua
 QuestLog.lua
 Map.lua
+Navigation.lua
+RoutePlanner.lua
+NavigationWindow.lua
+RaidMarks.lua
 GroupFinder.lua
 QuestGroups.lua
 Recruit.lua
@@ -27,3 +32,5 @@ Export.lua
 Window.lua
 Minimap.lua
 
+
+## X-Button-Controls: Forever Button Controls by Video cat

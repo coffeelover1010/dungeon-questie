@@ -73,11 +73,70 @@ local function entityPin(entity,id,kind)
   else
    for _,xy in ipairs(spawns[area]) do
     local p=point(area,xy[1],xy[2],name..(kind=="drop" and " - item drop area" or ""),kind)
-    if p then return p end
+    if p then p.entity=entity; p.entityID=id; if entity=="Npc" then p.npcID=id end; return p end
    end
   end
  end
  return fallback
+end
+-- Enumerate every recorded spawn for explicit navigation; never reinterpret
+-- interior coordinates as outdoor points. The approach remains labelled.
+function A.EntityLocations(entity,id,kind)
+ local result={}
+ if not connect() then return result end
+ local spawns=read(entity,id,"spawns")
+ if type(spawns)~="table" then return result end
+ local name=read(entity,id,"name") or (entity.." "..id)
+ local areas={}; for area in pairs(spawns) do if type(area)=="number" then areas[#areas+1]=area end end
+ table.sort(areas)
+ for _,area in ipairs(areas) do
+  local door=entrance(area)
+  if door then
+   door.title=name.." - "..door.title; result[#result+1]=door
+  else
+   for _,xy in ipairs(spawns[area]) do
+    local p=point(area,xy[1],xy[2],name,kind)
+    if p then result[#result+1]=p end
+   end
+  end
+ end
+ for _,p in ipairs(result) do p.entity=entity; p.entityID=id; if entity=="Npc" then p.npcID=id end end
+ return result
+end
+function A.QuestLocations(q)
+ A.LoadLocations()
+ local result,seen={},{}
+ local function add(p,kind)
+  if not p then return end
+  local key=(kind or p.kind or "pickup")..":"..p.map..":"..p.x..":"..p.y..":"..(p.title or "")
+  if seen[key] then return end; seen[key]=true
+  result[#result+1]={id=q.id,name=q.name,pin=p,mapOnly=true,destinationKind=kind or p.kind,explicit=true}
+ end
+ local n=(A.walkthroughs or {})[q.id] or q
+ for _,record in ipairs({q,n}) do
+  add(record.pin,"pickup"); add(record.objectivePin,"objective"); add(record.turninPin,"turnin")
+ end
+ if not connect() then return result end
+ local function entity(entity,id,kind)
+  for _,p in ipairs(A.EntityLocations(entity,id,kind)) do add(p,p.kind=="entrance" and "dungeon" or kind) end
+ end
+ local function item(id,kind)
+  for _,source in ipairs({{"Npc","npcDrops"},{"Object","objectDrops"}}) do
+   for _,eid in ipairs(read("Item",id,source[2]) or {}) do entity(source[1],eid,kind) end
+  end
+ end
+ for _,relation in ipairs({{"startedBy","pickup"},{"finishedBy","turnin"}}) do
+  local links=read("Quest",q.id,relation[1]) or {}
+  for slot,e in ipairs({"Npc","Object"}) do for _,id in ipairs(links[slot] or {}) do entity(e,id,relation[2]) end end
+  for _,id in ipairs(links[3] or {}) do item(id,"objective") end
+ end
+ for slot,entries in pairs(read("Quest",q.id,"objectives") or {}) do
+  for _,entry in ipairs(entries) do
+   if slot==1 or slot==2 then entity(slot==1 and "Npc" or "Object",entry[1],"objective")
+   elseif slot==3 then item(entry[1],"objective") end
+  end
+ end
+ return result
 end
 local function relationPin(id,field)
  local links=read("Quest",id,field)
@@ -165,6 +224,8 @@ function A.MapLocation(q)
  A.LoadLocations()
  local n,phase=q,nil
  if A.WalkStep then n,phase=A.WalkStep(q) end
+ local supplies=A.PreparationItemTarget and A.PreparationItemTarget(n)
+ if supplies then return supplies,A.MissingPreparationItems(n) end
  local record=(A.walkthroughs or {})[n.id] or n
  local known=A.byID[n.id] or n
  local p
@@ -189,11 +250,12 @@ function A.MapLocation(q)
  end
  if not p then return nil,"Current destination is not mapped. Follow the current quest instructions or quest log." end
  local kind=p.kind or "pickup"
- local tip=kind=="objective" and "Current quest objective" or (kind=="entrance" and "Dungeon entrance / approach\nNot an exact quest-giver or objective pin." or (kind=="hand-in" and "Recorded hand-in location" or (kind=="drop" and "Recorded quest-item drop area" or "Recorded pickup location")))
+ local tip=kind=="objective" and "Current quest objective" or (kind=="entrance" and "Dungeon entrance / approach\nNot an exact quest-giver or objective pin." or (kind=="hand-in" and "Turn-in location" or (kind=="drop" and "Quest item drop area" or "Quest pickup location")))
  return {id=n.id,name=n.name or q.name,pin=p,mapOnly=true,origin=q},tip.."\n"..p.title.."\n"..p.zone.." "..p.x..", "..p.y
 end
 function A.RouteInstruction(q)
  local n,phase=A.WalkStep(q)
+ if A.MissingPreparationItems and A.MissingPreparationItems(n) then return A.preparationItems[n.id].instruction end
  local record=(A.walkthroughs or {})[n.id] or n
  if phase=="active" or phase=="packed" then
   if record.objectiveInstructions then return record.objectiveInstructions end

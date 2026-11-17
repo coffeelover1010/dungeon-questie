@@ -17,7 +17,8 @@ assert(not A.RunReadiness(goal))
 log={{questID=1950,title="Get the Scoop",complete=false}}
 A.SelectQuest(goal)
 assert(A.window.mapTarget.pin.map==1441)
-assert(A.window.detailText:GetText():find("/beckon",1,true))
+assert(A.window.currentQuest.id==1950)
+assert(not A.window.detailText:GetText():find("What to do",1,true))
 A.locationTarget=target
 A.log[1950].complete=true
 local handin=A.MapLocation(goal)

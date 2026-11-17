@@ -51,3 +51,7 @@ World of Warcraft names, quest content and game artwork belong to Blizzard
 Entertainment or its licensors. No extracted artwork is bundled; runtime
 artwork references the installed client. User-provided screenshots contain
 Blizzard game artwork and are not relicensed as original artwork.
+
+## Shortest Path Forever (optional integration)
+
+[Shortest Path Forever](https://github.com/cjber/shortest-path-forever) by cjber provides optional travel estimates and directions through its documented public API. No source code from that project is copied or distributed with this integration.

@@ -1,7 +1,13 @@
 # Dungeon Questie
 
-Version **0.2.5** — 15 November 2026. A focused dungeon quest journal with current-step cards, destination maps, quest chat links and copyable progress exports.
+Requires **QuestieDB**. **Forever Button Controls** is optional.
 
+Version **0.2.6** — 17 November 2026. A focused dungeon quest journal with current-step cards, destination maps, quest chat links and copyable progress exports.
+
+
+Compact mode opens quests as individual pages with a flat back button. Quest details use original quest-log text or database objective text, with direct destination navigation beneath the map. The journal stays visible during combat; protected updates resume afterward.
+
+Optional [Shortest Path Forever by cjber](https://github.com/cjber/shortest-path-forever) now supplies travel directions. Use the header tracking icon or `/dungeons route` for **Collect Quests — Shortest Route**, and the new map icon or `/dungeons locations` to navigate recorded pickups, objectives, turn-ins, NPC spawns and entrances. TomTom and map-only fallbacks remain. [Controls, planning limitations and in-game checks](NAVIGATION.md).
 
 Scarlet Monastery now has separate Graveyard, Library, Armory and Cathedral
 entries, with wing-specific quest lists and Group Finder searches. Recruitment
@@ -134,3 +140,35 @@ bottom-right grip to resize the whole journal proportionally; size and position
 save per character. **Target NPC** minimizes after the click, even if the NPC is
 out of targeting range. Opening, resizing and targeting remain unavailable in
 combat. `/dungeons resetpos` restores the default size and positions.
+
+## Quest supplies before entering
+
+Blueleaf Tubers now shows a **Before you go in** checklist: Crate With Holes,
+Snufflenose Command Stick, and a reminder to pick up/read the Snufflenose Owner's
+Manual beside Mebok Mizzyrix in Ratchet. Carried bag counts update when bags
+change; bank items do not count. Missing crate/stick prevents dungeon-ready
+status for the accepted, unfinished quest and routes back toward the quest
+supplies. Unknown bag counts remain unknown. The manual's presence does not
+prove it was read and is not a required carry check.
+
+This reusable checklist currently covers **Blueleaf Tubers only**. Other quests
+can be added after reviewing their actual preparation tools; dungeon drops are
+not automatically treated as supplies needed before entering.
+
+Evidence: [Forever quest text](https://wowforevertalents.com/quests/blueleaf-tubers-1221/)
+and [Classic item-ID references](https://classicdb.com/?quest=1221), reviewed
+16 November 2026. Item IDs/names were also checked in installed QuestieDB 1.1.2.
+Offline checks: `uv run --with lupa python tools/check_preparation_items.py`.
+Live bag events, readiness display and supply navigation still need an in-game check.
+
+## Automatic quest target indicators
+
+A gold **!** appears beside visible nameplates when the client identifies the unit
+as related to an active quest. No targeting or marker selection is required.
+These personal indicators do not change shared raid markers. Enable nameplates
+in the game to see them. `/dungeons marks` toggles the indicators.
+
+Uses the Forever client's `C_QuestLog.UnitIsRelatedToActiveQuest` and nameplate
+APIs. Missing or restricted quest information produces no indicator.
+Offline checks: `uv run --with lupa python tools/check_raid_marks.py`.
+Live appearance and the client's quest classification still need verification.

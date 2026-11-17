@@ -27,7 +27,8 @@ A.SelectQuest(q)
 local b=A.window.targetButton
 assert(b:GetAttribute("macrotext")=="/targetexact Argent Guard Thaelrid")
 assert(b.OnClick==b.secureClick and b.OnClick~=nil,"Do not clear inherited secure click")
-assert(A.window.detailText:GetText():find("Ready to turn in",1,true))
+assert(A.window.currentQuest.id==1198)
+assert(not A.window.detailText:GetText():find("Who offers this step",1,true))
 -- Standalone/final ready versus active objectives, with open-window updates.
 state({{questID=1200,title=q.name,complete=true}})
 assert(A.ActionReadiness(q)); assert(b:GetAttribute("macrotext")=="/targetexact Dawnwatcher Selgorm")
@@ -118,7 +119,7 @@ completed={}; A.db.confirmed={}; A.offers={}; state({})
 local relic=A.byID[95810]
 assert(A.RunReadiness(relic))
 assert(A.ActionReadiness(relic) and select(2,A.WalkStep(relic))=="inside")
-assert(select(1,A.DungeonReadinessBadge(relic))==nil,"Inside pickup has no acceptance tick")
+assert(A.DungeonReadinessBadge(relic)=="Interface\\GossipFrame\\AvailableQuestIcon","Inside pickup uses the pickup icon")
 level=1; assert(not A.RunReadiness(relic)); level=60
 A.offers[95810]=false; assert(not A.RunReadiness(relic)); A.offers={}
 local node=A.walkthroughs[95810]
@@ -142,13 +143,12 @@ local attributes=b.SetAttribute
 b.SetAttribute=function(self,k,v) assert(not InCombatLockdown(),"protected mutation in combat"); attributes(self,k,v) end
 function InCombatLockdown() return true end
 local f=A.window
-assert(f.stateDriver=="[combat] combat; peace")
-local secure=assert(loadstring(f:GetAttribute("_onstate-combat")))
-setfenv(secure,{self=f,newstate="combat"}); secure(); assert(not f:IsShown())
+assert(not f.stateDriver and not f:GetAttribute("_onstate-combat"))
+assert(f:IsShown())
 state({}); A.SelectQuest(crumb); A.Toggle(); A.Refresh()
-assert(not f:IsShown() and b:GetAttribute("macrotext")==original)
+assert(f:IsShown() and b:GetAttribute("macrotext")==original)
 function InCombatLockdown() return false end
-A.events.OnEvent(nil,"PLAYER_REGEN_ENABLED"); A.Toggle()
+A.events.OnEvent(nil,"PLAYER_REGEN_ENABLED")
 assert(f:IsShown() and b.enabled and b:GetAttribute("macrotext")=="/targetexact Dawnwatcher Shaedlass", "Reopened guide targets the current uncollected prerequisite")
 ''')
 source=json.loads((root/'data/classic-source.json').read_text())

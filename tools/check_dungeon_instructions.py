@@ -14,6 +14,12 @@ for _,entry in ipairs(A.quests) do if entry.name=="Mythology of the Titans" then
 assert(q)
 A.log[q.id]={complete=false}
 assert(A.DungeonInstruction(q)=="Ready for dungeon")
+assert(A.DungeonReadinessBadge(q)=="Interface\\RaidFrame\\ReadyCheck-Ready")
+local letter
+for _,entry in ipairs(A.quests) do if entry.name=="The Unsent Letter" then letter=entry end end
+assert(letter and not A.log[letter.id])
+assert(A.DungeonInstruction(letter)=="Ready for dungeon")
+assert(A.DungeonReadinessBadge(letter)=="Interface\\GossipFrame\\AvailableQuestIcon","Unaccepted inside pickups show a gold exclamation mark")
 A.log[q.id].complete=true
 assert(A.DungeonWorkFinished(q))
 assert(A.DungeonInstruction(q)=="Objectives finished")

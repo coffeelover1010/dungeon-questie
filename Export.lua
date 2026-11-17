@@ -1,3 +1,4 @@
+local CreateFrame = ForeverButtonControls and ForeverButtonControls:Factory("DungeonGuideForever","Dungeon Questie","Export",false) or function(...) return _G.CreateFrame(...) end
 local _, A = ...
 local function plain(value)
  return tostring(value or "unknown"):gsub("|c%x%x%x%x%x%x%x%x",""):gsub("|r","")

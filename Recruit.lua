@@ -1,3 +1,4 @@
+local CreateFrame = ForeverButtonControls and ForeverButtonControls:Factory("DungeonGuideForever","Dungeon Questie","Recruit",false) or function(...) return _G.CreateFrame(...) end
 local _, A = ...
 local R={classes={"WARRIOR","PALADIN","HUNTER","ROGUE","PRIEST","SHAMAN","MAGE","WARLOCK","DRUID"},contacted={},offsets={}}
 A.recruit=R

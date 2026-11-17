@@ -57,7 +57,12 @@ for _,q in ipairs(A.quests) do
  end -- Unknown current-step locations are intentional; audited by check_routing.py.
  if A.ChecklistVisible(q) and not A.Restriction(q) then
   local text=A.window.detailText:GetText()
-  assert(text:find("Who offers this step",1,true) and text:find("Objectives",1,true) and text:find("Return to",1,true),q.id)
+  assert(not text:find("Who offers this step",1,true),q.id)
+  local current=A.window.currentQuest
+  local objectives=LibQuestieDB.Quest.Get(current.id,"objectivesText")
+  if type(objectives)=="table" and #objectives>0 then
+   for _,objective in ipairs(objectives) do assert(text:find(objective,1,true),current.id) end
+  else assert(text:find("Quest text unavailable.",1,true),current.id) end
  end
 end
 ''')

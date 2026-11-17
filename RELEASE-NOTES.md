@@ -1,3 +1,16 @@
+# 0.2.6 — 17 November 2026
+
+- Add compact quest pages with a flat back button and a collapsible detail panel.
+- Show original quest-log text for accepted quests and database objective text for unaccepted quests.
+- Add direct current-destination navigation and move quest actions beneath the map.
+- Restyle navigation with parchment cards, icons, shorter labels and flat controls.
+- Add optional Shortest Path Forever routing with TomTom and map fallbacks.
+- Replace the manual marker popup with automatic personal quest nameplate indicators.
+- Keep the journal visible during combat, with protected updates deferred until combat ends.
+- Add gold pickup icons and preparation-item tracking; correct A Dynamite Plan to 10 Rough Dynamite.
+
+Requires QuestieDB. Forever Button Controls is optional. Nameplate indicators require visible nameplates and available client quest information. Full descriptions for unaccepted quests are not supplied by QuestieDB. Offline regression checks cover logic and mocked UI; live rendering and navigation retain client-dependent limits.
+
 ## 0.2.5 — 15 November 2026
 
 - Add minimize and restore controls with a movable compact title bar.

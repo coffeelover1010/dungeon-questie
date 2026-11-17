@@ -8,7 +8,8 @@ completed={}; A.db.confirmed={}; A.log={}; A.offers={}; A.logAvailable=true
 for _,q in ipairs(A.quests) do
  faction=q.faction or "Alliance"; class=q.class or "WARRIOR"; level=60
  local _,icon=A.QuestRowStatus(q); assert(not icon,q.id.." unaccepted tick")
- assert(not A.DungeonReadinessBadge(q),q.id.." unaccepted badge")
+ local badge=A.DungeonReadinessBadge(q)
+ assert(not badge or badge=="Interface\\GossipFrame\\AvailableQuestIcon",q.id.." unaccepted badge")
  A.log[q.id]={complete=false}
  assert(A.QuestRowStatus(q)=="Active",q.id.." active status")
  local instruction=A.DungeonInstruction(q)

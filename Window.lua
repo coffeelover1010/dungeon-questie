@@ -1,3 +1,4 @@
+local CreateFrame = ForeverButtonControls and ForeverButtonControls:Factory("DungeonGuideForever","Dungeon Questie","Window",false) or function(...) return _G.CreateFrame(...) end
 local _, A = ...
 A.labels={done="TURNED IN",ready="READY TO TURN IN",active="IN QUEST LOG",restricted="NOT ELIGIBLE",level="LEVEL TOO LOW",prereq="EARLIER QUEST LISTED IN GUIDE",unknown="SCAN UNAVAILABLE",todo="TO PICK UP"}
 local colors={done={0.16,0.36,0.14},ready={0.48,0.27,0.04},active={0.12,0.29,0.43},restricted={0.38,0.34,0.28},level={0.55,0.16,0.10},prereq={0.40,0.24,0.38},unknown={0.55,0.16,0.10},todo={0.30,0.23,0.15}}
@@ -87,8 +88,11 @@ function A.DungeonReadinessBadge(q)
  if A.WalkStep then
   local step,phase=A.WalkStep(q)
   if phase=="ready" then return "Interface\\GossipFrame\\ActiveQuestIcon","Ready to turn in\n"..step.name end
+  if step and (phase=="pickup" or phase=="inside") and not A.log[step.id] then
+   return "Interface\\GossipFrame\\AvailableQuestIcon","Pick up quest\n"..step.name
+  end
  end
- if ready then return A.log[q.id] and "Interface\\RaidFrame\\ReadyCheck-Ready" or nil,"Ready for dungeon\n"..(reason or "Continue inside the dungeon.") end
+ if ready then return "Interface\\RaidFrame\\ReadyCheck-Ready","Ready for dungeon\n"..(reason or "Continue inside the dungeon.") end
  local stage=A.Preparation(q)
  if stage=="blocked" then return nil,"Not ready for dungeon\nQuest requirements are not met." end
  if stage=="skipped" then return nil,"Skipped\nOptional breadcrumb no longer needed." end
@@ -298,9 +302,36 @@ function A.PickupSteps(q)
  end
  return table.concat(lines,"\n"),q
 end
+-- Read by index without changing the player's selected quest-log entry.
+function A.QuestLogWords(q)
+ if not q or not A.log[q.id] then return end
+ local index=A.Safe(C_QuestLog and C_QuestLog.GetLogIndexForQuestID,q.id) or A.log[q.id].index
+ local description,summary
+ if type(index)=="number" and index>0 and type(GetQuestLogQuestText)=="function" then
+  local ok,d,o=pcall(GetQuestLogQuestText,index)
+  if ok then description,summary=d,o end
+ end
+ local function readable(value)
+  return not (issecretvalue and issecretvalue(value)) and type(value)=="string" and value~=""
+ end
+ local lines={q.name}
+ if readable(summary) then lines[#lines+1]=summary end
+ local objectives=A.Safe(C_QuestLog and C_QuestLog.GetQuestObjectives,q.id)
+ if type(objectives)=="table" then
+  for _,objective in ipairs(objectives) do
+   if readable(objective.text) then
+    lines[#lines+1]=objective.text..(objective.finished and " (Complete)" or "")
+   end
+  end
+ end
+ if readable(description) then lines[#lines+1]="\n|cff684018Description|r\n"..description end
+ if #lines==1 then return end
+ return lines
+end
 local function details()
  if InCombatLockdown() then return end
  local f=A.window; local q=selected
+ f.detailTitle:SetShown(not A.db.detailsCollapsed or f.compactQuestPage)
  for _,b in ipairs(rewardButtons) do b:Hide() end
  local instructions,target,heading
  if q then instructions,target,heading=A.PickupSteps(q) end
@@ -310,8 +341,19 @@ local function details()
  f.mapTarget=A.MapLocation and mapTarget or target
  if A.MapLocation and not mapTarget then f.mapTarget=nil end
  f.mapButton:SetEnabled(f.mapTarget and f.mapTarget.pin~=nil or false)
- f.mapButton.tip=mapTip or "Show recorded location on map"
+ f.mapButton.tip=mapTip or "Show quest destination on map"
  local artworkHeight=A.UpdateLocationArtwork(f.locationArtwork,q,mapTarget,mapTip)
+ for i,b in ipairs({f.mapButton,f.logButton,f.source,f.targetButton,f.chatButton}) do
+  b:ClearAllPoints(); b:SetPoint("TOPLEFT",f.detailChild,"TOPLEFT",(i-1)*44,-artworkHeight)
+ end
+ if q then artworkHeight=artworkHeight+40 end
+ f.goCurrent:SetShown(q~=nil)
+ f.goCurrent:SetEnabled(f.mapTarget and f.mapTarget.pin~=nil or false)
+ local destination=f.mapTarget and f.mapTarget.pin
+ f.goCurrent.label:SetText(destination and ("> Go to "..destination.title) or "Destination unavailable")
+ f.goCurrent.label:SetTextColor(destination and 0.22 or 0.45, destination and 0.15 or 0.4,0.09)
+ f.goCurrent:ClearAllPoints(); f.goCurrent:SetPoint("TOPLEFT",0,-artworkHeight)
+ if q then artworkHeight=artworkHeight+40 end
  f.detailText:ClearAllPoints(); f.detailText:SetPoint("TOPLEFT",0,-artworkHeight)
  local current,phase
  if q and A.WalkStep then current,phase=A.WalkStep(q) else current=q end
@@ -320,7 +362,7 @@ local function details()
  local macro,names=A.QuestGiverMacro(current,phase)
  f.targetButton:SetAttribute("macrotext",macro)
  f.targetButton:SetEnabled(macro~=nil)
- f.targetButton.tip=names and ("Target step NPC: "..names.."\nOnly targets an NPC within targeting range. The journal minimizes after clicking.") or "No targetable quest giver name recorded."
+ f.targetButton.tip=names and ("Target step NPC: "..names.."\nOnly targets an NPC within targeting range. The journal minimizes after clicking.") or "Quest giver unavailable."
  f.source:SetEnabled(q~=nil); f.logButton:SetEnabled(current and A.log[current.id]~=nil or false)
  for _,b in ipairs({f.mapButton,f.logButton,f.source,f.targetButton,f.chatButton}) do b:SetShown(q~=nil) end
  if not q then
@@ -336,7 +378,7 @@ local function details()
  end
  local s=A.state[q.id] or "unknown"
  f.detailTitle:SetText(q.name)
- f.metadata:Show()
+ f.metadata:SetShown(not A.db.detailsCollapsed or f.compactQuestPage)
  f.levelBadge.label:SetText(q.minLevel and tostring(q.minLevel) or "?")
  local underLevel=q.minLevel and UnitLevel("player")<q.minLevel
  f.levelBadge.label:SetTextColor(underLevel and 0.7 or 0.18,underLevel and 0.12 or 0.38,0.08)
@@ -359,54 +401,26 @@ local function details()
  f.detailTitle:SetWidth(313-badgeWidth-8)
  f.classBadge:ClearAllPoints(); f.classBadge:SetPoint("RIGHT",q.faction and -56 or -28,0)
  local contentTop=91+math.max(24,f.detailTitle:GetStringHeight())+10
- f.detailScroll:ClearAllPoints(); f.detailScroll:SetPoint("TOPLEFT",604,-contentTop); f.detailScroll:SetHeight(math.max(180,630-contentTop))
- local node=(A.walkthroughs or {})[current.id] or current
- local function concise(value)
-  local result=(value or "?"):gsub("%s*%(%s*%d+%.?%d*%s*,%s*%d+%.?%d*%s*%)", "")
-  result=result:gsub("%s*%d+%.%d+%s*,%s*%d+%.%d+", "")
-  result=A.DisplayText(result)
-  return result~="" and result or "?"
- end
- local pickup=node.pickup or current.pickup or "?"
- local destination=node.turnin or current.turnin or "?"
- local lines={}
- local location=mapTarget and mapTarget.pin
- lines[#lines+1]="|cff684018Where to go|r\n"..(location and (location.title.." - "..location.zone) or "Current destination is not mapped.").."\n"
- if A.RouteInstruction then lines[#lines+1]="|cff684018What to do|r\n"..A.RouteInstruction(q).."\n" end
- if current.id~=q.id then lines[#lines+1]=current.name end
- local recovery=A.BreadcrumbRecovery and A.BreadcrumbRecovery(q)
- if recovery then lines[#lines+1]=recovery end
- local chainLabel
- if A.ChainProgress then chainLabel=A.ChainProgress(q) end
- if chainLabel then lines[#lines+1]=chainLabel end
- lines[#lines+1]="|cff684018Who offers this step|r\n"..concise(pickup)
- lines[#lines+1]="\n|cff684018Objectives|r"
- if A.log[current.id] and A.log[current.id].complete then lines[#lines+1]="Ready to turn in" end
- local live=A.log[current.id] and A.Safe(C_QuestLog and C_QuestLog.GetQuestObjectives,current.id)
- if type(live)=="table" and #live>0 then
-  for _,o in ipairs(live) do lines[#lines+1]=(o.finished and "[x] " or "[ ] ")..(o.text or "Objective") end
- else
-  local objectives=node.objectives or current.objectives or {}
-  if #objectives==0 then lines[#lines+1]="?" end
-  for _,o in ipairs(objectives) do lines[#lines+1]="- "..o end
- end
- lines[#lines+1]="\n|cff684018Return to|r\n"..concise(destination)
- -- Keep bespoke mechanics, not repeated pickup/return directions or source prose.
- local special=node.specialInstructions or node.routeNote or node.preparationNote
- if special and special~=pickup and special~=destination then
-  local cleaned=concise(special)
-  if not cleaned:lower():find("unverified",1,true) and not cleaned:lower():find("not confirmed",1,true)
-   and not cleaned:lower():find("questiedb",1,true) and not cleaned:lower():find("reference",1,true) then
-   lines[#lines+1]="\n"..cleaned
+ f.detailScroll:ClearAllPoints(); f.detailScroll:SetPoint("TOPLEFT",f.compactQuestPage and 230 or 604,-contentTop); f.detailScroll:SetHeight(math.max(180,(f.compactQuestPage and 598 or 630)-contentTop))
+ local lines=A.QuestLogWords(current)
+ if not lines then
+  lines={current.name}
+  local db=LibQuestieDB
+  local valid=db and db.flavor and db.flavor.name=="Forever" and A.Safe(db.RequireContract,4)==true
+  local objectives=valid and A.Safe(db.Quest and db.Quest.Get,current.id,"objectivesText")
+  if type(objectives)=="table" then
+   for _,objective in ipairs(objectives) do
+    if type(objective)=="string" and objective~="" then lines[#lines+1]=objective end
+   end
   end
+  if #lines==1 then lines[#lines+1]="Quest text unavailable." end
  end
- if #(q.rewards or {})>0 then
-  lines[#lines+1]="\n|cff684018Rewards|r"
-  if current.id~=q.id then lines[#lines+1]=q.name end
- end
- f.detailText:SetText(A.DisplayText(table.concat(lines,"\n")))
+ local shownRewards=current.rewards or {}
+ if #shownRewards>0 then lines[#lines+1]="\n|cff684018Rewards|r" end
+ -- Original text must bypass DQ's wording substitutions and sentence filters.
+ f.detailText:SetText(table.concat(lines,"\n\n"))
  local y=-(artworkHeight+f.detailText:GetStringHeight()+10)
- for i,item in ipairs(q.rewards or {}) do
+ for i,item in ipairs(shownRewards) do
   local b=rewardButtons[i]
   if not b then
    b=CreateFrame("Button",nil,f.detailChild); b:SetSize(298,32)
@@ -417,11 +431,7 @@ local function details()
   local icon=A.Safe(C_Item and C_Item.GetItemIconByID or GetItemIcon,item.id)
   b.icon:SetTexture(icon or "Interface\\Icons\\INV_Misc_QuestionMark"); b:Show()
  end
- local actionsY=y-#(q.rewards or {})*34
- for i,b in ipairs({f.mapButton,f.logButton,f.source,f.targetButton,f.chatButton}) do
-  b:ClearAllPoints(); b:SetPoint("TOPLEFT",f.detailChild,"TOPLEFT",(i-1)*44,actionsY)
- end
- f.detailChild:SetHeight(math.max(1,-actionsY+44))
+ f.detailChild:SetHeight(math.max(1,-y+#shownRewards*34+10))
 end
 function A.QuestRowPriority(q)
  local stage=A.Preparation(q)
@@ -508,6 +518,7 @@ function A.Refresh()
     action:SetScript("OnLeave",function() GameTooltip:Hide() end)
    end
    r:SetScript("OnClick",function(self)
+    if InCombatLockdown() then return end
     if IsShiftKeyDown() then A.LinkQuestInChat(A.WalkStep and A.WalkStep(self.quest) or self.quest); return end
     selected=self.quest; f.detailScroll:SetVerticalScroll(0)
     -- Selection changes only the highlight and detail pane, not quest state.
@@ -516,7 +527,7 @@ function A.Refresh()
      row.selection:SetShown(chosen)
      rowBackground(row,chosen,index)
     end
-    details()
+    if A.db.detailsCollapsed then A.ShowCompactQuestPage(true) else details() end
    end); rows[i]=r
   end
   local entry=entries[i] or {}
@@ -703,16 +714,55 @@ local function flatWindowControl(parent,glyph,label,action)
  b:SetScript("OnClick",action)
  b:SetScript("OnEnter",function(self) hover:Show(); GameTooltip:SetOwner(self,"ANCHOR_LEFT"); GameTooltip:AddLine(label,1,0.82,0.35); GameTooltip:Show() end)
  b:SetScript("OnLeave",function() hover:Hide(); GameTooltip:Hide() end)
+ b.mark=mark
  return b
+end
+function A.ShowCompactQuestPage(show)
+ if InCombatLockdown() or not A.window then return end
+ local f=A.window
+ f.compactQuestPage=A.db.detailsCollapsed==true and show==true
+ local visible=not A.db.detailsCollapsed or f.compactQuestPage
+ f.listScroll:SetShown(not f.compactQuestPage)
+ f.heading:SetShown(not f.compactQuestPage)
+ f.detailScroll:SetShown(visible)
+ f.detailTitle:SetShown(visible)
+ f.metadata:SetShown(visible and selected~=nil)
+ f.backToQuests:SetShown(f.compactQuestPage)
+ local x=f.compactQuestPage and 230 or 604
+ f.detailTitle:ClearAllPoints(); f.detailTitle:SetPoint("TOPLEFT",x,-91)
+ f.metadata:ClearAllPoints(); f.metadata:SetPoint("TOPRIGHT",f,"TOPLEFT",x+313,-91)
+ if f.linkPanel then f.linkPanel:Hide() end
+ details()
+end
+function A.SetDetailsCollapsed(collapsed,keepPosition)
+ if InCombatLockdown() or not A.window then return end
+ local f=A.window
+ if keepPosition then
+  local left,top=f:GetLeft(),f:GetTop()
+  f:ClearAllPoints(); f:SetPoint("TOPLEFT",UIParent,"BOTTOMLEFT",left,top)
+  saveWindowPosition(f)
+ end
+ A.db.detailsCollapsed=collapsed==true
+ f:SetWidth(collapsed and 604 or 960)
+ f.detailScroll:SetShown(not collapsed)
+ f.detailTitle:SetShown(not collapsed)
+ f.metadata:SetShown(not collapsed and selected~=nil)
+ f.detailDivider:SetShown(not collapsed)
+ if f.linkPanel then f.linkPanel:Hide() end
+ f.detailsToggle.mark:SetText(collapsed and ">" or "<")
+ f.headerTitle:SetFont("Fonts\\FRIZQT__.TTF",collapsed and 15 or 21,"")
+ f.headerTitle:SetWidth(collapsed and 150 or 350)
+ f.search:SetWidth(collapsed and 120 or 210)
+ f.searchHint:SetWidth(collapsed and 130 or 220)
+ f.searchHint:SetText(collapsed and "Search quests" or "Search quest, dungeon, NPC or ID")
+ A.ShowCompactQuestPage(false)
 end
 function A.CreateWindow()
  if InCombatLockdown() then return end
  if A.window then return end
  local f=CreateFrame("Frame","DungeonGuideForeverWindow",UIParent,"BackdropTemplate,SecureHandlerStateTemplate"); A.window=f
- -- Secure targeting protects the containing window. Close it securely on
- -- combat entry, and leave reopening to the player after combat.
- f:SetAttribute("_onstate-combat","if newstate == 'combat' then self:Hide() end")
- RegisterStateDriver(f,"combat","[combat] combat; peace")
+ -- Secure targeting protects this window. Leave it visible during combat;
+ -- existing lockdown guards defer layout and content updates until combat ends.
  f:SetSize(960,650); f:SetPoint("CENTER"); A.SetWindowScale(A.db.windowScale); f:SetFrameStrata("DIALOG"); f:SetClampedToScreen(true)
  f:SetBackdrop({bgFile="Interface\\DialogFrame\\UI-DialogBox-Background",edgeFile="Interface\\DialogFrame\\UI-DialogBox-Border",tile=true,tileSize=32,edgeSize=32,insets={left=8,right=8,top=8,bottom=8}})
  local parchment=f:CreateTexture(nil,"BACKGROUND",nil,1)
@@ -725,17 +775,23 @@ function A.CreateWindow()
  headerLine:SetPoint("TOPLEFT",12,-69); headerLine:SetPoint("TOPRIGHT",-12,-69); headerLine:SetHeight(1); headerLine:SetColorTexture(0.65,0.44,0.16,0.85)
  for _,x in ipairs({218,593}) do
   local divider=f:CreateTexture(nil,"ARTWORK"); divider:SetColorTexture(0.35,0.23,0.10,0.35); divider:SetSize(1,556); divider:SetPoint("TOPLEFT",x,-75)
+  if x==593 then f.detailDivider=divider end
  end
  f:EnableMouse(true); f:SetMovable(true); f:RegisterForDrag("LeftButton")
  f:SetScript("OnDragStart",function(self) if not InCombatLockdown() then self:StartMoving() end end); f:SetScript("OnDragStop",function(self) self:StopMovingOrSizing(); local p,_,rp,x,y=self:GetPoint(); A.db.position={p,rp,x,y} end)
  if A.db.position then local p=A.db.position; f:ClearAllPoints(); f:SetPoint(p[1],UIParent,p[2],p[3],p[4]) end
  tinsert(UISpecialFrames,"DungeonGuideForeverWindow")
  local title=text(f,21,23,-27,402); title:SetText("Dungeon Questie"); title:SetTextColor(1,0.82,0.35); title:SetShadowOffset(1,-1)
+ f.headerTitle=title
  local close=flatWindowControl(f,"×","Close Dungeon Questie",function() if not InCombatLockdown() then f:Hide() end end)
  close:SetPoint("TOPRIGHT",-20,-21)
  f.close=close
  f.minimize=flatWindowControl(f,"−","Minimize Dungeon Questie",function() A.MinimizeWindow() end)
  f.minimize:SetPoint("RIGHT",close,"LEFT",-1,0)
+ f.detailsToggle=flatWindowControl(f,"<","Collapse / expand quest panel",function()
+  A.SetDetailsCollapsed(not A.db.detailsCollapsed,true); GameTooltip:Hide()
+ end)
+ f.detailsToggle:SetPoint("RIGHT",f.minimize,"LEFT",-1,0)
  local mini=CreateFrame("Frame",nil,UIParent,"BackdropTemplate"); A.minimizedWindow=mini
  mini:SetSize(220,34); mini:SetPoint("TOP",UIParent,"TOP",0,-40); mini:SetFrameStrata("DIALOG"); mini:SetClampedToScreen(true)
  mini:SetBackdrop({bgFile="Interface\\DialogFrame\\UI-DialogBox-Background",edgeFile="Interface\\Tooltips\\UI-Tooltip-Border",tile=true,tileSize=16,edgeSize=16,insets={left=4,right=4,top=4,bottom=4}})
@@ -775,7 +831,7 @@ function A.CreateWindow()
   self:SetScript("OnUpdate",function()
    if InCombatLockdown() then self:SetScript("OnUpdate",nil); return end
    local x,y=GetCursorPosition(); x=x/parentScale; y=y/parentScale
-   A.SetWindowScale(math.max((x-left)/960,(top-y)/650))
+   A.SetWindowScale(math.max((x-left)/f:GetWidth(),(top-y)/650))
    f:ClearAllPoints(); f:SetPoint("TOPLEFT",UIParent,"BOTTOMLEFT",left/f:GetScale(),top/f:GetScale())
   end)
  end)
@@ -792,7 +848,7 @@ function A.CreateWindow()
  f.dungeonScroll=ds; f.dungeonChild=dc
  local names={}; for _,d in ipairs(A.dungeons) do names[#names+1]=d.name end
  for i,d in ipairs(names) do
-  local b=button(dc,d:gsub("^Scarlet Monastery %- ","SM - "),178,0,-(i-1)*86,function() A.db.dungeon=d; f.listScroll:SetVerticalScroll(0); f.detailScroll:SetVerticalScroll(0); A.Refresh(); A.RefreshPins() end)
+  local b=button(dc,d:gsub("^Scarlet Monastery %- ","SM - "),178,0,-(i-1)*86,function() A.ShowCompactQuestPage(false); A.db.dungeon=d; f.listScroll:SetVerticalScroll(0); f.detailScroll:SetVerticalScroll(0); A.Refresh(); A.RefreshPins() end)
   b:SetNormalTexture("Interface\\DialogFrame\\UI-DialogBox-Background")
   b:SetPushedTexture("Interface\\DialogFrame\\UI-DialogBox-Background")
   b.art=b:CreateTexture(nil,"OVERLAY"); b.art:SetSize(42,42); b.art:SetPoint("LEFT",5,0)
@@ -809,6 +865,8 @@ function A.CreateWindow()
   b.findGroup:SetScript("OnLeave",function() GameTooltip:Hide() end)
  end
  dc:SetHeight(#names*86)
+ f.routeToggle=iconButton(f,"Collect Quests — Shortest Route","Interface\\Icons\\Ability_Tracking",798,-20,function() A.OpenNavigation() end)
+ f.locationsToggle=iconButton(f,"Browse quest locations","Interface\\Icons\\INV_Misc_Map_01",842,-20,function() A.OpenNavigation(selected,true) end)
  f.heading=text(f,14,232,-83,334)
  f.listScroll,f.listChild=scroll(f,230,-107,334,524)
  f.empty=text(f.listChild,13,12,-25,302)
@@ -826,6 +884,20 @@ function A.CreateWindow()
  f.detailScroll,f.detailChild=scroll(f,604,-124,313,452)
  f.locationArtwork=A.CreateLocationArtwork(f.detailChild)
  f.detailText=text(f.detailChild,12,0,0,300)
+ f.goCurrent=CreateFrame("Button",nil,f.detailChild); f.goCurrent:SetSize(300,36)
+ f.goCurrent.label=text(f.goCurrent,12,4,-5,292)
+ local goHover=f.goCurrent:CreateTexture(nil,"BACKGROUND"); goHover:SetAllPoints(); goHover:SetColorTexture(0.45,0.25,0.05,0.14); goHover:Hide()
+ f.goCurrent:SetScript("OnEnter",function(self)
+  goHover:Show(); GameTooltip:SetOwner(self,"ANCHOR_RIGHT")
+  GameTooltip:AddLine("Navigate to the current quest step",1,0.82,0.35)
+  GameTooltip:AddLine(f.mapButton.tip or "",1,1,1,true); GameTooltip:Show()
+ end)
+ f.goCurrent:SetScript("OnLeave",function() goHover:Hide(); GameTooltip:Hide() end)
+ f.goCurrent:SetScript("OnClick",function()
+  if InCombatLockdown() then return end
+  local destination=selected and A.MapLocation(selected)
+  if destination then A.Navigate(destination) end
+ end)
  f.mapButton=iconButton(f.detailChild,"Show location on map","Interface\\Icons\\INV_Misc_Map_01",604,-600,function() if f.mapTarget then A.Navigate(f.mapTarget) end end)
  f.logButton=iconButton(f.detailChild,"Open quest log","Interface\\Icons\\INV_Misc_Book_09",648,-600,function()
   if not selected then return end
@@ -865,7 +937,17 @@ function A.CreateWindow()
   if mouse~="LeftButton" or down or not self:GetAttribute("macrotext") then return end
   C_Timer.After(0,function() A.MinimizeWindow() end)
  end)
+ f.backToQuests=flatWindowControl(f,"<","Back to quest list",function() A.ShowCompactQuestPage(false); GameTooltip:Hide() end)
+ f.backToQuests:SetPoint("BOTTOMLEFT",230,16)
+ f.backToQuests:Hide()
  f:SetScript("OnShow",function() A.minimizedWindow:Hide(); A.Scan(); A.RevealSelectedDungeon(); f.listScroll:SetVerticalScroll(0) end)
+ local previous=f.detailsToggle
+ for _,control in ipairs({f.locationsToggle,f.routeToggle,f.export,f.pinsToggle}) do
+  control:ClearAllPoints(); control:SetPoint("RIGHT",previous,"LEFT",-8,0); previous=control
+ end
+ f.search:ClearAllPoints(); f.search:SetPoint("RIGHT",f.pinsToggle,"LEFT",-16,0)
+ f.searchHint=hint; hint:ClearAllPoints(); hint:SetPoint("TOPLEFT",f.search,"BOTTOMLEFT",0,-3)
+ A.SetDetailsCollapsed(A.db.detailsCollapsed)
  f:Hide()
 end
 function A.Toggle()

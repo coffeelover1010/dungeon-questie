@@ -204,6 +204,22 @@ assert(A.Preparation(prepCheck)=="check")
 A.logAvailable=savedAvailability
 A.byID[990002]=nil; A.db.confirmed[990002]=nil
 A.Scan(); A.Toggle(); assert(A.window:IsShown())
+A.SetDetailsCollapsed(true)
+assert(A.window:GetWidth()==604 and not A.window.detailScroll:IsShown())
+A.Refresh()
+assert(not A.window.detailTitle:IsShown() and not A.window.metadata:IsShown())
+assert(A.window.detailsToggle.mark:GetText()==">")
+A.ShowCompactQuestPage(true)
+assert(A.window:GetWidth()==604 and A.window.detailScroll:IsShown())
+assert(not A.window.listScroll:IsShown() and not A.window.heading:IsShown())
+assert(A.window.backToQuests:IsShown())
+A.Refresh(); assert(A.window.detailTitle:IsShown())
+A.window.backToQuests.OnClick()
+assert(A.window.listScroll:IsShown() and not A.window.detailScroll:IsShown())
+assert(not A.window.backToQuests:IsShown())
+A.SetDetailsCollapsed(false)
+assert(A.window:GetWidth()==960 and A.window.detailScroll:IsShown())
+assert(A.window.detailsToggle.mark:GetText()=="<")
 A.db.mine=false -- An old setting cannot bypass the permanent character filter.
 for _,q in ipairs(A.quests) do
  A.SelectQuest(q)

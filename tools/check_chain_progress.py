@@ -50,7 +50,7 @@ local q=A.byID[92753]
 label,text,x,y=A.ChainProgress(q)
 assert(label and text:find(A.byID[92819].name,1,true))
 A.SelectQuest(q)
-assert(A.window.detailText:GetText():find(label,1,true))
+assert(not A.window.detailText:GetText():find(label,1,true)) -- chain metadata stays outside literal quest prose
 assert(not A.window.detailText:GetText():find("Quest chain",1,true)) -- route stays in expandable cards
 ''')
 print('PASS: chain numbering, return trips, accepted/turn-in/completed states, abandonment, AND/OR branches, missing data, cycles and detail UI.')

@@ -87,6 +87,8 @@ function A.RunReadiness(q)
  if A.Completed(q.id)==true then return false,"Already completed." end
  local location=(A.walkthroughs or {})[q.id] or q
  if A.log[q.id] then
+  local supplies=A.MissingPreparationItems and A.MissingPreparationItems(q)
+  if supplies then return false,supplies end
   if A.log[q.id].complete then
    if handInInside(q) then return true,"Turn in inside: "..(q.name or "Quest") end
    return false,"Objectives complete — turn in outside the dungeon or check the hand-in location."
@@ -121,6 +123,7 @@ function A.ActionReadiness(q)
  return phase=="ready" or phase=="pickup" or phase=="inside",n,phase
 end
 function A.Preparation(q)
+ if A.MissingPreparationItems and A.MissingPreparationItems(q) then return "chain","COLLECT QUEST SUPPLIES",2 end
  if A.WalkStep then
   local n,phase=A.WalkStep(q)
   if phase=="skipped" then return "skipped","SKIPPED BREADCRUMB",8 end
@@ -223,6 +226,8 @@ function A.Scan()
  end
  if A.Refresh then A.Refresh() end
  if A.RefreshPins then A.RefreshPins() end
+ if A.RoutePlanner then A.RoutePlanner.Progress() end
+ if A.RaidMarks then A.RaidMarks.Refresh() end
 end
 -- Progress counts quests available now, plus quests already accepted or completed.
 function A.CountsForProgress(q)
@@ -302,7 +307,7 @@ events:SetScript("OnEvent",function(_,event,arg)
   for _,d in ipairs(A.dungeons) do if d.name==A.db.dungeon then validDungeon=true; break end end
   if not validDungeon then A.db.dungeon=A.dungeons[1].name end
   A.db.filter=nil
-  for _,e in ipairs({"PLAYER_LOGIN","PLAYER_ENTERING_WORLD","QUEST_LOG_UPDATE","QUEST_ACCEPTED","QUEST_REMOVED","QUEST_TURNED_IN","PLAYER_LEVEL_UP","GET_ITEM_INFO_RECEIVED","PLAYER_REGEN_ENABLED","GOSSIP_SHOW","GOSSIP_CLOSED","QUEST_DETAIL","QUEST_FINISHED"}) do events:RegisterEvent(e) end
+  for _,e in ipairs({"BAG_UPDATE_DELAYED","PLAYER_LOGIN","PLAYER_ENTERING_WORLD","QUEST_LOG_UPDATE","QUEST_ACCEPTED","QUEST_REMOVED","QUEST_TURNED_IN","PLAYER_LEVEL_UP","GET_ITEM_INFO_RECEIVED","PLAYER_REGEN_ENABLED","GOSSIP_SHOW","GOSSIP_CLOSED","QUEST_DETAIL","QUEST_FINISHED"}) do events:RegisterEvent(e) end
   return
  end
  if not A.db then return end
@@ -328,6 +333,9 @@ SlashCmdList.DUNGEONGUIDEFOREVER=function(msg)
   local shown=msg:find("show") or (not msg:find("hide") and A.db.minimap.hide)
   A.SetMinimapShown(shown and true or false)
  elseif msg=="pins" then A.db.pins=not A.db.pins; A.RefreshPins(); A.Print("Map pins "..(A.db.pins and "on" or "off"))
- elseif msg=="clear" then A.ClearWaypoint()
+ elseif msg=="clear" then if A.RoutePlanner then A.RoutePlanner.Cancel() else A.ClearWaypoint() end
+ elseif msg=="marks" then A.ShowRaidMarks()
+ elseif msg=="route" then A.OpenNavigation()
+ elseif msg=="locations" then A.OpenNavigation(nil,true)
  else A.Toggle() end
 end

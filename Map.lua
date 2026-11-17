@@ -1,3 +1,4 @@
+local CreateFrame = ForeverButtonControls and ForeverButtonControls:Factory("DungeonGuideForever","Dungeon Questie","Map",false) or function(...) return _G.CreateFrame(...) end
 local _, A = ...
 local pins={}
 local function valid(p)
@@ -22,7 +23,7 @@ function A.ClearWaypoint()
  end
  A.waypoint=nil
 end
-function A.Navigate(q)
+function A.NavigateMap(q)
  if q.mapOnly and q.origin and A.MapLocation then
   local current=A.MapLocation(q.origin)
   if not current then A.ClearWaypoint(); A.locationTarget=nil; A.Print("Current destination is not mapped. Follow your quest log."); return end
@@ -60,7 +61,10 @@ function A.Navigate(q)
  local drawn=A.RefreshPins()
  A.Print(q.name..": "..p.title.." - "..p.zone.." "..p.x..", "..p.y..(set and " (waypoint set)" or (drawn and drawn>0 and " (marked on world map)" or " (coordinates; map marker unavailable)")))
  if p.reference then A.Print("Approximate pickup pin from Classic reference data.") end
+ return true
 end
+-- Legacy callers share the provider layer once Navigation.lua has loaded.
+A.Navigate=A.NavigateMap
 function A.RefreshPins()
  -- Re-resolve selected locations after acceptance, objective completion or hand-in.
  -- Never leave an old arrow pointing at a previous step.
@@ -92,8 +96,9 @@ function A.RefreshPins()
   if p and p.map==mapID and valid(p) and (q.mapOnly or (A.NeedsPickup(q) and (q.id==A.target or (A.Preparation(q)=="pickup" and A.Matches(q))))) then
    local key=p.x..":"..p.y
    if not groups[key] then groups[key]={p=p,quests={},seen={}}; order[#order+1]=key end
-   if not groups[key].seen[q.id] then
-    table.insert(groups[key].quests,q); groups[key].seen[q.id]=true
+   local identity=q.id or ("location:"..key..":"..(p.title or ""))
+   if not groups[key].seen[identity] then
+    table.insert(groups[key].quests,q); groups[key].seen[identity]=true
    end
   end
  end
@@ -114,7 +119,7 @@ function A.RefreshPins()
    b:SetScript("OnLeave",function() GameTooltip:Hide() end)
    b:SetScript("OnClick",function(self)
     local q=self.group.quests[1]
-    if IsShiftKeyDown() then A.Navigate(q) else A.SelectQuest(q.origin or A.byID[q.id] or q) end
+    if IsShiftKeyDown() or not q.id then A.Navigate(q) else A.SelectQuest(q.origin or A.byID[q.id] or q) end
    end)
    pins[i]=b
   end

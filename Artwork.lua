@@ -1,3 +1,4 @@
+local CreateFrame = ForeverButtonControls and ForeverButtonControls:Factory("DungeonGuideForever","Dungeon Questie","Artwork",false) or function(...) return _G.CreateFrame(...) end
 local _, A = ...
 -- Blizzard textures verified in the local Forever 1.60.1.70170 archive.
 -- Forever-only entries use themed substitutes, not claimed dungeon portraits.
@@ -93,7 +94,7 @@ function A.UpdateLocationArtwork(f,q,target,tip)
  f.marker:Hide()
  if p then
   local label=p.zone..string.format("  %.1f, %.1f",p.x,p.y)
-  local qualifier=p.kind=="entrance" and "Entrance / approach" or (p.reference and "Reference coordinates" or "Recorded destination")
+  local qualifier=p.kind=="entrance" and "Entrance / approach" or (p.reference and "Reference coordinates" or "Quest destination")
   f.caption:SetText(label.."\n"..(f.loaded and qualifier.." - click map" or "Map artwork unavailable - click to open"))
   if f.loaded then
    f.marker:ClearAllPoints(); f.marker:SetPoint("CENTER",f,"TOPLEFT",f.artLeft+f.artWidth*p.x/100,-f.artHeight*p.y/100); f.marker:Show()

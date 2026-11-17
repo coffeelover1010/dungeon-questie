@@ -24,6 +24,7 @@ $files += 'RESEARCH-2026-11-13.md'
 $files += 'ROUTING-REVIEW-2026-11-13.md'
 $files += 'ARTWORK-REVIEW-2026-11-13.md'
 $files += 'SM-WINGS-2026-11-14.md'
+$files += 'NAVIGATION.md'
 foreach ($file in $files) {
     $from = Join-Path $source $file
     $to = Join-Path $destination $file

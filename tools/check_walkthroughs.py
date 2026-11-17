@@ -35,7 +35,7 @@ assert(A.window.detailText:GetText():find("Detonation at a Distance",1,true))
 log={{questID=92753,title=q.name,complete=false}}; A.Scan()
 n,p=A.WalkStep(q); assert(p=="packed")
 A.SelectQuest(q)
-assert(A.window.detailText:GetText():find("rear exit",1,true))
+assert(A.window.currentQuest.id==92753)
 -- The second identically named quest must remain available after planting.
 completed[92753]=true; log={}; A.Scan()
 local finale=A.byID[92819]
@@ -43,7 +43,7 @@ assert(not A.ChecklistVisible(q) and A.ChecklistVisible(finale))
 n,p=A.WalkStep(finale); assert(n.id==92819 and p=="pickup")
 log={{questID=92819,title=finale.name,complete=false}}; A.Scan()
 A.SelectQuest(finale)
-assert(A.window.detailText:GetText():find("detonator",1,true))
+assert(A.window.currentQuest.id==92819)
 completed[92819]=true; log={}; A.Scan()
 n,p=A.WalkStep(finale); assert(p=="done")
 completed[92753]=nil; completed[92819]=nil
@@ -92,8 +92,8 @@ local step,phase=A.WalkStep(goal)
 assert(step.id==303 and phase=="pickup")
 A.SelectQuest(goal)
 local text=A.window.detailText:GetText()
-assert(text:find("Who offers this step|r",1,true) and text:find("Motley Garmason",1,true))
-assert(text:find("|cff684018Rewards|r",1,true))
+assert(text:find("Quest text unavailable.",1,true))
+assert((text:find("|cff684018Rewards|r",1,true)~=nil)==(#(A.window.currentQuest.rewards or {})>0))
 assert(not text:find("not the current prerequisite",1,true))
 log={{questID=303,title="The Dark Iron War",complete=false}}; A.Scan()
 local instructions,target,heading=A.WalkInstructions(goal)
@@ -114,7 +114,7 @@ for _,q in ipairs(A.quests) do
   for _,group in ipairs(A.QuestChainGroups(candidates)) do
    for _,step in ipairs(group.steps) do if step.id==q.id then representative=group.quest end end
   end
-  assert(hasHeading==(#(representative.rewards or {})>0))
+  assert(hasHeading==(#(A.window.currentQuest.rewards or {})>0))
  end
 end
 ''')
@@ -222,17 +222,17 @@ assert(not A.window.warning:IsShown())
 local text=A.window.detailText:GetText():lower()
 assert(not text:find("needs checking",1,true) and not text:find("not been verified",1,true))
 assert(A.window.detailTitle:GetText()==A.byID[92458].name) -- uncertainty prose is omitted
-assert(text:find("shade of the archmage",1,true))
-assert(text:find("return to",1,true))
+assert(text:find("quest text unavailable.",1,true))
+assert(not text:find("return to",1,true))
 assert(not A.RunReadiness(A.byID[92458]))
 for _,id in ipairs({92456,92457,92489}) do
  local step,phase=A.WalkStep(A.byID[id]); assert(step.id==id and phase=="pickup")
  A.SelectQuest(A.byID[id])
  local detail=A.window.detailText:GetText():lower()
- assert(detail:find("objectives",1,true) and detail:find("return to",1,true))
+ assert(detail:find("quest text unavailable.",1,true))
 end
 A.SelectQuest(A.byID[92456])
-assert(A.window.detailText:GetText():find("Fel Ancient",1,true))
+assert(A.window.currentQuest.id==92456)
 A.SelectQuest(A.byID[95647]); assert(not A.window.warning:IsShown())
 assert(A.DisplayText("Melisara in Tarren Mill (quest-text report; exact pickup unverified).") == "Melisara in Tarren Mill.")
 assert(not A.DataWarning({id=990999,evidence="Classic reference",pin={reference=true}}))
