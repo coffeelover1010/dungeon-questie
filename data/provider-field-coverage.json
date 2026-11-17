@@ -1,5 +1,5 @@
 {
-  "version": "1.1.1",
+  "version": "1.1.2",
   "flavour": "Forever",
   "contract": 4,
   "fields": {
@@ -55,6 +55,7 @@
       "raceMask"
     ],
     "96395": [
+      "minLevel",
       "level",
       "objectives"
     ],
@@ -3413,7 +3414,7 @@
     ]
   },
   "coverage": {
-    "version": "1.1.1",
+    "version": "1.1.2",
     "flavour": "Forever",
     "contract": 4,
     "catalogue": 318,
@@ -3423,7 +3424,7 @@
       3911,
       95056
     ],
-    "positiveMinimum": 304,
+    "positiveMinimum": 305,
     "objectivesText": 306,
     "starters": 296,
     "finishers": 293,
