@@ -33,7 +33,7 @@ for name in ['Data.lua','Tracking.lua','Map.lua','Artwork.lua','Window.lua']:
     lua.execute((root/name).read_text(encoding='utf-8'), 'DungeonGuideForever',lua.globals().A)
 lua.execute('''
 A.events.OnEvent(nil,"ADDON_LOADED","DungeonGuideForever"); A.Scan()
-assert(A.db.mine==nil and A.db.pins)
+assert(A.db.mine==nil and A.db.pins==nil)
 assert(A.state[5723]=="restricted")
 assert(A.state[1740]=="restricted")
 assert(A.state[96393]=="todo")

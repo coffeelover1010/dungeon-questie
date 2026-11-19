@@ -19,7 +19,8 @@ local letter
 for _,entry in ipairs(A.quests) do if entry.name=="The Unsent Letter" then letter=entry end end
 assert(letter and not A.log[letter.id])
 assert(A.DungeonInstruction(letter)=="Ready for dungeon")
-assert(A.DungeonReadinessBadge(letter)=="Interface\\GossipFrame\\AvailableQuestIcon","Unaccepted inside pickups show a gold exclamation mark")
+assert(A.DungeonReadinessBadge(letter)=="Interface\\RaidFrame\\ReadyCheck-Ready")
+assert(A.DungeonActionBadge(letter)=="Interface\\GossipFrame\\AvailableQuestIcon","Inside pickup keeps ! alongside readiness")
 A.log[q.id].complete=true
 assert(A.DungeonWorkFinished(q))
 assert(A.DungeonInstruction(q)=="Objectives finished")
@@ -31,5 +32,15 @@ assert(A.DungeonSummary({total=1,done=0,skipped=0,finished=1,ready=0})=="Dungeon
 local precursor={id=999999,name="Outdoor prerequisite",prerequisiteOnly=true}
 A.log[precursor.id]={complete=false}
 assert(not A.RunReadiness(precursor))
+local originalWalk,originalReady=A.WalkStep,A.RunReadiness
+A.log={}
+A.WalkStep=function() return q,"ready" end
+A.RunReadiness=function() return true,"Turn in inside" end
+assert(A.DungeonReadinessBadge(q)=="Interface\\RaidFrame\\ReadyCheck-Ready")
+assert(A.DungeonActionBadge(q)=="Interface\\GossipFrame\\ActiveQuestIcon")
+A.RunReadiness=function() return false end
+assert(A.DungeonReadinessBadge(q)==nil)
+assert(A.DungeonActionBadge(q)=="Interface\\GossipFrame\\ActiveQuestIcon")
+A.WalkStep=originalWalk; A.RunReadiness=originalReady
 print("PASS: finished objectives, readiness summaries, explicit instructions and outdoor prerequisite badge")
 ''')

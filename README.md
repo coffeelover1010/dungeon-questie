@@ -58,7 +58,7 @@ Current catalogue: **318 quest records across 32 dungeon groups**. Counts includ
 
 ## Quest actions and availability
 
-Green ticks mark actionable steps and dungeon readiness. The readiness tick and ready count mean
+Green ticks mark dungeon readiness and can appear alongside gold pickup (!) or turn-in (?) icons. The readiness tick and ready count mean
 the next work can happen during the dungeon run. Reviewed inside pickups count
 without inventing an NPC offer. Recorded outdoor prerequisites still block the
 chain. Inside hand-ins count; a remaining delivery back to town does not.
@@ -111,8 +111,8 @@ objective coordinates. The Drowned City keeps its reviewed approximate entrance.
 
 The map button works for unaccepted, active, completed, blocked and skipped
 quests. Viewing a location does not assert availability or change readiness.
-With map pins enabled, the quests matching the current dungeon/search remain
-marked regardless of their preparation or completion status.
+The world map marks only the destination selected for navigation.
+The automatic quest-pin overlay and its toggle have been removed.
 Ready-to-hand-in quests prefer recipient pins; active dungeon quests use their
 dungeon approach. Active breadcrumbs prefer the recipient. QuestieDB must be enabled even when Questie itself is disabled.
 

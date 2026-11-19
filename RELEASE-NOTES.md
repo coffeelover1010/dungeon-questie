@@ -1,4 +1,13 @@
-# 0.2.6 — 17 November 2026
+# 0.2.7 � 19 November 2026
+
+- Show the green dungeon-ready tick independently of pickup (!) and turn-in (?) icons, so ready quests can show both indicators.
+- Give each indicator its own tooltip and reserve title space for both.
+- Remove the map-pin toggle, /dungeons pins command, and automatic quest-pin overlay.
+- Keep quest map previews and navigation to the selected destination; close the gap in the header controls.
+
+Requires QuestieDB. Forever Button Controls is optional. Offline readiness, map, navigation, routing, window and walkthrough checks passed. Live-client appearance remains unverified.
+
+## 0.2.6 — 17 November 2026
 
 - Add compact quest pages with a flat back button and a collapsible detail panel.
 - Show original quest-log text for accepted quests and database objective text for unaccepted quests.

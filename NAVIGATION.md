@@ -8,7 +8,7 @@ Implemented against cjber's [Shortest Path Forever public API](https://github.co
 
 ## Player controls
 
-The journal header has two additional icons: **Collect Quests — Shortest Route** (tracking icon) and **Navigate recorded locations** (map icon). `/dungeons route` opens the collection preview; `/dungeons locations` lists all recorded locations for the selected dungeon. The header location icon limits that list to the selected quest and its recorded prerequisite branches, plus the dungeon entrance. The existing current-location icon and Shift-click map pins use the same navigation provider.
+The journal header has two additional icons: **Collect Quests — Shortest Route** (tracking icon) and **Navigate recorded locations** (map icon). `/dungeons route` opens the collection preview; `/dungeons locations` lists all recorded locations for the selected dungeon. The header location icon limits that list to the selected quest and its recorded prerequisite branches, plus the dungeon entrance. The existing current-location icon and Shift-click destination markers use the same navigation provider.
 
 The location browser lists pickup, objective, turn-in and entrance points, including completed quests and future prerequisite steps. Each known NPC/object spawn is individually selectable. Item objectives and item-started quests expose known drop sources. Navigation to a future quest location does **not** mean the quest is available. Interior entities without outdoor coordinates use an explicitly labelled dungeon approach, never an invented interior position. Missing coordinates remain unavailable.
 

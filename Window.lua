@@ -80,8 +80,7 @@ local function warningIcon(parent)
  return b
 end
 local selected,rows,dungeonButtons,rewardButtons=nil,{},{},{}
-function A.DungeonReadinessBadge(q)
- local ready,reason=A.RunReadiness(q)
+function A.DungeonActionBadge(q)
  if A.Completed(q.id)==true then return nil,"Completed\nQuest already turned in." end
  if A.log[q.id] and A.log[q.id].complete then return "Interface\\GossipFrame\\ActiveQuestIcon","Objectives finished\nStill needs to be turned in." end
  if A.DungeonWorkFinished(q) then return "Interface\\GossipFrame\\ActiveQuestIcon","Dungeon objectives finished\nTurn in the quest; no further dungeon objectives remain for this quest." end
@@ -92,7 +91,13 @@ function A.DungeonReadinessBadge(q)
    return "Interface\\GossipFrame\\AvailableQuestIcon","Pick up quest\n"..step.name
   end
  end
+ return nil
+end
+function A.DungeonReadinessBadge(q)
+ local ready,reason=A.RunReadiness(q)
  if ready then return "Interface\\RaidFrame\\ReadyCheck-Ready","Ready for dungeon\n"..(reason or "Continue inside the dungeon.") end
+ if A.Completed(q.id)==true then return nil,"Completed\nQuest already turned in." end
+ if A.DungeonWorkFinished(q) then return nil,"Dungeon objectives finished\nNo further dungeon work remains." end
  local stage=A.Preparation(q)
  if stage=="blocked" then return nil,"Not ready for dungeon\nQuest requirements are not met." end
  if stage=="skipped" then return nil,"Skipped\nOptional breadcrumb no longer needed." end
@@ -500,6 +505,7 @@ function A.Refresh()
    r:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight"); r:GetHighlightTexture():SetAlpha(0.25)
    r.title=text(r,15,10,-8,314); r.status=text(r,12,10,-36,314); r.meta=text(r,11,10,-54,314)
    r.readiness=warningIcon(r); r.readiness:SetPoint("TOPRIGHT",-6,-8)
+   r.questAction=warningIcon(r)
    r.warning=warningIcon(r); r.warning:SetPoint("TOPRIGHT",-28,-8)
    r:SetScript("OnEnter",function(self)
     if self.statusTip then GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine(self.statusTip,1,1,1,true); GameTooltip:Show() end
@@ -551,7 +557,12 @@ function A.Refresh()
   r.warning.tip=A.DataWarning(q,warningStep,warningPhase); r.warning:SetShown(r.warning.tip~=nil)
   local readinessIcon,readinessTip=A.DungeonReadinessBadge(q)
   r.readiness.icon:SetTexture(readinessIcon); r.readiness.tip=A.DisplayText(readinessTip); r.readiness:SetShown(readinessIcon~=nil)
-  r.title:SetWidth((314-(r.warning.tip and 22 or 0)-(readinessIcon and 24 or 0))-(child and 18 or 0))
+  local actionIcon,actionTip=A.DungeonActionBadge(q)
+  r.questAction.icon:SetTexture(actionIcon); r.questAction.tip=A.DisplayText(actionTip); r.questAction:SetShown(actionIcon~=nil)
+  r.questAction:ClearAllPoints(); r.questAction:SetPoint("TOPRIGHT",-6-(readinessIcon and 24 or 0),-8)
+  local iconWidth=(readinessIcon and 24 or 0)+(actionIcon and 24 or 0)
+  r.warning:ClearAllPoints(); r.warning:SetPoint("TOPRIGHT",-6-iconWidth,-8)
+  r.title:SetWidth(314-iconWidth-(r.warning.tip and 22 or 0)-(child and 18 or 0))
   local statusLabel,statusIcon,statusTip=A.QuestRowStatus(q)
   r.statusTip=statusTip
   r.title:SetText(q.name); r.status:SetText(A.DisplayText(statusLabel)); r.status:SetTextColor(unpack(colors[s]))
@@ -656,9 +667,6 @@ function A.Refresh()
   b:SetText(b.dungeon..(status~="" and ("\n"..status) or ""))
   b:GetFontString():SetTextColor(b.dungeon==A.db.dungeon and 1 or 0.8,b.dungeon==A.db.dungeon and 0.82 or 0.8,0.65)
  end
- f.pinsToggle.tip="Map pins: "..(A.db.pins and "On" or "Off").." - click to toggle"
- for _,texture in ipairs({f.pinsToggle:GetNormalTexture(),f.pinsToggle:GetPushedTexture()}) do texture:SetDesaturated(not A.db.pins) end
- f.pinsToggle:SetAlpha(A.db.pins and 1 or 0.45)
  details()
 end
 function A.SelectQuest(q)
@@ -842,7 +850,6 @@ function A.CreateWindow()
  f.search:SetText(A.db.search or ""); f.search:SetScript("OnEscapePressed",function(self) self:ClearFocus() end)
  f.search:SetScript("OnTextChanged",function(self) A.db.search=self:GetText(); f.listScroll:SetVerticalScroll(0); A.Refresh(); A.RefreshPins() end)
  local hint=text(f,10,480,-51,220); hint:SetText("Search quest, dungeon, NPC or ID"); hint:SetTextColor(0.82,0.77,0.65)
- f.pinsToggle=iconButton(f,"Map pins","Interface\\Icons\\INV_Misc_Map_01",710,-20,function() A.db.pins=not A.db.pins; A.Refresh(); A.RefreshPins() end)
  f.export=iconButton(f,"Export quest progress","Interface\\Icons\\INV_Misc_Note_01",754,-20,function() A.ShowProgressExport(selected) end)
  local ds,dc=scroll(f,16,-81,183,551)
  f.dungeonScroll=ds; f.dungeonChild=dc
@@ -942,10 +949,10 @@ function A.CreateWindow()
  f.backToQuests:Hide()
  f:SetScript("OnShow",function() A.minimizedWindow:Hide(); A.Scan(); A.RevealSelectedDungeon(); f.listScroll:SetVerticalScroll(0) end)
  local previous=f.detailsToggle
- for _,control in ipairs({f.locationsToggle,f.routeToggle,f.export,f.pinsToggle}) do
+ for _,control in ipairs({f.locationsToggle,f.routeToggle,f.export}) do
   control:ClearAllPoints(); control:SetPoint("RIGHT",previous,"LEFT",-8,0); previous=control
  end
- f.search:ClearAllPoints(); f.search:SetPoint("RIGHT",f.pinsToggle,"LEFT",-16,0)
+ f.search:ClearAllPoints(); f.search:SetPoint("RIGHT",previous,"LEFT",-16,0)
  f.searchHint=hint; hint:ClearAllPoints(); hint:SetPoint("TOPLEFT",f.search,"BOTTOMLEFT",0,-3)
  A.SetDetailsCollapsed(A.db.detailsCollapsed)
  f:Hide()

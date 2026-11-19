@@ -301,7 +301,7 @@ events:SetScript("OnEvent",function(_,event,arg)
   A.db.confirmed=A.db.confirmed or {}; A.db.manual=nil; A.db.minimap=A.db.minimap or {minimapPos=240}
   A.db.mine=nil -- Remove the retired character-filter choice.
   A.db.betaOnly=nil -- Retired filter has no UI; retain labelled Classic references.
-  if A.db.pins==nil then A.db.pins=true end
+  A.db.pins=nil -- Retired map-pin overlay setting.
   if A.db.dungeon=="Scarlet Monastery" then A.db.dungeon="Scarlet Monastery - Graveyard" end
   local validDungeon=false
   for _,d in ipairs(A.dungeons) do if d.name==A.db.dungeon then validDungeon=true; break end end
@@ -332,7 +332,6 @@ SlashCmdList.DUNGEONGUIDEFOREVER=function(msg)
  elseif msg:find("^minimap") then
   local shown=msg:find("show") or (not msg:find("hide") and A.db.minimap.hide)
   A.SetMinimapShown(shown and true or false)
- elseif msg=="pins" then A.db.pins=not A.db.pins; A.RefreshPins(); A.Print("Map pins "..(A.db.pins and "on" or "off"))
  elseif msg=="clear" then if A.RoutePlanner then A.RoutePlanner.Cancel() else A.ClearWaypoint() end
  elseif msg=="marks" then A.ShowRaidMarks()
  elseif msg=="route" then A.OpenNavigation()

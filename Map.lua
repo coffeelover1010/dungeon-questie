@@ -50,7 +50,6 @@ function A.NavigateMap(q)
  end
  A.target=not q.mapOnly and q.id or nil
  A.locationTarget=q.mapOnly and q or nil
- A.db.pins=true
  if OpenWorldMap then OpenWorldMap(p.map)
  elseif WorldMapFrame then WorldMapFrame:Show() end
  if WorldMapFrame and WorldMapFrame:IsShown() then
@@ -78,16 +77,13 @@ function A.RefreshPins()
   A.locationTarget=current
  end
  local map=WorldMapFrame
- if not A.db or not A.db.pins or not map or not map:IsShown() or not map.GetCanvas or not map.GetMapID then for _,p in ipairs(pins) do p:Hide() end; return 0 end
+ if not A.db or not map or not map:IsShown() or not map.GetCanvas or not map.GetMapID then for _,p in ipairs(pins) do p:Hide() end; return 0 end
  local canvas=map:GetCanvas(); if not canvas then for _,p in ipairs(pins) do p:Hide() end; return 0 end
  local mapID=map:GetMapID(); local groups={}; local order={}
  local candidates={}
- for _,q in ipairs(A.quests) do
-  if A.MapLocation and A.Matches(q) then
-   local location=A.MapLocation(q)
-   if location then candidates[#candidates+1]=location end
-  else candidates[#candidates+1]=q end
- end
+ -- Only mark the destination explicitly selected for navigation.
+ local selected=A.target and A.byID[A.target]
+ if selected then candidates[#candidates+1]=selected end
  if A.locationTarget then candidates[#candidates+1]=A.locationTarget end
  local step=A.walkthroughs and A.walkthroughs[A.target]
  if step and not A.byID[step.id] then candidates[#candidates+1]=step end

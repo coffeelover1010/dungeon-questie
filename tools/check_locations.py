@@ -98,7 +98,7 @@ completed[q.id]=true; A.log={}; A.SelectQuest(q)
 local target=A.window.mapTarget
 A.Navigate(target); assert(A.locationTarget and A.locationTarget.id==target.id and A.RefreshPins()>0)
 A.Scan(); assert(A.locationTarget and A.locationTarget.id==target.id and A.RefreshPins()>0)
-A.locationTarget=nil; assert(A.RefreshPins()>0,"Completed quests must retain browseable map pins")
+A.locationTarget=nil; assert(A.RefreshPins()==0,"No automatic quest-pin overlay without a navigation destination")
 assert(not A.window.pickupTarget,"Map browsing must not enable a pickup action")
 -- Provider coordinates supersede unreviewed fallback coordinates.
 assert(A.byID[168].pin.source=="QuestieDB Forever")

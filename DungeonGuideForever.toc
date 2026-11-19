@@ -1,8 +1,8 @@
 ## Interface: 16001
 ## Title: Dungeon Questie
-## Notes: Dungeon quest checklist, rewards, prerequisites and pickup pins. /dungeons
+## Notes: Dungeon quest checklist, rewards, prerequisites and destination navigation. /dungeons
 ## Author: Videocat
-## Version: 0.2.6
+## Version: 0.2.7
 ## SavedVariablesPerCharacter: DungeonGuideForeverDB
 ## Dependencies: QuestieDB
 ## OptionalDeps: ForeverButtonControls, ShortestPathForever, TomTom, Questie
