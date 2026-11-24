@@ -1693,7 +1693,11 @@
     "pickupInside": true,
     "preparationNote": "Defeat Lady Anacondra, Lord Cobrahn, Lord Pythas and Lord Serpentis. Return to the Disciple of Naralex near the instance entrance and escort him. Protect him during the ritual, then defeat Mutanus and loot the shard.",
     "checked": "2026-11-07",
-    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data."
+    "referenceDetails": "Turn-in locations and prerequisite requirements include Classic reference data.",
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "restrictionUnknown": false,
+    "readinessReviewed": "2026-11-24"
   },
   "1098": {
     "id": 1098,

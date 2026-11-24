@@ -1,5 +1,5 @@
 {
-  "version": "1.1.2",
+  "version": "1.1.5",
   "flavour": "Forever",
   "contract": 4,
   "fields": {
@@ -432,7 +432,6 @@
       "minLevel",
       "level",
       "objectives",
-      "any",
       "raceMask"
     ],
     "6563": [
@@ -1781,7 +1780,6 @@
       "minLevel",
       "level",
       "objectives",
-      "any",
       "raceMask"
     ],
     "7441": [
@@ -2711,7 +2709,6 @@
       "minLevel",
       "level",
       "objectives",
-      "any",
       "raceMask"
     ],
     "95647": [
@@ -3002,7 +2999,10 @@
       "any",
       "raceMask"
     ],
-    "96379": [],
+    "96379": [
+      "minLevel",
+      "level"
+    ],
     "96377": [
       "minLevel",
       "level",
@@ -3054,6 +3054,7 @@
       "raceMask"
     ],
     "96337": [
+      "minLevel",
       "level",
       "objectives",
       "any"
@@ -3080,6 +3081,7 @@
       "minLevel",
       "level",
       "objectives",
+      "any",
       "raceMask"
     ],
     "95263": [
@@ -3117,6 +3119,12 @@
       "raceMask"
     ],
     "96771": [
+      "minLevel",
+      "level",
+      "objectives",
+      "raceMask"
+    ],
+    "95056": [
       "minLevel",
       "level",
       "objectives",
@@ -3217,6 +3225,7 @@
       "raceMask"
     ],
     "97327": [
+      "minLevel",
       "level",
       "objectives"
     ],
@@ -3233,6 +3242,8 @@
       "raceMask"
     ],
     "96246": [
+      "minLevel",
+      "level",
       "any"
     ],
     "92344": [
@@ -3262,6 +3273,7 @@
       "raceMask"
     ],
     "92070": [
+      "minLevel",
       "level",
       "objectives"
     ],
@@ -3271,10 +3283,45 @@
     ],
     "92067": [],
     "92066": [
+      "minLevel",
       "level",
       "objectives"
     ],
     "92065": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "86814": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "87346": [
+      "level",
+      "objectives"
+    ],
+    "86798": [
+      "level",
+      "objectives"
+    ],
+    "86797": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "86796": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "86777": [
+      "minLevel",
+      "level",
+      "objectives"
+    ],
+    "86792": [
+      "minLevel",
       "level",
       "objectives"
     ],
@@ -3414,20 +3461,19 @@
     ]
   },
   "coverage": {
-    "version": "1.1.2",
+    "version": "1.1.5",
     "flavour": "Forever",
     "contract": 4,
     "catalogue": 318,
-    "providerFound": 315,
+    "providerFound": 316,
     "missing": [
       3366,
-      3911,
-      95056
+      3911
     ],
-    "positiveMinimum": 305,
-    "objectivesText": 306,
-    "starters": 296,
-    "finishers": 293,
-    "prerequisiteLinks": 125
+    "positiveMinimum": 313,
+    "objectivesText": 307,
+    "starters": 303,
+    "finishers": 305,
+    "prerequisiteLinks": 123
   }
 }

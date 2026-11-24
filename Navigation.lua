@@ -64,7 +64,6 @@ function N.Stop()
 end
 function N.Go(d,held)
  if not d then A.Print("No recorded coordinates for this location."); return false end
- if A.Safe(InCombatLockdown) then A.Print("Start navigation after combat."); return false end
  -- A destination click should hand straight to the user's TomTom arrow.
  if TomTom and type(TomTom.AddWaypoint)=="function" then
   N.Stop()
@@ -73,13 +72,12 @@ function N.Go(d,held)
    A.tomtom=waypoint
    A.Safe(TomTom.SetCrazyArrow,TomTom,waypoint,15,d.title)
    N.current=d; N.provider="tomtom"; N.held=held
-   if A.window then A.window:Hide() end
-   if A.navigationWindow then A.navigationWindow:Hide() end
    return true
   end
   A.Print("TomTom could not set this destination."); return false
  end
  local api=N.API()
+ if A.Safe(InCombatLockdown) then A.Print("This navigation provider requires leaving combat."); return false end
  if api and (type(api.NavigateRoute)=="function" or type(api.Navigate)=="function") then
   local ok
   if type(api.NavigateRoute)=="function" then

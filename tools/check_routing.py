@@ -66,6 +66,26 @@ for id,node in pairs(A.walkthroughs) do
 end
 
 A.WalkStep=originalWalk; A.RunReadiness=originalReady; A.DungeonEntrance=originalDoor
+-- Both faction versions of the item-started pickup use the dungeon approach.
+completed={}; A.log={}; A.offers={}; A.db.confirmed={}; A.db.dungeon="The Deadmines"
+for _,id in ipairs({94980,94973}) do
+ faction=id==94980 and "Alliance" or "Horde"
+ local moulding=A.byID[id]
+ assert(moulding and moulding.pickupInside)
+ local destination=A.MapLocation(moulding)
+ assert(destination and destination.pin.kind=="entrance",id.." missing dungeon destination")
+ assert(destination.pin.map==2548 and destination.pin.x==37.5 and destination.pin.y==37.9)
+ assert(A.RouteInstruction(moulding):find("entrance / approach",1,true))
+ -- Eligibility uncertainty must not remove a known inside pickup destination.
+ A.RunReadiness=function() return false end
+ assert(A.MapLocation(moulding).pin.map==2548)
+ A.RunReadiness=originalReady
+ -- Once accepted, this outside follow-up must not inherit its pickup entrance.
+ A.log={[id]={complete=false}}
+ local followup=A.MapLocation(moulding)
+ assert(not followup or followup.pin.kind~="entrance")
+ A.log={}
+end
 print("PASS: Get the Scoop objective/hand-in/acceptance transitions, detail/map agreement, stale marker refresh and "..audited.." missing-location routing cases")
 ''')
 

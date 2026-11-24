@@ -333,7 +333,7 @@
     "objectiveLocation": null,
     "map": null,
     "breadcrumb": false,
-    "handInMapped": false
+    "handInMapped": true
   },
   {
     "id": 6135,
@@ -514,8 +514,8 @@
   {
     "id": 6627,
     "name": "Test of Lore",
-    "objectiveLocation": null,
-    "map": null,
+    "objectiveLocation": "Braug Dimspirit",
+    "map": 1442,
     "breadcrumb": false,
     "handInMapped": true
   },
@@ -954,8 +954,8 @@
   {
     "id": 6628,
     "name": "Test of Lore",
-    "objectiveLocation": null,
-    "map": null,
+    "objectiveLocation": "Parqual Fintallas",
+    "map": 1458,
     "breadcrumb": false,
     "handInMapped": true
   },
@@ -1098,8 +1098,8 @@
   {
     "id": 92434,
     "name": "Blood in the Streets",
-    "objectiveLocation": null,
-    "map": null,
+    "objectiveLocation": "Image of Archmage Modera",
+    "map": 1421,
     "breadcrumb": false,
     "handInMapped": true
   },
@@ -1261,7 +1261,7 @@
     "objectiveLocation": null,
     "map": null,
     "breadcrumb": false,
-    "handInMapped": false
+    "handInMapped": true
   },
   {
     "id": 86796,
@@ -1269,7 +1269,7 @@
     "objectiveLocation": null,
     "map": null,
     "breadcrumb": false,
-    "handInMapped": false
+    "handInMapped": true
   },
   {
     "id": 86797,
@@ -1277,7 +1277,7 @@
     "objectiveLocation": null,
     "map": null,
     "breadcrumb": false,
-    "handInMapped": false
+    "handInMapped": true
   },
   {
     "id": 86798,
@@ -1285,7 +1285,7 @@
     "objectiveLocation": null,
     "map": null,
     "breadcrumb": false,
-    "handInMapped": false
+    "handInMapped": true
   },
   {
     "id": 87346,
@@ -1293,15 +1293,15 @@
     "objectiveLocation": null,
     "map": null,
     "breadcrumb": false,
-    "handInMapped": false
+    "handInMapped": true
   },
   {
     "id": 86814,
     "name": "Blackmaw Counter-Offensive",
-    "objectiveLocation": null,
-    "map": null,
+    "objectiveLocation": "Prince Halanox",
+    "map": 1447,
     "breadcrumb": false,
-    "handInMapped": false
+    "handInMapped": true
   },
   {
     "id": 3702,

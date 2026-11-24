@@ -90,6 +90,7 @@ function R:Candidates()
  return groups
 end
 function R:Whisper(dungeon)
+ dungeon=A.DungeonChatName and A.DungeonChatName(dungeon) or dungeon
  if self.role then
   return "Hi! Our "..dungeon.." group is looking for a "..self.role..". Would you like to join as "..self.role.."? Sending you an invite."
  end
@@ -179,11 +180,12 @@ function R:Create()
   row.invite:SetScript("OnEnter",function(b)
    GameTooltip:SetOwner(b,"ANCHOR_RIGHT"); GameTooltip:AddLine(row.candidate and row.candidate.name or "No matching player")
    if row.candidate then GameTooltip:AddLine("Level "..row.candidate.level.." | "..row.candidate.roles,1,1,1) end
-   GameTooltip:AddLine("Review the dungeon whisper, then invite.",1,1,1); GameTooltip:Show()
+   if row.candidate then GameTooltip:AddLine("Review whisper and invite.",1,1,1) end; GameTooltip:Show()
   end)
   row.invite:SetScript("OnLeave",function() GameTooltip:Hide() end)
  end
  label(f,10,16,-584,405):SetText("Role filters use players' chosen LFG roles, not their class.\nInvites are manual; contacted players stay hidden until reload.")
+ button(f,"Ready players",140,280,-610,function(self) if A.PartyDiscovery then A.PartyDiscovery.Show(self,R.dungeon) end end)
  f:SetScript("OnShow",function() R:Refresh() end)
 end
 function R:Refresh()

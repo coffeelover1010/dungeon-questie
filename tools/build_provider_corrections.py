@@ -4,13 +4,16 @@ r=Path(__file__).resolve().parents[1]
 # Preserve only explicitly reviewed fields above the provider, with original evidence in JSON.
 keys=set('name objectives pickup turnin repeatable minLevel faction class raceMask classMask excludeRace all any exclusive breadcrumbFor prereqs requirementsNote unverifiedChain restrictionUnknown pin turninPin pickupNPCs turninNPCs'.split())
 merged={}
-keys.update('pickupUnknown objectivePin objectiveInstructions turninInstructions dungeonObjective'.split())
+keys.update('notLive pickupZone pickupInside pickupUnknown objectivePin objectiveInstructions turninInstructions dungeonObjective'.split())
 for file in ('walkthrough-overrides.json','catalogue-overrides.json'):
  for id,row in json.loads((r/'data'/file).read_text(encoding='utf-8')).items():
   for k,v in row.items():
    if k in keys: merged.setdefault(id,{})[k]=v
 review=json.loads((r/'data/forever-review-2026-11-13.json').read_text(encoding='utf-8'))
 for id,row in review['nodes'].items():
+ for k,v in row.items():
+  if k in keys: merged.setdefault(id,{})[k]=v
+for id,row in json.loads((r/'data/pickup-review-2026-11-24.json').read_text(encoding='utf-8')).items():
  for k,v in row.items():
   if k in keys: merged.setdefault(id,{})[k]=v
 # Null is an intentional removal, represented separately in Lua.

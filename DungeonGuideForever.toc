@@ -2,7 +2,7 @@
 ## Title: Dungeon Questie
 ## Notes: Dungeon quest checklist, rewards, prerequisites and destination navigation. /dungeons
 ## Author: Videocat
-## Version: 0.2.7
+## Version: 0.2.8
 ## SavedVariablesPerCharacter: DungeonGuideForeverDB
 ## Dependencies: QuestieDB
 ## OptionalDeps: ForeverButtonControls, ShortestPathForever, TomTom, Questie
@@ -26,6 +26,8 @@ NavigationWindow.lua
 RaidMarks.lua
 GroupFinder.lua
 QuestGroups.lua
+RecruitmentChat.lua
+PartyDiscovery.lua
 Recruit.lua
 Artwork.lua
 Export.lua

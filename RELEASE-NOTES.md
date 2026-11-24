@@ -1,4 +1,14 @@
-# 0.2.7 — 19 November 2026
+# 0.2.8 â€” 24 November 2026
+
+- Improve pickup instructions with recorded zones, item starters and drop sources, clearer requirements, and dungeon-entrance approaches where exact inside locations are unavailable.
+- Correct quest variant visibility and preparation routing, including approximate Krol'dok approach guidance.
+- Improve compact quest pages, acceptance navigation, destination previews and window controls.
+- Add ready-player discovery, recruitment settings, matching-player lists and optional automatic invitations. Discovery is enabled by default; automatic invitations are off by default.
+- Use short dungeon names in recruitment and quest-share drafts, with public posts and quest shares requiring clicks.
+- Keep experimental automatic Group Browser listing disabled following a live-client restricted-action error. Use the native Group Browser to list yourself.
+
+Requires QuestieDB. Forever Button Controls, Shortest Path Forever and TomTom are optional. Offline checks cover logic and mocked UI; live rendering, discovery transport and recruitment behavior still need in-game verification.
+# 0.2.7 ï¿½ 19 November 2026
 
 - Show the green dungeon-ready tick independently of pickup (!) and turn-in (?) icons, so ready quests can show both indicators.
 - Give each indicator its own tooltip and reserve title space for both.

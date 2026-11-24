@@ -1,5 +1,5 @@
 {
-  "providerVersion": "1.1.2",
+  "providerVersion": "1.1.5",
   "quests": [
     {
       "id": 96395,
@@ -457,8 +457,8 @@
       "pickupKind": "pickup",
       "mapKind": "drop",
       "map": 1441,
-      "x": 30.73,
-      "y": 24.35,
+      "x": 31.3,
+      "y": 28.1,
       "title": "Henrig Lonebrow's Journal - item drop area"
     },
     {
@@ -1484,7 +1484,7 @@
     {
       "id": 95810,
       "name": "Lost Relic Carry",
-      "pickupKind": null,
+      "pickupKind": "entrance",
       "mapKind": "entrance",
       "map": 1437,
       "x": 47.79,
@@ -1536,9 +1536,9 @@
       "name": "Starving Arcane",
       "pickupKind": "pickup",
       "mapKind": "pickup",
-      "map": 1416,
-      "x": 14.3,
-      "y": 59.57,
+      "map": 1421,
+      "x": 68.62,
+      "y": 45.13,
       "title": "Image of Archmage Modera"
     },
     {
@@ -1620,6 +1620,26 @@
       "x": 17.8,
       "y": 65.95,
       "title": "Ranath Nightstride"
+    },
+    {
+      "id": 94981,
+      "name": "Key Ingredients",
+      "pickupKind": "pickup",
+      "mapKind": "entrance",
+      "map": 2548,
+      "x": 37.5,
+      "y": 37.9,
+      "title": "Krol'dok Stronghold entrance / approach (approximate)"
+    },
+    {
+      "id": 94980,
+      "name": "Krol'dok Moulding",
+      "pickupKind": null,
+      "mapKind": "entrance",
+      "map": 2548,
+      "x": 37.5,
+      "y": 37.9,
+      "title": "Krol'dok Stronghold entrance / approach (approximate)"
     },
     {
       "id": 97327,
@@ -1714,16 +1734,8 @@
   ],
   "nodesWithoutPickup": [
     {
-      "id": 92070,
-      "name": "A Lost Memento"
-    },
-    {
       "id": 95790,
       "name": "Digestible Research"
-    },
-    {
-      "id": 86777,
-      "name": "Master Feardred"
     },
     {
       "id": 96369,
@@ -1732,10 +1744,6 @@
     {
       "id": 95795,
       "name": "Fallen in the Fen"
-    },
-    {
-      "id": 96246,
-      "name": "Blackmaw Pouches"
     },
     {
       "id": 94969,
@@ -1748,14 +1756,6 @@
     {
       "id": 95809,
       "name": "Heartwoven"
-    },
-    {
-      "id": 95682,
-      "name": "Open the Maw"
-    },
-    {
-      "id": 95810,
-      "name": "Lost Relic Carry"
     },
     {
       "id": 1649,
@@ -1790,34 +1790,6 @@
       "name": "The Heart of the Void"
     },
     {
-      "id": 86792,
-      "name": "Thinning Their Forces"
-    },
-    {
-      "id": 86796,
-      "name": "Later, Satyr"
-    },
-    {
-      "id": 86797,
-      "name": "Return to Rageroar"
-    },
-    {
-      "id": 86798,
-      "name": "Timbermaw Reinforcements"
-    },
-    {
-      "id": 87346,
-      "name": "Chieftain Bloodmaw"
-    },
-    {
-      "id": 86814,
-      "name": "Blackmaw Counter-Offensive"
-    },
-    {
-      "id": 92066,
-      "name": "The Twin Bears"
-    },
-    {
       "id": 94973,
       "name": "Krol'dok Moulding"
     },
@@ -1830,24 +1802,8 @@
       "name": "The Honor of the Kor'kron"
     },
     {
-      "id": 96377,
-      "name": "State Secrets"
-    },
-    {
-      "id": 95664,
-      "name": "Elder Knowledge"
-    },
-    {
       "id": 3911,
       "name": "The Last Element"
-    },
-    {
-      "id": 96987,
-      "name": "Opportunistic Education"
-    },
-    {
-      "id": 92065,
-      "name": "Blackmaw Reclamation"
     },
     {
       "id": 95263,
@@ -2358,14 +2314,6 @@
     {
       "id": 94982,
       "name": "Eye of Mugg"
-    },
-    {
-      "id": 94981,
-      "name": "Key Ingredients"
-    },
-    {
-      "id": 94980,
-      "name": "Krol'dok Moulding"
     },
     {
       "id": 94975,

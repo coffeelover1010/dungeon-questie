@@ -163,4 +163,15 @@ local saved=A.db; local position=saved.position; local minimap=saved.minimap
 A.LoadQuestData(); assert(A.db==saved and A.db.position==position and A.db.minimap==minimap)
 assert(not A.db.providerData and not A.db.quests)
 print("PASS: unaccepted faction/class masks, missing prerequisite, live objective precedence and unchanged saved settings")
+completed={}; log={}; A.log={}; A.db.confirmed={}; A.offers={}
+local past=A.byID[96800]
+local _,phase=A.WalkStep(past)
+assert(phase=="pickup","Past Due uses the released provider starter and requirements")
+local _,directions=A.DungeonInstruction(past)
+assert(directions:find("Magus Olvek",1,true),directions)
+A.SelectQuest(past)
+assert(directions:find("Tempered Tomes",1,true))
+assert(A.window.detailText:GetText():find("The Lost Magic of the Runemasters",1,true))
+assert(not A.RunReadiness(past))
+print("PASS: Past Due released pickup directions in both views; outside pickup still required")
 ''')

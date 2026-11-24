@@ -16,9 +16,8 @@ events:SetScript("OnEvent",function(self)
   OnClick=function() A.Toggle() end,
   OnTooltipShow=function(t)
    t:AddLine("Dungeon Questie",1,0.82,0.4)
-   t:AddLine("Click to open your dungeon quest checklist.",1,1,1)
-   t:AddLine("Drag to move. /dungeons minimap hide to hide.",0.8,0.8,0.8)
-   local d,n=A.Count(); t:AddLine(d.." / "..n,0.5,0.85,0.6)
+   t:AddLine("Click to toggle the journal. Drag to move.",1,1,1)
+   local d,n=A.Count(); t:AddLine(d.."/"..n.." quests turned in",0.5,0.85,0.6)
   end,
  })
  if not icons:IsRegistered(name) then icons:Register(name,launcher,A.db.minimap) end

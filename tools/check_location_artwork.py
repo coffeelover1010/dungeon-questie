@@ -9,7 +9,7 @@ for _,q in ipairs(A.quests) do
  faction=q.faction or "Alliance"; class=q.class or "WARRIOR"; level=60
  local _,icon=A.QuestRowStatus(q); assert(not icon,q.id.." unaccepted tick")
  local badge=A.DungeonReadinessBadge(q)
- assert(not badge or badge=="Interface\\GossipFrame\\AvailableQuestIcon",q.id.." unaccepted badge")
+ assert(not badge or badge=="Interface\\RaidFrame\\ReadyCheck-Ready",q.id.." independent readiness tick")
  A.log[q.id]={complete=false}
  assert(A.QuestRowStatus(q)=="Active",q.id.." active status")
  local instruction=A.DungeonInstruction(q)

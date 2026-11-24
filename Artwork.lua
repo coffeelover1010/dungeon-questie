@@ -53,7 +53,7 @@ function A.CreateLocationArtwork(parent)
 end
 function A.UpdateLocationArtwork(f,q,target,tip)
  if not q then f:Hide(); return 0 end
- f:Show(); f.target=target; f:SetEnabled(target~=nil); f.tip=tip
+ f:Show(); f.target=target; f:SetEnabled(target~=nil); f.tip=target and ("Navigate\n"..(tip or "Quest location")) or tip
  local p=target and target.pin
  local map=p and p.map
  local art=map and A.Safe(C_Map and C_Map.GetMapArtID,map)

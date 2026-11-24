@@ -97,7 +97,7 @@ lua.execute('''
 UISpecialFrames={}; tinsert=table.insert
 function IsShiftKeyDown() return false end
 local methods={}
-for _,k in ipairs({"SetShadowOffset","SetAlpha","SetAtlas","SetTexCoord","SetNormalTexture","SetPushedTexture","SetHighlightTexture","SetDisabledTexture","SetFont","SetPoint","ClearAllPoints","SetJustifyH","SetJustifyV","SetTextColor","SetFrameStrata","SetClampedToScreen","SetBackdrop","SetBackdropColor","SetBackdropBorderColor","EnableMouse","SetMovable","RegisterForDrag","StartMoving","StopMovingOrSizing","SetAutoFocus","SetMaxLetters","ClearFocus","SetAllPoints","SetTexture","SetDesaturated","SetVertexColor","SetChecked","SetColorTexture","SetVerticalScroll","SetFocus","HighlightText","SetOwner","AddLine","SetHyperlink"}) do methods[k]=function() end end
+for _,k in ipairs({"SetHitRectInsets","SetShadowOffset","SetAlpha","SetAtlas","SetTexCoord","SetNormalTexture","SetPushedTexture","SetHighlightTexture","SetDisabledTexture","SetFont","SetPoint","ClearAllPoints","SetJustifyH","SetJustifyV","SetTextColor","SetFrameStrata","SetClampedToScreen","SetBackdrop","SetBackdropColor","SetBackdropBorderColor","EnableMouse","SetMovable","RegisterForDrag","StartMoving","StopMovingOrSizing","SetAutoFocus","SetMaxLetters","ClearFocus","SetAllPoints","SetTexture","SetDesaturated","SetVertexColor","SetChecked","SetColorTexture","SetVerticalScroll","SetFocus","HighlightText","SetOwner","AddLine","SetHyperlink"}) do methods[k]=function() end end
 function RegisterStateDriver(f,state,condition) f.stateDriver=condition end
 function methods:SetAttribute(k,v) self.attributes=self.attributes or {}; self.attributes[k]=v end
 function methods:GetAttribute(k) return self.attributes and self.attributes[k] end
@@ -111,6 +111,7 @@ function methods:SetText(t) self.text=t; if self.OnTextChanged then self:OnTextC
 function methods:GetText() return self.text or "" end
 function methods:SetScript(e,fn) self[e]=fn end
 function methods:GetStringHeight() return math.max(15,#(self.text or "")/45*14) end
+function methods:GetStringWidth() return #(self.text or "")*8 end
 function methods:SetScrollChild(c) self.child=c end
 function methods:Show() local old=self.shown; self.shown=true; if not old and self.OnShow then self:OnShow() end end
 function methods:Hide() self.shown=false end
@@ -237,7 +238,7 @@ local mapID
 function WorldMapFrame:SetMapID(id) mapID=id end
 A.window:Show()
 A.Navigate(A.byID[168])
-assert(WorldMapFrame:IsShown() and mapID==1453 and not A.window:IsShown())
+assert(WorldMapFrame:IsShown() and mapID==1453 and A.window:IsShown())
 """)
 print(f'PASS: Lua 5.1 syntax, manifest, {len(data)} unique records, coordinates, completion, abandonment, ignored legacy marks, restrictions, prerequisites, isolation, unavailable APIs, waypoint/map guards, window construction and every detail panel (mocked UI)')
 lua.execute('''

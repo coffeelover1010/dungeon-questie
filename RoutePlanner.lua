@@ -33,13 +33,24 @@ function R.Build(dungeon,excluded,skipped,yieldWork)
  local from=N.Position()
  while #candidates>0 do
   local best,bestCost,bestReason=1,nil,nil
+  local localBest,localDistance,localReason
   for i,d in ipairs(candidates) do
    if yieldWork then yieldWork() end
    local chosen,cost,reason=N.Best(from,d,yieldWork)
    candidates[i]=chosen
    if cost and (not bestCost or cost<bestCost) then best,bestCost,bestReason=i,cost,nil
    elseif i==1 and not bestCost then bestReason=reason end
+   -- Without travel estimates, finish nearby actions on this map first.
+   -- Map percentages are only comparable within the same map; this is an
+   -- approximate proximity order, never an invented travel-time estimate.
+   if not cost and reason~="unreachable" and reason~="invalid" and from and chosen.map==from.map then
+    local distance=(chosen.x-from.x)^2+(chosen.y-from.y)^2
+    if not localDistance or distance<localDistance then
+     localBest,localDistance,localReason=i,distance,reason
+    end
+   end
   end
+  if not bestCost and localBest then best,bestReason=localBest,localReason end
   local d=table.remove(candidates,best)
   d.seconds=bestCost; d.estimateReason=bestReason
   if bestReason=="unreachable" or bestReason=="invalid" then

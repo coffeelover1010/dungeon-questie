@@ -28,12 +28,13 @@ for q in review['catalogue']:
     assert bool(A.Restriction(actual))==bool(q['faction'] and q['faction']!=side),(q['id'],side,player_class)
 lua.execute('''
 faction="Alliance"; race="Human"; level=60
--- An unresolved source remains visible, with no invented readiness or offer.
+-- The reviewed unreleased record is hidden unless live progress establishes it.
 local uncertain=A.byID[95056]
 faction="Horde"; race="Orc"; A.db.dungeon="Krol'dok Stronghold"; A.db.search=""
-assert(A.Matches(uncertain) and not A.RunReadiness(uncertain))
-assert(select(2,A.WalkStep(uncertain))=="check")
-assert(A.QuestRowStatus(uncertain)=="Data incomplete")
+assert(uncertain.notLive and not A.ChecklistVisible(uncertain))
+A.log[95056]={complete=false}
+assert(A.ChecklistVisible(uncertain),"Live acceptance overrides the unreleased reference")
+A.log={}
 -- Exact known prerequisite links: an unturned-in quest cannot satisfy a gate.
 local q=A.byID[95775]
 completed={}; A.log={[95770]={complete=true}}

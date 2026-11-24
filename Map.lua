@@ -54,8 +54,6 @@ function A.NavigateMap(q)
  elseif WorldMapFrame then WorldMapFrame:Show() end
  if WorldMapFrame and WorldMapFrame:IsShown() then
   if WorldMapFrame.SetMapID then WorldMapFrame:SetMapID(p.map) end
-  -- The guide uses DIALOG strata and would otherwise cover the world map.
-  if A.window then A.window:Hide() end
  end
  local drawn=A.RefreshPins()
  A.Print(q.name..": "..p.title.." - "..p.zone.." "..p.x..", "..p.y..(set and " (waypoint set)" or (drawn and drawn>0 and " (marked on world map)" or " (coordinates; map marker unavailable)")))
@@ -107,10 +105,13 @@ function A.RefreshPins()
    b:SetScript("OnEnter",function(self)
     GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine("Dungeon Questie - "..(self.group.p.kind or "pickup"),0.2,1,0.3)
     GameTooltip:AddLine(self.group.p.title,1,1,1)
-    if self.group.p.kind=="entrance" then GameTooltip:AddLine("Dungeon entrance / approach, not an exact quest location.",1,0.8,0.3,true) end
-    if self.group.p.reference then GameTooltip:AddLine("Approximate pickup pin from Classic reference data.",1,0.8,0.3,true) end
-    for _,q in ipairs(self.group.quests) do GameTooltip:AddLine(q.name.." - "..(A.labels[A.state[q.id]] or ""),0.8,0.9,1) end
-    GameTooltip:AddLine("Click to open the quest. Shift-click to set a waypoint.",0.7,0.7,0.7,true); GameTooltip:Show()
+    if self.group.p.kind=="entrance" then GameTooltip:AddLine("Entrance approach; not an interior quest location.",1,0.8,0.3,true) end
+    if self.group.p.reference then GameTooltip:AddLine("Approximate Classic location.",1,0.8,0.3,true) end
+    for i,q in ipairs(self.group.quests) do
+     if i>3 then GameTooltip:AddLine("+"..(#self.group.quests-3).." more quests",0.8,0.9,1); break end
+     GameTooltip:AddLine(q.name,0.8,0.9,1,true)
+    end
+    GameTooltip:AddLine(self.group.quests[1].id and "Click: quest details. Shift-click: navigate." or "Click to navigate.",0.7,0.7,0.7,true); GameTooltip:Show()
    end)
    b:SetScript("OnLeave",function() GameTooltip:Hide() end)
    b:SetScript("OnClick",function(self)

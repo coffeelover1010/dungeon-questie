@@ -2,7 +2,7 @@
 
 Requires **QuestieDB**. **Forever Button Controls** is optional.
 
-Version **0.2.6** — 17 November 2026. A focused dungeon quest journal with current-step cards, destination maps, quest chat links and copyable progress exports.
+Version **0.2.8** — 24 November 2026. A focused dungeon quest journal with current-step cards, destination maps, quest chat links and copyable progress exports.
 
 
 Compact mode opens quests as individual pages with a flat back button. Quest details use original quest-log text or database objective text, with direct destination navigation beneath the map. The journal stays visible during combat; protected updates resume afterward.
@@ -137,8 +137,8 @@ Quest chains show one current-step card, advancing through optional breadcrumbs 
 Use the **_** button beside Close to minimize to a movable restore bar. Click
 **Dungeon Questie +**, the minimap button or `/dungeons` to restore it. Drag the
 bottom-right grip to resize the whole journal proportionally; size and position
-save per character. **Target NPC** minimizes after the click, even if the NPC is
-out of targeting range. Opening, resizing and targeting remain unavailable in
+save per character. Targeting, navigation and group tools leave the journal open.
+Use the close or minimize button when you want to hide it. Opening, resizing and targeting remain unavailable in
 combat. `/dungeons resetpos` restores the default size and positions.
 
 ## Quest supplies before entering
@@ -172,3 +172,54 @@ Uses the Forever client's `C_QuestLog.UnitIsRelatedToActiveQuest` and nameplate
 APIs. Missing or restricted quest information produces no indicator.
 Offline checks: `uv run --with lupa python tools/check_raid_marks.py`.
 Live appearance and the client's quest classification still need verification.
+
+Accepting the quest shown on a compact detail page returns to the list when the chain still needs preparation outside the dungeon. Dungeon-ready pickups keep their detail page open; the journal stays visible.
+
+## Ready-player discovery and chat safety
+
+The automatic relaxed-listing offer is disabled following a live client
+"Interface action failed because of an AddOn" report on 24 November 2026.
+Its experimental module is not loaded by the manifest. Offline mock tests did
+not establish permission to call the restricted listing APIs in the live client.
+Use the native Group Browser to list yourself; Find Group remains available.
+
+Recruitment, whisper drafts and quest shares use short names for all 32 dungeons
+(for example ZF, BRD and SM Lib). Forever-specific dungeons use consistent local
+short names; these are not claimed to be universal community standards. Full names
+remain in menus and the discovery protocol. Quest shares start with `ZF quests:`
+and contain only quest links on continuation messages, still requiring one click per message.
+
+Discovery is enabled by default; turn off **Find ready players** in `/dungeons settings`
+to stop its timer, sends and channel membership. Availability and quest readiness gate
+advertising. Only solo players and party leaders advertise, with fewer than five
+members and outside raids. Non-leaders can listen without advertising.
+
+Each advertiser attempts at most one addon packet per transport (guild and the
+DungeonQuestie channel) every 65 seconds, normally 65–70 seconds. Each payload is
+at most 160 bytes. Failed joins retry no faster than every five minutes, including
+after toggling discovery. Unsupported channel sends stop for the session unless
+discovery is explicitly enabled again. There is no visible-chat fallback.
+
+Incoming discovery processing is capped at 30 packets per ten seconds, the peer
+cache at 50 players, and peer lifetime at three minutes. Receiving packets never
+sends replies or whispers. Local match notices are limited to one
+every two minutes. A busy channel can exceed the processing budget, so the list
+is best-effort and may omit players. These limits bound addon work, not server
+fan-out or the game's own event-delivery cost.
+
+Public recruitment posts and quest shares require clicks. **Auto-invite matching
+players** is off by default and stays enabled until unchecked. When on, it attempts
+invitations immediately for whisper requests, matching LFG posts in joined
+channels/guild/say/yell, and matching solo players received through discovery.
+LFM and visibly group-based LFG requests are skipped. Public chat cannot prove
+that a sender is solo; the server handles players already grouped elsewhere.
+When off, matching only records candidates (subject to the separate chat/discovery
+settings). Leadership, combat, party space and pending invitations still gate sends.
+Automatic attempts share a five-per-ten-second budget, a five-minute per-name
+cooldown and a bounded 100-name cache across sources. There are no timer retries.
+Discovery still waits for readiness and only reacts when a peer packet arrives.
+Offline recruitment check: `uv run --with lupa python tools/check_instant_invites.py`.
+
+Offline regression coverage: `uv run --with lupa python tools/check_party_discovery.py`.
+Live Forever channel support, join/leave notices and performance with many users
+still need testing; offline checks do not establish a lag-free release.

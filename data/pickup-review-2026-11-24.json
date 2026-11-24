@@ -1,0 +1,338 @@
+{
+  "87346": {
+    "pickup": "Gorn One Eye",
+    "pickupUnknown": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96800": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "356": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "95737": {
+    "pickup": "Llana",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "95682": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96379": {
+    "pickup": "Rix Xizzix",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96332": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96403": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "95663": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "92458": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "94982": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96246": {
+    "pickup": "Ekkal",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96376": {
+    "pickup": "Nazgrel",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "447": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "86777": {
+    "pickup": "Korsa",
+    "pickupUnknown": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "94975": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "92065": {
+    "pickup": "Gatekeeper Rageroar",
+    "pickupUnknown": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "94983": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "86797": {
+    "pickup": "Korsa",
+    "pickupUnknown": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96377": {
+    "pickup": "Renzik \"The Shiv\"",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96381": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96988": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96986": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "7668": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96334": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "86796": {
+    "pickup": "Graal",
+    "pickupUnknown": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "79360": {
+    "pickup": "Rau Cliffrunner / Prate Cloudseer",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "92066": {
+    "pickup": "Lorekeeper Nok",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "1442": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24",
+    "pickup": "Thundris Windweaver",
+    "pickupZone": "Darkshore",
+    "requirementsNote": null,
+    "restrictionUnknown": false
+  },
+  "92070": {
+    "pickup": "Use Feathered Charm Necklace",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "98815": {
+    "pickup": "James Halloran",
+    "pickupUnknown": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "94789": {
+    "pickup": "Eldrun Stormbreaker",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "98823": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "92401": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "205": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "86798": {
+    "pickup": "Gatekeeper Rageroar",
+    "pickupUnknown": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "94968": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "94972": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "86814": {
+    "pickup": "Gorn One Eye",
+    "pickupUnknown": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96394": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "86792": {
+    "pickup": "Korsa",
+    "pickupUnknown": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "95772": {
+    "pickup": "Dorin Songblade",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "95697": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "92421": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "94907": {
+    "unverifiedChain": false,
+    "source": "Installed QuestieDB 1.1.5 public contract 4, reviewed 2026-11-24"
+  },
+  "96335": {
+    "pickup": "Mason Connery",
+    "pickupInside": true,
+    "pickupZone": "Alcaz Prison",
+    "minLevel": 48,
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "https://warcraft.wiki.gg/wiki/The_Man_in_the_Iron_Chains"
+  },
+  "96337": {
+    "pickup": "Mason Connery",
+    "pickupInside": true,
+    "pickupZone": "Alcaz Prison",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "https://mygameacademia.com/forever/dungeon/alcaz-prison"
+  },
+  "95263": {
+    "pickup": "the Perfumed Note beside Blazeroar",
+    "pickupInside": true,
+    "pickupZone": "Alcaz Prison",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "https://mygameacademia.com/forever/dungeon/alcaz-prison"
+  },
+  "96369": {
+    "pickup": "the Perfumed Note after Blazeroar",
+    "pickupInside": true,
+    "pickupZone": "Alcaz Prison",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-alcaz-prison-guide/"
+  },
+  "95483": {
+    "pickup": "Commander Folkar",
+    "pickupInside": true,
+    "pickupZone": "Alcaz Prison",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "https://warcraft.wiki.gg/wiki/Thrall_Needs_to_Know"
+  },
+  "95790": {
+    "pickup": "the journal in The Shaper's Terrace (automatic quest)",
+    "pickupInside": true,
+    "pickupZone": "The Shaper's Terrace",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "https://warcraft.wiki.gg/wiki/Digestible_Research"
+  },
+  "3911": {
+    "pickup": "Shadowmage Vivian Lagrave",
+    "minLevel": 48,
+    "all": [
+      3906
+    ],
+    "any": [],
+    "pickupZone": "Badlands",
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "https://warcraft.wiki.gg/wiki/The_Last_Element",
+    "restrictionUnknown": false
+  },
+  "94969": {
+    "notLive": true,
+    "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.db/forever/dungeons%20%26%20raids/krol%27dok%20stronghold.lua"
+  },
+  "95056": {
+    "notLive": true,
+    "source": "https://github.com/ATTWoWAddon/AllTheThings/blob/master/.contrib/.db/forever/dungeons%20%26%20raids/krol%27dok%20stronghold.lua"
+  },
+  "2842": {
+    "requirementsNote": null,
+    "source": "Installed QuestieDB 1.1.5: current prerequisite and structured requirement fields replace the generic legacy note."
+  },
+  "7703": {
+    "requirementsNote": null,
+    "source": "Installed QuestieDB 1.1.5: current prerequisite and structured requirement fields replace the generic legacy note."
+  },
+  "5122": {
+    "requirementsNote": null,
+    "source": "Installed QuestieDB 1.1.5: current prerequisite and structured requirement fields replace the generic legacy note."
+  },
+  "6163": {
+    "requirementsNote": null,
+    "source": "Installed QuestieDB 1.1.5: current prerequisite and structured requirement fields replace the generic legacy note."
+  },
+  "5125": {
+    "requirementsNote": null,
+    "source": "Installed QuestieDB 1.1.5: current prerequisite and structured requirement fields replace the generic legacy note."
+  },
+  "5127": {
+    "requirementsNote": null,
+    "source": "Installed QuestieDB 1.1.5: current prerequisite and structured requirement fields replace the generic legacy note."
+  },
+  "92067": {
+    "pickup": "Flesh-Eating Lasher",
+    "turnin": "Flesh-Eating Lasher",
+    "pickupInside": true,
+    "pickupZone": "Blackmaw Hold",
+    "minLevel": 45,
+    "repeatable": true,
+    "pickupUnknown": false,
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "source": "https://www.warcrafttavern.com/forever/guides/blackmaw-hold/"
+  },
+  "95795": {
+    "pickup": "Daewyn Songblade's body",
+    "pickupInside": true,
+    "pickupZone": "Excavation Site",
+    "source": "Existing reviewed quest giver; removed obsolete interior-coordinate prose from the giver name."
+  }
+}

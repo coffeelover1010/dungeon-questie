@@ -157,7 +157,10 @@ A.NavigateMap=function() opened=opened+1 end
 local t={id=992001,name="Direct",pin={map=1453,x=10,y=20,title="NPC",zone="Stormwind City"},mapOnly=true}
 A.collection=nil; A.navigationWindow:Show(); A.window:Show()
 assert(N.Go(N.Destination(t)) and N.provider=="tomtom" and arrow==1 and opened==0)
-assert(not A.navigationWindow:IsShown() and not A.window:IsShown())
+assert(A.navigationWindow:IsShown() and A.window:IsShown())
+function InCombatLockdown() return true end
+assert(N.Go(N.Destination(t)) and N.provider=="tomtom" and arrow==2)
+function InCombatLockdown() return false end
 A.NavigateMap=mapFallback
 A.quests={{id=992001,name="Mine",dungeons={"Simple"}},
  {id=992002,name="Other faction",faction="Horde",dungeons={"Simple"}},
@@ -167,5 +170,54 @@ A.WalkStep=function(q) return q,"pickup" end
 A.RunReadiness=function() return false end
 local plan=A.RoutePlanner.Build("Simple")
 assert(#plan.quests==1 and plan.quests[1].name=="Mine" and #plan.blocked==0)
-print("PASS: direct TomTom arrow preferred over SPF, no map opening, panels close, other faction/class quests excluded")
+print("PASS: direct TomTom arrow preferred over SPF, no map opening, panels stay open, other faction/class quests excluded")
 """)
+
+lua.execute(r'''
+local N,R=A.Navigation,A.RoutePlanner
+ShortestPathForever=nil
+local function pickup(id,map,x)
+ return {id=id,name="Pickup "..id,dungeons={"Local test"},pin={map=map,x=x,y=50,kind="pickup"}}
+end
+local away=pickup(993001,1425,50)
+local far=pickup(993002,1446,80)
+local near=pickup(993003,1446,51)
+A.quests={away,far,near}
+A.LoadLocations=function() end
+A.ChecklistVisible=function() return true end
+A.Restriction=function() return nil end
+A.Completed=function() return false end
+A.RunReadiness=function() return false end
+A.WalkStep=function(q) return q,"pickup" end
+A.MapLocation=function(q) return q end
+A.DungeonEntrance=function() return {map=1446,x=38,y=18,kind="entrance"} end
+N.Position=function() return {map=1446,x=0.5,y=0.5} end
+local plan=R.Build("Local test")
+assert(plan.stops[1].questID==near.id and plan.stops[2].questID==far.id and plan.stops[3].questID==away.id)
+assert(plan.stops[1].seconds==nil and plan.stops[4].kind=="dungeon")
+A.RunReadiness=function(q) return q.id==near.id end
+plan=R.Build("Local test"); assert(plan.stops[1].questID==far.id)
+A.RunReadiness=function() return false end
+plan=R.Build("Local test",{[near.id]=true}); assert(plan.stops[1].questID==far.id)
+N.Position=function() return nil end
+plan=R.Build("Local test"); assert(plan.stops[1].questID==away.id)
+N.Position=function() return {map=1446,x=0.5,y=0.5} end
+ShortestPathForever={API={version=2,Estimate=function(_,_,_,map) return map==1425 and 1 or 100 end}}
+plan=R.Build("Local test"); assert(plan.stops[1].questID==away.id and plan.stops[1].seconds==1)
+print("PASS: Tanaris pickups before Hinterlands without estimates, nearest local first, collected/excluded skipped, missing position safe, transport estimates preserved")
+local row=A.navigationWindow.rows[1]
+assert(row.clicks[1]=="LeftButtonUp" and row.OnClick and not row.action.OnClick)
+local go,refresh,recalculate=N.Go,A.RefreshRouteWindow,R.Recalculate
+local navigated,rebuilt=0,0
+N.Go=function(d) assert(d==plan.stops[1]); navigated=navigated+1 end
+A.RefreshRouteWindow=function() end
+R.Recalculate=function() rebuilt=rebuilt+1 end
+A.collection={running=true,excluded={}}
+row.entry={destination=plan.stops[1]}; row.OnClick()
+assert(navigated==1 and not A.collection.running)
+row.entry={quest=near}; row.OnClick(); assert(A.collection.excluded[near.id] and rebuilt==1)
+row.entry={blocked="Unavailable"}; row.OnClick()
+row.entry=nil; row.OnClick(); assert(navigated==1 and rebuilt==1)
+N.Go,A.RefreshRouteWindow,R.Recalculate=go,refresh,recalculate
+print("PASS: whole-row navigation and quest inclusion clicks; empty and blocked rows do nothing")
+''')

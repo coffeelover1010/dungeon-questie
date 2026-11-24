@@ -47,10 +47,10 @@ for wing,id in pairs({Graveyard=12,Library=14,Armory=15,Cathedral=16}) do
 end
 assert(A.GroupActivities("Scarlet Monastery - Armoury")[1]==15)
 assert(#A.GroupActivities("Scarlet")==0) -- no guessed partial match
-A.FindGroup("Stormwind Stockade"); assert(searches==1 and selectedIDs[1]==10 and hidden==1)
+A.FindGroup("Stormwind Stockade"); assert(searches==1 and selectedIDs[1]==10 and hidden==0)
 A.FindGroup("Deadmines"); assert(searches==2 and #selectedIDs==1 and selectedIDs[1]==11)
 LFGBrowseFrame.searching=true
-A.FindGroup("Deadmines"); assert(searches==2 and hidden==3 and recruitDungeon=="Deadmines" and recruitIDs[1]==11)
+A.FindGroup("Deadmines"); assert(searches==2 and hidden==0 and recruitDungeon=="Deadmines" and recruitIDs[1]==11)
 -- Switching dungeon while busy shows its helper without replacing native filters.
 A.FindGroup("Scarlet Monastery"); assert(searches==2 and #recruitIDs==4 and selectedIDs[1]==11)
 LFGBrowseFrame.searching=false

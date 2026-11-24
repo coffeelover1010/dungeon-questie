@@ -55,7 +55,6 @@ function A.BuildProgressExport(selected)
  return table.concat(lines,"\n")
 end
 function A.ShowProgressExport(selected)
- if InCombatLockdown() then return end
  local f=A.exportWindow
  if not f then
   f=CreateFrame("Frame","DungeonGuideForeverExport",UIParent,"BackdropTemplate")

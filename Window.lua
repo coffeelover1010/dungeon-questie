@@ -80,41 +80,72 @@ local function warningIcon(parent)
  return b
 end
 local selected,rows,dungeonButtons,rewardButtons=nil,{},{},{}
+local function pickupSource(n)
+ local known=A.byID[n.id] or n
+ local record=(A.walkthroughs or {})[n.id] or n
+ local value=n.itemPickup or record.itemPickup or known.itemPickup or n.pickup or record.pickup or known.pickup
+ if n.pickupUnknown or record.pickupUnknown then return nil end
+ return value
+end
 function A.DungeonActionBadge(q)
- if A.Completed(q.id)==true then return nil,"Completed\nQuest already turned in." end
- if A.log[q.id] and A.log[q.id].complete then return "Interface\\GossipFrame\\ActiveQuestIcon","Objectives finished\nStill needs to be turned in." end
- if A.DungeonWorkFinished(q) then return "Interface\\GossipFrame\\ActiveQuestIcon","Dungeon objectives finished\nTurn in the quest; no further dungeon objectives remain for this quest." end
+ if A.Completed(q.id)==true then return nil,"Quest completed" end
+ if A.log[q.id] and A.log[q.id].complete then return "Interface\\GossipFrame\\ActiveQuestIcon","Ready to turn in" end
+ if A.DungeonWorkFinished(q) then return "Interface\\GossipFrame\\ActiveQuestIcon","Ready to turn in" end
  if A.WalkStep then
   local step,phase=A.WalkStep(q)
   if phase=="ready" then return "Interface\\GossipFrame\\ActiveQuestIcon","Ready to turn in\n"..step.name end
-  if step and (phase=="pickup" or phase=="inside") and not A.log[step.id] then
+  if phase=="active" and step and A.log[step.id] then
+   return nil,"Objectives unfinished\n"..step.name,true
+  end
+  if step and (phase=="pickup" or phase=="inside" or (phase=="check" and pickupSource(step))) and not A.log[step.id] then
    return "Interface\\GossipFrame\\AvailableQuestIcon","Pick up quest\n"..step.name
   end
  end
  return nil
 end
 function A.DungeonReadinessBadge(q)
+ if A.Completed(q.id)==true then return nil,"Quest completed" end
  local ready,reason=A.RunReadiness(q)
  if ready then return "Interface\\RaidFrame\\ReadyCheck-Ready","Ready for dungeon\n"..(reason or "Continue inside the dungeon.") end
- if A.Completed(q.id)==true then return nil,"Completed\nQuest already turned in." end
- if A.DungeonWorkFinished(q) then return nil,"Dungeon objectives finished\nNo further dungeon work remains." end
+ if A.DungeonWorkFinished(q) then return nil,"Dungeon objectives finished" end
  local stage=A.Preparation(q)
  if stage=="blocked" then return nil,"Not ready for dungeon\nQuest requirements are not met." end
  if stage=="skipped" then return nil,"Skipped\nOptional breadcrumb no longer needed." end
- return nil,"Not ready for dungeon\n"..(reason or "Finish preparation or check availability. See the quest's next step.")
+ return nil,"Not ready for dungeon\n"..(reason or "Follow the next quest step.")
+end
+function A.QuestTurnInSummary(q)
+ if A.LoadLocations then A.LoadLocations() end
+ local record=(A.walkthroughs or {})[q.id] or q
+ local known=A.byID[q.id] or q
+ local who=record.turnin or q.turnin or known.turnin
+ local pin=record.turninPin or q.turninPin or known.turninPin
+ local completed=A.Completed(q.id)==true
+ return (completed and "Completed: " or "Turn In: ")..(q.name or record.name or known.name or "Quest")..(completed and " with hand in to " or " to ")..(who or (pin and pin.title) or (completed and "Unknown" or "the destination in your quest log")).."\nZone: "..(pin and pin.zone or (completed and "Unknown" or "See quest log"))
 end
 function A.DungeonInstruction(q)
- if A.Completed(q.id)==true then return "Completed", "Quest turned in." end
- if A.log[q.id] and A.log[q.id].complete then return "Objectives finished", "Turn in: "..q.name end
- if A.DungeonWorkFinished(q) then return "Objectives finished", "Turn in: "..q.name end
- if A.RunReadiness(q) then return "Ready for dungeon", "Continue inside the dungeon." end
- if A.log[q.id] then return "Active", "Follow the current objectives in your quest log." end
+ if A.Completed(q.id)==true then return "Completed", A.QuestTurnInSummary(q) end
+ if A.log[q.id] and A.log[q.id].complete then return "Objectives finished", A.QuestTurnInSummary(q) end
+ if A.DungeonWorkFinished(q) then return "Objectives finished", A.QuestTurnInSummary(q) end
+ if A.log[q.id] then
+  if A.RunReadiness(q) then return "Ready for dungeon", "Continue inside the dungeon." end
+  return "Active", A.QuestTurnInSummary(q)
+ end
  if not A.WalkStep then return "Readiness unknown", "Check the quest details before entering." end
- local n,phase=A.WalkStep(q)
- if phase=="pickup" then return "Pick up quest", "Accept: "..n.name.." from "..(n.pickup or "the quest giver") end
- if phase=="active" then return n.id==q.id and "Active" or "Preparation needed", "Finish: "..n.name end
- if phase=="ready" then return "Preparation needed", "Turn in: "..n.name end
- if phase=="blocked" then return "Preparation needed", "Check the quest requirements." end
+ local n,phase,note=A.WalkStep(q)
+ if phase=="pickup" or phase=="inside" or phase=="check" or phase=="unavailable" then
+  if A.LoadLocations then A.LoadLocations() end
+  local record=(A.walkthroughs or {})[n.id] or n
+  local known=A.byID[n.id] or n
+  local pin=n.pin or record.pin or known.pin
+  local zone=n.pickupZone or record.pickupZone or known.pickupZone or (n.pickupInside and (known.dungeons or q.dungeons or {})[1]) or (pin and pin.zone)
+  local pickup=pickupSource(n)
+  local instruction=pickup and ("Accept: "..n.name.." from "..(pickup or "the quest giver")) or ("Pickup: "..(pickup or "See quest details."))
+  if zone and zone~="" then instruction=instruction.."\nZone: "..zone end
+  return A.RunReadiness(q) and "Ready for dungeon" or "Pick up quest",instruction
+ end
+ if phase=="active" then return n.id==q.id and "Active" or "Preparation needed", A.QuestTurnInSummary(n) end
+ if phase=="ready" then return "Preparation needed", A.QuestTurnInSummary(n) end
+ if phase=="blocked" then return "Preparation needed", note or "Check the quest requirements." end
  return "Readiness unknown", "Check the quest details before entering."
 end
 function A.DungeonSummary(c)
@@ -163,7 +194,7 @@ function A.QuestRowStatus(q)
  if quest then tip=tip..": "..quest end
  if stage=="blocked" and not A.Restriction(q) then
   if q.minLevel and UnitLevel("player")<q.minLevel then
-   value="Level "..q.minLevel; tip="Requires level "..q.minLevel.." to accept this quest."
+   value="Level "..q.minLevel; tip="Requires level "..q.minLevel
   elseif A.WalkStep then
    local step,phase,reason=A.WalkStep(q)
    if phase=="blocked" and step.minLevel and reason=="Requires level "..step.minLevel.."." then
@@ -175,7 +206,7 @@ function A.QuestRowStatus(q)
  if A.Completed(q.id)==true then
   value="Completed"
  elseif A.log[q.id] and A.log[q.id].complete then
-  value="Objectives finished"; icon="Interface\\GossipFrame\\ActiveQuestIcon"
+  value="Objectives finished"
  elseif A.log[q.id] then value="Active"
  end
  -- Keep level numbers and uncertain/blocked labels explicit; the warning already has its own icon.
@@ -218,13 +249,44 @@ local function iconButton(parent,label,icon,x,y,fn,template)
  b:SetNormalTexture(icon); b:SetPushedTexture(icon)
  b:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square")
  if fn then b:SetScript("OnClick",fn) end
- b:SetScript("OnEnter",function(self) GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine(self.tip or label); GameTooltip:Show() end)
+ b:SetScript("OnEnter",function(self) GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine(self.tip or label,1,0.82,0.35,true); GameTooltip:Show() end)
  b:SetScript("OnLeave",function() GameTooltip:Hide() end)
  b:SetScript("OnEnable",function(self) self:GetNormalTexture():SetDesaturated(false); self:SetAlpha(1) end)
  b:SetScript("OnDisable",function(self) self:GetNormalTexture():SetDesaturated(true); self:SetAlpha(0.4) end)
  return b
 end
--- Only structured creature records can produce a secure target macro.
+function A.UpdateTargetAction(f)
+ -- Independent parent and absolute position keep the journal unprotected.
+ local slot=f.targetButton
+ local combat=InCombatLockdown()
+ if f.targetCombat~=combat then
+  f.targetCombat=combat; slot:SetEnabled(not combat and f.targetMacro~=nil)
+  if combat then slot.tip="NPC targeting is unavailable in combat"
+  else slot.tip=f.targetTip end
+ end
+ if combat then return end
+ if not f.targetAction then
+  local b=iconButton(UIParent,"Target quest giver","Interface\\Icons\\Ability_Hunter_SniperShot",0,0,nil,"SecureActionButtonTemplate,SecureHandlerStateTemplate")
+  f.targetAction=b; b:RegisterForClicks("AnyUp","AnyDown"); b:SetAttribute("type","macro")
+  b:SetAttribute("_onstate-combat",'if newstate == "combat" then self:Hide() end')
+  RegisterStateDriver(b,"combat","[combat] combat; peace")
+  b:Hide()
+ end
+ local b=f.targetAction
+ if not f:IsShown() or not slot:IsShown() or (slot.IsVisible and not slot:IsVisible()) or not f.targetMacro then b:Hide(); return end
+ local left,top=slot:GetLeft(),slot:GetTop()
+ if not left or not top then b:Hide(); return end
+ local viewport=f.detailScroll
+ local viewportTop,viewportBottom,bottom=viewport:GetTop(),viewport:GetBottom(),slot:GetBottom()
+ if not viewportTop or not viewportBottom or not bottom or top>viewportTop or bottom<viewportBottom then b:Hide(); return end
+ local scale=slot:GetEffectiveScale()/UIParent:GetEffectiveScale()
+ if b.layoutLeft~=left or b.layoutTop~=top or b.layoutScale~=scale then
+  b:SetScale(scale); b:ClearAllPoints(); b:SetPoint("TOPLEFT",UIParent,"BOTTOMLEFT",left,top)
+  b.layoutLeft,b.layoutTop,b.layoutScale=left,top,scale
+ end
+ if b.macro~=f.targetMacro then b:SetAttribute("macrotext",f.targetMacro); b.macro=f.targetMacro end
+ b.tip=slot.tip; b:SetFrameStrata("DIALOG"); b:SetFrameLevel(f:GetFrameLevel()+10); b:Show()
+end
 -- Never parse item/object/prose locations as NPC names.
 function A.QuestGiverMacro(q,phase)
  if not q or (phase~="pickup" and phase~="inside" and phase~="ready") then return nil end
@@ -334,7 +396,6 @@ function A.QuestLogWords(q)
  return lines
 end
 local function details()
- if InCombatLockdown() then return end
  local f=A.window; local q=selected
  f.detailTitle:SetShown(not A.db.detailsCollapsed or f.compactQuestPage)
  for _,b in ipairs(rewardButtons) do b:Hide() end
@@ -346,7 +407,7 @@ local function details()
  f.mapTarget=A.MapLocation and mapTarget or target
  if A.MapLocation and not mapTarget then f.mapTarget=nil end
  f.mapButton:SetEnabled(f.mapTarget and f.mapTarget.pin~=nil or false)
- f.mapButton.tip=mapTip or "Show quest destination on map"
+ f.mapButton.tip=f.mapTarget and ("Navigate\n"..(mapTip or "Current quest destination")) or (mapTip or "Destination unavailable")
  local artworkHeight=A.UpdateLocationArtwork(f.locationArtwork,q,mapTarget,mapTip)
  for i,b in ipairs({f.mapButton,f.logButton,f.source,f.targetButton,f.chatButton}) do
   b:ClearAllPoints(); b:SetPoint("TOPLEFT",f.detailChild,"TOPLEFT",(i-1)*44,-artworkHeight)
@@ -365,9 +426,10 @@ local function details()
  f.warning.tip=A.DataWarning(q,current,phase); f.warning:SetShown(f.warning.tip~=nil)
  f.currentQuest=current
  local macro,names=A.QuestGiverMacro(current,phase)
- f.targetButton:SetAttribute("macrotext",macro)
- f.targetButton:SetEnabled(macro~=nil)
- f.targetButton.tip=names and ("Target step NPC: "..names.."\nOnly targets an NPC within targeting range. The journal minimizes after clicking.") or "Quest giver unavailable."
+ f.targetMacro=macro
+ f.targetButton:SetEnabled(macro~=nil and not InCombatLockdown())
+ f.targetButton.tip=InCombatLockdown() and "NPC targeting is unavailable in combat" or names and ("Target: "..names.."\nMust be within targeting range.") or "No NPC to target"
+ f.targetTip=names and ("Target: "..names.."\nMust be within targeting range.") or "No NPC to target"
  f.source:SetEnabled(q~=nil); f.logButton:SetEnabled(current and A.log[current.id]~=nil or false)
  for _,b in ipairs({f.mapButton,f.logButton,f.source,f.targetButton,f.chatButton}) do b:SetShown(q~=nil) end
  if not q then
@@ -382,12 +444,12 @@ local function details()
   f.detailText:SetText(note); f.detailChild:SetHeight(480); return
  end
  local s=A.state[q.id] or "unknown"
- f.detailTitle:SetText(q.name)
+ f.detailTitle:SetText(f.compactQuestPage and ((A.db.dungeon or "Dungeon").." > "..q.name) or q.name)
  f.metadata:SetShown(not A.db.detailsCollapsed or f.compactQuestPage)
  f.levelBadge.label:SetText(q.minLevel and tostring(q.minLevel) or "?")
  local underLevel=q.minLevel and UnitLevel("player")<q.minLevel
  f.levelBadge.label:SetTextColor(underLevel and 0.7 or 0.18,underLevel and 0.12 or 0.38,0.08)
- f.levelBadge.tip=q.minLevel and ("Minimum level: "..q.minLevel) or "Minimum level: ?"
+ f.levelBadge.tip=q.minLevel and ("Requires level "..q.minLevel) or "Minimum level unknown"
  f.factionBadge:SetShown(q.faction~=nil)
  if q.faction then
   f.factionBadge.icon:SetTexture("Interface\\PVPFrame\\PVP-Currency-"..q.faction)
@@ -395,7 +457,7 @@ local function details()
  end
  f.classBadge:SetShown(q.class~=nil)
  if q.class then
-  f.classBadge.tip=q.class.." only"
+  f.classBadge.tip=((LOCALIZED_CLASS_NAMES_MALE and LOCALIZED_CLASS_NAMES_MALE[q.class]) or q.class).." only"
   local coords=CLASS_ICON_TCOORDS and CLASS_ICON_TCOORDS[q.class]
   f.classBadge.icon:SetTexture(coords and "Interface\\GLUES\\CHARACTERCREATE\\UI-CHARACTERCREATE-CLASSES" or "Interface\\Icons\\INV_Misc_QuestionMark")
   if coords then f.classBadge.icon:SetTexCoord(unpack(coords)) else f.classBadge.icon:SetTexCoord(0,1,0,1) end
@@ -403,6 +465,7 @@ local function details()
  local badgeWidth=28+(q.faction and 28 or 0)+(q.class and 28 or 0)
  f.warning:ClearAllPoints(); f.warning:SetPoint("RIGHT",f.metadata,"RIGHT",-badgeWidth,0)
  if f.warning.tip then badgeWidth=badgeWidth+22 end
+ f.detailTitle:ClearAllPoints(); f.detailTitle:SetPoint("TOPLEFT",f.compactQuestPage and 230 or 604,-91)
  f.detailTitle:SetWidth(313-badgeWidth-8)
  f.classBadge:ClearAllPoints(); f.classBadge:SetPoint("RIGHT",q.faction and -56 or -28,0)
  local contentTop=91+math.max(24,f.detailTitle:GetStringHeight())+10
@@ -419,6 +482,17 @@ local function details()
    end
   end
   if #lines==1 then lines[#lines+1]="Quest text unavailable." end
+ end
+ -- The map fallback promises directions. Keep them visible alongside the
+ -- original quest text, including uncertain pickups that cannot be routed.
+ if current and (not mapTarget or phase=="check" or phase=="blocked" or phase=="unavailable") then
+  local guidance
+  if A.WalkStep and A.StepContext and (phase=="check" or phase=="blocked" or phase=="unavailable") then
+   local step,state,note=A.WalkStep(q)
+   guidance=A.StepContext(q,step,state,note)
+  elseif A.RouteInstruction then guidance=A.RouteInstruction(q)
+  else guidance=instructions end
+  if guidance and guidance~="" then lines[#lines+1]="|cff684018Current step|r\n"..guidance end
  end
  local shownRewards=current.rewards or {}
  if #shownRewards>0 then lines[#lines+1]="\n|cff684018Rewards|r" end
@@ -455,10 +529,15 @@ end
 local function rowBackground(row,chosen,index)
  row.bg:SetColorTexture(1,0.88,0.62,chosen and 0.90 or (index%2==0 and 0.70 or 0.55))
 end
+function A.QuestListProgress(quests)
+ local ready=0
+ for _,q in ipairs(quests) do
+  if A.Completed(q.id)==true or A.DungeonWorkFinished(q) or A.RunReadiness(q) then ready=ready+1 end
+ end
+ return ready,#quests
+end
 function A.Refresh()
- if InCombatLockdown() then return end
  local f=A.window; if not f or not f:IsShown() then return end
- f.heading:SetText(A.db.dungeon)
  local visible={}
  for _,q in ipairs(A.quests) do if A.Matches(q) then visible[#visible+1]=q end end
  table.sort(visible,function(a,b)
@@ -490,6 +569,10 @@ function A.Refresh()
 
   end
  end
+ local ready,total=A.QuestListProgress(visible)
+ f.listedQuests=visible
+ if A.UpdateQuestShare then A.UpdateQuestShare() end
+ f.heading:SetText((A.db.dungeon or "Dungeon").." > "..ready.."/"..total)
  local found=false; for _,q in ipairs(visible) do if selected and q.id==selected.id then selected=q; found=true; break end end
  if not found then selected=visible[1]; f.detailScroll:SetVerticalScroll(0) end
  local listHeight=0
@@ -518,13 +601,12 @@ function A.Refresh()
     action:SetScript("OnEnter",function(self)
      GameTooltip:SetOwner(self,"ANCHOR_RIGHT")
      GameTooltip:AddLine(r.groupQuest and r.groupQuest.name or "Group quest")
-     GameTooltip:AddLine(self==r.general and "Prepare a General chat message; Enter sends it." or "Open Custom; type the description and click Post.",1,1,1,true)
+     GameTooltip:AddLine(self==r.general and "Draft a General message. Enter to send." or "Create a Custom group listing.",1,1,1,true)
      GameTooltip:Show()
     end)
     action:SetScript("OnLeave",function() GameTooltip:Hide() end)
    end
    r:SetScript("OnClick",function(self)
-    if InCombatLockdown() then return end
     if IsShiftKeyDown() then A.LinkQuestInChat(A.WalkStep and A.WalkStep(self.quest) or self.quest); return end
     selected=self.quest; f.detailScroll:SetVerticalScroll(0)
     -- Selection changes only the highlight and detail pane, not quest state.
@@ -557,7 +639,8 @@ function A.Refresh()
   r.warning.tip=A.DataWarning(q,warningStep,warningPhase); r.warning:SetShown(r.warning.tip~=nil)
   local readinessIcon,readinessTip=A.DungeonReadinessBadge(q)
   r.readiness.icon:SetTexture(readinessIcon); r.readiness.tip=A.DisplayText(readinessTip); r.readiness:SetShown(readinessIcon~=nil)
-  local actionIcon,actionTip=A.DungeonActionBadge(q)
+  local actionIcon,actionTip,actionGrey=A.DungeonActionBadge(q)
+  r.questAction.icon:SetDesaturated(actionGrey==true)
   r.questAction.icon:SetTexture(actionIcon); r.questAction.tip=A.DisplayText(actionTip); r.questAction:SetShown(actionIcon~=nil)
   r.questAction:ClearAllPoints(); r.questAction:SetPoint("TOPRIGHT",-6-(readinessIcon and 24 or 0),-8)
   local iconWidth=(readinessIcon and 24 or 0)+(actionIcon and 24 or 0)
@@ -574,7 +657,7 @@ function A.Refresh()
   local actionReady,actionStep,actionPhase=A.ActionReadiness(q)
   if stage=="done" then
    r.status:SetText("Completed"); r.status:SetTextColor(0.16,0.36,0.14)
-   r.meta:SetText("Quest turned in.")
+   r.meta:SetText("")
   elseif actionReady then
    r.status:SetText(statusLabel); r.status:SetTextColor(unpack(colors[s]))
    r.meta:SetText(actionStep.name)
@@ -588,7 +671,7 @@ function A.Refresh()
   if future then
    r.status:SetText("Later step")
    r.status:SetTextColor(0.30,0.23,0.15)
-   r.statusTip="This quest comes later in the chain. Current step: "..future.name..".\n"..(r.statusTip or "")
+   r.statusTip="Earlier step: "..future.name
    r.meta:SetText("Current step: "..future.name.."\n"..r.meta:GetText())
    statusIcon=nil
   end
@@ -598,7 +681,7 @@ function A.Refresh()
     r.status:SetTextColor(0.30,0.23,0.15)
     statusIcon=nil
     r.meta:SetText("You already have or completed a later quest in this chain.")
-    r.statusTip="Optional breadcrumb: not needed for dungeon preparation because you have progressed beyond it."
+    r.statusTip="Optional introduction; already skipped."
    else
     r.status:SetText("Breadcrumb - "..r.status:GetText())
     r.statusTip="Optional introduction quest.\n"..(r.statusTip or "")
@@ -621,11 +704,12 @@ function A.Refresh()
    r.title:SetText((index and not completed and (index.."/"..total.." - ") or "")..current.name)
    local instruction,action=A.DungeonInstruction(q)
    r.status:SetText(instruction)
-   summary=current.id~=q.id and ("Dungeon quest: "..q.name) or action
+   summary=action
   end
   local recovery,dropQuest
   if A.BreadcrumbRecovery then recovery,dropQuest=A.BreadcrumbRecovery(q) end
   if recovery then summary=summary~="" and (summary.."\n"..recovery) or recovery end
+  if A.Completed(q.id)==true then summary=A.QuestTurnInSummary(q) end
   r.meta:SetText(summary)
   r.meta:SetShown(summary~="")
   if warningPhase=="check" and not future and not hasSteps and not breadcrumb then
@@ -660,6 +744,7 @@ function A.Refresh()
  for i=#visible+1,#rows do rows[i]:Hide() end
  f.listChild:SetHeight(math.max(1,listHeight)); f.empty:SetShown(#visible==0)
  f.empty:SetText(A.EmptyQuestMessage())
+ if A.PartyDiscovery then A.PartyDiscovery.Changed() end
  for _,b in ipairs(dungeonButtons) do
   local c=A.PreparationSummary(b.dungeon)
   local remaining=c.total-c.done-c.skipped
@@ -670,7 +755,6 @@ function A.Refresh()
  details()
 end
 function A.SelectQuest(q)
- if InCombatLockdown() then return end
  A.db.dungeon=q.dungeons[1]; A.db.search=""; selected=q
  if A.QuestChainGroups then
   local candidates={}; for _,n in ipairs(A.quests) do if A.Matches(n) then candidates[#candidates+1]=n end end
@@ -690,24 +774,23 @@ local function saveWindowPosition(f)
  local p,_,rp,x,y=f:GetPoint(); A.db.position={p,rp,x,y}
 end
 function A.SetWindowScale(scale)
- if InCombatLockdown() or not A.window then return end
+ if not A.window then return end
  local maximum=maxWindowScale()
  scale=math.max(math.min(0.55,maximum),math.min(tonumber(scale) or math.min(1,maximum),maximum))
  A.window:SetScale(scale); A.db.windowScale=scale
 end
 function A.MinimizeWindow()
- if InCombatLockdown() or not A.window or not A.window:IsShown() then return end
+ if not A.window or not A.window:IsShown() then return end
  local f=A.window
  if f.search then f.search:ClearFocus() end
  if f.linkPanel then f.linkPanel:Hide() end
  GameTooltip:Hide(); f:Hide(); A.minimizedWindow:Show()
 end
 function A.RestoreWindow()
- if InCombatLockdown() or not A.window then return end
+ if not A.window then return end
  A.minimizedWindow:Hide(); A.window:Show()
 end
 function A.ResetWindowGeometry()
- if InCombatLockdown() then return end
  A.db.position=nil; A.db.windowScale=nil; A.db.minimizedPosition=nil
  if A.window then
   A.window:ClearAllPoints(); A.window:SetPoint("CENTER"); A.SetWindowScale(math.min(1,maxWindowScale()))
@@ -725,13 +808,33 @@ local function flatWindowControl(parent,glyph,label,action)
  b.mark=mark
  return b
 end
+-- Acceptance can arrive before the quest log updates; finish after the next scan.
+local acceptedQuestPage
+function A.AcceptedQuestPage(id)
+ local f=A.window
+ if f and f:IsShown() and f.compactQuestPage and f.currentQuest and f.currentQuest.id==id then
+  acceptedQuestPage={id=id,quest=selected}
+ end
+end
+function A.FinishAcceptedQuestPage()
+ local pending=acceptedQuestPage
+ if not pending then return end
+ local f=A.window
+ if not f or not f:IsShown() or not f.compactQuestPage or selected~=pending.quest then
+  acceptedQuestPage=nil; return
+ end
+ if not A.log[pending.id] then return end
+ acceptedQuestPage=nil
+ if not A.RunReadiness(selected) then A.ShowCompactQuestPage(false) end
+end
 function A.ShowCompactQuestPage(show)
- if InCombatLockdown() or not A.window then return end
+ if not A.window then return end
  local f=A.window
  f.compactQuestPage=A.db.detailsCollapsed==true and show==true
  local visible=not A.db.detailsCollapsed or f.compactQuestPage
  f.listScroll:SetShown(not f.compactQuestPage)
  f.heading:SetShown(not f.compactQuestPage)
+ f.listActions:SetShown(not f.compactQuestPage)
  f.detailScroll:SetShown(visible)
  f.detailTitle:SetShown(visible)
  f.metadata:SetShown(visible and selected~=nil)
@@ -743,7 +846,7 @@ function A.ShowCompactQuestPage(show)
  details()
 end
 function A.SetDetailsCollapsed(collapsed,keepPosition)
- if InCombatLockdown() or not A.window then return end
+ if not A.window then return end
  local f=A.window
  if keepPosition then
   local left,top=f:GetLeft(),f:GetTop()
@@ -766,11 +869,9 @@ function A.SetDetailsCollapsed(collapsed,keepPosition)
  A.ShowCompactQuestPage(false)
 end
 function A.CreateWindow()
- if InCombatLockdown() then return end
  if A.window then return end
- local f=CreateFrame("Frame","DungeonGuideForeverWindow",UIParent,"BackdropTemplate,SecureHandlerStateTemplate"); A.window=f
- -- Secure targeting protects this window. Leave it visible during combat;
- -- existing lockdown guards defer layout and content updates until combat ends.
+ local f=CreateFrame("Frame","DungeonGuideForeverWindow",UIParent,"BackdropTemplate"); A.window=f
+ -- Targeting uses an independent secure overlay; the journal stays unprotected.
  f:SetSize(960,650); f:SetPoint("CENTER"); A.SetWindowScale(A.db.windowScale); f:SetFrameStrata("DIALOG"); f:SetClampedToScreen(true)
  f:SetBackdrop({bgFile="Interface\\DialogFrame\\UI-DialogBox-Background",edgeFile="Interface\\DialogFrame\\UI-DialogBox-Border",tile=true,tileSize=32,edgeSize=32,insets={left=8,right=8,top=8,bottom=8}})
  local parchment=f:CreateTexture(nil,"BACKGROUND",nil,1)
@@ -786,12 +887,13 @@ function A.CreateWindow()
   if x==593 then f.detailDivider=divider end
  end
  f:EnableMouse(true); f:SetMovable(true); f:RegisterForDrag("LeftButton")
- f:SetScript("OnDragStart",function(self) if not InCombatLockdown() then self:StartMoving() end end); f:SetScript("OnDragStop",function(self) self:StopMovingOrSizing(); local p,_,rp,x,y=self:GetPoint(); A.db.position={p,rp,x,y} end)
+ f:SetScript("OnDragStart",function(self) self:StartMoving() end); f:SetScript("OnDragStop",function(self) self:StopMovingOrSizing(); local p,_,rp,x,y=self:GetPoint(); A.db.position={p,rp,x,y} end)
  if A.db.position then local p=A.db.position; f:ClearAllPoints(); f:SetPoint(p[1],UIParent,p[2],p[3],p[4]) end
  tinsert(UISpecialFrames,"DungeonGuideForeverWindow")
  local title=text(f,21,23,-27,402); title:SetText("Dungeon Questie"); title:SetTextColor(1,0.82,0.35); title:SetShadowOffset(1,-1)
  f.headerTitle=title
- local close=flatWindowControl(f,"×","Close Dungeon Questie",function() if not InCombatLockdown() then f:Hide() end end)
+ local close=flatWindowControl(f,"×","Close Dungeon Questie",function() f:Hide() end)
+ f.close=close
  close:SetPoint("TOPRIGHT",-20,-21)
  f.close=close
  f.minimize=flatWindowControl(f,"−","Minimize Dungeon Questie",function() A.MinimizeWindow() end)
@@ -832,19 +934,18 @@ function A.CreateWindow()
  f.resize:SetHighlightTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Highlight")
  f.resize:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Down")
  f.resize:SetScript("OnMouseDown",function(self,mouse)
-  if mouse~="LeftButton" or InCombatLockdown() then return end
+  if mouse~="LeftButton" then return end
   local parentScale=UIParent:GetEffectiveScale()
   local left,top=f:GetLeft()*f:GetScale(),f:GetTop()*f:GetScale()
   f:ClearAllPoints(); f:SetPoint("TOPLEFT",UIParent,"BOTTOMLEFT",left/f:GetScale(),top/f:GetScale())
   self:SetScript("OnUpdate",function()
-   if InCombatLockdown() then self:SetScript("OnUpdate",nil); return end
    local x,y=GetCursorPosition(); x=x/parentScale; y=y/parentScale
    A.SetWindowScale(math.max((x-left)/f:GetWidth(),(top-y)/650))
    f:ClearAllPoints(); f:SetPoint("TOPLEFT",UIParent,"BOTTOMLEFT",left/f:GetScale(),top/f:GetScale())
   end)
  end)
- f.resize:SetScript("OnMouseUp",function(self) self:SetScript("OnUpdate",nil); if not InCombatLockdown() then saveWindowPosition(f) end end)
- f:SetScript("OnHide",function() f.resize:SetScript("OnUpdate",nil) end)
+ f.resize:SetScript("OnMouseUp",function(self) self:SetScript("OnUpdate",nil); saveWindowPosition(f) end)
+ f:SetScript("OnHide",function() f.resize:SetScript("OnUpdate",nil); if f.targetAction and not InCombatLockdown() then f.targetAction:Hide() end end)
 
  f.search=CreateFrame("EditBox",nil,f,"InputBoxTemplate"); f.search:SetSize(210,24); f.search:SetPoint("TOPLEFT",480,-23); f.search:SetAutoFocus(false); f.search:SetMaxLetters(100)
  f.search:SetText(A.db.search or ""); f.search:SetScript("OnEscapePressed",function(self) self:ClearFocus() end)
@@ -868,14 +969,40 @@ function A.CreateWindow()
   b:GetFontString():ClearAllPoints(); b:GetFontString():SetPoint("RIGHT",-5,0)
   b.dungeon=d; dungeonButtons[i]=b
   b.findGroup=button(dc,"Find Group",178,0,-(i-1)*86-55,function() A.FindGroup(d) end)
-  b.findGroup:SetScript("OnEnter",function(self) GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine("Browse players for "..d); GameTooltip:AddLine("Select a player, then click Invite.",1,1,1); GameTooltip:Show() end)
+  b.findGroup:SetScript("OnEnter",function(self) GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine("Find players for "..d,1,0.82,0.35,true); GameTooltip:Show() end)
   b.findGroup:SetScript("OnLeave",function() GameTooltip:Hide() end)
  end
  dc:SetHeight(#names*86)
- f.routeToggle=iconButton(f,"Collect Quests — Shortest Route","Interface\\Icons\\Ability_Tracking",798,-20,function() A.OpenNavigation() end)
+ f.routeToggle=iconButton(f,"Plan quest collection route","Interface\\Icons\\Ability_Tracking",798,-20,function() A.OpenNavigation() end)
  f.locationsToggle=iconButton(f,"Browse quest locations","Interface\\Icons\\INV_Misc_Map_01",842,-20,function() A.OpenNavigation(selected,true) end)
  f.heading=text(f,14,232,-83,334)
- f.listScroll,f.listChild=scroll(f,230,-107,334,524)
+ f.listActions=CreateFrame("Frame",nil,f); f.listActions:SetPoint("TOPLEFT",230,-105); f.listActions:SetSize(334,24)
+ f.runStatus=CreateFrame("Button",nil,f.listActions); f.runStatus:SetPoint("TOPLEFT",0,0); f.runStatus:SetSize(130,24)
+ f.runStatus.label=text(f.runStatus,10,0,-6,130); f.runStatus.label:SetText("")
+ f.runStatus:Hide()
+ f.runStatus:SetScript("OnClick",function() if A.PartyDiscovery then A.PartyDiscovery.ToggleAvailable() end end)
+ f.runStatus:SetScript("OnEnter",function(self) GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine("Click to change your availability"); GameTooltip:Show() end)
+ f.runStatus:SetScript("OnLeave",function() GameTooltip:Hide() end)
+ for i,entry in ipairs({
+  {mode="quests",icon="INV_Misc_Note_01",tip="Share listed quest links"},
+  {mode="guild",icon="INV_Shirt_GuildTabard_01",tip="Ask guild: collect quests + dungeon"},
+  {mode="LFG",icon="INV_Misc_GroupLooking",tip="LFG: find a dungeon group"},
+  {mode="LFM",icon="INV_Misc_GroupNeedMore",tip="LFM: recruit for this dungeon"},
+  {mode="matches",icon="INV_Misc_Spyglass_03",tip="Recent LFG/LFM chat matches"},
+  {mode="settings",icon="Trade_Engineering",tip="Chat and recruitment settings"}}) do
+  local mode=entry.mode
+  local b=iconButton(f.listActions,entry.tip,"Interface\\Icons\\"..entry.icon,(i-1)*35,0,function(self) GameTooltip:Hide(); A.OpenDungeonChatAction(mode,self) end)
+  if mode=="quests" then
+   f.questShareButton=b
+   b.count=b:CreateFontString(nil,"OVERLAY")
+   b.count:SetFont("Fonts\\FRIZQT__.TTF",9,"OUTLINE")
+   b.count:SetPoint("BOTTOMRIGHT",b,"BOTTOMRIGHT",1,-1)
+   b.count:SetTextColor(1,0.9,0.65)
+  end
+  b:SetSize(24,24)
+  b:ClearAllPoints(); b:SetPoint("TOPRIGHT",f.listActions,"TOPRIGHT",-(6-i)*35,0)
+ end
+ f.listScroll,f.listChild=scroll(f,230,-133,334,498)
  f.empty=text(f.listChild,13,12,-25,302)
  f.detailTitle=text(f,16,604,-91,313)
  f.metadata=CreateFrame("Frame",nil,f); f.metadata:SetSize(100,24); f.metadata:SetPoint("TOPRIGHT",f,"TOPLEFT",917,-91)
@@ -896,23 +1023,22 @@ function A.CreateWindow()
  local goHover=f.goCurrent:CreateTexture(nil,"BACKGROUND"); goHover:SetAllPoints(); goHover:SetColorTexture(0.45,0.25,0.05,0.14); goHover:Hide()
  f.goCurrent:SetScript("OnEnter",function(self)
   goHover:Show(); GameTooltip:SetOwner(self,"ANCHOR_RIGHT")
-  GameTooltip:AddLine("Navigate to the current quest step",1,0.82,0.35)
-  GameTooltip:AddLine(f.mapButton.tip or "",1,1,1,true); GameTooltip:Show()
+  GameTooltip:AddLine(f.mapButton.tip or "Destination unavailable",1,0.82,0.35,true); GameTooltip:Show()
  end)
  f.goCurrent:SetScript("OnLeave",function() goHover:Hide(); GameTooltip:Hide() end)
  f.goCurrent:SetScript("OnClick",function()
-  if InCombatLockdown() then return end
   local destination=selected and A.MapLocation(selected)
   if destination then A.Navigate(destination) end
  end)
- f.mapButton=iconButton(f.detailChild,"Show location on map","Interface\\Icons\\INV_Misc_Map_01",604,-600,function() if f.mapTarget then A.Navigate(f.mapTarget) end end)
+ f.mapButton=iconButton(f.detailChild,"Navigate to quest location","Interface\\Icons\\INV_Misc_Map_01",604,-600,function() if f.mapTarget then A.Navigate(f.mapTarget) end end)
  f.logButton=iconButton(f.detailChild,"Open quest log","Interface\\Icons\\INV_Misc_Book_09",648,-600,function()
+  if InCombatLockdown() then A.Print("Open the game quest log after combat."); return end
   if not selected then return end
   local current=f.currentQuest or selected
   if QuestMapFrame_OpenToQuestDetails then QuestMapFrame_OpenToQuestDetails(current.id)
   elseif ShowQuestLog then ShowQuestLog(A.log[current.id] and A.log[current.id].index) end
  end)
- f.source=iconButton(f.detailChild,"Source link","Interface\\Icons\\INV_Misc_Spyglass_03",692,-600,function()
+ f.source=iconButton(f.detailChild,"Show quest source link","Interface\\Icons\\INV_Misc_Spyglass_03",692,-600,function()
   if not selected then return end
   local url=(f.currentQuest and f.currentQuest.source) or selected.source
   if not url or url=="" then return end
@@ -935,18 +1061,30 @@ function A.CreateWindow()
   f.linkPanel:Show(); f.link:Show(); f.link:SetText(url); f.link:SetFocus(); f.link:HighlightText()
 
  end)
- f.chatButton=iconButton(f.detailChild,"Link selected quest in chat (or Shift-click a quest)","Interface\\Icons\\INV_Misc_Note_01",780,-600,function() A.LinkQuestInChat(selected) end)
- f.targetButton=iconButton(f.detailChild,"Target quest giver","Interface\\Icons\\Ability_Hunter_SniperShot",736,-600,nil,"SecureActionButtonTemplate")
- f.targetButton:RegisterForClicks("AnyUp","AnyDown")
- f.targetButton:SetAttribute("type","macro")
- -- Wait for release and the secure action to finish before hiding its parent.
- f.targetButton:SetScript("PostClick",function(self,mouse,down)
-  if mouse~="LeftButton" or down or not self:GetAttribute("macrotext") then return end
-  C_Timer.After(0,function() A.MinimizeWindow() end)
+ f.chatButton=iconButton(f.detailChild,"Choose chat for quest link\nShift-click: insert into current chat","Interface\\Icons\\INV_Misc_Note_01",780,-600,function() A.OpenQuestChatMenu(f.currentQuest or selected,f.chatButton) end)
+ f.targetButton=iconButton(f.detailChild,"Target quest giver","Interface\\Icons\\Ability_Hunter_SniperShot",736,-600,nil)
+ local function backToList()
+  if not f.compactQuestPage then return end
+  A.ShowCompactQuestPage(false); GameTooltip:Hide()
+  f.backToQuests.label:SetTextColor(0.22,0.15,0.09)
+ end
+ f.backToQuests=CreateFrame("Button",nil,f)
+ f.backToQuests:SetAllPoints(f.detailTitle)
+ f.backToQuests.label=f.detailTitle
+ f.backToQuests:SetScript("OnClick",backToList)
+ f.backToQuests:SetScript("OnEnter",function(self)
+  f.backToQuests.label:SetTextColor(0.40,0.25,0.10)
+  GameTooltip:SetOwner(self,"ANCHOR_LEFT"); GameTooltip:AddLine("Back to quest list"); GameTooltip:Show()
  end)
- f.backToQuests=flatWindowControl(f,"<","Back to quest list",function() A.ShowCompactQuestPage(false); GameTooltip:Hide() end)
- f.backToQuests:SetPoint("BOTTOMLEFT",230,16)
+ f.backToQuests:SetScript("OnLeave",function() f.backToQuests.label:SetTextColor(0.22,0.15,0.09); GameTooltip:Hide() end)
  f.backToQuests:Hide()
+ -- Global mouse events also reach us when a child (map, reward, or scroll area) owns the click.
+ f.backMouseWatcher=CreateFrame("Frame")
+ f.backMouseWatcher:RegisterEvent("GLOBAL_MOUSE_UP")
+ f.backMouseWatcher:SetScript("OnEvent",function(_,_,mouseButton)
+  if mouseButton=="RightButton" and f:IsShown() and f.compactQuestPage and f:IsMouseOver() then backToList() end
+ end)
+ f:SetScript("OnUpdate",function() A.UpdateTargetAction(f) end)
  f:SetScript("OnShow",function() A.minimizedWindow:Hide(); A.Scan(); A.RevealSelectedDungeon(); f.listScroll:SetVerticalScroll(0) end)
  local previous=f.detailsToggle
  for _,control in ipairs({f.locationsToggle,f.routeToggle,f.export}) do
@@ -958,7 +1096,6 @@ function A.CreateWindow()
  f:Hide()
 end
 function A.Toggle()
- if InCombatLockdown() then A.Print("Dungeon Questie can be opened after combat."); return end
  if not A.db then return end
  if not A.window then A.CreateWindow() end
  if A.minimizedWindow:IsShown() then A.RestoreWindow() else A.window:SetShown(not A.window:IsShown()) end

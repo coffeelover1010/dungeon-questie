@@ -62,9 +62,14 @@ function A.RefreshRouteWindow()
    if entry.destination then
     local d=entry.destination
     local names=d.actions or {}; if not d.actions then for _,q in ipairs(d.roots or {}) do names[#names+1]=q.name end end
-    local time=d.seconds and (" — ~"..math.ceil(d.seconds/60).." min") or ""
-    row.text:SetText(((page-1)*8+i)..". "..(d.mixed and "mixed actions" or d.kind)..": "..d.title..time.."\n"..(#names>0 and table.concat(names,", ") or d.quest or "").."\n"..(d.target.pin.zone or ("Map "..d.map)).." "..d.target.pin.x..", "..d.target.pin.y)
-    row.tip=row.text:GetText()
+    local actions={}
+    for j=1,math.min(3,#names) do
+     actions[#actions+1]=names[j]:gsub("^pickup: ","Pick up: "):gsub("^turnin: ","Turn in: "):gsub("^objective: ","Objective: ")
+    end
+    if #names>3 then actions[#actions+1]="+"..(#names-3).." more quests" end
+    row.tip="Navigate to "..d.title
+    if #actions>0 then row.tip=row.tip.."\n"..table.concat(actions,"\n") end
+    if d.kind=="dungeon" then row.tip=row.tip.."\nEntrance approach; not an interior quest location." end
     row.text:SetText(d.title)
     local kinds={pickup="Pick up",turnin="Turn in",objective="Objective",dungeon="Entrance"}
     row.subtitle:SetText((kinds[d.kind] or "Location").."  |  "..(d.target.pin.zone or "")..(d.seconds and ("  |  ~"..math.ceil(d.seconds/60).." min") or ""))
@@ -72,8 +77,8 @@ function A.RefreshRouteWindow()
     row.icon:SetTexture(icons[d.kind] and ("Interface\\GossipFrame\\"..icons[d.kind]) or "Interface\\Icons\\INV_Misc_Map_01")
     row.action:SetText(">")
    elseif entry.quest then
-    row.text:SetText(entry.quest.name.."\n"..(plan.excluded[entry.quest.id] and "Excluded" or "Included"))
-    row.tip=row.text:GetText(); row.text:SetText(entry.quest.name)
+    row.tip=(plan.excluded[entry.quest.id] and "Include in route: " or "Exclude from route: ")..entry.quest.name
+    row.text:SetText(entry.quest.name)
     row.subtitle:SetText(plan.excluded[entry.quest.id] and "Excluded" or "Included")
     row.icon:SetTexture("Interface\\GossipFrame\\AvailableQuestIcon")
     row.action:SetText(plan.excluded[entry.quest.id] and "+" or "-")
@@ -113,21 +118,25 @@ local function create()
  panel.title:SetTextColor(1,0.82,0.35); panel.note:SetTextColor(0.82,0.77,0.65)
  panel.rows={}
  for i=1,8 do
-  local row=CreateFrame("Frame",nil,panel); row:SetSize(660,55); row:SetPoint("TOPLEFT",18,-105-(i-1)*59)
+  local row=CreateFrame("Button",nil,panel); row:SetSize(660,55); row:SetPoint("TOPLEFT",18,-105-(i-1)*59)
+  row:RegisterForClicks("LeftButtonUp")
   local bg=row:CreateTexture(nil,"BACKGROUND"); bg:SetAllPoints(); bg:SetColorTexture(1,0.88,0.56,i%2==0 and 0.22 or 0.4)
   row.icon=row:CreateTexture(nil,"ARTWORK"); row.icon:SetSize(28,28); row.icon:SetPoint("LEFT",10,0)
   row.text=label(row,13,50,-7,495); row.text:SetHeight(19)
   row.subtitle=label(row,10,50,-30,495); row.subtitle:SetHeight(16)
   row:EnableMouse(true)
+  local hover=row:CreateTexture(nil,"HIGHLIGHT"); hover:SetAllPoints(); hover:SetColorTexture(0.45,0.25,0.05,0.16)
   row:SetScript("OnEnter",function(self)
    GameTooltip:SetOwner(self,"ANCHOR_RIGHT"); GameTooltip:AddLine(self.tip or self.text:GetText() or "",1,1,1,true); GameTooltip:Show()
   end)
   row:SetScript("OnLeave",function() GameTooltip:Hide() end)
-  row.action=button(row,">",40,610,-15,function()
+  row.action=label(row,12,610,-19,40); row.action:SetJustifyH("CENTER"); row.action:SetText(">")
+  row:SetScript("OnClick",function()
    local e=row.entry
+   if not e or (not e.destination and not e.quest) then return end
    if e.destination then
     if A.collection then A.collection.running=false end
-    if N.Go(e.destination) then panel:Hide() end
+    N.Go(e.destination)
    elseif e.quest then
     local plan=A.collection; plan.excluded[e.quest.id]=not plan.excluded[e.quest.id]; R.Recalculate(false)
    end

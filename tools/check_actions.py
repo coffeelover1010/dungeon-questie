@@ -10,6 +10,7 @@ for f in ('WalkthroughData.lua','Walkthrough.lua'):
 lua.execute(r'''
 completed={}; log={}; A.log={}; A.db.confirmed={}; A.offers={}
 faction="Alliance"; race="Human"; class="WARRIOR"; level=60
+A.SetDetailsCollapsed(false)
 C_QuestLog.GetNumQuestLogEntries=function() return #log end
 C_QuestLog.GetInfo=function(i) return log[i] end
 C_QuestLog.IsQuestFlaggedCompleted=function(id) return completed[id] or false end
@@ -25,25 +26,25 @@ A.walkthroughs[1200].minLevel=minimum
 local _,icon=A.QuestRowStatus(q); assert(icon==nil,"An unaccepted goal must not display a tick for its prerequisite")
 A.SelectQuest(q)
 local b=A.window.targetButton
-assert(b:GetAttribute("macrotext")=="/targetexact Argent Guard Thaelrid")
-assert(b.OnClick==b.secureClick and b.OnClick~=nil,"Do not clear inherited secure click")
+assert(A.window.targetMacro=="/targetexact Argent Guard Thaelrid")
+assert(not b.template,"Journal targeting placeholder must not be protected")
 assert(A.window.currentQuest.id==1198)
 assert(not A.window.detailText:GetText():find("Who offers this step",1,true))
 -- Standalone/final ready versus active objectives, with open-window updates.
 state({{questID=1200,title=q.name,complete=true}})
-assert(A.ActionReadiness(q)); assert(b:GetAttribute("macrotext")=="/targetexact Dawnwatcher Selgorm")
+assert(A.ActionReadiness(q)); assert(A.window.targetMacro=="/targetexact Dawnwatcher Selgorm")
 log[1].complete=false; A.events.OnEvent(nil,"QUEST_LOG_UPDATE")
 assert(not A.ActionReadiness(q) and A.QuestRowStatus(q)=="Active")
-assert(not b.enabled and b:GetAttribute("macrotext")==nil)
+assert(not b.enabled and A.window.targetMacro==nil)
 -- Completed predecessor does not prove the next quest is offered.
 completed[1198]=true; state({})
 n,p=A.WalkStep(q); assert(n.id==1200 and p=="inside")
 assert(A.ActionReadiness(q))
 A.offers[1200]=true; A.Refresh()
 assert(A.ActionReadiness(q) and A.QuestRowStatus(q)=="Pick up quest")
-assert(b:GetAttribute("macrotext")=="/targetexact Argent Guard Thaelrid",tostring(b:GetAttribute("macrotext")))
+assert(A.window.targetMacro=="/targetexact Argent Guard Thaelrid",tostring(A.window.targetMacro))
 -- Unknown, missing and non-creature targets must clear the previous macro.
-A.offers[1275]=false; A.SelectQuest(A.byID[1275]); assert(not b.enabled and b:GetAttribute("macrotext")==nil)
+A.offers[1275]=false; A.SelectQuest(A.byID[1275]); assert(not b.enabled and A.window.targetMacro==nil)
 assert(not A.QuestGiverMacro({id=999999,pickup="A chest - A place"},"pickup"))
 assert(not A.QuestGiverMacro(q,"blocked"))
 -- Multi-step route advances to the current accepted step and its finisher.
@@ -85,10 +86,10 @@ assert(A.Availability(3765)==false and select(2,A.WalkStep(crumb))=="unavailable
 C_GossipInfo.GetAvailableQuests=function() return {{questID=3765}} end
 A.events.OnEvent(nil,"GOSSIP_SHOW")
 assert(A.Availability(3765)==true and select(2,A.WalkStep(crumb))=="pickup")
-A.SelectQuest(crumb); assert(b:GetAttribute("macrotext")=="/targetexact Argos Nightwhisper")
+A.SelectQuest(crumb); assert(A.window.targetMacro=="/targetexact Argos Nightwhisper")
 A.events.OnEvent(nil,"GOSSIP_CLOSED")
 assert(A.Availability(3765)==nil and select(2,A.WalkStep(crumb))=="pickup")
-assert(b.enabled and b:GetAttribute("macrotext")=="/targetexact Argos Nightwhisper")
+assert(b.enabled and A.window.targetMacro=="/targetexact Argos Nightwhisper")
 C_GossipInfo=nil; A.ReadOffers(); assert(A.Availability(3765)==nil)
 -- Summary numerators exactly match dungeon readiness badges.
 state({{questID=1198,title="In Search of Thaelrid",complete=true},{questID=1275,title="Researching the Corruption",complete=false}})
@@ -119,7 +120,8 @@ completed={}; A.db.confirmed={}; A.offers={}; state({})
 local relic=A.byID[95810]
 assert(A.RunReadiness(relic))
 assert(A.ActionReadiness(relic) and select(2,A.WalkStep(relic))=="inside")
-assert(A.DungeonReadinessBadge(relic)=="Interface\\GossipFrame\\AvailableQuestIcon","Inside pickup uses the pickup icon")
+assert(A.DungeonActionBadge(relic)=="Interface\\GossipFrame\\AvailableQuestIcon","Inside pickup uses the pickup icon")
+assert(A.DungeonReadinessBadge(relic)=="Interface\\RaidFrame\\ReadyCheck-Ready","Dungeon readiness has an independent tick")
 level=1; assert(not A.RunReadiness(relic)); level=60
 A.offers[95810]=false; assert(not A.RunReadiness(relic)); A.offers={}
 local node=A.walkthroughs[95810]
@@ -137,19 +139,21 @@ assert(not A.RunReadiness(A.byID[1275]))
 assert(A.DungeonReadinessBadge(A.byID[1275])==nil,"Completed quests have no gold tick")
 -- Combat guard: model the registered secure state transition, then assert
 -- no insecure attribute/layout mutation; reopening rescans the latest state.
+A.db.dungeon="Blackfathom Deeps"; A.db.search=""
+completed={}; A.db.confirmed={}; A.offers={}; state({})
 A.SelectQuest(q)
-local original=b:GetAttribute("macrotext")
+local original=A.window.targetAction and A.window.targetAction:GetAttribute("macrotext")
 local attributes=b.SetAttribute
 b.SetAttribute=function(self,k,v) assert(not InCombatLockdown(),"protected mutation in combat"); attributes(self,k,v) end
 function InCombatLockdown() return true end
 local f=A.window
 assert(not f.stateDriver and not f:GetAttribute("_onstate-combat"))
 assert(f:IsShown())
-state({}); A.SelectQuest(crumb); A.Toggle(); A.Refresh()
-assert(f:IsShown() and b:GetAttribute("macrotext")==original)
+state({}); A.SelectQuest(crumb); A.Toggle(); assert(not f:IsShown()); A.Toggle(); A.Refresh()
+assert(f:IsShown() and (not f.targetAction or f.targetAction:GetAttribute("macrotext")==original))
 function InCombatLockdown() return false end
 A.events.OnEvent(nil,"PLAYER_REGEN_ENABLED")
-assert(f:IsShown() and b.enabled and b:GetAttribute("macrotext")=="/targetexact Dawnwatcher Shaedlass", "Reopened guide targets the current uncollected prerequisite")
+assert(f:IsShown() and b.enabled and A.window.targetMacro=="/targetexact Argos Nightwhisper", "Reopened guide targets the selected uncollected breadcrumb")
 ''')
 source=json.loads((root/'data/classic-source.json').read_text())
 nodes=json.loads((root/'data/walkthroughs.json').read_text())

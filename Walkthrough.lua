@@ -142,9 +142,7 @@ function A.StepContext(q,n,phase,note)
  local title="Quest details"
  if phase=="check" then
   title="Data incomplete"
-  if n.unverifiedChain or n.requirementsNote then
-   lines[#lines+1]="Prerequisite information is incomplete. Confirm availability with the quest giver."
-  elseif n.pickupUnknown then
+  if n.pickupUnknown then
    lines[#lines+1]="Pickup information is incomplete."
   end
  end

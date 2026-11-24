@@ -1802,18 +1802,6 @@
       ]
     },
     {
-      "id": 6627,
-      "missing": [
-        "objective"
-      ]
-    },
-    {
-      "id": 6628,
-      "missing": [
-        "objective"
-      ]
-    },
-    {
       "id": 6804,
       "missing": [
         "objective"
@@ -2232,73 +2220,49 @@
     {
       "id": 86777,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 86792,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 86796,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 86797,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 86798,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
-      ]
-    },
-    {
-      "id": 86814,
-      "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 87346,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 92065,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 92066,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
@@ -2318,16 +2282,13 @@
     {
       "id": 92070,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 92343,
       "missing": [
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
@@ -2363,12 +2324,6 @@
     },
     {
       "id": 92421,
-      "missing": [
-        "objective"
-      ]
-    },
-    {
-      "id": 92434,
       "missing": [
         "objective"
       ]
@@ -2667,23 +2622,19 @@
     {
       "id": 95663,
       "missing": [
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 95664,
       "missing": [
-        "pickup",
         "objective"
       ]
     },
     {
       "id": 95682,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
@@ -2757,8 +2708,7 @@
       "id": 95790,
       "missing": [
         "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
@@ -2796,44 +2746,37 @@
     {
       "id": 95810,
       "missing": [
-        "pickup",
         "objective"
       ]
     },
     {
       "id": 95924,
       "missing": [
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 95925,
       "missing": [
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 95926,
       "missing": [
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 95928,
       "missing": [
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
       "id": 96246,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
@@ -2886,7 +2829,6 @@
     {
       "id": 96377,
       "missing": [
-        "pickup",
         "objective"
       ]
     },
@@ -2957,17 +2899,9 @@
       ]
     },
     {
-      "id": 96986,
-      "missing": [
-        "objective"
-      ]
-    },
-    {
       "id": 96987,
       "missing": [
-        "pickup",
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {
@@ -2991,8 +2925,7 @@
     {
       "id": 97173,
       "missing": [
-        "objective",
-        "turn-in"
+        "objective"
       ]
     },
     {

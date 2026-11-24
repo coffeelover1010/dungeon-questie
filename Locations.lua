@@ -48,6 +48,12 @@ local function entrance(area)
  end
 end
 function A.DungeonEntrance(name)
+ if name=="Krol'dok Stronghold" then
+  -- Reported in-game entrance, checked 2026-11-22; exact portal reports vary.
+  -- https://wowbocho.com/forever/dungeon/kroldok/?ui=en
+  -- Riverglades uiMapID 2548: QuestieDB Forever ZoneDB area 16591.
+  return {map=2548,x=37.5,y=37.9,zone="Riverglades",title="Krol'dok Stronghold entrance / approach (approximate)",kind="entrance",source="WoWBocho reported in-game entrance, 2026-11-18"}
+ end
  if name=="The Drowned City" then
   -- Approximate underwater entrance, checked 2026-11-10:
   -- https://www.warcrafttavern.com/forever/guides/the-drowned-city
@@ -241,17 +247,19 @@ function A.MapLocation(q)
  elseif phase=="pickup" or phase=="inside" or phase==nil then
   p=n.pin or record.pin or known.pin
  end
- -- Association is not a destination. Only a current, dungeon-ready step can
- -- use the associated entrance when its exact objective location is absent.
- if not p and A.RunReadiness and A.RunReadiness(q) then
+ -- Inside pickups can use the entrance even when eligibility is uncertain.
+ -- Other phases still require readiness evidence, not just dungeon association.
+ local insidePickup=phase=="inside" or ((phase=="pickup" or phase==nil) and (n.pickupInside or record.pickupInside or known.pickupInside))
+ if not p and (insidePickup or (A.RunReadiness and A.RunReadiness(q))) then
+  local destinationQuest=insidePickup and (known.dungeons and known or n.dungeons and n or q) or q
   local dungeon=A.db and A.db.dungeon
-  if not dungeon or not A.InDungeon(q,dungeon) then dungeon=q.dungeons and q.dungeons[1] end
+  if not dungeon or not A.InDungeon(destinationQuest,dungeon) then dungeon=destinationQuest.dungeons and destinationQuest.dungeons[1] end
   p=A.DungeonEntrance(dungeon)
  end
- if not p then return nil,"Current destination is not mapped. Follow the current quest instructions or quest log." end
+ if not p then return nil,"Location unknown. Check the quest instructions." end
  local kind=p.kind or "pickup"
- local tip=kind=="objective" and "Current quest objective" or (kind=="entrance" and "Dungeon entrance / approach\nNot an exact quest-giver or objective pin." or (kind=="hand-in" and "Turn-in location" or (kind=="drop" and "Quest item drop area" or "Quest pickup location")))
- return {id=n.id,name=n.name or q.name,pin=p,mapOnly=true,origin=q},tip.."\n"..p.title.."\n"..p.zone.." "..p.x..", "..p.y
+ local tip=kind=="objective" and "Objective" or (kind=="entrance" and "Entrance approach (approximate)" or (kind=="hand-in" and "Turn in" or (kind=="drop" and "Quest item drop area" or "Pick up")))
+ return {id=n.id,name=n.name or q.name,pin=p,mapOnly=true,origin=q},tip..": "..p.title.."\n"..p.zone.." "..p.x..", "..p.y
 end
 function A.RouteInstruction(q)
  local n,phase=A.WalkStep(q)

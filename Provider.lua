@@ -24,7 +24,7 @@ local function names(id,field)
  for slot,entity in ipairs({"Npc","Object","Item"}) do
   for _,eid in ipairs(links[slot] or {}) do
    local title
-   if entity=="Item" then title=safe(C_Item and C_Item.GetItemNameByID or GetItemInfo,eid) or ("Item "..eid)
+   if entity=="Item" then title=get("Item",eid,"name") or safe(C_Item and C_Item.GetItemNameByID or GetItemInfo,eid) or ("Item "..eid)
    else title=get(entity,eid,"name") end
    if title then result[#result+1]=entity=="Item" and ("Use "..title) or title end
    if entity=="Npc" and title then npcs[#npcs+1]=title end
@@ -77,6 +77,19 @@ function A.LoadQuestData()
     n.class=nil
     for class,mask in pairs(db.Enum and db.Enum.classKeys or {}) do if mask>0 and mask==n.classMask and ({WARRIOR=true,PALADIN=true,HUNTER=true,ROGUE=true,PRIEST=true,SHAMAN=true,MAGE=true,WARLOCK=true,DRUID=true})[class] then n.class=class end end
    end
+   local starters=get("Quest",id,"startedBy")
+   local itemSources={}
+   for _,itemID in ipairs(type(starters)=="table" and starters[3] or {}) do
+    local title=get("Item",itemID,"name") or safe(C_Item and C_Item.GetItemNameByID or GetItemInfo,itemID)
+    if title then
+     local drops={}
+     for _,npcID in ipairs(get("Item",itemID,"npcDrops") or {}) do
+      local npc=get("Npc",npcID,"name"); if npc then drops[#drops+1]=npc end
+     end
+     itemSources[#itemSources+1]=title..(#drops>0 and (", dropped by "..table.concat(drops," / ")) or "")
+    end
+   end
+   n.itemPickup=#itemSources>0 and table.concat(itemSources," / ") or nil
    n.pickup,n.pickupNPCs=names(id,"startedBy")
    n.turnin,n.turninNPCs=names(id,"finishedBy")
    n.pickup=n.pickup or fallback.pickup; n.turnin=n.turnin or fallback.turnin
@@ -139,7 +152,7 @@ function A.LoadQuestData()
  end
  for _,q in ipairs(A.quests) do
   local n=A.walkthroughs[q.id]
-  for _,key in ipairs({"name","minLevel","level","faction","class","excludeRace","raceMask","classMask","pickup","turnin","pickupNPCs","turninNPCs","objectives","all","any","exclusive","breadcrumbFor","restrictionUnknown","requirementsNote","unverifiedChain","providerFound","repeatable","providerRequirements","maxLevel","availableUntilCompleted","availableStartingWith","disabledByQuest"}) do q[key]=copy(n[key]) end
+  for _,key in ipairs({"notLive","pickupUnknown","pickupInside","pickupZone","itemPickup","name","minLevel","level","faction","class","excludeRace","raceMask","classMask","pickup","turnin","pickupNPCs","turninNPCs","objectives","all","any","exclusive","breadcrumbFor","restrictionUnknown","requirementsNote","unverifiedChain","providerFound","repeatable","providerRequirements","maxLevel","availableUntilCompleted","availableStartingWith","disabledByQuest"}) do q[key]=copy(n[key]) end
   q.prereqs=copy(n.all or n.prereqs or {})
  end
  A.locationsLoaded=nil
@@ -152,6 +165,17 @@ function A.ProviderGate(n)
  if n.providerIncomplete then return "Quest requirements unavailable." end
  if n.restrictionUnknown then return "Character eligibility unavailable; check the quest giver." end
  if not n.minLevel then return "Minimum level: ?" end
- if n.providerRequirements and next(n.providerRequirements) then return "Check the quest giver's requirements." end
+ if n.providerRequirements then
+  for key,value in pairs(n.providerRequirements) do
+   if key=="parentQuest" then
+    if not (A.log and A.log[value]) then
+     local parent=A.walkthroughs[value]
+     return "Requires active quest: "..(parent and parent.name or ("Quest "..value)).."."
+    end
+   elseif key=="requiredSkill" and type(value)=="table" and value[1]==164 then
+    return "Requires Blacksmithing ("..tostring(value[2])..")."
+   else return "Check the quest giver's requirements." end
+  end
+ end
 end
 A.LoadQuestData()

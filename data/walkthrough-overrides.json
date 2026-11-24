@@ -907,5 +907,13 @@
     "objectiveInstructions": "Find \"Plucky\" Johnson, the chicken near the lookout tower at Mirage Raceway in Thousand Needles. Target him and type /beckon, then speak to him in human form to learn the secret phrase.",
     "turninInstructions": "Return to Magus Tirth at Mirage Raceway in Thousand Needles and turn in Get the Scoop.",
     "locationSource": "https://www.wowhead.com/forever/quest=1950/get-the-scoop ; https://forever-xp.com/quests/1950/"
+  },
+  "6981": {
+    "all": [],
+    "any": [],
+    "unverifiedChain": false,
+    "requirementsNote": null,
+    "restrictionUnknown": false,
+    "readinessReviewed": "2026-11-24"
   }
 }

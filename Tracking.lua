@@ -64,11 +64,21 @@ function A.NeedsPickup(q)
 end
 -- Same-name sequential stages share one checklist slot.
 function A.ChecklistVisible(q)
- -- Suppress an unused variant only when live progress identifies its counterpart.
- -- Never infer completion, or hide a quest that is itself accepted/completed.
+ local record=A.walkthroughs and A.walkthroughs[q.id] or q
+ if record.notLive and not A.log[q.id] and A.Completed(q.id)~=true and A.Availability(q.id)~=true then return false end
+ -- Show one representative for explicitly linked alternatives until live progress
+ -- identifies the variant. Never infer completion or hide an accepted quest.
  if not A.log[q.id] and A.Completed(q.id)~=true then
   for _,other in ipairs(q.checklistAlternatives or {}) do
    if A.log[other] or A.Completed(other)==true then return false end
+   local alternative=A.byID[other]
+   if alternative and not A.Restriction(alternative) then
+    -- Prefer the released provider record over a retired alternative ID.
+    local current=A.walkthroughs and A.walkthroughs[q.id] or q
+    local candidate=A.walkthroughs and A.walkthroughs[other] or alternative
+    if candidate.providerFound==true and current.providerFound==false then return false end
+    if other<q.id and not (current.providerFound==true and candidate.providerFound==false) then return false end
+   end
   end
  end
  if q.checklistPrevious and not A.log[q.id] and A.Completed(q.id)~=true and A.Completed(q.checklistPrevious)~=true then return false end
@@ -225,9 +235,11 @@ function A.Scan()
   A.state[q.id]=A.Status(q)
  end
  if A.Refresh then A.Refresh() end
+ if A.FinishAcceptedQuestPage then A.FinishAcceptedQuestPage() end
  if A.RefreshPins then A.RefreshPins() end
  if A.RoutePlanner then A.RoutePlanner.Progress() end
  if A.RaidMarks then A.RaidMarks.Refresh() end
+ if A.PartyDiscovery then A.PartyDiscovery.Changed() end
 end
 -- Progress counts quests available now, plus quests already accepted or completed.
 function A.CountsForProgress(q)
@@ -293,11 +305,12 @@ local function queue()
  if C_Timer and C_Timer.After then C_Timer.After(0.15,function() queued=false; A.Scan() end)
  else queued=false; A.Scan() end
 end
-events:SetScript("OnEvent",function(_,event,arg)
+events:SetScript("OnEvent",function(_,event,arg,arg2)
  if event=="ADDON_LOADED" then
   if arg~=name then return end
   DungeonGuideForeverDB=DungeonGuideForeverDB or {}
   A.db=DungeonGuideForeverDB
+  if A.db.detailsCollapsed==nil then A.db.detailsCollapsed=true end
   A.db.confirmed=A.db.confirmed or {}; A.db.manual=nil; A.db.minimap=A.db.minimap or {minimapPos=240}
   A.db.mine=nil -- Remove the retired character-filter choice.
   A.db.betaOnly=nil -- Retired filter has no UI; retain labelled Classic references.
@@ -318,6 +331,7 @@ events:SetScript("OnEvent",function(_,event,arg)
  elseif event=="QUEST_DETAIL" then
   local id=A.Safe(GetQuestID); if type(id)=="number" and id>0 then A.offers[id]=true end
  elseif event=="GOSSIP_CLOSED" or event=="QUEST_FINISHED" or event=="QUEST_ACCEPTED" or event=="QUEST_REMOVED" or event=="QUEST_TURNED_IN" or event=="PLAYER_ENTERING_WORLD" then A.offers={} end
+ if event=="QUEST_ACCEPTED" and A.AcceptedQuestPage then A.AcceptedQuestPage(arg2 or arg) end
  if event=="QUEST_TURNED_IN" and type(arg)=="number" then A.db.confirmed[arg]=true end
  queue()
 end)
@@ -335,6 +349,8 @@ SlashCmdList.DUNGEONGUIDEFOREVER=function(msg)
  elseif msg=="clear" then if A.RoutePlanner then A.RoutePlanner.Cancel() else A.ClearWaypoint() end
  elseif msg=="marks" then A.ShowRaidMarks()
  elseif msg=="route" then A.OpenNavigation()
+ elseif msg=="settings" then A.ChatRecruitment.ShowSettings()
+ elseif msg=="matches" then A.ChatRecruitment.ShowMatches(UIParent)
  elseif msg=="locations" then A.OpenNavigation(nil,true)
  else A.Toggle() end
 end

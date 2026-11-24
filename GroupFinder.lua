@@ -42,7 +42,6 @@ function A.FindGroup(dungeon)
  if browser.searching then
   LFGVanilla_ShowFrame(2)
   if A.OpenRecruit then A.OpenRecruit(dungeon,activities) end
-  if A.window then A.window:Hide() end
   return
  end
  if #activities==0 then
@@ -54,5 +53,4 @@ function A.FindGroup(dungeon)
   browser:ShowSearchForActivities(activities)
   if A.OpenRecruit then A.OpenRecruit(dungeon,activities) end
  end
- if A.window then A.window:Hide() end
 end

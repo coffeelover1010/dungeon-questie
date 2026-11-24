@@ -3,7 +3,7 @@ from check import lua
 lua.execute(''' 
 A.db.confirmed={}; completed={}; A.log={}; A.logAvailable=true
 local old,new=A.byID[3366],A.byID[6981]
-assert(A.ChecklistVisible(old) and A.ChecklistVisible(new),"unknown variant was discarded")
+assert(A.ChecklistVisible(old) and not A.ChecklistVisible(new),"alternatives must share one checklist entry")
 A.log[6981]={complete=false}
 assert(not A.ChecklistVisible(old) and A.ChecklistVisible(new))
 assert(not A.CountsForProgress(old) and A.CountsForProgress(new))
@@ -18,6 +18,6 @@ assert(A.ChecklistVisible(old) and not A.ChecklistVisible(new))
 A.log[6981]={complete=false}
 assert(A.ChecklistVisible(old) and A.ChecklistVisible(new),"actual accepted quest hidden")
 A.log={}
-assert(A.ChecklistVisible(old) and A.ChecklistVisible(new),"abandon did not restore alternatives")
+assert(A.ChecklistVisible(old) and not A.ChecklistVisible(new),"abandon must restore one representative")
 ''')
 print("PASS: Glowing Shard live variants, readiness, counts, completion and abandonment")
